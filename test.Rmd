@@ -9,20 +9,20 @@ knitr::opts_chunk$set(echo = TRUE)
 
 
 ```{r}
-hiv <- read.csv(file ="hivstat.csv", header = TRUE, sep = ",")
-baseline <- read.csv(file ="f00.csv", header = TRUE, sep = ",")
-sociodemographic <-read.csv(file ="f01.csv", header = TRUE, sep =",")
-physical <- read.csv(file = "f07.csv", header = TRUE, sep = ",")
-cancer <-read.csv(file = "f20s1.csv", header = TRUE, sep = ",")
-medhistory <- read.csv(file = "hx.csv", header = TRUE, sep = ",")
-outcome <- read.csv(file = "outcome.csv", header = TRUE, sep = ",")
+hiv <- read.csv(file ="data/hivstat.csv", header = TRUE, sep = ",")
+baseline <- read.csv(file ="data/f00.csv", header = TRUE, sep = ",")
+sociodemographic <-read.csv(file ="data/f01.csv", header = TRUE, sep =",")
+physical <- read.csv(file = "data/f07.csv", header = TRUE, sep = ",")
+cancer <-read.csv(file = "data/f20s1.csv", header = TRUE, sep = ",")
+medhistory <- read.csv(file = "data/hx.csv", header = TRUE, sep = ",")
+outcome <- read.csv(file = "data/outcome.csv", header = TRUE, sep = ",")
 
 library(tidyverse)
 join1 <- inner_join(hiv, baseline, by = "CASEID" )
 join2 <- inner_join(join1, sociodemographic, by ="CASEID")
-join3 <- inner_join(join2, physical, by = "CASEID")
+#join3 <- inner_join(join2, physical, by = "CASEID")
 #join4 <- inner_join(join3, cancer, by = "CASEID")
-join5 <- inner_join(join3, medhistory, by = "CASEID")
+join5 <- inner_join(join2, medhistory, by = "CASEID")
 all <- inner_join(join5, outcome, by = "CASEID")
 head(all)
 
@@ -52,8 +52,14 @@ tb <- all$OUTCTB
 death <- all$OUTCDTH
 
 
-
 ```
-we can see that we merges in all 
+```{r}
+library(ggplot2)
+all %>% ggplot()+
+  geom_boxplot(aes(factor(hivstat), age))
+
+all %>% ggplot(aes(x = factor(hivstat), y = household_income)) +
+  geom_boxplot()
+```
 
 
