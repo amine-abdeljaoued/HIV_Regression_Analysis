@@ -1,0 +1,59 @@
+---
+title: "BST 210 PROJECT"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+hiv <- read.csv(file ="hivstat.csv", header = TRUE, sep = ",")
+baseline <- read.csv(file ="f00.csv", header = TRUE, sep = ",")
+sociodemographic <-read.csv(file ="f01.csv", header = TRUE, sep =",")
+physical <- read.csv(file = "f07.csv", header = TRUE, sep = ",")
+cancer <-read.csv(file = "f20s1.csv", header = TRUE, sep = ",")
+medhistory <- read.csv(file = "hx.csv", header = TRUE, sep = ",")
+outcome <- read.csv(file = "outcome.csv", header = TRUE, sep = ",")
+
+library(tidyverse)
+join1 <- inner_join(hiv, baseline, by = "CASEID" )
+join2 <- inner_join(join1, sociodemographic, by ="CASEID")
+join3 <- inner_join(join2, physical, by = "CASEID")
+#join4 <- inner_join(join3, cancer, by = "CASEID")
+join5 <- inner_join(join3, medhistory, by = "CASEID")
+all <- inner_join(join5, outcome, by = "CASEID")
+head(all)
+
+caseID <- all$CASEID
+hivstat <- all$STATUS
+speak_spanish <- all$SPANSC
+age <- all$AGE_SC
+ethnicity <- all$RACESC
+educ_level <- all$EDUCSC
+mother_educ <- all$MOMESC
+drug <- all$IDU_SC
+sex_partners <- all$PARTSC
+birth_country <- all$COB_SD
+marital_status <- all$MAR_SD
+household_income <- all$INC_SD
+pregnant <- all$PREGPE
+#weight
+#height
+family_cancer <- all$FMCNHX
+family_hbp <- all$FMHBHX
+family_cholesterol <- all$FMCLHX
+first_menstruation <- all$MAGEHX
+ever_hrt <- all$EHRTHX
+aids <- all$OUTCAIDS
+cancer <- all$OUTCCANC
+tb <- all$OUTCTB
+death <- all$OUTCDTH
+
+
+
+```
+we can see that we merges in all 
+
+
