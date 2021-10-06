@@ -56,10 +56,12 @@ death <- all$OUTCDTH
 ```{r}
 library(ggplot2)
 all %>% ggplot()+
-  geom_boxplot(aes(factor(hivstat), age))
+  geom_boxplot(aes(factor(hivstat), age))+
+  labs(x = "HIV Status", y = "Age")
 
 all %>% ggplot(aes(x = factor(hivstat), y = household_income)) +
-  geom_boxplot()
+  geom_boxplot()+
+  labs(x = "HIV Status", y = "Household income")
 ```
 
 
