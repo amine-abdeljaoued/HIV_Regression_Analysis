@@ -1,0 +1,183 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+F07 - Physical Exam (Repeating Segment) S2
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    2 2.0       SEQID2           OldC.3       OLD: Oral lesion #             1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  4= 4
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   13    2 2.0       ORL1PE           OldC.3.a.i   OLD: Oral lesion location      1= 1
+                                                   code 1                         .
+                                                                                  .
+                                                                                  14= 14
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   15    2 2.0       ORL2PE           OldC.3.a.ii  OLD: Oral lesion location      1= 1
+                                                   code 2                         .
+                                                                                  .
+                                                                                  14= 14
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   17    2 2.0       ORL3PE           OldC.3.a.iii  OLD: Oral lesion location      1= 1
+                                                   code 3                         .
+                                                                                  .
+                                                                                  14= 14
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   19    2 2.0       ORCWPE           OldC.3.b.i   OLD: Lesion color: white       1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   21    2 2.0       ORCRPE           OldC.3.b.ii  OLD: Lesion color: red         1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   23    2 2.0       ORCBPE           OldC.3.b.iii  OLD: Lesion color: black       1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   25    2 2.0       ORCPPE           OldC.3.b.iv  OLD: Lesion color: purple      1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   27    2 2.0       ORCMPE           OldC.3.b.v   OLD: Lesion color: mucosal     1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   29    2 2.0       ORCOPE           OldC.3.b.vi  OLD: Lesion color: other       1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   31   25 $         ORCSPE           OldC.3.b.vi  OLD: Specify other lesion      Character
+                                                   color
+
+   56    2 2.0       ORHLPE           OldC.3.c.i   OLD: Lesion character: lump    1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   58    2 2.0       ORHFPE           OldC.3.c.ii  OLD: Lesion character: flat    1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   60    2 2.0       ORHHPE           OldC.3.c.iii  OLD: Lesion character: hairy   1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   62    2 2.0       ORHCPE           OldC.3.c.iv  OLD: Lesion character:         1= YES
+                                                   corrugated                     2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   64    2 2.0       ORHPPE           OldC.3.c.v   OLD: Lesion character:         1= YES
+                                                   removable plaques              2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   66    2 2.0       ORHRPE           OldC.3.c.vi  OLD: Lesion character: raised  1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   68    2 2.0       ORHVPE           OldC.3.c.vii  OLD: Lesion character:         1= YES
+                                                   vesicles                       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   70    2 2.0       ORHZPE           OldC.3.c.viii  OLD: Lesion character:         1= YES
+                                                   fissures                       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   72    2 2.0       ORHUPE           OldC.3.c.ix  OLD: Lesion character:         1= YES
+                                                   ulcerated                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   74    2 2.0       ORHOPE           OldC.3.c.x   OLD: Lesion character: other   1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   76   25 $         ORHSPE           OldC.3.c.x   OLD: Specify other lesion      Character
+                                                   character
+
+  101   45 $         LEDXPE           OldC.3.d     OLD: Diagnosis of oral lesion  Character
+
+  146    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  147    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

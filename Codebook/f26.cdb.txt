@@ -1,0 +1,1451 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+F26 - Follow-Up Psychosocial Measures
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    6 $         FKEY             OldA.0       OLD: Form identifier number    Character
+
+   17    8 $         VERSPS           A.3          Form version                   01/01/93= 01/01/93
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   25    8 $         IDTEPS           A.4          Date of interview              10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   33    3 $         INITPS           A.5          Initials of person completing  Character
+                                                   form
+
+   36    8 $         LVISPS           A.6          Date of last visit at which    10/01/94= 10/01/94
+                                                   F26 was administered           .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   44    5 time5.    STIMPS           A.7          Time began                     01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   49    2 2.0       SMERPS           A.7          AM/PM for time began           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   51    2 2.0       ODV1PS           A.8          Form being administered at     1= YES
+                                                   odd visit - 1st question       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   53    2 2.0       BSV1PS           A.9          This is participant's          1= YES
+                                                   baseline visit - 1st question  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   55    2 2.0       HLTHPS           B.1          Participant's rating of her    1= Excellent
+                                                   own health                     2= Very Good
+                                                                                  3= Good
+                                                                                  4= Fair
+                                                                                  5= Poor
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   57    2 2.0       HWRKPS           B.2          Health kept her from working   1= All of the time
+                                                   past 4 weeks                   2= Some of the time
+                                                                                  3= None of the time
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   59    2 2.0       PAINPS           B.3          Amount of bodily pain past 4   1= None
+                                                   weeks                          2= Very Mild
+                                                                                  3= Mild
+                                                                                  4= Moderate
+                                                                                  5= Severe
+                                                                                  6= Very Severe
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   61    2 2.0       SOCAPS           B.4          Health interfered with social  1= Not at all
+                                                   activities past 4 weeks        2= Slightly
+                                                                                  3= Moderately
+                                                                                  4= Quite a bit
+                                                                                  5= Extremely
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63    2 2.0       HCWKPS           B.5          Unable to do certain work/     1= All of the time
+                                                   childcare because of health    2= Some of the time
+                                                   past 4 weeks                   3= None of the time
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   65    2 2.0       PNINPS           B.6          Bodily pain interfered with    1= Not at all
+                                                   normal work past 4 weeks       2= Slightly
+                                                                                  3= Moderately
+                                                                                  4= Quite a bit
+                                                                                  5= Extremely
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   67    2 2.0       VACTPS           B.7.a        Health limits vigorous         1= LIMITED A LOT
+                                                   activities                     2= LIMITED A LITTLE
+                                                                                  3= NOT AT ALL LIMITED
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   69    2 2.0       MACTPS           B.7.b        Health limits moderate         1= LIMITED A LOT
+                                                   activities                     2= LIMITED A LITTLE
+                                                                                  3= NOT AT ALL LIMITED
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   71    2 2.0       STRSPS           B.7.c        Health limits climbing stairs/ 1= LIMITED A LOT
+                                                   walking uphill                 2= LIMITED A LITTLE
+                                                                                  3= NOT AT ALL LIMITED
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   73    2 2.0       DRSSPS           B.7.d        Health limits eating,          1= LIMITED A LOT
+                                                   dressing, bathing, toileting   2= LIMITED A LITTLE
+                                                                                  3= NOT AT ALL LIMITED
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   75    2 2.0       HLSLPS           B.8.a        Past 4 weeks physical/         1= ALL OF THE TIME
+                                                   emotional health limited       2= MOST OF THE TIME
+                                                   social activities              3= A GOOD BIT OF THE TIME
+                                                                                  4= SOME OF THE TIME
+                                                                                  5= A LITTLE OF THE TIME
+                                                                                  6= NONE OF THE TIME
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   77    2 2.0       ATTNPS           B.8.b        Past 4 weeks trouble keeping   1= ALL OF THE TIME
+                                                   attention on activity for long 2= MOST OF THE TIME
+                                                                                  3= A GOOD BIT OF THE TIME
+                                                                                  4= SOME OF THE TIME
+                                                                                  5= A LITTLE OF THE TIME
+                                                                                  6= NONE OF THE TIME
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   79    2 2.0       RSNGPS           B.8.c        Past 4 weeks difficulty        1= ALL OF THE TIME
+                                                   reasoning/problem solving      2= MOST OF THE TIME
+                                                                                  3= A GOOD BIT OF THE TIME
+                                                                                  4= SOME OF THE TIME
+                                                                                  5= A LITTLE OF THE TIME
+                                                                                  6= NONE OF THE TIME
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   81    2 2.0       CALMPS           B.8.d        Past 4 weeks felt calm and     1= ALL OF THE TIME
+                                                   peaceful                       2= MOST OF THE TIME
+                                                                                  3= A GOOD BIT OF THE TIME
+                                                                                  4= SOME OF THE TIME
+                                                                                  5= A LITTLE OF THE TIME
+                                                                                  6= NONE OF THE TIME
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   83    2 2.0       BLUEPS           B.8.e        Past 4 weeks been downhearted  1= ALL OF THE TIME
+                                                   and blue                       2= MOST OF THE TIME
+                                                                                  3= A GOOD BIT OF THE TIME
+                                                                                  4= SOME OF THE TIME
+                                                                                  5= A LITTLE OF THE TIME
+                                                                                  6= NONE OF THE TIME
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   85    2 2.0       TIRDPS           B.8.f        Past 4 weeks feel tired        1= ALL OF THE TIME
+                                                                                  2= MOST OF THE TIME
+                                                                                  3= A GOOD BIT OF THE TIME
+                                                                                  4= SOME OF THE TIME
+                                                                                  5= A LITTLE OF THE TIME
+                                                                                  6= NONE OF THE TIME
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   87    2 2.0       ENRGPS           B.8.g        Past 4 weeks enough energy to  1= ALL OF THE TIME
+                                                   do things want to do           2= MOST OF THE TIME
+                                                                                  3= A GOOD BIT OF THE TIME
+                                                                                  4= SOME OF THE TIME
+                                                                                  5= A LITTLE OF THE TIME
+                                                                                  6= NONE OF THE TIME
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   89    2 2.0       HAPYPS           B.8.h        Past 4 weeks been happy        1= ALL OF THE TIME
+                                                                                  2= MOST OF THE TIME
+                                                                                  3= A GOOD BIT OF THE TIME
+                                                                                  4= SOME OF THE TIME
+                                                                                  5= A LITTLE OF THE TIME
+                                                                                  6= NONE OF THE TIME
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   91    2 2.0       HEXCPS           B.9.a        Health is excellent            1= DEFINITELY TRUE
+                                                                                  2= MOSTLY TRUE
+                                                                                  3= NOT SURE
+                                                                                  4= MOSTLY FALSE
+                                                                                  5= DEFINITELY FALSE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   93    2 2.0       FBADPS           B.9.b        Been feeling bad lately        1= DEFINITELY TRUE
+                                                                                  2= MOSTLY TRUE
+                                                                                  3= NOT SURE
+                                                                                  4= MOSTLY FALSE
+                                                                                  5= DEFINITELY FALSE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   95    2 2.0       QOL_PS           B.10         Overall rating of quality of   0= 0
+                                                   life                           .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   97    2 2.0       BTHRPS           C.1          Past week bothered by things   1= RARELY (Less than one day)
+                                                   not usually bothered by        2= SOME (1 - 2 days)
+                                                                                  3= OCCASIONALLY (3 - 4 days)
+                                                                                  4= MOST (5 - 7 days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   99    2 2.0       NOAPPS           C.2          Past week poor appetite        1= RARELY (Less than one day)
+                                                                                  2= SOME (1 - 2 days)
+                                                                                  3= OCCASIONALLY (3 - 4 days)
+                                                                                  4= MOST (5 - 7 days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  101    2 2.0       WBLUPS           C.3          Past week could not shake the  1= RARELY (Less than one day)
+                                                   blues                          2= SOME (1 - 2 days)
+                                                                                  3= OCCASIONALLY (3 - 4 days)
+                                                                                  4= MOST (5 - 7 days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  103    2 2.0       GOODPS           C.4          Past week felt was just as     1= RARELY (Less than one day)
+                                                   good as others                 2= SOME (1 - 2 days)
+                                                                                  3= OCCASIONALLY (3 - 4 days)
+                                                                                  4= MOST (5 - 7 days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  105    2 2.0       CONCPS           C.5          Past week trouble keeping      1= RARELY (Less than one day)
+                                                   mind on task                   2= SOME (1 - 2 days)
+                                                                                  3= OCCASIONALLY (3 - 4 days)
+                                                                                  4= MOST (5 - 7 days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  107    2 2.0       DEPRPS           C.6          Past week felt depressed       1= RARELY (Less than one day)
+                                                                                  2= SOME (1 - 2 days)
+                                                                                  3= OCCASIONALLY (3 - 4 days)
+                                                                                  4= MOST (5 - 7 days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  109    2 2.0       EFFTPS           C.7          Past week felt everything was  1= RARELY (Less than one day)
+                                                   an effort                      2= SOME (1 - 2 days)
+                                                                                  3= OCCASIONALLY (3 - 4 days)
+                                                                                  4= MOST (5 - 7 days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  111    2 2.0       FUTRPS           C.8          Past week felt hopeful about   1= RARELY (Less than one day)
+                                                   future                         2= SOME (1 - 2 days)
+                                                                                  3= OCCASIONALLY (3 - 4 days)
+                                                                                  4= MOST (5 - 7 days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  113    2 2.0       FAILPS           C.9          Past week thought life had     1= RARELY (Less than one day)
+                                                   been a failure                 2= SOME (1 - 2 days)
+                                                                                  3= OCCASIONALLY (3 - 4 days)
+                                                                                  4= MOST (5 - 7 days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  115    2 2.0       FEARPS           C.10         Past week felt tearful         1= RARELY (Less than one day)
+                                                                                  2= SOME (1 - 2 days)
+                                                                                  3= OCCASIONALLY (3 - 4 days)
+                                                                                  4= MOST (5 - 7 days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  117    2 2.0       SLEPPS           C.11         Past week sleep was restless   1= RARELY (Less than one day)
+                                                                                  2= SOME (1 - 2 days)
+                                                                                  3= OCCASIONALLY (3 - 4 days)
+                                                                                  4= MOST (5 - 7 days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  119    2 2.0       WHPYPS           C.12         Past week was happy            1= RARELY (Less than one day)
+                                                                                  2= SOME (1 - 2 days)
+                                                                                  3= OCCASIONALLY (3 - 4 days)
+                                                                                  4= MOST (5 - 7 days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  121    2 2.0       TALKPS           C.13         Past week talked less than     1= RARELY (Less than one day)
+                                                   usual                          2= SOME (1 - 2 days)
+                                                                                  3= OCCASIONALLY (3 - 4 days)
+                                                                                  4= MOST (5 - 7 days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  123    2 2.0       LONEPS           C.14         Past week felt lonely          1= RARELY (Less than one day)
+                                                                                  2= SOME (1 - 2 days)
+                                                                                  3= OCCASIONALLY (3 - 4 days)
+                                                                                  4= MOST (5 - 7 days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  125    2 2.0       UNFRPS           C.15         Past week people were          1= RARELY (Less than one day)
+                                                   unfriendly                     2= SOME (1 - 2 days)
+                                                                                  3= OCCASIONALLY (3 - 4 days)
+                                                                                  4= MOST (5 - 7 days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  127    2 2.0       ENJYPS           C.16         Past week enjoyed life         1= RARELY (Less than one day)
+                                                                                  2= SOME (1 - 2 days)
+                                                                                  3= OCCASIONALLY (3 - 4 days)
+                                                                                  4= MOST (5 - 7 days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  129    2 2.0       CRY_PS           C.17         Past week had crying spells    1= RARELY (Less than one day)
+                                                                                  2= SOME (1 - 2 days)
+                                                                                  3= OCCASIONALLY (3 - 4 days)
+                                                                                  4= MOST (5 - 7 days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  131    2 2.0       SAD_PS           C.18         Past week felt sad             1= RARELY (Less than one day)
+                                                                                  2= SOME (1 - 2 days)
+                                                                                  3= OCCASIONALLY (3 - 4 days)
+                                                                                  4= MOST (5 - 7 days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  133    2 2.0       DISLPS           C.19         Past week felt that people     1= RARELY (Less than one day)
+                                                   dislike me                     2= SOME (1 - 2 days)
+                                                                                  3= OCCASIONALLY (3 - 4 days)
+                                                                                  4= MOST (5 - 7 days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  135    2 2.0       MOTVPS           C.20         Past week could not get going  1= RARELY (Less than one day)
+                                                                                  2= SOME (1 - 2 days)
+                                                                                  3= OCCASIONALLY (3 - 4 days)
+                                                                                  4= MOST (5 - 7 days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  137    2 2.0       RSEEPS           OldD.1       Old: Number of relatives see/  1= 0
+                                                   hear from at least once a      2= 1
+                                                   month                          3= 2
+                                                                                  4= 3 or 4
+                                                                                  5= 5-8
+                                                                                  6= 9 or more
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  139    2 2.0       RTPMPS           OldD.2       Old: Number of relatives feel  1= 0
+                                                   at ease with - talk about      2= 1
+                                                   private matters                3= 2
+                                                                                  4= 3 or 4
+                                                                                  5= 5-8
+                                                                                  6= 9 or more
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  141    2 2.0       RHLPPS           OldD.3       Old: Number of relatives feel  1= 0
+                                                   close to - can call on for     2= 1
+                                                   help                           3= 2
+                                                                                  4= 3 or 4
+                                                                                  5= 5-8
+                                                                                  6= 9 or more
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  143    2 2.0       FSEEPS           OldD.4       Old: Number of friends see/    1= 0
+                                                   hear from at least once a      2= 1
+                                                   month                          3= 2
+                                                                                  4= 3 or 4
+                                                                                  5= 5-8
+                                                                                  6= 9 or more
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  145    2 2.0       FTPMPS           OldD.5       Old: Number of friends feel    1= 0
+                                                   at ease with - talk about      2= 1
+                                                   private matters                3= 2
+                                                                                  4= 3 or 4
+                                                                                  5= 5-8
+                                                                                  6= 9 or more
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  147    2 2.0       FHLPPS           OldD.6       Old: Number of friends feel    1= 0
+                                                   close to - can call on for     2= 1
+                                                   help                           3= 2
+                                                                                  4= 3 or 4
+                                                                                  5= 5-8
+                                                                                  6= 9 or more
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  149    2 2.0       LCMPPS           OldE.1       Old: How often feel lacking    1= HARDLY EVER
+                                                   companionship                  2= SOME OF THE TIME
+                                                                                  3= OFTEN
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  151    2 2.0       LOUTPS           OldE.2       Old: How often feel left out   1= HARDLY EVER
+                                                                                  2= SOME OF THE TIME
+                                                                                  3= OFTEN
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  153    2 2.0       ISOLPS           OldE.3       Old: How often feel isolated   1= HARDLY EVER
+                                                   from others                    2= SOME OF THE TIME
+                                                                                  3= OFTEN
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  155    2 2.0       ODV2PS           OldE.4       Old: Form being administered   1= YES
+                                                   at odd visit - 2nd question    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  157    2 2.0       BSV2PS           OldE.5       Old: This is participant's     1= YES
+                                                   baseline visit - 2nd question  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  159    2 2.0       HELPPS           OldD.1       Old: Past month got help from  1= YES
+                                                   family/friends                 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  161    2 2.0       COMFPS           OldD.2       Old: Past month family/        1= YES
+                                                   friends gave encouragement     2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  163    2 2.0       WORRPS           OldD.3       Old: Past month family/        1= YES
+                                                   friends understood worries     2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  165    2 2.0       CHLLPS           OldE.1       Old: Have living children      1= YES
+                                                   under age 18                   2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  167    2 2.0       CCARPS           OldE.2       Old: Children born/died, came/ 1= YES
+                                                   left since last visit          2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  169    2 2.0       CBRNPS           OldE.3       Old: Given birth to any        1= YES
+                                                   children since visit           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  171    2 2.0       CLWYPS           OldE.3.a     Old: This child is living      1= YES
+                                                   with participant               2= NO
+                                                                                  3= NO / NO LONGER LIVING
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  173    2 2.0       CCOMPS           OldE.4       Old: Foster, step, adopted     1= YES
+                                                   children came into care since  2= NO
+                                                   last visit                     -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  175    2 2.0       CLVEPS           OldE.5       Old: Children under age 18     1= YES
+                                                   left care since last visit     2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  177    2 2.0       CDTHPS           OldE.6       Old: Children have died since  1= YES
+                                                   last visit                     2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  179    2 2.0       CDNMPS           OldE.6.a     Old: # of children who have    0= 0
+                                                   died since visit               .
+                                                                                  .
+                                                                                  5= 5
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  181    2 2.0       DUM1PS           OldE.8       OLD: NERI dummy field          Character
+
+  183    2 2.0       DUM2PS           OldE.8.A     OLD: NERI dummy field          Character
+
+  185    2 2.0       STACPS           OldE.10      Old: Participant knows health  1= YES
+                                                   status of children             2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  187    2 2.0       WRKHPS           OldE.11.a    Old: Worried about             1= Not at all
+                                                   child(ren)'s health past 6     2= A little bit
+                                                   months                         3= Some/Moderately
+                                                                                  4= Quite a bit
+                                                                                  5= A lot/Extremely
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  189    2 2.0       WRCCPS           OldE.11.b    Old: Worried about not being   1= Not at all
+                                                   able to take care of your      2= A little bit
+                                                   child(ren) past 6 months       3= Some/Moderately
+                                                                                  4= Quite a bit
+                                                                                  5= A lot/Extremely
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  191    2 2.0       WRCAPS           OldE.11.c    Old: Worried about having      1= Not at all
+                                                   your child(ren) taken away     2= A little bit
+                                                   past 6 months                  3= Some/Moderately
+                                                                                  4= Quite a bit
+                                                                                  5= A lot/Extremely
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  193    2 2.0       WRKYPS           OldE.11.d    Old: Worried about child(ren)  1= Not at all
+                                                   growing up without mother      2= A little bit
+                                                   past 6 months                  3= Some/Moderately
+                                                                                  4= Quite a bit
+                                                                                  5= A lot/Extremely
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  195    2 2.0       WRCHPS           OldE.11.e    Old: Worried about             1= Not at all
+                                                   child(ren)'s HIV/AIDS status   2= A little bit
+                                                   past 6 months                  3= Some/Moderately
+                                                                                  4= Quite a bit
+                                                                                  5= A lot/Extremely
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  197    2 2.0       WRGHPS           OldE.11.f    Old: Worried about giving HIV  1= Not at all
+                                                   to child(ren) past 6 months    2= A little bit
+                                                                                  3= Some/Moderately
+                                                                                  4= Quite a bit
+                                                                                  5= A lot/Extremely
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  199    2 2.0       CSCKPS           OldE.12.a    Old: Child(ren) sick during    1= Not at all
+                                                   past 6 months                  2= A little bit
+                                                                                  3= Some/Moderately
+                                                                                  4= Quite a bit
+                                                                                  5= A lot/Extremely
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  201    2 2.0       CDFCPS           OldE.12.b    Old: Difficult to care for     1= Not at all
+                                                   child(ren) past 6 months       2= A little bit
+                                                                                  3= Some/Moderately
+                                                                                  4= Quite a bit
+                                                                                  5= A lot/Extremely
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  203    2 2.0       CHSPPS           OldE.13      Old: # of times child(ren)     0= 0
+                                                   hospitalized past 6 months     .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  205    2 2.0       DUM3PS           OldE.51      OLD: NERI dummy field          Character
+
+  207    2 2.0       SXABPS           F.1          Pressured/forced to have sex   1= YES
+                                                   since last visit               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  209    2 2.0       SQPRPS           OldF.2       Old: Participant will proceed  1= YES, PARTICIPANT WILL
+                                                   with sexual abuse questions       PROCEED
+                                                                                  2= NO, PARTICIPANT DECLINED
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  211    2 2.0       SACPPS           F.1.a        Sexually abused by current     1= YES
+                                                   partner                        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  213    2 2.0       SAPPPS           F.1.b        Sexually abused by previous    1= YES
+                                                   partner                        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  215    2 2.0       SASKPS           F.1.c        Sexually abused by someone     1= YES
+                                                   known but never partner        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  217    2 2.0       SASTPS           F.1.d        Sexually abused by stranger    1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  219    2 2.0       STPDPS           F.2          Forced sex has stopped         1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  221    2 2.0       SMOMPS           OldF.3.a     Old: Sexual abuse by mother/   1= YES
+                                                   step/foster since last visit   2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  223    2 2.0       SSMOPS           OldF.3.a.i   Old: Sexual abuse by mother/   1= YES
+                                                   step/foster stopped            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  225    2 2.0       SDADPS           OldF.3.b     Old: Sexual abuse by father    1= YES
+                                                   since last visit               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  227    2 2.0       SSDAPS           OldF.3.b.i   Old: Sexual abuse by father    1= YES
+                                                   stopped                        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  229    2 2.0       SSFFPS           OldF.3.c     Old: Sexual abuse by step/     1= YES
+                                                   foster father since last visit 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  231    2 2.0       SSSFPS           OldF.3.c.i   Old: Sexual abuse by step/     1= YES
+                                                   foster father stopped          2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  233    2 2.0       SSBSPS           OldF.3.d     Old: Sexual abuse by sibling/  1= YES
+                                                   step/foster since last visit   2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  235    2 2.0       SSSBPS           OldF.3.d.i   Old: Sexual abuse by sibling/  1= YES
+                                                   step/foster stopped            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  237    2 2.0       SMBPPS           OldF.3.e     Old: Sexual abuse by mother's  1= YES
+                                                   partner since last visit       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  239    2 2.0       SSMBPS           OldF.3.e.i   Old: Sexual abuse by mother's  1= YES
+                                                   partner stopped                2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  241    2 2.0       SORLPS           OldF.3.f     Old: Sexual abuse by other     1= YES
+                                                   relative since last visit      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  243   20 $         SRSPPS           OldF.3.f     Old: Specify other relative    Character
+                                                   inflicting sexual abuse since
+                                                   last visit
+
+  263    2 2.0       SSORPS           OldF.3.f.i   Old: Sexual abuse by other     1= YES
+                                                   relative stopped               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  265    2 2.0       SPRTPS           OldF.3.g     Old: Sexual abuse by parner/   1= YES
+                                                   spouse since last visit        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  267    2 2.0       SSPRPS           OldF.3.g.i   Old: Sexual abuse by partner/  1= YES
+                                                   spouse stopped                 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  269    2 2.0       SFRDPS           OldF.3.h     Old: Sexual abuse by friend    1= YES
+                                                   since last visit               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  271    2 2.0       SSFRPS           OldF.3.h.i   Old: Sexual abuse by friend    1= YES
+                                                   stopped                        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  273    2 2.0       SACQPS           OldF.3.i     Old: Sexual abuse by           1= YES
+                                                   acquaintance since last visit  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  275    2 2.0       SSAQPS           OldF.3.i.i   Old: Sexual abuse by           1= YES
+                                                   acquaintance stopped           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  277    2 2.0       SSTRPS           OldF.3.j     Old: Sexual abuse by stranger  1= YES
+                                                   since last visit               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  279    2 2.0       SSSTPS           OldF.3.j.i   Old: Sexual abuse by stranger  1= YES
+                                                   stopped                        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  281    2 2.0       SOT1PS           OldF.3.k     Old: Sexual abuse by another   1= YES
+                                                   person (#1) since last visit   2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  283   20 $         S1SPPS           OldF.3.k     Old: Specify other person #1   Character
+                                                   inflicting sexual abuse
+
+  303    2 2.0       SSO1PS           OldF.3.k.i   Old: Sexual abuse by other     1= YES
+                                                   person #1 stopped              2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  305    2 2.0       SOT2PS           OldF.3.l     Old: Sexual abuse by another   1= YES
+                                                   person (#2) since last visit   2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  307   20 $         S2SPPS           OldF.3.l     Old: Specify other person #2   Character
+                                                   inflicting sexual abuse
+
+  327    2 2.0       SSO2PS           OldF.3.l.i   Old: Sexual abuse by other     1= YES
+                                                   person #2 stopped              2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  329    2 2.0       SOT3PS           OldF.3.m     Old: Sexual abuse by another   1= YES
+                                                   person (#3) since last visit   2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  331   20 $         S3SPPS           OldF.3.m     Old: Specify other person #3   Character
+                                                   inflicting sexual abuse
+
+  351    2 2.0       SSO3PS           OldF.3.m.i   Old: Sexual abuse by other     1= YES
+                                                   person #3 stopped              2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  353    2 2.0       FSHVPS           F.4          Forced to have sex with HIV+   1= YES
+                                                   person since last visit        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  355    2 2.0       VIOLPS           G.1          Experienced serious physical   1= YES
+                                                   violence since last visit      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  357    2 2.0       PVCPPS           G.1.a        Physical violence by current   1= YES
+                                                   partner                        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  359    2 2.0       PVPPPS           G.1.b        Physical violence by previous  1= YES
+                                                   partner                        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  361    2 2.0       PVSKPS           G.1.c        Physical violence by someone   1= YES
+                                                   known but never partner        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  363    2 2.0       PVSTPS           G.1.d        Physical violence by stranger  1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  365    2 2.0       STOPPS           G.2          Physical violence has stopped  1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  367    2 2.0       THRTPS           H.1          Partner threatened to hurt/    1= YES
+                                                   kill                           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  369    2 2.0       WTHTPS           OldG.1.a     Old: Most recent time partner  1= Within the past week
+                                                   threatened to hurt/kill        2= More than a week ago, but
+                                                                                     within the past month
+                                                                                  3= More than 1 month ago, but
+                                                                                     within the past 6 months
+                                                                                  4= More than 6 months ago
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  371    2 2.0       PVHSPS           H.2          Partner prevented participant  1= YES
+                                                   from leaving/entering house    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  373    2 2.0       WPVHPS           OldG.2.a     Old: Most recent time partner  1= Within the past week
+                                                   prevented participant from     2= More than a week ago, but
+                                                   entering/leaving house            within the past month
+                                                                                  3= More than 1 month ago, but
+                                                                                     within the past 6 months
+                                                                                  4= More than 6 months ago
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  375    2 2.0       PVFRPS           H.3          Partner prevented participant  1= YES
+                                                   from seeing friends            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  377    2 2.0       WPVFPS           OldG.3.a     Old: Most recent time partner  1= Within the past week
+                                                   kept participant from friends  2= More than a week ago, but
+                                                                                     within the past month
+                                                                                  3= More than 1 month ago, but
+                                                                                     within the past 6 months
+                                                                                  4= More than 6 months ago
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  379    2 2.0       PVCLPS           H.4          Partner prevented participant  1= YES
+                                                   from making phone calls        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  381    2 2.0       WPVCPS           OldG.4.a     Old: Most recent time partner  1= Within the past week
+                                                   prevented participant from     2= More than a week ago, but
+                                                   making phone calls                within the past month
+                                                                                  3= More than 1 month ago, but
+                                                                                     within the past 6 months
+                                                                                  4= More than 6 months ago
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  383    2 2.0       PVJBPS           H.5          Partner prevented participant  1= YES
+                                                   from getting/keeping job       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  385    2 2.0       WPVJPS           OldG.5.a     Old: Most recent time partner  1= Within the past week
+                                                   prevented participant from     2= More than a week ago, but
+                                                   getting/keeping job               within the past month
+                                                                                  3= More than 1 month ago, but
+                                                                                     within the past 6 months
+                                                                                  4= More than 6 months ago
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  387    2 2.0       PVEDPS           H.6          Partner prevented participant  1= YES
+                                                   from continuing education      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  389    2 2.0       WPVEPS           OldG.6.a     Old: Most recent time partner  1= Within the past week
+                                                   kept participant from          2= More than a week ago, but
+                                                   education                         within the past month
+                                                                                  3= More than 1 month ago, but
+                                                                                     within the past 6 months
+                                                                                  4= More than 6 months ago
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  391    2 2.0       PVMDPS           H.7          Partner prevented participant  1= YES
+                                                   from seeking medical attention 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  393    2 2.0       WPVMPS           OldG.7.a     Old: Most recent time partner  1= Within the past week
+                                                   prevented participant from     2= More than a week ago, but
+                                                   seeking medical attention         within the past month
+                                                                                  3= More than 1 month ago, but
+                                                                                     within the past 6 months
+                                                                                  4= More than 6 months ago
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  395    2 2.0       THCNPS           H.8          Partner threatened when        1= YES
+                                                   participant talked about       2= NO
+                                                   condom                         -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  397    2 2.0       DSTPPS           H.9          Domestic violence has stopped  1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  399    2 2.0       TCONPS           OldG.8       Old: Talked with partner       1= YES
+                                                   about condom/barrier method    2= NO
+                                                   since last visit               -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  401    2 2.0       AFCNPS           OldG.10      Old: Participant afraid that   1= YES
+                                                   partner would threaten/hurt    2= NO
+                                                   if asked to use condom         -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  403    2 2.0       INRLPS           H.11         Currently in relationship      1= YES
+                                                   with someone considered a      2= NO
+                                                   partner                        -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  405    2 2.0       AFPTPS           H.12         Feel afraid of partner         1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  407    2 2.0       TKILPS           H.13         Participant feels that         1= YES
+                                                   partner might try to kill her  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  409    2 2.0       AFHMPS           H.14         Afraid to go home              1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  411    2 2.0       VQPRPS           OldH.2       Old: Participant will proceed  1= YES, PARTICIPANT WILL
+                                                   with physical violence            PROCEED
+                                                   questions                      2= NO, PARTICIPANT DECLINED
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  413    2 2.0       VMOMPS           OldH.3.a     Old: Physical violence by      1= YES
+                                                   mother/step/foster since last  2= NO
+                                                   visit                          -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  415    2 2.0       SVMOPS           OldH.3.a.i   Old: Physical violence by      1= YES
+                                                   mother stopped                 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  417    2 2.0       VDADPS           OldH.3.b     Old: Physical violence by      1= YES
+                                                   father since last visit        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  419    2 2.0       SVDAPS           OldH.3.b.i   Old: Physical violence by      1= YES
+                                                   father stopped                 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  421    2 2.0       VSFFPS           OldH.3.c     Old: Physical violence by      1= YES
+                                                   step/foster father since last  2= NO
+                                                   visit                          -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  423    2 2.0       SVSFPS           OldH.3.c.i   Old: Physical violence by      1= YES
+                                                   step/foster father stopped     2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  425    2 2.0       VSBSPS           OldH.3.d     Old: Physical violence by      1= YES
+                                                   sibling/step/foster since      2= NO
+                                                   last visit                     -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  427    2 2.0       SVSBPS           OldH.3.d.i   Old: Physical violence by      1= YES
+                                                   sibling/step/foster stopped    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  429    2 2.0       VMBPPS           OldH.3.e     Old: Physical violence by      1= YES
+                                                   mother's partner since last    2= NO
+                                                   visit                          -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  431    2 2.0       SVMBPS           OldH.3.e.i   Old: Physical violence by      1= YES
+                                                   mother's partner stopped       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  433    2 2.0       VORLPS           OldH.3.f     Old: Physical violence by      1= YES
+                                                   other relative since last      2= NO
+                                                   visit                          -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  435   20 $         VRSPPS           OldH.3.f     Old: Specify other relative    Character
+                                                   inflicting physical violence
+
+  455    2 2.0       SVORPS           OldH.3.f.i   Old: Physical violence by      1= YES
+                                                   other relative stopped         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  457    2 2.0       VPRTPS           OldH.3.g     Old: Physical violence by      1= YES
+                                                   partner/spouse since last      2= NO
+                                                   visit                          -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  459    2 2.0       SVPRPS           OldH.3.g.i   Old: Physical violence by      1= YES
+                                                   partner/spouse stopped         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  461    2 2.0       VFRDPS           OldH.3.h     Old: Physical violence by      1= YES
+                                                   friend since last visit        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  463    2 2.0       SVFRPS           OldH.3.h.i   Old: Physical violence by      1= YES
+                                                   friend stopped                 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  465    2 2.0       VACQPS           OldH.3.i     Old: Physical violence by      1= YES
+                                                   acquaintance since last visit  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  467    2 2.0       SVAQPS           OldH.3.I.I   Old: Physical violence by      1= YES
+                                                   acquaintance stopped           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  469    2 2.0       VSTRPS           OldH.3.j     Old: Physical violence by      1= YES
+                                                   stranger since last visit      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  471    2 2.0       SVSTPS           OldH.3.j.i   Old: Physical violence by      1= YES
+                                                   stranger stopped               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  473    2 2.0       VOT1PS           OldH.3.k     Old: Physical violence by      1= YES
+                                                   another person (#1) since      2= NO
+                                                   last visit                     -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  475   20 $         V1SPPS           OldH.3.k     Old: Specify other person #1   Character
+                                                   inflicting physical violence
+
+  495    2 2.0       SVO1PS           OldH.3.k.i   Old: Physical violence by      1= YES
+                                                   other person #1 stopped        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  497    2 2.0       VOT2PS           OldH.3.l     Old: Physical violence by      1= YES
+                                                   another person (#2) since      2= NO
+                                                   last visit                     -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  499   20 $         V2SPPS           OldH.3.l     Old: Specify other person #2   Character
+                                                   inflicting physical violence
+
+  519    2 2.0       SVO2PS           OldH.3.l.I   Old: Physical violence by      1= YES
+                                                   other person #2 stopped        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  521    2 2.0       VOT3PS           OldH.3.m     Old: Physical violence by      1= YES
+                                                   another person (#3) since      2= NO
+                                                   last visit                     -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  523   20 $         V3SPPS           OldH.3.m     Old: Specify other person #3   Character
+                                                   inflicting physical violence
+
+  543    2 2.0       SVO3PS           OldH.3.m.i   Old: Physical violence by      1= YES
+                                                   other person #3 stopped        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  545    5 time5.    ETIMPS           H.15         Time ended                     01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  550    2 2.0       EMERPS           H.15         AM/PM for time ended           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  552    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  553    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

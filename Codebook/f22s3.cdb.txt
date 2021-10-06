@@ -1,0 +1,107 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+F22 - Medical and Health History (Repeating Segment) S3
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    2 2.0       VTYP             A.2.a        Core or 3-month VRS visit      1= CORE VISIT
+                                                                                  2= 3 MONTH VRS VISIT
+
+   13    2 2.0       VTYP             A.2.a        Core or 3-month VRS visit      1= CORE VISIT
+                                                                                  2= 3 MONTH VRS VISIT
+
+   15    3 3.0       DRG1MH           F.2.A        Antiviral drug code            055= Isoprinosine
+                                                                                  056= HPA-23 (Ammonium-21-
+                                                                                       tungsto-9-anti-moniate)
+                                                                                  057= Suramin
+                                                                                  058= Virazole (Ribavirin)
+                                                                                  090= Alpha Interferon
+                                                                                  092= AZT (Retrovir,
+                                                                                       zidovudine, ZDV)
+                                                                                  094= ddC (dideoxycytidine,
+                                                                                       Zalcitabine, Hivid)
+                                                                                  098= AL-721 (by Praxis) (egg
+                                                                                       lecithin)
+                                                                                  101= Ampligen
+                                                                                  108= Peptide T
+                                                                                  110= Dextran-Sulfate
+                                                                                  122= Beta Interferon
+                                                                                  128= CD4
+                                                                                  146= Acyclovir (Zovirax)
+                                                                                  147= ddI (dideoxyinosine,
+                                                                                       Didanosine, Videx)
+                                                                                  159= d4T (stavudine, Zerit)
+                                                                                  163= Dideoxyandenosine (ddA)
+                                                                                  179= Vidarabine (adenosine
+                                                                                       arabinoside)
+                                                                                  191= Nevirapine (Viramune)
+                                                                                  192= TAT inhibitors
+                                                                                  193= Other protease inhibitors
+                                                                                  194= Delavirdine (Rescriptor,
+                                                                                       U-90)
+                                                                                  204= 3-TC (lamivudine, Epivir)
+                                                                                  207= Hydroxyurea (Hydrea)
+                                                                                  210= Saquinavir (Invirase,
+                                                                                       Fortovase)
+                                                                                  211= Ritonavir (Norvir)
+                                                                                  212= Indinavir (Crixivan)
+                                                                                  215= Delavirdine (Rescriptor,
+                                                                                       U-90)
+                                                                                  216= Nelfinavir (Viracept)
+                                                                                  217= ABT-378 (Abbott's
+                                                                                       protease inhibitor)
+                                                                                  218= Abacavir (Ziagen,
+                                                                                       1592U89)
+                                                                                  219= Amprenavir (Agenerase,
+                                                                                       141W94)
+                                                                                  220= Efavirenz (Sustiva,
+                                                                                       DMP266)
+                                                                                  221= MKC442 (Merck protease
+                                                                                       inhibitor)
+                                                                                  222= Lobucavir
+                                                                                  223= Loviride
+                                                                                  224= Adefovir (Preveon, bis-
+                                                                                       POM PMPA, GS 840)
+                                                                                  227= Combivir (AZT + 3TC)
+                                                                                  231= Vistide (Cidofovir)
+                                                                                  233= T-20 (pentafuside)
+                                                                                  234= Viread (tenofovir, bis-
+                                                                                       POC-PMPA)
+                                                                                  238= Tipranavir (PNU-140690)
+                                                                                  239= Emtricitabine
+                                                                                       (Corviracil, FTC)
+                                                                                  240= Trizivir (abacavir + AZT
+                                                                                       + 3TC)
+                                                                                  243= Atazanavir (BMS-232632)
+                                                                                  244= DPC 083
+                                                                                  998= Other anti-viral (from
+                                                                                       Drug List 1)
+                                                                                  999= Unknown antiviral
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   18   30 $         SDR1MH           F.2.A        Specify other antiviral drug   Character
+
+   48    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   49    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

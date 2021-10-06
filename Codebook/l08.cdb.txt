@@ -1,0 +1,74 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+L08 - Mantoux Skin Test Result (5TU-PPD-Tuberculin)
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    6 $         FKEY             OldA.0       OLD: form identifier number    Character
+
+   17    3 $         INITLI           A.0          Initials of person completing  Character
+                                                   form
+
+   20    8 $         VERSLI           A.0          Form version                   01/01/94= 01/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   28    2 2.0       DONELI           A.1          5TU-PPD-Tuberculin done        1= DONE
+                                                                                  2= NOT DONE
+                                                                                  3= PARTICIPANT REFUSED
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   30   25 $         RNNALI           A.1.a        Specify reason 5TU-PPD-        Character
+                                                   Tuberculin not done
+
+   55    8 $         PDTELI           A.2          Date 5TU-PPD-Tuberculin placed 10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63    8 $         RDTELI           A.3          Date 5TU-PPD-Tuberculin        10/01/94= 10/01/94
+                                                   reading                        .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   71    3 3.0       TUBELI           A.4          5TU-PPD-Tuberculin level of    0= 0
+                                                   induration                     .
+                                                                                  .
+                                                                                  999= 999
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   74    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   75    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

@@ -1,0 +1,263 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+F08 - Gynecological Exam (Repeating Segment) S1
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    2 2.0       SEQID            OldA.20      Old: Location #                1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   13    2 2.0       ABLOGY           OldA.20.a    Old: Lesion location code      01= Labium majus (left)
+                                                                                  02= Labium majus (right)
+                                                                                  03= Labium minus (left)
+                                                                                  04= Labium minus (right)
+                                                                                  05= Introitus (left)
+                                                                                  06= Introitus (right)
+                                                                                  07= Perineum (left)
+                                                                                  08= Perineum (right)
+                                                                                  09= Inguinal (left)
+                                                                                  10= Inguinal (right)
+                                                                                  11= Thigh (left)
+                                                                                  12= Thigh (right)
+                                                                                  13= Clitoris
+                                                                                  14= Urethra
+                                                                                  15= Pubis
+                                                                                  16= Vagina (right internal)
+                                                                                  17= Vagina (left internal)
+                                                                                  18= Cervial Os
+                                                                                  19= Inner upper left quad
+                                                                                  20= Inner lower left quad
+                                                                                  21= Inner upper right quad
+                                                                                  22= Inner lower right quad
+                                                                                  23= Outer upper left quad
+                                                                                  24= Outer lower left quad
+                                                                                  25= Outer upper right quad
+                                                                                  26= Outer lower right quad
+                                                                                  27= Anus upper left
+                                                                                  28= Anus lower left
+                                                                                  29= Anus upper right
+                                                                                  30= Anus lower right
+                                                                                  31= 3 or more locations
+                                                                                  32= Buttocks (right)
+                                                                                  33= Buttocks (left)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   15   25 $         ABLSGY           OldA.20.b    Old: Specify 3 or more         Character
+                                                   location codes (code 31)
+
+   40    2 2.0       ABW_GY           OldA.21.i    Old: Lesion type: wart         1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   42    2 2.0       ABWNGY           OldA.21.a    Old: Number of warts at        1= 1
+                                                   location                       .
+                                                                                  .
+                                                                                  20= 20
+                                                                                  99= TOO MANY TO COUNT
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   44    2 2.0       ABWWGY           OldA.21.b    Old: Width of largest wart at  0= 0
+                                                   location                       .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   46    2 2.0       ABWLGY           OldA.21.b    Old: Length of largest wart    0= 0
+                                                   at location                    .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   48    2 2.0       ABU_GY           OldA.22.ii   Old: Lesion type: ulcer        1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   50    2 2.0       ABUNGY           OldA.22.a    Old: Number of ulcers at       1= 1
+                                                   location                       .
+                                                                                  .
+                                                                                  20= 20
+                                                                                  99= TOO MANY TO COUNT
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   52    2 2.0       ABUWGY           OldA.22.b    Old: Width of largest ulcer    0= 0
+                                                   at location                    .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   54    2 2.0       ABULGY           OldA.22.b    Old: Length of largest ulcer   0= 0
+                                                   at location                    .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   56    2 2.0       ABUDGY           OldA.22.c    Old: Depth of largest ulcer    1= superficial (1-2 mm)
+                                                   at location                    2= moderate\n (3-4 mm)
+                                                                                  3= deep (5 mm and over)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   58    2 2.0       ABR_GY           OldA.23.iii  Old: Lesion type: rash         1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   60    2 2.0       ABRNGY           OldA.23.a    Old: Number of rashes at       1= 1
+                                                   location                       .
+                                                                                  .
+                                                                                  20= 20
+                                                                                  99= TOO MANY TO COUNT
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   62    3 3.0       ABRWGY           OldA.23.b    Old: Width of largest rash at  1= 1
+                                                   location                       .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   65    3 3.0       ABRLGY           OldA.23.b    Old: Length of largest rash    1= 1
+                                                   at location                    .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   68    2 2.0       ABM_GY           OldA.24.iv   Old: Lesion type: mass         1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   70    2 2.0       ABMNGY           OldA.24.a    Old: Number of masses at       1= 1
+                                                   location                       .
+                                                                                  .
+                                                                                  20= 20
+                                                                                  99= TOO MANY TO COUNT
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   72    2 2.0       ABMWGY           OldA.24.b    Old: Width of largest mass at  1= 1
+                                                   location                       .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   74    2 2.0       ABMLGY           OldA.24.b    OldLength of largest mass at   1= 1
+                                                   location                       .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   76    2 2.0       ABO_GY           OldA.25.v    Old: Lesion type: other        1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   78   25 $         ABOSGY           OldA.25      Old: Specify type of other     Character
+                                                   lesions at location
+
+  103    2 2.0       ABONGY           OldA.25.a    Old: Number of other lesions   1= 1
+                                                   at location                    .
+                                                                                  .
+                                                                                  20= 20
+                                                                                  99= TOO MANY TO COUNT
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  105    3 3.0       ABOWGY           OldA.25.b    Old: Width of other lesions    1= 1
+                                                   at location                    .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  108    2 2.0       ABOLGY           OldA.25.b    OldLength of other lesions at  1= 1
+                                                   location                       .
+                                                                                  .
+                                                                                  20= 20
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  110    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  111    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

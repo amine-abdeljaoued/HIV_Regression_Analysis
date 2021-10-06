@@ -1,0 +1,892 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+PBM - Performance-Based Measurements
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        17= 17
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    8 $         VERSPB           A.0          Form version                   10/01/02= 10/01/02
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   19    3 $         INITPB           A.0          Initials of examiner           Character
+
+   22    8 $         MDTEPB           A.0          Date of measurements           10/01/02= 10/01/02
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   30    5 time5.    STIMPB           A.0          Time began                     1:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   35    2 2.0       SMERPB           A.0          AM/PM for time began           1= AM
+                                                                                  2= PM
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   37    2 2.0       SSSAPB           A.1          Participant attempted side-by- 1= YES
+                                                   side stand                     2= YES, BUT UNABLE TO HOLD
+                                                                                     >=1 SECOND
+                                                                                  3= NO; PARTICIPANT REFUSED
+                                                                                  4= NOT ATTEMPTED, UNABLE
+                                                                                  5= OTHER
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   39   35 $         SRSSPB           A.1          Specify other reason side-by-  Character
+                                                   side stand not attempted
+
+   74    5 5.2       SSTMPB           A.2          Time in seconds participant    1.00= 1.00
+                                                   held side-by-side stand        .
+                                                                                  .
+                                                                                  10.00= 10.00
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   79    2 2.0       SS10PB           A.3          Participant held side-by-side  1= YES
+                                                   stand for 10 seconds           2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   81    2 2.0       STSAPB           A.4          Participant attempted semi-    1= YES
+                                                   tandem position                2= YES, BUT UNABLE TO HOLD
+                                                                                     >=1 SECOND
+                                                                                  3= NO; PARTICIPANT REFUSED
+                                                                                  4= NOT ATTEMPTED, UNABLE
+                                                                                  5= OTHER
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   83   35 $         SRSTPB           A.4          Specify other reason semi-     Character
+                                                   tandem position not attempted
+
+  118    5 5.2       STTMPB           A.5          Time in seconds participant    1.00= 1.00
+                                                   held semi-tandem position      .
+                                                                                  .
+                                                                                  30.00= 30.00
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  123    2 2.0       ST30PB           A.6          Participant held semi-tandem   1= YES
+                                                   position for 30 seconds        2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  125    2 2.0       TNDSPB           A.7          Participant attempted tandem   1= YES
+                                                   position                       2= YES, BUT UNABLE TO HOLD
+                                                                                     >=1 SECOND
+                                                                                  3= NO; PARTICIPANT REFUSED
+                                                                                  4= NOT ATTEMPTED, UNABLE
+                                                                                  5= OTHER
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  127   35 $         SRTNPB           A.7          Specify other reason tandem    Character
+                                                   position not attempted
+
+  162    5 5.2       TNTMPB           A.8          Time in seconds participant    1.00= 1.00
+                                                   held tandem position           .
+                                                                                  .
+                                                                                  30.00= 30.00
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  167    2 2.0       TN30PB           A.9          Participant held tandem        1= YES
+                                                   position for 30 seconds        2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  169    2 2.0       SLSAPB           A.10         Participant attempted single-  1= YES
+                                                   leg stand                      2= YES, BUT UNABLE TO HOLD
+                                                                                     >=1 SECOND
+                                                                                  3= NO; PARTICIPANT REFUSED
+                                                                                  4= NOT ATTEMPTED, UNABLE
+                                                                                  5= OTHER
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  171   35 $         SRSLPB           A.10         Specify other reason single-   Character
+                                                   leg stand not attempted
+
+  206    5 5.2       SLTMPB           A.11         Time in seconds participant    1.00= 1.00
+                                                   held single-leg position       .
+                                                                                  .
+                                                                                  30.00= 30.00
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  211    2 2.0       FRTAPB           B.1          Participant attempted          1= YES
+                                                   functional reach test          2= NO; PARTICIPANT REFUSED
+                                                                                  3= NOT ATTEMPTED, UNABLE
+                                                                                  4= OTHER
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  213   35 $         SRFRPB           B.1          Specify other reason           Character
+                                                   functional reach test not
+                                                   attempted
+
+  248    6 6.2       FR1SPB           B.2          Functional reach test first    0.00= 0.00
+                                                   trial - starting point         .
+                                                                                  .
+                                                                                  100.00= 100.00
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  254    6 6.2       FR1EPB           B.2          Functional reach test first    0.00= 0.00
+                                                   trial - ending point           .
+                                                                                  .
+                                                                                  100.00= 100.00
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  260    2 2.0       FRSTPB           B.3          Participant attempted          1= YES
+                                                   functional reach test second   2= NO
+                                                   trial                          -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  262    6 6.2       FR2SPB           B.4          Functional reach test second   0.00= 0.00
+                                                   trial - starting point         .
+                                                                                  .
+                                                                                  100.00= 100.00
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  268    6 6.2       FR2EPB           B.4          Functional reach test second   0.00= 0.00
+                                                   trial - ending point           .
+                                                                                  .
+                                                                                  100.00= 100.00
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  274    2 2.0       FRTTPB           B.5          Participant attempted          1= YES
+                                                   functional reach test third    2= NO
+                                                   trial                          -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  276    6 6.2       FR3SPB           B.6          Functional reach test third    0.00= 0.00
+                                                   trial - starting point         .
+                                                                                  .
+                                                                                  100.00= 100.00
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  282    6 6.2       FR3EPB           B.6          Functional reach test third    0.00= 0.00
+                                                   trial - ending point           .
+                                                                                  .
+                                                                                  100.00= 100.00
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  288    2 2.0       RCSAPB           C.1          Participant attempted          1= YES
+                                                   repeated chair stands test     2= YES, BUT UNABLE TO
+                                                                                     COMPLETE 5 STANDS WITHOUT
+                                                                                     USING ARMS
+                                                                                  3= YES, COMPLETED 5, BUT
+                                                                                     UNABLE TO COMPLETE 10
+                                                                                     STANDS WITHOUT USING ARMS
+                                                                                  4= NO; PARTICIPANT REFUSED
+                                                                                  5= NOT ATTEMPTED, UNABLE
+                                                                                  6= OTHER
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  290   35 $         SRRCPB           C.1          Specify other reason repeated  Character
+                                                   chair stands test not
+                                                   attempted
+
+  325    6 6.2       RC5_PB           C.2          Repeated chair stands - time   0.00= 0.00
+                                                   to complete 5                  .
+                                                                                  .
+                                                                                  100.00= 100.00
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  331    6 6.2       RC10PB           C.3          Repeated chair stands - time   0.00= 0.00
+                                                   to complete 10                 .
+                                                                                  .
+                                                                                  100.00= 100.00
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  337    2 2.0       RCM4PB           C.4          Repeated chair stands unable   0= 0
+                                                   5 - completed maximum 4        .
+                                                                                  .
+                                                                                  4= 4
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  339    2 2.0       RCM9PB           C.5          Repeated chair stands unable   5= 5
+                                                   10 - completed maximum 9       .
+                                                                                  .
+                                                                                  9= 9
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  341    2 2.0       WRSTPB           D.1          Recent worsening pain in       1= YES
+                                                   wrist of dominant hand         2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  343    2 2.0       SQEZPB           D.2          Participant can safely         1= YES
+                                                   squeeze hard with dominant     2= NO
+                                                   hand                           -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  345    2 2.0       SURGPB           D.3          Hand/arm surgery during past   1= YES
+                                                   13 weeks                       2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  347    2 2.0       ATGRPB           D.4          Participant attempted grip     1= YES
+                                                   strength assessment            2= NO; PHYSICAL IMPAIRMENT
+                                                                                  3= NO; COGNITIVE IMPAIRMENT
+                                                                                  5= NO; PARTICIPANT REFUSED
+                                                                                  6= NOT ATTEMPTED, UNABLE
+                                                                                  4= NO; OTHER REASON
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  349   35 $         SRGRPB           D.4          Specify other reason grip      Character
+                                                   strength assessment not
+                                                   attempted
+
+  384    2 2.0       LFLAPB           OldB.2.a     Old: Participant can lift      1= YES
+                                                   arms to table - left           2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  386    2 2.0       LFRAPB           OldB.2.b     Old: Participant can lift      1= YES
+                                                   arms to table - right          2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  388    2 2.0       GRIPPB           B.5          Old: Grip strength test was    1= YES
+                                                   done                           2= ATTEMPTED, BUT UNABLE
+                                                                                     PHYSICALLY
+                                                                                  3= NO; COGNITIVE IMPAIRMENT
+                                                                                  4= NO; OTHER REASON
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  390   35 $         SGRTPB           B.5          Old: Specify other reason      Character
+                                                   grip strength test not done
+
+  425    2 2.0       GHNDPB           D.5          Hand tested                    1= LEFT
+                                                                                  2= RIGHT
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  427    4 4.1       TRY1PB           D.6          Grip strength - first attempt  1.0= 1.0
+                                                                                  .
+                                                                                  .
+                                                                                  50.0= 50.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  431    4 4.1       TRY2PB           D.7          Grip strength - second attempt 1.0= 1.0
+                                                                                  .
+                                                                                  .
+                                                                                  50.0= 50.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  435    4 4.1       TRY3PB           D.8          Grip strength - third attempt  1.0= 1.0
+                                                                                  .
+                                                                                  .
+                                                                                  50.0= 50.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  439    2 2.0       ATWKPB           E.1          Participant attempted 4-meter  1= YES
+                                                   walk                           2= NO; PHYSICAL IMPAIRMENT
+                                                                                  3= NO; COGNITIVE IMPAIRMENT
+                                                                                  5= NO; PARTICIPANT REFUSED
+                                                                                  6= NOT ATTEMPTED, UNABLE
+                                                                                  4= OTHER
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  441   35 $         SRWKPB           E.1          Specify other reason 4-meter   Character
+                                                   walk not attempted
+
+  476    5 5.2       WKFTPB           E.2          Time in seconds to complete 4- 2.00= 2.00
+                                                   meter walk - 1st trial         .
+                                                                                  .
+                                                                                  75.00= 75.00
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  481    5 5.2       WKSTPB           E.3          Time in seconds to complete 4- 2.00= 2.00
+                                                   meter walk - 2nd trial         .
+                                                                                  .
+                                                                                  75.00= 75.00
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  486    2 2.0       ADEVPB           OldA.2       Old: Participant uses          1= YES
+                                                   assistive device for walking   2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  488    2 2.0       TYPDPB           OldA.2.a     Old: Type of assistive device  1= STANDARD CANE
+                                                   for walking                    2= QUAD CANE
+                                                                                  3= WALKER
+                                                                                  4= WHEELCHAIR
+                                                                                  5= WHITE CANE
+                                                                                  6= CRUTCHES (1 OR 2)
+                                                                                  7= OTHER
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  490   35 $         SPDVPB           OldA.2.a     Old: Specify other type of     Character
+                                                   assistive device for walking
+
+  525    2 2.0       ORTHPB           OldA.3       Old: Participant uses lower    1= YES
+                                                   extremity orthosis             2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  527    2 2.0       LIMBPB           OldA.4       Old: Participant is missing    1= YES
+                                                   limb(s)                        2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  529    2 2.0       LARMPB           OldA.4.a     Old: Missing limb - left arm   1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  531    2 2.0       RARMPB           OldA.4.b     Old: Missing limb - right arm  1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  533    2 2.0       LLEGPB           OldA.4.c     Old: Missing limb - left leg   1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  535    2 2.0       RLEGPB           OldA.4.d     Old: Missing limb - right leg  1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  537    2 2.0       PROSPB           OldA.5       Old: Participant uses          1= YES
+                                                   prosthesis                     2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  539    2 2.0       PLARPB           OldA.5.a     Old: Prosthesis - left arm     1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  541    2 2.0       PRARPB           OldA.5.b     Old: Prosthesis - right arm    1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  543    2 2.0       PLLGPB           OldA.5.c     Old: Prosthesis - left leg     1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  545    2 2.0       PRLGPB           OldA.5.d     Old: Prosthesis - right leg    1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  547    2 2.0       PARAPB           OldA.6       Old: Participant has paralysis 1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  549    2 2.0       PLEFPB           OldA.6.a     Old: Paralysis - left side     1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  551    2 2.0       PRGTPB           OldA.6.b     Old: Paralysis - right side    1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  553    2 2.0       WAK1PB           OldA.7       Old: Participant completed     1= YES
+                                                   measured walk - 1st attempt    2= ATTEMPTED, BUT UNABLE
+                                                                                     PHYSICALLY
+                                                                                  3= NO; COGNITIVE IMPAIRMENT
+                                                                                  4= NO; OTHER REASON
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  555   35 $         SPW1PB           OldA.7       Old: Specify other reason      Character
+                                                   measured walk not completed -
+                                                   1st attempt
+
+  590    2 2.0       DVW1PB           OldA.7.a     Old: Participant used          1= YES
+                                                   assistive device on walk -     2= NO
+                                                   1st attempt                    -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  592    2 2.0       LCW1PB           OldA.8       Old: Length of course - 1st    1= 3 METERS
+                                                   attempt                        2= 4 METERS
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  594    5 5.2       SCNDPB           OldA.9       Old: Time in seconds to        2.00= 2.00
+                                                   complete walk - 1st attempt    .
+                                                                                  .
+                                                                                  75.00= 75.00
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  599    2 2.0       STPSPB           OldA.10      Old: Steps taken to walk       3= 3
+                                                   course - 1st attempt           .
+                                                                                  .
+                                                                                  45= 45
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  601    2 2.0       WAK2PB           OldA.11      Old: Participant completed     1= YES
+                                                   measured walk - 2nd attempt    2= ATTEMPTED, BUT UNABLE
+                                                                                     PHYSICALLY
+                                                                                  3= NO; COGNITIVE IMPAIRMENT
+                                                                                  4= NO; OTHER REASON
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  603   35 $         SPW2PB           OldA.11      Old: Specify other reason      Character
+                                                   measured walk not completed -
+                                                   2nd attempt
+
+  638    2 2.0       DVW2PB           OldA.11.a    Old: Participant used          1= YES
+                                                   assistive device on walk -     2= NO
+                                                   2nd attempt                    -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  640    2 2.0       LCW2PB           OldA.12      Old: Length of course - 2nd    1= 3 METERS
+                                                   attempt                        2= 4 METERS
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  642    5 5.2       TISCPB           OldA.13      Old: Time in seconds to        2.00= 2.00
+                                                   complete walk - 2nd attempt    .
+                                                                                  .
+                                                                                  75.00= 75.00
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  647    2 2.0       NSTPPB           OldA.14      Old: Steps taken to walk       3= 3
+                                                   course - 2nd attempt           .
+                                                                                  .
+                                                                                  45= 45
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  649    2 2.0       QMWAPB           F.1          Participant attempted 400-     1= YES
+                                                   meter/quarter mile walk        2= NO; EXCLUSIONARY MED/SURG
+                                                                                     CONDITION
+                                                                                  3= NO; PARTICIPANT REFUSED
+                                                                                  4= NOT ATTEMPTED, UNABLE
+                                                                                  5= OTHER
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  651   35 $         SRQMPB           F.1          Specify other reason 400-      Character
+                                                   meter/quarter mile walk not
+                                                   attempted
+
+  686    4 4.1       QM1_PB           F.2          400-meter/quarter mile walk -  2.0= 2.0
+                                                   Lap 1 seconds                  .
+                                                                                  .
+                                                                                  99.0= 99.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  690    4 4.1       QM2_PB           F.3          400-meter/quarter mile walk -  2.0= 2.0
+                                                   Lap 2 seconds                  .
+                                                                                  .
+                                                                                  99.0= 99.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  694    4 4.1       QM3_PB           F.4          400-meter/quarter mile walk -  2.0= 2.0
+                                                   Lap 3 seconds                  .
+                                                                                  .
+                                                                                  99.0= 99.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  698    4 4.1       QM4_PB           F.5          400-meter/quarter mile walk -  2.0= 2.0
+                                                   Lap 4 seconds                  .
+                                                                                  .
+                                                                                  99.0= 99.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  702    4 4.1       QM5_PB           F.6          400-meter/quarter mile walk -  2.0= 2.0
+                                                   Lap 5 seconds                  .
+                                                                                  .
+                                                                                  99.0= 99.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  706    4 4.1       QM6_PB           F.7          400-meter/quarter mile walk -  2.0= 2.0
+                                                   Lap 6 seconds                  .
+                                                                                  .
+                                                                                  99.0= 99.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  710    4 4.1       QM7_PB           F.8          400-meter/quarter mile walk -  2.0= 2.0
+                                                   Lap 7 seconds                  .
+                                                                                  .
+                                                                                  99.0= 99.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  714    5 5.1       QM8_PB           F.9          400-meter/quarter mile walk -  2.0= 2.0
+                                                   Lap 8 seconds                  .
+                                                                                  .
+                                                                                  99.0= 99.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  719    4 4.1       QM9_PB           F.10         400-meter/quarter mile walk -  2.0= 2.0
+                                                   Lap 9 seconds                  .
+                                                                                  .
+                                                                                  99.0= 99.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  723    4 4.1       QM10PB           F.11         400-meter/quarter mile walk -  2.0= 2.0
+                                                   Lap 10 seconds                 .
+                                                                                  .
+                                                                                  99.0= 99.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  727    4 4.1       QM11PB           F.12         400-meter/quarter mile walk -  2.0= 2.0
+                                                   Lap 11 seconds                 .
+                                                                                  .
+                                                                                  99.0= 99.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  731    4 4.1       QM12PB           F.13         400-meter/quarter mile walk -  2.0= 2.0
+                                                   Lap 12 seconds                 .
+                                                                                  .
+                                                                                  99.0= 99.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  735    4 4.1       QM13PB           F.14         400-meter/quarter mile walk -  2.0= 2.0
+                                                   Lap 13 seconds                 .
+                                                                                  .
+                                                                                  99.0= 99.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  739    4 4.1       QM14PB           F.15         400-meter/quarter mile walk -  2.0= 2.0
+                                                   Lap 14 seconds                 .
+                                                                                  .
+                                                                                  99.0= 99.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  743    4 4.1       QM15PB           F.16         400-meter/quarter mile walk -  2.0= 2.0
+                                                   Lap 15 seconds                 .
+                                                                                  .
+                                                                                  99.0= 99.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  747    4 4.1       QM16PB           F.17         400-meter/quarter mile walk -  2.0= 2.0
+                                                   Lap 16 seconds                 .
+                                                                                  .
+                                                                                  99.0= 99.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  751    4 4.1       QM17PB           F.18         400-meter/quarter mile walk -  2.0= 2.0
+                                                   Lap 17 seconds                 .
+                                                                                  .
+                                                                                  99.0= 99.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  755    4 4.1       QM18PB           F.19         400-meter/quarter mile walk -  2.0= 2.0
+                                                   Lap 18 seconds                 .
+                                                                                  .
+                                                                                  99.0= 99.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  759    4 4.1       QM19PB           F.20         400-meter/quarter mile walk -  2.0= 2.0
+                                                   Lap 19 seconds                 .
+                                                                                  .
+                                                                                  99.0= 99.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  763    4 4.1       QM20PB           F.21         400-meter/quarter mile walk -  2.0= 2.0
+                                                   Lap 20 seconds                 .
+                                                                                  .
+                                                                                  99.0= 99.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  767    2 2.0       QMCPPB           F.22         Participant completed 400-     1= YES
+                                                   meter/quarter mile walk        2= NO; PARTICIPANT STOPPED
+                                                                                     BECAUSE OF FATIGUE
+                                                                                  3= NO; PARTICIPANT STOPPED
+                                                                                     BECAUSE OF THE BELOW
+                                                                                     SYMPTOMS
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  769   35 $         QMSXPB           F.22.a       Specify symptoms stopping 400- Character
+                                                   meter/quarter mile walk
+
+  804    2 2.0       QMMNPB           F.23         Time in minutes to complete    1= 1
+                                                   400-meter walk                 .
+                                                                                  .
+                                                                                  30= 30
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  806    4 4.1       QMSCPB           F.23         Time in seconds to complete    0.0= 0.0
+                                                   400-meter walk                 .
+                                                                                  .
+                                                                                  59.0= 59.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  810    5 time5.    ETIMPB           G.1          Time ended                     1:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  815    2 2.0       EMERPB           G.1          AM/PM for time ended           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  817    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  818    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

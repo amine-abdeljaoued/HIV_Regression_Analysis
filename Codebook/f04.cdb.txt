@@ -1,0 +1,1185 @@
+                               CODEBOOK
+Women's Interagency HIV Study                              9-6-2017
+Form 04: Baseline Alcohol, Drug Use and Sexual Behavior
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit number                   1= visit 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= visit 99
+
+   11    6 $         FKEY             A.0          Form identifier number         Character
+
+   17    8 $         VERSBH           A.3          Form version                   01/01/93= January 1, 1993
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   25    8 $         IDTEBH           A.4          Date of interview              10/01/94= October 1, 1994
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   33    3 $         INITBH           A.5          Initials of person completing  Character
+                                                   form
+
+   36    5 time5.    BTIMBH           A.7          Time module began              01:00= 1:00 o'clock
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59 o'clock
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   41    2 2.0       BMERBH           A.7          AM/PM indicator for time began 1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   43    2 2.0       LFSMBH           B.1          Smoked at least 100            1= Yes
+                                                   cigarettes/life                2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   45    2 2.0       CSMKBH           B.2          Currently smoke                1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   47    5 $         QDTEBH           B.3          Month/year quit smoking        01/40= January, 1940
+                                                                                  .
+                                                                                  .
+                                                                                  12/99= December, 1999
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   52    3 3.0       BCIGBH           B.4          Average number cigs/day        0= 0 cigarettes per day
+                                                   before quit                    .
+                                                                                  .
+                                                                                  100= 100 cigarettes per day
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   55    3 3.0       ECIGBH           B.5          Current number of cigarettes/  0= 0 cigarettes per day
+                                                   day                            .
+                                                                                  .
+                                                                                  100= 100 cigarettes per day
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   58    2 2.0       YRSMBH           B.6A         How many years smoke(d)        0= 0 years
+                                                                                  .
+                                                                                  .
+                                                                                  60= 60 Years
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   60    2 2.0       MOSMBH           B.6B         How many months smoke(d)       0= 0 Months
+                                                                                  .
+                                                                                  .
+                                                                                  11= 11 Months
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   62    2 2.0       DRNKBH           B.7          Alcoholic Drink past 6 mos     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   64    2 2.0       DDAYBH           B.8          Number of days/week drink      1= Everyday
+                                                   alcohol since last visit       2= 5-6 days a week
+                                                                                  3= 3-4 days a week
+                                                                                  4= 1-2 days a week
+                                                                                  5= Less than once a week
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   66    2 2.0       NORKBH           B.9          Number of drinks/day past 6    0= 0 drinks
+                                                   mos                            .
+                                                                                  .
+                                                                                  30= 30 drinks
+                                                                                  -1= NA (Skipped)
+                                                                                  -6= Number of drinks
+                                                                                  specified in SDRKBH
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   68   25 $         SDRKBH           B.9          Specify number of drinks       Character
+
+   93    2 2.0       MDRKBH           B.10         Ever period of time when       1= Yes
+                                                   drank more                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   95    2 2.0       MDAYBH           B.10A        When drink more how often      1= Everyday
+                                                                                  2= 5-6 days a week
+                                                                                  3= 3-4 days a week
+                                                                                  4=
+                                                                                  1-2 days a week
+                                                                                  5= less than once a week
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   97    2 2.0       NMDRBH           B.10B1       How much drink when drink more 0= 0 Drinks per day
+                                                                                  .
+                                                                                  .
+                                                                                  50= 50 drinks per day
+                                                                                  -1= NA (Skipped)
+                                                                                  -6= Number of drinks
+                                                                                  specified in SMDRBH
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   99   25 $         SMDRBH           B.10B2       Spec how much drink when       Character
+                                                   drink more
+
+  124    2 2.0       EATXBH           B.11         Ever been in alcohol treatment 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  126    2 2.0       EVIABH           B.12         Ever in inpatient alcohol      1= Yes
+                                                   detox                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  128    2 2.0       INADBH           B.12A        In inpatient alcohol detox     1= Yes
+                                                   past 6 mos                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  130    2 2.0       EVOABH           B.13         Ever in outpatient alcohol     1= Yes
+                                                   detox                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  132    2 2.0       OUTPBH           B.13A        In outpatient alcohol detox    1= Yes
+                                                   past 6 mo                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  134    2 2.0       EVHABH           B.14         Ever in halfway house-alcohol  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  136    2 2.0       HLFABH           B.14A        In halfway house-alcohol past  1= Yes
+                                                   6 mos                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  138    2 2.0       EVAABH           B.15         Ever in alcoholics anonymous   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  140    2 2.0       INAABH           B.15A        In alcoholics anonymous past   1= Yes
+                                                   6 mos                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  142    2 2.0       EVAOBH           B.16         Ever in other alcohol tx       1= Yes
+                                                   program                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  144   25 $         OPSPBH           B.16A        Specify other alcohol tx       Character
+                                                   program
+
+  169    2 2.0       OPRGBH           B.16B        In other alcohol tx program    1= Yes
+                                                   past 6 mo                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  171    2 2.0       EPOTBH           C.1          Ever use marijuana/hash        1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  173    2 2.0       POT_BH           C.1A         Use marijuana past 6 months    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  175    2 2.0       POTUBH           C.1B         How often use marijuana past   1= Less than once a month
+                                                   6 mos                          2= At least once a month
+                                                                                  but
+                                                                                  less than once a week
+                                                                                  3= Once a week
+                                                                                  4= 2-3 times a
+                                                                                  week
+                                                                                  5= 4-6 times a week
+                                                                                  6= Once a day
+                                                                                  7= More than
+                                                                                  once a day
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  177    2 2.0       CCH_BH           C.2          Ever use crack, cocaine,       1= Yes
+                                                   heroin                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  179    2 2.0       CRK_BH           C.3          Use crack during past six      1= Yes
+                                                   months                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  181    2 2.0       CRKUBH           C.3A         How often use crack past six   1= Less than once a month
+                                                   months                         2=
+                                                                                  At least once a month
+                                                                                  but less than once a week
+                                                                                  3= Once a
+                                                                                  week
+                                                                                  4= 2-3 times a week
+                                                                                  5= 4-6 times a week
+                                                                                  6= Once a
+                                                                                  day
+                                                                                  7= More than once a day
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  183    2 2.0       COC_BH           C.4          Use cocaine during past six    1= Yes
+                                                   months                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  185    2 2.0       COCUBH           C.4A         How often use cocaine past 6   1= Less than once a month
+                                                   months                         2= At least once a month
+                                                                                  but
+                                                                                  less than once a week
+                                                                                  3= Once a week
+                                                                                  4= 2-3 times a
+                                                                                  week
+                                                                                  5= 4-6 times a week
+                                                                                  6= Once a day
+                                                                                  7= More than
+                                                                                  once a day
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  187    2 2.0       HER_BH           C.5          Use heroin during past six     1= Yes
+                                                   months                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  189    2 2.0       HERUBH           C.5A         How often use heroin past six  1= Less than once a month
+                                                   months                         2= At least once a month
+                                                                                  but
+                                                                                  less than once a week
+                                                                                  3= Once a week
+                                                                                  4= 2-3 times a
+                                                                                  week
+                                                                                  5= 4-6 times a week
+                                                                                  6= Once a day
+                                                                                  7= More than
+                                                                                  once a day
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  191    2 2.0       EMTDBH           C.6          Ever use methadone not rx by   1= Yes
+                                                   dr                             2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  193    2 2.0       MTD_BH           C.6A         Use methadone past six months  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  195    2 2.0       MTDUBH           C.6B         How often use methadone past   1= Less than once a month
+                                                   6 mos                          2= At least once a month
+                                                                                  but
+                                                                                  less than once a week
+                                                                                  3= Once a week
+                                                                                  4= 2-3 times a
+                                                                                  week
+                                                                                  5= 4-6 times a week
+                                                                                  6= Once a day
+                                                                                  7= More than
+                                                                                  once a day
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  197    2 2.0       EAMPBH           C.7          Ever use amphetamines          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  199    2 2.0       AMP_BH           C.7A         Use amphetamines past six      1= Yes
+                                                   months                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  201    2 2.0       AMPUBH           C.7B         How often use amphetamines     1= Less than once a month
+                                                   past 6 mos                     2= At least once a month
+                                                                                  but
+                                                                                  less than once a week
+                                                                                  3= Once a week
+                                                                                  4= 2-3 times a
+                                                                                  week
+                                                                                  5= 4-6 times a week
+                                                                                  6= Once a day
+                                                                                  7= More than
+                                                                                  once a day
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  203    2 2.0       EHALBH           C.8          Ever use hallucinogens         1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  205    2 2.0       HAL_BH           C.8A         Use hallucinogens past six     1= Yes
+                                                   months                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  207    2 2.0       HALUBH           C.8B         How often use hallucinogens    1= Less than once a month
+                                                   past 6 mo                      2= At least once a month
+                                                                                  but
+                                                                                  less than once a week
+                                                                                  3= Once a week
+                                                                                  4= 2-3 times a
+                                                                                  week
+                                                                                  5= 4-6 times a week
+                                                                                  6= Once a day
+                                                                                  7= More than
+                                                                                  once a day
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  209    2 2.0       EOD1BH           C.9          Ever use other drug(1)         1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  211   25 $         SOD1BH           C.C9A        Specify name of other drug(1)  Character
+
+  236    2 2.0       OD1_BH           C.9B         Use other drug(1) past six     1= Yes
+                                                   months                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  238    2 2.0       OD1UBH           C.9C         How often use other drug(1)    1= Less than once a month
+                                                   past 6 mo                      2= At least once a month
+                                                                                  but
+                                                                                  less than once a week
+                                                                                  3= Once a week
+                                                                                  4= 2-3 times a
+                                                                                  week
+                                                                                  5= 4-6 times a week
+                                                                                  6= Once a day
+                                                                                  7= More than
+                                                                                  once a day
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  240    2 2.0       EOD2BH           C.10         Ever use other drug(2)         1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  242   25 $         SOD2BH           C.10A        Specify name of other drug(2)  Character
+
+  267    2 2.0       OD2_BH           C.10B        Use other drug(2) past six     1= Yes
+                                                   months                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  269    2 2.0       OD2UBH           C.10C        How often use other drug(2)    1= Less than once a month
+                                                   past 6 mo                      2= At least once a month
+                                                                                  but
+                                                                                  less than once a week
+                                                                                  3= Once a week
+                                                                                  4= 2-3 times a
+                                                                                  week
+                                                                                  5= 4-6 times a week
+                                                                                  6= Once a day
+                                                                                  7= More than
+                                                                                  once a day
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  271    2 2.0       EOD3BH           C.11         Ever use other drug(3)         1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  273   25 $         SOD3BH           C.11A        Specify name of other drug(3)  Character
+
+  298    2 2.0       OD3_BH           C.11B        Use other drug(3) past six     1= Yes
+                                                   months                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  300    2 2.0       OD3UBH           C.11C        How often use other drug(3)    1= Less than once a month
+                                                   past 6 mo                      2= At least once a month
+                                                                                  but
+                                                                                  less than once a week
+                                                                                  3= Once a week
+                                                                                  4= 2-3 times a
+                                                                                  week
+                                                                                  5= 4-6 times a week
+                                                                                  6= Once a day
+                                                                                  7= More than
+                                                                                  once a day
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  302    2 2.0       INJEBH           C.12         Injected drugs during past 6   1= Yes
+                                                   months                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  304    2 2.0       SHARBH           C.12A        Shared needles during past 6   1= Yes
+                                                   months                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  306    2 2.0       SH2OBH           C.12B        Share water to rinse needle    1= Yes
+                                                   past 6 mo                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  308    2 2.0       BLCHBH           C.12C        How often clean needles with   1= Never
+                                                   bleach past 6 months           2= Less than half the time
+                                                                                  3= About half the
+                                                                                  time
+                                                                                  4= Most of the time
+                                                                                  5= Always
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  310    2 2.0       NDEXBH           C.12D        Participate needle exchange    1= Yes
+                                                   past 6 mo                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  312    2 2.0       EDTXBH           C.13         Ever in drug treatment         1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  314    2 2.0       EVIDBH           C.14         Ever in inpatient drug detox   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  316    2 2.0       INDDBH           C.14A        In inpatient drug detox past   1= Yes
+                                                   six mos                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  318    2 2.0       EVODBH           C.15         Ever in outpatient drug detox  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  320    2 2.0       OUTDBH           C.15A        In outpatient drug detox past  1= Yes
+                                                   6 mos                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  322    2 2.0       EVMMBH           C.16         Ever in methadone maintenance  1= Yes
+                                                   prog                           2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  324    2 2.0       MEMPBH           C.16A        In methadone maint prog past   1= Yes
+                                                   6 mos                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  326    2 2.0       EVHDBH           C.17         Ever in halfway house (drugs)  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  328    2 2.0       HLFDBH           C.17A        In halfway house (drugs) past  1= Yes
+                                                   6 mos                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  330    2 2.0       EVNABH           C.18         Ever in narcotics anonymous    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  332    2 2.0       INNABH           C.18A        In narcotics anonymous past 6  1= Yes
+                                                   months                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  334    2 2.0       EVJLBH           C.19         Ever in jail-based tx program  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  336    2 2.0       JAILBH           C.19A        In jail-based tx prgram past   1= Yes
+                                                   6 months                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  338    2 2.0       EVDOBH           C.20         Ever in other drug tx program  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  340   25 $         ODSPBH           C.20B        Specify other drug tx program  Character
+
+  365    2 2.0       ODRGBH           C.20A        In other drug tx program past  1= Yes
+                                                   6 mos                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  367    4 4.0       MALSBH           D.1          # lifetime male sex partners
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  371    2 2.0       SXAGBH           D.2          Age at first sexual encounter  0= 0 years old
+                                                                                  .
+                                                                                  .
+                                                                                  45= 45 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  373    2 2.0       MINJBH           D.3          Ever had sex with male who     1= Yes
+                                                   injected                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  375    2 2.0       MHEMBH           D.4          Ever had sex with male         1= Yes
+                                                   hemophiliac                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  377    2 2.0       MHIVBH           D.5          Ever had sex with HIV+ male    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  379    2 2.0       MMANBH           D.6          Ever sex w/male who had sex w/ 1= Yes
+                                                   male                           2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  381    4 4.0       MSX5BH           D.7          # male partners past five      0= 0 male partners
+                                                   years                          .
+                                                                                  .
+                                                                                  2000= 2000 male partners
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  385    3 3.0       MSX6BH           E.1          # male partners past 6 months  0= 0 male partners
+                                                                                  .
+                                                                                  .
+                                                                                  999= 999 male partners
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  388    2 2.0       MVG6BH           E.2          Had vaginal sex w/male part    1= Yes
+                                                   past 6 mo                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  390    2 2.0       MVAGBH           E.2A         # times vaginal sex w/male     1= 1 time
+                                                   past 6 mo                      .
+                                                                                  .
+                                                                                  99= 99 times
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  392    2 2.0       MVANBH           E.2A2        Vag sex w/male-per wk, month,  1= Per week
+                                                   total                          2= Per month
+                                                                                  3= Total during the past 6
+                                                                                     months
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  394    2 2.0       MVCDBH           E.2B         How often use condom vag sex   1= Always
+                                                   w/male                         2= Sometimes
+                                                                                  3= Never
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  396    2 2.0       MOR6BH           E.3          Perform oral sex w/male past   1= Yes
+                                                   6 mos                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  398    2 2.0       MPORBH           E.3A         # times oral sex w/male past   1= 1 time
+                                                   6 months                       .
+                                                                                  .
+                                                                                  99= 99 times
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  400    2 2.0       MPONBH           E.3A2        Oral sex w/male-per wk, month, 1= Per week
+                                                   total                          2= Per month
+                                                                                  3= Total during the past 6
+                                                                                  months
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  402    2 2.0       MPCDBH           E.3B         How often use condom oral sex  1= Always
+                                                   w/male                         2= Sometimes
+                                                                                  3= Never
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  404    2 2.0       MRO6BH           E.4          Receive oral sex w/male past   1= Yes
+                                                   6 mos                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  406    2 2.0       MVORBH           E.4A         # time rec oral sex w/male     1= 1 time
+                                                   past 6 mos                     .
+                                                                                  .
+                                                                                  99= 99 times
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  408    2 2.0       MVONBH           E.4A2        Rec oral sex w/male-per wk,    1= Per week
+                                                   mon,totl                       2= Per month
+                                                                                  3= Total during the past 6
+                                                                                  months
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  410    2 2.0       MODDBH           E.4B         How oft use dental dam rec     1= Always
+                                                   orl sx mp                      2= Sometimes
+                                                                                  3= Never
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  412    2 2.0       MEANBH           E.5          Ever have anal sex with male   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  414    2 2.0       MAN6BH           E.5A         Had anal sex w/male past six   1= Yes
+                                                   months                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  416    2 2.0       MANABH           E.5B         # times anal sex w/male past   1= 1 time
+                                                   6 mos                          .
+                                                                                  .
+                                                                                  99= 99 times
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  418    2 2.0       MANNBH           E.5BA        Anal sex w/male-per wk,month,  1= Per week
+                                                   total                          2= Per month
+                                                                                  3= Total during the past 6
+                                                                                  months
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  420    2 2.0       MACDBH           E.5C         How often use condom anal sex  1= Always
+                                                   w/male                         2= Sometimes
+                                                                                  3= Never
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  422    2 2.0       SEXFBH           F.1          Ever had sex with a female     1= Yes
+                                                   partner                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  424    3 3.0       FLIFBH           F.2          # lifetime female partners     0= 0 Partners
+                                                                                  .
+                                                                                  .
+                                                                                  999= 999 Partners
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  427    2 2.0       FINJBH           F.3          Ever had sex with woman who    1= Yes
+                                                   injected                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  429    2 2.0       FHIVBH           F.4          Ever had sex with HIV+ woman   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  431    3 3.0       FSX5BH           F.5          # female partners in past 5    0= 0 Partners
+                                                   years                          .
+                                                                                  .
+                                                                                  999= 999 Partners
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  434    3 3.0       FEMSBH           G.1          # female partners past six     0= 0 Partners
+                                                   months                         .
+                                                                                  .
+                                                                                  999= 999 Partners
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  437    2 2.0       FVG6BH           G.2          Had vaginal sex w/female past  1= Yes
+                                                   6 mos                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  439    2 2.0       FVAGBH           G.2A         # time vaginal sex w/female    1= 1 time
+                                                   past 6 mo                      .
+                                                                                  .
+                                                                                  99= 99 times
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  441    2 2.0       FVANBH           G.2A2        Vag sex w/female-per wk,month, 1= Per week
+                                                   total                          2= Per month
+                                                                                  3= Total during the past 6
+                                                                                  months
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  443    2 2.0       FTOYBH           G.2B         Use sex toy during vagianl     1= Yes
+                                                   sex with female past six mos   2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  445    2 2.0       FTCDBH           G.2C         Share sex toy with female w/o  1= Always
+                                                   cleaning it past 6 months      2= Sometimes
+                                                                                  3= Never
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  447    2 2.0       FOR6BH           G.3          Had oral sex w/female past 6   1= Yes
+                                                   months                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  449    2 2.0       FPORBH           G.3A         # times oral sex w/female      1= 1 time
+                                                   past 6 mos                     .
+                                                                                  .
+                                                                                  99= 99 times
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  451    2 2.0       FPONBH           G.3A2        Oral sex w/female-per wk,      1= Per week
+                                                   month,total                    2= Per month
+                                                                                  3= Total during the past 6
+                                                                                  months
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  453    2 2.0       FPMOBH           G.3B         How often oral sex w/fem       1= Always
+                                                   while menses                   2= Sometimes
+                                                                                  3= Never
+                                                                                  4= Reports no sex
+                                                                                  during menstruation
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  455    2 2.0       FPODBH           G.3C         How oft use dental dam oral    1= Always
+                                                   sex w/fp                       2= Sometimes
+                                                                                  3= Never
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  457    2 2.0       FRE6BH           G.4          Receive oral sex w/female      1= Yes
+                                                   past 6 mos                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  459    2 2.0       FVORBH           G.4A         #time rec oral sex w/female    1= 1 time
+                                                   past 6 mos                     .
+                                                                                  .
+                                                                                  99= 99 times
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  461    2 2.0       FVONBH           G.4A2        Rec oral sex w/female-per wk,  1= Per week
+                                                   mon,tot                        2= Per month
+                                                                                  3= Total during the past 6
+                                                                                  months
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  463    2 2.0       FOMEBH           G.4B         Hw oft rec oral sex fr fp dur  1= Always
+                                                   menstr                         2= Sometimes
+                                                                                  3= Never
+                                                                                  4= Reports no sex
+                                                                                  during menstruation
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  465    2 2.0       FOMDBH           G.4C         Rec oral sex how oft use       1= Always
+                                                   dental dam                     2= Sometimes
+                                                                                  3= Never
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  467    2 2.0       FEANBH           G.5          Ever have anal sex w/female    1= Yes
+                                                   partner                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  469    2 2.0       FAN6BH           G.5A         Had anal sex w/female past 6   1= Yes
+                                                   months                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  471    2 2.0       FANABH           G.5B         # times anal sex w/female      0= 0 times
+                                                   past 6 mos                     .
+                                                                                  .
+                                                                                  99= 99 times
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  473    2 2.0       FANNBH           G.5B2        Anal sex w/female-per wk,      1= Per week
+                                                   month,total                    2= Per month
+                                                                                  3= Total during the past 6
+                                                                                  months
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  475    2 2.0       FTANBH           G.5C         Use sex toy when rec anal sex  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  477    2 2.0       FTACBH           G.5D         Share sex toy dur anal sex     1= Always
+                                                   but don't clean                2= Sometimes
+                                                                                  3= Never
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  479    2 2.0       FAVCBH           G.6          Ever vaginal contct aft anal   1= Yes
+                                                   contct                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  481    2 2.0       FAVABH           G.6A         # times anal cont-vag cont     0= 0 times
+                                                   past 6 mos                     .
+                                                                                  .
+                                                                                  99= 99 times
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  483    2 2.0       FAVNBH           G.6A1        Anal-vag contact-per wk,month, 1= Per week
+                                                   total                          2= Per month
+                                                                                  3= Total during the past 6
+                                                                                  months
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  485    2 2.0       ORNTBH           G.7          Sexual orientation             1= Heterosexual/Straight
+                                                                                  2= Bisexual
+                                                                                  3= Lesbian/Gay
+                                                                                  4= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  487   25 $         SPORBH           G.7A         Specify sexual orientation     Character
+
+  512    2 2.0       SXPDBH           G.8          Ever had sex for drugs,money,  1= Yes
+                                                   shelter                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  514    5 time5.    ETIMBH           G.9          Time module ended              01:00= 1:00 o'clock
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59 o'clock
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  519    2 2.0       EMERBH           G.9A         AM/PM indicator for time end   1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  521    1 $         ESTAT            A.0          Edit Status                    CharacterD= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  522    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

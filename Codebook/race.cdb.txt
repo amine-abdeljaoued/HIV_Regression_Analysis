@@ -1,0 +1,863 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+RACE - Ethnicity and Race Questionnaire
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        35= 35
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    8 $         VERSER           A.3          Form version                   10/01/11= 10/01/11
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   19    8 $         IDTEER           A.4          Date of interview              10/01/11= 10/01/11
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   27    3 $         INITER           A.5          Initials of person completing  Character
+                                                   form
+
+   30    5 time5.    STIMER           A.6          Time began                     1:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   35    2 2.0       SMERER           A.6          AM/PM for time began           1= AM
+                                                                                  2= PM
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   37    2 2.0       HISPER           B.1          Participant is of Hispanic,    1= YES
+                                                   Latina, or Spanish origin      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   39    2 2.0       CUBNER           B.2.a        Participant ethnicity - Cuban  1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   41    2 2.0       DOMNER           B.2.b        Participant ethnicity -        1= YES
+                                                   Dominican                      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   43    2 2.0       MEXNER           B.2.c        Participant ethnicity -        1= YES
+                                                   Mexican, Mexican American,     2= NO
+                                                   Chicano                        -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   45    2 2.0       PRCNER           B.2.d        Participant ethnicity -        1= YES
+                                                   Puerto Rican                   2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   47    2 2.0       SCAMER           B.2.e        Participant ethnicity - South  1= YES
+                                                   or Central American            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   49    2 2.0       OHSPER           B.2.f        Participant ethnicity - Other  1= YES
+                                                   Hispanic, Latina, or Spanish   2= NO
+                                                   origin                         -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   51   25 $         SOHSER           B.2.f.i      Participant ethnicity -        Character
+                                                   specify other Hispanic,
+                                                   Latina, or Spanish origin
+
+   76    2 2.0       AIANER           B.3.a        Participant race - American    1= YES
+                                                   Indian/Alaskan Native          2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   78   25 $         AITRER           B.3.a.i      Participant race - Specify     Character
+                                                   American Indian/Alaska Native
+                                                   tribe
+
+  103    2 2.0       ASIAER           B.3.b        Participant race - Asian       1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  105    2 2.0       AFAMER           B.3.c        Participant race - Black or    1= YES
+                                                   African American               2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  107    2 2.0       NHPIER           B.3.d        Participant race - Native      1= YES
+                                                   Hawaiian/Pacific Islander      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  109    2 2.0       WHTEER           B.3.e        Participant race - White       1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  111   25 $         BRTHER           B.4.a        Participant country of birth   Character
+
+  136    3 3.0       BCCDER           B.4.b        Participant country of birth   1= 1
+                                                   code                           .
+                                                                                  .
+                                                                                  999= 999
+
+  139    4 4.0       USYRER           B.5          Participant year moved to U.S. 1930= 1930
+                                                                                  .
+                                                                                  .
+                                                                                  2029= 2029
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  143   25 $         CTYBER           B.6.a        Participant city of birth      Character
+
+  168   25 $         STEBER           B.6.b        Participant state of birth     Character
+
+  193    2 2.0       MTHRER           C.1          Participant knows birth        1= YES
+                                                   mother's ethnicity, race,      2= NO
+                                                   place of birth                 -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  195    2 2.0       MHSPER           C.2          Birth mother is of Hispanic,   1= YES
+                                                   Latina, or Spanish origin      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  197    2 2.0       MCUBER           C.3.a        Birth mother ethnicity - Cuban 1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  199    2 2.0       MDOMER           C.3.b        Birth mother ethnicity -       1= YES
+                                                   Dominican                      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  201    2 2.0       MMEXER           C.3.c        Birth mother ethnicity -       1= YES
+                                                   Mexican, Mexican American,     2= NO
+                                                   Chicano                        -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  203    2 2.0       MPRCER           C.3.d        Birth mother ethnicity -       1= YES
+                                                   Puerto Rican                   2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  205    2 2.0       MSCAER           C.3.e        Birth mother ethnicity -       1= YES
+                                                   South or Central American      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  207    2 2.0       MOHPER           C.3.f        Birth mother ethnicity -       1= YES
+                                                   Other Hispanic, Latina, or     2= NO
+                                                   Spanish origin                 -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  209   25 $         MOHSER           C.3.f.i      Birth mother ethnicity -       Character
+                                                   specify other Hispanic,
+                                                   Latina, or Spanish origin
+
+  234    2 2.0       MAINER           C.4.a        Birth mother race - American   1= YES
+                                                   Indian/Alaskan Native          2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  236   25 $         MAITER           C.4.a.i      Birth mother race - Specify    Character
+                                                   American Indian/Alaska Native
+                                                   tribe
+
+  261    2 2.0       MASIER           C.4.b        Birth mother race - Asian      1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  263    2 2.0       MAFAER           C.4.c        Birth mother race - Black or   1= YES
+                                                   African American               2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  265    2 2.0       MNHPER           C.4.d        Birth mother race - Native     1= YES
+                                                   Hawaiian/Pacific Islander      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  267    2 2.0       MWHTER           C.4.e        Birth mother race - White      1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  269   25 $         MBRTER           C.5.a        Birth mother country of birth  Character
+
+  294    3 3.0       MBCCER           C.5.b        Birth mother country of birth  1= 1
+                                                   code                           .
+                                                                                  .
+                                                                                  999= 999
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  297    2 2.0       MGMTER           D.1          Participant knows maternal     1= YES
+                                                   grandmother's ethnicity, race, 2= NO
+                                                   place of birth                 -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  299    2 2.0       MMHSER           D.2          Maternal grandmother is of     1= YES
+                                                   Hispanic, Latina, or Spanish   2= NO
+                                                   origin                         -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  301    2 2.0       MMCUER           D.3.a        Maternal grandmother           1= YES
+                                                   ethnicity - Cuban              2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  303    2 2.0       MMDOER           D.3.b        Maternal grandmother           1= YES
+                                                   ethnicity - Dominican          2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  305    2 2.0       MMMXER           D.3.c        Maternal grandmother           1= YES
+                                                   ethnicity - Mexican, Mexican   2= NO
+                                                   American, Chicano              -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  307    2 2.0       MMPRER           D.3.d        Maternal grandmother           1= YES
+                                                   ethnicity - Puerto Rican       2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  309    2 2.0       MMSCER           D.3.e        Maternal grandmother           1= YES
+                                                   ethnicity - South or Central   2= NO
+                                                   American                       -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  311    2 2.0       MMOHER           D.3.f        Maternal grandmother           1= YES
+                                                   ethnicity - Other Hispanic,    2= NO
+                                                   Latina, or Spanish origin      -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  313   25 $         MMOSER           D.3.f.i      Maternal grandmother           Character
+                                                   ethnicity - specify other
+                                                   Hispanic, Latina, or Spanish
+                                                   origin
+
+  338    2 2.0       MMAIER           D.4.a        Maternal grandmother race -    1= YES
+                                                   American Indian/Alaskan Native 2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  340   25 $         MMATER           D.4.a.i      Maternal grandmother race -    Character
+                                                   Specify American Indian/
+                                                   Alaska Native tribe
+
+  365    2 2.0       MMASER           D.4.b        Maternal grandmother race -    1= YES
+                                                   Asian                          2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  367    2 2.0       MMAFER           D.4.c        Maternal grandmother race -    1= YES
+                                                   Black or African American      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  369    2 2.0       MMNHER           D.4.d        Maternal grandmother race -    1= YES
+                                                   Native Hawaiian/Pacific        2= NO
+                                                   Islander                       -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  371    2 2.0       MMWTER           D.4.e        Maternal grandmother race -    1= YES
+                                                   White                          2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  373   25 $         MMBRER           D.5.a        Maternal grandmother country   Character
+                                                   of birth
+
+  398    3 3.0       MMBCER           D.5.b        Maternal grandmother country   1= 1
+                                                   of birth code                  .
+                                                                                  .
+                                                                                  999= 999
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  401    2 2.0       MGFTER           E.1          Participant knows maternal     1= YES
+                                                   grandfather's ethnicity, race, 2= NO
+                                                   place of birth                 -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  403    2 2.0       MFHSER           E.2          Maternal grandfather is of     1= YES
+                                                   Hispanic, Latina, or Spanish   2= NO
+                                                   origin                         -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  405    2 2.0       MFCUER           E.3.a        Maternal grandfather           1= YES
+                                                   ethnicity - Cuban              2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  407    2 2.0       MFDOER           E.3.b        Maternal grandfather           1= YES
+                                                   ethnicity - Dominican          2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  409    2 2.0       MFMXER           E.3.c        Maternal grandfather           1= YES
+                                                   ethnicity - Mexican, Mexican   2= NO
+                                                   American, Chicano              -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  411    2 2.0       MFPRER           E.3.d        Maternal grandfather           1= YES
+                                                   ethnicity - Puerto Rican       2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  413    2 2.0       MFSCER           E.3.e        Maternal grandfather           1= YES
+                                                   ethnicity - South or Central   2= NO
+                                                   American                       -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  415    2 2.0       MFOHER           E.3.f        Maternal grandfather           1= YES
+                                                   ethnicity - Other Hispanic,    2= NO
+                                                   Latina, or Spanish origin      -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  417   25 $         MFOSER           E.3.f.i      Maternal grandfather           Character
+                                                   ethnicity - specify other
+                                                   Hispanic, Latina, or Spanish
+                                                   origin
+
+  442    2 2.0       MFAIER           E.4.a        Maternal grandfather race -    1= YES
+                                                   American Indian/Alaskan Native 2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  444   25 $         MFATER           E.4.a.i      Maternal grandfather race -    Character
+                                                   Specify American Indian/
+                                                   Alaska Native tribe
+
+  469    2 2.0       MFASER           E.4.b        Maternal grandfather race -    1= YES
+                                                   Asian                          2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  471    2 2.0       MFAFER           E.4.c        Maternal grandfather race -    1= YES
+                                                   Black or African American      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  473    2 2.0       MFNHER           E.4.d        Maternal grandfather race -    1= YES
+                                                   Native Hawaiian/Pacific        2= NO
+                                                   Islander                       -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  475    2 2.0       MFWTER           E.4.e        Maternal grandfather race -    1= YES
+                                                   White                          2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  477   25 $         MFBRER           E.5.a        Maternal grandfather country   Character
+                                                   of birth
+
+  502    3 3.0       MFBCER           E.5.b        Maternal grandfather country   1= 1
+                                                   of birth code                  .
+                                                                                  .
+                                                                                  999= 999
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  505    2 2.0       KFFPER           F.1          Participant knows birth        1= YES
+                                                   father's/paternal              2= NO
+                                                   granparents'ethnicity, race,   -1= N.A. (Skipped)
+                                                   place of birth                 -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  507    2 2.0       FTHRER           F.2          Participant knows birth        1= YES
+                                                   father's ethnicity, race,      2= NO
+                                                   place of birth                 -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  509    2 2.0       FHSPER           F.3          Birth father is of Hispanic,   1= YES
+                                                   Latina, or Spanish origin      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  511    2 2.0       FCUBER           F.4.a        Birth father ethnicity - Cuban 1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  513    2 2.0       FDOMER           F.4.b        Birth father ethnicity -       1= YES
+                                                   Dominican                      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  515    2 2.0       FMEXER           F.4.c        Birth father ethnicity -       1= YES
+                                                   Mexican, Mexican American,     2= NO
+                                                   Chicano                        -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  517    2 2.0       FPRCER           F.4.d        Birth father ethnicity -       1= YES
+                                                   Puerto Rican                   2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  519    2 2.0       FSCAER           F.4.e        Birth father ethnicity -       1= YES
+                                                   South or Central American      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  521    2 2.0       FOHPER           F.4.f        Birth father ethnicity -       1= YES
+                                                   Other Hispanic, Latina, or     2= NO
+                                                   Spanish origin                 -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  523   25 $         FOHSER           F.4.f.i      Birth father ethnicity -       Character
+                                                   specify other Hispanic,
+                                                   Latina, or Spanish origin
+
+  548    2 2.0       FAINER           F.5.a        Birth father race - American   1= YES
+                                                   Indian/Alaskan Native          2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  550   25 $         FAITER           F.5.a.i      Birth father race - Specify    Character
+                                                   American Indian/Alaska Native
+                                                   tribe
+
+  575    2 2.0       FASIER           F.5.b        Birth father race - Asian      1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  577    2 2.0       FAFAER           F.5.c        Birth father race - Black or   1= YES
+                                                   African American               2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  579    2 2.0       FNHPER           F.5.d        Birth father race - Native     1= YES
+                                                   Hawaiian/Pacific Islander      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  581    2 2.0       FWHTER           F.5.e        Birth father race - White      1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  583   25 $         FBRTER           F.6.a        Birth father country of birth  Character
+
+  608    3 3.0       FBCCER           F.6.b        Birth father country of birth  1= 1
+                                                   code                           .
+                                                                                  .
+                                                                                  999= 999
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  611    2 2.0       PGMTER           G.1          Participant knows paternal     1= YES
+                                                   grandmother's ethnicity, race, 2= NO
+                                                   place of birth                 -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  613    2 2.0       PMHSER           G.2          Paternal grandmother is of     1= YES
+                                                   Hispanic, Latina, or Spanish   2= NO
+                                                   origin                         -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  615    2 2.0       PMCUER           G.3.a        Paternal grandmother           1= YES
+                                                   ethnicity - Cuban              2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  617    2 2.0       PMDOER           G.3.b        Paternal grandmother           1= YES
+                                                   ethnicity - Dominican          2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  619    2 2.0       PMMXER           G.3.c        Paternal grandmother           1= YES
+                                                   ethnicity - Mexican, Mexican   2= NO
+                                                   American, Chicano              -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  621    2 2.0       PMPRER           G.3.d        Paternal grandmother           1= YES
+                                                   ethnicity - Puerto Rican       2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  623    2 2.0       PMSCER           G.3.e        Paternal grandmother           1= YES
+                                                   ethnicity - South or Central   2= NO
+                                                   American                       -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  625    2 2.0       PMOHER           G.3.f        Paternal grandmother           1= YES
+                                                   ethnicity - Other Hispanic,    2= NO
+                                                   Latina, or Spanish origin      -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  627   25 $         PMOSER           G.3.f.i      Paternal grandmother           Character
+                                                   ethnicity - specify other
+                                                   Hispanic, Latina, or Spanish
+                                                   origin
+
+  652    2 2.0       PMAIER           G.4.a        Paternal grandmother race -    1= YES
+                                                   American Indian/Alaskan Native 2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  654   25 $         PMATER           G.4.a.i      Paternal grandmother race -    Character
+                                                   Specify American Indian/
+                                                   Alaska Native tribe
+
+  679    2 2.0       PMASER           G.4.b        Paternal grandmother race -    1= YES
+                                                   Asian                          2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  681    2 2.0       PMAFER           G.4.c        Paternal grandmother race -    1= YES
+                                                   Black or African American      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  683    2 2.0       PMNHER           G.4.d        Paternal grandmother race -    1= YES
+                                                   Native Hawaiian/Pacific        2= NO
+                                                   Islander                       -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  685    2 2.0       PMWTER           G.4.e        Paternal grandmother race -    1= YES
+                                                   White                          2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  687   25 $         PMBRER           G.5.a        Paternal grandmother country   Character
+                                                   of birth
+
+  712    3 3.0       PMBCER           G.5.b        Paternal grandmother country   1= 1
+                                                   of birth code                  .
+                                                                                  .
+                                                                                  999= 999
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  715    2 2.0       PGFTER           H.1          Participant knows paternal     1= YES
+                                                   grandfather's ethnicity, race, 2= NO
+                                                   place of birth                 -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  717    2 2.0       PFHSER           H.2          Paternal grandfather is of     1= YES
+                                                   Hispanic, Latina, or Spanish   2= NO
+                                                   origin                         -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  719    2 2.0       PFCUER           H.3.a        Paternal grandfather           1= YES
+                                                   ethnicity - Cuban              2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  721    2 2.0       PFDOER           H.3.b        Paternal grandfather           1= YES
+                                                   ethnicity - Dominican          2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  723    2 2.0       PFMXER           H.3.c        Paternal grandfather           1= YES
+                                                   ethnicity - Mexican, Mexican   2= NO
+                                                   American, Chicano              -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  725    2 2.0       PFPRER           H.3.d        Paternal grandfather           1= YES
+                                                   ethnicity - Puerto Rican       2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  727    2 2.0       PFSCER           H.3.e        Paternal grandfather           1= YES
+                                                   ethnicity - South or Central   2= NO
+                                                   American                       -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  729    2 2.0       PFOHER           H.3.f        Paternal grandfather           1= YES
+                                                   ethnicity - Other Hispanic,    2= NO
+                                                   Latina, or Spanish origin      -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  731   25 $         PFOSER           H.3.f.i      Paternal grandfather           Character
+                                                   ethnicity - specify other
+                                                   Hispanic, Latina, or Spanish
+                                                   origin
+
+  756    2 2.0       PFAIER           H.4.a        Paternal grandfather race -    1= YES
+                                                   American Indian/Alaskan Native 2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  758   25 $         PFATER           H.4.a.i      Paternal grandfather race -    Character
+                                                   Specify American Indian/
+                                                   Alaska Native tribe
+
+  783    2 2.0       PFASER           H.4.b        Paternal grandfather race -    1= YES
+                                                   Asian                          2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  785    2 2.0       PFAFER           H.4.c        Paternal grandfather race -    1= YES
+                                                   Black or African American      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  787    2 2.0       PFNHER           H.4.d        Paternal grandfather race -    1= YES
+                                                   Native Hawaiian/Pacific        2= NO
+                                                   Islander                       -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  789    2 2.0       PFWTER           H.4.e        Paternal grandfather race -    1= YES
+                                                   White                          2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  791   25 $         PFBRER           H.5.a        Paternal grandfather country   Character
+                                                   of birth
+
+  816    3 3.0       PFBCER           H.5.b        Paternal grandfather country   1= 1
+                                                   of birth code                  .
+                                                                                  .
+                                                                                  999= 999
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  819    5 time5.    ETIMER           H.6          Time ended                     1:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  824    2 2.0       EMERER           H.6          AM/PM for time ended           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  826    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  827    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

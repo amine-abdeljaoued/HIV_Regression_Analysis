@@ -1,0 +1,919 @@
+                               CODEBOOK
+Women's Interagency HIV Study                              9-6-2017
+Form 05: B/L Health Care Utilization
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant's id               1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit Number                   1= Visit 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= Visit 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   11    6 $         FKEY             A.0          Form Key                       Character
+
+   17    8 $         VERSHC           A.3          Form version                   01/01/93= January 1, 1993
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   25    8 $         IDTEHC           A.4          Date of interview              10/01/94= October 1, 1994
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   33    3 $         INITHC           A.5          Interviewer's initials         Character
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   36    5 time5.    BTIMHC           A.6          Time module began              01:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   41    2 2.0       BMERHC           A.6A         AM/PM Indicator                1= AM
+                                                                                  2= PM.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   43    2 2.0       SDOCHC           B.1          Go to same provider?           1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   45    2 2.0       LHCPHC           B.2          Primary provider for how long? 1= Less than one year
+                                                                                  2= Between one and two years
+                                                                                  3=
+                                                                                  More than two years
+                                                                                  -8= Don't know.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   47    2 2.0       HCPRHC           B.3          Provider seen within last two  1= Yes
+                                                   month?                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   49    2 2.0       THCPHC           B.3A         Number of visits               1= 1 time
+                                                                                  .
+                                                                                  .
+                                                                                  64= 64 times
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   51    2 2.0       HCSIHC           B.4          Regular place of service       1= Doctor's office or clinic
+                                                                                  2= Emergency room in a
+                                                                                  hospital
+                                                                                  3= Drug treatment clinic
+                                                                                  4= Prison clinic
+                                                                                  5= Other place.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   53   25 $         HCSSHC           B.4A         Specify regular place of       Character
+                                                   service                        -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   78    2 2.0       COMMHC           B.5          Have you seen a health care    1= Yes
+                                                   provider in past 2 months      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   80    2 2.0       TCOMHC           B.5A         Number of visits to health     1= 1 time
+                                                   care provider (2 months)       .
+                                                                                  .
+                                                                                  64= 64 times
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   82    2 2.0       SCOMHC           B.6          Same place of service usually  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   84    2 2.0       SITEHC           B.6A         Place of medical care          1= Doctor's office or clinic
+                                                                                  2= Emergency room in a
+                                                                                  hospital
+                                                                                  3= Drug treatment clinic
+                                                                                  4= Prison clinic
+                                                                                  5=
+                                                                                  Other place.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   86   25 $         SISPHC           B.6A5        Specify name of medical care   Character
+                                                   place                          -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  111    2 2.0       ER__HC           B.7          Medical care in emergency      1= Yes
+                                                   room?                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  113    2 2.0       TER_HC           B.7A         Number of emergency room       1= 1 time
+                                                   visits                         .
+                                                                                  .
+                                                                                  16= 16 times
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  115    2 2.0       PDHCHC           B.8          Money pay for medical service? 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  117    2 2.0       AMTPHC           B.8A         Amount pay for medical care    1= Less than $25
+                                                   during last month              2= $25 to $50
+                                                                                  3= $51 to $100
+                                                                                  4= Over $100
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  119    2 2.0       HSPCHC           B.9          Hospice care?                  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  121    2 2.0       FOODHC           B.10         Food assistance from agency    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  123    2 2.0       SSLVHC           B.11         Assistance with place to live? 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  125    2 2.0       DENTHC           B.12         Care from dentist?             1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  127    2 2.0       SWKRHC           B.13         Social worker assist?          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  129    2 2.0       MHCRHC           B.14         Mental health care?            1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  131    2 2.0       NUTRHC           B.15         Nutritionist care?             1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  133    2 2.0       CHIRHC           B.16         Care from chiropractor?        1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  135    2 2.0       VNRSHC           B.17         Care from visiting nurses?     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  137    2 2.0       AIDEHC           B.18         Care from home health aides?   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  139    2 2.0       INS_HC           C.1          Insurance coverage?            1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  141    2 2.0       INSAHC           C.2          Application for insurance in   1= Yes
+                                                   last 2 months                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  143    2 2.0       CAIDHC           C.3          Medicaid?                      1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  145    2 2.0       MCALHC           C.4          Medi-CAL (California)          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  147    2 2.0       MCARHC           C.5          Medicare?                      1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  149    2 2.0       ADAPHC           C.6          AIDS Drug Assistance Program   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  151    2 2.0       CHAMHC           C.7          Champus/other veteran's        1= Yes
+                                                   health insurance               2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  153    2 2.0       PCH_HC           C.7A         You/family pay for CHAMPUS     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  155    2 2.0       STHCHC           C.8          Student health coverage?       1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  157    2 2.0       PSTHHC           C.8A         You/family pay for student     1= Yes
+                                                   health coverage                2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  159    2 2.0       PRIVHC           C.9          Private insurance?             1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  161    2 2.0       PPRIHC           C.9A         You/family pay for private     1= Yes
+                                                   insurance                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  163    2 2.0       DENIHC           C.10         Dental insurance?              1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  165    2 2.0       HIOTHC           C.11         Other insurance?               1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  167   25 $         HISPHC           C.11A        Specify name of insurance      Character
+                                                   plan                           -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  192    2 2.0       PRX_HC           C.12         Pay for prescription?          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  194    2 2.0       RXSPHC           C.12A        Amount spent on prescriptions  1= Less than $25
+                                                   in past month                  2= $25 to $100
+                                                                                  3= $101 to $200
+                                                                                  4= Over $200
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  196    2 2.0       MBILHC           C.13         Unpaid medical bills?          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  198    2 2.0       PSSAHC           C.14         Administer Patient             1= Yes
+                                                   Satisfaction Scale             2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  200    2 2.0       RNMTHC           D.1          Provider's good at explaining  1= Strongly agree
+                                                   reason for medical tests       2= Agree
+                                                                                  3= Uncertain
+                                                                                  4= disagree
+
+                                                                                  5= Strongly disagree.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  202    2 2.0       OCARHC           D.2          Provider's office can provide  1= Strongly agree
+                                                   complete care                  2= Agree
+                                                                                  3= Uncertain
+                                                                                  4= disagree
+
+                                                                                  5= Strongly disagree.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  204    2 2.0       MRECHC           D.3          Medical care received is       1= Strongly agree
+                                                   perfect                        2= Agree
+                                                                                  3= Uncertain
+                                                                                  4= disagree
+
+                                                                                  5= Strongly disagree.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  206    2 2.0       CDIAHC           D.4          Correct diagnosis              1= Strongly agree
+                                                                                  2= Agree
+                                                                                  3= Uncertain
+                                                                                  4= disagree
+
+                                                                                  5= Strongly disagree.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  208    2 2.0       CFINHC           D.5          Can pay for medical care       1= Strongly agree
+                                                   without financial problems     2= Agree
+                                                                                  3= Uncertain
+                                                                                  4= disagree
+
+                                                                                  5= Strongly disagree.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  210    2 2.0       CARTHC           D.6          Check everything when          1= Strongly agree
+                                                   treating/examining             2= Agree
+                                                                                  3= Uncertain
+                                                                                  4= disagree
+
+                                                                                  5= Strongly disagree.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  212    2 2.0       ACCEHC           D.7          Easy access to medical care    1= Strongly agree
+                                                                                  2= Agree
+                                                                                  3= Uncertain
+                                                                                  4= disagree
+
+                                                                                  5= Strongly disagree.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  214    2 2.0       WAITHC           D.8          Waiting time is too long       1= Strongly agree
+                                                                                  2= Agree
+                                                                                  3= Uncertain
+                                                                                  4= disagree
+
+                                                                                  5= Strongly disagree.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  216    2 2.0       IMPEHC           D.9          provider too business-like     1= Strongly agree
+                                                   and impersonal                 2= Agree
+                                                                                  3= Uncertain
+                                                                                  4= disagree
+
+                                                                                  5= Strongly disagree.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  218    2 2.0       FRIEHC           D.10         Provider friendly/courteous    1= Strongly agree
+                                                                                  2= Agree
+                                                                                  3= Uncertain
+                                                                                  4= disagree
+
+                                                                                  5= Strongly disagree.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  220    2 2.0       HURRHC           D.11         Hurry while treating           1= Strongly agree
+                                                                                  2= Agree
+                                                                                  3= Uncertain
+                                                                                  4= disagree
+
+                                                                                  5= Strongly disagree.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  222    2 2.0       IGNOHC           D.12         Ignore patient's statements    1= Strongly agree
+                                                                                  2= Agree
+                                                                                  3= Uncertain
+                                                                                  4= disagree
+
+                                                                                  5= Strongly disagree.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  224    2 2.0       ABILHC           D.13         Doubt ability of provider      1= Strongly agree
+                                                                                  2= Agree
+                                                                                  3= Uncertain
+                                                                                  4= disagree
+
+                                                                                  5= Strongly disagree.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  226    2 2.0       TIMEHC           D.14         Spend enough time with you     1= Strongly agree
+                                                                                  2= Agree
+                                                                                  3= Uncertain
+                                                                                  4= disagree
+
+                                                                                  5= Strongly disagree.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  228    2 2.0       APPTHC           D.15         Difficalt to get medical       1= Strongly agree
+                                                   appointment                    2= Agree
+                                                                                  3= Uncertain
+                                                                                  4= disagree
+
+                                                                                  5= Strongly disagree.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  230    2 2.0       DISSHC           D.16         Participant's dissatisfaction  1= Strongly agree
+                                                   with medical care              2= Agree
+                                                                                  3= Uncertain
+                                                                                  4= disagree
+
+                                                                                  5= Strongly disagree.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  232    2 2.0       JUDGHC           D.17         Judgments about lifestyle      1= Strongly agree
+                                                                                  2= Agree
+                                                                                  3= Uncertain
+                                                                                  4= disagree
+
+                                                                                  5= Strongly disagree.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  234    2 2.0       PREJHC           D.18         Provider does not take care    1= Strongly agree
+                                                   of patients like me            2= Agree
+                                                                                  3= Uncertain
+                                                                                  4= disagree
+
+                                                                                  5= Strongly disagree.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  236    2 2.0       MDRXHC           D.19         Able to obtain medications     1= Strongly agree
+                                                   prescribed                     2= Agree
+                                                                                  3= Uncertain
+                                                                                  4= disagree
+
+                                                                                  5= Strongly disagree.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  238    2 2.0       SERVHC           D.20         Able to get needed medical     1= Strongly agree
+                                                   services                       2= Agree
+                                                                                  3= Uncertain
+                                                                                  4= disagree
+
+                                                                                  5= Strongly disagree.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  240    2 2.0       ILL_HC           D.21A        Missed medical care: too ill   1= Yes
+                                                                                  2= No
+                                                                                  -7= Declined
+                                                                                  -8= Don't Know.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  242    2 2.0       TRANHC           D.21B        Missed medical care: no        1= Yes
+                                                   transportation                 2= No
+                                                                                  -7= Declined
+                                                                                  -8= Don't Know.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  244    2 2.0       FAM_HC           D.21C        Missed medical care: Family    1= Yes
+                                                   sick                           2= No
+                                                                                  -7= Declined
+                                                                                  -8= Don't Know.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  246    2 2.0       CATAHC           D.22         Administer Complementary/      1= Yes
+                                                   Alternative Therapies Section  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  248    2 2.0       ACUPHC           E.1A         Acupuncturist                  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  250    2 2.0       SPRHHC           E.1B         Spiritual Healther             1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  252    2 2.0       HERBHC           E.1C         Herbalist                      1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  254    2 2.0       HPTHHC           E.1D         Homeopath                      1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  256    2 2.0       HYPNHC           E.1E         Hypnotist                      1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  258    2 2.0       MASSHC           E.F          Massage Therapist              1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  260    2 2.0       REFLHC           E.1G         Reflexologist                  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  262    2 2.0       HLROHC           E.1H         Other Healer                   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  264   25 $         HLSPHC           E.1H1        Specify Other Healer           Character
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  289    2 2.0       ALTMHC           E.2          Alternative medicine in past   1= Yes
+                                                   2 months                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  291    2 2.0       KEMRHC           E.3A         Kemron                         1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  293    2 2.0       THYMHC           E.3B         Thymus Extract                 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  295    2 2.0       PEPTHC           E.3C         Peptide t                      1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  297    2 2.0       HREMHC           E.3D         Homeopathic remedies           1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  299    2 2.0       TRENHC           E.3E         Trental                        1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  301    2 2.0       AMOTHC           E.3F         Other medicine?                1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  303   25 $         AMSPHC           E.3F1        Name of other medicine         Character
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  328    2 2.0       COAHHC           E.4          Chinese/Oriental/Asian herbs   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  330    2 2.0       DIETHC           E.5          Special diet for health        1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  332    2 2.0       COLOHC           E.6          receive Colonic treatments     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  334    2 2.0       BIOFHC           E.7          Biofeedback/hypnosis/imagery   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  336    2 2.0       SGRPHC           E.8          Support groups                 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  338    2 2.0       PSHLHC           E.9          Spiritual practices            1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  340    2 2.0       RMASHC           E.10         Massage therapy                1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  342    2 2.0       RACUHC           E.11         Received Acupuncture/          1= Yes
+                                                   acupressure                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  344    2 2.0       EXERHC           E.12         Regular exercise               1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  346    2 2.0       AMMDHC           E.13         Talk to provider about         1= Yes
+                                                   alternative therapy?           2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  348    2 2.0       AACUHC           E.14A        Discuss: Acupuncture           1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  350    2 2.0       ASPHHC           E.14B        Discuss: Spiritual Healing     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  352    2 2.0       AHERHC           E.14C        Discuss: Herbs                 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  354    2 2.0       AHPTHC           E.14D        Discuss: Homeopathy            1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  356    2 2.0       AHYPHC           E.14E        Discuss: Hypnosis              1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  358    2 2.0       AMASHC           E.14F        Discuss: Massage Therapy       1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  360    2 2.0       AREFHC           E.14G        Discuss: Reflexology           1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  362    2 2.0       APOTHC           E.14H        Discuss: Other Alternative     1= Yes
+                                                   Practices                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  364   25 $         APSPHC           E.14H1       Specify Other Alternative      Character
+                                                   Practices                      -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  389    5 time5.    ETIMHC           E.15         Time module ended              01:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  394    2 2.0       EMERHC           E.15A        AM/PM indicator                1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  396    1 $         ESTAT            A.0          Edit Status                    CharacterD= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  397    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

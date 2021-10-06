@@ -1,0 +1,981 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+CIQ - Communication Inequalities Questionnaire
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    8 $         VERSCM           A.3          Form version                   10/01/14= 10/01/14
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   19    8 $         IDTECM           A.4          Date of interview              10/01/14= 10/01/14
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   27    3 $         INITCM           A.5          Initials of person completing  Character
+                                                   form
+
+   30    5 time5.    STIMCM           A.6          Time began                     01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   35    2 2.0       SMERCM           A.6          AM/PM for time began           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   37    2 2.0       INTNCM           B.1          Participant has access to      1= YES
+                                                   internet at home               2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   39    2 2.0       INTFCM           B.2          Frequency participant uses     1= I have never used the
+                                                   internet                          Internet
+                                                                                  2= Less than once a month
+                                                                                  3= At least once a month, but
+                                                                                     less than once a week
+                                                                                  4= Once a week
+                                                                                  5= 3-4 times a week
+                                                                                  6= Once a day
+                                                                                  7= More than once a day
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   41    2 2.0       IPCLCM           B.3.a        Usual location of internet     1= YES
+                                                   use - own personal computer    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   43    2 2.0       IFHCCM           B.3.b        Usual location of internet     1= YES
+                                                   use - family/household shared  2= NO
+                                                   computer                       -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   45    2 2.0       ICWKCM           B.3.c        Usual location of internet     1= YES
+                                                   use - workplace computer       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   47    2 2.0       ICSCCM           B.3.d        Usual location of internet     1= YES
+                                                   use - school computer          2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   49    2 2.0       ICLBCM           B.3.e        Usual location of internet     1= YES
+                                                   use - library computer         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   51    2 2.0       IMCPCM           B.3.f        Usual location of internet     1= YES
+                                                   use - cell phone               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   53    2 2.0       ITABCM           B.3.g        Usual location of internet     1= YES
+                                                   use - tablet/iPad              2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   55    2 2.0       IGAMCM           B.3.h        Usual location of internet     1= YES
+                                                   use - game console             2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   57    2 2.0       IOTHCM           B.3.i        Usual location of internet     1= YES
+                                                   use - other                    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   59   50 $         ISPOCM           B.3.i        Specify other usual location   Character
+                                                   internet use
+
+  109    2 2.0       ILM_CM           C.1          Participant has used internet  1= YES
+                                                   in past month                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  111    2 2.0       RIFFCM           C.2.a        Past month reason internet -   1= YES
+                                                   keep in touch family/friends   2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  113    2 2.0       RISWCM           C.2.b        Past month reason internet -   1= YES
+                                                   assist with school/work        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  115    2 2.0       RINGCM           C.2.c        Past month reason internet -   1= YES
+                                                   news/gossip                    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  117    2 2.0       RIEMCM           C.2.d        Past month reason internet -   1= YES
+                                                   look for employment            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  119    2 2.0       RISPCM           C.2.e        Past month reason internet -   1= YES
+                                                   look for sexual partners       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  121    2 2.0       RISDCM           C.2.f        Past month reason internet -   1= YES
+                                                   look for somebody to date      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  123    2 2.0       RIMFCM           C.2.g        Past month reason internet -   1= YES
+                                                   make friends/meet people       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  125    2 2.0       RIHICM           C.2.h        Past month reason internet -   1= YES
+                                                   look for medical/health        2= NO
+                                                   information                    -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  127    2 2.0       RICRCM           C.2.i        Past month reason internet -   1= YES
+                                                   participate in group           2= NO
+                                                   discussions/chat rooms         -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  129    2 2.0       RIPGCM           C.2.j        Past month reason internet -   1= YES
+                                                   play games                     2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  131    2 2.0       RIPNCM           C.2.k        Past month reason internet -   1= YES
+                                                   look at porn/pornography/      2= NO
+                                                   erotica                        -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  133    2 2.0       RITVCM           C.2.l        Past month reason internet -   1= YES
+                                                   watch television shows/movies  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  135    2 2.0       RISHCM           C.2.m        Past month reason internet -   1= YES
+                                                   shop                           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  137    2 2.0       RIOTCM           C.2.n        Past month reason internet -   1= YES
+                                                   other                          2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  139   50 $         RISOCM           C.2.n        Specify other reason internet  Character
+                                                   use
+
+  189    2 2.0       UIENCM           C.3.a        Past month internet look up -  1= YES
+                                                   healthy eatingutrition         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  191    2 2.0       UIQSCM           C.3.b        Past month internet look up -  1= YES
+                                                   how to quit smoking            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  193    2 2.0       UIEACM           C.3.c        Past month internet look up -  1= YES
+                                                   exercise activities            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  195    2 2.0       UIAMCM           C.3.d        Past month internet look up -  1= YES
+                                                   alternative medicine           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  197    2 2.0       UIADCM           C.3.e        Past month internet look up -  1= YES
+                                                   alcohol/drug treatment         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  199    2 2.0       UIGHCM           C.3.f        Past month internet look up -  1= YES
+                                                   general health information     2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  201    2 2.0       IHIVCM           C.4          Participant has used internet  1= YES
+                                                   to look up HIV-specific        2= NO
+                                                   information                    -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  203    2 2.0       THFMCM           C.5.a        Talked to about internet info  1= YES
+                                                   - family members               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  205    2 2.0       THFRCM           C.5.b        Talked to about internet info  1= YES
+                                                   - friends                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  207    2 2.0       THPRCM           C.5.c        Talked to about internet info  1= YES
+                                                   - partner/boyfriend/girlfriend 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  209    2 2.0       THDNCM           C.5.d        Talked to about internet info  1= YES
+                                                   - doctorurse                   2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  211    2 2.0       THCWCM           C.5.e        Talked to about internet info  1= YES
+                                                   - coworker                     2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  213    2 2.0       THCRCM           C.5.f        Talked to about internet info  1= YES
+                                                   - chat-room/blog/website       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  215    2 2.0       ICHCCM           C.6          Participant has used internet  1= YES
+                                                   to communicate with            2= NO
+                                                   healthcare provider            -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  217    2 2.0       ICGPCM           C.7.a        Internet to communicate with   1= YES
+                                                   health care provider -         2= NO
+                                                   general practitioner           -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  219    2 2.0       ICHDCM           C.7.b        Internet to communicate with   1= YES
+                                                   health care provider - HIV/    2= NO
+                                                   AIDS provider                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  221    2 2.0       ICEDCM           C.7.c        Internet to communicate with   1= YES
+                                                   health care provider - eye     2= NO
+                                                   doctor/optometrist             -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  223    2 2.0       ICDNCM           C.7.d        Internet to communicate with   1= YES
+                                                   health care provider - dentist 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  225    2 2.0       ICOTCM           C.7.e        Internet to communicate with   1= YES
+                                                   health care provider - other   2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  227   50 $         ICSOCM           C.7.e        Specify other health care      Character
+                                                   provider
+
+  277    2 2.0       CELPCM           D.1          Participant has access to      1= YES
+                                                   cell phone every day           2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  279    2 2.0       CPHLCM           D.2          Length of time participant     1= I have never owned a cell
+                                                   has owned cell phone              phone
+                                                                                  2= I don't currently own a
+                                                                                     cell phone
+                                                                                  3= Less than one year
+                                                                                  4= 1-2 years
+                                                                                  5= 3-4 years
+                                                                                  6= 5-6 years
+                                                                                  7= 7-8 years
+                                                                                  8= 9-10 years
+                                                                                  9= Over 10 years
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  281    2 2.0       CPCNCM           D.3          Length of time participant     1= Less than one year
+                                                   has had current cell phone     2= 1-2 years
+                                                                                  3= 3-4 years
+                                                                                  4= 5-6 years
+                                                                                  5= 7-8 years
+                                                                                  6= 9-10 years
+                                                                                  7= Over 10 years
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  283    2 2.0       CPCICM           D.4          Participant owns cell phone    1= YES
+                                                   that connects to internet      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  285    2 2.0       CPCLCM           D.5          Length of time participant     1= Less than one year
+                                                   has owned cell phone that      2= 1-2 years
+                                                   connects to internet           3= 3-4 years
+                                                                                  4= 5-6 years
+                                                                                  5= 7-8 years
+                                                                                  6= 9-10 years
+                                                                                  7= Over 10 years
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  287    2 2.0       CPTPCM           D.6          Type of cell phone - prepaid/  1= The kind of cell phone
+                                                   monthly                           that cuts off at some
+                                                                                     point if minutes are used
+                                                                                     up
+                                                                                  2= Continual cell service as
+                                                                                     long as you are paying the
+                                                                                     monthly bill
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  289    2 2.0       CPTWCM           D.7          Participant has temporarily    1= YES
+                                                   been without cell service      2= NO
+                                                   past 3 months                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  291    2 2.0       DAPPCM           E.1          Cell phone can download apps   1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  293    2 2.0       APPDCM           E.2          Participant currently has      1= YES
+                                                   apps downloaded on phone       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  295    2 2.0       MHIVCM           E.3          Participant has taken meds     1= YES
+                                                   regularly for HIV              2= NO
+                                                                                  3= NOT APPLICABLE,
+                                                                                     PARTICIPANT IS HIV-NEGATIVE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  297    2 2.0       CPHMCM           E.4          Participant has used cell      1= YES
+                                                   phone to help remember HIV     2= NO
+                                                   meds                           -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  299    2 2.0       CHSACM           E.5.a        Used cell phone to remember    1= YES
+                                                   HIV meds - set alarm           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  301    2 2.0       CHDCCM           E.5.b        Used cell phone to remember    1= YES
+                                                   HIV meds - doctor's office     2= NO
+                                                   call/text                      -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  303    2 2.0       CHFCCM           E.5.c        Used cell phone to remember    1= YES
+                                                   HIV meds - friend/family call/ 2= NO
+                                                   text                           -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  305    2 2.0       CHAPCM           E.5.d        Used cell phone to remember    1= YES
+                                                   HIV meds - special app         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  307    2 2.0       CHOTCM           E.5.e        Used cell phone to remember    1= YES
+                                                   HIV meds - other               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  309   50 $         CHSOCM           E.5.e        Specify other way used cell    Character
+                                                   phone for HIV med reminder
+
+  359    2 2.0       MNHVCM           E.6          Participant has taken meds     1= YES
+                                                   regularly for non-HIV          2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  361    2 2.0       CPNHCM           E.7          Participant has used cell      1= YES
+                                                   phone to help remember non-    2= NO
+                                                   HIV meds                       -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  363    2 2.0       CNSACM           E.8.a        Used cell phone to remember    1= YES
+                                                   non-HIV meds - set alarm       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  365    2 2.0       CNDCCM           E.8.b        Used cell phone to remember    1= YES
+                                                   non-HIV meds - doctor's        2= NO
+                                                   office call/text               -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  367    2 2.0       CNFCCM           E.8.c        Used cell phone to remember    1= YES
+                                                   non-HIV meds - friend/family   2= NO
+                                                   call/text                      -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  369    2 2.0       CNAPCM           E.8.d        Used cell phone to remember    1= YES
+                                                   non-HIV meds - special app     2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  371    2 2.0       CNOTCM           E.8.e        Used cell phone to remember    1= YES
+                                                   non-HIV meds - other           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  373   50 $         CNSOCM           E.8.e        Specify other way used cell    Character
+                                                   phone for non-HIV med reminder
+
+  423    2 2.0       CHMDCM           E.9          Cell phone helpfulness for     1= No help at all
+                                                   medication reminders           2= Very little help
+                                                                                  3= Slightly helpful
+                                                                                  4= Fairly helpful
+                                                                                  5= Very helpful
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  425    2 2.0       CMAPCM           E.10         Participant has used cell      1= YES
+                                                   phone to help remember         2= NO
+                                                   medical appointment            -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  427    2 2.0       CHMACM           E.11         Cell phone helpfulness for     1= No help at all
+                                                   medical appt reminders         2= Very little help
+                                                                                  3= Slightly helpful
+                                                                                  4= Fairly helpful
+                                                                                  5= Very helpful
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  429    2 2.0       TSCCCM           F.1.a        Technological skills           1= I would not feel confident
+                                                   confidence level - WIHS           at all
+                                                   clinic computer self           2= confidence level 2
+                                                                                  3= confidence level 3
+                                                                                  4= confidence level 4
+                                                                                  5= I would feel completely
+                                                                                     confident
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  431    2 2.0       TSCVCM           F.1.b        Technological skills           1= I would not feel confident
+                                                   confidence level - WIHS           at all
+                                                   clinic computer voice          2= confidence level 2
+                                                                                  3= confidence level 3
+                                                                                  4= confidence level 4
+                                                                                  5= I would feel completely
+                                                                                     confident
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  433    2 2.0       TSLCCM           F.1.c        Technological skills           1= I would not feel confident
+                                                   confidence level - location       at all
+                                                   of choice self                 2= confidence level 2
+                                                                                  3= confidence level 3
+                                                                                  4= confidence level 4
+                                                                                  5= I would feel completely
+                                                                                     confident
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  435    2 2.0       TSLVCM           F.1.d        Technological skills           1= I would not feel confident
+                                                   confidence level - location       at all
+                                                   of choice voice                2= confidence level 2
+                                                                                  3= confidence level 3
+                                                                                  4= confidence level 4
+                                                                                  5= I would feel completely
+                                                                                     confident
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  437    2 2.0       TSSPCM           F.1.e        Technological skills           1= I would not feel confident
+                                                   confidence level - smart          at all
+                                                   phone self                     2= confidence level 2
+                                                                                  3= confidence level 3
+                                                                                  4= confidence level 4
+                                                                                  5= I would feel completely
+                                                                                     confident
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  439    2 2.0       TSINCM           F.1.f        Technological skills           1= I would not feel confident
+                                                   confidence level - WIHS           at all
+                                                   clinic interviewer             2= confidence level 2
+                                                                                  3= confidence level 3
+                                                                                  4= confidence level 4
+                                                                                  5= I would feel completely
+                                                                                     confident
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  441    2 2.0       AFCCCM           F.2.a        All other factors confidence   1= I would not feel confident
+                                                   level - WIHS clinic computer      at all
+                                                   self                           2= confidence level 2
+                                                                                  3= confidence level 3
+                                                                                  4= confidence level 4
+                                                                                  5= I would feel completely
+                                                                                     confident
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  443    2 2.0       AFCVCM           F.2.b        All other factors confidence   1= I would not feel confident
+                                                   level - WIHS clinic computer      at all
+                                                   voice                          2= confidence level 2
+                                                                                  3= confidence level 3
+                                                                                  4= confidence level 4
+                                                                                  5= I would feel completely
+                                                                                     confident
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  445    2 2.0       AFLCCM           F.2.c        All other factors confidence   1= I would not feel confident
+                                                   level - location of choice        at all
+                                                   self                           2= confidence level 2
+                                                                                  3= confidence level 3
+                                                                                  4= confidence level 4
+                                                                                  5= I would feel completely
+                                                                                     confident
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  447    2 2.0       AFLVCM           F.2.d        All other factors confidence   1= I would not feel confident
+                                                   level - location of choice        at all
+                                                   voice                          2= confidence level 2
+                                                                                  3= confidence level 3
+                                                                                  4= confidence level 4
+                                                                                  5= I would feel completely
+                                                                                     confident
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  449    2 2.0       AFSPCM           F.2.e        All other factors confidence   1= I would not feel confident
+                                                   level - smart phone self          at all
+                                                                                  2= confidence level 2
+                                                                                  3= confidence level 3
+                                                                                  4= confidence level 4
+                                                                                  5= I would feel completely
+                                                                                     confident
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  451    2 2.0       AFINCM           F.2.f        All other factors confidence   1= I would not feel confident
+                                                   level - WIHS clinic               at all
+                                                   interviewer                    2= confidence level 2
+                                                                                  3= confidence level 3
+                                                                                  4= confidence level 4
+                                                                                  5= I would feel completely
+                                                                                     confident
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  453    2 2.0       MLCCCM           F.3.a        Ranking for interview - WIHS   1= Rank 1 (most)
+                                                   clinic computer self           2= Rank 2
+                                                                                  3= Rank 3
+                                                                                  4= Rank 4
+                                                                                  5= Rank 5
+                                                                                  6= Rank 6 (least)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  455    2 2.0       MLCVCM           F.3.b        Ranking for interview - WIHS   1= Rank 1 (most)
+                                                   clinic computer self           2= Rank 2
+                                                                                  3= Rank 3
+                                                                                  4= Rank 4
+                                                                                  5= Rank 5
+                                                                                  6= Rank 6 (least)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  457    2 2.0       MLLCCM           F.3.c        Ranking for interview - WIHS   1= Rank 1 (most)
+                                                   clinic computer self           2= Rank 2
+                                                                                  3= Rank 3
+                                                                                  4= Rank 4
+                                                                                  5= Rank 5
+                                                                                  6= Rank 6 (least)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  459    2 2.0       MLLVCM           F.3.d        Ranking for interview - WIHS   1= Rank 1 (most)
+                                                   clinic computer self           2= Rank 2
+                                                                                  3= Rank 3
+                                                                                  4= Rank 4
+                                                                                  5= Rank 5
+                                                                                  6= Rank 6 (least)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  461    2 2.0       MLSPCM           F.3.e        Ranking for interview - WIHS   1= Rank 1 (most)
+                                                   clinic computer self           2= Rank 2
+                                                                                  3= Rank 3
+                                                                                  4= Rank 4
+                                                                                  5= Rank 5
+                                                                                  6= Rank 6 (least)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  463    2 2.0       MLINCM           F.3.f        Ranking for interview - WIHS   1= Rank 1 (most)
+                                                   clinic computer self           2= Rank 2
+                                                                                  3= Rank 3
+                                                                                  4= Rank 4
+                                                                                  5= Rank 5
+                                                                                  6= Rank 6 (least)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  465    2 2.0       PRCCCM           F.4.a        Ranking for privacy - WIHS     1= Rank 1 (most)
+                                                   clinic computer self           2= Rank 2
+                                                                                  3= Rank 3
+                                                                                  4= Rank 4
+                                                                                  5= Rank 5
+                                                                                  6= Rank 6 (least)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  467    2 2.0       PRCVCM           F.4.b        Ranking for privacy - WIHS     1= Rank 1 (most)
+                                                   clinic computer self           2= Rank 2
+                                                                                  3= Rank 3
+                                                                                  4= Rank 4
+                                                                                  5= Rank 5
+                                                                                  6= Rank 6 (least)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  469    2 2.0       PRLCCM           F.4.c        Ranking for privacy - WIHS     1= Rank 1 (most)
+                                                   clinic computer self           2= Rank 2
+                                                                                  3= Rank 3
+                                                                                  4= Rank 4
+                                                                                  5= Rank 5
+                                                                                  6= Rank 6 (least)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  471    2 2.0       PRLVCM           F.4.d        Ranking for privacy - WIHS     1= Rank 1 (most)
+                                                   clinic computer self           2= Rank 2
+                                                                                  3= Rank 3
+                                                                                  4= Rank 4
+                                                                                  5= Rank 5
+                                                                                  6= Rank 6 (least)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  473    2 2.0       PRSPCM           F.4.e        Ranking for privacy - WIHS     1= Rank 1 (most)
+                                                   clinic computer self           2= Rank 2
+                                                                                  3= Rank 3
+                                                                                  4= Rank 4
+                                                                                  5= Rank 5
+                                                                                  6= Rank 6 (least)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  475    2 2.0       PRINCM           F.4.f        Ranking for privacy - WIHS     1= Rank 1 (most)
+                                                   clinic computer self           2= Rank 2
+                                                                                  3= Rank 3
+                                                                                  4= Rank 4
+                                                                                  5= Rank 5
+                                                                                  6= Rank 6 (least)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  477    2 2.0       HRCCCM           F.5.a        Ranking for honest response -  1= Rank 1 (most)
+                                                   WIHS clinic computer self      2= Rank 2
+                                                                                  3= Rank 3
+                                                                                  4= Rank 4
+                                                                                  5= Rank 5
+                                                                                  6= Rank 6 (least)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  479    2 2.0       HRCVCM           F.5.b        Ranking for honest response -  1= Rank 1 (most)
+                                                   WIHS clinic computer self      2= Rank 2
+                                                                                  3= Rank 3
+                                                                                  4= Rank 4
+                                                                                  5= Rank 5
+                                                                                  6= Rank 6 (least)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  481    2 2.0       HRLCCM           F.5.c        Ranking for honest response -  1= Rank 1 (most)
+                                                   WIHS clinic computer self      2= Rank 2
+                                                                                  3= Rank 3
+                                                                                  4= Rank 4
+                                                                                  5= Rank 5
+                                                                                  6= Rank 6 (least)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  483    2 2.0       HRLVCM           F.5.d        Ranking for honest response -  1= Rank 1 (most)
+                                                   WIHS clinic computer self      2= Rank 2
+                                                                                  3= Rank 3
+                                                                                  4= Rank 4
+                                                                                  5= Rank 5
+                                                                                  6= Rank 6 (least)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  485    2 2.0       HRSPCM           F.5.e        Ranking for honest response -  1= Rank 1 (most)
+                                                   WIHS clinic computer self      2= Rank 2
+                                                                                  3= Rank 3
+                                                                                  4= Rank 4
+                                                                                  5= Rank 5
+                                                                                  6= Rank 6 (least)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  487    2 2.0       HRINCM           F.5.f        Ranking for honest response -  1= Rank 1 (most)
+                                                   WIHS clinic computer self      2= Rank 2
+                                                                                  3= Rank 3
+                                                                                  4= Rank 4
+                                                                                  5= Rank 5
+                                                                                  6= Rank 6 (least)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  489    2 2.0       WAPDCM           F.6          Willing/able to complete       1= I would not feel willing/
+                                                   questionnaire on personal         able at all
+                                                   device                         2= willing/able level 2
+                                                                                  3= willing/able level 3
+                                                                                  4= willing/able level 4
+                                                                                  5= I would feel completely
+                                                                                     willing/able
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  491    5 time5.    ETIMCM           F.7          Time ended                     01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  496    2 2.0       EMERCM           F.7          AM/PM for time ended           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  498    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  499    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

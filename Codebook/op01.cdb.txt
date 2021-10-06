@@ -1,0 +1,242 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+OP01 - ORAL PROTOCOL MEDICAL EVALUATION
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    6 $         FKEY             OldA.0       OLD: Form identifier key       Character
+
+   17    8 $         VERSOA           A.0          Form version                   10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   25    8 $         IDTEOA           A.0          Date of interview              10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   33    3 $         INITOA           A.0          Initials of person completing  Character
+                                                   form
+
+   36    5 time5.    STIMOA           A.0          Time oral visit began          01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   41    2 2.0       SMEROA           A.0          AM/PM indicator for time oral  1= AM
+                                                   visit began                    2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   43    2 2.0       OVISOA           OldA.7       OLD: visit number              1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   45    2 2.0       PROSOA           .1.a         History of artificial heart    1= YES
+                                                   valves                         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   47    2 2.0       SURGOA           .1.b         History of Surgically          1= YES
+                                                   constructed heart-lung         2= NO
+                                                   channel or passage             -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   49    2 2.0       CONGOA           .1.c         History of heart               1= YES
+                                                   malformations since birth      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   51    2 2.0       RHEUOA           .1.d         History of rheumatic or heart  1= YES
+                                                   valve disease                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   53    2 2.0       HYPEOA           .1.e         History of enlarged heart      1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   55    2 2.0       MITROA           .1.f         History of MVP with leaky      1= YES
+                                                   valve                          2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   57    2 2.0       MSUROA           .1.g         History of heart valve surgery 1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   59    2 2.0       INDWOA           .1.h         Existing catheter in           1= YES
+                                                   bloodstream                    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   61    2 2.0       INFEOA           .1.i         History of infective           1= YES
+                                                   endocarditis                   2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63    2 2.0       COAROA           .1.j         History of localized           1= YES
+                                                   narrowing of the heart valve   2= NO
+                                                   since birth                    -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   65    2 2.0       RDIAOA           .1.k         History of kidney dialysis     1= YES
+                                                   with A-V shunt                 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   67    2 2.0       OTHCOA           .1.l         History of other condition     1= YES
+                                                   requiring antibiotics          2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   69    2 2.0       INABOA           2            Prophylactic antibiotics       1= YES
+                                                   indicated                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   71    2 2.0       ABXROA           3            Currently taking antibiotics   1= YES
+                                                   sufficient for dental          2= NO
+                                                   prophylaxis                    -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   73    2 2.0       ADABOA           4.a          Prphylactic antibiotics        1= YES
+                                                   administered for this oral     2= NO
+                                                   exam                           -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   75   25 $         RNADOA           .4.a         Specify reason antibiotics     Character
+                                                   not administered
+
+  100    2 2.0       AMDXOA           .4.b.i       Amoxicillin 2.0g orally        1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  102    2 2.0       ERYTOA           .4.b.ii      Clindamycin 600 mg orally      1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  104    2 2.0       OABXOA           .4.b.iii     Other antibiotic administered  1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  106   25 $         SABXOA           .4.b.iii     Specify other antibiotic       Character
+                                                   administered
+
+  131    2 2.0       MEDIOA           5            Any med changes since last     1= YES
+                                                   visit                          2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  133   25 $         MCH_OA           .5.a         Specify med changes since      Character
+                                                   last visit
+
+  158    2 2.0       ORALOA           6            Treatment for oral lesions     1= YES
+                                                   id'd at last visit             2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  160   25 $         OTREOA           .6.a         Specify treatments             Character
+
+  185    2 2.0       HOSPOA           7            Hospitalizations/doctor visit  1= YES
+                                                   since last visit               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  187   25 $         RNHOOA           .7.a         Specify reason for             Character
+                                                   hospitalization/doctor visit
+
+  212   25 $         DDS_OA           .8.a         Name of dental care provider   Character
+
+  237   25 $         DDSAOA           .8.a         Address of dental care         Character
+                                                   provider
+
+  262   25 $         LTDVOA           .8.b         Specify date of last dental    Character
+                                                   visit
+
+  287   25 $         WSDFOA           .8.c         Reason for last dental visit   Character
+
+  312    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  313    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

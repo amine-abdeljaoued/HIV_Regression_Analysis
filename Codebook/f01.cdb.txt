@@ -1,0 +1,557 @@
+                               CODEBOOK
+Women's Interagency HIV Study                              9-6-2017
+Form 01: B/L Sociodemographics
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A1.1         Participant's ID               1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A1.2         Visit number                   1= Visit 1
+
+   11    6 $         FKEY             A1.1A        Form identifier number         Character
+
+   17    8 $         VERSSD           A1.3         Form version                   01/01/93= January 1, 1993
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   25    8 $         IDTESD           A.4          Date of interview              01/01/93= January 1, 1993
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   33    3 $         INITSD           A.5          Initials of person completing  Character
+                                                   form
+
+   36    5 time5.    STIMSD           A1.6         Time form 1 began              01:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   41    2 2.0       SMERSD           A1.6A        AM/PM indicator                1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   43    2 2.0       COB_SD           B.1          Country of birth               1= US
+                                                                                  2= Puerto Rico or other US
+                                                                                     territories
+                                                                                  3= Other countries
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   45   25 $         COBSSD           B.1A         Specify other country of birth Character
+
+   70    2 2.0       YRUSSD           B.2          Year came to live in US        46= 1946
+                                                                                  .
+                                                                                  .
+                                                                                  95= 1995
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   72    2 2.0       MAR_SD           B.3          Marital status                 1= Legally/Common-law married
+                                                                                  2= Not married but livingwith
+                                                                                     partner
+                                                                                  3= Widowed
+                                                                                  4= Divorced/Annulled
+                                                                                  5= Separated
+                                                                                  6= Never married
+                                                                                  7= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   74   25 $         MRSPSD           B.3A         Other marital status           Character
+
+   99    2 2.0       LWSPSD           B.4          Live with spouse               1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  101    2 2.0       RES_SD           B.5          Residence                      1= Own house/apartment
+                                                                                  2= Parent's house
+                                                                                  3= Someone
+                                                                                  else's house/apartment
+                                                                                  4= Rooming/boarding/halfway
+                                                                                  house
+
+                                                                                  5= Shelter/welfare hotel
+                                                                                  6= On the street(s)
+                                                                                  7=
+                                                                                  Jail/other correctional
+                                                                                  facility
+                                                                                  8= Drug/alcohol treatment
+                                                                                  facility
+                                                                                  9= Other place.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  103   25 $         RESPSD           B.5A         Specify other type of          Character
+                                                   residence
+
+  128    2 2.0       NRESSD           B.6          Number of people living with   0= 0 person
+                                                   participant                    .
+                                                                                  .
+                                                                                  20= 20 people
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  130    2 2.0       LKIDSD           B.7A         Children live with participant 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  132    2 2.0       NKIDSD           B.7AI        Number of children living      1= 1 child
+                                                   with participant               .
+                                                                                  .
+                                                                                  10= 10 children
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  134    2 2.0       LFOSSD           B.7B         Foster children living with    1= Yes
+                                                   participant                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  136    2 2.0       NFOSSD           B.7BI        Number of foster children      1= 1 child
+                                                   living with participant        .
+                                                                                  .
+                                                                                  10= 10 children
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  138    2 2.0       LOTKSD           B.7C         Other children living with     1= Yes
+                                                   participant                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  140   25 $         LOKSSD           B.7CIO       Specify other children living  Character
+                                                   with participant
+
+  165    2 2.0       NOTKSD           B.7CI        Number of other children       1= 1 child
+                                                   living with participant        .
+                                                                                  .
+                                                                                  8= 8 children
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  167    2 2.0       LMALSD           B.7D         Husband/male sex partner       1= Yes
+                                                   living with participant        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  169    2 2.0       LFEMSD           B.7E         Female sex partner living      1= Yes
+                                                   with participant               2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  171    2 2.0       LPARSD           B.7F         Parents/step/foster living     1= Yes
+                                                   with participant               2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  173    2 2.0       NPARSD           B.7FI        Number of parents/step/foster  1= 1 parent
+                                                   living with participant        .
+                                                                                  .
+                                                                                  8= 8 parents
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  175    2 2.0       LRELSD           B.7G         Other adult relatives living   1= Yes
+                                                   with participant               2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  177   25 $         LOTRSD           B.7G1        Specify other adult relatives  Character
+                                                   living with participant
+
+  202    2 2.0       NRELSD           B.7GI        Number of other adult          1= 1 adult
+                                                   relatives living with          .
+                                                   participant                    .
+                                                                                  8= 8 adults
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  204    2 2.0       LADLSD           B.7H         Other adult non-relatives      1= Yes
+                                                   living with participant        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  206   25 $         LOTASD           B.7H1        Specify other adult, non-      Character
+                                                   relatives living with
+                                                   participant
+
+  231    2 2.0       NADLSD           B.7H1I       Number of other adult, non-    0= 0 adult
+                                                   relatives living with          .
+                                                   participant                    .
+                                                                                  8= 8 adults
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  233    2 2.0       EMP1SD           B.8          Employment status (live house/ 1= Yes
+                                                   apt.)                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  235    2 2.0       FST1SD           B.9          receiving financial            1= Yes
+                                                   assistance (live house/apt)    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  237    2 2.0       INC_SD           B.10         Average monthly income of      1= $500 or less
+                                                   household                      2= $501-$1000
+                                                                                  3= $1001-$1500
+                                                                                  4= $1501-$2000
+                                                                                  5= $2001-$2500
+                                                                                  6= $2501-$3000
+                                                                                  7= $3001-$6250
+                                                                                  8= > $6250
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  239    2 2.0       ISWGSD           B.11         Household's income: wages/     1= Yes
+                                                   salary                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  241    2 2.0       PDWGSD           B.11A        Income paid directly: wages/   1= Yes
+                                                   salary                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  243    2 2.0       ISALSD           B.12         Household's income: alimony/   1= Yes
+                                                   child support                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  245    2 2.0       PDALSD           B.12A        Income paid direct: alimony/   1= Yes
+                                                   child support                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  247    2 2.0       ISWFSD           B.13         Household's income: welfare/   1= Yes
+                                                   public aid, AFDC               2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  249    2 2.0       PDWFSD           B.13A        Income paid direct: welfare/   1= Yes
+                                                   public aid, AFDC               2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  251    2 2.0       ISDISD           B.14         Household's income: SSI/SSDI   1= Yes
+                                                   (Social Security Disability    2= No
+                                                   Income)                        -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  253    2 2.0       PDDISD           B.14A        Income paid directly: SSI/     1= Yes
+                                                   SSDI (Social Security          2= No
+                                                   Disability Income)             -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  255    2 2.0       ISPDSD           B.15         Household's income:private     1= Yes
+                                                   disability/workers comp        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  257    2 2.0       PDPDSD           B.15A        Income paid direct:private     1= Yes
+                                                   disability/ workers comp       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  259    2 2.0       ISSSSD           B.16         Household's income: social     1= Yes
+                                                   security                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  261    2 2.0       PDSSSD           B.16A        Income paid directly: social   1= Yes
+                                                   security                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  263    2 2.0       ISPNSD           B.17         Household's income: pension    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  265    2 2.0       PDPNSD           B.17A        Income paid directly: pension  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  267    2 2.0       ISOTSD           B.18         Other household income source  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  269   25 $         ISPCSD           B.18B        Specify other household        Character
+                                                   income source
+
+  294    2 2.0       PDOTSD           B.18A        Income paid direct:other       1= Yes
+                                                   household income source        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  296    2 2.0       EMP2SD           B.19         Employment status (no          1= Yes
+                                                   household)                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  298    2 2.0       FST2SD           B.20         Receiving financial            1= Yes
+                                                   assistance (no household)      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  300    2 2.0       FINCSD           B.21         Average monthly income of      1= $500 or Less
+                                                   former household               2= $501 to $1000
+                                                                                  3= $1001 to $1500
+                                                                                  4= $1501 to $2000
+                                                                                  5= $2001 to $2500
+                                                                                  6= $2501 to $3000
+                                                                                  7= $3001 to $6250
+                                                                                  8= more than $6250
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  302    2 2.0       FIWGSD           B.22         Former household's income:     1= Yes
+                                                   wages/salary                   2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  304    2 2.0       FPWGSD           B.22A        Former income paid             1= Yes
+                                                   directly:wages/salary          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  306    2 2.0       FIALSD           B.23         Former household's             1= Yes
+                                                   income:alimony/child support   2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  308    2 2.0       FPALSD           B.23A        Former income paid             1= Yes
+                                                   direct:alimony/child support   2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  310    2 2.0       FIWFSD           B.24         Former household's             1= Yes
+                                                   income:welfare/public aid,     2= No
+                                                   AFDC                           -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  312    2 2.0       FPWFSD           B.24A        Former income paid             1= Yes
+                                                   direct:welfare/public aid,     2= No
+                                                   AFDC                           -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  314    2 2.0       FIDISD           B.25         Former household's income:SSI/ 1= Yes
+                                                   SSDI (Social Security          2= No
+                                                   Disability Income)             -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  316    2 2.0       FPDISD           B.25A        Former income paid directly:   1= Yes
+                                                   SSI/SSDI (Social Security      2= No
+                                                   Disability Income)             -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  318    2 2.0       FIPDSD           B.26         Former household's             1= Yes
+                                                   income:private disability/     2= No
+                                                   workers comp                   -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  320    2 2.0       FPPDSD           B.26A        Former income paid             1= es
+                                                   direct:private disability/     2= No
+                                                   workers comp                   -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  322    2 2.0       FISSSD           B.27         Former household's             1= Yes
+                                                   income:social security         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  324    2 2.0       FPSSSD           B.27A        Former income paid             1= Yes
+                                                   directly:social security       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  326    2 2.0       FIPNSD           B.28         Former household's             1= Yes
+                                                   income:pension                 2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  328    2 2.0       FPPNSD           B.28A        Former income paid             1= Yes
+                                                   directly:pension               2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  330    2 2.0       FIOTSD           B.29         Former household's other       1= Yes
+                                                   income source                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  332   25 $         FISPSD           B.29O        Specify other income source    Character
+                                                   of former household
+
+  357    2 2.0       FPOTSD           B.29A        Former income paid direct:     1= Yes
+                                                   other income source            2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  359    5 time5.    ETIMSD           B.30         Time interview ended           01:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  364    2 2.0       EMERSD           B.30A        AM/PM indicator                1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  366    1 $         ESTAT            A.0          Edit Status                    CharacterD= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  367    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

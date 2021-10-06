@@ -1,0 +1,650 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+ABRV - Abbreviated Visit
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    8 $         VERSAB           A.3          Form version                   01/01/93= 01/01/93
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   19    8 $         IDTEAB           A.4          Date of interview              10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   27    3 $         INITAB           A.5          Initials of person completing  Character
+                                                   form
+
+   30    8 $         LVISAB           A.6          Date of last study visit       10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   38    8 $         DOB_AB           OldA.7       OLD: Participant's date of     09/01/30= 09/01/30
+                                                   birth                          .
+                                                                                  .
+                                                                                  11/01/82= 11/01/82
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   46    5 time5.    BTIMAB           OldA.8       OLD: Time module began         01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   51    2 2.0       BMERAB           OldA.8.a     OLD: Time module began (am/pm) 1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   53    2 2.0       RNAVAB           A.9          Participant status             1= PARTICIPANT IS
+                                                                                     INCARCERATED OR UNDER HOME
+                                                                                     DETENTION WITH
+                                                                                     RESTRICTIONS (TIME,
+                                                                                     ILLNESS OR REGULATIONS)
+                                                                                  2= PARTICIPANT IS TOO ILL
+                                                                                  3= PARTICIPANT HAS MOVED OUT
+                                                                                     OF THE AREA
+                                                                                  4= REPEATED SCHEDULING
+                                                                                     ATTEMPTS MADE;
+                                                                                     APPOINTMENTS NOT KEPT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   55    2 2.0       LVAVAB           A.9.a        Last visit was an abbreviated  1= YES
+                                                   visit                          2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   57   50 $         SILLAB           A.9.b        Specify illness                Character
+
+  107    2 2.0       PLACAB           A.10         Type of interview              1= BY TELEPHONE
+                                                                                  2= IN PERSON
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  109    2 2.0       SITEAB           A.10.a       Place of interview             1= WIHS CLINIC
+                                                                                  2= OTHER CLINIC
+                                                                                  3= PARTICIPANT'S HOME
+                                                                                  4= FAMILY/PARTNER'S HOME
+                                                                                  5= CORRECTIONAL FACILITY
+                                                                                  6= DRUG TREATMENT CENTER
+                                                                                  7= HOSPICE
+                                                                                  8= HOSPITAL
+                                                                                  9= OTHER
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  111   25 $         SPCLAB           A.10.a.i     Specify other clinic of        Character
+                                                   interview
+
+  136   25 $         SPSIAB           A.10.a.ii    Specify other place of         Character
+                                                   interview
+
+  161    2 2.0       F29CAB           A.11         F29/Phlebotomy form completed  1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  163    2 2.0       F29WAB           A.11.a       Reason F29/Phlebotomy form     1= PARTICIPANT WAS TOO SICK
+                                                   not completed                  2= PARTICIPANT REFUSED
+                                                                                  3= SUPPLIES/EXPERTISE NOT
+                                                                                     AVAILABLE
+                                                                                  5= PHONE INTERVIEW ONLY
+                                                                                     COMPLETED
+                                                                                  6= PARTICIPANT TOO BUSY
+                                                                                  4= OTHER
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  165    2 2.0       F31CAB           A.12         F31/Specimen form completed    1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  167    2 2.0       F31WAB           A.12.a       Reason F31/Specimen form not   1= PARTICIPANT WAS TOO SICK
+                                                   completed                      2= PARTICIPANT REFUSED
+                                                                                  3= SUPPLIES/EXPERTISE NOT
+                                                                                     AVAILABLE
+                                                                                  5= PHONE INTERVIEW ONLY
+                                                                                     COMPLETED
+                                                                                  6= PARTICIPANT TOO BUSY
+                                                                                  4= OTHER
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  169    2 2.0       PREGAB           B.1          Participant is pregnant        1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  171    2 2.0       TPRGAB           B.2          Times pregnant since visit     0= 0
+                                                   excluding current pregnancy    .
+                                                                                  .
+                                                                                  6= 6
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  173    2 2.0       NPRGAB           B.3          Times pregnant since last      0= 0
+                                                   study visit                    .
+                                                                                  .
+                                                                                  8= 8
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  175    2 2.0       NWLVAB           OldB.1       OLD: Participant's place of    1= in own house/apt
+                                                   residence                      2= at parent's house
+                                                                                  3= someone else's house
+                                                                                  4= rooming/boarding house
+                                                                                  5= shelter/welfare hotel
+                                                                                  6= on the street(s)
+                                                                                  7= jail
+                                                                                  8= drug/alcohol facility
+                                                                                  9= hospice center
+                                                                                  10= other place
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  177   40 $         SPLVAB           OldB.1.A     OLD: Specify other place of    Character
+                                                   residence
+
+  217    2 2.0       HLTHAB           OldB.2       OLD: General health            1= Excellent
+                                                                                  2= Very Good
+                                                                                  3= Good
+                                                                                  4= Fair
+                                                                                  5= Poor
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  219    2 2.0       SYFVAB           OldB.3.A     OLD: Experienced temprature    1= Yes
+                                                   over 100                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  221    2 2.0       SYDIAB           OldB.3.B     OLD: Experienced diarrhea      1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  223    2 2.0       SYMLAB           OldB.3.C     OLD: Experienced memory        1= Yes
+                                                   problems                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  225    2 2.0       SYNUAB           OldB.3.D     OLD: Experienced numbness      1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  227    2 2.0       SYCOAB           OldB.3.E     OLD: Experienced confusion     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  229    2 2.0       SYNSAB           OldB.3.F     OLD: Experienced night sweats  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  231    2 2.0       PCP_AB           OldB.4       OLD: Had PCP since last visit  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  233    2 2.0       PNM_AB           OldB.5       OLD: Had pneumonia             1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  235    2 2.0       PNTXAB           OldB.5.A     OLD: # of times had pneumonia  0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  237    2 2.0       CANCAB           OldB.6       OLD: Had cancer                1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  239   40 $         SPCAAB           OldB.6.A     OLD: Specify type of cancer    Character
+
+  279    2 2.0       TB__AB           OldB.7       OLD: Had tuberculosis          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  281    2 2.0       CANDAB           OldB.8       OLD: Had candida or thrush     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  283    2 2.0       MAI_AB           OldB.9       OLD: Had m-a-i infection       1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  285    2 2.0       WTLSAB           OldB.10      OLD: Had wasting syndrome      1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  287    2 2.0       CMV_AB           OldB.11      OLD: Had c-m-v infection       1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  289    2 2.0       CMVEAB           OldB.11.A    OLD: CMV was in eye            1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  291    2 2.0       CMVOAB           OldB.11.B    OLD: CMV was somewhere other   1= Yes
+                                                   than eye                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  293    2 2.0       SHINAB           OldB.12      OLD: Had shingles              1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  295    2 2.0       AIDSAB           OldB.13      OLD: Had aids                  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  297    2 2.0       HOSPAB           OldB.14      OLD: Was admitted to the       1= Yes
+                                                   hospital                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  299    2 2.0       THSPAB           OldB.14.A    OLD: # of times was in         0= 0
+                                                   hospital                       .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  301    2 2.0       STD_AB           OldB.15      OLD: Had genital infection or  1= Yes
+                                                   STD                            2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  303    2 2.0       GONOAB           OldB.15.I    OLD: Had gonorrhea             1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  305    2 2.0       SYPHAB           OldB.15.II   OLD: Had syphilis              1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  307    2 2.0       CHLMAB           OldB.15.III  OLD: Had chlamydia             1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  309    2 2.0       PID_AB           OldB.15.IV   OLD: Had PID                   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  311    2 2.0       HERPAB           OldB.15.V    OLD: Had herpes                1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  313    2 2.0       WARTAB           OldB.15.VI   OLD: Had warts                 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  315    2 2.0       TRCHAB           OldB.15.VII  OLD: Had trichomonal vaginitis 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  317    2 2.0       BV__AB           OldB.15.VIII  OLD: Had bacterial vaginitis   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  319    2 2.0       YVC_AB           OldB.15.IX   OLD: Had yeast vaginitis or    1= Yes
+                                                   candida                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  321    2 2.0       STDOAB           OldB.15.X    OLD: Had other genital         1= Yes
+                                                   infection/STD                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  323   40 $         SSTDAB           OldB.15.XI   OLD: Specify other genital     Character
+                                                   infection/STD
+
+  363    2 2.0       NMEDAB           OldB.16      OLD: Started taking new meds   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  365    2 2.0       SMALAB           OldC.1       OLD: Number of male partners   0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  367    2 2.0       SFEMAB           OldC.2       OLD: Number of female partners 0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  369    2 2.0       MENSAB           OldC.3       OLD: Had a menstrual period    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  371    2 2.0       LATEAB           OldC.4.A     OLD: Had a period 3 days       1= Yes
+                                                   early/late                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  373    2 2.0       SKIPAB           OldC.4.B     OLD: Had skipped a monthly     1= Yes
+                                                   period                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  375    2 2.0       SPOTAB           OldC.4.C     OLD: Had spotting or bleeding  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  377    2 2.0       HYSTAB           OldC.5.A     OLD: Had a hysterectomy        1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  379    2 2.0       MENOAB           OldC.5.B     OLD: Had been through          1= Yes
+                                                   menopause                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  381    2 2.0       SMOKAB           OldC.6       OLD: Have smoked cigarettes    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  383    2 2.0       DRNKAB           OldC.7       OLD: Have had a drink          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  385    2 2.0       HASHAB           OldC.8.A     OLD: Have used marijuana or    1= Yes
+                                                   hash                           2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  387    2 2.0       METHAB           OldC.8.B     OLD: Have used methadone       1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  389    2 2.0       CRCKAB           OldC.8.C     OLD: Have used crack           1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  391    2 2.0       COC_AB           OldC.8.D     OLD: Have used cocaine         1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  393    2 2.0       HEROAB           OldC.8.E     OLD: Have used heroin          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  395    2 2.0       ODRGAB           OldC.8.F     OLD: Have used other drug      1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  397   40 $         SPDRAB           OldC.8.F.1   OLD: Specify other drug used   Character
+
+  437    2 2.0       INJEAB           OldC.9       OLD: Have injected drugs       1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  439    2 2.0       SHARAB           OldC.10      OLD: Have shared a needle      1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  441    2 2.0       BLD_AB           OldC.11.A    OLD: Willing to have blood     1= Yes
+                                                   drawn                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  443    2 2.0       PE__AB           OldC.11.B    OLD: Willing to have a         1= Yes
+                                                   physical exam                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  445    2 2.0       GYN_AB           OldC.11.C    OLD: Willing to have a gyn     1= Yes
+                                                   exam                           2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  447    2 2.0       URINAB           OldC.11.D    OLD: Willing to provide a      1= Yes
+                                                   urine sample                   2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  449    5 time5.    ETIMAB           OldC.12      OLD: Time module ended         01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  454    2 2.0       EMERAB           OldC.12.A    OLD: Time ended am/pm          1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  456    2 2.0       CONFAB           OldD.1       OLD: How confident             1= Very Confident
+                                                   interviewer feels              2= Some Doubts
+                                                                                  3= No Confidence
+                                                                                  4= Don't Know/Can't Say
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  458  255 $         QGCMAB           OldD.2       OLD: General comments          Character
+
+  713    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  714    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

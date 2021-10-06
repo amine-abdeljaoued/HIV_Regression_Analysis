@@ -1,0 +1,1092 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+F25C - Engagement in Care
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    8 $         VERSEC           A.3          Form version                   10/01/13= 10/01/13
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   19    8 $         IDTEEC           A.4          Date of interview              10/01/13= 10/01/13
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   27    3 $         INITEC           A.5          Initials of person completing  Character
+                                                   form
+
+   30    8 $         LVISEC           A.6          Date of last visit at which    10/01/94= 10/01/94
+                                                   F25c was administered          .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   38    5 time5.    STIMEC           A.7          Time began                     01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   43    2 2.0       SMEREC           A.7          AM/PM for time began           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   45    2 2.0       HIVSEC           A.8          Participant's HIV status       1= POSITIVE
+                                                                                  2= NEGATIVE
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   47    2 2.0       RRHCEC           B.1          Participant has received       1= YES
+                                                   regular HIV care               2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   49    2 2.0       RHC6EC           B.2          Participant has received       1= YES
+                                                   regular HIV care in past 6     2= NO
+                                                   months                         -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   51    3 3.0       RH6TEC           B.3          Number of times participant    1= 1
+                                                   received regular HIV care in   .
+                                                   past 6 months                  .
+                                                                                  180= 180
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   54    2 2.0       RH6MEC           B.4          Participant has missed a       1= YES
+                                                   regular HIV care appt. in      2= NO
+                                                   past 6 months                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   56    3 3.0       RHMTEC           B.4.a        Number of times participant    1= 1
+                                                   missed regular HIV care in     .
+                                                   past 6 months                  .
+                                                                                  180= 180
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   59    2 2.0       RHCFEC           B.5          Frequency participant's HCP    1= ONCE A YEAR
+                                                   requests she receive reglar    2= TWICE A YEAR
+                                                   HIV care                       3= THREE TIMES A YEAR
+                                                                                  4= MORE FREQUENTLY
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   61    2 2.0       OEV1EC           B.6          Current visit is odd or even - 1= ODD-NUMBERED VISIT
+                                                   1st question                   2= EVEN-NUMBERED VISIT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63    2 2.0       TTELEC           C.1          Typical HIV providers - can    1= Strongly agree
+                                                   tell them anything             2= Agree
+                                                                                  3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   65    2 2.0       TPRTEC           C.2          Typical HIV providers -        1= Strongly agree
+                                                   pretend to know things         2= Agree
+                                                                                  3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   67    2 2.0       TJDGEC           C.3          Typical HIV providers -        1= Strongly agree
+                                                   completely trust their         2= Agree
+                                                   judgment                       3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   69    2 2.0       TCSTEC           C.4          Typical HIV providers - care   1= Strongly agree
+                                                   more about cost                2= Agree
+                                                                                  3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   71    2 2.0       TTRTEC           C.5          Typical HIV providers -        1= Strongly agree
+                                                   always tell the truth          2= Agree
+                                                                                  3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   73    2 2.0       TCAREC           C.6          Typical HIV providers - care   1= Strongly agree
+                                                   as much as participant         2= Agree
+                                                                                  3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   75    2 2.0       THIDEC           C.7          Typical HIV providers - try    1= Strongly agree
+                                                   to hide mistakes               2= Agree
+                                                                                  3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   77    2 2.0       TRSTEC           C.8          Typical HIV providers -        1= Strongly agree
+                                                   participant trusts their       2= Agree
+                                                   providers                      3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   79    2 2.0       YINFEC           C.9          Caring for yourself - get      1= Strongly agree
+                                                   info about treament options    2= Agree
+                                                                                  3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   81    2 2.0       YPRFEC           C.10         Caring for yourself - get      1= Strongly agree
+                                                   providers to hear your         2= Agree
+                                                   preferences                    3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   83    2 2.0       YACTEC           C.11         Caring for yourself - active   1= Strongly agree
+                                                   in own health care             2= Agree
+                                                                                  3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   85    2 2.0       YCMTEC           C.12         Caring for yourself -          1= Strongly agree
+                                                   commitment to treatment        2= Agree
+                                                                                  3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   87    2 2.0       YRSBEC           C.13         Caring for yourself -          1= Strongly agree
+                                                   recognize setbacks likely      2= Agree
+                                                                                  3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   89    2 2.0       YCSBEC           C.14         Caring for yourself - accept   1= Strongly agree
+                                                   may be setbacks                2= Agree
+                                                                                  3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   91    2 2.0       YUNCEC           C.15         Caring for yourself - live     1= Strongly agree
+                                                   with uncertainty               2= Agree
+                                                                                  3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   93    2 2.0       YUNKEC           C.16         Caring for yourself - accept   1= Strongly agree
+                                                   future health is unknown       2= Agree
+                                                                                  3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   95    2 2.0       NTRSEC           C.17.a       Last 6 months  HIV care - no   1= YES
+                                                   transport                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   97    2 2.0       NPAYEC           C.17.b       Last 6 months  HIV care - not  1= YES
+                                                   able to pay                    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   99    2 2.0       NKNWEC           C.17.c       Last 6 months  HIV care - not  1= YES
+                                                   knowing where to go            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  101    2 2.0       NCHCEC           C.17.d       Last 6 months  HIV care - no   1= YES
+                                                   one to care for children/      2= NO
+                                                   others                         3= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  103    2 2.0       NNEDEC           C.17.e       Last 6 months  HIV care - no   1= YES
+                                                   need bc HIV controlled         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  105    2 2.0       NTIMEC           C.17.f       Last 6 months  HIV care - no   1= YES
+                                                   time/can't take off work       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  107    2 2.0       NPPLEC           C.17.g       Last 6 months  HIV care - not  1= YES
+                                                   going bc people might see you  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  109    2 2.0       NSCKEC           C.17.h       Last 6 months  HIV care - not  1= YES
+                                                   going bc too sick              2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  111    2 2.0       LCMPEC           D.1          How often feel lack of         1= HARDLY EVER
+                                                   companionship                  2= SOME OF THE TIME
+                                                                                  3= OFTEN
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  113    2 2.0       LFTOEC           D.2          How often feel left out        1= HARDLY EVER
+                                                                                  2= SOME OF THE TIME
+                                                                                  3= OFTEN
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  115    2 2.0       ISOLEC           D.3          How often feel isolated        1= HARDLY EVER
+                                                                                  2= SOME OF THE TIME
+                                                                                  3= OFTEN
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  117    2 2.0       SLSTEC           D.4          Someone for support - can      1= None of the time
+                                                   listen                         2= A little of the time
+                                                                                  3= Some of the time
+                                                                                  4= Most of the time
+                                                                                  5= All of the time
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  119    2 2.0       SINFEC           D.5          Someone for support - can      1= None of the time
+                                                   give information               2= A little of the time
+                                                                                  3= Some of the time
+                                                                                  4= Most of the time
+                                                                                  5= All of the time
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  121    2 2.0       SADVEC           D.6          Someone for support - to give  1= None of the time
+                                                   advice                         2= A little of the time
+                                                                                  3= Some of the time
+                                                                                  4= Most of the time
+                                                                                  5= All of the time
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  123    2 2.0       SCNFEC           D.7          Someone for support - can      1= None of the time
+                                                   confide in                     2= A little of the time
+                                                                                  3= Some of the time
+                                                                                  4= Most of the time
+                                                                                  5= All of the time
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  125    2 2.0       SAWTEC           D.8          Someone for support - want     1= None of the time
+                                                   their advice                   2= A little of the time
+                                                                                  3= Some of the time
+                                                                                  4= Most of the time
+                                                                                  5= All of the time
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  127    2 2.0       SSHREC           D.9          Someone for support - share    1= None of the time
+                                                   worries/fears                  2= A little of the time
+                                                                                  3= Some of the time
+                                                                                  4= Most of the time
+                                                                                  5= All of the time
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  129    2 2.0       STRNEC           D.10         Someone for support - turn to  1= None of the time
+                                                   for suggestions                2= A little of the time
+                                                                                  3= Some of the time
+                                                                                  4= Most of the time
+                                                                                  5= All of the time
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  131    2 2.0       SUNDEC           D.11         Someone for support - who      1= None of the time
+                                                   understands                    2= A little of the time
+                                                                                  3= Some of the time
+                                                                                  4= Most of the time
+                                                                                  5= All of the time
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  133    2 2.0       SHLPEC           D.12         Someone for support - help if  1= None of the time
+                                                   confined to bed                2= A little of the time
+                                                                                  3= Some of the time
+                                                                                  4= Most of the time
+                                                                                  5= All of the time
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  135    2 2.0       STAKEC           D.13         Someone for support - take     1= None of the time
+                                                   participant to doctor          2= A little of the time
+                                                                                  3= Some of the time
+                                                                                  4= Most of the time
+                                                                                  5= All of the time
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  137    2 2.0       SPRPEC           D.14         Someone for support - to       1= None of the time
+                                                   prepare meals                  2= A little of the time
+                                                                                  3= Some of the time
+                                                                                  4= Most of the time
+                                                                                  5= All of the time
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  139    2 2.0       SSHPEC           D.15         Someone for support - chores   1= None of the time
+                                                   like shopping                  2= A little of the time
+                                                                                  3= Some of the time
+                                                                                  4= Most of the time
+                                                                                  5= All of the time
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  141    2 2.0       SCAREC           D.16         Someone for support - help     1= None of the time
+                                                   care for others                2= A little of the time
+                                                                                  3= Some of the time
+                                                                                  4= Most of the time
+                                                                                  5= All of the time
+                                                                                  6= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  143    2 2.0       SPLCEC           D.17         Someone for support - a place  1= None of the time
+                                                   to live                        2= A little of the time
+                                                                                  3= Some of the time
+                                                                                  4= Most of the time
+                                                                                  5= All of the time
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  145    2 2.0       SMNYEC           D.18         Someone for support - for      1= None of the time
+                                                   money                          2= A little of the time
+                                                                                  3= Some of the time
+                                                                                  4= Most of the time
+                                                                                  5= All of the time
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  147    2 2.0       F2NVEC           D.19         Feelings last 2 weeks -        0= Not at all
+                                                   nervous/anxious                1= Several days
+                                                                                  2= Over half the days
+                                                                                  3= Nearly every day
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  149    2 2.0       F2WREC           D.20         Feelings last 2 weeks -        0= Not at all
+                                                   unable to control worrying     1= Several days
+                                                                                  2= Over half the days
+                                                                                  3= Nearly every day
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  151    2 2.0       F2WTEC           D.21         Feelings last 2 weeks -        0= Not at all
+                                                   worrying too much              1= Several days
+                                                                                  2= Over half the days
+                                                                                  3= Nearly every day
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  153    2 2.0       F2TREC           D.22         Feelings last 2 weeks -        0= Not at all
+                                                   trouble relaxing               1= Several days
+                                                                                  2= Over half the days
+                                                                                  3= Nearly every day
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  155    2 2.0       F2RSEC           D.23         Feelings last 2 weeks -        0= Not at all
+                                                   restless/unable to sit still   1= Several days
+                                                                                  2= Over half the days
+                                                                                  3= Nearly every day
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  157    2 2.0       F2AIEC           D.24         Feelings last 2 weeks -        0= Not at all
+                                                   easily annoyed/irritable       1= Several days
+                                                                                  2= Over half the days
+                                                                                  3= Nearly every day
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  159    2 2.0       F2AFEC           D.25         Feelings last 2 weeks -        0= Not at all
+                                                   afraid/aprehensive             1= Several days
+                                                                                  2= Over half the days
+                                                                                  3= Nearly every day
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  161    2 2.0       OEV2EC           D.26         Current visit is odd or even - 1= ODD-NUMBERED VISIT
+                                                   2nd question                   2= EVEN-NUMBERED VISIT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  163    2 2.0       F7PCEC           E.1          Feelings last 7 days -         0= Not at all
+                                                   peaceful                       1= A little bit
+                                                                                  2= Somewhat
+                                                                                  3= Quite a bit
+                                                                                  4= Very much
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  165    2 2.0       F7RLEC           E.2          Feelings last 7 days - reason  0= Not at all
+                                                   for living                     1= A little bit
+                                                                                  2= Somewhat
+                                                                                  3= Quite a bit
+                                                                                  4= Very much
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  167    2 2.0       F7LPEC           E.3          Feelings last 7 days - life    0= Not at all
+                                                   has been productive            1= A little bit
+                                                                                  2= Somewhat
+                                                                                  3= Quite a bit
+                                                                                  4= Very much
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  169    2 2.0       F7TPEC           E.4          Feelings last 7 days -         0= Not at all
+                                                   trouble feeling peace          1= A little bit
+                                                                                  2= Somewhat
+                                                                                  3= Quite a bit
+                                                                                  4= Very much
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  171    2 2.0       F7SPEC           E.5          Feelings last 7 days - sense   0= Not at all
+                                                   of purpose                     1= A little bit
+                                                                                  2= Somewhat
+                                                                                  3= Quite a bit
+                                                                                  4= Very much
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  173    2 2.0       F7DDEC           E.6          Feelings last 7 days - reach   0= Not at all
+                                                   down deep to find comfort      1= A little bit
+                                                                                  2= Somewhat
+                                                                                  3= Quite a bit
+                                                                                  4= Very much
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  175    2 2.0       F7HYEC           E.7          Feelings last 7 days - sense   0= Not at all
+                                                   of harmony                     1= A little bit
+                                                                                  2= Somewhat
+                                                                                  3= Quite a bit
+                                                                                  4= Very much
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  177    2 2.0       F7LLEC           E.8          Feelings last 7 days - life    0= Not at all
+                                                   lacks meaning                  1= A little bit
+                                                                                  2= Somewhat
+                                                                                  3= Quite a bit
+                                                                                  4= Very much
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  179    2 2.0       F7CFEC           E.9          Feelings last 7 days - find    0= Not at all
+                                                   comfort in faith               1= A little bit
+                                                                                  2= Somewhat
+                                                                                  3= Quite a bit
+                                                                                  4= Very much
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  181    2 2.0       F7OKEC           E.10         Feelings last 7 days -         0= Not at all
+                                                   whatever happens is OK         1= A little bit
+                                                                                  2= Somewhat
+                                                                                  3= Quite a bit
+                                                                                  4= Very much
+                                                                                  5= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  183    2 2.0       F7ISEC           E.11         Feelings last 7 days -         0= Not at all
+                                                   illness has strengthened       1= A little bit
+                                                   spirituality                   2= Somewhat
+                                                                                  3= Quite a bit
+                                                                                  4= Very much
+                                                                                  5= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  185    2 2.0       F7SFEC           E.12         Feelings last 7 days - find    0= Not at all
+                                                   strength in faith              1= A little bit
+                                                                                  2= Somewhat
+                                                                                  3= Quite a bit
+                                                                                  4= Very much
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  187    2 2.0       CVCSEC           F.0          Questions about lifetime       1= YES
+                                                   discrimination administered    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  189    2 2.0       JOBFEC           F.1          Ever been unfairly fired from  1= YES
+                                                   job or denied promotion        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  191    2 2.0       JFTMEC           F.1.a        Number of times participant    1= 1
+                                                   unfairly fired or denied       .
+                                                   promotion                      .
+                                                                                  99= 99
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  193    2 2.0       JFLTEC           F.1.b        Last time unfairly fired or    1= Past week
+                                                   denied promotion               2= Past month
+                                                                                  3= Past year
+                                                                                  4= More than a year ago
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  195    2 2.0       JFGNEC           F.1.c        Discrimination, fired from     1= Nothing
+                                                   job - gender                   2= A little
+                                                                                  3= Some
+                                                                                  4= A lot
+                                                                                  5= Everything
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  197    2 2.0       JFRCEC           F.1.d        Discrimination, fired from     1= Nothing
+                                                   job - race                     2= A little
+                                                                                  3= Some
+                                                                                  4= A lot
+                                                                                  5= Everything
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  199    2 2.0       JFHVEC           F.1.e        Discrimination, fired from     1= Nothing
+                                                   job - HIV                      2= A little
+                                                                                  3= Some
+                                                                                  4= A lot
+                                                                                  5= Everything
+                                                                                  6= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  201    2 2.0       JOBHEC           F.2          Ever not hired for job for     1= YES
+                                                   unfair reasons                 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  203    2 2.0       JHTMEC           F.2.a        Number of times participant    1= 1
+                                                   unfairly not hired             .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  205    2 2.0       JHLTEC           F.2.b        Last time unfairly not hired   1= Past week
+                                                                                  2= Past month
+                                                                                  3= Past year
+                                                                                  4= More than a year ago
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  207    2 2.0       JHGNEC           F.2.c        Discrimination, not hired for  1= Nothing
+                                                   job - gender                   2= A little
+                                                                                  3= Some
+                                                                                  4= A lot
+                                                                                  5= Everything
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  209    2 2.0       JHRCEC           F.2.d        Discrimination, not hired for  1= Nothing
+                                                   job - race                     2= A little
+                                                                                  3= Some
+                                                                                  4= A lot
+                                                                                  5= Everything
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  211    2 2.0       JHHVEC           F.2.e        Discrimination, not hired for  1= Nothing
+                                                   job - HIV                      2= A little
+                                                                                  3= Some
+                                                                                  4= A lot
+                                                                                  5= Everything
+                                                                                  6= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  213    2 2.0       POLCEC           F.3          Ever unfairly stopped/         1= YES
+                                                   searched/questioned/           2= NO
+                                                   thereatened by police          -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  215    4 4.0       PLTMEC           F.3.a        Number of times participant    1= 1
+                                                   treated unfairly by police     .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  219    2 2.0       PLLTEC           F.3.b        Last time treated unfairly by  1= Past week
+                                                   police                         2= Past month
+                                                                                  3= Past year
+                                                                                  4= More than a year ago
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  221    2 2.0       PLGNEC           F.3.c        Discrimination, treated        1= Nothing
+                                                   unfairly by police - gender    2= A little
+                                                                                  3= Some
+                                                                                  4= A lot
+                                                                                  5= Everything
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  223    2 2.0       PLRCEC           F.3.d        Discrimination, treated        1= Nothing
+                                                   unfairly by police - race      2= A little
+                                                                                  3= Some
+                                                                                  4= A lot
+                                                                                  5= Everything
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  225    2 2.0       PLHVEC           F.3.e        Discrimination, treated        1= Nothing
+                                                   unfairly by police - HIV       2= A little
+                                                                                  3= Some
+                                                                                  4= A lot
+                                                                                  5= Everything
+                                                                                  6= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  227    2 2.0       TCHREC           F.4          Ever unfairly discouraged by   1= YES
+                                                   teacher                        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  229    2 2.0       TCTMEC           F.4.a        Number of times participant    1= 1
+                                                   unfairly discouraged by        .
+                                                   teacher                        .
+                                                                                  99= 99
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  231    2 2.0       TCLTEC           F.4.b        Last time unfairly             1= Past week
+                                                   discouraged by teacher         2= Past month
+                                                                                  3= Past year
+                                                                                  4= More than a year ago
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  233    2 2.0       TCGNEC           F.4.c        Discrimination, unfairly       1= Nothing
+                                                   discouraged by teacher -       2= A little
+                                                   gender                         3= Some
+                                                                                  4= A lot
+                                                                                  5= Everything
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  235    2 2.0       TCRCEC           F.4.d        Discrimination, unfairly       1= Nothing
+                                                   discouraged by teacher - race  2= A little
+                                                                                  3= Some
+                                                                                  4= A lot
+                                                                                  5= Everything
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  237    2 2.0       TCHVEC           F.4.e        Discrimination, unfairly       1= Nothing
+                                                   discouraged by teacher - HIV   2= A little
+                                                                                  3= Some
+                                                                                  4= A lot
+                                                                                  5= Everything
+                                                                                  6= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  239    2 2.0       NBRHEC           F.5          Ever unfairly prevented from   1= YES
+                                                   moving into neighborhood       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  241    2 2.0       NBTMEC           F.5.a        Number of times participant    1= 1
+                                                   unfairly prevented from        .
+                                                   moving into neighborhood       .
+                                                                                  99= 99
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  243    2 2.0       NBLTEC           F.5.b        Last time unfairly prevented   1= Past week
+                                                   from moving into neighborhood  2= Past month
+                                                                                  3= Past year
+                                                                                  4= More than a year ago
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  245    2 2.0       NBGNEC           F.5.c        Discrimination, unfairly       1= Nothing
+                                                   prevented from moving into     2= A little
+                                                   neighborhood - gender          3= Some
+                                                                                  4= A lot
+                                                                                  5= Everything
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  247    2 2.0       NBRCEC           F.5.d        Discrimination, unfairly       1= Nothing
+                                                   prevented from moving into     2= A little
+                                                   neighborhood - race            3= Some
+                                                                                  4= A lot
+                                                                                  5= Everything
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  249    2 2.0       NBHVEC           F.5.e        Discrimination, unfairly       1= Nothing
+                                                   prevented from moving into     2= A little
+                                                   neighborhood - HIV             3= Some
+                                                                                  4= A lot
+                                                                                  5= Everything
+                                                                                  6= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  251    2 2.0       BANKEC           F.6          Ever unfairly denied bank loan 1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  253    2 2.0       BKTMEC           F.6.a        Number of times participant    1= 1
+                                                   unfairly denied bank loan      .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  255    2 2.0       BKLTEC           F.6.b        Last time unfairly denied      1= Past week
+                                                   bank loan                      2= Past month
+                                                                                  3= Past year
+                                                                                  4= More than a year ago
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  257    2 2.0       BKGNEC           F.6.c        Discrimination, unfairly       1= Nothing
+                                                   denied bank loan - gender      2= A little
+                                                                                  3= Some
+                                                                                  4= A lot
+                                                                                  5= Everything
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  259    2 2.0       BKRCEC           F.6.d        Discrimination, unfairly       1= Nothing
+                                                   denied bank loan - race        2= A little
+                                                                                  3= Some
+                                                                                  4= A lot
+                                                                                  5= Everything
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  261    2 2.0       BKHVEC           F.6.e        Discrimination, unfairly       1= Nothing
+                                                   denied bank loan - HIV         2= A little
+                                                                                  3= Some
+                                                                                  4= A lot
+                                                                                  5= Everything
+                                                                                  6= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  263    2 2.0       DINTEC           F.7          Overall discrimination         1= A lot
+                                                   interfered with full/          2= Some
+                                                   productive life                3= A little
+                                                                                  4= Not at all
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  265    2 2.0       DHRDEC           F.8          Overall discrimination made    1= A lot
+                                                   life harder                    2= Some
+                                                                                  3= A little
+                                                                                  4= Not at all
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  267    5 time5.    ETIMEC           F.9          Time ended                     01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  272    2 2.0       EMEREC           F.9          AM/PM for time ended           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  274    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  275    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

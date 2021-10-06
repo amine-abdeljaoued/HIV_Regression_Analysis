@@ -1,0 +1,245 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+BLSA - Baltimore Longitudinal Study of Aging Questionnaire
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        25= 25
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    8 $         VERSAG           A.3          Form version                   10/01/06= 10/01/06
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   19    8 $         IDTEAG           A.4          Date of interview              10/01/02= 10/01/02
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   27    3 $         INITAG           A.5          Initials of person completing  Character
+                                                   form
+
+   30    5 time5.    STIMAG           A.6          Time began                     1:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   35    2 2.0       SMERAG           A.6          AM/PM for time began           1= AM
+                                                                                  2= PM
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   37    2 2.0       BACKAG           B.1.a        Past 2 weeks back aches or     1= Not at all
+                                                   pains                          2= 1-5 days
+                                                                                  3= 6-8 days
+                                                                                  4= 9-13 days
+                                                                                  5= Everyday
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   39    2 2.0       VDRYAG           B.1.b        Past 2 weeks vaginal dryness   1= Not at all
+                                                                                  2= 1-5 days
+                                                                                  3= 6-8 days
+                                                                                  4= 9-13 days
+                                                                                  5= Everyday
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   41    2 2.0       BLUEAG           B.1.c        Past 2 weeks feeling blue or   1= Not at all
+                                                   depressed                      2= 1-5 days
+                                                                                  3= 6-8 days
+                                                                                  4= 9-13 days
+                                                                                  5= Everyday
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   43    2 2.0       DIZYAG           B.1.d        Past 2 weeks dizzy spells      1= Not at all
+                                                                                  2= 1-5 days
+                                                                                  3= 6-8 days
+                                                                                  4= 9-13 days
+                                                                                  5= Everyday
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   45    2 2.0       FRGTAG           B.1.e        Past 2 weeks forgetfulness     1= Not at all
+                                                                                  2= 1-5 days
+                                                                                  3= 6-8 days
+                                                                                  4= 9-13 days
+                                                                                  5= Everyday
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   47    2 2.0       MOODAG           B.1.f        Past 2 weeks frequent mood     1= Not at all
+                                                   changes                        2= 1-5 days
+                                                                                  3= 6-8 days
+                                                                                  4= 9-13 days
+                                                                                  5= Everyday
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   49    2 2.0       HRTPAG           B.1.g        Past 2 weeks heart pounding    1= Not at all
+                                                   or racing                      2= 1-5 days
+                                                                                  3= 6-8 days
+                                                                                  4= 9-13 days
+                                                                                  5= Everyday
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   51    2 2.0       FEARAG           B.1.h        Past 2 weeks feeling fearful   1= Not at all
+                                                   for no reason                  2= 1-5 days
+                                                                                  3= 6-8 days
+                                                                                  4= 9-13 days
+                                                                                  5= Everyday
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   53    2 2.0       HEADAG           B.1.i        Past 2 weeks headaches         1= Not at all
+                                                                                  2= 1-5 days
+                                                                                  3= 6-8 days
+                                                                                  4= 9-13 days
+                                                                                  5= Everyday
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   55    2 2.0       BRSTAG           B.1.j        Past 2 weeks breast pain/      1= Not at all
+                                                   tenderness                     2= 1-5 days
+                                                                                  3= 6-8 days
+                                                                                  4= 9-13 days
+                                                                                  5= Everyday
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   57    2 2.0       VIRRAG           B.1.k        Past 2 weeks vaginal           1= Not at all
+                                                   irritation/itching             2= 1-5 days
+                                                                                  3= 6-8 days
+                                                                                  4= 9-13 days
+                                                                                  5= Everyday
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   59    2 2.0       VDISAG           B.1.l        Past 2 weeks vaginal discharge 1= Not at all
+                                                                                  2= 1-5 days
+                                                                                  3= 6-8 days
+                                                                                  4= 9-13 days
+                                                                                  5= Everyday
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   61    2 2.0       VSORAG           B.1.m        Past 2 weeks vaginal soreness/ 1= Not at all
+                                                   pain                           2= 1-5 days
+                                                                                  3= 6-8 days
+                                                                                  4= 9-13 days
+                                                                                  5= Everyday
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63    2 2.0       TFASAG           B.2.a        Past 2 weeks trouble falling   1= No, not in the past 2 weeks
+                                                   asleep                         2= Yes, less than once a week
+                                                                                  3= Yes, 1 or 2 times a week
+                                                                                  4= Yes, 3 or 4 times a week
+                                                                                  5= Yes, 5 or more times a week
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   65    2 2.0       WKNTAG           B.2.b        Past 2 weeks wake up several   1= No, not in the past 2 weeks
+                                                   times a night                  2= Yes, less than once a week
+                                                                                  3= Yes, 1 or 2 times a week
+                                                                                  4= Yes, 3 or 4 times a week
+                                                                                  5= Yes, 5 or more times a week
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   67    2 2.0       UFAAAG           B.2.c        Past 2 weeks wake up earlier   1= No, not in the past 2 weeks
+                                                   than planned and unable to     2= Yes, less than once a week
+                                                   fall asleep again              3= Yes, 1 or 2 times a week
+                                                                                  4= Yes, 3 or 4 times a week
+                                                                                  5= Yes, 5 or more times a week
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   69    2 2.0       SQUAAG           B.3          Past month - sleep quality     1= Very good
+                                                   overall                        2= Fairly good
+                                                                                  3= Fairly bad
+                                                                                  4= Very bad
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   71    5 time5.    ETIMAG           B.4          Time ended                     1:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   76    2 2.0       EMERAG           B.4          AM/PM for time ended           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   78    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   79    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

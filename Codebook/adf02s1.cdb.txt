@@ -1,0 +1,132 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+ADF02 - Autoimmune Disease Form (Repeating Segment) S1
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        17= 17
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    2 2.0       SEQID            B.23456      Sequence # of drug             1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   13    2 2.0       DISEAD           B.23456.a    Autoimmune disease             1= Lupus
+                                                                                  2= Sjogren's Syndrome
+                                                                                  3= Multiple Sclerosis
+                                                                                  4= Graves/high thyroid
+                                                                                  5= Hashimotos/low thyroid
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   15   35 $         RXTXAD           B.23456.b    Specify drug/treatment         Character
+
+   50    2 2.0       CTRXAD           B.23456.c    Currently taking drug/         1= YES
+                                                   treatment                      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   52    8 $         STRXAD           B.23456.d.i  Date most recently started     01/01/60= 01/01/60
+                                                   drug/treatment                 .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   60    8 $         LSTRAD           B.23456.e.i  Date last started drug/        01/01/60= 01/01/60
+                                                   treatment                      .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   68    8 $         LSTPAD           B.23456.e.ii  Date last stopped drug/        01/01/60= 01/01/60
+                                                   treatment                      .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   76    2 2.0       SSB1AD           B.23456.f    Started and stopped before     1= YES
+                                                   last time 1                    2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   78    8 $         STR1AD           B.23456.g.i  Date started drug/treatment    01/01/60= 01/01/60
+                                                   before last time - 1           .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   86    8 $         STP1AD           B.23456.g.ii  Date stopped drug/treatment    01/01/60= 01/01/60
+                                                   before last time - 1           .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   94    2 2.0       SSB2AD           B.23456.h    Started and stopped before     1= YES
+                                                   last time 2                    2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   96    8 $         STR2AD           B.23456.i.i  Date started drug/treatment    01/01/60= 01/01/60
+                                                   before last time - 2           .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  104    8 $         STP2AD           B.23456.i.ii  Date stopped drug/treatment    01/01/60= 01/01/60
+                                                   before last time - 2           .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  112    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  113    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

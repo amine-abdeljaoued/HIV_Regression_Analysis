@@ -1,0 +1,82 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+PRNOTI - PREGNANCY PROTOCOL PARTICIPATION NOTIFICATION
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    8 $         VERSPR           A.2          Form version                   01/01/94= 01/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   17    3 $         INITPR           A.3          Initials of person completing  Character
+                                                   form
+
+   20    2 2.0       VISIT            A.4          Visit #                        10= 10
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   22    2 2.0       METHPR           OldA.5       Old: Method used to determine  1= Self-report pregnancy and/
+                                                   pregnancy protocol eligibility    or urine test confirmation
+                                                                                  2= Self-report termination in
+                                                                                     last six months
+                                                                                  3= Self-report delivery in
+                                                                                     last six months
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   24    2 2.0       EDISPR           A.5          Enrollment disposition         1= Eligible and enrolled
+                                                                                  2= Eligible, but declined
+                                                                                     participation
+                                                                                  3= Eligible, but not enrolled
+                                                                                     for other reason
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   26   25 $         SEDSPR           A.5          Specify other enrollment       Character
+                                                   disposition
+
+   51    8 $         ENRLPR           A.6          Date enrolled in pregnancy     04/01/99= 04/01/99
+                                                   protocol                       .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   59    2 2.0       CNSTPR           OldA.7       Old: Consent for add'l 3rd     1= YES
+                                                   trimester visit                2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   61    2 2.0       WITSPR           A.8          Participant co-enrolled in     1= YES
+                                                   WITS                           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   64    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

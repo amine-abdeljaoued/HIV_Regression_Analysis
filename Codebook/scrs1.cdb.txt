@@ -1,0 +1,147 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+SCR - Screening Form (Repeating Segment) S1
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.2          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.3          Visit #                        33= 33
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    3 3.0       DRUGES           C.3          Antiviral drug code            055= Isoprinosine
+                                                                                  056= HPA-23 (Ammonium-21-
+                                                                                       tungsto-9-anti-moniate)
+                                                                                  057= Suramin
+                                                                                  058= Virazole (Ribavirin)
+                                                                                  090= Alpha Interferon
+                                                                                  092= AZT (Retrovir,
+                                                                                       zidovudine, ZDV)
+                                                                                  094= ddC (dideoxycytidine,
+                                                                                       Zalcitabine, Hivid)
+                                                                                  098= AL-721 (by Praxis) (egg
+                                                                                       lecithin)
+                                                                                  101= Ampligen
+                                                                                  108= Peptide T
+                                                                                  110= Dextran-Sulfate
+                                                                                  122= Beta Interferon
+                                                                                  128= CD4
+                                                                                  146= Acyclovir (Zovirax)
+                                                                                  147= ddI (dideoxyinosine,
+                                                                                       Didanosine, Videx)
+                                                                                  159= d4T (stavudine, Zerit)
+                                                                                  163= Dideoxyandenosine (ddA)
+                                                                                  179= Vidarabine (adenosine
+                                                                                       arabinoside)
+                                                                                  191= Nevirapine (Viramune)
+                                                                                  192= TAT inhibitors
+                                                                                  193= Other protease inhibitors
+                                                                                  194= Delavirdine (Rescriptor,
+                                                                                       U-90)
+                                                                                  204= 3-TC (lamivudine, Epivir)
+                                                                                  207= Hydroxyurea (Hydrea)
+                                                                                  210= Saquinavir (Invirase,
+                                                                                       Fortovase)
+                                                                                  211= Ritonavir (Norvir)
+                                                                                  212= Indinavir (Crixivan)
+                                                                                  215= Delavirdine (Rescriptor,
+                                                                                       U-90)
+                                                                                  216= Nelfinavir (Viracept)
+                                                                                  217= ABT-378 (Abbott's
+                                                                                       protease inhibitor)
+                                                                                  218= Abacavir (Ziagen,
+                                                                                       1592U89)
+                                                                                  219= Amprenavir (Agenerase,
+                                                                                       141W94)
+                                                                                  220= Efavirenz (Sustiva,
+                                                                                       DMP266)
+                                                                                  221= MKC442 (Merck protease
+                                                                                       inhibitor)
+                                                                                  222= Lobucavir
+                                                                                  223= Loviride
+                                                                                  224= Adefovir (Preveon, bis-
+                                                                                       POM PMPA, GS 840)
+                                                                                  227= Combivir (AZT + 3TC)
+                                                                                  231= Vistide (Cidofovir)
+                                                                                  233= T-20 (pentafuside)
+                                                                                  234= Viread (tenofovir, bis-
+                                                                                       POC-PMPA)
+                                                                                  238= Tipranavir (PNU-140690)
+                                                                                  239= Emtricitabine
+                                                                                       (Corviracil, FTC)
+                                                                                  240= Trizivir (abacavir + AZT
+                                                                                       + 3TC)
+                                                                                  243= Atazanavir (BMS-232632)
+                                                                                  244= DPC 083
+                                                                                  248= SC 351125 (SCH C)
+                                                                                  249= Lexiva (fosamprenavir)
+                                                                                  253= Truvada (Viread +
+                                                                                       Emtriva)
+                                                                                  254= Epzicom (Ziagen + Epivir)
+                                                                                  255= Intelence (etravirine,
+                                                                                       TMC 125)
+                                                                                  256= Prezista (darunavir, TMC
+                                                                                       114)
+                                                                                  257= L-00870810 (Merck
+                                                                                       integrase inhibitor)
+                                                                                  258= SP01A (Samaritan Pharma
+                                                                                       oral entry inhibitor)
+                                                                                  262= Atripla (Sustiva +
+                                                                                       Viread + Emtriva)
+                                                                                  263= brecanavir (GW640385)
+                                                                                  264= Isentress (raltegravir,
+                                                                                       MK 0518)
+                                                                                  265= Selzentry (maraviroc)
+                                                                                  266= vicriviroc (SCH-417690)
+                                                                                  267= TMC278 blinded trial
+                                                                                  268= elvitegravir (GS-9137)
+                                                                                       blinded trial
+                                                                                  269= vicriviroc blinded trial
+                                                                                  276= Edurant (rilpivirine,
+                                                                                       TMC278)
+                                                                                  280= Complera (FTC + RPV +
+                                                                                       TDF)
+                                                                                  283= cobicistat (GS-9350)
+                                                                                  284= Vitekta (elvitegravir,
+                                                                                       GS-9137)
+                                                                                  285= Prezista, Norvir,
+                                                                                       Emtriva+Viread and
+                                                                                       Selzentry blinded trial
+                                                                                       (ACTG A5303)
+                                                                                  286= Tivicay (dolutegravir, S/
+                                                                                       GSK1349572)
+                                                                                  287= Stribild (FTC + Viread +
+                                                                                       EVG + cobicistat)
+                                                                                  289= GS-US-292-0102 (EVG +
+                                                                                       cobicistat + FTC + TAF)
+                                                                                       blinded trial
+                                                                                  293= Triumeq (DTG + ABC + 3TC)
+                                                                                  295= Prezcobix (DRV +
+                                                                                       cobicistat)
+                                                                                  296= Evotaz (ATZ + cobicistat)
+                                                                                  998= Other anti-viral (from
+                                                                                       Drug List 1)
+                                                                                  999= Unknown antiviral
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   14   30 $         SDRGES           C.3          Specify name of drug           Character
+
+   44    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   45    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

@@ -1,0 +1,1857 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+L14 - Colposcopy Results (Pelvic Exam Studies)
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    6 $         FKEY             OldA.0       OLD: Form identifier number    Character
+
+   17    3 $         INITLO           A.0          Initials of person completing  Character
+                                                   form
+
+   20    8 $         VERSLO           A.0          Form version                   01/01/94= 01/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   28    2 2.0       DONELO           A.1          Colposcopy done                1= DONE
+                                                                                  2= NOT DONE
+                                                                                  3= PARTICIPANT REFUSED
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   30    8 $         PDTELO           A.1.a        Date of procedure              10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   38    3 $         INI1LO           A.1.b.i      Colposcopist #1's initials     Character
+
+   41    3 $         INI2LO           A.1.b.ii     Colposcopist #2's initials     Character
+
+   44    2 2.0       WCOLLO           A.1.c        Colposcopy performed by a      1= YES
+                                                   WIHS colposcopist              2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   46    2 2.0       RCNDLO           A.1.d        Reason colpo not done          1= Unable to contact
+                                                                                     participant (e.g., no
+                                                                                     phone, homeless, no
+                                                                                     response to attempts)
+                                                                                  2= Participant was no show
+                                                                                     for multiple appointments
+                                                                                  3= Participant was too ill to
+                                                                                     be scheduled at this time
+                                                                                  4= Participant's work/school
+                                                                                     schedule prevented her
+                                                                                     from coming
+                                                                                  5= Participant moved out of
+                                                                                     area/too difficult to
+                                                                                     travel
+                                                                                  6= Participant is incarcerated
+                                                                                  7= Staff unable to obtain
+                                                                                     colpo results from primary
+                                                                                     care OB/GYN for L14
+                                                                                     completion
+                                                                                  8= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   48   25 $         SRNDLO           A.1.d        Specify other reason colpo     Character
+                                                   not done
+
+   73    2 2.0       DYSPLO           A.2.a        Indication for colpo: Prior    1= Yes
+                                                   history of Dysplasia           2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   75    2 2.0       ASC_LO           A.2.b        Indication for colpo: ASCUS,   1= Yes
+                                                   AGUS, Koilocytosis or SIL on   2= No
+                                                   recent WIHS Pap Smear          -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   77    2 2.0       CLESLO           A.2.c        Indication for colpo:          1= Yes
+                                                   Presence of visible cervical   2= No
+                                                   or vaginal lesions             -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   79    2 2.0       VLESLO           A.2.d        Indication for colpo:          1= Yes
+                                                   Presence of visible vulvar or  2= No
+                                                   perianal lesions               -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   81    2 2.0       PCB_LO           A.2.e        Indication for colpo: Post     1= Yes
+                                                   coital bleeding when not       2= No
+                                                   menstruating                   -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   83    2 2.0       HPV_LO           A.2.f        Indication for colpo:          1= Yes
+                                                   Positive HPV detection test    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   85    2 2.0       CRCHLO           A.2.g        Indication for colpo:          1= Yes
+                                                   Research only                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   87    2 2.0       CRSNLO           A.2.h        Indication for colpo: Other    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   89   25 $         REASLO           A.2.h.i      Specify other indication for   Character
+                                                   colpo
+
+  114    2 2.0       CTRGLO           OldA.2.i     Old: Colposcopy triggered by   1= YES
+                                                   WIHS Pap or exam               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  116    2 2.0       CTWVLO           OldA.2.j     Old: WIHS visit which          1= 1
+                                                   triggered colposcopy           .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  118    2 2.0       TYCVLO           A.3.a        Type of colpo: Cervical        1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  120    2 2.0       TYVGLO           A.3.b        Type of colpo: Vaginal         1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  122    2 2.0       TYVLLO           A.3.c        Type of colpo: Vulvar          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  124    2 2.0       TYPALO           A.3.d        Type of colpo: Perianal        1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  126    2 2.0       TYANLO           A.3.e        Type of colpo: Anal (anoscopy) 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  128    2 2.0       CVX_LO           A.4          Cervix was present             1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  130    2 2.0       ADEQLO           A.5          Cervical exam adequacy         1= SATISFACTORY
+                                                                                  2= ENDOCERVICAL SPECULUM USED
+                                                                                     TO VISUALIZE
+                                                                                     SQUAMOCOLUMNAR JUNCTION
+                                                                                  3= SQUAMOCOLUMNAR JUNCTION
+                                                                                     NOT VISUALIZED
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  132    2 2.0       COL1LO           A.6          General categorization of      1= WITHIN NORMAL LIMITS
+                                                   cervical colposcopy            2= ABNORMAL FINDINGS
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  134    2 2.0       FKERLO           A.7.a        Abnormal finding: Keratosis    1= Found
+                                                   (leukoplakia)                  2= Not found
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  136    2 2.0       FAWELO           A.7.b        Abnormal finding: Aceto-White  1= Found
+                                                   Epithelium                     2= Not found
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  138    2 2.0       FPUNLO           A.7.c        Abnormal finding: Punctation   1= Found
+                                                                                  2= Not found
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  140    2 2.0       FMOSLO           A.7.d        Abnormal finding: Mosaicism    1= Found
+                                                                                  2= Not found
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  142    2 2.0       FVESLO           A.7.e        Abnormal finding: Atypical     1= Found
+                                                   Vessels                        2= Not found
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  144    2 2.0       FOTHLO           A.7.f        Abnormal finding: Other        1= Found
+                                                                                  2= Not found
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  146   25 $         FSPCLO           A.7.f.i      Specify other abnormal colpo   Character
+                                                   finding
+
+  171    2 2.0       OLDPLO           OldA.7       OLD: Percent of                1= LESS THAN 25%
+                                                   transformation zone abnormal   2= 25% - LESS THAN 50%
+                                                                                  3= 50% - LESS THAN 75%
+                                                                                  4= 75% - 100%
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  173    2 2.0       PABNLO           A.8          Percent (%) of transformation  1= 0%
+                                                   zone abnormal                  2= < 25%
+                                                                                  3= 25% - < 50%
+                                                                                  4= 50% - < 75%
+                                                                                  5= 75% - 100%
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  175    2 2.0       ENDOLO           A.9.a        Abnormal endocervix (#18)      1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  177    2 2.0       IULQLO           A.9.b        Abnormal quadrant: Inner       1= YES
+                                                   upper left quadrant (#19)      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  179    2 2.0       ILLQLO           A.9.c        Abnormal quadrant: Inner       1= Yes
+                                                   lower left quadrant (#20)      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  181    2 2.0       ILRQLO           A.9.d        Abnormal quadrant: Inner       1= Yes
+                                                   lower right quadrant (#21)     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  183    2 2.0       IURQLO           A.9.e        Abnormal quadrant: Inner       1= Yes
+                                                   upper right quadrant (#22)     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  185    2 2.0       OULQLO           A.9.f        Abnormal quadrant: Outer       1= Yes
+                                                   upper left quadrant (#23)      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  187    2 2.0       OLLQLO           A.9.g        Abnormal quadrant: Outer       1= Yes
+                                                   lower left quadrant (#24)      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  189    2 2.0       OLRQLO           A.9.h        Abnormal quadrant: Outer       1= Yes
+                                                   lower right quadrant (#25)     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  191    2 2.0       OURQLO           A.9.i        Abnormal quadrant: Outer       1= Yes
+                                                   upper right quadrant (#26)     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  193    2 2.0       INFLLO           A.10         Inflammation found             1= Found
+                                                                                  2= Not Found
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  195    2 2.0       INVGLO           A.10.a       Inflammation site: Vaginal     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  197    2 2.0       INCVLO           A.10.b       Inflammation site: Cervical    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  199    2 2.0       INVLLO           A.10.c       Inflammation site: Vulvar      1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  201    2 2.0       INPALO           A.10.d       Inflammation site: Perianal    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  203    2 2.0       INANLO           A.10.e       Inflammation site: Anal        1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  205    2 2.0       POLPLO           A.11         Polyp/Papilloma found          1= Found
+                                                                                  2= Not Found
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  207    2 2.0       PPVGLO           A.11.a       Polyp/papilloma site: Vaginal  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  209    2 2.0       PPCVLO           A.11.b       Polyp/papilloma site: Cervical 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  211    2 2.0       PPVLLO           A.11.c       Polyp/papilloma site: Vulvar   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  213    2 2.0       PPPALO           A.11.d       Polyp/papilloma site: Perianal 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  215    2 2.0       PPANLO           A.11.e       Polyp/papilloma site: Anal     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  217    2 2.0       CONDLO           A.12         Condyloma acuminatum found     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  219    2 2.0       CNVGLO           A.12.a       Condyloma acuminatum site:     1= Yes
+                                                   Vaginal                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  221    2 2.0       CNCVLO           A.12.b       Condyloma acuminatum site:     1= Yes
+                                                   Cervical                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  223    2 2.0       CNVLLO           A.12.c       Condyloma acuminatum site:     1= Yes
+                                                   Vulvar                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  225    2 2.0       CNPALO           A.12.d       Condyloma acuminatum site:     1= Yes
+                                                   Perianal                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  227    2 2.0       CNANLO           A.12.e       Condyloma acuminatum site:     1= Yes
+                                                   Anal                           2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  229    2 2.0       FND1LO           A.13         Other #1 found                 1= Found
+                                                                                  2= Not Found
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  231   25 $         FSP1LO           A.13.a       Specify other #1 found         Character
+
+  256    2 2.0       F1VGLO           A.13.b       Other #1 site: Vaginal         1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  258    2 2.0       F1CVLO           A.13.c       Other #1 site: Cervical        1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  260    2 2.0       F1VLLO           A.13.d       Other #1 site: Vulvar          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  262    2 2.0       F1PALO           A.13.e       Other #1 site: Perianal        1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  264    2 2.0       F1ANLO           A.13.f       Other #1 site: Anal            1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  266    2 2.0       FND2LO           A.14         Other #2 found                 1= Found
+                                                                                  2= Not Found
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  268   15 $         FSP2LO           A.14.a       Specify other #2 found         Character
+
+  283    2 2.0       F2VGLO           A.14.b       Other #2 site: Vaginal         1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  285    2 2.0       F2CVLO           A.14.c       Other #2 site: Cervical        1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  287    2 2.0       F2VLLO           A.14.d       Other #2 site: Vulvar          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  289    2 2.0       F2PALO           A.14.e       Other #2 site: Perianal        1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  291    2 2.0       F2ANLO           A.14.f       Other #2 site: Anal            1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  293    2 2.0       DNPSLO           A.15         Pap smear was performed with   1= YES
+                                                   this coposcopy                 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  295    2 2.0       DNCBLO           A.16         Cervical biopsy taken          1= YES
+                                                                                  2= NO
+                                                                                  3= DELAYED
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  297    2 2.0       DNECLO           A.16.a       ECC Performed                  1= YES
+                                                                                  2= NO
+                                                                                  3= DELAYED
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  299    2 2.0       OLCBLO           OldA.16.b    OLD: Cervical biopsy -         1= Yes
+                                                   cervical cone (Old Qa14b)      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  301    2 2.0       OLCTLO           OldA.16.b    OLD: Type of cervical cone     1= Loop
+                                                   biopsy (Old Qa14b)             2= Laser
+                                                                                  3= Cold Knife
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  303    2 2.0       OLLELO           OldA.16.b    OLD: Loop excision -           1= Yes
+                                                   transformation zone (Old       2= No
+                                                   Qa14c)                         -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  305    2 2.0       DNPBLO           A.16.b       Colposcopically Directed       1= Yes
+                                                   Punch Biopsy                   2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  307    2 2.0       NOPBLO           A.16.b.i     Number of punch biopsies taken 1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  309    2 2.0       PLC1LO           A.16.b.ii.a  Punch biopsy location #1       1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  311    2 2.0       PLC2LO           A.16.b.ii.b  Punch biopsy location #2       1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  313    2 2.0       PLC3LO           A.16.b.ii.c  Punch biopsy location #3       1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  315    2 2.0       PLC4LO           A.16.b.ii.d  Punch biopsy location #4       1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  317    2 2.0       DNCELO           A.16.c       Cervical Excisional Biopsy     1= Yes
+                                                   (other than punch biopsy)      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  319    2 2.0       CLC1LO           A.16.c.i     Cervical excisional biopsy     1= 1
+                                                   location begin                 .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  321    2 2.0       CLC2LO           A.16.c.ii    Cervical excision biopsy       1= 1
+                                                   location end (Old Qa14e1b)     .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  323    2 2.0       DNLELO           A.16.d       Loop Excision of               1= Yes
+                                                   Transformation Zone (LLETZ,    2= No
+                                                   LETZ, LEEP)                    -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  325    2 2.0       DNLPLO           A.16.d.i     Loop excision (cervical        1= Yes
+                                                   biopsy) ectocervical passes    2= No
+                                                   done                           -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  327    2 2.0       NOLPLO           A.16.d.i.a   Loop excision (cervical        1= 1
+                                                   biopsy) number of              .
+                                                   ectocervical passes            .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  329    2 2.0       DNCCLO           A.16.e       Cervical biopsy - Cervical     1= Yes
+                                                   cone biopsy                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  331    2 2.0       TYCCLO           A.16.e.a     Type of cervical cone biopsy   1= Laser
+                                                                                  2= Cold Knife
+                                                                                  3= Loop
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  333    2 2.0       DNC1LO           A.16.e.i     Cervical cone biopsy           1= Yes
+                                                   ectocervical passes done       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  335    2 2.0       NOCPLO           A.16.e.i.a   Cervical cone biopsy number    1= 1
+                                                   of ectocervical passes         .
+                                                                                  .
+                                                                                  6= 6
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  337    2 2.0       DNC2LO           A.16.e.ii    Cervical cone biopsy           1= Yes
+                                                   endocervical core done         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  339    2 2.0       CERVLO           A.17         Overall impression of cervix   1= NORMAL
+                                                                                  2= ABNORMAL, BUT NO SIL
+                                                                                  3= LOW GRADE
+                                                                                  4= HIGH GRADE
+                                                                                  5= INVASIVE
+                                                                                  6= CERVIX NOT PRESENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  341    2 2.0       CVLSLO           A.17.a       Total # of cervical lesions    1= None
+                                                                                  2= One
+                                                                                  3= Two
+                                                                                  4= Three
+                                                                                  5= Four
+                                                                                  6= Five to nine
+                                                                                  7= >= Ten
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  343    2 2.0       DNNCLO           A.18         Other non-cervical biopsies    1= Yes
+                                                   taken                          2= No
+                                                                                  3= Delayed
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  345    2 2.0       TBVGLO           A.19         Vaginal biopsy taken (Old      1= Yes
+                                                   Qa17)                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  347    2 2.0       LVG1LO           A.19.a       Vaginal biopsy location #1     1= Anterior vaginal wall -
+                                                   (Old Qa17a)                       proximal 3rd
+                                                                                  2= Anterior vaginal wall -
+                                                                                     medial 3rd
+                                                                                  3= Anterior vaginal wall -
+                                                                                     distal 3rd
+                                                                                  4= Left lateral vaginal wall -
+                                                                                     proximal 3rd
+                                                                                  5= Left lateral vaginal wall -
+                                                                                     medial 3rd
+                                                                                  6= Left lateral vaginal wall -
+                                                                                     distal 3rd
+                                                                                  7= Posterior vaginal wall -
+                                                                                     proximal 3rd
+                                                                                  8= Posterior vaginal wall -
+                                                                                     medial 3rd
+                                                                                  9= Posterior vaginal wall -
+                                                                                     distal 3rd
+                                                                                  10= Right lateral vaginal
+                                                                                     wall - proximal 3rd
+                                                                                  11= Right lateral vaginal
+                                                                                     wall - medial 3rd
+                                                                                  12= Right lateral vaginal
+                                                                                     wall - dist 3rd
+                                                                                  13= Cervical os
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  349    2 2.0       LVG2LO           A.19.b       Vaginal biopsy location #2     1= Anterior vaginal wall -
+                                                   (Old Qa17b)                       proximal 3rd
+                                                                                  2= Anterior vaginal wall -
+                                                                                     medial 3rd
+                                                                                  3= Anterior vaginal wall -
+                                                                                     distal 3rd
+                                                                                  4= Left lateral vaginal wall -
+                                                                                     proximal 3rd
+                                                                                  5= Left lateral vaginal wall -
+                                                                                     medial 3rd
+                                                                                  6= Left lateral vaginal wall -
+                                                                                     distal 3rd
+                                                                                  7= Posterior vaginal wall -
+                                                                                     proximal 3rd
+                                                                                  8= Posterior vaginal wall -
+                                                                                     medial 3rd
+                                                                                  9= Posterior vaginal wall -
+                                                                                     distal 3rd
+                                                                                  10= Right lateral vaginal
+                                                                                     wall - proximal 3rd
+                                                                                  11= Right lateral vaginal
+                                                                                     wall - medial 3rd
+                                                                                  12= Right lateral vaginal
+                                                                                     wall - dist 3rd
+                                                                                  13= Cervical os
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  351    2 2.0       TBVLLO           A.20         Vulvar biopsy taken (Old Qa18) 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  353    2 2.0       LVL1LO           A.20.a       Vulvar biopsy location #1(Old  1= Labia Majus (left)
+                                                   Qa18a)                         2= Labia Majus (right)
+                                                                                  3= Labia Minus (left)
+                                                                                  4= Labia Minus (right)
+                                                                                  5= Introitus (left)
+                                                                                  6= Introitus (right)
+                                                                                  7= Perineum (left)
+                                                                                  8= Perineum (right)
+                                                                                  9= Inguinal (left)
+                                                                                  10= Inguinal (right)
+                                                                                  11= Thigh (left)
+                                                                                  12= Thigh (right)
+                                                                                  13= Clitoris
+                                                                                  14= Urethra
+                                                                                  15= Pubis
+                                                                                  27= Perianus upper left
+                                                                                  28= Perianus lower left
+                                                                                  29= Perianus lower right
+                                                                                  30= Perianus upper right
+                                                                                  31= Internal anus
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  355    2 2.0       LVL2LO           A.20.b       Vulvar biopsy location #2      1= Labia Majus (left)
+                                                   (Old Qa18b)                    2= Labia Majus (right)
+                                                                                  3= Labia Minus (left)
+                                                                                  4= Labia Minus (right)
+                                                                                  5= Introitus (left)
+                                                                                  6= Introitus (right)
+                                                                                  7= Perineum (left)
+                                                                                  8= Perineum (right)
+                                                                                  9= Inguinal (left)
+                                                                                  10= Inguinal (right)
+                                                                                  11= Thigh (left)
+                                                                                  12= Thigh (right)
+                                                                                  13= Clitoris
+                                                                                  14= Urethra
+                                                                                  15= Pubis
+                                                                                  27= Perianus upper left
+                                                                                  28= Perianus lower left
+                                                                                  29= Perianus lower right
+                                                                                  30= Perianus upper right
+                                                                                  31= Internal anus
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  357    2 2.0       TBPALO           A.21         Perianal biopsy taken (Old     1= Yes
+                                                   Qa19)                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  359    2 2.0       LPA1LO           A.21.a       Perianal biopsy location       1= Labia Majus (left)
+                                                   #1(Old Qa19a)                  2= Labia Majus (right)
+                                                                                  3= Labia Minus (left)
+                                                                                  4= Labia Minus (right)
+                                                                                  5= Introitus (left)
+                                                                                  6= Introitus (right)
+                                                                                  7= Perineum (left)
+                                                                                  8= Perineum (right)
+                                                                                  9= Inguinal (left)
+                                                                                  10= Inguinal (right)
+                                                                                  11= Thigh (left)
+                                                                                  12= Thigh (right)
+                                                                                  13= Clitoris
+                                                                                  14= Urethra
+                                                                                  15= Pubis
+                                                                                  27= Perianus upper left
+                                                                                  28= Perianus lower left
+                                                                                  29= Perianus lower right
+                                                                                  30= Perianus upper right
+                                                                                  31= Internal anus
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  361    2 2.0       LPA2LO           A.21.b       Perianal biopsy location       1= Labia Majus (left)
+                                                   #2(Old Qa19b)                  2= Labia Majus (right)
+                                                                                  3= Labia Minus (left)
+                                                                                  4= Labia Minus (right)
+                                                                                  5= Introitus (left)
+                                                                                  6= Introitus (right)
+                                                                                  7= Perineum (left)
+                                                                                  8= Perineum (right)
+                                                                                  9= Inguinal (left)
+                                                                                  10= Inguinal (right)
+                                                                                  11= Thigh (left)
+                                                                                  12= Thigh (right)
+                                                                                  13= Clitoris
+                                                                                  14= Urethra
+                                                                                  15= Pubis
+                                                                                  27= Perianus upper left
+                                                                                  28= Perianus lower left
+                                                                                  29= Perianus lower right
+                                                                                  30= Perianus upper right
+                                                                                  31= Internal anus
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  363    2 2.0       OBE1LO           OldA.23      OLD: Endometrial biopsy taken  1= Yes
+                                                   (Old Qa20)                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  365    2 2.0       OLE1LO           OldA.23      OLD: Endometrial biopsy        1= Labia Majus (left)
+                                                   location #1(Old Qa20a)         2= Labia Majus (right)
+                                                                                  3= Labia Minus (left)
+                                                                                  4= Labia Minus (right)
+                                                                                  5= Introitus (left)
+                                                                                  6= Introitus (right)
+                                                                                  7= Perineum (left)
+                                                                                  8= Perineum (right)
+                                                                                  9= Inguinal (left)
+                                                                                  10= Inguinal (right)
+                                                                                  11= Thigh (left)
+                                                                                  12= Thigh (right)
+                                                                                  13= Clitoris
+                                                                                  14= Urethra
+                                                                                  15= Pubis
+                                                                                  27= Perianus upper left
+                                                                                  28= Perianus lower left
+                                                                                  29= Perianus lower right
+                                                                                  30= Perianus upper right
+                                                                                  31= Internal anus
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  367    2 2.0       OLE2LO           OldA.23      OLD: Endometrial biopsy        1= Labia Majus (left)
+                                                   location #2(Old Qa20b)         2= Labia Majus (right)
+                                                                                  3= Labia Minus (left)
+                                                                                  4= Labia Minus (right)
+                                                                                  5= Introitus (left)
+                                                                                  6= Introitus (right)
+                                                                                  7= Perineum (left)
+                                                                                  8= Perineum (right)
+                                                                                  9= Inguinal (left)
+                                                                                  10= Inguinal (right)
+                                                                                  11= Thigh (left)
+                                                                                  12= Thigh (right)
+                                                                                  13= Clitoris
+                                                                                  14= Urethra
+                                                                                  15= Pubis
+                                                                                  27= Perianus upper left
+                                                                                  28= Perianus lower left
+                                                                                  29= Perianus lower right
+                                                                                  30= Perianus upper right
+                                                                                  31= Internal anus
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  369    2 2.0       TBANLO           A.22         Anal biopsy taken (Old Qa21)   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  371    2 2.0       LAN1LO           A.22.a       Anal biopsy location #1 (Old   1= Labia Majus (left)
+                                                   Qa21a)                         2= Labia Majus (right)
+                                                                                  3= Labia Minus (left)
+                                                                                  4= Labia Minus (right)
+                                                                                  5= Introitus (left)
+                                                                                  6= Introitus (right)
+                                                                                  7= Perineum (left)
+                                                                                  8= Perineum (right)
+                                                                                  9= Inguinal (left)
+                                                                                  10= Inguinal (right)
+                                                                                  11= Thigh (left)
+                                                                                  12= Thigh (right)
+                                                                                  13= Clitoris
+                                                                                  14= Urethra
+                                                                                  15= Pubis
+                                                                                  27= Perianus upper left
+                                                                                  28= Perianus lower left
+                                                                                  29= Perianus lower right
+                                                                                  30= Perianus upper right
+                                                                                  31= Internal anus
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  373    2 2.0       LAN2LO           A.22.b       Anal biopsy location #2 (Old   1= Labia Majus (left)
+                                                   Qa21b)                         2= Labia Majus (right)
+                                                                                  3= Labia Minus (left)
+                                                                                  4= Labia Minus (right)
+                                                                                  5= Introitus (left)
+                                                                                  6= Introitus (right)
+                                                                                  7= Perineum (left)
+                                                                                  8= Perineum (right)
+                                                                                  9= Inguinal (left)
+                                                                                  10= Inguinal (right)
+                                                                                  11= Thigh (left)
+                                                                                  12= Thigh (right)
+                                                                                  13= Clitoris
+                                                                                  14= Urethra
+                                                                                  15= Pubis
+                                                                                  27= Perianus upper left
+                                                                                  28= Perianus lower left
+                                                                                  29= Perianus lower right
+                                                                                  30= Perianus upper right
+                                                                                  31= Internal anus
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  375    2 2.0       TBENLO           A.23         Endometrial biopsy taken       1= Yes
+                                                   (also TBOELO)                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  377    2 2.0       TBO1LO           A.24         Other biopsy taken #1          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  379   25 $         TBS1LO           A.24.a       Specify other biopsy #1        Character
+
+  404    2 2.0       LO11LO           A.24.b       Other biopsy #1 location #1    1= Labia Majus (left)
+                                                                                  2= Labia Majus (right)
+                                                                                  3= Labia Minus (left)
+                                                                                  4= Labia Minus (right)
+                                                                                  5= Introitus (left)
+                                                                                  6= Introitus (right)
+                                                                                  7= Perineum (left)
+                                                                                  8= Perineum (right)
+                                                                                  9= Inguinal (left)
+                                                                                  10= Inguinal (right)
+                                                                                  11= Thigh (left)
+                                                                                  12= Thigh (right)
+                                                                                  13= Clitoris
+                                                                                  14= Urethra
+                                                                                  15= Pubis
+                                                                                  27= Perianus upper left
+                                                                                  28= Perianus lower left
+                                                                                  29= Perianus lower right
+                                                                                  30= Perianus upper right
+                                                                                  31= Internal anus
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  406    2 2.0       LO12LO           A.24.c       Other biopsy #1 location #2    1= Labia Majus (left)
+                                                                                  2= Labia Majus (right)
+                                                                                  3= Labia Minus (left)
+                                                                                  4= Labia Minus (right)
+                                                                                  5= Introitus (left)
+                                                                                  6= Introitus (right)
+                                                                                  7= Perineum (left)
+                                                                                  8= Perineum (right)
+                                                                                  9= Inguinal (left)
+                                                                                  10= Inguinal (right)
+                                                                                  11= Thigh (left)
+                                                                                  12= Thigh (right)
+                                                                                  13= Clitoris
+                                                                                  14= Urethra
+                                                                                  15= Pubis
+                                                                                  27= Perianus upper left
+                                                                                  28= Perianus lower left
+                                                                                  29= Perianus lower right
+                                                                                  30= Perianus upper right
+                                                                                  31= Internal anus
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  408    2 2.0       TBO2LO           A.25         Other biopsy taken #2          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  410   25 $         TBS2LO           A.25.a       Specify other biopsy #2        Character
+
+  435    2 2.0       LO21LO           A.25.b       Other biopsy #2 location #1    1= Labia Majus (left)
+                                                                                  2= Labia Majus (right)
+                                                                                  3= Labia Minus (left)
+                                                                                  4= Labia Minus (right)
+                                                                                  5= Introitus (left)
+                                                                                  6= Introitus (right)
+                                                                                  7= Perineum (left)
+                                                                                  8= Perineum (right)
+                                                                                  9= Inguinal (left)
+                                                                                  10= Inguinal (right)
+                                                                                  11= Thigh (left)
+                                                                                  12= Thigh (right)
+                                                                                  13= Clitoris
+                                                                                  14= Urethra
+                                                                                  15= Pubis
+                                                                                  27= Perianus upper left
+                                                                                  28= Perianus lower left
+                                                                                  29= Perianus lower right
+                                                                                  30= Perianus upper right
+                                                                                  31= Internal anus
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  437    2 2.0       LO22LO           A.25.c       Other biopsy #2 location #2    1= Labia Majus (left)
+                                                                                  2= Labia Majus (right)
+                                                                                  3= Labia Minus (left)
+                                                                                  4= Labia Minus (right)
+                                                                                  5= Introitus (left)
+                                                                                  6= Introitus (right)
+                                                                                  7= Perineum (left)
+                                                                                  8= Perineum (right)
+                                                                                  9= Inguinal (left)
+                                                                                  10= Inguinal (right)
+                                                                                  11= Thigh (left)
+                                                                                  12= Thigh (right)
+                                                                                  13= Clitoris
+                                                                                  14= Urethra
+                                                                                  15= Pubis
+                                                                                  27= Perianus upper left
+                                                                                  28= Perianus lower left
+                                                                                  29= Perianus lower right
+                                                                                  30= Perianus upper right
+                                                                                  31= Internal anus
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  439    2 2.0       VGLSLO           A.26.a       Total # of vaginal lesions     1= none
+                                                                                  2= one
+                                                                                  3= two
+                                                                                  4= three
+                                                                                  5= four
+                                                                                  6= five to nine
+                                                                                  7= >= ten
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  441    2 2.0       VLLSLO           A.26.b       Total # of vulvar lesions      1= none
+                                                                                  2= one
+                                                                                  3= two
+                                                                                  4= three
+                                                                                  5= four
+                                                                                  6= five to nine
+                                                                                  7= >= ten
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  443    2 2.0       PALSLO           A.26.c       Total # of perianal lesions    1= none
+                                                                                  2= one
+                                                                                  3= two
+                                                                                  4= three
+                                                                                  5= four
+                                                                                  6= five to nine
+                                                                                  7= >= ten
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  445    4 4.1       SZVGLO           A.27.a       Maximum lesion size: vaginal   0.0= 0.0
+                                                                                  .
+                                                                                  .
+                                                                                  15.0= 15.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  449    4 4.1       SZVLLO           A.27.b       Maximum lesion size: vulvar    0.0= 0.0
+                                                                                  .
+                                                                                  .
+                                                                                  15.0= 15.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  453    4 4.1       SZPALO           A.27.c       Maximum lesion size: perianal  0.0= 0.0
+                                                                                  .
+                                                                                  .
+                                                                                  15.0= 15.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  457    4 4.1       SZANLO           A.27.d       Maximum lesion size: anal      0.0= 0.0
+                                                                                  .
+                                                                                  .
+                                                                                  15.0= 15.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  461    4 4.1       SZOTLO           A.27.e       Maximum lesion size: other     0.0= 0.0
+                                                                                  .
+                                                                                  .
+                                                                                  15.0= 15.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  465   25 $         SZSPLO           A.27.e.i     Specify location of other max  Character
+                                                   lesion
+
+  490    2 2.0       BNUMLO           A.28         Total # of biopsies taken      0= 0
+                                                   (cervical and non-cervical)    .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  492    2 2.0       RNUMLO           A.28.a       Total # of biopsies delayed/   0= 0
+                                                   refused                        .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  494    2 2.0       SNUMLO           A.28.b       Total # of biopsies for        0= 0
+                                                   specimen bank donation only    .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  496    2 2.0       COL2LO           A.29         Overall impression of cervix   1= NORMAL
+                                                   (Old Qa22)                     2= ABNORMAL, BUT NO SIL
+                                                                                  3= LOW GRADE
+                                                                                  4= HIGH GRADE
+                                                                                  5= INVASIVE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  498    2 2.0       HGVGLO           A.30.a       Highest grade non-cervical     1= Yes
+                                                   lesion: vagina                 2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  500    2 2.0       HGVLLO           A.30.b       Highest grade non-cervical     1= Yes
+                                                   lesion: vulva                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  502    2 2.0       HGPALO           A.30.c       Highest grade non-cervical     1= Yes
+                                                   lesion: perianal               2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  504    2 2.0       HGANLO           A.30.d       Highest grade non-cervical     1= Yes
+                                                   lesion: anal                   2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  506    2 2.0       HGOTLO           A.30.e       Highest grade non-cervical     1= Yes
+                                                   lesion: other                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  508   25 $         HGSPLO           A.30.e.i     Location of other highest      Character
+                                                   grade non-cervical lesion
+
+  533    2 2.0       LC01LO           A.31.1       Lesion location: Labium Majus  1= Yes (circled)
+                                                   (left)                         0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  535    2 2.0       LC02LO           A.31.2       Lesion location: Labium Majus  2= Yes (circled)
+                                                   (right)                        0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  537    2 2.0       LC03LO           A.31.3       Lesion location: Labium Minus  3= Yes (circled)
+                                                   (left)                         0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  539    2 2.0       LC04LO           A.31.4       Lesion location: Labium Minus  4= Yes (circled)
+                                                   (right)                        0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  541    2 2.0       LC05LO           A.31.5       Lesion location: Introitus     5= Yes (circled)
+                                                   (left)                         0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  543    2 2.0       LC06LO           A.31.6       Lesion location: Introitus     6= Yes (circled)
+                                                   (right)                        0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  545    2 2.0       LC07LO           A.31.7       Lesion location: Perineum      7= Yes (circled)
+                                                   (left)                         0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  547    2 2.0       LC08LO           A.31.8       Lesion location: Perineum      8= Yes (circled)
+                                                   (right)                        0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  549    2 2.0       LC09LO           A.31.9       Lesion location: Inguinal      9= Yes (circled)
+                                                   (left)                         0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  551    2 2.0       LC10LO           A.31.10      Lesion location: Inguinal      10= Yes (circled)
+                                                   (right)                        0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  553    2 2.0       LC11LO           A.31.11      Lesion location: Thigh (left)  11= Yes (circled)
+                                                                                  0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  555    2 2.0       LC12LO           A.31.12      Lesion location: Thigh (right) 12= Yes (circled)
+                                                                                  0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  557    2 2.0       LC13LO           A.31.13      Lesion location: Clitoris      13= Yes (circled)
+                                                                                  0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  559    2 2.0       LC14LO           A.31.14      Lesion location: Urethra       14= Yes (circled)
+                                                                                  0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  561    2 2.0       LC15LO           A.31.15      Lesion location: Pubis         15= Yes (circled)
+                                                                                  0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  563    2 2.0       LC27LO           A.31.27      Lesion location: Perianus      27= Yes (circled)
+                                                   upper left                     0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  565    2 2.0       LC28LO           A.31.28      Lesion location: Perianus      28= Yes (circled)
+                                                   lower left                     0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  567    2 2.0       LC29LO           A.31.29      Lesion location: Perianus      29= Yes (circled)
+                                                   lower right                    0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  569    2 2.0       LC30LO           A.31.30      Lesion location: Perianus      30= Yes (circled)
+                                                   upper right                    0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  571    2 2.0       LC31LO           A.31.31      Lesion location: Internal Anus 31= Yes (circled)
+                                                                                  0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  573    2 2.0       LL01LO           A.32.1       Lesion location: Anterior      1= Yes (circled)
+                                                   vaginal wall, proximal third   0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  575    2 2.0       LL02LO           A.32.2       Lesion location: Anterior      2= Yes (circled)
+                                                   vaginal wall, medial third     0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  577    2 2.0       LL03LO           A.32.3       Lesion location: Anterior      3= Yes (circled)
+                                                   vaginal wall, distal third     0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  579    2 2.0       LL04LO           A.32.4       Lesion location: Left lateral  4= Yes (circled)
+                                                   vaginal wall, proximal third   0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  581    2 2.0       LL05LO           A.32.5       Lesion location: Left lateral  5= Yes (circled)
+                                                   vaginal wall, medial third     0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  583    2 2.0       LL06LO           A.32.6       Lesion location: Left lateral  6= Yes (circled)
+                                                   vaginal wall, distal third     0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  585    2 2.0       LL07LO           A.32.7       Lesion location: Posterior     7= Yes (circled)
+                                                   vaginal wall, proximal third   0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  587    2 2.0       LL08LO           A.32.8       Lesion location: Posterior     8= Yes (circled)
+                                                   vaginal wall, medial third     0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  589    2 2.0       LL09LO           A.32.9       Lesion location: Posterior     9= Yes (circled)
+                                                   vaginal wall, distal third     0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  591    4 4.0       LL10LO           A.32.10      Lesion location: Right         10= Yes (circled)
+                                                   lateral vaginal wall,          0= No (Not circled)
+                                                   proximal third                 -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  595    2 2.0       LL11LO           A.32.11      Lesion location: Right         11= Yes (circled)
+                                                   lateral vaginal wall, medial   0= No (Not circled)
+                                                   third                          -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  597    2 2.0       LL12LO           A.32.12      Lesion location: Right         12= Yes (circled)
+                                                   lateral vaginal wall, distal   0= No (Not circled)
+                                                   third                          -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  599    2 2.0       OL13LO           OldA.32.13   OLD: Lesion location:          13= Yes (circled)
+                                                   Cervical os (Old Qa25_13)      0= No (Not circled)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  601    2 2.0       HIVKLO           A.33         Examiner knew HIV status at    1= YES
+                                                   time of this exam              2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  603    2 2.0       FUPBLO           A.34         Follow-up visit scheduled for  1= YES
+                                                   biopsy                         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  605   25 $         FINSLO           A.34.a       MD/institution for biopsy      Character
+                                                   follow-up
+
+  630   25 $         AD11LO           A.34.a.i     Address 1 for biopsy follow-up Character
+
+  655   33 $         AD12LO           A.34.a.ii    Address 2 for biopsy follow-up Character
+
+  688   33 $         AD13LO           A.34.a       Address 3 for biopsy follow-up Character
+
+  721    2 2.0       DUM1LO           OldA.35      OLD: Dummy field used as a     Character
+                                                   jump
+
+  723    2 2.0       ACDNLO           B.1          Anal colposcopy done           1= DONE
+                                                                                  2= NOT DONE
+                                                                                  3= PARTICPANT REFUSED
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= PARTICIPANT REFUSED
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  725    8 $         ADTELO           B.1.a        Date of anal colposcopy        10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  733    3 $         AIN1LO           B.1.b.i      Initials of anal colposcopist  Character
+                                                   #1
+
+  736    3 $         AIN2LO           B.1.b.ii     Initials of anal colposcopist  Character
+                                                   #2
+
+  739    2 2.0       ADYSLO           B.2.a        Indication for anal colpo:     1= Yes
+                                                   Prior history of anal          2= No
+                                                   dysplasia                      -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  741    2 2.0       ACYTLO           B.2.b        Indication for anal colpo:     1= Yes
+                                                   Abnormal anal cytology         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  743    2 2.0       APERLO           B.2.c        Indication for anal colpo:     1= Yes
+                                                   Presence of visible perianal   2= No
+                                                   lesions                        -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  745    2 2.0       AHPVLO           B.2.d        Indication for anal colpo:     1= Yes
+                                                   Positive anal HPV detection    2= No
+                                                   test                           -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  747    2 2.0       ARESLO           B.2.e        Indication for anal colpo:     1= Yes
+                                                   Research only                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  749    2 2.0       AOTHLO           B.2.f        Indication for anal colpo:     1= Yes
+                                                   Other                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  751   25 $         ASPCLO           B.2.f.i      Specify other indication for   Character
+                                                   anal colpo
+
+  776    2 2.0       ALESLO           B.3          Anal colpo: lesions present    1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  778    2 2.0       ALKELO           B.4.a        Anal colpo lesions: Keratosis  1= Yes
+                                                   (leukoplakia)                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  780    2 2.0       ALAWLO           B.4.b        Anal colpo lesions: Aceto-     1= Yes
+                                                   White Epithelium               2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  782    2 2.0       ALPULO           B.4.c        Anal colpo lesions: Punctation 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  784    2 2.0       ALMOLO           B.4.d        Anal colpo lesions: Mosaicism  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  786    2 2.0       ALAVLO           B.4.e        Anal colpo lesions: Atypical   1= Yes
+                                                   Vessels                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  788    2 2.0       ALCDLO           B.4.f        Anal colpo lesions: Condyloma  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  790    2 2.0       ALOTLO           B.4.g        Anal colpo lesions: Other      1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  792   25 $         ALSPLO           B.4.g.i      Specify other anal colpo       Character
+                                                   lesions
+
+  817    2 2.0       ALNOLO           B.5          Total # of anal colposcopy     1= none
+                                                   lesions                        2= one
+                                                                                  3= two
+                                                                                  4= three
+                                                                                  5= four
+                                                                                  6= five to nine
+                                                                                  7= >= ten
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  819    2 2.0       ASZELO           B.6          Maximum anal colposcopy        1= 1
+                                                   lesion size                    .
+                                                                                  .
+                                                                                  15= 15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  821    2 2.0       AANTLO           B.7.a        Anal colposcopy lesion         1= Yes
+                                                   location: anterior             2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  823    2 2.0       AALCLO           B.7.a.i      Specific anal anterior lesion  1= 1
+                                                   location                       .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  825    2 2.0       APOSLO           B.7.b        Anal colposcopy lesion         1= Yes
+                                                   location: posterior            2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  827    2 2.0       APLCLO           B.7.b.i      Specific anal posterior        1= 1
+                                                   lesion location                .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  829    2 2.0       AANSLO           B.7.c        Anal colposcopy lesion         1= Yes
+                                                   location: anus                 2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  831    2 2.0       ACRYLO           B.7.d        Anal colposcopy lesion         1= Yes
+                                                   location: crypt/columnar       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  833    2 2.0       ARECLO           B.7.e        Anal colposcopy lesion         1= Yes
+                                                   location: rectum               2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  835    2 2.0       ALLOLO           B.7.f        Anal colposcopy lesion         1= Yes
+                                                   location: other                2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  837   25 $         ALLSLO           B.7.f.i      Specify other anal colposcopy  Character
+                                                   lesion location
+
+  862    2 2.0       ABDNLO           B.8          Anal lesion biopsy taken       1= YES
+                                                                                  2= NO
+                                                                                  3= DELAYED
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  864    2 2.0       ABNOLO           B.9          Number of anal biopsies taken  1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  866    2 2.0       ACOLLO           B.10         Anoscopic impression           1= NORMAL
+                                                                                  2= ABNORMAL, BUT NO SIL
+                                                                                  3= LOW GRADE
+                                                                                  4= HIGH GRADE
+                                                                                  5= INVASIVE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  868    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  869    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

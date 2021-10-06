@@ -1,0 +1,170 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+L10 - Urinalysis
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    8 $         VERSLK           A.0          Form version                   01/01/94= 01/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   19    2 2.0       AVAILK           A.1          Urinalysis test results        1= Yes
+                                                   available                      2= No, Sample Inadequate
+                                                                                  3= No, Other Reason
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   21   30 $         RNNALK           A.1          Specify reason urinalysis      Character
+                                                   test results not available
+
+   51    8 $         SPDTLK           A.2          Date sample taken              10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   59    6 6.3       USPGLK           A.3          Urinalysis, macroscopic -      0.0= 0.0
+                                                   Specific gravity               .
+                                                                                  .
+                                                                                  9.999= 9.999
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   65    2 2.0       DONELK           A.4          Urinalysis, macroscopic - pH   1= DONE
+                                                   done                           2= NOT DONE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   67    5 5.2       URPHLK           A.4.a        Urinalysis, macroscopic - pH   0.0= 0.0
+                                                   result                         .
+                                                                                  .
+                                                                                  9.00= 9.00
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   72    2 2.0       URPRLK           A.5          Urinalysis, macroscopic -      1= NEGATIVE
+                                                   protein                        2= TRACE
+                                                                                  3= 1+
+                                                                                  4= 2+
+                                                                                  5= 3+
+                                                                                  6= 4+
+                                                                                  7= Not Done
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   74    2 2.0       UGLCLK           A.6          Urinalysis, macroscopic -      1= NEGATIVE
+                                                   glucose                        2= TRACE
+                                                                                  3= 1+
+                                                                                  4= 2+
+                                                                                  5= 3+
+                                                                                  6= Not Done
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   76    2 2.0       UBHGLK           A.7          Urinalysis, macroscopic -      1= NEGATIVE
+                                                   blood/hemoglobin               2= TRACE
+                                                                                  3= 1+
+                                                                                  4= 2+
+                                                                                  5= 3+
+                                                                                  6= Not Done
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   78    2 2.0       UWBCLK           A.8          Urinalysis, macroscopic - WBC/ 1= NEGATIVE
+                                                   leukocyte esterase             2= TRACE
+                                                                                  3= 1+
+                                                                                  4= 2+
+                                                                                  5= 3+
+                                                                                  6= Not Done
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   80    2 2.0       URNILK           A.9          Urinalysis, macroscopic -      1= NEGATIVE
+                                                   nitrites                       2= POSITIVE
+                                                                                  3= Not Done
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   82    2 2.0       UWHPLK           A.10         Urinalysis, microscopic -      1= NONE SEEN
+                                                   WBC(leukocytes)/HPF            2= 0-5/HPF
+                                                                                  3= 6-10/HPF
+                                                                                  4= 10-20/HPF
+                                                                                  5= 20-40/HPF
+                                                                                  6= 40-60/HPF
+                                                                                  7= >60
+                                                                                  8= Packed
+                                                                                  9= Not Done
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   84    2 2.0       URHPLK           A.11         Urinalysis, microscopic - RBC/ 1= NONE SEEN
+                                                   HPF                            2= 0-3/HPF
+                                                                                  3= 4-10/HPF
+                                                                                  4= 10-20/HPF
+                                                                                  5= 20-40/HPF
+                                                                                  6= 40-60/HPF
+                                                                                  7= >60
+                                                                                  8= Packed
+                                                                                  9= Not Done
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   86    2 2.0       USHPLK           A.12         Urinalysis, microscopic -      1= NONE SEEN
+                                                   Squamous epithelial/HPF        2= 0-5/HPF
+                                                                                  3= 6-10/HPF
+                                                                                  4= 10-20/HPF
+                                                                                  5= 20-27/HPF
+                                                                                  6= >=28
+                                                                                  7= Not Done
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   88    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   89    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

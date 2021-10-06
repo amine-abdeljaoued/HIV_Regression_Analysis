@@ -1,0 +1,539 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+INT - INTERIM EVENTS FORM
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID                        Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    8 $         VERSIN                        Form version                   01/01/94= 01/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   17    8 $         DCMPIN                        Date form completed            04/01/99= 04/01/99
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   25    3 $         INITIN                        Initials of person completing  Character
+                                                   form
+
+   28    2 2.0       VISIT                         Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   30    2 2.0       IEDOIN           1            How interim event data         1= Active surveillance (via
+                                                   obtained                          WIHS Interim Events
+                                                                                     Protocol)
+                                                                                  2= Passive surveillance
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   32    2 2.0       HERDIN           2            Source of information of event 1= Participant
+                                                                                  2= Family member of
+                                                                                     participant
+                                                                                  3= Friend of participant
+                                                                                  4= Health care provider
+                                                                                  5= Social service provider
+                                                                                  6= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   34   25 $         HRDSIN           2.a          Specify other source of        Character
+                                                   information of event
+
+   59    2 2.0       CERVIN           A.1          Told cervical cancer since     1= YES
+                                                   last visit                     2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   61    2 2.0       SURGIN           A.1.b        Had surgery to treat cervicl   1= YES
+                                                   cancer                         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63    2 2.0       CAT_IN           A.1.c        Had CAT or MRI of abdomen      1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   65    2 2.0       THRPIN           A.1.d        Told need surgery or           1= YES
+                                                   radiation therapy              2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   67    2 2.0       CNCRIN           A.2          Told other type of cancer      1= YES
+                                                   since last visit               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   69    2 2.0       BCANIN           A.2.a        Type of cancer: Breast         1= YES
+                                                                                  2= NO/NEVER HEARD OF IT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   71    2 2.0       LUMPIN           A.2.a.i      Had lump removed by surgeon    1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   73    2 2.0       MSTCIN           A.2.a.ii     Have had a mastectomy          1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   75    2 2.0       OCANIN           A.2.b        Type of cancer: Ovarian        1= YES
+                                                                                  2= NO/NEVER HEARD OF IT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   77    2 2.0       UCANIN           A.2.c        Type of cancer: Uterine        1= YES
+                                                                                  2= NO/NEVER HEARD OF IT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   79    2 2.0       KCANIN           A.2.d        Type of cancer: Kaposi's       1= YES
+                                                   Sarcoma                        2= NO/NEVER HEARD OF IT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   81    2 2.0       LCANIN           A.2.e        Type of cancer: Lymphoma       1= YES
+                                                                                  2= NO/NEVER HEARD OF IT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   83    2 2.0       LBCNIN           A.2.f        Type of cancer: Lymphoma in    1= YES
+                                                   brain                          2= NO/NEVER HEARD OF IT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   85    2 2.0       HCANIN           A.2.g        Type of cancer: Hodgkin's      1= YES
+                                                   disease                        2= NO/NEVER HEARD OF IT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   87    2 2.0       SCANIN           A.2.h        Type of cancer: Skin cancer    1= YES
+                                                   (not KS)                       2= NO/NEVER HEARD OF IT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   89    2 2.0       OTCNIN           A.2.i        Type of cancer: Other          1= YES
+                                                                                  2= NO/NEVER HEARD OF IT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   91   25 $         CANSIN           A.2.i.i      Specify other type of cancer   Character
+
+  116    2 2.0       NCNRIN           A.3          Total # of cancers reported    0= 0
+                                                   at this visit                  .
+                                                                                  .
+                                                                                  9= 9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  118    2 2.0       TB__IN           B.1          Had TB since last visit        1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  120    2 2.0       TBL_IN           B.1.a        Location of TB: Lungs          1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  122    2 2.0       TBO_IN           B.1.b        Location of TB: Other          1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  124   25 $         TBOSIN           B.1.b.i      Specify other location of TB   Character
+
+  149    2 2.0       TBX_IN           B.1.c        Had chest x-ray                1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  151    2 2.0       TBMDIN           B.1.d        Took medications for 3 months  1= YES
+                                                   or more                        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  153    2 2.0       TBSKIN           B.2          Had skin test for TB since     1= YES
+                                                   last visit                     2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  155    5 $         STDTIN           B.2.a        Month/year of most recent TB   10/94= 10/94
+                                                   test                           .
+                                                                                  .
+                                                                                  12/15= 12/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  160    2 2.0       TBPSIN           B.2.b        Skin test was positive/showed  1= YES
+                                                   TB exposure                    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  162    2 2.0       DIRHIN           C.1          Diarrhea since (MONTH) visit   1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  164    2 2.0       CRPTIN           C.2.a        Diarrhea caused by             1= YES
+                                                   Cryptosporidia since (MONTH)   2= NO/NEVER HEARD OF IT
+                                                   visit                          -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  166    2 2.0       MICRIN           C.2.b        Diarrhea caused by             1= YES
+                                                   Microsporidia since (MONTH)    2= NO/NEVER HEARD OF IT
+                                                   visit                          -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  168    2 2.0       ISOSIN           C.2.c        Diarrhea caused by Isospora    1= YES
+                                                   since (MONTH) visit            2= NO/NEVER HEARD OF IT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  170    2 2.0       CMV_IN           C.2.d        Diarrhea caused by C-M-V       1= YES
+                                                   since (MONTH) visit            2= NO/NEVER HEARD OF IT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  172    2 2.0       DMAIIN           C.2.e        Diarrhea caused by M-A-I       1= YES
+                                                   since (MONTH) visit            2= NO/NEVER HEARD OF IT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  174    2 2.0       HLNGIN           C.3          Told herpes simplex since      1= YES
+                                                   (MONTH) visit                  2= NO/NEVER HEARD OF IT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  176    2 2.0       PCP_IN           C.4          Told had PCP since (MONTH)     1= YES
+                                                   visit                          2= NO/NEVER HEARD OF IT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  178    2 2.0       PNEMIN           C.5          Told other type of pneumonia   1= YES
+                                                   since (MONTH) visit            2= NO/NEVER HEARD OF IT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  180    2 2.0       P12MIN           C.5.a        # of times told had pneumonia  0= 0
+                                                   (non-PCP) requiring abx in 12  .
+                                                   mos.                           .
+                                                                                  50= 50
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  182    2 2.0       PNUMIN           C.5.b        # of times told had pneumonia  0= 0
+                                                   (non-PCP) requiring abx in 12  .
+                                                   mos.                           .
+                                                                                  50= 50
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  184    2 2.0       PDATIN           C.5.c        Month most recent pneumonia    1= 1
+                                                   (non-PCP)                      .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  186    4 4.0       PDTYIN           C.5.c        Year most recent pneumonia     1931= 1931
+                                                   (non-PCP)                      .
+                                                                                  .
+                                                                                  2029= 2029
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  190    2 2.0       TRSHIN           C.6          Told Candida/thrush in         1= YES
+                                                   esophagus since (MONTH) visit  2= NO/NEVER HEARD OF IT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  192    2 2.0       TRACIN           C.7          Told Candida/thrush in lungs/  1= YES
+                                                   airway since (MONTH) visit     2= NO/NEVER HEARD OF IT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  194    2 2.0       MAI_IN           C.8          Told MAI infection since       1= YES
+                                                   (MONTH) visit                  2= NO/NEVER HEARD OF IT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  196    2 2.0       TOXOIN           C.9          Told toxoplasmosis since       1= YES
+                                                   (MONTH) visit                  2= NO/NEVER HEARD OF IT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  198    2 2.0       ECMVIN           C.10.a       Told CMV retinitis since       1= YES
+                                                   (MONTH) visit                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  200    2 2.0       BCMVIN           C.10.b       Told CMV in blood since        1= YES
+                                                   (MONTH) visit                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  202    2 2.0       ICMVIN           C.10.c       Told CMV in intestine since    1= YES
+                                                   (MONTH) visit                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  204    2 2.0       LCMVIN           C.10.d       Told CMV in liver since        1= YES
+                                                   (MONTH) visit                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  206    2 2.0       OCMVIN           C.10.e       Told CMV elsewhere in body     1= YES
+                                                   since (MONTH) visit            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  208   50 $         CMVSIN           C.10.e.i     Specify other body location    Character
+                                                   told CMV since (MONTH) visit
+
+  258    2 2.0       MENGIN           C.11         Told meningitis r/t HIV since  1= YES
+                                                   (MONTH) visit                  2= NO/NEVER HEARD OF IT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  260    2 2.0       CRMGIN           C.11.a       Told this was Crypto/          1= YES
+                                                   cryptococcal meningitis        2= NO/NEVER HEARD OF IT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  262    2 2.0       BCRPIN           C.12.a       Told Cryptococcal infection    1= YES
+                                                   in blood since (MONTH) visit   2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  264    2 2.0       OCRPIN           C.12.b       Told Cryptococcal infection    1= YES
+                                                   elsewhere in body since        2= NO
+                                                   (MONTH) visit                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  266   25 $         CRPSIN           C.12.b.i     Specify other body location    Character
+                                                   told Cryptococcal infection
+                                                   since (MONTH) visit
+
+  291    2 2.0       HISTIN           C.13         Told Histo/histoplasmosis      1= YES
+                                                   infection since (MONTH) visit  2= NO/NEVER HEARD OF IT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  293   50 $         HISSIN           C.13.a       Location of histoplasmosis     Character
+                                                   infection
+
+  343    2 2.0       COCCIN           C.14         Told Cocci/coccidioidomycosis  1= YES
+                                                   infection since (MONTH) visit  2= NO/NEVER HEARD OF IT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  345    2 2.0       WASTIN           C.15         Told wasting syndrome since    1= YES
+                                                   (MONTH) visit                  2= NO/NEVER HEARD OF IT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  347    2 2.0       CDIRIN           C.15.a       During same time as weight     1= YES
+                                                   loss had chronic diarrhea      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  349    2 2.0       CWEKIN           C.15.b       During same time as weight     1= YES
+                                                   loss had chronic weakness and  2= NO
+                                                   fever                          -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  351    2 2.0       DHIVIN           C.15.c       During same time as weight     1= YES
+                                                   loss, told symptoms r/t HIV/   2= NO
+                                                   AIDS                           -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  353    2 2.0       DEMTIN           C.16         Told dementia/encephalopathy   1= YES
+                                                   r/t HIV since (MONTH) visit    2= NO/NEVER HEARD OF IT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  355    2 2.0       SALMIN           C.17         Told salmonella infection      1= YES
+                                                   since (MONTH) visit            2= NO/NEVER HEARD OF IT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  357    2 2.0       MONEIN           C.17.a       Had salmonella more than once  1= YES
+                                                   since (MONTH) visit            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  359    2 2.0       PML_IN           C.18         Told PML since (MONTH) visit   1= YES
+                                                                                  2= NO/NEVER HEARD OF IT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  361    2 2.0       HPULIN           C.19         Told herpes simplex with       1= YES
+                                                   ulcers for more than 1 mo.     2= NO/NEVER HEARD OF IT
+                                                   since (MONTH) visit            -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  363    2 2.0       AIDSIN           Old.24       OLD: AIDS                      1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  365    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  366    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

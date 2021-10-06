@@ -1,0 +1,857 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+F29R - Blood Specimen Collection Form - New Recruits
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        15= 15
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    3 $         INITBR           A.0          Initials of person completing  Character
+                                                   form
+
+   14    8 $         VERSBR           A.0          Form version                   10/01/01= 10/01/01
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   22    2 2.0       HPV_BR           OldA.0.a     Old: Participant in HPV        1= YES
+                                                   substudy                       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   24    8 $         B1DTBR           A.1          Date blood drawn               10/01/01= 10/01/01
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   32    5 time5.    B1TMBR           A.2          Time blood drawn               01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   37    2 2.0       B1MRBR           A.2          AM/PM for time blood drawn     1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   39    2 2.0       FSBDBR           A.2.a        Participant's first or second  1= FIRST
+                                                   blood draw                     2= SECOND
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   41    3 $         P1INBR           A.3          Phlebotomist's initials        Character
+
+   44    8 $         EDDTBR           A.4.a        Date last had anything to eat  10/01/00= 10/01/00
+                                                   or drink other than water      .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   52    5 time5.    EDTMBR           A.4.b        Time last had anything to eat  01:00= 01:00
+                                                   or drink other than water      .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   57    2 2.0       EDAMBR           A.4.b        AM/PM indicator for time last  1= AM
+                                                   ate/drank                      2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   59    2 2.0       FASTBR           A.5          Participant was fasting for    1= FASTING
+                                                   blood draw                     2= NOT FASTING
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   61    2 2.0       CNT1BR           A.6          CPT tubes centrifuged in       1= YES
+                                                   clinic                         2= NO
+                                                                                  3= N/A (Not drawn this date)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63    5 time5.    C1TMBR           A.7          Time CPT tubes centrifuged     01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   68    2 2.0       C1MRBR           A.7          AM/PM for time tubes           1= AM
+                                                   centrifuged                    2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   70    2 2.0       GT1CBR           A.8          Gold/tiger-top tube for        1= YES
+                                                   metabolic panel centrifuged    2= NO
+                                                   within 1 hr of collection      3= N/A (Not drawn this date)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   72    5 time5.    GT1TBR           A.9          Time Gold/tiger-top tube for   01:00= 01:00
+                                                   metabolic panel centrifuged    .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   77    2 2.0       GT1MBR           A.9          AM/PM for time Gold/tiger-top  1= AM
+                                                   tube for metabolic panel       2= PM
+                                                   centrifuged                    -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   79    2 2.0       BSCDBR           OldA.10      Old: Blood drawn on 2nd date   1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   81    8 $         B2DTBR           OldB.1       Old: Date of 2nd blood draw    10/01/01= 10/01/01
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   89    5 time5.    B2TMBR           OldB.2       Old: Time of 2nd blood draw    01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   94    2 2.0       B2MRBR           OldB.2       Old: AM/PM for time of 2nd     1= AM
+                                                   blood draw                     2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   96    3 $         P2INBR           OldB.3       Old: Phlebotomist's initials - Character
+                                                   2nd blood draw
+
+   99    8 $         EDD2BR           OldB.4.a     Old: Date last had anything    10/01/00= 10/01/00
+                                                   to eat or drink other than     .
+                                                   water - 2nd draw               .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  107    5 time5.    EDT2BR           OldB.4.b     Old: Time last had anything    01:00= 01:00
+                                                   to eat or drink other than     .
+                                                   water - 2nd draw               .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  112    2 2.0       EDA2BR           OldB.4.b     Old: AM/PM indicator for time  1= AM
+                                                   last ate/drank - 2nd draw      2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  114    2 2.0       FAS2BR           OldB.5       Old: Participant was fasting   1= FASTING
+                                                   for to blood draw - 2nd draw   2= NOT FASTING
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  116    2 2.0       CNT2BR           OldB.6       Old: 2nd blood draw CPT tubes  1= YES
+                                                   centrifuged in clinic          2= NO
+                                                                                  3= N/A (Not drawn this date)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  118    5 $         C2TMBR           OldB.7       Old: 2nd blood draw time CPT   01:00= 01:00
+                                                   tubes centrifuged              .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  123    2 2.0       C2MRBR           OldB.7       Old: AM/PM - 2nd blood draw    1= AM
+                                                   time tubes centrifuged         2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  125    2 2.0       GT2CBR           OldB.8       Old: 2nd draw - Gold/tiger-    1= YES
+                                                   top tube for metabolic panel   2= NO
+                                                   centrifuged within 1 hr of     3= N/A (Not drawn this date)
+                                                   collection                     -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  127    5 $         GT2TBR           OldB.9       Old: 2nd draw - Time Gold/     01:00= 01:00
+                                                   tiger-top tube for metabolic   .
+                                                   panel centrifuged              .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  132    2 2.0       GT2MBR           OldB.9       Old: 2nd draw - AM/PM for      1= AM
+                                                   time Gold/tiger-top tube for   2= PM
+                                                   metabolic panel centrifuged    -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  134    2 2.0       HIVABR           C.1.a        HIV ab specimen collected      1= YES
+                                                                                  2= NO
+                                                                                  3= N/A
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  136   20 $         HVRNBR           C.1.a.i      Reason HIV ab specimen not     Character
+                                                   collected
+
+  156    2 2.0       HVRQBR           C.1.b        HIV ab required volume         1= YES
+                                                   collected                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  158    2 2.0       HVVLBR           C.1.c        HIV ab estimated volume        0= 0
+                                                   collected                      .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  160    2 2.0       LIVRBR           C.2.a        Liver/renal function test      1= YES
+                                                   collected                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  162   20 $         LVRNBR           C.2.a.i      Reason liver/renal function    Character
+                                                   test not collected
+
+  182    2 2.0       LVRQBR           C.2.b        Liver/renal function test      1= YES
+                                                   required volume collected      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  184    2 2.0       LVVLBR           C.2.c        Liver/renal function test      0= 0
+                                                   estimated volume collected     .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  186    2 2.0       INSLBR           C.3.a        Insulin/Lipids repository      1= YES
+                                                   test collected                 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  188   20 $         INSNBR           C.3.a.i      Reason insulin/lipids          Character
+                                                   repository test not collected
+
+  208    2 2.0       INRQBR           C.3.b        Insulin/lipids repository      1= YES
+                                                   test  required volume          2= NO
+                                                   collected                      -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  210    2 2.0       INVLBR           C.3.c        Insulin/lipids repository      0= 0
+                                                   test estimated volume          .
+                                                   collected                      .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  212    2 2.0       HEPABR           C.4.a        Hepatitis B and C test         1= YES
+                                                   collected                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  214   20 $         HPRNBR           C.4.a.i      Reason hepatitis B and C test  Character
+                                                   not collected
+
+  234    2 2.0       HPRQBR           C.4.b        Hepatitis B and C test         1= YES
+                                                   required volume collected      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  236    2 2.0       HPVLBR           C.4.c        Hepatitis B and C test         0= 0
+                                                   estimated volume collected     .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  238    2 2.0       SYPHBR           C.5.a        RPR Syphylis test collected    1= YES
+                                                                                  2= NO
+                                                                                  3= N/A*
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  240   20 $         SYRNBR           C.5.a.i      Reason RPR Syphylis test not   Character
+                                                   collected
+
+  260    2 2.0       SYRQBR           C.5.b        RPR Syphylis test required     1= YES
+                                                   volume collected               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  262    2 2.0       SYVLBR           C.5.c        RPR Syphylis test estimated    0= 0
+                                                   volume collected               .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  264    2 2.0       SHPCBR           C.6.a        Serum repository HCV specimen  1= YES
+                                                   collected                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  266   20 $         SHRNBR           C.6.a.i      Reason serum repository HCV    Character
+                                                   specimen not collected
+
+  286    2 2.0       SHRQBR           C.6.b        Serum repository HCV required  1= YES
+                                                   volume collected               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  288    2 2.0       SHVLBR           C.6.c        Serum repository HCV           0= 0
+                                                   estimated volume collected     .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  290    2 2.0       SXSTBR           C.7.a        Serum repository sex steroids  1= YES
+                                                   specimen collected             2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  292   20 $         SXRNBR           C.7.a.i      Reason serum repository sex    Character
+                                                   steroids specimen not
+                                                   collected
+
+  312    2 2.0       SXRQBR           C.7.b        Serum repository sex steroids  1= YES
+                                                   required volume collected      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  314    2 2.0       SXVLBR           C.7.c        Serum repository sex steroids  0= 0
+                                                   estimated volume collected     .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  316    2 2.0       SRUMBR           C.8.a        Serum repository specimen      1= YES
+                                                   collected                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  318   20 $         SMRNBR           C.8.a.i      Reason serum repository        Character
+                                                   specimen not collected
+
+  338    2 2.0       SMRQBR           C.8.b        Serum repository required      1= YES
+                                                   volume collected               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  340    2 2.0       SMVLBR           C.8.c        Serum repository estimated     0= 0
+                                                   volume collected               .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  342    2 2.0       REPOBR           C.9.a        Repository specimen collected  1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  344   20 $         RPRNBR           C.9.a.i      Reason repository specimen     Character
+                                                   not collected
+
+  364    2 2.0       RPRQBR           C.9.b        Repository required volume     1= YES
+                                                   collected                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  366    2 2.0       RPVLBR           C.9.c        Repository estimated volume    0= 0
+                                                   collected                      .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  368    2 2.0       SRPOBR           C.10.a       Serum repository additional    1= YES
+                                                   tube specimen collected        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  370   20 $         SPRNBR           C.10.a.i     Reason serum repository        Character
+                                                   additional tube specimen not
+                                                   collected
+
+  390    2 2.0       SPRQBR           C.10.b       Serum repository additional    1= YES
+                                                   tube required volume collected 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  392    2 2.0       SPVLBR           C.10.c       Serum repository additional    0= 0
+                                                   tube estimated volume          .
+                                                   collected                      .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  394    2 2.0       RPS1BR           C.11.a       Plasma and cells repository 1  1= YES
+                                                   specimen collected             2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  396   20 $         R1RNBR           C.11.a.i     Reason plasma cells            Character
+                                                   repository 1 specimen not
+                                                   collected
+
+  416    2 2.0       R1RQBR           C.11.b       Plasma repository 1 required   1= YES
+                                                   volume collected               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  418    2 2.0       R1VLBR           C.11.c       Plasma repository 1 estimated  0= 0
+                                                   volume collected               .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  420    2 2.0       RPS2BR           C.12.a       Plasma and cells repository 2  1= YES
+                                                   specimen collected             2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  422   20 $         R2RNBR           C.12.a.i     Reason plasma cells            Character
+                                                   repository 2 specimen not
+                                                   collected
+
+  442    2 2.0       R2RQBR           C.12.b       Plasma repository 2 required   1= YES
+                                                   volume collected               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  444    2 2.0       R2VLBR           C.12.c       Plasma repository 2 estimated  0= 0
+                                                   volume collected               .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  446    2 2.0       RPS3BR           C.13.a       Plasma and cells repository 3  1= YES
+                                                   specimen collected             2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  448   20 $         R3RNBR           C.13.a.i     Reason plasma cells            Character
+                                                   repository 3 specimen not
+                                                   collected
+
+  468    2 2.0       R3RQBR           C.13.b       Plasma repository 3 required   1= YES
+                                                   volume collected               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  470    2 2.0       R3VLBR           C.13.c       Plasma repository 3 estimated  0= 0
+                                                   volume collected               .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  472    2 2.0       RPS4BR           C.14.a       Plasma and cells repository 4  1= YES
+                                                   specimen collected             2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  474   20 $         R4RNBR           C.14.a.i     Reason plasma cells            Character
+                                                   repository 4 specimen not
+                                                   collected
+
+  494    2 2.0       R4RQBR           C.14.b       Plasma repository 4 required   1= YES
+                                                   volume collected               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  496    2 2.0       R4VLBR           C.14.c       Plasma repository 4 estimated  0= 0
+                                                   volume collected               .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  498    2 2.0       RPS5BR           C.15.a       Plasma and cells repository 5  1= YES
+                                                   specimen collected             2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  500   20 $         R5RNBR           C.15.a.i     Reason plasma cells            Character
+                                                   repository 5 specimen not
+                                                   collected
+
+  520    2 2.0       R5RQBR           C.15.b       Plasma repository 5 required   1= YES
+                                                   volume collected               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  522    2 2.0       R5VLBR           C.15.c       Plasma repository 5 estimated  0= 0
+                                                   volume collected               .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  524    2 2.0       HPVFBR           OldC.16.a    Old: Fresh blood for HPV       1= YES
+                                                   Study specimen collected       2= NO
+                                                                                  3= N/A**
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  526   20 $         HFRNBR           OldC.16.a.i  Old: Reason fresh blood for    Character
+                                                   HPV Study specimen not
+                                                   collected
+
+  546    2 2.0       HFRQBR           OldC.16.b    Old: Fresh blood for HPV       1= YES
+                                                   Study required volume          2= NO
+                                                   collected                      -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  548    2 2.0       HFVLBR           OldC.16.c    Old: Fresh blood for HPV       0= 0
+                                                   Study estimated volume         .
+                                                   collected                      .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  550    2 2.0       CBCDBR           C.17.a       CBC/diff specimen collected    1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  552   20 $         CBRNBR           C.17.a.i     Reason CBC/diff specimen not   Character
+                                                   collected
+
+  572    2 2.0       CBRQBR           C.17.b       CBC/diff required volume       1= YES
+                                                   collected                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  574    2 2.0       CBVLBR           C.17.c       CBC/diff estimated volume      0= 0
+                                                   collected                      .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  576    2 2.0       TCELBR           C.18.a       T-cell subsets specimen        1= YES
+                                                   collected                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  578   20 $         TCRNBR           C.18.a.i     Reason T-cell subsets          Character
+                                                   specimen not collected
+
+  598    2 2.0       TCRQBR           C.18.b       T-cell subsets required        1= YES
+                                                   volume collected               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  600    2 2.0       TCVLBR           C.18.c       T-cell subsets estimated       0= 0
+                                                   volume collected               .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  602    2 2.0       EDTABR           C.19.a       EDTA Plasma specimen collected 1= YES
+                                                                                  2= NO
+                                                                                  3= N/A***
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  604   20 $         EDRNBR           C.19.a.i     Reason EDTA Plasma specimen    Character
+                                                   not collected
+
+  624    2 2.0       EDRQBR           C.19.b       EDTA Plasma required volume    1= YES
+                                                   collected                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  626    2 2.0       EDVLBR           C.19.c       EDTA Plasma estimated volume   0= 0
+                                                   collected                      .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  628    2 2.0       HEMOBR           C.20.a       Hemoglobin A1c repository      1= YES
+                                                   test collected                 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  630   20 $         HEMNBR           C.20.a.i     Reason hemoglobin A1c          Character
+                                                   repository test not collected
+
+  650    2 2.0       HERQBR           C.20.b       Hemoglobin A1c repository      1= YES
+                                                   test required volume collected 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  652    2 2.0       HEVLBR           C.20.c       Hemoglobin A1c repository      0= 0
+                                                   test estimated volume          .
+                                                   collected                      .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  654    2 2.0       GLUCBR           C.21.a       Glucose repository test        1= YES
+                                                   collected                      2= NO
+                                                                                  3= N/A****
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  656   20 $         GLUNBR           C.21.a.i     Reason glucose repository      Character
+                                                   test not collected
+
+  676    2 2.0       GLRQBR           C.21.b       Glucose repository test        1= YES
+                                                   required volume collected      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  678    2 2.0       GLVLBR           C.21.c       Glucose repository test        0= 0
+                                                   estimated volume collected     .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  680    2 2.0       SEROBR           OldB.9.a     Old: Save and batch serology   1= YES
+                                                   specimen collected             2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  682   20 $         SRRNBR           OldB.9.a.i   Old: Reason save and batch     Character
+                                                   serology specimen not
+                                                   collected
+
+  702    2 2.0       SRRQBR           OldB.9.b     Old: Save and batch serology   1= YES
+                                                   required volume collected      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  704    2 2.0       SRVLBR           OldB.9.c     Old: Save and batch serology   0= 0
+                                                   estimated volume collected     .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  706    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  707    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

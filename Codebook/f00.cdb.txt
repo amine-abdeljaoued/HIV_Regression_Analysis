@@ -1,0 +1,418 @@
+                               CODEBOOK
+Women's Interagency HIV Study                              9-6-2017
+Form 00 - Screening Form
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    6 $         FKEY             A.0          Form identifier number         Character
+
+   15    8 $         VERSSC           A.2          Form version                   01/01/94= January 1, 1994
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   23    8 $         DATESC           A.3          Screening date                 10/01/94= October 1, 1994
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   31    3 $         INITSC           A.4          Initials of person completing  Character
+                                                   form                           -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   34    5 time5.    STIMSC           A.5          Time module began              01:00= 1:00 o'clock
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59 o'clock
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   39    2 2.0       SMERSC           A.5          AM/PM indicator for time began 1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   41    2 2.0       SPANSC           A.6          Does participant speak spanish 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   43    2 2.0       LANGSC           A.7          Interview language preference  1= English
+                                                                                  2= Spanish
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   45    2 2.0       CNSOSC           A.8          Separate consent req'd for     1= Yes
+                                                   screening                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   47    2 2.0       CNS2SC           A.9          Both screening/enrollment      1= Yes
+                                                   consent necessary              2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   49    2 2.0       CNT1SC           A.10         Participant willing to         1= Yes
+                                                   continue #1                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   51    8 $         C1DTSC           A.10A        Consent date #1                10/01/94= October 1, 1994
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   59    2 2.0       SSDKSC           B.1A         Study source: Don't know/      1= Yes
+                                                   remember                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   61    2 2.0       SSWMSC           B.1B         Study source: Word of mouth    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63    2 2.0       SSNWSC           B.1C         Study source: Newsletter/flier 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   65    2 2.0       SSCWSC           B.1D         Study source: Contact from     1= Yes
+                                                   study site                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   67    2 2.0       SSCNSC           B.1E         Study source: contact from     1= Yes
+                                                   non-WIHS service               2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   69    2 2.0       SSOTSC           B.1F         Study source: Other            1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   71   25 $         SSSPSC           B.1F         Specify other study source     Character
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   96    2 2.0       WITSSC           B.2A         Enrolled in WITS               1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   98    2 2.0       HERSSC           B.2B         Enrolled in HERS               1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  100    2 2.0       WIHSSC           B.2C         Enrolled at other WIHS site    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  102    2 2.0       STOTSC           B.2E         Enrolled in site specific      1= Yes
+                                                   studies                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  104   25 $         STUDSC           B.2E         Specify name of site specific  Character
+                                                   study                          -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  129    2 2.0       AGE_SC           B.3          Age                            10= 10 years old
+                                                                                  .
+                                                                                  .
+                                                                                  90= 90 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  131    8 $         DOB_SC           B.4          Date of birth                  01/01/01= January 1, 1901
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/88= December 31, 1988
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  139    2 2.0       HISPSC           B.5          Hispanic/latina origin         1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  141    2 2.0       RACESC           B.6          Race                           1= African American
+                                                                                  2= White
+                                                                                  3= Asian/Pacific islander
+                                                                                  4= Native American/Alaskan
+                                                                                     native
+                                                                                  5= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  143   25 $         RSPCSC           B.6          Specify other race             Character
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  168    2 2.0       EDUCSC           B.7          Highest level of education     1= No schooling
+                                                                                  2= Grades 1-6
+                                                                                  3= Grades 7-11
+                                                                                  4= Completed high school
+                                                                                  5= Some college
+                                                                                  6= Completed 4 years of
+                                                                                     college
+                                                                                  7= Attended/Completed
+                                                                                     graduate school
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  170    2 2.0       VOC_SC           B.7A         Vocational education training  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  172    2 2.0       VTYRSC           B.7B         Years of vocactional training  0= 0 years
+                                                                                  .
+                                                                                  .
+                                                                                  15= 15 years
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  174    2 2.0       MOMESC           B.8          Mother's education level       1= No schooling
+                                                                                  2= Grades 1-6
+                                                                                  3= Grades 7-11
+                                                                                  4= Completed high school
+                                                                                  5= Some college
+                                                                                  6= Completed 4 years of
+                                                                                     college
+                                                                                  7= Attended/Completed
+                                                                                     graduate school
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  176    2 2.0       MOMVSC           B.8A         Mother had any vocational      1= Yes
+                                                   training                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  178    2 2.0       MOMYSC           B.8B         Years of mother's vocational   0= 0 years
+                                                   train                          .
+                                                                                  .
+                                                                                  15= 15 years
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  180    2 2.0       IDU_SC           B.9          Participant ever injected      1= Yes
+                                                   drugs                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  182    2 2.0       IDYRSC           B.9A         Year of last injection drug    01= 1901
+                                                   use                            .
+                                                                                  .
+                                                                                  95= 1995
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  184    2 2.0       PARTSC           B.10         Number of sex partners         1= 0 or no partners
+                                                                                  2= 1 to 4 partners
+                                                                                  3= 5 to 10 partners
+                                                                                  4= 11 to 100 partners
+                                                                                  5= More than 100 partners
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  186    2 2.0       TRANSC           B.11         Blood transfusion between      1= Yes
+                                                   1975-1985                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  188    2 2.0       HIVPSC           C.1          Ever had a positive HIV test   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  190    4 $         FPOSSC           C.1A         Year of first positive HIV     0180= January 1980
+                                                   test                           .
+                                                                                  .
+                                                                                  1295= December 1995
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  194    2 2.0       HIVNSC           C.2          Ever had a negative HIV test   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  196    4 $         LNEGSC           C.2A         Month and Year of last         0180= January 1980
+                                                   negative hiv test              .
+                                                                                  .
+                                                                                  1295= December 1995
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  200    2 2.0       HTIMSC           C.3          Timing of screening HIV test   1= At screening
+                                                                                  2= At combined screening/
+                                                                                     baseline visit
+                                                                                  3= At baseline visit
+                                                                                  4= At some point between
+                                                                                     screening and baseline
+                                                                                  5= Test declined
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  202    2 2.0       CNSFSC           C.4          Full study enrollment consent  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  204    2 2.0       CNT2SC           C.5          Participant willing to         1= Yes
+                                                   continue #2                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  206    8 $         C2DTSC           C.5A         Consent date #2                10/01/94= October 1, 1994
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  214    2 2.0       ELIGSC           D.1          Screening disposition          1= Eligible and enrolled
+                                                                                  2= Ineligible
+                                                                                  3= Eligible but not selected
+                                                                                     for enrollment
+                                                                                  4= Declined participation
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  216    5 time5.    ETIMSC           D.2          Time module ended              01:00= 1:00 o'clock
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59 o'clock
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  221    2 2.0       EMERSC           D.2A         AM/PM indicator for time ended 1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  223    1 $         ESTAT            A.0          Edit Status                    CharacterD= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  224    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

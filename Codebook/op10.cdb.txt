@@ -1,0 +1,329 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+OP10 - Collection of Subgingival Plaque Samples
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    6 $         FKEY             OldA.0       OLD: Form identifier number    Character
+
+   17    8 $         VERSOK           A.0          Form version                   10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   25    3 $         INITOK           A.0          Initials of person completing  Character
+                                                   form
+
+   28    8 $         CDTEOK           A.0          Date of sample collection      10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   36    2 2.0       PLQUOK           1            Plaque samples collected       1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   38    2 2.0       GBPSOK           Old2         Old: Samples from sites with   1= YES
+                                                   positive gingival banding      2= NO
+                                                   scores on facial               -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   40    2 2.0       GBFLOK           2            Samples from sites with        1= YES
+                                                   positive gingival banding      2= NO
+                                                   scores on facial and lingual   -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   42    2 2.0       GBSAOK           .2.a         Gingival banding samples       1= 1
+                                                   taken from tooth # - Facial    .
+                                                                                  .
+                                                                                  15= 15
+                                                                                  18= 18
+                                                                                  .
+                                                                                  .
+                                                                                  31= 31
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   44    2 2.0       GBSLOK           .2.a         Gingival banding samples       1= 1
+                                                   taken from tooth # - lingual   .
+                                                                                  .
+                                                                                  15= 15
+                                                                                  18= 18
+                                                                                  .
+                                                                                  .
+                                                                                  31= 31
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   46    2 2.0       GBCTOK           .2.b         Gingival control sample taken  1= 1
+                                                   from tooth # - Facial          .
+                                                                                  .
+                                                                                  15= 15
+                                                                                  18= 18
+                                                                                  .
+                                                                                  .
+                                                                                  31= 31
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   48    2 2.0       GBCLOK           .2.b         Gingival control samples       1= 1
+                                                   taken from tooth # - lingual   .
+                                                                                  .
+                                                                                  15= 15
+                                                                                  18= 18
+                                                                                  .
+                                                                                  .
+                                                                                  31= 31
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   50    2 2.0       PASCOK           3            Samples from sites with        1= YES
+                                                   papillary assessment scores    2= NO
+                                                   of 3 or 5                      -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   52    2 2.0       PASSOK           Old3         Old: Samples from sites with   1= YES
+                                                   papillary assessment scores    2= NO
+                                                   of 1,2,3 or 5                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   54    2 2.0       PAT1OK           .3.a.i       Papillary assessment tooth i   1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  32= 32
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   56    2 2.0       PSC1OK           .3.b.i       Papillary assessment score -   3= Ulceration, necrosis or
+                                                   tooth i                           exudate present
+                                                                                  5= Alveolar bone exposed
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   58    2 2.0       PAT2OK           .3.a.ii      Papillary assessment tooth ii  1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  32= 32
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   60    2 2.0       PSC2OK           .3.b.ii      Papillary assessment score -   3= Ulceration, necrosis or
+                                                   tooth ii                          exudate present
+                                                                                  5= Alveolar bone exposed
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   62    2 2.0       PAT3OK           .3.a.iii     Papillary assessment tooth iii 1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  32= 32
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   64    2 2.0       PSC3OK           .3.b.iii     Papillary assessment score -   3= Ulceration, necrosis or
+                                                   tooth iii                         exudate present
+                                                                                  5= Alveolar bone exposed
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   66    2 2.0       PAT4OK           .3.a.iv      Papillary assessment tooth iv  1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  32= 32
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   68    2 2.0       PSC4OK           .3.b.iv      Papillary assessment score -   3= Ulceration, necrosis or
+                                                   tooth iv                          exudate present
+                                                                                  5= Alveolar bone exposed
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   70    2 2.0       PAT5OK           .3.a.v       Papillary assessment tooth v   1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  32= 32
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   72    2 2.0       PSC5OK           .3.b.v       Papillary assessment score -   3= Ulceration, necrosis or
+                                                   tooth v                           exudate present
+                                                                                  5= Alveolar bone exposed
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   74    2 2.0       PAT6OK           .3.a.vi      Papillary assessment tooth vi  1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  32= 32
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   76    2 2.0       PSC6OK           .3.b.vi      Papillary assessment score -   3= Ulceration, necrosis or
+                                                   tooth vi                          exudate present
+                                                                                  5= Alveolar bone exposed
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   78    2 $         DUM1OK           Old.3.c      OLD: dummy                     Character
+
+   80    2 2.0       ALVLOK           Old4         Old: Samples from sites with   1= YES
+                                                   4mm or or greater change in    2= NO
+                                                   attachment level               -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   82    2 2.0       AL2MOK           4            Samples from sites with 2mm    1= YES
+                                                   or or greater change in        2= NO
+                                                   attachment level since prior   -1= N.A. (Skipped)
+                                                   to last visit                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   84    2 2.0       ALV1OK           .4.a.i       Xmm attachment level tooth i   1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  15= 15
+                                                                                  18= 18
+                                                                                  .
+                                                                                  .
+                                                                                  31= 31
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   86    2 2.0       ALV2OK           .4.a.ii      Xmm attachment level tooth ii  1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  15= 15
+                                                                                  18= 18
+                                                                                  .
+                                                                                  .
+                                                                                  31= 31
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   88    2 2.0       ALV3OK           .4.a.iii     Xmm attachment level tooth iii 1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  15= 15
+                                                                                  18= 18
+                                                                                  .
+                                                                                  .
+                                                                                  31= 31
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   90    2 2.0       ALV4OK           .4.a.iv      Xmm attachment level tooth iv  1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  15= 15
+                                                                                  18= 18
+                                                                                  .
+                                                                                  .
+                                                                                  31= 31
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   92    2 2.0       ALV5OK           .4.a.v       Xmm attachment level tooth v   1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  15= 15
+                                                                                  18= 18
+                                                                                  .
+                                                                                  .
+                                                                                  31= 31
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   94    2 2.0       ALV6OK           .4.a.vi      Xmm attachment level tooth vi  1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  15= 15
+                                                                                  18= 18
+                                                                                  .
+                                                                                  .
+                                                                                  31= 31
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   96    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   97    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

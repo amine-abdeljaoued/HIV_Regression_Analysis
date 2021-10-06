@@ -1,0 +1,337 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+IADLSF - Follow-Up Lawton Instrumental Activities of Daily Living Scale
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    8 $         VERSDL           A.3          Form version                   01/01/93= 01/01/93
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   19    8 $         DCMPDL           A.4          Date of completion             04/01/13= 04/01/13
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   27    3 $         INITDL           A.5          Initials of person completing  Character
+                                                   form
+
+   30    2 2.0       HSKNDL           B.1          Housekeeping now               1= I take care of my house/
+                                                                                     apartment by myself or
+                                                                                     only sometimes need help
+                                                                                     for larger jobs
+                                                                                  2= I am able to do all the
+                                                                                     housekeeping, but choose
+                                                                                     not to do so
+                                                                                  3= I only do simple things
+                                                                                     around the house (wash
+                                                                                     dishes, make bed)
+                                                                                  4= I do simple things around
+                                                                                     the house, but I have
+                                                                                     problems keeping my place
+                                                                                     clean
+                                                                                  5= I need help with all
+                                                                                     housekeeping tasks
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   32    2 2.0       MNYNDL           B.2          Money and bills now            1= I handle all my money and
+                                                                                     bills (check cashing,
+                                                                                     banking, handling money)
+                                                                                     by myself
+                                                                                  2= I am able to handle my own
+                                                                                     money and bills, but
+                                                                                     someone else does them for
+                                                                                     me
+                                                                                  3= I can handle paying for
+                                                                                     simple things (groceries),
+                                                                                     but need help with banking
+                                                                                     and checking
+                                                                                  4= I am not able to handle
+                                                                                     money correctly
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   34    2 2.0       GRONDL           B.3          Buying groceries now           1= I create my own grocery
+                                                                                     list and do my own shopping
+                                                                                  2= I am able to create my own
+                                                                                     grocery list and do my own
+                                                                                     shopping, but someone else
+                                                                                     does it for me
+                                                                                  3= I sometimes need help
+                                                                                     grocery shopping
+                                                                                  4= I need someone else to do
+                                                                                     my grocery shopping for me
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   36    2 2.0       CKGNDL           B.4          Cooking now                    1= I plan, make, and serve
+                                                                                     many of my own meals
+                                                                                  2= I am able to plan, make,
+                                                                                     and serve my own meals but
+                                                                                     someone else does it for me
+                                                                                  3= I make meals if someone
+                                                                                     else provides me with the
+                                                                                     right ingredients
+                                                                                  4= I heat and serve meals
+                                                                                     provided by others
+                                                                                  5= I need to have meals made
+                                                                                     and served to me
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   38    2 2.0       SOCNDL           B.5          Planning social activities now 1= I often start and plan
+                                                                                     social activities (e.g.,
+                                                                                     going out, having a party,
+                                                                                     going to church activities,
+                                                                                     planning a BBQ)
+                                                                                  2= I rarely start and plan
+                                                                                     social activities
+                                                                                  3= I do not start and plan
+                                                                                     social activities
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   40    2 2.0       UNDNDL           B.6          Understanding things read or   1= I understand things I read
+                                                   watched on TV now                 and things I watch on TV
+                                                                                     without any problem
+                                                                                  2= I sometimes have problems
+                                                                                     understanding things I
+                                                                                     read or things I watch on
+                                                                                     TV
+                                                                                  3= I often have problems
+                                                                                     understanding things I
+                                                                                     read or things I watch on
+                                                                                     TV
+                                                                                  4= I am unable to understand
+                                                                                     things I read or things I
+                                                                                     watch on TV
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   42    2 2.0       GGONDL           B.7          Getting where you need to go   1= I drive my own car or take
+                                                   now                               the bus, subway, or train
+                                                                                     on my own (if you do not
+                                                                                     own a car)
+                                                                                  2= I arrange my own travel
+                                                                                     using taxis, but do not
+                                                                                     drive or take the bus,
+                                                                                     subway, or train
+                                                                                  3= I can take the bus, subway,
+                                                                                     or train or use taxis if
+                                                                                     someone else helps me
+                                                                                  4= Other people need to take
+                                                                                     me where I need to go. I
+                                                                                     can't do it on my own
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   44    2 2.0       PHNNDL           B.8          Using the phone now            1= I do not have access to a
+                                                                                     phone
+                                                                                  2= I handle using the phone
+                                                                                     without any problems
+                                                                                     (looking up and dialing
+                                                                                     new numbers, etc.)
+                                                                                  3= I only dial a few well-
+                                                                                     known numbers
+                                                                                  4= I answer the phone, but do
+                                                                                     not dial
+                                                                                  5= I do not use the phone at
+                                                                                     all
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   46    2 2.0       HRPNDL           B.9          Home repairs now               1= I handle most minor home
+                                                                                     repairs (unclogging the
+                                                                                     sink, replacing batteries
+                                                                                     in the smoke detector)
+                                                                                  2= I can make minor repairs
+                                                                                     but choose not to
+                                                                                  3= I need help with most
+                                                                                     minor home repairs
+                                                                                  4= I am unable to do most
+                                                                                     repairs by myself
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   48    2 2.0       BTHNDL           B.10         Bathing now                    1= I handle all of my bathing
+                                                                                     needs by myself
+                                                                                  2= I sometimes need help
+                                                                                     bathing (getting in and
+                                                                                     out of the tub/shower)
+                                                                                  3= I always need help from
+                                                                                     others when bathing
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   50    2 2.0       DRSNDL           B.11         Dressing now                   1= I am able to dress myself
+                                                                                     and pick out my own clothes
+                                                                                  2= I dress myself, but
+                                                                                     someone else must pick out
+                                                                                     my clothes for me
+                                                                                  3= I sometimes need help
+                                                                                     getting dressed or
+                                                                                     frequently make mistakes
+                                                                                     in choosing clothes
+                                                                                  4= I often need help getting
+                                                                                     dressed
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   52    2 2.0       SHPNDL           B.12         Shopping now                   1= I take care of all my
+                                                                                     shopping needs
+                                                                                  2= I am able to shop, but
+                                                                                     choose to have someone
+                                                                                     else do my shopping for me
+                                                                                  3= I only make small purchases
+                                                                                  4= I need someone to go with
+                                                                                     my on any shopping trip
+                                                                                  5= I am unable to shop
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   54    2 2.0       LAUNDL           B.13         Laundry now                    1= I do all of my own laundry
+                                                                                  2= I am able to do my own
+                                                                                     laundry, but choose to
+                                                                                     have others do it for me
+                                                                                  3= I sometimes need help
+                                                                                     doing the laundry
+                                                                                  4= I launder only small items
+                                                                                     (e.g., rinse socks,
+                                                                                     stockings, etc.)
+                                                                                  5= All laundry must be done
+                                                                                     by others
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   56    2 2.0       MEDNDL           B.14         Taking/keeping track of        1= On my own, I can take my
+                                                   medication now                    medications in correct
+                                                                                     dosages at the correct time
+                                                                                  2= I am able to take care of
+                                                                                     my own medications, but
+                                                                                     choose to have someone
+                                                                                     else do it for me
+                                                                                  3= I take medications that
+                                                                                     are prepared in individual
+                                                                                     doses by someone else
+                                                                                  4= I am unable to track my
+                                                                                     own medications
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   58    2 2.0       CHDNDL           B.15         Taking care of children/       1= I do not have children or
+                                                   grandchildren now                 grandchildren
+                                                                                  2= I am fully able to handle
+                                                                                     child care
+                                                                                  3= I sometimes need  help
+                                                                                     caring for my children or
+                                                                                     grandchilden
+                                                                                  4= I need constant help in
+                                                                                     taking care for my
+                                                                                     children or grandchildren
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   60    2 2.0       WRKNDL           B.16         Work now                       1= I am retired
+                                                                                  2= I am efficient at work
+                                                                                  3= I am not very good at work
+                                                                                     and have problems paying
+                                                                                     attention or finishing
+                                                                                     things I am supposed to do
+                                                                                  4= I am having a great deal
+                                                                                     of problems in paying
+                                                                                     attention or finishing
+                                                                                     tasks at work
+                                                                                  5= I am no longer able to work
+                                                                                  6= I am able to work outside
+                                                                                     my home, but currently do
+                                                                                     not
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   62    2 2.0       PDUEDL           B.17         Factors to which above         1= I am not having any
+                                                   problems relate                   problems on the previous
+                                                                                     tasks
+                                                                                  2= Primarily problems
+                                                                                     thinking (for example,
+                                                                                     memory, paying attention)
+                                                                                  3= Primarily physical
+                                                                                     problems (for example,
+                                                                                     fatigue, feeling sick)
+                                                                                  4= Equally thinking and
+                                                                                     physical problems
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   64    2 2.0       PBGNDL           B.18         Time when problems with tasks  1= I am not having any
+                                                   began                             problems
+                                                                                  2= Within the last month
+                                                                                  3= One to six months ago
+                                                                                  4= Six months to two years ago
+                                                                                  5= Two to five years ago
+                                                                                  6= More than five years ago
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   66    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   67    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

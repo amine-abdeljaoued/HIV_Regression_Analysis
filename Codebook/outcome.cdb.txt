@@ -1,0 +1,326 @@
+                               CODEBOOK
+Visit 41: OUTCOME - vertical outcome file for the WIHS                              9-6-2017
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8           CASEID                        WIHS ID number                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2           VISIT                         WIHS visit number              1= Visit #1
+                                                                                  .
+                                                                                  .
+                                                                                  41= Visit #41
+                                                                                  88= Missing date for event or
+                                                                                  occurred after last WIHS visit
+                                                                                  99= Death or disenrollment
+
+   11    4 4.0       DATEREPT                      Date of form report            010194= January 1, 1994
+                                                                                  .
+                                                                                  .
+                                                                                  033115= March 31, 2015
+
+   15    1           OUTCAIDS                      AIDS outcome                   1= Yes
+                                                                                  0= No
+
+   16    1           OUTCCANC                      Cancer outcome                 1= Yes
+                                                                                  0= No
+
+   17    1           OUTCTB                        TB outcome                     1= Yes
+                                                                                  0= No
+
+   18    1           OUTCHX                        Medical history outcome        1= Yes
+                                                                                  0= No
+
+   19    1           OUTCDTH                       Death outcome                  1= Yes
+                                                                                  0= No
+
+   20    1           OUTCDENR                      Disenrollment outcome          1= Yes
+                                                                                  0= No
+
+   21    2           EVNTSTAT                      Event status                   -9= Cannot be determined
+                                                                                  1= Prevalent (at or before
+                                                                                     baseline visit)
+                                                                                  2= Incident (after baseline
+                                                                                     visit)
+
+   23    3           EVNTCODE                      Event code                     101= Cervical cancer, inv
+                                                                                  102= Kaposi's sarcoma
+                                                                                  103= Non-Hodgkin's Lymphoma
+                                                                                       (NHL)
+                                                                                  104= Lymphoma,brain
+                                                                                  105= Hodgkin's Disease
+                                                                                  106= Breast Cancer
+                                                                                  107= Ovarian Cancer
+                                                                                  108= Cancer of Uterus
+                                                                                  109= Skin Cancer
+                                                                                  110= Other Cancer
+                                                                                  111= Metastatic Cancer
+                                                                                  112= Liver Cancer
+                                                                                  113= Lung Cancer
+                                                                                  114= Colon Cancer
+                                                                                  120= Tuberculosis (TB)
+                                                                                  130= Pneumocystis carinii
+                                                                                       pneumonia (PCP)
+                                                                                  132= Bacterial pneumonia
+                                                                                  140= Candida (esophagus)
+                                                                                  141= Candida (lungs, trachea,
+                                                                                       bronchus)
+                                                                                  151= Diarrhea, cryptosporidia
+                                                                                  153= Diarrhea, isospora
+                                                                                  160= Cytomegalovirus (CMV)
+                                                                                  164= CMV (retina)
+                                                                                  170= Mycobacterium
+                                                                                  172= Toxoplasmosis
+                                                                                  173= Histoplasmosis
+                                                                                  176= Coccidioidomycosis
+                                                                                  177= Salmonella
+                                                                                  180= Cryptococcal
+                                                                                  190= PML
+                                                                                  193= Dementia/Encephalopathy
+                                                                                  200= Herpes simplex virus
+                                                                                       (HSV)
+                                                                                  201= HSV (lungs, esophagus)
+                                                                                  210= Wasting syndrome
+                                                                                  320= Hepatitis C/Liver Disease
+                                                                                  330= Other Heart Disease
+                                                                                  331= Myocardial Infarction
+                                                                                       (Heart Attack)
+                                                                                  332= Hospitalization for
+                                                                                       Congestive Heart Failure
+                                                                                  333= Cerebral Vascular
+                                                                                       Accident (Stroke)
+                                                                                  334= Hospitalization for
+                                                                                       Chest pain/Angina
+                                                                                  335= Transient Ischemic
+                                                                                       Attack (Mini Stroke)
+                                                                                  337= Surgery on heart vessels
+                                                                                  500= Death
+                                                                                  999= Disenrollment
+
+   26    5           SEERCODE                      SEER Site Recode ICD-0-2 (1/   -1= Not an adjudicated cancer
+                                                   27/2003) Definition                event
+                                                                                  20000= Oral Cavity and
+                                                                                      Pharynx, NOS
+                                                                                  20010= Lip
+                                                                                  20020= Tongue
+                                                                                  20030= Salivary Gland
+                                                                                  20040= Floor of Mouth
+                                                                                  20050= Gum and Other Mouth
+                                                                                  20060= Nasopharynx
+                                                                                  20070= Tonsil
+                                                                                  20080= Oropharynx
+                                                                                  20090= Hypophyarynx
+                                                                                  20100= Other Oral Cavity and
+                                                                                      Pharynx
+                                                                                  21000= Digestive System, NOS
+                                                                                  21010= Esophagus
+                                                                                  21020= Stomach
+                                                                                  21030= Small Intestine
+
+                                                                                  21040= Colon excluding Rectum,
+                                                                                  NOS
+                                                                                  21041= Cecum
+                                                                                  21042= Appendix
+                                                                                  21043= Ascending Colon
+                                                                                  21044= Hepatic Flexure
+                                                                                  21045= Transverse Colon
+                                                                                  21046= Splenic Flexure
+                                                                                  21047= Descending Colon
+                                                                                  21048= Sigmoid Colon
+                                                                                  21049= Large Intestine- NOS
+                                                                                  21050= Rectum and
+                                                                                  Rectosigmoid Junction, NOS
+                                                                                  21051= Rectosigmoid Junction
+                                                                                  21052= Rectum
+                                                                                  21060= Anus- Anal Canal and
+                                                                                  Anorectum
+                                                                                  21070= Liver and Intrahepatic
+                                                                                  Bile Duct, NOS
+                                                                                  21071= Liver
+                                                                                  21072= Intrahepatic Bile Duct
+                                                                                  21080= Gallbladder
+                                                                                  21090= Other Biliary
+                                                                                  21100= Pancreas
+                                                                                  21110= Retroperitoneum
+                                                                                  21120= Peritoneum- Omentum
+                                                                                  and Mesentery
+                                                                                  21130= Other Digestive Organs
+                                                                                  22000= Respiratory System, NOS
+                                                                                  22010= Nose- Nasal Cavity and
+                                                                                  Middle Ear
+                                                                                  22020= Larynx
+                                                                                  22030= Lung and Bronchus
+                                                                                  22050= Pleura
+                                                                                  22060= Trachea- Mediastinum
+                                                                                  and Other Respiratory Organs
+                                                                                  23000= Bones and Joints
+                                                                                  24000= Soft Tissue including
+                                                                                  Heart
+                                                                                  25000= Skin excluding Basal
+                                                                                  and Squamous, NOS
+                                                                                  25010= Melanoma of the Skin
+                                                                                  25020= Other Non-Epithelial
+                                                                                  Skin
+                                                                                  26000= Breast
+                                                                                  27000= Female Genital System,
+                                                                                  NOS
+                                                                                  27010= Cervix Uteri
+                                                                                  27020= Corpus Uteri
+                                                                                  27030= Uterus- NOS
+                                                                                  27040= Ovary
+                                                                                  27050= Vagina
+                                                                                  27060= Vulva
+                                                                                  27070= Other Female Genital
+                                                                                  Organs
+                                                                                  29000= Urinary System, NOS
+                                                                                  29010= Urinary Bladder
+                                                                                  29020= Kidney and Renal Pelvis
+                                                                                  29030= Ureter
+                                                                                  29040= Other Urinary Organs
+                                                                                  30000= Eye and Orbit
+                                                                                  31000= Brain and Other
+                                                                                  Nervous System, NOS
+                                                                                  31010= Brain
+                                                                                  31040= Cranial Nerves Other
+                                                                                  Nervous System
+                                                                                  32000= Endocrine System, NOS
+                                                                                  32010= Thyroid
+                                                                                  32020= Other Endocrine
+                                                                                  including Thymus
+                                                                                  33010= Hodgkin Lymphoma, NOS
+                                                                                  33011= Hodgkin - Nodal
+                                                                                  33012= Hodgkin - Extranodal
+                                                                                  33040= Non-Hodgkin Lymphoma,
+                                                                                  NOS
+                                                                                  33041= NHL - Nodal
+                                                                                  33042= NHL - Extranodal
+                                                                                  34000= Myeloma
+                                                                                  35000= Leukemia, NOS
+                                                                                  35010= Lymphocytic Leukemia,
+                                                                                  NOS
+                                                                                  35011= Acute Lymphocytic
+                                                                                  Leukemia
+                                                                                  35012= Chronic Lymphocytic
+                                                                                  Leukemia
+                                                                                  35013= Other Lymphocytic
+                                                                                  Leukemia
+                                                                                  35020= Myeloid and Monocytic
+                                                                                  Leukemia, NOS
+                                                                                  35021= Acute Myeloid Leukemia
+                                                                                  35031= Acute Monocytic
+                                                                                  Leukemia
+                                                                                  35022= Chronic Myeloid
+                                                                                  Leukemia
+                                                                                  35023= Other Myeloid/
+                                                                                  Monocytic Leukemia
+                                                                                  35040= Other Leukemia, NOS
+                                                                                  35041= Other Acute Leukemia
+                                                                                  35043= Aleukemic- subleukemic
+                                                                                  and NOS
+                                                                                  36010= Mesothelioma +
+                                                                                  36020= Kaposi Sarcoma +
+                                                                                  37000= Miscellaneous
+                                                                                  99999= Invalid
+
+   31    1           TYPECONF                      Type of confirmation           1= Self-report
+                                                                                  2= Indeterminate
+                                                                                  3= Presumptive
+                                                                                  4= Definite
+                                                                                  5= Adjudicated cancer
+
+   32    2           DATEOUTCM                     Outcome month                  -9= Missing
+                                                                                  1= January
+                                                                                  .
+                                                                                  .
+                                                                                  12= December
+
+   34    2           DATEOUTCD                     Outcome day of month           -9= Missing
+                                                                                  1= 1st
+                                                                                  .
+                                                                                  .
+                                                                                  31= 31st
+
+   36    4           DATEOUTCY                     Outcome year                   -9= Missing
+                                                                                  1964= 1964
+                                                                                  .
+                                                                                  .
+                                                                                  2013= 2014
+
+   40    2           SOURCE                        Source                         1= Registry
+                                                                                  2= Medical Record Abstractions
+                                                                                  3= Death Certificate (DC)
+                                                                                  4= Other report
+                                                                                  5= Self Report
+                                                                                  6= Reg & MRA
+                                                                                  7= WIHS biopsy (L15)
+                                                                                  8= Reg & DC
+                                                                                  9= Reg & L15
+                                                                                  10= MRA & DC
+                                                                                  11= MRA & L15
+                                                                                  12= Reg, MRA, & DC
+                                                                                  13= Reg, MRA, & L15
+
+   42    2           DTHCLASS                      Cause of death classified by   0= Unknown
+                                                   two clinicians (does not use   1= AIDS
+                                                   CD4)                           2= Non-AIDS
+                                                                                  3= Indeterminate
+                                                                                  4= Pneumonia or infection
+                                                                                  -1= Alive
+
+   44    3           SPECCODE                      Specific cause of death used   0= Indeterminate
+                                                   to determine DTHCLASS          1= Unspecified AIDS/HIV
+                                                                                  2= Lung/Pulmonary
+                                                                                  3= Pneumonia
+                                                                                  4= Pulmonary hypertension
+                                                                                  5= Cancer
+                                                                                  6= Infection
+                                                                                  7= Gastrointestinal
+                                                                                  8= Heart
+                                                                                  9= Miscellaneous
+                                                                                  10= Multiple
+                                                                                  11= Autoimmune
+                                                                                  12= Drug or alcohol overdose
+                                                                                     or abuse
+                                                                                  13= Kidney/Renal failure
+                                                                                  14= Liver
+                                                                                  15= CNS/Neurological
+                                                                                  16= Homicide/suicide/accident
+                                                                                  17= Complications due to
+                                                                                     surgery
+                                                                                  18= Complications due to
+                                                                                     pregnancy
+                                                                                  19= CVA/Stroke
+                                                                                  20= Trauma
+                                                                                  21= Seizures
+                                                                                  22= Multi-organ failure
+                                                                                  23= Hemorrhage
+                                                                                  24= Pancreatitis
+                                                                                  25= Lymphoma,unspecified
+                                                                                  26= Psychiatric
+                                                                                  27= Peritonitis,unspecified
+                                                                                  28= Neurologic infection
+                                                                                  29= Cerebral aneurysm
+                                                                                  30= Asthma
+                                                                                  31= CNS lymphoma
+                                                                                  32= Anemia
+                                                                                  33= Vascular aneurysm
+                                                                                  101-104 & 120-210= Same as
+                                                                                     EVNTCODE above
+                                                                                  .= Missing
+
+   47   10 $         NDICUTDT                      NDI cut-off date [recommend    -1= N/A (non-death event)
+                                                   using as date of analysis for  12/31/2010= December 31, 2010
+                                                   mortality studies]                 [LA]
+                                                                                  12/31/2012= December 31, 2012
+                                                                                      [Bronx, Brooklyn, DC, SF,
+                                                                                      Chicago]
+
+   57    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

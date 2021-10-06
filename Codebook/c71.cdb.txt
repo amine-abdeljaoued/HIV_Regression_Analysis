@@ -1,0 +1,438 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+C71 - Laboratory Subgingival Plaque
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    6 $         FKEY             OldA.0       OLD: Form identifier key       Character
+
+   17    6 $         LID_CL           A.0          Lab ID #                       Character
+
+   23    3 $         INITCL           A.0          Initials of person completing  Character
+                                                   form
+
+   26    8 $         VERSCL           A.0          Form version                   01/01/93= 01/01/93
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   34    2 2.0       AVAICL           A.1          Subgingival plaque test        1= Yes
+                                                   results available              2= No, Sample Inadequate
+                                                                                  3= No, Other Reason
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   36   25 $         RNNACL           A.1.a        Reason subgingival plaque      Character
+                                                   test results not available
+
+   61    2 2.0       SITECL           A.2          Research site                  1= USC - Los Angeles
+                                                                                  2= Univerity of Illinois -
+                                                                                     Chicago
+                                                                                  3= BIMC/Bronx - NY
+                                                                                  4= UC - San Francisco
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   63    8 $         SPDTCL           A.3          Date subgingival plaque        10/01/94= 10/01/94
+                                                   specimen collected             .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   71    8 $         PDTECL           A.4          Date subgingival plaque        10/01/94= 10/01/94
+                                                   specimen processed             .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   79    2 2.0       TYPECL           A.5          Specimen type                  1= Gingival Banding (Plaque)
+                                                                                  2= Gingival Banding - Control
+                                                                                     (Plaque)
+                                                                                  3= Papillary Assessment -
+                                                                                     (Plaque)
+                                                                                  4= Loss of Attachment change -
+                                                                                     (Plaque)
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   81    5 5.2       AAMCCL           B.1          A. actinomycetemcomitans       0.00= 0.00
+                                                   microbial count (cfu/mL)       .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   86    2 2.0       AAEXCL           B.1          Exponent for                   0= 0
+                                                   A.actinomycetemcomitans count  .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   88    2 2.0       AAPPCL           B.1          PCR (paperpoint):              1= positive
+                                                   A.actinomycetemcomitans        2= negative
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   90    5 5.2       PGMCCL           B.2          Porphyromonas gingivalis       0.00= 0.00
+                                                   microbial count (cfu/mL)       .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   95    2 2.0       PGEXCL           B.2          Exponent for Porph.            0= 0
+                                                   gingivalis count               .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   97    2 2.0       PGPPCL           B.2          PCR (paperpoint):              1= positive
+                                                   Porphyromonas gingivalis       2= negative
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   99    5 5.2       PIMCCL           B.3          Prevotella intermedia          0.00= 0.00
+                                                   microbial count (cfu/mL)       .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  104    2 2.0       PIEXCL           B.3          Exponent for Prev. intermedia  0= 0
+                                                   count                          .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  106    2 2.0       PIPPCL           B.3          PCR (paperpoint): Prevotella   1= positive
+                                                   intermedia                     2= negative
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  108    5 5.2       BFMCCL           B.4          Bacteriodes forsythus          0.00= 0.00
+                                                   microbial count (cfu/mL)       .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  113    2 2.0       BFEXCL           B.4          Exponent for Bact. forsythus   0= 0
+                                                   count                          .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  115    2 2.0       BFPPCL           B.4          PCR (paperpoint): Bacteriodes  1= positive
+                                                   forsythus                      2= negative
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  117    5 5.2       CSMCCL           B.5          Campylobacter species          0.00= 0.00
+                                                   microbial count (cfu/mL)       .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  122    2 2.0       CSEXCL           B.5          Exponent for Campylobacter     0= 0
+                                                   count                          .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  124    2 2.0       CSPPCL           B.5          PCR (paperpoint):              1= positive
+                                                   Campylobacter species          2= negative
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  126    5 5.2       ESMCCL           B.6          Eubacterium species microbial  0.00= 0.00
+                                                   count (cfu/mL)                 .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  131    2 2.0       ESEXCL           B.6          Exponent for Eubacterium count 0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  133    5 5.2       FSMCCL           B.7          Fusobacterium species          0.00= 0.00
+                                                   microbial count (cfu/mL)       .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  138    2 2.0       FSEXCL           B.7          Exponent for Fusobacterium     0= 0
+                                                   count                          .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  140    5 5.2       PMMCCL           B.8          Peptostreptococcus micros      0.00= 0.00
+                                                   microbial count (cfu/mL)       .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  145    2 2.0       PMEXCL           B.8          Exponent for Peptostrep.       0= 0
+                                                   micros count                   .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  147    5 5.2       EGMCCL           B.9          Enteric gram negative rods     0.00= 0.00
+                                                   microbial count (cfu/mL)       .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  152    2 2.0       EGEXCL           B.9          Exponent for Enteric gram neg  0= 0
+                                                   rods count                     .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  154    2 2.0       EGKOCL           B.9.a        Klebsiella oxytoca present     1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  156    2 2.0       EGKPCL           B.9.b        Klebsiella pneumoniae present  1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  158    2 2.0       EGECCL           B.9.c        Enterobacter cloacae present   1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  160    2 2.0       EGEICL           B.9.d        Escherichia coli present       1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  162    2 2.0       EGPACL           B.9.e        Pseudomonas aeruginosa present 1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  164    2 2.0       EGCFCL           B.9.f        Citrobacter freundii present   1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  166    2 2.0       EGEACL           B.9.g        Enterobacter asburiae present  1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  168    2 2.0       EGEGCL           B.9.h        Enterobacter agglomerans       1= PRESENT
+                                                   present                        2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  170    2 2.0       EGASCL           B.9.i        Acinetobacter species present  1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  172    2 2.0       EGPPCL           B.9.j        Pseudomonas putidu present     1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  174    2 2.0       EGYSCL           B.9.k        Yersinia species present       1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  176    2 2.0       EGXMCL           B.9.l        Xanthomonas maltophilia        1= PRESENT
+                                                   present                        2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  178    2 2.0       EGOTCL           B.9.m        Other enteric gram neg rods    1= PRESENT
+                                                   present                        2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  180   25 $         EGOSCL           B.9.m.i      Specify other enteric gram     Character
+                                                   neg rods present
+
+  205    5 5.2       BHMCCL           B.10         Beta hemolytic streptococci    0.00= 0.00
+                                                   microbial count (cfu/mL)       .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  210    2 2.0       BHEXCL           B.10         Exponent for beta hemolytic    0= 0
+                                                   strep count                    .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  212    5 5.2       YTMCCL           B.11         Yeast culture microbial count  0.00= 0.00
+                                                   (cfu/mL)                       .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  217    2 2.0       YTEXCL           B.11         Exponent for yeast culture     0= 0
+                                                   count                          .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  219    5 5.2       ECMCCL           B.12         Eikenella corrodens microbial  0.00= 0.00
+                                                   count (cfu/mL)                 .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  224    2 2.0       ECEXCL           B.12         Exponent for Eikenella         0= 0
+                                                   corrodens count                .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  226    2 2.0       ECPPCL           B.12         PCR (paperpoint): Eikenella    1= positive
+                                                   corrodens                      2= negative
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  228    5 5.2       SAMCCL           B.13         Staphylococcus aureus          0.00= 0.00
+                                                   microbial count (cfu/mL)       .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  233    2 2.0       SAEXCL           B.13         Exponent for Staph. aureus     0= 0
+                                                   count                          .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  235    5 5.2       SEMCCL           B.14         Staphylococcus epidermidis     0.00= 0.00
+                                                   microbial count (cfu/mL)       .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  240    2 2.0       SEEXCL           B.14         Exponent for Staph.            0= 0
+                                                   epidermidis count              .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  242    2 2.0       TDPPCL           B.15         PCR (paperpoint): Treponema    1= positive
+                                                   denticola                      2= negative
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  244    5 5.2       TCMCCL           B.16         Total microbial counts (cfu/   0.00= 0.00
+                                                   mL)                            .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  249    2 2.0       TCEXCL           B.16         Exponent for total counts      0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  251    2 2.0       HIV_CL           B.17         PCR (paperpoint): HIV          1= positive
+                                                                                  2= negative
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  253    2 2.0       HCV_CL           B.18         PCR (paperpoint): HCV          1= positive
+                                                                                  2= negative
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  255    2 2.0       HBV_CL           B.19         PCR (paperpoint): HBV          1= positive
+                                                                                  2= negative
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  257    2 2.0       HPV_CL           B.20         PCR (paperpoint): HPV          1= positive
+                                                                                  2= negative
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  259    2 2.0       EBV_CL           B.21         PCR (paperpoint): EBV          1= positive
+                                                                                  2= negative
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  261    2 2.0       CMV_CL           B.22         PCR (paperpoint): CMV          1= positive
+                                                                                  2= negative
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  263    2 2.0       HSV_CL           B.23         PCR (paperpoint): HSV (Types   1= positive
+                                                   1 and 2)                       2= negative
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  265    2 2.0       HHV6CL           B.24         PCR (paperpoint): HHV-6        1= positive
+                                                                                  2= negative
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  267    2 2.0       HHV7CL           B.25         PCR (paperpoint): HHV-7        1= positive
+                                                                                  2= negative
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  269    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  270    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

@@ -1,0 +1,360 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+RAB - Retrospective Medical Record Abstraction
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1   10 $         SCIDMR           A.1          Screening ID                   Character
+
+   11    8 8.0       CASEID           A.2          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+   19    8 $         VERSMR           A.3          Form version                   10/01/01= 10/01/01
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   27    3 $         INITMR           A.4          Initials of person completing  Character
+                                                   form
+
+   30    8 $         ADTEMR           A.5          Date of record abstraction     10/01/01= 10/01/01
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   38    2 2.0       EARTMR           B.1          Medical records indicate       1= YES
+                                                   participant used ART           2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   40    2 2.0       EDDIMR           B.1.a        Medical records indicate       1= YES
+                                                   participant used ddI, ddC, d4T 2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   42    8 $         FHRXMR           B.2.b        Date HAART first prescribed    01/01/05= 01/01/05
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   50    2 2.0       AHHXMR           B.2          Participant's ART/HAART use    1= First HAART started after
+                                                   history                           12/31/04
+                                                                                  2= Only ART/HAART use was
+                                                                                     during pregnancy before 1/
+                                                                                     1/05
+                                                                                  3= Only ART/HAART use was for
+                                                                                     PEP/PrEP before 1/1/05
+                                                                                  4= ART/HAART use for
+                                                                                     pregnancy before 1/1/05 +
+                                                                                     HAART started after 12/31/
+                                                                                     04
+                                                                                  5= ART/HAART use for PEP/PrEP
+                                                                                     before 1/1/05 + HAART
+                                                                                     started after 12/31/04
+                                                                                  6= ART/HAART use before 1/1/
+                                                                                     05 that was not for
+                                                                                     pregnancy or PEP/PrEP
+                                                                                  7= ART use that was not for
+                                                                                     pregnancy or PEP/PrEP
+                                                                                     before HAART
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   52    2 2.0       EVHTMR           OldB.1       Old: Medical records indicate  1= YES
+                                                   participant used HAART         2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   54    2 2.0       HF08MR           OldB.2.a     Old: HAART first prescribed    1= YES
+                                                   after December 31, 2007        2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   56    2 2.0       PREGMR           OldB.4       Old: Participant was pregnant  1= YES
+                                                   when first used HAART          2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   58    2 2.0       PARTMR           OldB.5       Old: Used antiretroviral meds  1= YES
+                                                   prior to HAART                 2= NO
+                                                                                  3= UNKNOWN
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   60    2 2.0       RT6MMR           B.6          HIV RNA and T-cell results at/ 1= YES
+                                                   within 6 mos prior to HAART    2= NO
+                                                                                  3= N/A; No post-2004 HAART
+                                                                                     taken
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   62    8 $         R1DTMR           B.6.A.i      Date of HIV RNA blood draw     01/01/91= 01/01/91
+                                                   prior to/at HAART initiation   .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   70    2 2.0       R1BLMR           B.6.A.ii     HIV RNA below limit of assay   1= YES
+                                                   detection prior to/at HAART    2= NO
+                                                   initiation                     -1= N.A. (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   72    8 8.0       R1CMMR           B.6.A.iii    HIV RNA copies/ml prior to/at  0= 0
+                                                   HAART initiation               .
+                                                                                  .
+                                                                                  99999999= 99999999
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   80    2 2.0       R1AKMR           B.6.A.iv     Assay kit used prior to/at     1= Roche Amplicor RNA
+                                                   HAART initiation               2= Roche Ultrasensitive RNA
+                                                                                  3= NASBA
+                                                                                  4= Nuclisens
+                                                                                  5= Chiron
+                                                                                  8= Quantiplex
+                                                                                  9= TaqMan
+                                                                                  10= Bayer Branched DNA
+                                                                                  11= Abbott Real Time PCR
+                                                                                  12= Siemens bDNA
+                                                                                  6= Unknown
+                                                                                  7= Other
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   82   25 $         R1SAMR           B.6.A.iv     Specify other assay kit used   Character
+                                                   prior to/at HAART initiation
+
+  107    8 $         T1DTMR           B.6.B.i      Date of T-cell count blood     01/01/91= 01/01/91
+                                                   draw prior to/at HAART         .
+                                                   initiation                     .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  115    4 4.0       T14NMR           B.6.B.ii     CD4 number prior to/at HAART   0= 0
+                                                   initiation                     .
+                                                                                  .
+                                                                                  9999= 9999
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  119    5 5.1       T14PMR           B.6.B.ii     CD4 percent prior to/at HAART  0.0= 0.0
+                                                   initiation                     .
+                                                                                  .
+                                                                                  100.0= 100.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  124    4 4.0       T18NMR           B.6.B.ii     CD8 number prior to/at HAART   0= 0
+                                                   initiation                     .
+                                                                                  .
+                                                                                  9999= 9999
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  128    5 5.1       T18PMR           B.6.B.ii     CD8 percent prior to/at HAART  0.0= 0.0
+                                                   initiation                     .
+                                                                                  .
+                                                                                  100.0= 100.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  133    4 4.0       T13NMR           B.6.B.ii     CD3 number prior to/at HAART   0= 0
+                                                   initiation                     .
+                                                                                  .
+                                                                                  9999= 9999
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  137    5 5.1       T13PMR           B.6.B.ii     CD3 percent prior to/at HAART  0.0= 0.0
+                                                   initiation                     .
+                                                                                  .
+                                                                                  100.0= 100.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  142    2 2.0       WHIAMR           B.7          Weight at HAART initiation or  1= YES
+                                                   within 3 mos available         2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  144    3 3.0       WTHIMR           B.8.a        Weight at HAART initiation or  75= 75
+                                                   within 3 mos prior             .
+                                                                                  .
+                                                                                  500= 500
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  147    8 $         WDHIMR           B.8.b        Date of weight                 01/01/87= 01/01/87
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  155    2 2.0       AIDSMR           OldB.7       Old: AIDS diagnosis found      1= YES
+                                                   during MRA                     2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  157    2 2.0       C1CKMR           OldC.1       Old: No data available on ART  1= CHECKED
+                                                   use prior to initial HAART     2= NOT CHECKED
+                                                   date                           -1= N.A. (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  159    2 2.0       C2CKMR           C.2          No additional regimen results  1= CHECKED
+                                                   available                      2= NOT CHECKED
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  161    2 2.0       C3CKMR           C.3          No additional HIV RNA or T-    1= CHECKED
+                                                   Cell results after initial     2= NOT CHECKED
+                                                   HAART                          -1= N.A. (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  163    8 $         R2DTMR           C.3.A.i      Date of 2nd most recent HIV    01/01/91= 01/01/91
+                                                   RNA blood draw                 .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  171    2 2.0       R2BLMR           C.3.A.ii     HIV RNA below limit of assay   1= YES
+                                                   detection at 2nd most recent   2= NO
+                                                   blood draw                     -1= N.A. (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  173    8 8.0       R2CMMR           C.3.A.iii    HIV RNA copies/ml at 2nd most  0= 0
+                                                   recent blood draw              .
+                                                                                  .
+                                                                                  99999999= 99999999
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  181    2 2.0       R2AKMR           C.3.A.iv     Assay kit used at 2nd most     1= Roche Amplicor RNA
+                                                   recent blood draw              2= Roche Ultrasensitive RNA
+                                                                                  3= NASBA
+                                                                                  4= Nuclisens
+                                                                                  5= Chiron
+                                                                                  8= Quantiplex
+                                                                                  9= TaqMan
+                                                                                  10= Bayer Branched DNA
+                                                                                  11= Abbott Real Time PCR
+                                                                                  12= Siemens bDNA
+                                                                                  6= Unknown
+                                                                                  7= Other
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  183   25 $         R2SAMR           C.3.A.iv     Specify other assay kit used   Character
+                                                   at 2nd most recent blood draw
+
+  208    8 $         T2DTMR           C.3.B.i      Date of 2nd most recent T-     01/01/91= 01/01/91
+                                                   cell count blood draw          .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  216    4 4.0       T24NMR           C.3.B.ii     CD4 number at 2nd most recent  0= 0
+                                                   blood draw                     .
+                                                                                  .
+                                                                                  9999= 9999
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  220    5 5.1       T24PMR           C.3.B.ii     CD4 percent at 2nd most        0.0= 0.0
+                                                   recent blood draw              .
+                                                                                  .
+                                                                                  100.0= 100.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  225    4 4.0       T28NMR           C.3.B.ii     CD8 number at 2nd most recent  0= 0
+                                                   blood draw                     .
+                                                                                  .
+                                                                                  9999= 9999
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  229    5 5.1       T28PMR           C.3.B.ii     CD8 percent at 2nd most        0.0= 0.0
+                                                   recent blood draw              .
+                                                                                  .
+                                                                                  100.0= 100.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  234    4 4.0       T23NMR           C.3.B.ii     CD3 number at 2nd most recent  0= 0
+                                                   blood draw                     .
+                                                                                  .
+                                                                                  9999= 9999
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  238    5 5.1       T23PMR           C.3.B.ii     CD3 percent at 2nd most        0.0= 0.0
+                                                   recent blood draw              .
+                                                                                  .
+                                                                                  100.0= 100.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  243    2 2.0       C4CKMR           C.4          No post-HAART test results     1= CHECKED
+                                                   available                      2= NOT CHECKED
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  245  100 $         ACOMMR           C.5          Additional comments            Character
+
+  345    1 $         ESTAT                         Edit Status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  346    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

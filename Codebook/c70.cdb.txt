@@ -1,0 +1,349 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+C70 - Laboratory-Stimulated Saliva Evaluation
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    6 $         FKEY             OldA.0       OLD: Form identifier number    Character
+
+   17    6 $         LID_CK           A.0          Lab ID #                       Character
+
+   23    3 $         INITCK           A.0          Initials of person completing  Character
+                                                   form
+
+   26    8 $         VERSCK           A.0          Form version                   01/01/93= 01/01/93
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   34    2 2.0       AVAICK           A.1          Stimulated saliva test         1= Yes
+                                                   results available              2= No, Sample Inadequate
+                                                                                  3= No, Other Reason
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   36   25 $         RNNACK           A.1          Reason stimulated saliva test  Character
+                                                   results not available
+
+   61    2 2.0       SITECK           A.2          Research site                  1= USC-Los Angeles
+                                                                                  2= Univerity of Illinois-
+                                                                                     Chicago
+                                                                                  3= BIMC/Bronx-NY
+                                                                                  4= UC-San Francisco
+                                                                                  5= Howard Univ-Wash DC
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   63    8 $         SPDTCK           A.3          Date stimulated saliva         10/01/94= 10/01/94
+                                                   specimen collected             .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   71    8 $         PDTECK           A.4          Date stimulated saliva         10/01/94= 10/01/94
+                                                   specimen processed             .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   79    5 5.2       AAMCCK           B.1          A. actinomycetemcomitans       0= 0
+                                                   microbial count (cfu/mL)       .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   84    2 2.0       AAEXCK           B.1          Exponent for                   0= 0
+                                                   A.actmomycetemcomitans count   .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   86    5 5.2       PGMCCK           B.2          Porphyromonas gingivalis       0= 0
+                                                   microbial count (cfu/mL)       .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   91    2 2.0       PGEXCK           B.2          Exponent for Porph.            0= 0
+                                                   gingivalis count               .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   93    5 5.2       PIMCCK           B.3          Prevotella intermedia          0= 0
+                                                   microbial count (cfu/mL)       .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   98    2 2.0       PIEXCK           B.3          Exponent for Prev. intermedia  0= 0
+                                                   count                          .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  100    5 5.2       BFMCCK           B.4          Bacteriodes forsythus          0= 0
+                                                   microbial count (cfu/mL)       .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  105    2 2.0       BFEXCK           B.4          Exponent for Bacteriodes       0= 0
+                                                   forsythus count                .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  107    5 5.2       CSMCCK           B.5          Campylobacter species          0= 0
+                                                   microbial count (cfu/mL)       .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  112    2 2.0       CSEXCK           B.5          Exponent for Campylobacter     0= 0
+                                                   count                          .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  114    5 5.2       ESMCCK           B.6          Eubacterium species microbial  0= 0
+                                                   count (cfu/mL)                 .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  119    2 2.0       ESEXCK           B.6          Exponent for Eubacterium count 0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  121    5 5.2       FSMCCK           B.7          Fusobacterium species          0= 0
+                                                   microbial count (cfu/mL)       .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  126    2 2.0       FSEXCK           B.7          Exponent for Fusobacterium     0= 0
+                                                   count                          .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  128    5 5.2       PMMCCK           B.8          Peptostreptococcus micros      0= 0
+                                                   microbial count (cfu/mL)       .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  133    2 2.0       PMEXCK           B.8          Exponent for Peptostrep.       0= 0
+                                                   micros count                   .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  135    5 5.2       EGMCCK           B.9          Enteric gram negative rods     0= 0
+                                                   microbial count (cfu/mL)       .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  140    2 2.0       EGEXCK           B.9          Exponent for Enteric gram neg  0= 0
+                                                   rods count                     .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  142    2 2.0       EGKOCK           B.9.a        Klebsiella oxytoca present     1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  144    2 2.0       EGKPCK           B.9.b        Klebsiella pneumoniae present  1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  146    2 2.0       EGECCK           B.9.c        Enterobacter cloacae present   1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  148    2 2.0       EGEICK           B.9.d        Escherichia coli present       1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  150    2 2.0       EGPACK           B.9.e        Pseudomonas aeruginosa present 1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  152    2 2.0       EGCFCK           B.9.f        Citrobacter freundii present   1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  154    2 2.0       EGEACK           B.9.g        Enterobacter asburiae present  1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  156    2 2.0       EGEGCK           B.9.h        Enterobacter agglomerans       1= PRESENT
+                                                   present                        2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  158    2 2.0       EGASCK           B.9.i        Acinetobacter species present  1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  160    2 2.0       EGPPCK           B.9.j        Pseudomonas putida present     1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  162    2 2.0       EGYSCK           B.9.k        Yersinia species present       1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  164    2 2.0       EGXMCK           B.9.l        Xanthomonas maltophilia        1= PRESENT
+                                                   present                        2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  166    2 2.0       EGOTCK           B.9.m        Other enteric gram negative    1= PRESENT
+                                                   rods present                   2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  168   25 $         EGOSCK           B.9.m.i      Specify other enteric gram     Character
+                                                   negative rods present
+
+  193    5 5.2       BHMCCK           B.10         Beta hemolytic streptococci    0= 0
+                                                   microbial count (cfu/mL)       .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  198    2 2.0       BHEXCK           B.10         Exponent for Beta hemolytic    0= 0
+                                                   strep count                    .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  200    5 5.2       YTMCCK           B.11         Yeast culture microbial count  0= 0
+                                                   (cfu/mL)                       .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  205    2 2.0       YTEXCK           B.11         Exponent for Yeast culture     0= 0
+                                                   count                          .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  207    5 5.2       ECMCCK           B.12         Eikenella corrodens microbial  0= 0
+                                                   count (cfu/mL)                 .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  212    2 2.0       ECEXCK           B.12         Exponent for Eikenella         0= 0
+                                                   corrodens count                .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  214    5 5.2       SAMCCK           B.13         Staphylococcus aureas          0= 0
+                                                   microbial count (cfu/mL)       .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  219    2 2.0       SAEXCK           B.13         Exponent for Staph. aureas     0= 0
+                                                   count                          .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  221    5 5.2       SEMCCK           B.14         Staphylococcus epidermidis     0= 0
+                                                   microbial count (cfu/mL)       .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  226    2 2.0       SEEXCK           B.14         Exponent for Staph.            0= 0
+                                                   epidermidis count              .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  228    5 5.2       TCMCCK           B.15         Total microbial count (cfu/mL) 0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  99.99= 99.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  233    2 2.0       TCEXCK           B.15         Exponent for total counts      0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  235    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  236    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

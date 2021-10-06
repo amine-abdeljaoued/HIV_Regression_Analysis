@@ -1,0 +1,1914 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+F07 - Physical Exam
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    6 $         FKEY             OldA.0       OLD: Form identifier #         Character
+
+   17    8 $         VERSPE           A.0          Form version                   01/01/93= 01/01/93
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   25    3 $         INITPE           A.0          Initials of examiner           Character
+
+   28    8 $         PDTEPE           A.0          Date of physical exam          10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   36    8 $         DOB_PE           A.0          Participant's date of birth    01/01/22= 01/01/22
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/90= 12/31/90
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   44    5 time5.    STIMPE           A.0          Time began                     01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   49    2 2.0       SMERPE           A.0          AM/PM for time began           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   51    5 time5.    ETIMPE           A.0          Time ended                     01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   56    2 2.0       EMERPE           A.0          AM/PM for time ended           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   58    3 3.0       PCHTPE           OldA.1       OLD: Height                    48= 48
+                                                                                  .
+                                                                                  .
+                                                                                  200= 200
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   61    2 2.0       PCHMPE           OldA.1       OLD: Inches/centimeters        1= inches
+                                                   indicator for height           2= centimeters
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63    3 3.0       PCWTPE           A.1.a        Weight                         50= 50
+                                                                                  .
+                                                                                  .
+                                                                                  500= 500
+                                                                                  999= Greater than scale
+                                                                                  maximum weight
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   66    2 2.0       EVN1PE           A.1.b        Even-numbered visit            1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   68    2 2.0       PCWMPE           OldA.1       OLD: lbs/kgs indicator for     1= lbs
+                                                   weight                         2= kg
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   70    5 5.2       HGT_PE           A.1.c        Height in inches               36.00= 36.00
+                                                                                  .
+                                                                                  .
+                                                                                  84.00= 84.00
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   75    5 5.1       PCOTPE           OldB.4       OLD: Oral temperature          36.4= 36.4
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   80    2 2.0       PCOMPE           OldB.4       OLD: Fahrenheit/celsius oral   1= fahrenheit
+                                                   temp indicator                 2= celsius
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   82    2 2.0       PCRRPE           OldB.5       OLD: Respiration rate          00= 00
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   84    3 3.0       PCKFPE           OldB.6       OLD: Karnofsky scale           0= score of 0
+                                                                                  10= score of 10
+                                                                                  20= score of 20
+                                                                                  30= score of 30
+                                                                                  40= score of 40
+                                                                                  50= score of 50
+                                                                                  60= score of 60
+                                                                                  70= score of 70
+                                                                                  80= score of 80
+                                                                                  90= score of 90
+                                                                                  100= score of 100
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   87    2 2.0       PCGHPE           OldA.2       Old: General health/overall    1= HEALTHY
+                                                   appearance                     2= ACUTELY ILL
+                                                                                  3= CHRONICALLY ILL
+                                                                                  4= NOT DONE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   89    2 2.0       PCGAPE           OldA.3.a     Old: General appearance        1= NORMAL
+                                                                                  2= SLENDER
+                                                                                  3= CACHECTIC
+                                                                                  4= OBESE
+                                                                                  5= NOT DONE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   91    2 2.0       PREGPE           A.3.b        Participant is pregnant        1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   93    2 2.0       CBRAPE           A.5.a        Chest size normal, fat or      1= NORMAL
+                                                   wasted                         2= FAT
+                                                                                  3= WASTED
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   95    2 2.0       SBRAPE           A.5.a        Severity of chest change       1= MILD
+                                                                                  2= MODERATE
+                                                                                  3= SEVERE
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   97    2 2.0       CBLYPE           A.5.b        Abdomen size normal, fat or    1= NORMAL
+                                                   wasted                         2= FAT
+                                                                                  3= WASTED
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   99    2 2.0       SBLYPE           A.5.b        Severity of abdomen change     1= MILD
+                                                                                  2= MODERATE
+                                                                                  3= SEVERE
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  101    2 2.0       CWSTPE           A.5.c        Waist size normal, fat or      1= NORMAL
+                                                   wasted                         2= FAT
+                                                                                  3= WASTED
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  103    2 2.0       SWSTPE           A.5.c        Severity of waist change       1= MILD
+                                                                                  2= MODERATE
+                                                                                  3= SEVERE
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  105    2 2.0       CFCEPE           A.5.d        Face size normal, fat or       1= NORMAL
+                                                   wasted                         2= FAT
+                                                                                  3= WASTED
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  107    2 2.0       SFCEPE           A.5.d        Severity of face change        1= MILD
+                                                                                  2= MODERATE
+                                                                                  3= SEVERE
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  109    2 2.0       CCHKPE           A.5.e        Cheeks size normal, fat or     1= NORMAL
+                                                   wasted                         2= FAT
+                                                                                  3= WASTED
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  111    2 2.0       SCHKPE           A.5.e        Severity of cheeks change      1= MILD
+                                                                                  2= MODERATE
+                                                                                  3= SEVERE
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  113    2 2.0       CFUBPE           A.5.f        Upper back size normal, fat    1= NORMAL
+                                                   or wasted                      2= FAT
+                                                                                  3= WASTED
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  115    2 2.0       SFUBPE           A.5.f        Severity of upper back change  1= MILD
+                                                                                  2= MODERATE
+                                                                                  3= SEVERE
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  117    2 2.0       CNCKPE           A.5.g        Neck size normal, fat or       1= NORMAL
+                                                   wasted                         2= FAT
+                                                                                  3= WASTED
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  119    2 2.0       SNCKPE           A.5.g        Severity of neck change        1= MILD
+                                                                                  2= MODERATE
+                                                                                  3= SEVERE
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  121    2 2.0       CARMPE           A.5.h        Arm size normal, fat or wasted 1= NORMAL
+                                                                                  2= FAT
+                                                                                  3= WASTED
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  123    2 2.0       SARMPE           A.5.h        Severity of arm change         1= MILD
+                                                                                  2= MODERATE
+                                                                                  3= SEVERE
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  125    2 2.0       CLEGPE           A.5.i        Leg size normal, fat or wasted 1= NORMAL
+                                                                                  2= FAT
+                                                                                  3= WASTED
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  127    2 2.0       SLEGPE           A.5.i        Severity of leg change         1= MILD
+                                                                                  2= MODERATE
+                                                                                  3= SEVERE
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  129    2 2.0       CBUTPE           A.5.j        Buttock size normal, fat or    1= NORMAL
+                                                   wasted                         2= FAT
+                                                                                  3= WASTED
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  131    2 2.0       SBUTPE           A.5.j        Severity of buttock change     1= MILD
+                                                                                  2= MODERATE
+                                                                                  3= SEVERE
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  133    2 2.0       SLATPE           A.6.a        Participant exhibits signs of  1= YES
+                                                   lipoatrophy                    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  135    2 2.0       SCFAPE           A.6.b        Participant exhibits signs of  1= YES
+                                                   lipohypertrophy                2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  137    2 2.0       BVISPE           A.6.c        Visit is baseline              1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  139    2 2.0       EVN3PE           A.6.d        Visit is even, or last visit   1= YES
+                                                   was missed or abbreviated      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  141    2 2.0       BRYRPE           A.7.a        Participant has given birth    1= YES
+                                                   within the past year           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  143    2 2.0       CBRSPE           A.7.b        Participant is currently       1= YES
+                                                   breastfeeding                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  145    2 2.0       BR6MPE           A.7.c        Participant has given birth    1= YES
+                                                   in past 6 months               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  147    5 5.1       UPAMPE           A.8          Upper arm girth - #1           001.0= 001.0
+                                                                                  .
+                                                                                  .
+                                                                                  180.0= 180.0
+                                                                                  999.0= Greater than 180.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  152    5 5.1       UAM2PE           A.8          Upper arm girth - #2           001.0= 001.0
+                                                                                  .
+                                                                                  .
+                                                                                  180.0= 180.0
+                                                                                  999.0= Greater than 180.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  157    2 2.0       DAMMPE           A.8.a        Difference between arm         1= YES
+                                                   measures exceeds 0.7 CM        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  159    5 5.1       UAM3PE           A.8.a        Upper arm girth - #3           001.0= 001.0
+                                                                                  .
+                                                                                  .
+                                                                                  180.0= 180.0
+                                                                                  999.0= Greater than 180.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  164    5 5.1       BRSTPE           OldA.9       Old: Chest girth - #1          001.0= 001.0
+                                                                                  .
+                                                                                  .
+                                                                                  180.0= 180.0
+                                                                                  999.0= Greater than 180.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  169    5 5.1       BRS2PE           OldA.9       Old: Chest girth - #2          001.0= 001.0
+                                                                                  .
+                                                                                  .
+                                                                                  180.0= 180.0
+                                                                                  999.0= Greater than 180.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  174    2 2.0       DBRMPE           OldA.9.a     Old: Difference between chest  1= YES
+                                                   measures exceeds 0.7 CM        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  176    5 5.1       BRS3PE           OldA.9.a     Old: Chest girth - #3          001.0= 001.0
+                                                                                  .
+                                                                                  .
+                                                                                  180.0= 180.0
+                                                                                  999.0= Greater than 180.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  181    5 5.1       WASTPE           A.10         Waist girth - #1               001.0= 001.0
+                                                                                  .
+                                                                                  .
+                                                                                  180.0= 180.0
+                                                                                  999.0= Greater than 180.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  186    5 5.1       WST2PE           A.10         Waist girth - #2               001.0= 001.0
+                                                                                  .
+                                                                                  .
+                                                                                  180.0= 180.0
+                                                                                  999.0= Greater than 180.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  191    2 2.0       DWSMPE           A.10.a       Difference between waist       1= YES
+                                                   measures exceeds 0.7 CM        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  193    5 5.1       WST3PE           A.10.a       Waist girth - #3               001.0= 001.0
+                                                                                  .
+                                                                                  .
+                                                                                  180.0= 180.0
+                                                                                  999.0= Greater than 180.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  198    2 2.0       PANNPE           A.11         Participant has pannus         1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  200    5 5.1       HWP_PE           OldA.12      Old: Hip with pannus girth -   001.0= 001.0
+                                                   #1                             .
+                                                                                  .
+                                                                                  180.0= 180.0
+                                                                                  999.0= Greater than 180.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  205    5 5.1       HWP2PE           OldA.12      Old: Hip with pannus girth -   001.0= 001.0
+                                                   #2                             .
+                                                                                  .
+                                                                                  180.0= 180.0
+                                                                                  999.0= Greater than 180.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  210    2 2.0       DHWPPE           OldA.12.a    Old: Difference between hip    1= YES
+                                                   with pannus measures exceeds   2= NO
+                                                   0.7 CM                         -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  212    5 5.1       HWP3PE           OldA.12.a    Old: Hip with pannus girth -   001.0= 001.0
+                                                   #3                             .
+                                                                                  .
+                                                                                  180.0= 180.0
+                                                                                  999.0= Greater than 180.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  217    5 5.1       HNP_PE           A.13         Hip without pannus girth - #1  001.0= 001.0
+                                                                                  .
+                                                                                  .
+                                                                                  180.0= 180.0
+                                                                                  999.0= Greater than 180.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  222    5 5.1       HNP2PE           A.13         Hip without pannus girth - #2  001.0= 001.0
+                                                                                  .
+                                                                                  .
+                                                                                  180.0= 180.0
+                                                                                  999.0= Greater than 180.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  227    2 2.0       DHNPPE           A.13.a       Difference between hip         1= YES
+                                                   without pannus measures        2= NO
+                                                   exceeds 0.7 CM                 -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  229    5 5.1       HNP3PE           A.13.a       Hip without pannus girth - #3  001.0= 001.0
+                                                                                  .
+                                                                                  .
+                                                                                  180.0= 180.0
+                                                                                  999.0= Greater than 180.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  234    5 5.1       HIPSPE           OldA.11      Old: Hip girth - #1            001.0= 001.0
+                                                                                  .
+                                                                                  .
+                                                                                  180.0= 180.0
+                                                                                  999.0= Greater than 180.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  239    5 5.1       HIP2PE           OldA.11      Old: Hip girth - #2            001.0= 001.0
+                                                                                  .
+                                                                                  .
+                                                                                  180.0= 180.0
+                                                                                  999.0= Greater than 180.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  244    2 2.0       DHPMPE           OldA.11.a    Old: Difference between hip    1= YES
+                                                   measures exceeds 0.7 CM        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  246    5 5.1       HIP3PE           OldA.11.a    Old: Hip girth - #3            001.0= 001.0
+                                                                                  .
+                                                                                  .
+                                                                                  180.0= 180.0
+                                                                                  999.0= Greater than 180.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  251    2 2.0       WLGCPE           OldA.13.b    Old: Waist measurement is      1= YES
+                                                   larger than chest measurement  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  253    2 2.0       WLGHPE           A.13.c       Waist measurement is larger    1= YES
+                                                   than hip measurement           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  255    5 5.1       THGHPE           A.14         Thigh girth - #1               001.0= 001.0
+                                                                                  .
+                                                                                  .
+                                                                                  180.0= 180.0
+                                                                                  999.0= Greater than 180.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  260    5 5.1       TGH2PE           A.14         Thigh girth - #2               001.0= 001.0
+                                                                                  .
+                                                                                  .
+                                                                                  180.0= 180.0
+                                                                                  999.0= Greater than 180.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  265    2 2.0       DTGMPE           A.14.a       Difference between thigh       1= YES
+                                                   measures exceeds 0.7 CM        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  267    5 5.1       TGH3PE           A.14.a       Thigh girth - #3               001.0= 001.0
+                                                                                  .
+                                                                                  .
+                                                                                  180.0= 180.0
+                                                                                  999.0= Greater than 180.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  272    4 4.1       BOFMPE           OldA.10      OLD: Body frame determination  0.0= 0.0
+                                                   in cms                         .
+                                                                                  .
+                                                                                  9.9= 9.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  276    2 2.0       DFATPE           OldA.15.a    Old: Dorsocervical fat pad     1= PRESENT
+                                                   present                        2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  278    2 2.0       SPADPE           OldA.15.b    Old: Severity of               1= MILD
+                                                   dorsocervical fat pad          2= MODERATE
+                                                                                  3= SEVERE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  280    3 $         CIBMPE           A.16         Clinician initials - body      Character
+                                                   measures
+
+  283    4 4.1       HORZPE           OldA.10.c    OLD: Horizontal axis           00.0= 00.0
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  287    4 4.1       VRTLPE           OldA.10.c    OLD: Vertical axis             00.0= 00.0
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  291    5 5.1       THG1PE           OldA.14      Old: Skinfold measurement:     0.0= 0.0
+                                                   Thigh #1                       .
+                                                                                  .
+                                                                                  51.0= 51.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  296    4 4.1       THG2PE           OldA.14      Old: Skinfold measurement:     0.0= 0.0
+                                                   Thigh #2                       .
+                                                                                  .
+                                                                                  51.0= 51.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  300    2 2.0       DTHSPE           OldA.14.a    Old: Difference between thigh  1= YES
+                                                   skinfolds exceeds 2 MM         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  302    4 4.1       THG3PE           OldA.14.a    Old: Skinfold measurement:     0.0= 0.0
+                                                   Thigh #3                       .
+                                                                                  .
+                                                                                  51.0= 51.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  306    4 4.1       TRI1PE           OldA.15      Old: Skinfold measurement:     0.0= 0.0
+                                                   Triceps #1                     .
+                                                                                  .
+                                                                                  51.0= 51.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  310    4 4.1       TRI2PE           OldA.15      Old: Skinfold measurement:     0.0= 0.0
+                                                   Triceps #2                     .
+                                                                                  .
+                                                                                  51.0= 51.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  314    2 2.0       DTRSPE           OldA.15.a    Old: Difference between        1= YES
+                                                   triceps skinfolds exceeds 2 MM 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  316    4 4.1       TRI3PE           OldA.15.a    Old: Skinfold measurement:     0.0= 0.0
+                                                   Triceps #3                     .
+                                                                                  .
+                                                                                  51.0= 51.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  320    4 4.1       SCP1PE           OldA.16      Old: Skinfold measurement:     0.0= 0.0
+                                                   Subscapular #1                 .
+                                                                                  .
+                                                                                  51.0= 51.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  324    4 4.1       SCP2PE           OldA.16      Old: Skinfold measurement:     0.0= 0.0
+                                                   Subscapular #2                 .
+                                                                                  .
+                                                                                  51.0= 51.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  328    2 2.0       DSCSPE           OldA.16.a    Old: Difference between        1= YES
+                                                   subscapular skinfolds exceeds  2= NO
+                                                   2 MM                           -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  330    4 4.1       SCP3PE           OldA.16.a    Old: Skinfold measurement:     0.0= 0.0
+                                                   Subscapular #3                 .
+                                                                                  .
+                                                                                  51.0= 51.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  334    4 4.1       SPR1PE           OldA.17      Old: Skinfold measurement:     0.0= 0.0
+                                                   Suprailiac #1                  .
+                                                                                  .
+                                                                                  51.0= 51.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  338    4 4.1       SPR2PE           OldA.17      Old: Skinfold measurement:     0.0= 0.0
+                                                   Suprailiac #2                  .
+                                                                                  .
+                                                                                  51.0= 51.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  342    2 2.0       DSPSPE           OldA.17.a    Old: Difference between        1= YES
+                                                   suprailiac skinfolds exceeds   2= NO
+                                                   2 MM                           -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  344    4 4.1       SPR3PE           OldA.17.a    Old: Skinfold measurement:     0.0= 0.0
+                                                   Suprailiac #3                  .
+                                                                                  .
+                                                                                  51.0= 51.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  348    3 $         CISFPE           OldA.18      Old: Clinician initials -      Character
+                                                   skin folds
+
+  351    2 2.0       EXERPE           A.19         Past 8 hrs excercised long     1= YES
+                                                   enough to sweat/breathe hard   2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  353    2 2.0       DRNKPE           A.20         Drunk more than 4 glasses      1= YES
+                                                   coffee, tea, soda, water,      2= NO
+                                                   other bev past 2 hrs           -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  355    2 2.0       AL12PE           A.21         Drunk more than 4 servings     1= YES
+                                                   beer, wine, liquor within      2= NO
+                                                   past 12 hours                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  357    2 2.0       ALCOPE           OldA.21      Old: Drunk more than 4         1= YES
+                                                   servings beer, wine, liquor    2= NO
+                                                   today                          -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  359    4 4.0       RX1_PE           A.22         Rx #1 (ohms)                   1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  1000= 1000
+                                                                                  2= FALSE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  363    2 2.0       RX1XPE           OldA.22      Old: Can't obtain Rx #1        1= TRUE
+                                                                                  2= FALSE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  365    3 3.0       XC1_PE           A.22         Xc #1 (ohms)                   0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  500= 500
+                                                                                  2= FALSE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  368    2 2.0       XC1XPE           OldA.22      Old: Can't obtain Xc #1        1= TRUE
+                                                                                  2= FALSE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  370    4 4.0       RX2_PE           A.23         Rx #2 (ohms)                   1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  1000= 1000
+                                                                                  2= FALSE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  374    2 2.0       RX2XPE           OldA.23      Old: Can't obtian Rx #2        1= TRUE
+                                                                                  2= FALSE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  376    3 3.0       XC2_PE           A.23         Xc #2 (ohms)                   0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  500= 500
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  379    2 2.0       XC2XPE           OldA.23      Old: Can't obtian Xc #2        1= TRUE
+                                                                                  2= FALSE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  381    3 $         CIBIPE           A.24         Clinician initials - BIA       Character
+
+  384  120 $         ACOMPE           A.25         Comments                       Character
+
+  504    2 2.0       DRSHPE           OldB.1.a     Old: Told had allergic rash    1= YES
+                                                   to medication since last visit 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  506    2 2.0       SK__PE           OldB.1       Old: Skin exam normal/abnormal 1= NORMAL
+                                                                                  2= ABNORMAL
+                                                                                  3= NOT DONE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  508    2 2.0       SKNLPE           OldB.2       Old: Total # of different      1= 1
+                                                   location codes recorded below  .
+                                                                                  .
+                                                                                  8= 8
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  510    2 2.0       OR__PE           OldC.1       Old: Oral exam normal/abnormal 1= NORMAL
+                                                                                  2= ABNORMAL
+                                                                                  3= NOT DONE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  512    2 2.0       ANGCPE           OldC.2.a     Old: Signs of angular chelitis 1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  514    2 2.0       PCANPE           OldC.2.b     Old: Signs of                  1= YES
+                                                   pseudomembranous candidiasis   2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  516    2 2.0       ECANPE           OldC.2.c     Old: Signs of erythematous     1= YES
+                                                   candidiasis                    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  518    2 2.0       HLEUPE           OldC.2.d     Old: Signs of hairy            1= YES
+                                                   leukoplakia                    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  520    2 2.0       OPAPPE           OldC.2.e     Old: Signs of oral papilloma/  1= YES
+                                                   wart                           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  522    2 2.0       OORLPE           OldC.2.f     Old: Signs of other oral       1= YES
+                                                   condition                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  524   25 $         SOORPE           OldC.2.f     Old: Specify other oral        Character
+                                                   findings
+
+  549    2 2.0       ORNLPE           OldC.2       OLD: Total # of lesions        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  8= 8
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  551    2 $         DUM1PE           OldC.3.c.xii  OLD: dummy                     Character
+
+  553    2 2.0       LY__PE           OldD.1       OLD: Lymphadenopathy           1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  555    2 2.0       LRPEPE           OldE.2.A     OLD: Right preauricular        1= yes
+                                                                                  2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  557    4 4.1       LXPEPE           OldE.2.A.2   OLD: Right preauricular size   00.1= 00.1
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  561    2 2.0       LRPOPE           OldE.2.B     OLD: Right post auricular      1= yes
+                                                                                  2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  563    4 4.1       LXPOPE           OldE.2.B.2   OLD: Right post auricular size 00.1= 00.1
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  567    2 2.0       LRACPE           OldE.2.C     OLD: Right anterior cervical   1= yes
+                                                                                  2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  569    4 4.1       LXACPE           OldE.2.C.2   OLD: Right anterior cervical   00.1= 00.1
+                                                   size                           .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  573    2 2.0       LRPCPE           OldE.2.D     OLD: Right posterior cervical  1= yes
+                                                                                  2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  575    4 4.1       LXPCPE           OldE.2.D.2   OLD: Right posterior cervical  00.1= 00.1
+                                                   size                           .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  579    2 2.0       LRSUPE           OldE.2.E     OLD: Right submandibular       1= yes
+                                                                                  2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  581    4 4.1       LXSUPE           OldE.2.E.2   OLD: Right submandibular size  00.1= 00.1
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  585    2 2.0       LROCPE           OldE.2.F     OLD: Right occipital           1= yes
+                                                                                  2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  587    4 4.1       LXOCPE           OldE.2.F.2   OLD: Right occipital size      00.1= 00.1
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  591    2 2.0       LRSCPE           OldE.2.G     OLD: Right supraclavicular     1= yes
+                                                                                  2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  593    4 4.1       LXSCPE           OldE.2.G.2   OLD: Right supraclavicular     00.1= 00.1
+                                                   size                           .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  597    2 2.0       LREPPE           OldE.2.H     OLD: Right epitrochlear        1= yes
+                                                                                  2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  599    4 4.1       LXEPPE           OldE.2.H.2   OLD: Right epitrochlear size   00.1= 00.1
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  603    2 2.0       LRAXPE           OldE.2.I     OLD: Right axillary            1= yes
+                                                                                  2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  605    4 4.1       LXAXPE           OldE.2.I.2   OLD: Right axillary size       00.1= 00.1
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  609    2 2.0       LRINPE           OldE.2.J     OLD: Right inguinal            1= yes
+                                                                                  2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  611    4 4.1       LXINPE           OldE.2.J.2   OLD: Right inguinal size       00.1= 00.1
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  615    2 2.0       LRFEPE           OldE.2.K     OLD: Right femoral             1= yes
+                                                                                  2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  617    4 4.1       LXFEPE           OldE.2.K.2   OLD: Right femoral size        00.1= 00.1
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  621    2 2.0       LLPEPE           OldE.3.A     OLD: Left preauricular         1= yes
+                                                                                  2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  623    4 4.1       LWPEPE           OldE.3.A.2   OLD: Left preauricular size    00.1= 00.1
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  627    2 2.0       LLPOPE           OldE.3.B     OLD: Left post auricular       1= yes
+                                                                                  2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  629    4 4.1       LWPOPE           OldE.3.B.2   OLD: Left post auricular size  00.1= 00.1
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  633    2 2.0       LLACPE           OldE.3.C     OLD: Left anterior cervical    1= yes
+                                                                                  2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  635    4 4.1       LWACPE           OldE.3.C.2   OLD: Left anterior cervical    00.1= 00.1
+                                                   size                           .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  639    2 2.0       LLPCPE           OldE.3.D     OLD: Left posterior cervical   1= yes
+                                                                                  2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  641    4 4.1       LWPCPE           OldE.3.D.2   OLD: Left posterior cervical   00.1= 00.1
+                                                   size                           .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  645    2 2.0       LLSUPE           OldE.3.E     OLD: Left submandibular        1= yes
+                                                                                  2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  647    4 4.1       LWSUPE           OldE.3.E.2   OLD: Left submandibular size   00.1= 00.1
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  651    2 2.0       LLOCPE           OldE.3.F     OLD: Left occipital            1= yes
+                                                                                  2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  653    4 4.1       LWOCPE           OldE.3.F.2   OLD: Left occipital size       00.1= 00.1
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  657    2 2.0       LLSCPE           OldE.3.G     OLD: Left supraclavicular      1= yes
+                                                                                  2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  659    4 4.1       LWSCPE           OldE.3.G.2   OLD: Left supraclavicular size 00.1= 00.1
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  663    2 2.0       LLEPPE           OldE.3.H     OLD: Left epitrochlear         1= yes
+                                                                                  2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  665    4 4.1       LWEPPE           OldE.3.H.2   OLD: Left epitrochlear size    00.1= 00.1
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  669    2 2.0       LLAXPE           OldE.3.I     OLD: Left axillary             1= yes
+                                                                                  2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  671    4 4.1       LWAXPE           OldE.3.I.2   OLD: Left axillary size        00.1= 00.1
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  675    2 2.0       LLINPE           OldE.3.J     OLD: Left inguinal             1= yes
+                                                                                  2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  677    4 4.1       LWINPE           OldE.3.J.2   OLD: Left inguinal size        00.1= 00.1
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  681    2 2.0       LLFEPE           OldE.3.K     OLD: Left femoral              1= yes
+                                                                                  2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  683    4 4.1       LWFEPE           OldE.3.K.2   OLD: Left femoral size         00.1= 00.1
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  687   20 $         LLNLPE           OldD.2.a     OLD: Location of largest       Character
+                                                   lymph node
+
+  707    4 4.1       LLNSPE           OldD.2.b     OLD: Size of largest lymph     00.1= 00.1
+                                                   node                           .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  711    2 2.0       ABLIPE           OldE.5.A     OLD: Abdomen enlarged liver    1= yes
+                                                                                  2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  713    2 2.0       ABSPPE           OldE.5.B     OLD: Abdomen splenomegaly      1= yes
+                                                                                  2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  715    2 2.0       ABAMPE           OldE.5.C     OLD: Abdominal mass            1= yes
+                                                                                  2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  717   20 $         ABMDPE           OldE.5.C.2   OLD: Abdominal mass diagnosis  Character
+
+  737    2 2.0       ABAAPE           OldE.5.D     OLD: Abdomen ascites           1= yes
+                                                                                  2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  739    2 2.0       ABOTPE           OldE.5.D     OLD: Abdomen other             1= yes
+                                                                                  2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  741   25 $         ABOSPE           OldE.5.F     OLD: Abdomen other specify     Character
+
+  766    2 2.0       EVN2PE           D.1.a        Even-numbered visit            1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  768    2 2.0       BE__PE           D.1.b        Breast exam normal/abnormal    1= NORMAL
+                                                                                  2= ABNORMAL
+                                                                                  3= NOT DONE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  770    2 2.0       BEDRPE           D.2          Nipple discharge, right        1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  772    2 2.0       BEDLPE           D.2.b        Nipple discharge, left         1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  774    2 2.0       BENRPE           D.3          Nodularity, right              1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  776    2 2.0       BENLPE           D.3.b        Nodularity, left               1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  778    2 2.0       BERRPE           D.4          Retraction, other skin, right  1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  780    2 2.0       BERLPE           D.4.b        Retraction, other skin, left   1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  782    2 2.0       BEMRPE           D.5          Mastectomy/lumpectomy, right   1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  784    2 2.0       BEMLPE           D.5.b        Mastectomy/lumpectomy, left    1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  786    2 2.0       BELRPE           D.6          Evidence of prior breast bx,   1= YES
+                                                   right                          2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  788    2 2.0       BELLPE           D.6.b        Evidence of prior breast bx,   1= YES
+                                                   left                           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  790    2 2.0       BEORPE           D.7          Other breast findings, right   1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  792   25 $         BSPRPE           D.7.a        Specify other breast findings, Character
+                                                   right
+
+  817    2 2.0       BEOLPE           D.7.b        Other breast findings, left    1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  819   25 $         BSPLPE           D.7.b        Specify other breast findings, Character
+                                                   left
+
+  844   25 $         BESPPE           OldE.12      Old: Other breast findings     Character
+                                                   specify
+
+  869    2 2.0       BRMSPE           D.8          Breast mass(es) present        1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  871    2 2.0       RMUMPE           D.9          Right medial upper             1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  873    4 4.1       RMUSPE           D.9.a        Right medial upper size        00.1= 00.1
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  877    2 2.0       RMUOPE           D.9.b        Right medial upper mass old    1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  879    2 2.0       RLUMPE           D.10         Right lateral upper            1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  881    4 4.1       RLUSPE           D.10.a       Right lateral upper size       00.1= 00.1
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  885    2 2.0       RLUOPE           D.10.b       Right lateral upper mass old   1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  887    2 2.0       RMLMPE           D.11         Right medial lower             1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  889    4 4.1       RMLSPE           D.11.a       Right medial lower size        00.1= 00.1
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  893    2 2.0       RMLOPE           D.11.b       Right medial lower mass old    1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  895    2 2.0       RLLMPE           D.12         Right lateral lower            1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  897    4 4.1       RLLSPE           D.12.a       Right lateral lower size       00.1= 00.1
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  901    2 2.0       RLLOPE           D.12.b       Right lateral lower mass old   1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  903    2 2.0       RAPMPE           D.13         Right areola/periareola        1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  905    4 4.1       RAPSPE           D.13.a       Right areola/periareola size   00.1= 00.1
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  909    2 2.0       RAPOPE           D.13.b       Right areola/periareola mass   1= YES
+                                                   old                            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  911    2 2.0       LMUMPE           D.14         Left medial upper              1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  913    4 4.1       LMUSPE           D.14.a       Left medial upper size         00.1= 00.1
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  917    2 2.0       LMUOPE           D.14.b       Left medial upper mass old     1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  919    2 2.0       LLUMPE           D.15         Left lateral upper             1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  921    4 4.1       LLUSPE           D.15.a       Left lateral upper size        00.1= 00.1
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  925    2 2.0       LLUOPE           D.15.b       Left lateral upper mass old    1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  927    2 2.0       LMLMPE           D.16         Left medial lower              1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  929    4 4.1       LMLSPE           D.16.a       Left medial lower size         00.1= 00.1
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  933    2 2.0       LMLOPE           D.16.b       Left medial lower mass old     1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  935    2 2.0       LLLMPE           D.17         Left lateral lower             1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  937    4 4.1       LLLSPE           D.17.a       Left lateral lower size        00.1= 00.1
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  941    2 2.0       LLLOPE           D.17.b       Left lateral lower mass old    1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  943    2 2.0       LAPMPE           D.18         Left areola/periareola         1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  945    4 4.1       LAPSPE           D.18.a       Left areola/periareola size    00.1= 00.1
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  949    2 2.0       LAPOPE           D.18.b       Left areola/periareola mass    1= YES
+                                                   old                            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  951    3 3.0       PCBSPE           E.1.a        Systolic blood pressure - 1st  074= 074
+                                                   measure                        .
+                                                                                  .
+                                                                                  234= 234
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  954    3 3.0       PCBDPE           E.1.b        Diastolic blood pressure -     000= 000
+                                                   1st measure                    .
+                                                                                  .
+                                                                                  124= 124
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  957    3 3.0       PSE1PE           E.1.c        Pulse - 1st measure            40= 40
+                                                                                  .
+                                                                                  .
+                                                                                  200= 200
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  960    3 3.0       PC2SPE           E.1.d        Systolic blood pressure - 2nd  074= 074
+                                                   measure                        .
+                                                                                  .
+                                                                                  234= 234
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  963    3 3.0       PC2DPE           E.1.e        Diastolic blood pressure -     000= 000
+                                                   2nd measure                    .
+                                                                                  .
+                                                                                  124= 124
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  966    3 3.0       PSE2PE           E.1.f        Pulse - 2nd measure            40= 40
+                                                                                  .
+                                                                                  .
+                                                                                  200= 200
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  969    3 3.0       PC3SPE           E.1.g        Systolic blood pressure - 3rd  074= 074
+                                                   measure                        .
+                                                                                  .
+                                                                                  234= 234
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  972    3 3.0       PC3DPE           E.1.h        Diastolic blood pressure -     000= 000
+                                                   3rd measure                    .
+                                                                                  .
+                                                                                  124= 124
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  975    3 3.0       PSE3PE           E.1.i        Pulse - 3rd measure            40= 40
+                                                                                  .
+                                                                                  .
+                                                                                  200= 200
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  978    2 2.0       NALTPE           OldF.1       OLD: Number of alternations    0= 0
+                                                   in thirty seconds              .
+                                                                                  .
+                                                                                  26= 26
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  980    1 $         DUM_PE           OldF.2       OLD: Dummy field               Character
+
+  981    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  982    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

@@ -1,0 +1,159 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+F22MED - Medication History (Repeating Segment) S5
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        17= 17
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    2 2.0       VTYP             OldA.2.a     Old: Core or 3-month VRS visit 1= CORE VISIT
+                                                                                  2= 3 MONTH VRS VISIT
+
+   13    3 3.0       DRG3MH           F.1.B        Drug code, (complimentary/     161= DHEA
+                                                   alternative)                   167= St. John's Wort
+                                                                                       (Hypericum perforatum)
+                                                                                  173= Ozone
+                                                                                  188= NAC (N-acetyl-cysteine)
+                                                                                  196= Coenzyme Q-10
+                                                                                  503= Nutritional supplements,
+                                                                                       other unspecified
+                                                                                  507= Melatonin
+                                                                                  535= Amino acids (Glutamine)
+                                                                                  539= Herbs, other unspecified
+                                                                                       (Chinese/Asian, Native
+                                                                                       American, South American,
+                                                                                       Indian/Ayurvedic)
+                                                                                  601= A-Vitamins
+                                                                                  602= Acidophilus
+                                                                                  603= Alfalfa
+                                                                                  604= Algae (Blue algae, Blue-
+                                                                                       green algae)
+                                                                                  605= Aloe vera
+                                                                                  606= Astragalus
+                                                                                  607= B-Complex
+                                                                                  608= B-Vitamins (B1, Thiamine,
+                                                                                       B2, Riboflavin, B5,
+                                                                                       Pantothenic Acid, B6,
+                                                                                       Pyridoxine, B12)
+                                                                                  609= Bee pollen
+                                                                                  610= Beta-carotene
+                                                                                  611= Bitter melon
+                                                                                  612= C-Vitamins (Rosehips)
+                                                                                  613= Cat claw
+                                                                                  614= Chamomile
+                                                                                  615= Chinese herbs in
+                                                                                       combination
+                                                                                  616= Chromium
+                                                                                  617= Cranberry
+                                                                                  618= Dandelion
+                                                                                  619= E-Vitamins
+                                                                                  620= Echinacea (with or
+                                                                                       without Goldenseal)
+                                                                                  621= Enzyme therapies (plant
+                                                                                       or pancreatic)
+                                                                                  622= Flower remedies
+                                                                                  623= Folic acid
+                                                                                  624= Garlic
+                                                                                  625= Ginko biloba
+                                                                                  626= Ginger
+                                                                                  627= Ginseng
+                                                                                  628= Goldenseal
+                                                                                  629= Homeopathic remedies
+                                                                                  630= Multivitamin/minerals
+                                                                                  631= Megadose vitamins
+                                                                                  632= Milk thistle
+                                                                                  633= Omega-3 type oils
+                                                                                  634= Protein powder
+                                                                                  635= SPV-30
+                                                                                  636= Spirulina
+                                                                                  637= Thymus glandular
+                                                                                  638= Valerian
+                                                                                  639= Woodroot
+                                                                                  640= Zinc
+                                                                                  641= Iron (Ferrous Sulfate)
+                                                                                  642= Lecithin
+                                                                                  643= Cod Liver Oil
+                                                                                  644= L-carnitine
+                                                                                  645= Evening primrose oil
+                                                                                  646= Calcium
+                                                                                  647= Soy
+                                                                                  648= Red Clover
+                                                                                  649= Black cohosh
+                                                                                  650= Flaxseed (linseed)
+                                                                                  651= Potassium
+                                                                                  652= Glucosamine/Chondroitin
+                                                                                  653= Colostrum
+                                                                                  654= Tryptophan
+                                                                                  655= Feverfew
+                                                                                  656= Tea extract
+                                                                                  657= D-vitamins
+                                                                                  699= Other alternative/
+                                                                                       complimentary medication
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   16   50 $         SDR3MH           F.1.B        Specify other complementary/   Character
+                                                   alternative drug
+
+   66    2 2.0       FREQMH           F.1.B        Frequency of use               1= Every day
+                                                                                  2= Only as needed
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   68    2 2.0       CTAKMH           F.1.B        Currently taking this drug     1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   70    2 2.0       REASMH           OldF.1.B     Old: Main reason for taking    01= to treat or reduce side
+                                                   this drug                          effects from standard
+                                                                                      medications
+                                                                                  02= to boost immune system
+                                                                                  03= to prevent opportunistic
+                                                                                      and general infections
+                                                                                  04= to treat HIV infection
+                                                                                  05= for general health
+                                                                                  06= beneficial without
+                                                                                      causing side effects
+                                                                                  07= standard HIV medications
+                                                                                      don't work
+                                                                                  08= to gain weight
+                                                                                  09= to lose weight
+                                                                                  10= it was prescribed by my
+                                                                                      medical provider
+                                                                                  11= for bone health
+                                                                                  12= for heart health
+                                                                                  13= for prevention of memory
+                                                                                      loss
+                                                                                  14= for treatment of menopause
+                                                                                  99= other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   72    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   73    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

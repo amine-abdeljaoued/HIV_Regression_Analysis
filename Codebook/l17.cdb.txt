@@ -1,0 +1,124 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+L17 - Herpes Culture of Ulcers and Fissures
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    6 $         FKEY             OldA.0       OLD: form identifier number    Character
+
+   17    3 $         INITLR           A.0          Initials of person completing  Character
+                                                   form
+
+   20    8 $         VERSLR           A.0          Form version                   01/01/94= 01/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   28    2 2.0       HNUMLR           A.1          HSV culture number             1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  4= 4
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   30    2 2.0       HTOTLR           A.1          Total number of HSV cultures   1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  4= 4
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   32    2 2.0       SITELR           A.2          Site of HSV culture            1= ORAL
+                                                                                  2= EXTERNAL GENITALIA/PERINEAL
+                                                                                  3= VAGINAL
+                                                                                  4= CERVICAL
+                                                                                  5= OTHER
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   34   30 $         SSPCLR           A.2          Specify other site of HSV      Character
+                                                   culture
+
+   64    2 2.0       STESLR           OldA.2       OLD: site of study             1= Bronx
+                                                                                  2= Brooklyn
+                                                                                  3= DC
+                                                                                  4= Los Angeles
+                                                                                  5= San Francisco
+                                                                                  6= Chicago
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   66    2 2.0       AVAILR           A.3          HSV culture results available  1= Yes
+                                                                                  2= No, Sample Inadequate
+                                                                                  3= No, Other Reason
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   68   30 $         RNNALR           A.1          Specify reason HSV culture     Character
+                                                   results not available
+
+   98    8 $         SPDTLR           A.4          Date specimen taken            10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/02= 12/31/02
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  106    8 $         PDTELR           A.5          Date HSV culture tested        10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/02= 12/31/02
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  114    2 2.0       HERPLR           A.6          HSV culture test result        1= NEGATIVE
+                                                                                  2= HSV TYPE I ISOLATED
+                                                                                  3= HSV TYPE II ISOLATED
+                                                                                  4= VARICELLA ZOSTER VIRUS
+                                                                                     ISOLATED
+                                                                                  5= CONTAMINATED SPECIMEN
+                                                                                  6= INADEQUATE SPECIMEN
+                                                                                  7= OTHER
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  116   30 $         HSPCLR           A.6          Specify other HSV culture      Character
+                                                   test result
+
+  146    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  147    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

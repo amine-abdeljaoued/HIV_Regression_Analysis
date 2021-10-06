@@ -1,0 +1,80 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+RAB - Retrospective Medical Record Abstraction (Repeating Segment) S5
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1   10 $         SCIDMR           A.1          Screening ID                   Character
+
+   11    8 8.0       CASEID           A.2          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+   19    8 $         TPDTMR           C.4.B.i      Date of post-HAART T-cell test 01/01/92= 01/01/92
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   27    4 4.0       TP4NMR           C.4.B.ii     CD4 number - post-HAART t-     0= 0
+                                                   cell test                      .
+                                                                                  .
+                                                                                  9999= 9999
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   31    5 5.1       TP4PMR           C.4.B.ii     CD4 percent - post-HAART t-    0.0= 0.0
+                                                   cell test                      .
+                                                                                  .
+                                                                                  100.0= 100.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   36    4 4.0       TP8NMR           C.4.B.ii     CD8 number - post-HAART t-     0= 0
+                                                   cell test                      .
+                                                                                  .
+                                                                                  9999= 9999
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   40    5 5.1       TP8PMR           C.4.B.ii     CD8 percent - post-HAART t-    0.0= 0.0
+                                                   cell test                      .
+                                                                                  .
+                                                                                  100.0= 100.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   45    4 4.0       TP3NMR           C.4.B.ii     CD3 number - post-HAART t-     0= 0
+                                                   cell test                      .
+                                                                                  .
+                                                                                  9999= 9999
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   49    5 5.1       TP3PMR           C.4.B.ii     CD3 percent - post-HAART t-    0.0= 0.0
+                                                   cell test                      .
+                                                                                  .
+                                                                                  100.0= 100.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   54    1 $         ESTAT                         Edit Status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   55    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

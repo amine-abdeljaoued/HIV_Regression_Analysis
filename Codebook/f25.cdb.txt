@@ -1,0 +1,524 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+F25 - Follow-Up Health Care Utilization
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    6 $         FKEY             OldA.0       OLD: Form identifier number    Character
+
+   17    8 $         VERSHC           A.3          Form version                   01/01/93= 01/01/93
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   25    8 $         IDTEHC           A.4          Date of interview              10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   33    3 $         INITHC           A.5          Initials of person completing  Character
+                                                   form
+
+   36    8 $         LVISHC           A.6          Date form last administered    10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   44    5 time5.    STIMHC           A.7          Time began                     01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   49    2 2.0       SMERHC           A.7          AM/PM for time began           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   51    2 2.0       HCP6HC           B.1          Seen health care provider      1= YES
+                                                   since (MONTH) visit            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   53    3 3.0       NVISHC           OldB.1.a     Old: # times saw a health      1= 1
+                                                   care provider since (MONTH)    .
+                                                   visit                          .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   56    2 2.0       SDOCHC           B.2          Saw same provider/group for    1= YES
+                                                   most care since (MONTH) visit  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   58    3 3.0       HDOCHC           OldB.2.a     Old: # of times seen by this   1= 1
+                                                   provider/group since (MONTH)   .
+                                                   visit                          .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   61    2 2.0       CLINHC           B.3          Place rec'd most medical care  1= Doctor's office or clinic
+                                                   since (MONTH) visit            2= Emergency room in a
+                                                                                     hospital
+                                                                                  3= Drug treatment clinic
+                                                                                  4= Prison clinic
+                                                                                  5= Nursing home
+                                                                                  6= Mobil unit/clinic
+                                                                                  8= Hospital (not emergency
+                                                                                     room)
+                                                                                  7= Other place
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63   25 $         SCLIHC           B.3          Specify other place rec'd      Character
+                                                   most medical care since
+                                                   (MONTH) visit
+
+   88    2 2.0       ODOCHC           B.4          Has one person considered      1= YES
+                                                   personal doctor                2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   90    2 2.0       MDOFHC           OldB.4.a     Old: Rec'd health care from    1= YES
+                                                   doctor's office or clinic      2= NO
+                                                   since last visit               -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   92    2 2.0       ER__HC           OldB.4.b     Old: Rec'd health care from    1= YES
+                                                   emergency room since last      2= NO
+                                                   visit                          -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   94    3 3.0       ERIMHC           OldB.4.b.i   Old: # of times rec'd care at  1= 1
+                                                   ER since last visit            .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   97    2 2.0       DGTXHC           OldB.4.c     Old: Rec'd health care from    1= YES
+                                                   drug tx clinic since last      2= NO
+                                                   visit                          -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   99    2 2.0       PRISHC           OldB.4.d     Old: Rec'd health care from    1= YES
+                                                   prison clinic since last visit 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  101    2 2.0       NRHMHC           OldB.4.e     Old: Rec'd health care from    1= YES
+                                                   nursing home since last visit  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  103    2 2.0       MOBLHC           OldB.4.f     Old: Rec'd health care from    1= YES
+                                                   mobile unit since last visit   2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  105    2 2.0       HNERHC           OldB.4.g     Old: Rec'd health care from    1= YES
+                                                   hospital (not ER) since last   2= NO
+                                                   visit                          -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  107    2 2.0       OTHCHC           OldB.4.h     Old: Rec'd health care from    1= YES
+                                                   another place since last visit 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  109   25 $         SOTCHC           OldB.4.g.i   Old: Specify other place       Character
+                                                   rec'd care since last visit
+
+  134    2 2.0       FOODHC           OldB.5       Old: Rec'd social services     1= YES
+                                                   care/assistance since last     2= NO
+                                                   visit                          -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  136    2 2.0       LIVEHC           OldB.6       Old: Social svc assisted with  1= YES
+                                                   place to live since (MONTH)    2= NO
+                                                   visit                          -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  138    2 2.0       DENTHC           OldB.7       Old: Dentist/dental hygienist  1= YES
+                                                   care since (MONTH) visit       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  140    2 2.0       SWORHC           OldB.8       Old: Seen by social worker/    1= YES
+                                                   case mgr since (MONTH) visit   2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  142    2 2.0       NURSHC           OldB.9       Old: Visiting nurses care      1= YES
+                                                   since (MONTH) visit            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  144    2 2.0       HHA_HC           OldB.10      Old: Paid home health aides    1= YES
+                                                   care since (MONTH) visit       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  146    2 2.0       MHP_HC           B.5          Psychiatrist/counselor care    1= YES
+                                                   since (MONTH) visit            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  148    2 2.0       ICHGHC           OldC.1       OLD: Change in health          1= Yes
+                                                   insurance since last visit     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  150    2 2.0       INSUHC           C.2          Currently have any health      1= YES
+                                                   insurance                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  152    2 2.0       CAIDHC           C.3          Currently have Medicaid (FL    1= YES
+                                                   and DC only)                   2= NO
+                                                                                  3= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  154    2 2.0       MCALHC           C.4          Currently have Medicaid/Medi-  1= YES
+                                                   CAL (CA only)                  2= NO
+                                                                                  3= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  156    2 2.0       CACCHC           C.5          Currently have Medicaid or     1= YES
+                                                   Carolina Access (NC only)      2= NO
+                                                                                  3= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  158    2 2.0       PLTCHC           C.6          Currently have Medicaid or     1= YES
+                                                   Partnership for Long Term      2= NO
+                                                   Care (NY only)                 3= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  160    2 2.0       MAP_HC           C.7          Currently have Medicaid or     1= YES
+                                                   Medical Assistance Program     2= NO
+                                                   (IL only)                      3= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  162    2 2.0       HLCHHC           C.8          Currently have Medicaid or     1= YES
+                                                   Health Choice (MD only)        2= NO
+                                                                                  3= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  164    2 2.0       MDALHC           C.9          Currently have Medicaid or     1= YES
+                                                   Medallion I or Medallion II    2= NO
+                                                   (VA only)                      3= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  166    2 2.0       AMA_HC           C.10         Currently have Medicaid or     1= YES
+                                                   Alabama Medicaid Agency (AL    2= NO
+                                                   only)                          3= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  168    2 2.0       MACSHC           C.11         Currently have Medicaid or     1= YES
+                                                   Health through Medicaid        2= NO
+                                                   Managed Access to Care and     3= NA
+                                                   Services (MS only)             -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  170    2 2.0       GBH_HC           C.12         Currently have Medicaid or     1= YES
+                                                   Georgia Better Healthcare (GA  2= NO
+                                                   only)                          3= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  172    2 2.0       OTHSHC           C.13         Currently have other state     1= YES
+                                                   Medicaid                       2= NO
+                                                                                  3= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  174   25 $         SOTSHC           C.13.a       Specify other state Medicaid   Character
+
+  199    2 2.0       CAREHC           C.14         Currently have Medicare        1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  201    2 2.0       ADAPHC           C.15         Currently have AIDS Drug       1= YES
+                                                   Assistance Pgm (ADAP)          2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  203    2 2.0       VETSHC           C.16         Currently have military        1= YES
+                                                   health care/other veteran's    2= NO
+                                                   health insurance               -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  205    2 2.0       PVETHC           C.16.a       Participant/family pay for     1= YES
+                                                   any of CHAMPUS/vet insurance   2= NO
+                                                   premium                        -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  207    2 2.0       STSPHC           OldC.16      Old: Currently have state-     1= YES
+                                                   sponsored health plan          2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  209    2 2.0       SHC_HC           C.17         Currently have student health  1= YES
+                                                   coverage                       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  211    2 2.0       PSHCHC           C.17.a       Participant/family pay for     1= YES
+                                                   any of student insurance       2= NO
+                                                   premium                        -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  213    2 2.0       PRIVHC           C.18         Currently have private         1= YES
+                                                   insurance                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  215    2 2.0       PPRIHC           C.18.a       Participant/family pay for     1= YES
+                                                   any of private insurance       2= NO
+                                                   premium                        -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  217    2 2.0       DINSHC           C.19         Currently have dental          1= YES
+                                                   insurance                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  219    2 2.0       OINSHC           C.20         Currently have other types of  1= YES
+                                                   health insurance               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  221   25 $         SINSHC           C.20         Specify other current health   Character
+                                                   insurance
+
+  246    2 2.0       PLASHC           C.21         Plan(s) assist with            1= YES
+                                                   prescriptions/meds             2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  248    2 2.0       RXBNHC           C.22         Enrolled in pharmacy benefit   1= YES
+                                                   or rx assistance               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  250    2 2.0       RXPAHC           C.23         Paid moneyot reimbursed for    1= YES
+                                                   any medical care/rx since      2= NO
+                                                   (MONTH) visit                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  252    2 2.0       OPMDHC           C.23.a       Amount spent out of pocket     1= Less than $25
+                                                   for doctors since (MONTH)      2= $25 to $200
+                                                   visit                          3= $201 to $500
+                                                                                  4= Over $500
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  254    2 2.0       OPRXHC           C.23.b       Amount spent out of pocket     1= Less than $25
+                                                   for prescriptions since        2= $25 to $200
+                                                   (MONTH) visit                  3= $201 to $500
+                                                                                  4= Over $500
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  256    2 2.0       OPHCHC           C.23.c       Amount spent out of pocket     1= Less than $25
+                                                   for hospital/ER since (MONTH)  2= $25 to $200
+                                                   visit                          3= $201 to $500
+                                                                                  4= Over $500
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  258    2 2.0       MCNAHC           C.24         Did not receive needed care    1= YES
+                                                   since last visit because       2= NO
+                                                   unaffordable                   -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  260    2 2.0       MCDLHC           C.25         Delayed getting needed care    1= YES
+                                                   since last visit because of    2= NO
+                                                   cost                           -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  262    2 2.0       OPCAHC           OldC.13.d    Old: Amount spent out of       1= Less than $25
+                                                   pocket for complementary/      2= $25 to $200
+                                                   alternative care since         3= $201 to $500
+                                                   (MONTH) visit                  4= Over $500
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  264    2 2.0       OPEXHC           OldC.13      OLD: Participant has unpaid    1= Yes
+                                                   bills                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  266    5 time5.    ETIMHC           C.26         Time ended                     01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  271    2 2.0       EMERHC           C.26         AM/PM for time ended           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  273    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  274    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

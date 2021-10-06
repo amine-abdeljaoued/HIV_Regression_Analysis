@@ -1,0 +1,103 @@
+                               CODEBOOK
+WIHS                              9-6-2017
+WIHS Metabolic / Lipid Panel Results
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID                        CASEID                         1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT                         Visit Number                   13= Visit 13
+                                                                                  .
+                                                                                  .
+                                                                                  36= Visit 36
+
+   11    9 $8.       SPDT                          Specimen Date (Visit date)     10/01/00= Oct 1, 2000
+                                                                                  .
+                                                                                  .
+                                                                                  09/30/12= Sept 30, 2012
+
+   20    7 7.2       TRIGLYC                       Triglycerides (MG/DL)          0= 0 MG/DL
+                                                                                  4355.00= 4355.00 MG/DL
+
+   27    6 6.2       CHOL                          Cholesterol (MG/DL)            30= 30 MG/DL
+                                                                                  630.00= 630.00 MG/DL
+
+   33    6 6.2       HDLCHOL                       HDL Cholesterol (MG/DL)        5= 5 MG/DL
+                                                                                  .
+                                                                                  .
+                                                                                  160.00= 160.00 MG/DL
+
+   39    6 6.2       HDLCHOLP                      Percent HDL/Cholesterol (%)    0= 0%
+                                                                                  .
+                                                                                  .
+                                                                                  100= 100%
+                                                                                  .= Not Tested/Calculated
+
+   45    6 6.2       LDLCHOLC                      LDL Cholesterol, Calculated    11= 11 MG/DL
+                                                   (MG/DL)                        .
+                                                                                  .
+                                                                                  303= 303 MG/DL
+                                                                                  .= Not Tested/Calculated
+
+   51    6 6.2       LDLCHOLD                      LDL Cholesterol, Direct (MG/   11= 11 MG/DL
+                                                   DL)                            .
+                                                                                  .
+                                                                                  303= 303 MG/DL
+                                                                                  .= Not Tested
+
+   57    6 6.2       VLDLCHOLC                     VLDL Cholesterol, Calculated   5= 5 MG/DL
+                                                   (MG/DL)                        .
+                                                                                  .
+                                                                                  80= 80 MG/DL
+                                                                                  .= Not Tested/Calculated
+
+   63    5 5.2       CHHDLR                        Cholesterol/HDL Ratio          1.30= 1.30
+                                                                                  .
+                                                                                  .
+                                                                                  28.70= 28.70
+                                                                                  .= Not Tested/Calculated
+
+   68    5 5.2       LDLHDLR                       LDL/HDL Ratio                  -1.18= -1.18
+                                                                                  .
+                                                                                  .
+                                                                                  18.03= 18.03
+                                                                                  .= Not Tested/Calculated
+
+   73    5 5.2       HEMOGLOB                      Hemoglobin A1C (%)             3.30= 3.30%
+                                                                                  .
+                                                                                  .
+                                                                                  17.50= 17.50%
+
+   78    6 6.2       INSSERUM                      Insulin, Serum (uIU/mL)        2.00= <=2.00 uIU/mL
+                                                                                  3.00= 3.00 uIU/mL
+                                                                                  .
+                                                                                  .
+                                                                                  376.00= 376.00 uIU/mL
+
+   84    6 6.2       GLUCS_P                       Glucose, Serum or Plasma (mg/  14.00= 14.00 mg/dL
+                                                   dL)                            .
+                                                                                  .
+                                                                                  650.00= 650.00 mg/dL
+
+   90    2 2.0       FASTSTAT                      Participant fasting status at  0= Not fasting at visit
+                                                   visit (From F29/FASTBC or      1= Fasting at visit
+                                                   CV29/FASTUS)                   -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   92    2 2.0       TESTFAST                      Reported fasting status        0= Not fasting at visit
+                                                   during testing at Quest        1= Fasting at visit
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   94    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

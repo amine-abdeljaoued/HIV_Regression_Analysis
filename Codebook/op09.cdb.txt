@@ -1,0 +1,1398 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+OP09 - Papillary Assessment Score
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    6 $         FKEY             OldA.0       OLD: Form identifier number    Character
+
+   17    8 $         VERSOJ           A.0          Form version                   10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   25    3 $         INITOJ           A.0          Initials of person completing  Character
+                                                   form
+
+   28    8 $         PDTEOJ           A.0          Date of procedure              10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   36    2 $         BMNAOJ           B.1          Upper arch left, M1            Y= Non-assessible (neither
+                                                                                     adjacent tooth present)
+                                                                                  0= Interdental papilla is
+                                                                                     free of erythema/edema/
+                                                                                     necrosis/cratering or exp.
+                                                                                     alv. bone
+                                                                                  B= Interdental papilla score
+                                                                                     > 0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   38    2 2.0       BMEROJ           B.1.a        Upper arch left, M1 - Erythema 0= Free of erythema
+                                                                                  1= Erythema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   40    2 2.0       BMEDOJ           B.1.b        Upper arch left, M1 - Edema    0= Free of edema
+                                                                                  2= Edema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   42    2 2.0       BMUNOJ           B.1.c        Upper arch left, M1 -          0= Free of ulceration,
+                                                   Ulceration, necrosis, exudate     necrosis or exudate
+                                                                                  3= Ulceration, necrosis or
+                                                                                     exudate present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   44    2 2.0       BMC_OJ           B.1.d        Upper arch left, M1 -          0= Free of cratering
+                                                   Cratering                      4= Cratering present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   46    2 2.0       BMABOJ           B.1.e        Upper arch left, M1 -          0= Free of alveolar bone
+                                                   Alveolar bone exposed             exposure
+                                                                                  5= Alveolar bone exposure
+                                                                                     present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   48    2 $         BQNAOJ           B.2          Upper arch left, P2            Y= Non-assessible (neither
+                                                                                     adjacent tooth present)
+                                                                                  0= Interdental papilla is
+                                                                                     free of erythema/edema/
+                                                                                     necrosis/cratering or exp.
+                                                                                     alv. bone
+                                                                                  B= Interdental papilla score
+                                                                                     > 0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   50    2 2.0       BQEROJ           B.2.a        Upper arch left, P2 - Erythema 0= Free of erythema
+                                                                                  1= Erythema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   52    2 2.0       BQEDOJ           B.2.b        Upper arch left, P2 - Edema    0= Free of edema
+                                                                                  2= Edema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   54    2 2.0       BQUNOJ           B.2.c        Upper arch left, P2 -          0= Free of ulceration,
+                                                   Ulceration, necrosis, exudate     necrosis or exudate
+                                                                                  3= Ulceration, necrosis or
+                                                                                     exudate present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   56    2 2.0       BQC_OJ           B.2.d        Upper arch left, P2 -          0= Free of cratering
+                                                   Cratering                      4= Cratering present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   58    2 2.0       BQABOJ           B.2.e        Upper arch left, P2 -          0= Free of alveolar bone
+                                                   Alveolar bone exposed             exposure
+                                                                                  5= Alveolar bone exposure
+                                                                                     present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   60    2 $         BPNAOJ           B.3          Upper arch left, P1            Y= Non-assessible (neither
+                                                                                     adjacent tooth present)
+                                                                                  0= Interdental papilla is
+                                                                                     free of erythema/edema/
+                                                                                     necrosis/cratering or exp.
+                                                                                     alv. bone
+                                                                                  B= Interdental papilla score
+                                                                                     > 0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   62    2 2.0       BPEROJ           B.3.a        Upper arch left, P1 - Erythema 0= Free of erythema
+                                                                                  1= Erythema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   64    2 2.0       BPEDOJ           B.3.b        Upper arch left, P1 - Edema    0= Free of edema
+                                                                                  2= Edema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   66    2 2.0       BPUNOJ           B.3.c        Upper arch left, P1 -          0= Free of ulceration,
+                                                   Ulceration, necrosis, exudate     necrosis or exudate
+                                                                                  3= Ulceration, necrosis or
+                                                                                     exudate present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   68    2 2.0       BPC_OJ           B.3.d        Upper arch left, P1 -          0= Free of cratering
+                                                   Cratering                      4= Cratering present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   70    2 2.0       BPABOJ           B.3.e        Upper arch left, P1 -          0= Free of alveolar bone
+                                                   Alveolar bone exposed             exposure
+                                                                                  5= Alveolar bone exposure
+                                                                                     present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   72    2 $         BCNAOJ           B.4          Upper arch left, CA            Y= Non-assessible (neither
+                                                                                     adjacent tooth present)
+                                                                                  0= Interdental papilla is
+                                                                                     free of erythema/edema/
+                                                                                     necrosis/cratering or exp.
+                                                                                     alv. bone
+                                                                                  B= Interdental papilla score
+                                                                                     > 0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   74    2 2.0       BCEROJ           B.4.a        Upper arch left, CA - Erythema 0= Free of erythema
+                                                                                  1= Erythema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   76    2 2.0       BCEDOJ           B.4.b        Upper arch left, CA - Edema    0= Free of edema
+                                                                                  2= Edema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   78    2 2.0       BCUNOJ           B.4.c        Upper arch left, CA -          0= Free of ulceration,
+                                                   Ulceration, necrosis, exudate     necrosis or exudate
+                                                                                  3= Ulceration, necrosis or
+                                                                                     exudate present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   80    2 2.0       BCC_OJ           B.4.d        Upper arch left, CA -          0= Free of cratering
+                                                   Cratering                      4= Cratering present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   82    2 2.0       BCABOJ           B.4.e        Upper arch left, CA -          0= Free of alveolar bone
+                                                   Alveolar bone exposed             exposure
+                                                                                  5= Alveolar bone exposure
+                                                                                     present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   84    2 $         BLNAOJ           B.5          Upper arch left, LA            Y= Non-assessible (neither
+                                                                                     adjacent tooth present)
+                                                                                  0= Interdental papilla is
+                                                                                     free of erythema/edema/
+                                                                                     necrosis/cratering or exp.
+                                                                                     alv. bone
+                                                                                  B= Interdental papilla score
+                                                                                     > 0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   86    2 2.0       BLEROJ           B.5.a        Upper arch left, LA - Erythema 0= Free of erythema
+                                                                                  1= Erythema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   88    2 2.0       BLEDOJ           B.5.b        Upper arch left, LA - Edema    0= Free of edema
+                                                                                  2= Edema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   90    2 2.0       BLUNOJ           B.5.c        Upper arch left, LA -          0= Free of ulceration,
+                                                   Ulceration, necrosis, exudate     necrosis or exudate
+                                                                                  3= Ulceration, necrosis or
+                                                                                     exudate present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   92    2 2.0       BLC_OJ           B.5.d        Upper arch left, LA -          0= Free of cratering
+                                                   Cratering                      4= Cratering present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   94    2 2.0       BLABOJ           B.5.e        Upper arch left, LA -          0= Free of alveolar bone
+                                                   Alveolar bone exposed             exposure
+                                                                                  5= Alveolar bone exposure
+                                                                                     present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   96    2 $         BENAOJ           B.6          Upper arch left, CE            Y= Non-assessible (neither
+                                                                                     adjacent tooth present)
+                                                                                  0= Interdental papilla is
+                                                                                     free of erythema/edema/
+                                                                                     necrosis/cratering or exp.
+                                                                                     alv. bone
+                                                                                  B= Interdental papilla score
+                                                                                     > 0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   98    2 2.0       BEEROJ           B.6.a        Upper arch left, CE - Erythema 0= Free of erythema
+                                                                                  1= Erythema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  100    2 2.0       BEEDOJ           B.6.b        Upper arch left, CE - Edema    0= Free of edema
+                                                                                  2= Edema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  102    2 2.0       BEUNOJ           B.6.c        Upper arch left, CE -          0= Free of ulceration,
+                                                   Ulceration, necrosis, exudate     necrosis or exudate
+                                                                                  3= Ulceration, necrosis or
+                                                                                     exudate present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  104    2 2.0       BEC_OJ           B.6.d        Upper arch left, CE -          0= Free of cratering
+                                                   Cratering                      4= Cratering present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  106    2 2.0       BEABOJ           B.6.e        Upper arch left, CE -          0= Free of alveolar bone
+                                                   Alveolar bone exposed             exposure
+                                                                                  5= Alveolar bone exposure
+                                                                                     present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  108    2 $         UDNAOJ           B.7          Upper arch, Midline            Y= Non-assessible (neither
+                                                                                     adjacent tooth present)
+                                                                                  0= Interdental papilla is
+                                                                                     free of erythema/edema/
+                                                                                     necrosis/cratering or exp.
+                                                                                     alv. bone
+                                                                                  B= Interdental papilla score
+                                                                                     > 0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  110    2 2.0       UDEROJ           B.7.a        Upper arch, Midline - Erythema 0= Free of erythema
+                                                                                  1= Erythema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  112    2 2.0       UDEDOJ           B.7.b        Upper arch, Midline - Edema    0= Free of edema
+                                                                                  2= Edema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  114    2 2.0       UDUNOJ           B.7.c        Upper arch, Midline -          0= Free of ulceration,
+                                                   Ulceration, necrosis, exudate     necrosis or exudate
+                                                                                  3= Ulceration, necrosis or
+                                                                                     exudate present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  116    2 2.0       UDC_OJ           B.7.d        Upper arch, Midline -          0= Free of cratering
+                                                   Cratering                      4= Cratering present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  118    2 2.0       UDABOJ           B.7.e        Upper arch, Midline -          0= Free of alveolar bone
+                                                   Alveolar bone exposed             exposure
+                                                                                  5= Alveolar bone exposure
+                                                                                     present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  120    2 $         CENAOJ           B.8          Upper arch right, CE           Y= Non-assessible (neither
+                                                                                     adjacent tooth present)
+                                                                                  0= Interdental papilla is
+                                                                                     free of erythema/edema/
+                                                                                     necrosis/cratering or exp.
+                                                                                     alv. bone
+                                                                                  B= Interdental papilla score
+                                                                                     > 0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  122    2 2.0       CEEROJ           B.8.a        Upper arch right, CE -         0= Free of erythema
+                                                   Erythema                       1= Erythema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  124    2 2.0       CEEDOJ           B.8.b        Upper arch right, CE - Edema   0= Free of edema
+                                                                                  2= Edema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  126    2 2.0       CEUNOJ           B.8.c        Upper arch right, CE -         0= Free of ulceration,
+                                                   Ulceration, necrosis, exudate     necrosis or exudate
+                                                                                  3= Ulceration, necrosis or
+                                                                                     exudate present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  128    2 2.0       CEC_OJ           B.8.d        Upper arch right, CE -         0= Free of cratering
+                                                   Cratering                      4= Cratering present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  130    2 2.0       CEABOJ           B.8.e        Upper arch right, CE -         0= Free of alveolar bone
+                                                   Alveolar bone exposed             exposure
+                                                                                  5= Alveolar bone exposure
+                                                                                     present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  132    2 $         CLNAOJ           B.9          Upper arch right, LA           Y= Non-assessible (neither
+                                                                                     adjacent tooth present)
+                                                                                  0= Interdental papilla is
+                                                                                     free of erythema/edema/
+                                                                                     necrosis/cratering or exp.
+                                                                                     alv. bone
+                                                                                  B= Interdental papilla score
+                                                                                     > 0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  134    2 2.0       CLEROJ           B.9.a        Upper arch right, LA -         0= Free of erythema
+                                                   Erythema                       1= Erythema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  136    2 2.0       CLEDOJ           B.9.b        Upper arch right, LA - Edema   0= Free of edema
+                                                                                  2= Edema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  138    2 2.0       CLUNOJ           B.9.c        Upper arch right, LA -         0= Free of ulceration,
+                                                   Ulceration, necrosis, exudate     necrosis or exudate
+                                                                                  3= Ulceration, necrosis or
+                                                                                     exudate present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  140    2 2.0       CLC_OJ           B.9.d        Upper arch right, LA -         0= Free of cratering
+                                                   Cratering                      4= Cratering present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  142    2 2.0       CLABOJ           B.9.e        Upper arch right, LA -         0= Free of alveolar bone
+                                                   Alveolar bone exposed             exposure
+                                                                                  5= Alveolar bone exposure
+                                                                                     present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  144    2 $         CCNAOJ           B.10         Upper arch right, CA           Y= Non-assessible (neither
+                                                                                     adjacent tooth present)
+                                                                                  0= Interdental papilla is
+                                                                                     free of erythema/edema/
+                                                                                     necrosis/cratering or exp.
+                                                                                     alv. bone
+                                                                                  B= Interdental papilla score
+                                                                                     > 0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  146    2 2.0       CCEROJ           B.10.a       Upper arch right, CA -         0= Free of erythema
+                                                   Erythema                       1= Erythema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  148    2 2.0       CCEDOJ           B.10.b       Upper arch right, CA - Edema   0= Free of edema
+                                                                                  2= Edema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  150    2 2.0       CCUNOJ           B.10.c       Upper arch right, CA -         0= Free of ulceration,
+                                                   Ulceration, necrosis, exudate     necrosis or exudate
+                                                                                  3= Ulceration, necrosis or
+                                                                                     exudate present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  152    2 2.0       CCC_OJ           B.10.d       Upper arch right, CA -         0= Free of cratering
+                                                   Cratering                      4= Cratering present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  154    2 2.0       CCABOJ           B.10.e       Upper arch right, CA -         0= Free of alveolar bone
+                                                   Alveolar bone exposed             exposure
+                                                                                  5= Alveolar bone exposure
+                                                                                     present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  156    2 $         CPNAOJ           B.11         Upper arch right, P1           Y= Non-assessible (neither
+                                                                                     adjacent tooth present)
+                                                                                  0= Interdental papilla is
+                                                                                     free of erythema/edema/
+                                                                                     necrosis/cratering or exp.
+                                                                                     alv. bone
+                                                                                  B= Interdental papilla score
+                                                                                     > 0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  158    2 2.0       CPEROJ           B.11.a       Upper arch right, P1 -         0= Free of erythema
+                                                   Erythema                       1= Erythema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  160    2 2.0       CPEDOJ           B.11.b       Upper arch right, P1 - Edema   0= Free of edema
+                                                                                  2= Edema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  162    2 2.0       CPUNOJ           B.11.c       Upper arch right, P1 -         0= Free of ulceration,
+                                                   Ulceration, necrosis, exudate     necrosis or exudate
+                                                                                  3= Ulceration, necrosis or
+                                                                                     exudate present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  164    2 2.0       CPC_OJ           B.11.d       Upper arch right, P1 -         0= Free of cratering
+                                                   Cratering                      4= Cratering present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  166    2 2.0       CPABOJ           B.11.e       Upper arch right, P1 -         0= Free of alveolar bone
+                                                   Alveolar bone exposed             exposure
+                                                                                  5= Alveolar bone exposure
+                                                                                     present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  168    2 $         CQNAOJ           B.12         Upper arch right, P2           Y= Non-assessible (neither
+                                                                                     adjacent tooth present)
+                                                                                  0= Interdental papilla is
+                                                                                     free of erythema/edema/
+                                                                                     necrosis/cratering or exp.
+                                                                                     alv. bone
+                                                                                  B= Interdental papilla score
+                                                                                     > 0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  170    2 2.0       CQEROJ           B.12.a       Upper arch right, P2 -         0= Free of erythema
+                                                   Erythema                       1= Erythema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  172    2 2.0       CQEDOJ           B.12.b       Upper arch right, P2 - Edema   0= Free of edema
+                                                                                  2= Edema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  174    2 2.0       CQUNOJ           B.12.c       Upper arch right, P2 -         0= Free of ulceration,
+                                                   Ulceration, necrosis, exudate     necrosis or exudate
+                                                                                  3= Ulceration, necrosis or
+                                                                                     exudate present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  176    2 2.0       CQC_OJ           B.12.d       Upper arch right, P2 -         0= Free of cratering
+                                                   Cratering                      4= Cratering present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  178    2 2.0       CQABOJ           B.12.e       Upper arch right, P2 -         0= Free of alveolar bone
+                                                   Alveolar bone exposed             exposure
+                                                                                  5= Alveolar bone exposure
+                                                                                     present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  180    2 $         CMNAOJ           B.13         Upper arch right, M1           Y= Non-assessible (neither
+                                                                                     adjacent tooth present)
+                                                                                  0= Interdental papilla is
+                                                                                     free of erythema/edema/
+                                                                                     necrosis/cratering or exp.
+                                                                                     alv. bone
+                                                                                  B= Interdental papilla score
+                                                                                     > 0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  182    2 2.0       CMEROJ           B.13.a       Upper arch right, M1 -         0= Free of erythema
+                                                   Erythema                       1= Erythema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  184    2 2.0       CMEDOJ           B.13.b       Upper arch right, M1 - Edema   0= Free of edema
+                                                                                  2= Edema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  186    2 2.0       CMUNOJ           B.13.c       Upper arch right, M1 -         0= Free of ulceration,
+                                                   Ulceration, necrosis, exudate     necrosis or exudate
+                                                                                  3= Ulceration, necrosis or
+                                                                                     exudate present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  188    2 2.0       CMC_OJ           B.13.d       Upper arch right, M1 -         0= Free of cratering
+                                                   Cratering                      4= Cratering present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  190    2 2.0       CMABOJ           B.13.e       Upper arch right, M1 -         0= Free of alveolar bone
+                                                   Alveolar bone exposed             exposure
+                                                                                  5= Alveolar bone exposure
+                                                                                     present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  192    2 $         DMNAOJ           B.14         Lower arch left, M1            Y= Non-assessible (neither
+                                                                                     adjacent tooth present)
+                                                                                  0= Interdental papilla is
+                                                                                     free of erythema/edema/
+                                                                                     necrosis/cratering or exp.
+                                                                                     alv. bone
+                                                                                  B= Interdental papilla score
+                                                                                     > 0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  194    2 2.0       DMEROJ           B.14.a       Lower arch left, M1 - Erythema 0= Free of erythema
+                                                                                  1= Erythema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  196    2 2.0       DMEDOJ           B.14.b       Lower arch left, M1 - Edema    0= Free of edema
+                                                                                  2= Edema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  198    2 2.0       DMUNOJ           B.14.c       Lower arch left, M1 -          0= Free of ulceration,
+                                                   Ulceration, necrosis, exudate     necrosis or exudate
+                                                                                  3= Ulceration, necrosis or
+                                                                                     exudate present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  200    2 2.0       DMC_OJ           B.14.d       Lower arch left, M1 -          0= Free of cratering
+                                                   Cratering                      4= Cratering present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  202    2 2.0       DMABOJ           B.14.e       Lower arch left, M1 -          0= Free of alveolar bone
+                                                   Alveolar bone exposed             exposure
+                                                                                  5= Alveolar bone exposure
+                                                                                     present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  204    2 $         DQNAOJ           B.15         Lower arch left, P2            Y= Non-assessible (neither
+                                                                                     adjacent tooth present)
+                                                                                  0= Interdental papilla is
+                                                                                     free of erythema/edema/
+                                                                                     necrosis/cratering or exp.
+                                                                                     alv. bone
+                                                                                  B= Interdental papilla score
+                                                                                     > 0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  206    2 2.0       DQEROJ           B.15.a       Lower arch left, P2 - Erythema 0= Free of erythema
+                                                                                  1= Erythema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  208    2 2.0       DQEDOJ           B.15.b       Lower arch left, P2 - Edema    0= Free of edema
+                                                                                  2= Edema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  210    2 2.0       DQUNOJ           B.15.c       Lower arch left, P2 -          0= Free of ulceration,
+                                                   Ulceration, necrosis, exudate     necrosis or exudate
+                                                                                  3= Ulceration, necrosis or
+                                                                                     exudate present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  212    2 2.0       DQC_OJ           B.15.d       Lower arch left, P2 -          0= Free of cratering
+                                                   Cratering                      4= Cratering present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  214    2 2.0       DQABOJ           B.15.e       Lower arch left, P2 -          0= Free of alveolar bone
+                                                   Alveolar bone exposed             exposure
+                                                                                  5= Alveolar bone exposure
+                                                                                     present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  216    2 $         DPNAOJ           B.16         Lower arch left, P1            Y= Non-assessible (neither
+                                                                                     adjacent tooth present)
+                                                                                  0= Interdental papilla is
+                                                                                     free of erythema/edema/
+                                                                                     necrosis/cratering or exp.
+                                                                                     alv. bone
+                                                                                  B= Interdental papilla score
+                                                                                     > 0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  218    2 2.0       DPEROJ           B.16.a       Lower arch left, P1 - Erythema 0= Free of erythema
+                                                                                  1= Erythema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  220    2 2.0       DPEDOJ           B.16.b       Lower arch left, P1 - Edema    0= Free of edema
+                                                                                  2= Edema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  222    2 2.0       DPUNOJ           B.16.c       Lower arch left, P1 -          0= Free of ulceration,
+                                                   Ulceration, necrosis, exudate     necrosis or exudate
+                                                                                  3= Ulceration, necrosis or
+                                                                                     exudate present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  224    2 2.0       DPC_OJ           B.16.d       Lower arch left, P1 -          0= Free of cratering
+                                                   Cratering                      4= Cratering present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  226    2 2.0       DPABOJ           B.16.e       Lower arch left, P1 -          0= Free of alveolar bone
+                                                   Alveolar bone exposed             exposure
+                                                                                  5= Alveolar bone exposure
+                                                                                     present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  228    2 $         DCNAOJ           B.17         Lower arch left, CA            Y= Non-assessible (neither
+                                                                                     adjacent tooth present)
+                                                                                  0= Interdental papilla is
+                                                                                     free of erythema/edema/
+                                                                                     necrosis/cratering or exp.
+                                                                                     alv. bone
+                                                                                  B= Interdental papilla score
+                                                                                     > 0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  230    2 2.0       DCEROJ           B.17.a       Lower arch left, CA - Erythema 0= Free of erythema
+                                                                                  1= Erythema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  232    2 2.0       DCEDOJ           B.17.b       Lower arch left, CA - Edema    0= Free of edema
+                                                                                  2= Edema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  234    2 2.0       DCUNOJ           B.17.c       Lower arch left, CA -          0= Free of ulceration,
+                                                   Ulceration, necrosis, exudate     necrosis or exudate
+                                                                                  3= Ulceration, necrosis or
+                                                                                     exudate present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  236    2 2.0       DCC_OJ           B.17.d       Lower arch left, CA -          0= Free of cratering
+                                                   Cratering                      4= Cratering present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  238    2 2.0       DCABOJ           B.17.e       Lower arch left, CA -          0= Free of alveolar bone
+                                                   Alveolar bone exposed             exposure
+                                                                                  5= Alveolar bone exposure
+                                                                                     present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  240    2 $         DLNAOJ           B.18         Lower arch left, LA            Y= Non-assessible (neither
+                                                                                     adjacent tooth present)
+                                                                                  0= Interdental papilla is
+                                                                                     free of erythema/edema/
+                                                                                     necrosis/cratering or exp.
+                                                                                     alv. bone
+                                                                                  B= Interdental papilla score
+                                                                                     > 0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  242    2 2.0       DLEROJ           B.18.a       Lower arch left, LA - Erythema 0= Free of erythema
+                                                                                  1= Erythema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  244    2 2.0       DLEDOJ           B.18.b       Lower arch left, LA - Edema    0= Free of edema
+                                                                                  2= Edema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  246    2 2.0       DLUNOJ           B.18.c       Lower arch left, LA -          0= Free of ulceration,
+                                                   Ulceration, necrosis, exudate     necrosis or exudate
+                                                                                  3= Ulceration, necrosis or
+                                                                                     exudate present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  248    2 2.0       DLC_OJ           B.18.d       Lower arch left, LA -          0= Free of cratering
+                                                   Cratering                      4= Cratering present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  250    2 2.0       DLABOJ           B.18.e       Lower arch left, LA -          0= Free of alveolar bone
+                                                   Alveolar bone exposed             exposure
+                                                                                  5= Alveolar bone exposure
+                                                                                     present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  252    2 $         DENAOJ           B.19         Lower arch left, CE            Y= Non-assessible (neither
+                                                                                     adjacent tooth present)
+                                                                                  0= Interdental papilla is
+                                                                                     free of erythema/edema/
+                                                                                     necrosis/cratering or exp.
+                                                                                     alv. bone
+                                                                                  B= Interdental papilla score
+                                                                                     > 0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  254    2 2.0       DEEROJ           B.19.a       Lower arch left, CE - Erythema 0= Free of erythema
+                                                                                  1= Erythema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  256    2 2.0       DEEDOJ           B.19.b       Lower arch left, CE - Edema    0= Free of edema
+                                                                                  2= Edema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  258    2 2.0       DEUNOJ           B.19.c       Lower arch left, CE -          0= Free of ulceration,
+                                                   Ulceration, necrosis, exudate     necrosis or exudate
+                                                                                  3= Ulceration, necrosis or
+                                                                                     exudate present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  260    2 2.0       DEC_OJ           B.19.d       Lower arch left, CE -          0= Free of cratering
+                                                   Cratering                      4= Cratering present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  262    2 2.0       DEABOJ           B.19.e       Lower arch left, CE -          0= Free of alveolar bone
+                                                   Alveolar bone exposed             exposure
+                                                                                  5= Alveolar bone exposure
+                                                                                     present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  264    2 $         LDNAOJ           B.20         Lower arch, Midline            Y= Non-assessible (neither
+                                                                                     adjacent tooth present)
+                                                                                  0= Interdental papilla is
+                                                                                     free of erythema/edema/
+                                                                                     necrosis/cratering or exp.
+                                                                                     alv. bone
+                                                                                  B= Interdental papilla score
+                                                                                     > 0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  266    2 2.0       LDEROJ           B.20.a       Lower arch, Midline - Erythema 0= Free of erythema
+                                                                                  1= Erythema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  268    2 2.0       LDEDOJ           B.20.b       Lower arch, Midline - Edema    0= Free of edema
+                                                                                  2= Edema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  270    2 2.0       LDUNOJ           B.20.c       Lower arch, Midline -          0= Free of ulceration,
+                                                   Ulceration, necrosis, exudate     necrosis or exudate
+                                                                                  3= Ulceration, necrosis or
+                                                                                     exudate present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  272    2 2.0       LDC_OJ           B.20.d       Lower arch, Midline -          0= Free of cratering
+                                                   Cratering                      4= Cratering present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  274    2 2.0       LDABOJ           B.20.e       Lower arch, Midline -          0= Free of alveolar bone
+                                                   Alveolar bone exposed             exposure
+                                                                                  5= Alveolar bone exposure
+                                                                                     present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  276    2 $         EENAOJ           B.21         Lower arch right, CE           Y= Non-assessible (neither
+                                                                                     adjacent tooth present)
+                                                                                  0= Interdental papilla is
+                                                                                     free of erythema/edema/
+                                                                                     necrosis/cratering or exp.
+                                                                                     alv. bone
+                                                                                  B= Interdental papilla score
+                                                                                     > 0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  278    2 2.0       EEEROJ           B.21.a       Lower arch right, CE -         0= Free of erythema
+                                                   Erythema                       1= Erythema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  280    2 2.0       EEEDOJ           B.21.b       Lower arch right, CE - Edema   0= Free of edema
+                                                                                  2= Edema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  282    2 2.0       EEUNOJ           B.21.c       Lower arch right, CE -         0= Free of ulceration,
+                                                   Ulceration, necrosis, exudate     necrosis or exudate
+                                                                                  3= Ulceration, necrosis or
+                                                                                     exudate present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  284    2 2.0       EEC_OJ           B.21.d       Lower arch right, CE -         0= Free of cratering
+                                                   Cratering                      4= Cratering present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  286    2 2.0       EEABOJ           B.21.e       Lower arch right, CE -         0= Free of alveolar bone
+                                                   Alveolar bone exposed             exposure
+                                                                                  5= Alveolar bone exposure
+                                                                                     present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  288    2 $         ELNAOJ           B.22         Lower arch right, LA           Y= Non-assessible (neither
+                                                                                     adjacent tooth present)
+                                                                                  0= Interdental papilla is
+                                                                                     free of erythema/edema/
+                                                                                     necrosis/cratering or exp.
+                                                                                     alv. bone
+                                                                                  B= Interdental papilla score
+                                                                                     > 0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  290    2 2.0       ELEROJ           B.22.a       Lower arch right, LA -         0= Free of erythema
+                                                   Erythema                       1= Erythema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  292    2 2.0       ELEDOJ           B.22.b       Lower arch right, LA - Edema   0= Free of edema
+                                                                                  2= Edema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  294    2 2.0       ELUNOJ           B.22.c       Lower arch right, LA -         0= Free of ulceration,
+                                                   Ulceration, necrosis, exudate     necrosis or exudate
+                                                                                  3= Ulceration, necrosis or
+                                                                                     exudate present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  296    2 2.0       ELC_OJ           B.22.d       Lower arch right, LA -         0= Free of cratering
+                                                   Cratering                      4= Cratering present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  298    2 2.0       ELABOJ           B.22.e       Lower arch right, LA -         0= Free of alveolar bone
+                                                   Alveolar bone exposed             exposure
+                                                                                  5= Alveolar bone exposure
+                                                                                     present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  300    2 $         ECNAOJ           B.23         Lower arch right, CA           Y= Non-assessible (neither
+                                                                                     adjacent tooth present)
+                                                                                  0= Interdental papilla is
+                                                                                     free of erythema/edema/
+                                                                                     necrosis/cratering or exp.
+                                                                                     alv. bone
+                                                                                  B= Interdental papilla score
+                                                                                     > 0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  302    2 2.0       ECEROJ           B.23.a       Lower arch right, CA -         0= Free of erythema
+                                                   Erythema                       1= Erythema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  304    2 2.0       ECEDOJ           B.23.b       Lower arch right, CA - Edema   0= Free of edema
+                                                                                  2= Edema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  306    2 2.0       ECUNOJ           B.23.c       Lower arch right, CA -         0= Free of ulceration,
+                                                   Ulceration, necrosis, exudate     necrosis or exudate
+                                                                                  3= Ulceration, necrosis or
+                                                                                     exudate present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  308    2 2.0       ECC_OJ           B.23.d       Lower arch right, CA -         0= Free of cratering
+                                                   Cratering                      4= Cratering present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  310    2 2.0       ECABOJ           B.23.e       Lower arch right, CA -         0= Free of alveolar bone
+                                                   Alveolar bone exposed             exposure
+                                                                                  5= Alveolar bone exposure
+                                                                                     present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  312    2 $         EPNAOJ           B.24         Lower arch right, P1           Y= Non-assessible (neither
+                                                                                     adjacent tooth present)
+                                                                                  0= Interdental papilla is
+                                                                                     free of erythema/edema/
+                                                                                     necrosis/cratering or exp.
+                                                                                     alv. bone
+                                                                                  B= Interdental papilla score
+                                                                                     > 0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  314    2 2.0       EPEROJ           B.24.a       Lower arch right, P1 -         0= Free of erythema
+                                                   Erythema                       1= Erythema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  316    2 2.0       EPEDOJ           B.24.b       Lower arch right, P1 - Edema   0= Free of edema
+                                                                                  2= Edema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  318    2 2.0       EPUNOJ           B.24.c       Lower arch right, P1 -         0= Free of ulceration,
+                                                   Ulceration, necrosis, exudate     necrosis or exudate
+                                                                                  3= Ulceration, necrosis or
+                                                                                     exudate present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  320    2 2.0       EPC_OJ           B.24.d       Lower arch right, P1 -         0= Free of cratering
+                                                   Cratering                      4= Cratering present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  322    2 2.0       EPABOJ           B.24.e       Lower arch right, P1 -         0= Free of alveolar bone
+                                                   Alveolar bone exposed             exposure
+                                                                                  5= Alveolar bone exposure
+                                                                                     present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  324    2 $         EQNAOJ           B.25         Lower arch right, P2           Y= Non-assessible (neither
+                                                                                     adjacent tooth present)
+                                                                                  0= Interdental papilla is
+                                                                                     free of erythema/edema/
+                                                                                     necrosis/cratering or exp.
+                                                                                     alv. bone
+                                                                                  B= Interdental papilla score
+                                                                                     > 0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  326    2 2.0       EQEROJ           B.25.a       Lower arch right, P2 -         0= Free of erythema
+                                                   Erythema                       1= Erythema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  328    2 2.0       EQEDOJ           B.25.b       Lower arch right, P2 - Edema   0= Free of edema
+                                                                                  2= Edema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  330    2 2.0       EQUNOJ           B.25.c       Lower arch right, P2 -         0= Free of ulceration,
+                                                   Ulceration, necrosis, exudate     necrosis or exudate
+                                                                                  3= Ulceration, necrosis or
+                                                                                     exudate present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  332    2 2.0       EQC_OJ           B.25.d       Lower arch right, P2 -         0= Free of cratering
+                                                   Cratering                      4= Cratering present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  334    2 2.0       EQABOJ           B.25.e       Lower arch right, P2 -         0= Free of alveolar bone
+                                                   Alveolar bone exposed             exposure
+                                                                                  5= Alveolar bone exposure
+                                                                                     present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  336    2 $         EMNAOJ           B.26         Lower arch right, M1           Y= Non-assessible (neither
+                                                                                     adjacent tooth present)
+                                                                                  0= Interdental papilla is
+                                                                                     free of erythema/edema/
+                                                                                     necrosis/cratering or exp.
+                                                                                     alv. bone
+                                                                                  B= Interdental papilla score
+                                                                                     > 0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  338    2 2.0       EMEROJ           B.26.a       Lower arch right, M1 -         0= Free of erythema
+                                                   Erythema                       1= Erythema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  340    2 2.0       EMEDOJ           B.26.b       Lower arch right, M1 - Edema   0= Free of edema
+                                                                                  2= Edema present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  342    2 2.0       EMUNOJ           B.26.c       Lower arch right, M1 -         0= Free of ulceration,
+                                                   Ulceration, necrosis, exudate     necrosis or exudate
+                                                                                  3= Ulceration, necrosis or
+                                                                                     exudate present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  344    2 2.0       EMC_OJ           B.26.d       Lower arch right, M1 -         0= Free of cratering
+                                                   Cratering                      4= Cratering present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  346    2 2.0       EMABOJ           B.26.e       Lower arch right, M1 -         0= Free of alveolar bone
+                                                   Alveolar bone exposed             exposure
+                                                                                  5= Alveolar bone exposure
+                                                                                     present
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  348    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  349    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

@@ -1,0 +1,60 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+F22 - Medical and Health History (Repeating Segment) S7
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    2 2.0       VTYP             A.2.a        Core or 3-month VRS visit      1= CORE VISIT
+                                                                                  2= 3 MONTH VRS VISIT
+
+   13    2 2.0       VTYP             A.2.a        Core or 3-month VRS visit      1= CORE VISIT
+                                                                                  2= 3 MONTH VRS VISIT
+
+   15   50 $         OTSPMH           F.16.o       Specify other symptom since    Character
+                                                   last visit
+
+   65    2 2.0       OT__MH           F.16.o       Other symptom: intensity       0= Not at all
+                                                   since last visit               1= Not bad
+                                                                                  2= Bad
+                                                                                  3= Very bad
+                                                                                  4= Terrible
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   67    2 2.0       OTPMMH           F.16.o.i     Other symptom was symptom of   1= YES
+                                                   prescribed meds                2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   69    2 2.0       OTATMH           F.16.o.ii    Other symptom was symptom of   1= YES
+                                                   alternative therapies          2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   71    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   72    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

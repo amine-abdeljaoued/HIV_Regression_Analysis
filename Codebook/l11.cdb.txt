@@ -1,0 +1,175 @@
+                               CODEBOOK
+Women's Interagency HIV Study                              9-6-2017
+Form L11 - Urine Culture Result
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit number                   1= Visit 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= Visit 99
+
+   11    6 $         FKEY             A.0          Form identifier number         Character
+
+   17    3 $         INITLL           A.0C         Initials of person completing  Field must consist of at
+                                                   form                           least 2 characters.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   20    8 $         VERSLL           A.0          Form version                   01/01/94= January 1, 1994
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   28    2 2.0       AVAILL           A.1          Urine culture results          1= Yes
+                                                   available                      2= No, Sample Inadequate
+                                                                                  3= No, Other Reason
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   30   25 $         RNNALL                        Reason results not available
+                                                   A.1                            -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   55    8 $         SPDTLL           A.2          Date sample taken              10/01/94= October 1, 1994
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63    2 2.0       UCULLL           A.2a         Urine culture result           1= Positive/Any growth
+                                                                                  2= Negative/No growth
+                                                                                  3= Reported as contaminated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   65    2 2.0       ORG1LL           A.3          Organism/pathogen #1           1= E-Coli
+                                                                                  2= Other Enterobacteriaceae
+                                                                                  3= Enterococcus(Group D Strep)
+                                                                                  4= Proteus
+                                                                                  5= Klebsiella
+                                                                                  6= Pseudomonas Aeruginosa
+                                                                                  7= Staphylococcus
+                                                                                     Saprophyticus
+                                                                                  8= Staphylococcus Aureus
+                                                                                  9= Cryptococcus Neoformans
+                                                                                  10= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   67    2 2.0       COL1LL           A.3          Colony count for organism #1   1= < 100
+                                                                                  2= 100-999
+                                                                                  3= 1000-9999
+                                                                                  4= 10000-99999
+                                                                                  5= 100000
+                                                                                  6= > 100000
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   69   20 $         ORS1LL           A.3          Specify other organism #1      Character
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   89    2 2.0       ORG2LL           A.4          Organism/pathogen #2           1= E-Coli
+                                                                                  2= Other Enterobacteriaceae
+                                                                                  3= Enterococcus(Group D Strep)
+                                                                                  4= Proteus
+                                                                                  5= Klebsiella
+                                                                                  6= Pseudomonas Aeruginosa
+                                                                                  7= Staphylococcus
+                                                                                     Saprophyticus
+                                                                                  8= Staphylococcus Aureus
+                                                                                  9= Cryptococcus Neoformans
+                                                                                  10= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   91    2 2.0       COL2LL           A.4          Colony count for organism #2   1= < 100
+                                                                                  2= 100-999
+                                                                                  3= 1000-9999
+                                                                                  4= 10000-99999
+                                                                                  5= 100000
+                                                                                  6= > 100000
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   93   20 $         ORS2LL           A.4          Specify other organism #2      Character
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  113    2 2.0       ORG3LL           A.5          Organism/pathogen #3           1= E-Coli
+                                                                                  2= Other Enterobacteriaceae
+                                                                                  3= Enterococcus(Group D Strep)
+                                                                                  4= Proteus
+                                                                                  5= Klebsiella
+                                                                                  6= Pseudomonas Aeruginosa
+                                                                                  7= Staphylococcus
+                                                                                     Saprophyticus
+                                                                                  8= Staphylococcus Aureus
+                                                                                  9= Cryptococcus Neoformans
+                                                                                  10= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  115    2 2.0       COL3LL           A.5          Colony count for organism #3   1= < 100
+                                                                                  2= 100-999
+                                                                                  3= 1000-9999
+                                                                                  4= 10000-99999
+                                                                                  5= 100000
+                                                                                  6= > 100000
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  117   20 $         ORS3LL           A.5          Specify other organism #3      Character
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  137    1 $         ESTAT            A.0          Edit Status                    CharacterD= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  138    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

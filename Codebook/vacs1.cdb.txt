@@ -1,0 +1,84 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+VAC - Vaccination History Form (Repeating Segment) S1
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        25= 25
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    3 3.0       VCODVC           B.1.a.i      Vaccination code               001= Twinrix(Combination of
+                                                                                       Hepatitis A and B
+                                                                                       vaccines)
+                                                                                  002= Hepatitis A (only)
+                                                                                  003= Hepatitis B (only)
+                                                                                  004= HPV: Bi-valent(Cervarix)
+                                                                                  005= HPV:Quadra-
+                                                                                       valent(Gardasil)
+                                                                                  006= Pneumococcal:PPV 23-
+                                                                                       valent(Pneumovax)
+                                                                                  007= Tetanus: Td
+                                                                                  008= Tetanus: Tdap
+                                                                                  009= Influenza: TIV ("flu
+                                                                                       shot")
+                                                                                  010= Influenza: LAIV (FluMist)
+                                                                                  099= Other vaccination
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   14   30 $         VCSPVC           B.1.a.ii     Specify other vaccine          Character
+
+   44    2 2.0       VNUMVC           B.1.a.iii    Vaccination number             1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  6= 6
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   46    8 $         VDATVC           B.1.a.iv     Date of vaccination            01/01/70= 01/01/70
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   54    2 2.0       VPLCVC           B.1.a.v      Place vaccination administered 1= Church
+                                                                                  2= Community Center
+                                                                                  3= Department of Health
+                                                                                  4= Grocery Store
+                                                                                  5= Medical Clinic
+                                                                                  6= Pharmacy
+                                                                                  7= Doctor's Office
+                                                                                  8= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   56   35 $         VPSPVC           B.1.a.v      Specify other place of         Character
+                                                   administration
+
+   91    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   92    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

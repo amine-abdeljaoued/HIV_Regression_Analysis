@@ -1,0 +1,1002 @@
+                               CODEBOOK
+Women's Interagency HIV Study                              9-6-2017
+Form 03: B/L OB/Gyn & Contra History
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant id                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit number                   1= Visit 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= Visit 99
+
+   11    6 $         FKEY             A.0          Form unique key                Character
+
+   17    8 $         VERSOB           A.3          Form version                   01/01/93= January 1, 1993
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   25    8 $         IDTEOB           A.4          Date of interview              10/01/94= October 1, 1994
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   33    3 $         INITOB           A.5          Interviewer's initials         Character
+
+   36    5 time5.    BTIMOB           A.6          Time module began              01:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   41    2 2.0       BMEROB           A.6A         AM/PM Indicator                1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   43    2 2.0       PREGOB           B.1          Are you currently pregnant     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   45    2 2.0       PNATOB           B.1A         Have you seen prental provider 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   47    2 2.0       APPTOB           B.1B         Do you have appointment        1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   49    2 2.0       TPRGOB           B.1C         Number of past pregnancies     0= 0 Pregnancies
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99 pregnancies
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   51    2 2.0       EPRGOB           B.2          Ever been pregnant             1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   53    2 2.0       NPRGOB           B.3          How many times pregnant        0= 0 Pregnancies
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99 pregnancies
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   55    1 $         DUM1OB           B.DUM1       This is a dummy help field
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   56    1 $         DUM2OB           B.DUM2       This is a dummy field
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   57    2 2.0       PTRYOB           B.15         Trying to get pregnant now     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   59    2 2.0       HYSTOB           B.16         Ever had a hysterectomy        1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   61    2 2.0       HYYROB           B.16A        When was hysterectomy          30= 1930
+                                                                                  .
+                                                                                  .
+                                                                                  99= 1999
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63    2 2.0       FIBROB           B.17A        Reason for hyst - fibroids     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   65    2 2.0       INFEOB           B.17B        Reason for hyst - infection    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   67    2 2.0       CANCOB           B.17C        Reason for hyst - cancer       1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   69    2 2.0       COMPOB           B.17D        Reason for hyst -              1= Yes
+                                                   complications                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   71    2 2.0       BLEDOB           B.17E        Reason for hyst - unrel        1= Yes
+                                                   bleeding                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   73    2 2.0       HYSOOB           B.17F        Reason for hyst - other        1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   75   25 $         SPHYOB           B.17F1       Reason for hyst - other -      Character
+                                                   specify
+
+  100    2 2.0       OVAROB           B.18         One or both ovaries removed    1= No Ovaries
+                                                                                  2= One Ovary
+                                                                                  3= Both Ovaries
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  102    2 2.0       TUBEOB           B.19         Tubal ligation (tubes tied)    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  104    2 2.0       REVTOB           B.19A        Tubal ligation reversed        1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  106    2 2.0       PILLOB           C.1          Ever been on the pill          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  108    2 2.0       TPILOB           C.1A         How many years on pill         1= Less than 1 year
+                                                                                  2= 1 to 5 years
+                                                                                  3= More than 5 years
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  110    2 2.0       ORALOB           C.2          Past 6 mos - oral              1= Yes
+                                                   contraceptives                 2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  112    2 2.0       ORBCOB           C.2A         Pill for birth contrl          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  114    2 2.0       ORREOB           C.2B         Pill to regulate periods       1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  116    2 2.0       OROTOB           C.2C         Pill for other reason          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  118   25 $         ORSPOB           C.2C1        Pill - specify other reason    Character
+
+  143    2 2.0       NORPOB           C.3          Past 6 mos - ever used         1= Yes
+                                                   norplant                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  145    5 $         NODTOB           C.3A         Date norplant inserted         10/89= October 1989
+                                                                                  .
+                                                                                  .
+                                                                                  12/20= December 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  150    2 2.0       NOBCOB           C.3B         Norplant for birth control     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  152    2 2.0       NOREOB           C.3C         Norplant to regulate periods   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  154    2 2.0       NOOTOB           C.3D         Norplant for other reason      1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  156   25 $         NOSPOB           C.3D1        Norplant, other reason -       Character
+                                                   specify
+
+  181    2 2.0       DEPOOB           C.4          Past 6 mos - depo/contr        1= Yes
+                                                   injection                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  183    5 $         DEDTOB           C.4A         When most recent injection     01/93= January, 1993
+                                                   recvd                          .
+                                                                                  .
+                                                                                  12/99= December, 1999
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  188    2 2.0       DEBCOB           C.4B         Depo/contr for birth control   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  190    2 2.0       DEREOB           C.4C         Depo/contr to regulate periods 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  192    2 2.0       DEOTOB           C.4D         Depo/contr for other reason    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  194   25 $         DESPOB           C.4D1        Depo/contr - specify other     Character
+                                                   reason
+
+  219    2 2.0       IUD_OB           C.5          Past 6 mos - iud               1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  221    2 2.0       IUBCOB           C.5A         Iud for birth control          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  223    2 2.0       IUOTOB           C.5B         Iud for other reason           1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  225   25 $         IUSPOB           C.5B1        Iud for other reason - specify Character
+
+  250    2 2.0       DIAPOB           C.6          Past 6 mos - diaphragm or cap  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  252    2 2.0       DIBCOB           C.6A         Diaphragm/cap for birth        1= Yes
+                                                   control                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  254    2 2.0       DIPROB           C.6B         Diaphragm/cap for stds or hiv  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  256    2 2.0       DIOTOB           C.6C         Diaphragm/cap for other reason 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  258   25 $         DISPOB           C.6C1        Diaphragm/cap for other-       Character
+                                                   specify
+
+  283    2 2.0       BARROB           C.7          Past 6 mos - vaginal creams    1= Yes
+                                                   et al                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  285    2 2.0       BABCOB           C.7A         Vaginal creams for birth       1= Yes
+                                                   control                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  287    2 2.0       BAPROB           C.7B         Vaginal creams for stds or hiv 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  289    2 2.0       BAOTOB           C.7C         Vaginal creams for other       1= Yes
+                                                   reason                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  291   25 $         BASPOB           C.7C1        Vaginal creams - other-        Character
+                                                   specify
+
+  316    2 2.0       RHYTOB           C.8          Past 6 mos - rhythm or         1= Yes
+                                                   withdrawal                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  318    2 2.0       RHBCOB           C.8A         Rhythm for birth control       1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  320    2 2.0       RHOTOB           C.8B         Rhythm for other reason        1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  322   25 $         RHSPOB           C.8B1        Rhythm for other - specify     Character
+
+  347    2 2.0       MCNDOB           C.9          Past 6 mos - male condoms      1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  349    2 2.0       MCBCOB           C.9A         Male condoms for birth control 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  351    2 2.0       MCPROB           C.9B         Male condoms for STDs or HIV   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  353    2 2.0       MCOTOB           C.9C         Male condoms for other reason  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  355   25 $         MCSPOB           C.9C1        Male condoms for other -       Character
+                                                   specify
+
+  380    2 2.0       OPRVOB           C.10         Past 6 mos - any other method  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  382   25 $         OPSPOB           C.10A        Any other method - specify     Character
+
+  407    2 2.0       STDOOB           C.11         Past 6 mos -other methods for  1= Yes
+                                                   stds                           2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  409   25 $         SOSPOB           C.11A        Other methods for stds -       Character
+                                                   specify
+
+  434    2 2.0       PAP_OB           D.1          Past 12 mos -pap test          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  436    2 2.0       PAPEOB           D.2          Have you ever had a pap test   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  438    2 2.0       PAPDOB           D.2A         When (Year) was most recent    60= 1960
+                                                   pap test                       .
+                                                                                  .
+                                                                                  99= 1999
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  440    2 2.0       ABNPOB           D.3          Abnormal pap test              1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  442    2 2.0       PER6OB           D.4          Period last 6 months           1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  444    2 2.0       PE12OB           D.5          Period last 12 months          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  446    8 $         DAY1OB           D.6          When was 1st day of last       04/01/93= April 1, 1993
+                                                   period                         .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  454    2 2.0       NDAYOB           D.7          How many days did period last  1= 1 Day
+                                                                                  .
+                                                                                  .
+                                                                                  31= 31 Days
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  456    2 2.0       AVGDOB           D.8          Avg number of days over 6 mos  1= 1 Day
+                                                                                  .
+                                                                                  .
+                                                                                  30= 30 Days
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  458    2 2.0       LATEOB           D.9          Period 3 days early or late    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  460    2 2.0       SKIPOB           D.10         Did you skip any periods       1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  462    2 2.0       SPOTOB           D.11         Spotting or bleeding betw      1= Yes
+                                                   periods                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  464    2 2.0       MENOOB           D.12         Have you been through          1= Yes
+                                                   menopause                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  466    2 2.0       BLD_OB           D.13         Bleeding when did not have     1= Yes
+                                                   period                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  468    2 2.0       GONOOB           E.1          Ever told you had gonorrhea    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  470    2 2.0       SYPHOB           E.2          Ever told you had syphillis    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  472    2 2.0       CHLAOB           E.3          Ever told you had chlamydia    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  474    2 2.0       PID_OB           E.4          Ever told you had pid          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  476    2 2.0       HERPOB           E.5          Ever told you had genital      1= Yes
+                                                   herpes                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  478    2 2.0       WARTOB           E.6          Ever told you had genital      1= Yes
+                                                   warts                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  480    2 2.0       TRICOB           E.7          Ever told you had trichomonas  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  482    2 2.0       TRC6OB           E.7A         Had trich last 6 months        1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  484    2 2.0       BV__OB           E.8          Ever told you had bv           1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  486    2 2.0       BV6_OB           E.8A         Had bv last 6 months           1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  488    2 2.0       VAOTOB           E.9          Ever had any other vaginitis   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  490    2 2.0       VAO6OB           E.9A         Had other vaginitis last 6     1= Yes
+                                                   months                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  492    2 2.0       CANDOB           E.10         Ever had vaginal yeast         1= Yes
+                                                   infection                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  494    2 2.0       CND6OB           E.10A        Yeast infection last 6 months  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  496    2 2.0       NCNDOB           E.10B        Number yeast infects last 6    0= 0 infection
+                                                   mos                            .
+                                                                                  .
+                                                                                  20= 20 infections
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  498    2 2.0       CNTXOB           E.10C        Number yeast infects treated   0= 0 infection treated
+                                                                                  .
+                                                                                  .
+                                                                                  20= 20 infections treated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  500    2 2.0       HCDXOB           E.11A        Did h.c. provider diagnose inf 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  502    2 2.0       YDX_OB           E.11B        Did you diagnose infection     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  504    2 2.0       OTDXOB           E.11C        Did someone else diagnose      1= Yes
+                                                   infect                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  506   20 $         ODSPOB           E.11C1       Specify who diagnosed          Character
+                                                   infection
+
+  526    2 2.0       ABXROB           E.12         Were you taking antibiotics 2  1= Yes
+                                                   weeks prior to infection       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  528    2 2.0       MEDCOB           E.13         Take anything for yeast        1= Yes
+                                                   infection                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  530    2 2.0       VCRMOB           E.14         Were you taking vaginal cream  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  532    2 2.0       VCRCOB           E.14A        Currently using vaginal cream  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  534    2 2.0       OMEDOB           E.15         Were you taking oral           1= Yes
+                                                   medication                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  536    2 2.0       OMECOB           E.15A        Currently taking oral          1= Yes
+                                                   medication                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  538    2 2.0       DCHEOB           E.16         Were you taking a douche       1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  540    2 2.0       DCHCOB           E.16A        Currently taking a douche      1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  542    2 2.0       CMOTOB           E.17         Were you taking something else 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  544   20 $         COSPOB           E.17_1       Other medication - specify     Character
+
+  564    2 2.0       CMOCOB           E.17A        Currently using other          1= Yes
+                                                   medication                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  566    3 3.0       LCNDOB           E.18         How many days did infection    1= 1 Day
+                                                   last                           .
+                                                                                  .
+                                                                                  365= 365 Days
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  569    2 2.0       VDISOB           E.19         Abnormal vag discharge last 6  1= Yes
+                                                   mos                            2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  571    2 2.0       VODOOB           E.20         Abnormal vag odor last 6 mos   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  573    2 2.0       VITCOB           E.21         Itching around vagina last 6   1= Yes
+                                                   mos                            2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  575    2 2.0       VSOROB           E.22         Sore around gen area last 6    1= Yes
+                                                   mos                            2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  577    2 2.0       VPAIOB           E.23         Pain around vagina last 6 mos  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  579    2 2.0       PPAIOB           E.24         Pain around lower part         1= Yes
+                                                   (pelvis) last 6 mos            2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  581    2 2.0       BFEDOB           F.1          Breast feeding last 6 mos      1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  583    2 2.0       NDISOB           F.2          Discharge from nipple last 6   1= Yes
+                                                   mos                            2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  585    2 2.0       BPN_OB           F.3          Pain in breasts last 6 mos     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  587    2 2.0       BPNPOB           F.3A         Was pain week prior to period  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  589    2 2.0       LUMPOB           F.4          Lump in breast last 6 months   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  591    2 2.0       MDNEOB           F.5          Ever had a mammogram           1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  593    2 2.0       MADTOB           F.5A         When (Year) was mammogram done 30= 1930
+                                                                                  .
+                                                                                  .
+                                                                                  99= 1999
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  595    2 2.0       MRSNOB           F.6          Why was most recent mammog     1= As routine test or age
+                                                   done                              related
+                                                                                  2= Because of family history
+                                                                                     of breast cancer
+                                                                                  3= For evaluation of breast
+                                                                                     mass or lump
+                                                                                  4= For another reason
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  597   20 $         MRSPOB           F.6A         Specify other reason for mamog Character
+
+  617    2 2.0       MAMMOB           F.7          What was result of mammogram   1= Normal or Negative Test
+                                                                                  2= Abnormal or Positive Test
+                                                                                  3= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  619   25 $         MRESOB           F.7A         Specify other result of mammog Character
+
+  644    2 2.0       BIOPOB           F.8          Ever had biopsy of breast of   1= Yes
+                                                   lump                           2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  646    5 $         BIDTOB           F.8A         Date of most recent biopsy     01/30= January 1930
+                                                                                  .
+                                                                                  .
+                                                                                  12/20= December 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  651    2 2.0       BRESOB           F.8B         Do you know result of biopsy   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  653    2 2.0       BCANOB           F.8C1        Breast biopsy result - cancer  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  655    2 2.0       BINFOB           F.8C2        Breast biopsy result -         1= Yes
+                                                   infection                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  657    2 2.0       BOTHOB           F.8C3        Breast biopsy result - other   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  659   20 $         BOSPOB           F.8C3A       Other breast biopsy result     Character
+
+  679    5 time5.    ETIMOB           F.9_1        Time module ended              01:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  684    2 2.0       EMEROB           F.9_2        AM/PM Indicator                1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  686    1 $         ESTAT            A.0          Edit Status                    CharacterD= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  687    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

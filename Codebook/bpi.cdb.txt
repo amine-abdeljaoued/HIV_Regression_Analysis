@@ -1,0 +1,234 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+BPI - Brief Pain Inventory Short Form
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    8 $         VERSPI           A.3          Form version                   10/01/12= 10/01/12
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   19    8 $         IDTEPI           A.4          Date of interview              09/01/12= 09/01/12
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   27    3 $         INITPI           A.5          Initials of person completing  Character
+                                                   form
+
+   30    5 time5.    STIMPI           A.6          Time began                     01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   35    2 2.0       SMERPI           A.6          AM/PM for time began           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   37    2 2.0       PLWKPI           B.1          Participant has had pain       1= YES
+                                                   during last week               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   39    2 2.0       AMSTPI           B.2.a        Area which hurts the most      1= Face/head - right side
+                                                                                  2= Face/head - left side
+                                                                                  3= Neck - right side
+                                                                                  4= Neck - left side
+                                                                                  5= Upper arm - right
+                                                                                  6= Upper torso - right side
+                                                                                  7= Upper torso - left side
+                                                                                  8= Upper arm - left
+                                                                                  9= Lower arm - right
+                                                                                  10= Lower torso - right side
+                                                                                  11= Lower torso - left side
+                                                                                  12= Lower arm - left
+                                                                                  13= Right hand
+                                                                                  14= Pelvic area/buttock -
+                                                                                     right side
+                                                                                  15= Pelvic area/buttock -
+                                                                                     left side
+                                                                                  16= Left hand
+                                                                                  17= Upper leg - right
+                                                                                  18= Upper leg - left
+                                                                                  19= Lower leg - right
+                                                                                  20= Lower leg - left
+                                                                                  21= Right foot
+                                                                                  22= Left foot
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   41    2 2.0       AMFBPI           B.2.a        Area which hurts the most -    1= Front
+                                                   front/back                     2= Back
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   43    2 2.0       PWSTPI           B.3          Rating of pain at its worst    0= 0
+                                                   in past week                   .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   45    2 2.0       PLSTPI           B.4          Rating of pain at its least    0= 0
+                                                   in past week                   .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   47    2 2.0       PAVGPI           B.5          Rating of pain on average      0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   49    2 2.0       PNOWPI           B.6          Rating of pain right now       0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   51    2 2.0       TMPNPI           B.7          Past week treatments/          1= YES
+                                                   medications for pain           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   53    3 3.0       PRLFPI           B.8          Rating of amount of relief     0= 0
+                                                   pain meds/tx have provided     .
+                                                                                  .
+                                                                                  100= 100
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   56    2 2.0       IGACPI           B.9.a        Pain interference past week -  0= 0
+                                                   general activity               .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   58    2 2.0       IMODPI           B.9.b        Pain interference past week -  0= 0
+                                                   mood                           .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   60    2 2.0       IWLKPI           B.9.c        Pain interference past week -  0= 0
+                                                   walking ability                .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   62    2 2.0       IWRKPI           B.9.d        Pain interference past week -  0= 0
+                                                   normal work                    .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   64    2 2.0       IRELPI           B.9.e        Pain interference past week -  0= 0
+                                                   Relations with other people    .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   66    2 2.0       ISLPPI           B.9.f        Pain interference past week -  0= 0
+                                                   sleep                          .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   68    2 2.0       IENJPI           B.9.g        Pain interference past week -  0= 0
+                                                   enjoyment of life              .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   70    5 time5.    ETIMPI           B.10         Time ended                     01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   75    2 2.0       EMERPI           B.10         AM/PM for time ended           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   77    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   78    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

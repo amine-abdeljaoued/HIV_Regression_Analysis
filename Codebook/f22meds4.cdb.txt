@@ -1,0 +1,103 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+F22MED - Medication History (Repeating Segment) S4
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        17= 17
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    2 2.0       VTYP             OldA.2.a     Old: Core or 3-month VRS visit 1= CORE VISIT
+                                                                                  2= 3 MONTH VRS VISIT
+
+   13    3 3.0       DRG2MH           C.1          Non-antiviral drug code        025= Ganciclovir (DHPG,
+                                                                                       Cytovene)
+                                                                                  090= Interferon alfa-2b
+                                                                                       (Intron A) or Interferon
+                                                                                       alfa-2a (Roferon-A)
+                                                                                  091= Foscarnet (Foscavir)
+                                                                                  093= Rifabutin (Mycobutin)
+                                                                                  112= Bactrim (Septra,
+                                                                                       cotrimoxazole,
+                                                                                       trimethoprim-
+                                                                                       sulfamethoxazole, TMP/
+                                                                                       SMZ)
+                                                                                  113= Dapsone
+                                                                                  114= Pentamidine (aerosolized)
+                                                                                  116= Diflucan (Fluconazole)
+                                                                                  117= Medication to increase
+                                                                                       red blood cell count
+                                                                                       (Erythropoietin, Epogen,
+                                                                                       Procrit, EPO)
+                                                                                  124= Amphotericin B (Ampho B)
+                                                                                  125= Ganciclovir (DHPG,
+                                                                                       cytovene)
+                                                                                  127= Nizoral (Ketoconazole)
+                                                                                  137= Myambutol (Ethambutol)
+                                                                                  138= INH (Isoniazid)
+                                                                                  139= Rifadin (Rifampin)
+                                                                                  144= Nystatin (Mycostatin)
+                                                                                  145= Mycelex or Lotrimin
+                                                                                       (Clotrimazole)
+                                                                                  146= Zovirax (Acyclovir)
+                                                                                  152= Zithromax (Azithromycin)
+                                                                                  153= Cipro (Ciprofloxacin)
+                                                                                  154= Lamprene (Clofazimine)
+                                                                                  157= Medication to increase
+                                                                                       white blood cell count
+                                                                                       (G-CSF, GM-CSF, Neupogen)
+                                                                                  169= Sporanox (Itraconazole)
+                                                                                  182= PZA (Pyrazinamide)
+                                                                                  184= Biaxin (Clarithromycin)
+                                                                                  190= Meprone (Atovaquone)
+                                                                                  198= Valtrex (Valcyclovir)
+                                                                                  213= Famvir (Famcyclovir)
+                                                                                  228= Oxandrin (Oxandralone)
+                                                                                  229= Monistat (Miconazole)
+                                                                                  230= Terazol (Terconazole)
+                                                                                  231= Cidofovir (Vistide)
+                                                                                  232= Nandrolone (Deca-
+                                                                                       Durabolin)
+                                                                                  235= Rebetron (Ribavirin &
+                                                                                       Interferon alfa-2b)
+                                                                                  242= Pegylated interferon
+                                                                                       (PEGASYS, PEG-Intron A,
+                                                                                       Peg Interferon alpha-2a)
+                                                                                  247= Vfend (Voriconazole)
+                                                                                  507= Hormones
+                                                                                  514= Bronchodilators/
+                                                                                       antiasthmatics
+                                                                                  532= Antidepressants
+                                                                                  540= Methadone
+                                                                                  702= Prednisone (old) and
+                                                                                       other steroids
+                                                                                  704= Prednisone (Deltasone)
+                                                                                  705= Methyl-prednisolone
+                                                                                       (Medrol)
+                                                                                  706= Orapred
+                                                                                  707= Prednisolone (Prelone)
+                                                                                  998= Other medication (from
+                                                                                       Drug List 2)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   16    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   17    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

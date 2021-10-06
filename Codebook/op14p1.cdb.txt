@@ -1,0 +1,701 @@
+                               CODEBOOK
+Women's Interagency HIV Study                              9-6-2017
+Form OP14B- Loss of Attachment
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant id                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit number                   1= Visit 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= Visit 99
+
+   11    6 $         FKEY             A.0          Form Identifier Key            Character
+
+   17    2 2.0       BNDCOO           B.BM2D       UL  m2dc                       0= 0 mm
+                                                                                  .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   19    2 2.0       BNBCOO           B.BM2MB      UL  m2 midbuc CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   21    2 2.0       BNMCOO           B.BM2M       UL  m2 mesial CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   23    2 2.0       BNLCOO           B.BM2L       UL  m2 lingual CEJ to sulcus   0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   25    2 2.0       BMDCOO           B.BM1D       UL  m1 distal CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   27    2 2.0       BMBCOO           B.BM1MB      UL  m1 midbuc CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   29    2 2.0       BMMCOO           B.BM1M       UL  m1 mesial CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   31    2 2.0       BMLCOO           B.BM1L       UL  m1 lingual CEJ to sulcus   0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   33    2 2.0       BQDCOO           B.BP2D       UL  p2 distal CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   35    2 2.0       BQBCOO           B.BP2MB      UL  p2 midbuc CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   37    2 2.0       BQMCOO           B.BP2M       UL  p2 mesial CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   39    2 2.0       BQLCOO           B.BP2L       UL  p2 lingual CEJ to sulcus   0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   41    2 2.0       BPDCOO           B.BP1D       UL  p1 distal CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   43    2 2.0       BPBCOO           B.BP1MB      UL  p1 midbuc CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   45    2 2.0       BPMCOO           B.BP1M       UL  p1 mesial CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   47    2 2.0       BPLCOO           B.BP1L       UL  p1 lingual CEJ to sulcus   0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   49    2 2.0       BCDCOO           B.BCAD       UL  ca distal CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   51    2 2.0       BCBCOO           B.BCAMB      UL  ca midbuc CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   53    2 2.0       BCMCOO           B.BCAM       UL  ca mesial CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   55    2 2.0       BCLCOO           B.BCAL       UL  ca lingual CEJ to sulcus   0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   57    2 2.0       BLDCOO           B.BLAD       UL  la distal CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   59    2 2.0       BLBCOO           B.BLAMB      UL  la midbuc CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   61    2 2.0       BLMCOO           B.BLAM       UL  la mesial CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   63    2 2.0       BLLCOO           B.BLAL       UL  la lingual CEJ to sulcus   0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   65    2 2.0       BEDCOO           B.BCED       UL  ce distal CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   67    2 2.0       BEBCOO           B.BCEMB      UL  ce midbuc CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   69    2 2.0       BEMCOO           B.BCEM       UL  ce mesial CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   71    2 2.0       BELCOO           B.BCEL       UL  ce lingual CEJ to sulcus   0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   73    2 2.0       CNDCOO           C.CM2D       UR  m2 distal CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   75    2 2.0       CNBCOO           C.CM2MB      UR  m2 midbuc CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   77    2 2.0       CNMCOO           C.CM2M       UR  m2 mesial CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   79    2 2.0       CNLCOO           C.CM2L       UR  m2 lingual CEJ to sulcus   0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   81    2 2.0       CMDCOO           C.CM1D       UR  m1 distal CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   83    2 2.0       CMBCOO           C.CM1MB      UR  m1 midbuc CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   85    2 2.0       CMMCOO           C.CM1M       UR  m1 mesial CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   87    2 2.0       CMLCOO           C.CM1L       UR  m1 lingual CEJ to sulcus   0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   89    2 2.0       CQDCOO           C.CP2D       UR  p2 distal CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   91    2 2.0       CQBCOO           C.CP2MB      UR  p2 midbuc CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   93    2 2.0       CQMCOO           C.CP2M       UR  p2 mesial CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   95    2 2.0       CQLCOO           C.CP2L       UR  p2 lingual CEJ to sulcus   0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   97    2 2.0       CPDCOO           C.CP1D       UR  p1 distal CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+   99    2 2.0       CPBCOO           C.CP1MB      UR  p1 midbuc CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  101    2 2.0       CPMCOO           C.CP1M       UR  p1 mesial CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  103    2 2.0       CPLCOO           C.CP1L       UR  p1 lingual CEJ to sulcus   0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  105    2 2.0       CCDCOO           C.CCAD       UR  ca distal CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  107    2 2.0       CCBCOO           C.CCAMB      UR  ca midbuc CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  109    2 2.0       CCMCOO           C.CCAM       UR  ca mesial CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  111    2 2.0       CCLCOO           C.CCAL       UR  ca lingual CEJ to sulcus   0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  113    2 2.0       CLDCOO           C.CLAD       UR  la distal CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  115    2 2.0       CLBCOO           C.CLAMB      UR  la midbuc CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  117    2 2.0       CLMCOO           C.CLAM       UR  la mesial CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  119    2 2.0       CLLCOO           C.CLAL       UR  la lingual CEJ to sulcus   0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  121    2 2.0       CEDCOO           C.CCED       UR  ce distal CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  123    2 2.0       CEBCOO           C.CCEMB      UR  ce midbuc CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  125    2 2.0       CEMCOO           C.CCEM       UR  ce mesial CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  127    2 2.0       CELCOO           C.CCEL       UR  ce lingual CEJ to sulcus   0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  129    2 2.0       DNDCOO           D.DM2D       LL  m2 distal CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  131    2 2.0       DNBCOO           D.DM2MB      LL  m2 midbuc CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  133    2 2.0       DNMCOO           D.DM2M       LL  m2 mesial CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  135    2 2.0       DNLCOO           D.DM2L       LL  m2 lingual CEJ to sulcus   0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  137    2 2.0       DMDCOO           D.DM1D       LL  m1 distal CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  139    2 2.0       DMBCOO           D.DM1MB      LL  m1 midbuc CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  141    2 2.0       DMMCOO           D.DM1M       LL  m1 mesial CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  143    2 2.0       DMLCOO           D.DM1L       LL  m1 lingual CEJ to sulcus   0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  145    2 2.0       DQDCOO           D.DP2D       LL  p2 distal CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  147    2 2.0       DQBCOO           D.DP2MB      LL  p2 midbuc CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  149    2 2.0       DQMCOO           D.DP2M       LL  p2 mesial CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  151    2 2.0       DQLCOO           D.DP2L       LL  p2 lingual CEJ to sulcus   0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  153    2 2.0       DPDCOO           D.DP1D       LL  p1 distal CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  155    2 2.0       DPBCOO           D.DP1MB      LL  p1 midbuc CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  157    2 2.0       DPMCOO           D.DP1M       LL  p1 mesial CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  159    2 2.0       DPLCOO           D.DP1L       LL  p1 lingual CEJ to sulcus   0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  161    2 2.0       DCDCOO           D.DCAD       LL  distal CEJ to sulcus       0= 0 mm
+                                                   (mm)a distal CEJ to sulcus     .
+                                                   (mm)                           .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  163    2 2.0       DCBCOO           D.DCAMB      LL ca midbuc CEJ to sulcus     0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  165    2 2.0       DCMCOO           D.DCAM       LL ca  mesial CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  167    2 2.0       DCLCOO           D.DCAL       LL ca lingual CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  169    2 2.0       DLDCOO           D.DLAD       LL  la distal CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  171    2 2.0       DLBCOO           D.DLAMB      LL  la midbuc CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  173    2 2.0       DLMCOO           D.DLAM       LL  la mesial CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  175    2 2.0       DLLCOO           D.DLAL       LL  la lingual CEJ to sulcus   0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  177    2 2.0       DEDCOO           D.DCED       LL ce distal CEJ to sulcus     0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  179    2 2.0       DEBCOO           D.DCEMB      LL ce midbuc CEJ to sulcus     0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  181    2 2.0       DEMCOO           D.DCEM       LL ce mesial CEJ to sulcus     0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  183    2 2.0       DELCOO           D.DCEL       LL ce lingual CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  185    2 2.0       ENDCOO           E.EM2D       LR m2 distal CEJ to sulcus     0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  187    2 2.0       ENBCOO           E.EM2MB      LR m2 midbuc CEJ to sulcus     0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  189    2 2.0       ENMCOO           E.EM2M       LR m2 mesial CEJ to sulcus     0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  191    2 2.0       ENLCOO           E.EM2L       LR m2 lingual CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  193    2 2.0       EMDCOO           E.EM1D       LR m1 distal CEJ to sulcus     0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  195    2 2.0       EMBCOO           E.EM1MB      LR m1 midbuc CEJ to sulcus     0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  197    2 2.0       EMMCOO           E.EM1M       LR m1 mesial CEJ to sulcus     0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  199    2 2.0       EMLCOO           E.EM1L       LR m1 lingual CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  201    2 2.0       EQDCOO           E.EP2D       LR p2 distal CEJ to sulcus     0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  203    2 2.0       EQBCOO           E.EP2MB      LR p2 midbuc CEJ to sulcus     0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  205    2 2.0       EQMCOO           E.EP2M       LR p2 mesial CEJ to sulcus     0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  207    2 2.0       EQLCOO           E.EP2L       LR p2 lingual CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  209    2 2.0       EPDCOO           E.EP1D       LR p1 distal CEJ to sulcus     0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  211    2 2.0       EPBCOO           E.EP1MB      LR p1 midbuc CEJ to sulcus     0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  213    2 2.0       EPMCOO           E.EP1M       LR p1 mesial CEJ to sulcus     0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  215    2 2.0       EPLCOO           E.EP1L       LR p1 lingual CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  217    2 2.0       ECDCOO           E.ECAD       LR ca distal CEJ to sulcus     0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  219    2 2.0       ECBCOO           E.ECAMB      LR ca midbuc CEJ to sulcus     0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  221    2 2.0       ECMCOO           E.ECAM       LR ca mesial CEJ to sulcus     0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  223    2 2.0       ECLCOO           E.ECAL       LR ca lingual CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  225    2 2.0       ELDCOO           E.ELAD       LR la distal CEJ to sulcus     0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  227    2 2.0       ELBCOO           E.ELAMB      LR la midbuc CEJ to sulcus     0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  229    2 2.0       ELMCOO           E.ELAM       LR la mesial CEJ to sulcus     0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  231    2 2.0       ELLCOO           E.ELAL       LR la lingual CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  233    2 2.0       EEDCOO           E.ECED       LR ce distal CEJ to sulcus     0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  235    2 2.0       EEBCOO           E.ECEMB      LR ce midbuc CEJ to sulcus     0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  237    2 2.0       EEMCOO           E.ECEM       LR ce mesial CEJ to sulcus     0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  239    2 2.0       EELCOO           E.ECEL       LR ce lingual CEJ to sulcus    0= 0 mm
+                                                   (mm)                           .
+                                                                                  .
+                                                                                  12= 12 mm
+                                                                                  99= Missing
+
+  241    1 $         ESTAT            A.0          Edit Status                    CharacterD= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  242    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

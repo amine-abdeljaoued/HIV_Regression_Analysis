@@ -1,0 +1,97 @@
+                               CODEBOOK
+Women's Interagency HIV Study                              9-6-2017
+Form 06c: B/L Psychosocial Measures
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit number                   1= visit 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= visit 99
+
+   11    6 $         FKEY             A.0          Form's unique id               Character
+
+   17    2 2.0       BIOLPS           E.24         Child(_) biologic, adopted,    1= Biological
+                                                   or step                        2= Adopted
+                                                                                  3= Step/foster
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   19    2 2.0       CAGEPS           E.25         Age of child(_)                1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  75= 75
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   21    2 2.0       YRMOPS           E.25A        Months or years indicator      1= Months
+                                                                                  2= Years
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   23    2 2.0       WLIVPS           E.26         Where is child(_) living       1= With you
+                                                                                  2= With another relative
+                                                                                  3= In official
+                                                                                  foster care
+                                                                                  4= Somewhere else
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   25   25 $         WLSPPS           E.26A        Specify where child(_) living  Character
+
+   50    2 2.0       HIV_PS           E.27         Child(_) tested for hiv        1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   52    2 2.0       HIVRPS           E.27A        Rsults of hiv test for live    1= HIV Positive
+                                                   child(_)                       2= HIV Negative
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   54    2 2.0       HIVSPS           E.27B        Is child(_) sick from HIV or   1= Yes
+                                                   aids                           2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   56    2 2.0       DUM2PS           E.27C        This is a dummy field          Character
+
+   58    2 2.0       SEQID            E.27D        Child(_) order                 1= 1st child
+                                                                                  .
+                                                                                  .
+                                                                                  12= 12th child
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   60    1 $         ESTAT            A.0          Edit Status                    CharacterD= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   61    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

@@ -1,0 +1,346 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+F31 - Specimens Collected During The Physical Exam
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    6 $         FKEY             OldA.0       OLD: form identifier key       Character
+
+   17    3 $         INITSP           A.0          Initials of person completing  Character
+                                                   form
+
+   20    8 $         VERSSP           A.0          Form version                   01/01/93= 01/01/93
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   28    2 2.0       PRGTSP           A.1          Pregnancy test done            1= YES
+                                                                                  2= NO
+                                                                                  3= N/A
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   30   20 $         PTRNSP           A.1          Specify reason pregnancy test  Character
+                                                   not done
+
+   50    8 $         URDTSP           A.1.a        Date urine specimen collected  10/01/94= 10/01/94
+                                                   - pregnancy test               .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   58    2 2.0       PTRSSP           A.1.b        Pregnancy test result          1= POSITIVE
+                                                                                  2= NEGATIVE
+                                                                                  3= INDETERMINATE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   60    2 2.0       URDPSP           OldA.3       OLD: Urinalysis (dipstick)     1= Yes
+                                                                                  2= No
+                                                                                  3= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   62   25 $         UDRNSP           OldA.3       OLD: Reason for no urinalysis  Character
+                                                   (dipstick)
+
+   87    2 2.0       URCXSP           OldA.4       OLD: Urine culture             1= Yes
+                                                                                  2= No
+                                                                                  3= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   89   25 $         UCRNSP           OldA.4       OLD: Reason for no urine       Character
+                                                   culture
+
+  114    2 2.0       URLCSP           OldA.5       Old: Urine for LCR done        1= YES
+                                                                                  2= NO
+                                                                                  3= N/A
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  116   20 $         ULRNSP           OldA.5       Old: Reason urine for LCR not  Character
+                                                   done
+
+  136    2 2.0       URRPSP           A.2          Urine for repository done      1= YES
+                                                                                  2= NO
+                                                                                  3= N/A
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  138   20 $         URRNSP           A.2          Specify reason urine for       Character
+                                                   repository not done
+
+  158    8 $         URNDSP           A.2.a        Date urine specimen collected  10/01/94= 10/01/94
+                                                   - urine for repository         .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  166    5 time5.    URTMSP           A.2.b        Time urine specimen collected  01:00= 01:00
+                                                   - urine for repository         .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  171    2 2.0       URMRSP           A.2.b        AM/PM for time urine specimen  1= AM
+                                                   collected - urine for          2= PM
+                                                   repository                     -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  173    2 2.0       HAIRSP           B.1          Hair specimen taken            1= YES
+                                                                                  2= NO
+                                                                                  3= *N/A
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  175   20 $         HRRNSP           B.1          Specify reason hair specimen   Character
+                                                   not taken
+
+  195    2 2.0       TENFSP           B.1.a        Participant is on a tenofovir- 1= YES
+                                                   containing regimen             2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  197    2 2.0       EVMASP           B.1.b        Even visit or last visit was   1= YES
+                                                   MVIS/ABRV                      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  199    2 2.0       H100SP           B.1.c        Participant is willing to      1= YES
+                                                   have 100 strands taken         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  201    2 2.0       HOCLSP           B.1.d        Location from which hair       1= Occipital region of the
+                                                   specimen taken                    scalp (preferred)
+                                                                                  3= Nape / base of neck
+                                                                                  2= Other region of the scalp
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  203   25 $         HSPLSP           B.1.d        Specify other location from    Character
+                                                   which hair specimen taken
+
+  228   25 $         HLOCSP           OldC.1.a     Old: Location from which hair  Character
+                                                   specimen taken
+
+  253    8 $         HRDTSP           B.1.e        Date hair specimen collected   10/01/02= 10/01/02
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  261    2 2.0       GYNSSP           C.1          Gyn specimens collected        1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  263   25 $         GYRNSP           C.1.a        Reason gyn specimens not       Character
+                                                   collected
+
+  288    8 $         GYDTSP           C.1.b        Date gyn specimens collected   10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  296    2 2.0       CVLFSP           C.2          CVL fluid done                 1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  298   20 $         CVRNSP           C.2          Reason CVL fluid not done      Character
+
+  318    5 time5.    CVTMSP           C.2.a        Time of collection of CVL      01:00= 01:00
+                                                   fluid                          .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  323    2 2.0       CVAPSP           C.2.a        Time of collection of CVL      1= AM
+                                                   Fluid: AM or PM                2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  325    2 2.0       BVSLSP           OldC.3       Old: Slide for bacterial       1= YES
+                                                   vaginosis done                 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  327   20 $         BVRNSP           C.3          Old: Reason slide for          Character
+                                                   bacterial vaginosis not done
+
+  347    2 2.0       PAPSSP           C.4          Glass slide for pap smear done 1= YES
+                                                                                  2= NO
+                                                                                  3= N/A
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  349   20 $         PSRNSP           C.4          Reason glass slide for pap     Character
+                                                   smear not done
+
+  369    2 2.0       HPVSSP           C.5          Cervical swab for HPV DNA done 1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  371   20 $         HPRNSP           C.5          Reason swab for HPV DNA not    Character
+                                                   done
+
+  391    2 2.0       CGSWSP           OldB.0       OLD: Swab for gen-probe for    1= Yes
+                                                   gonn/chlamydia done            2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  393   25 $         CGRNSP           OldB.0       OLD: Reason Swab for gen-      Character
+                                                   probe for gonn/chlamydia not
+                                                   done
+
+  418    2 2.0       SIFSSP           OldC.5       Old: Swab for syphilis DFA     1= YES
+                                                   done                           2= NO
+                                                                                  3= N/A
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  420   20 $         SFRNSP           OldC.5       Old: Reason swab for syphilis  Character
+                                                   DFA not done
+
+  440    2 2.0       SIFNSP           OldC.5.a     Old: # of swabs for syphilis   1= 1
+                                                   DFA                            .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  442    2 2.0       CLMSSP           OldB.6       OLD: Swab for lcr for          1= Yes
+                                                   chlamydia done                 2= No
+                                                                                  3= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  444   25 $         CLRNSP           OldB.6       OLD: Reason swab for lcr for   Character
+                                                   chlamydia not done
+
+  469    2 2.0       TRCSSP           C.6          Swab in diamonds for           1= YES
+                                                   trichomonas culture done       2= NO
+                                                                                  3= N/A
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  471   20 $         TRRNSP           C.6          Reason swab for trichomonas    Character
+                                                   culture not done
+
+  491    2 2.0       LPAPSP           C.7          Liquid Pap for CCSS done       1= YES
+                                                                                  2= NO
+                                                                                  3= N/A
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  493   20 $         LPRNSP           C.7          Reason liquid Pap for CCSS     Character
+                                                   not done
+
+  513    2 2.0       LPNSSP           C.7.a        Liquid Pap number of specimens 1= 1 specimen
+                                                                                  2= 2 specimens
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  515    2 2.0       CSVLSP           OldC.8       Old: 1 cervical swab for       1= YES
+                                                   viral load done                2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  517   20 $         CSVSSP           OldC.8       Old: Reason 1 cervical swab    Character
+                                                   for viral load not done
+
+  537    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  538    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

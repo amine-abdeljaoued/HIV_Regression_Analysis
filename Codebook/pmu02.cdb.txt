@@ -1,0 +1,1315 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+PMU02 - Follow-up Pain Medication Use Questionnaire
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        17= 17
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    8 $         VERSMU           A.3          Form version                   10/01/12= 10/01/12
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   19    8 $         IDTEMU           A.4          Date of interview              10/01/13= 10/01/13
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   27    3 $         INITMU           A.5          Initials of person completing  Character
+                                                   form
+
+   30    5 time5.    STIMMU           A.6          Time began                     1:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   35    2 2.0       SMERMU           A.6          AM/PM for time began           1= AM
+                                                                                  2= PM
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   37    2 2.0       NSDSMU           B.1          Past year taken NSAIDS for     1= YES
+                                                   pain                           2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   39    2 2.0       NSOCMU           B.1.a        Got med over the counter -     1= YES
+                                                   NSAIDS                         2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   41    2 2.0       NSRXMU           B.1.b        Got med prescribed by doctor - 1= YES
+                                                   NSAIDS                         2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   43    2 2.0       NSOTMU           B.1.c        Got med other method - NSAIDS  1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   45   25 $         NSSOMU           B.1.c        Specify other method - NSAIDS  Character
+
+   70    2 2.0       NSSPMU           OldB.1.c     Old: Got med from spouse/      1= YES
+                                                   partner - NSAIDS               2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   72    2 2.0       NSFMMU           OldB.1.d     Old: Got med from family -     1= YES
+                                                   NSAIDS                         2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   74    2 2.0       NSFRMU           OldB.1.e     Old: Got med from friend -     1= YES
+                                                   NSAIDS                         2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   76    2 2.0       NSCWMU           OldB.1.f     Old: Got med from co-worker -  1= YES
+                                                   NSAIDS                         2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   78    2 2.0       NSINMU           OldB.1.g     Old: Got med from internet -   1= YES
+                                                   NSAIDS                         2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   80    2 2.0       NSDDMU           OldB.1.h     Old: Got med from drug dealer/ 1= YES
+                                                   stranger - NSAIDS              2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   82    2 2.0       NSNTMU           B.1.i        Amount of med (times) taken    1= 1
+                                                   per day - NSAIDS               .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   84    3 3.0       NSNMMU           B.1.j        Length of time taken - NSAIDS  0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  999= 999
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   87    2 2.0       NSUNMU           B.1.j        Length of time taken units -   1= Days
+                                                   NSAIDS                         2= Weeks
+                                                                                  3= Months
+                                                                                  4= Years
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   89    2 2.0       SANTMU           B.2          Past year taken Steroidal      1= YES
+                                                   Anti-Inflammatories for pain   2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   91    2 2.0       SAOCMU           OldB.2.a     Old: Got med over the counter  1= YES
+                                                   - Steroidal Anti-              2= NO
+                                                   Inflammatories                 -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   93    2 2.0       SARXMU           B.2.a        Got med prescribed by doctor - 1= YES
+                                                   Steroidal Anti-Inflammatories  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   95    2 2.0       SAOTMU           B.2.b        Got med other method -         1= YES
+                                                   Steroidal Anti-Inflammatories  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   97   25 $         SASOMU           B.2.b        Specify other method -         Character
+                                                   Steroidal Anti-Inflammatories
+
+  122    2 2.0       SASPMU           OldB.2.c     Old: Got med from spouse/      1= YES
+                                                   partner - Steroidal Anti-      2= NO
+                                                   Inflammatories                 -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  124    2 2.0       SAFMMU           OldB.2.d     Old: Got med from family -     1= YES
+                                                   Steroidal Anti-Inflammatories  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  126    2 2.0       SAFRMU           OldB.2.e     Old: Got med from friend -     1= YES
+                                                   Steroidal Anti-Inflammatories  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  128    2 2.0       SACWMU           OldB.2.f     Old: Got med from co-worker -  1= YES
+                                                   Steroidal Anti-Inflammatories  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  130    2 2.0       SAINMU           OldB.2.g     Old: Got med from internet -   1= YES
+                                                   Steroidal Anti-Inflammatories  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  132    2 2.0       SADDMU           OldB.2.h     Old: Got med from drug dealer/ 1= YES
+                                                   stranger - Steroidal Anti-     2= NO
+                                                   Inflammatories                 -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  134    2 2.0       SATMMU           B.2.i        Amount of med (times) taken    1= 1
+                                                   per day - Steroidal Anti-      .
+                                                   Inflammatories                 .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  136    3 3.0       SANMMU           B.2.j        Length of time taken -         0= 0
+                                                   Steroidal Anti-Inflammatories  .
+                                                                                  .
+                                                                                  999= 999
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  139    2 2.0       SAUNMU           B.2.j        Length of time taken units -   1= Days
+                                                   Steroidal Anti-Inflammatories  2= Weeks
+                                                                                  3= Months
+                                                                                  4= Years
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  141    2 2.0       ADPRMU           B.3          Past year taken                1= YES
+                                                   Antidepressant drugs for pain  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  143    2 2.0       ADOCMU           OldB.3.a     Old: Got med over the counter  1= YES
+                                                   - Antidepressants              2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  145    2 2.0       ADRXMU           B.3.a        Got med prescribed by doctor - 1= YES
+                                                   Antidepressants                2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  147    2 2.0       ADOTMU           B.3.b        Got med other method -         1= YES
+                                                   Antidepressants                2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  149   25 $         ADSOMU           B.3.b        Specify other method -         Character
+                                                   Antidepressants
+
+  174    2 2.0       ADSPMU           OldB.3.c     Old: Got med from spouse/      1= YES
+                                                   partner - Antidepressants      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  176    2 2.0       ADFMMU           OldB.3.d     Old: Got med from family -     1= YES
+                                                   Antidepressants                2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  178    2 2.0       ADFRMU           OldB.3.e     Old: Got med from friend -     1= YES
+                                                   Antidepressants                2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  180    2 2.0       ADCWMU           OldB.3.f     Old: Got med from co-worker -  1= YES
+                                                   Antidepressants                2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  182    2 2.0       ADINMU           OldB.3.g     Old: Got med from internet -   1= YES
+                                                   Antidepressants                2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  184    2 2.0       ADDDMU           OldB.3.h     Old: Got med from drug dealer/ 1= YES
+                                                   stranger - Antidepressants     2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  186    2 2.0       ADTMMU           B.3.i        Amount of med (times) taken    1= 1
+                                                   per day - Antidepressant drugs .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  188    2 2.0       ADNMMU           B.3.j        Length of time taken -         0= 0
+                                                   Antidepressant drugs           .
+                                                                                  .
+                                                                                  999= 999
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  190    2 2.0       ADUNMU           B.3.j        Length of time taken units -   1= Days
+                                                   Antidepressant drugs           2= Weeks
+                                                                                  3= Months
+                                                                                  4= Years
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  192    2 2.0       ACONMU           B.4          Past year taken                1= YES
+                                                   Anticonvulsant/Antiepileptic   2= NO
+                                                   drugs for pain                 -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  194    2 2.0       ACOCMU           OldB.4.a     Old: Got med over the counter  1= YES
+                                                   - Anticonvulsants              2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  196    2 2.0       ACRXMU           B.4.a        Got med prescribed by doctor - 1= YES
+                                                   Anticonvulsants                2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  198    2 2.0       ACOTMU           B.4.b        Got med other method -         1= YES
+                                                   Anticonvulsants                2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  200   25 $         ACSOMU           B.4.b        Specify other method -         Character
+                                                   Anticonvulsants
+
+  225    2 2.0       ACSPMU           OldB.4.c     Old: Got med from spouse/      1= YES
+                                                   partner - Anticonvulsants      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  227    2 2.0       ACFMMU           OldB.4.d     Old: Got med from family -     1= YES
+                                                   Anticonvulsants                2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  229    2 2.0       ACFRMU           OldB.4.e     Old: Got med from friend -     1= YES
+                                                   Anticonvulsants                2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  231    2 2.0       ACCWMU           OldB.4.f     Old: Got med from co-worker -  1= YES
+                                                   Anticonvulsants                2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  233    2 2.0       ACINMU           OldB.4.g     Old: Got med from internet -   1= YES
+                                                   Anticonvulsants                2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  235    2 2.0       ACDDMU           OldB.4.h     Old: Got med from drug dealer/ 1= YES
+                                                   stranger - Anticonvulsants     2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  237    2 2.0       ACTMMU           B.4.i        Amount of med (times) taken    1= 1
+                                                   per day - Anticonvulsant/      .
+                                                   Antiepileptic drugs            .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  239    3 3.0       ACNMMU           B.4.j        Length of time taken -         0= 0
+                                                   Anticonvulsant/Antiepileptic   .
+                                                   drugs                          .
+                                                                                  999= 999
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  242    2 2.0       ACUNMU           B.4.j        Length of time taken units -   1= Days
+                                                   Anticonvulsant/Antiepileptic   2= Weeks
+                                                   drugs                          3= Months
+                                                                                  4= Years
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  244    2 2.0       TANEMU           B.5          Past year taken Topical        1= YES
+                                                   Anesthetics for pain           2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  246    2 2.0       TAOCMU           B.5.a        Got med over the counter -     1= YES
+                                                   Topical Anesthetics            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  248    2 2.0       TARXMU           B.5.b        Got med prescribed by doctor - 1= YES
+                                                   Topical Anesthetics            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  250    2 2.0       TAOTMU           B.5.c        Got med other method -         1= YES
+                                                   Topical Anesthetics            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  252   25 $         TASOMU           B.5.c        Specify other method -         Character
+                                                   Topical Anesthetics
+
+  277    2 2.0       TASPMU           OldB.5.c     Old: Got med from spouse/      1= YES
+                                                   partner - Topical Anesthetics  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  279    2 2.0       TAFMMU           OldB.5.d     Old: Got med from family -     1= YES
+                                                   Topical Anesthetics            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  281    2 2.0       TAFRMU           OldB.5.e     Old: Got med from friend -     1= YES
+                                                   Topical Anesthetics            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  283    2 2.0       TACWMU           OldB.5.f     Old: Got med from co-worker -  1= YES
+                                                   Topical Anesthetics            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  285    2 2.0       TAINMU           OldB.5.g     Old: Got med from internet -   1= YES
+                                                   Topical Anesthetics            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  287    2 2.0       TADDMU           OldB.5.h     Old: Got med from drug dealer/ 1= YES
+                                                   stranger - Topical Anesthetics 2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  289    2 2.0       TANPMU           B.5.i        Amount of med taken per day -  1= 1
+                                                   Topical Anesthetics            .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  291    3 3.0       TANMMU           B.5.j        Length of time taken -         0= 0
+                                                   Topical Anesthetics            .
+                                                                                  .
+                                                                                  999= 999
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  294    2 2.0       TAUNMU           B.5.j        Length of time taken units -   1= Days
+                                                   Topical Anesthetics            2= Weeks
+                                                                                  3= Months
+                                                                                  4= Years
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  296    2 2.0       OMLDMU           B.6          Past year taken Mild Opioid    1= YES
+                                                   drugs for pain                 2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  298    2 2.0       OMOCMU           OldB.6.a     Old: Got med over the counter  1= YES
+                                                   - Mild Opioid drugs            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  300    2 2.0       OMRXMU           B.6.a        Got med prescribed by doctor - 1= YES
+                                                   Mild Opioid drugs              2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  302    2 2.0       OMSPMU           B.6.b        Got med from spouse/partner -  1= YES
+                                                   Mild Opioid drugs              2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  304    2 2.0       OMFMMU           B.6.c        Got med from family - Mild     1= YES
+                                                   Opioid drugs                   2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  306    2 2.0       OMFRMU           B.6.d        Got med from friend - Mild     1= YES
+                                                   Opioid drugs                   2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  308    2 2.0       OMCWMU           B.6.e        Got med from co-worker - Mild  1= YES
+                                                   Opioid drugs                   2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  310    2 2.0       OMINMU           B.6.f        Got med from internet - Mild   1= YES
+                                                   Opioid drugs                   2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  312    2 2.0       OMDDMU           B.6.g        Got med from drug dealer/      1= YES
+                                                   stranger - Mild Opioid drugs   2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  314    2 2.0       OMTMMU           B.6.i        Amount of med (times) taken    1= 1
+                                                   per day - Mild Opioid drugs    .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  316    3 3.0       OMNMMU           B.6.j        Length of time taken - Mild    0= 0
+                                                   Opioid drugs                   .
+                                                                                  .
+                                                                                  999= 999
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  319    2 2.0       OMUNMU           B.6.j        Length of time taken units -   1= Days
+                                                   Mild Opioid drugs              2= Weeks
+                                                                                  3= Months
+                                                                                  4= Years
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  321    2 2.0       OSTRMU           B.7          Past year taken Strong Opioid  1= YES
+                                                   drugs for pain                 2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  323    2 2.0       OSOCMU           OldB.7.a     Old: Got med over the counter  1= YES
+                                                   - Strong Opioid drugs          2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  325    2 2.0       OSRXMU           B.7.a        Got med prescribed by doctor - 1= YES
+                                                   Strong Opioid drugs            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  327    2 2.0       OSSPMU           B.7.b        Got med from spouse/partner -  1= YES
+                                                   Strong Opioid drugs            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  329    2 2.0       OSFMMU           B.7.c        Got med from family - Strong   1= YES
+                                                   Opioid drugs                   2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  331    2 2.0       OSFRMU           B.7.d        Got med from friend - Strong   1= YES
+                                                   Opioid drugs                   2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  333    2 2.0       OSCWMU           B.7.e        Got med from co-worker -       1= YES
+                                                   Strong Opioid drugs            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  335    2 2.0       OSINMU           B.7.f        Got med from internet -        1= YES
+                                                   Strong Opioid drugs            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  337    2 2.0       OSDDMU           B.7.g        Got med from drug dealer/      1= YES
+                                                   stranger - Strong Opioid drugs 2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  339    2 2.0       OSTMMU           B.7.i        Amount of med (times) taken    1= 1
+                                                   per day - Strong Opioid drugs  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  341    3 3.0       OSNMMU           B.7.j        Length of time taken - Strong  0= 0
+                                                   Opioid drugs                   .
+                                                                                  .
+                                                                                  999= 999
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  344    2 2.0       OSUNMU           B.7.j        Length of time taken units -   1= Days
+                                                   Strong Opioid drugs            2= Weeks
+                                                                                  3= Months
+                                                                                  4= Years
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  346    2 2.0       MJUAMU           B.8          Past year taken Marijuana for  1= YES
+                                                   pain                           2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  348    2 2.0       MJOCMU           OldB.8.a     Old: Got med over the counter  1= YES
+                                                   - Marijuana                    2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  350    2 2.0       MJRXMU           B.8.a        Got med prescribed by doctor - 1= YES
+                                                   Marijuana                      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  352    2 2.0       MJSPMU           B.8.b        Got med from spouse/partner -  1= YES
+                                                   Marijuana                      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  354    2 2.0       MJFMMU           B.8.c        Got med from family -          1= YES
+                                                   Marijuana                      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  356    2 2.0       MJFRMU           B.8.d        Got med from friend -          1= YES
+                                                   Marijuana                      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  358    2 2.0       MJCWMU           B.8.e        Got med from co-worker -       1= YES
+                                                   Marijuana                      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  360    2 2.0       MJINMU           B.8.f        Got med from internet -        1= YES
+                                                   Marijuana                      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  362    2 2.0       MJDDMU           B.8.g        Got med from drug dealer/      1= YES
+                                                   stranger - Marijuana           2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  364    2 2.0       MJTMMU           B.8.i        Amount of med (times) taken    1= 1
+                                                   per day - Marijuana            .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  366    3 3.0       MJNMMU           B.8.j        Length of time taken -         0= 0
+                                                   Marijuana                      .
+                                                                                  .
+                                                                                  999= 999
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  369    2 2.0       MJUNMU           B.8.j        Length of time taken units -   1= Days
+                                                   Marijuana                      2= Weeks
+                                                                                  3= Months
+                                                                                  4= Years
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  371    2 2.0       SLPGMU           B.9          Past year taken Sleeping       1= YES
+                                                   Medications for pain           2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  373    2 2.0       SLOCMU           OldB.9.a     Old: Got med over the counter  1= YES
+                                                   - Sleeping Medications         2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  375    2 2.0       SLRXMU           B.9.a        Got med prescribed by doctor - 1= YES
+                                                   Sleeping Medications           2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  377    2 2.0       SLSPMU           B.9.b        Got med from spouse/partner -  1= YES
+                                                   Sleeping Medications           2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  379    2 2.0       SLFMMU           B.9.c        Got med from family -          1= YES
+                                                   Sleeping Medications           2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  381    2 2.0       SLFRMU           B.9.d        Got med from friend -          1= YES
+                                                   Sleeping Medications           2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  383    2 2.0       SLCWMU           B.9.e        Got med from co-worker -       1= YES
+                                                   Sleeping Medications           2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  385    2 2.0       SLINMU           B.9.f        Got med from internet -        1= YES
+                                                   Sleeping Medications           2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  387    2 2.0       SLDDMU           B.9.g        Got med from drug dealer/      1= YES
+                                                   stranger - Sleeping            2= NO
+                                                   Medications                    -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  389    2 2.0       SLTMMU           B.9.i        Amount of med (times) taken    1= 1
+                                                   per day - Sleeping Medications .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  391    2 2.0       SLNMMU           B.9.j        Length of time taken -         0= 0
+                                                   Sleeping Medications           .
+                                                                                  .
+                                                                                  999= 999
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  393    2 2.0       SLUNMU           B.9.j        Length of time taken units -   1= Days
+                                                   Sleeping Medications           2= Weeks
+                                                                                  3= Months
+                                                                                  4= Years
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  395    2 2.0       AXTYMU           B.10         Past year taken Sedative/      1= YES
+                                                   Anxiety Medication for pain    2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  397    2 2.0       AXOCMU           OldB.10.a    Old: Got med over the counter  1= YES
+                                                   - Sedative/Anxiety Medication  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  399    2 2.0       AXRXMU           B.10.a       Got med prescribed by doctor - 1= YES
+                                                   Sedative/Anxiety Medication    2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  401    2 2.0       AXSPMU           B.10.b       Got med from spouse/partner -  1= YES
+                                                   Sedative/Anxiety Medication    2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  403    2 2.0       AXFMMU           B.10.c       Got med from family -          1= YES
+                                                   Sedative/Anxiety Medication    2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  405    2 2.0       AXFRMU           B.10.d       Got med from friend -          1= YES
+                                                   Sedative/Anxiety Medication    2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  407    2 2.0       AXCWMU           B.10.e       Got med from co-worker -       1= YES
+                                                   Sedative/Anxiety Medication    2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  409    2 2.0       AXINMU           B.10.f       Got med from internet -        1= YES
+                                                   Sedative/Anxiety Medication    2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  411    2 2.0       AXDDMU           B.10.g       Got med from drug dealer/      1= YES
+                                                   stranger - Sedative/Anxiety    2= NO
+                                                   Medication                     -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  413    2 2.0       AXTMMU           B.10.i       Amount of med (times) taken    1= 1
+                                                   per day - Sedative/Anxiety     .
+                                                   Medication                     .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  415    2 2.0       AXNMMU           B.10.j       Length of time taken -         0= 0
+                                                   Sedative/Anxiety Medication    .
+                                                                                  .
+                                                                                  999= 999
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  417    2 2.0       AXUNMU           B.10.j       Length of time taken units -   1= Days
+                                                   Sedative/Anxiety Medication    2= Weeks
+                                                                                  3= Months
+                                                                                  4= Years
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  419    2 2.0       MRLXMU           B.11         Past year taken Muscle         1= YES
+                                                   Relaxant Medication for pain   2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  421    2 2.0       MROCMU           OldB.11.a    Old: Got med over the counter  1= YES
+                                                   - Muscle Relaxant              2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  423    2 2.0       MRRXMU           B.11.a       Got med prescribed by doctor - 1= YES
+                                                   Muscle Relaxant                2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  425    2 2.0       MROTMU           B.11.b       Got med other method - Muscle  1= YES
+                                                   Relaxant                       2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  427   25 $         MRSOMU           B.11.b       Specify other method - Muscle  Character
+                                                   Relaxant
+
+  452    2 2.0       MRSPMU           OldB.11.c    Old: Got med from spouse/      1= YES
+                                                   partner - Muscle Relaxant      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  454    2 2.0       MRFMMU           OldB.11.d    Old: Got med from family -     1= YES
+                                                   Muscle Relaxant                2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  456    2 2.0       MRFRMU           OldB.11.e    Old: Got med from friend -     1= YES
+                                                   Muscle Relaxant                2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  458    2 2.0       MRCWMU           OldB.11.f    Old: Got med from co-worker -  1= YES
+                                                   Muscle Relaxant                2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  460    2 2.0       MRINMU           OldB.11.g    Old: Got med from internet -   1= YES
+                                                   Muscle Relaxant                2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  462    2 2.0       MRDDMU           OldB.11.h    Old: Got med from drug dealer/ 1= YES
+                                                   stranger - Muscle Relaxant     2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  464    2 2.0       MRTMMU           B.11.i       Amount of med (times) taken    1= 1
+                                                   per day - Muscle Relaxant      .
+                                                   Medication                     .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  466    3 3.0       MRNMMU           B.11.j       Length of time taken - Muscle  0= 0
+                                                   Relaxant Medication            .
+                                                                                  .
+                                                                                  999= 999
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  469    2 2.0       MRUNMU           B.11.j       Length of time taken units -   1= Days
+                                                   Muscle Relaxant Medication     2= Weeks
+                                                                                  3= Months
+                                                                                  4= Years
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  471    2 2.0       MGRNMU           B.12         Past year taken Migraine       1= YES
+                                                   Medication for pain            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  473    2 2.0       MGOCMU           OldB.13.a    Old: Got med over the counter  1= YES
+                                                   - Migraine Medication          2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  475    2 2.0       MGRXMU           B.13.a       Got med prescribed by doctor - 1= YES
+                                                   Migraine Medication            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  477    2 2.0       MGOTMU           B.13.b       Got med other method -         1= YES
+                                                   Migraine Medication            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  479   25 $         MGSOMU           B.13.b       Specify other method -         Character
+                                                   Migraine Medication
+
+  504    2 2.0       MGSPMU           OldB.13.c    Old: Got med from spouse/      1= YES
+                                                   partner - Migraine Medication  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  506    2 2.0       MGFMMU           OldB.13.d    Old: Got med from family -     1= YES
+                                                   Migraine Medication            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  508    2 2.0       MGFRMU           OldB.13.e    Old: Got med from friend -     1= YES
+                                                   Migraine Medication            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  510    2 2.0       MGCWMU           OldB.13.f    Old: Got med from co-worker -  1= YES
+                                                   Migraine Medication            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  512    2 2.0       MGINMU           OldB.13.g    Old: Got med from internet -   1= YES
+                                                   Migraine Medication            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  514    2 2.0       MGDDMU           OldB.13.h    Old: Got med from drug dealer/ 1= YES
+                                                   stranger - Migraine Medication 2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  516    2 2.0       MGTMMU           B.12.i       Amount of med (times) taken    1= 1
+                                                   per day - Migraine Medication  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  518    3 3.0       MGNMMU           B.12.j       Length of time taken -         0= 0
+                                                   Migraine Medication            .
+                                                                                  .
+                                                                                  999= 999
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  521    2 2.0       MGUNMU           B.12.j       Length of time taken units -   1= Days
+                                                   Migraine Medication            2= Weeks
+                                                                                  3= Months
+                                                                                  4= Years
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  523    2 2.0       STLTMU           B.13         Past year taken Stimulant      1= YES
+                                                   Medication for pain            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  525    2 2.0       STOCMU           OldB.13.a    Old: Got med over the counter  1= YES
+                                                   - Stimulant Medication         2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  527    2 2.0       STRXMU           B.13.a       Got med prescribed by doctor - 1= YES
+                                                   Stimulant Medication           2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  529    2 2.0       STSPMU           B.13.b       Got med from spouse/partner -  1= YES
+                                                   Stimulant Medication           2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  531    2 2.0       STFMMU           B.13.c       Got med from family -          1= YES
+                                                   Stimulant Medication           2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  533    2 2.0       STFRMU           B.13.d       Got med from friend -          1= YES
+                                                   Stimulant Medication           2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  535    2 2.0       STCWMU           B.13.e       Got med from co-worker -       1= YES
+                                                   Stimulant Medication           2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  537    2 2.0       STINMU           B.13.f       Got med from internet -        1= YES
+                                                   Stimulant Medication           2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  539    2 2.0       STDDMU           B.13.g       Got med from drug dealer/      1= YES
+                                                   stranger - Stimulant           2= NO
+                                                   Medication                     -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  541    2 2.0       STTMMU           B.13.i       Amount of med (times) taken    1= 1
+                                                   per day - Stimulant Medication .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  543    2 2.0       STNMMU           B.13.j       Length of time taken -         0= 0
+                                                   Stimulant Medication           .
+                                                                                  .
+                                                                                  999= 999
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  545    2 2.0       STUNMU           B.13.j       Length of time taken units -   1= Days
+                                                   Stimulant Medication           2= Weeks
+                                                                                  3= Months
+                                                                                  4= Years
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  547    5 time5.    ETIMMU           B.14         Time ended                     1:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  552    2 2.0       EMERMU           B.14         AM/PM for time ended           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  554    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  555    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

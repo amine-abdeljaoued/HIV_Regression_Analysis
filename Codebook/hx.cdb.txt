@@ -1,0 +1,782 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+HX - Family and Personal Medical History
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    8 $         VERSHX           A.0          Form version                   10/01/01= 10/01/01
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   17    2 2.0       VISIT            A.0          Visit #                        15= 15
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   19    3 $         INITHX           A.0          Initials of person completing  Character
+                                                   form
+
+   22    8 $         IDTEHX           A.0          Date of interview              10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   30    5 time5.    STIMHX           A.0          Time began                     1:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   35    2 2.0       SMERHX           A.0          AM/PM for time began           1= AM
+                                                                                  2= PM
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   37    2 2.0       FHHXHX           A.1          Participant familiar with      1= YES
+                                                   health history of family       2= NO
+                                                   members                        -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   39    2 2.0       MBRNHX           OldA.2       Old: Participant's mother -    1= UNITED STATES
+                                                   country of  birth              2= OTHER
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   41   25 $         SMBNHX           OldA.2       Old: Specify mother's country  Character
+                                                   of birth
+
+   66    2 2.0       FBRNHX           OldA.3       Old: Participant's father -    1= UNITED STATES
+                                                   country of  birth              2= OTHER
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   68   25 $         SFBNHX           OldA.3       Old: Specify father's country  Character
+                                                   of birth
+
+   93    2 2.0       FMCNHX           A.4          Family member told s/he had    1= YES
+                                                   cancer                         2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   95    2 2.0       FCANHX           A.4.a.i      Father told he had cancer      1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   97    2 2.0       MCANHX           A.4.a.ii     Mother told she had cancer     1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   99    2 2.0       BCANHX           A.4.a.iii    Brother(s) told he/they had    1= YES
+                                                   cancer                         2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  101    2 2.0       SCANHX           A.4.a.iv     Sister(s) told she/they had    1= YES
+                                                   cancer                         2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  103    2 2.0       FMHBHX           A.6.a        Family member told s/he had    1= YES
+                                                   high blood pressure            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  105    2 2.0       FHBPHX           A.6.a.i      Father told he had high blood  1= YES
+                                                   pressure                       2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  107    2 2.0       MHBPHX           A.6.a.i      Mother told she had high       1= YES
+                                                   blood pressure                 2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  109    2 2.0       BHBPHX           A.6.a.i      Brother told he had high       1= YES
+                                                   blood pressure                 2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  111    2 2.0       SHBPHX           A.6.a.i      Sister told she had high       1= YES
+                                                   blood pressure                 2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  113    2 2.0       FMSTHX           A.6.b        Family member told s/he had    1= YES
+                                                   stroke                         2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  115    2 2.0       FSTRHX           A.6.b.i      Father told he had stroke      1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  117    2 2.0       MSTRHX           A.6.b.i      Mother told she had stroke     1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  119    2 2.0       BSTRHX           A.6.b.i      Brother told he had stroke     1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  121    2 2.0       SSTRHX           A.6.b.i      Sister told she had stroke     1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  123    2 2.0       FMCFHX           A.6.c        Family member told s/he had    1= YES
+                                                   congestive heart failure       2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  125    2 2.0       FCHFHX           A.6.c.i      Father told he had congestive  1= YES
+                                                   heart failure                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  127    2 2.0       MCHFHX           A.6.c.i      Mother told she had            1= YES
+                                                   congestive heart failure       2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  129    2 2.0       BCHFHX           A.6.c.i      Brother told he had            1= YES
+                                                   congestive heart failure       2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  131    2 2.0       SCHFHX           A.6.c.i      Sister told she had            1= YES
+                                                   congestive heart failure       2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  133    2 2.0       FMCLHX           A.6.d        Family member told s/he had    1= YES
+                                                   high cholesterol               2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  135    2 2.0       FCOLHX           A.6.d.i      Father told he had high        1= YES
+                                                   cholesterol                    2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  137    2 2.0       MCOLHX           A.6.d.i      Mother told she had high       1= YES
+                                                   cholesterol                    2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  139    2 2.0       BCOLHX           A.6.d.i      Brother told he had high       1= YES
+                                                   cholesterol                    2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  141    2 2.0       SCOLHX           A.6.d.i      Sister told she had high       1= YES
+                                                   cholesterol                    2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  143    2 2.0       FMDBHX           A.6.e        Family member told s/he had    1= YES
+                                                   diabetes                       2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  145    2 2.0       FDIAHX           A.6.e.i      Father told he had diabetes    1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  147    2 2.0       MDIAHX           A.6.e.i      Mother told she had diabetes   1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  149    2 2.0       BDIAHX           A.6.e.i      Brother told he had diabetes   1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  151    2 2.0       SDIAHX           A.6.e.i      Sister told she had diabetes   1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  153    2 2.0       FMBCHX           A.6.f        Family member told s/he had    1= YES
+                                                   blood clot that required       2= NO
+                                                   treatment                      -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  155    2 2.0       FBLCHX           A.6.f.i      Father told he had blood clot  1= YES
+                                                   that required treatment        2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  157    2 2.0       MBLCHX           A.6.f.i      Mother told she had blood      1= YES
+                                                   clot that required treatment   2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  159    2 2.0       BBLCHX           A.6.f.i      Brother told he had blood      1= YES
+                                                   clot that required treatment   2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  161    2 2.0       SBLCHX           A.6.f.i      Sister told she had blood      1= YES
+                                                   clot that required treatment   2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  163    2 2.0       MOSTHX           A.7          Mother told she had            1= YES
+                                                   osteoporosis                   2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  165    2 2.0       MFXHHX           OldA.8       Old: Mother ever fracture hip  1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  167    2 2.0       MFFXHX           A.8          Biological mother/father ever  1= YES
+                                                   fracture hip                   2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  169    2 2.0       MSMIHX           A.9          Mother or sister told she had  1= YES
+                                                   MI at 65 or younger            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  171    2 2.0       MMIAHX           A.9.b        Mother told she had MI at 65   1= YES
+                                                   or younger                     2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  173    2 2.0       SMIAHX           A.9.b        Sister told she had MI at 65   1= YES
+                                                   or younger                     2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  175    2 2.0       FBMIHX           A.10         Father or brother told he had  1= YES
+                                                   MI at 55 or younger            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  177    2 2.0       FMIAHX           A.10.b       Father told he had MI at 55    1= YES
+                                                   or younger                     2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  179    2 2.0       BMIAHX           A.10.b       Brother told he had MI at 55   1= YES
+                                                   or younger                     2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  181    2 2.0       KDHXHX           A.11         Birth parents, full brothers/  1= YES
+                                                   sisters told kidney disease    2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  183    2 2.0       KDFAHX           A.11.b       Father told kidney disease     1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  185    2 2.0       KDMOHX           A.11.b       Mother told kidney disease     1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  187    2 2.0       KDBRHX           A.11.b       Brother told kidney disease    1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  189    2 2.0       KDSIHX           A.11.b       Sister told kidney disease     1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  191    2 2.0       KDNMHX           A.11.c       Number of birth relatives had  1= 1
+                                                   kidney disease                 .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  193    2 2.0       DLHXHX           A.12         Birth parents, full brothers/  1= YES
+                                                   sisters on dialysis            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  195    2 2.0       DLFAHX           A.12.b       Father on dialysis             1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  197    2 2.0       DLMOHX           A.12.b       Mother on dialysis             1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  199    2 2.0       DLBRHX           A.12.b       Brother on dialysis            1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  201    2 2.0       DLSIHX           A.12.b       Sister on dialysis             1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  203    2 2.0       DLNMHX           A.12.c       Number of birth relatives on   1= 1
+                                                   dialysis                       .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  205    2 2.0       MAGEHX           B.1          Age at first menstruation      10= 10
+                                                                                  .
+                                                                                  .
+                                                                                  20= 20
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  207    2 2.0       EVMIHX           B.2.a        Ever been told had MI          1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  209    4 4.0       YRMIHX           B.2.a.i      Year told MI                   1930= 1930
+                                                                                  .
+                                                                                  .
+                                                                                  2029= 2029
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  213    2 2.0       EVCFHX           B.2.b        Ever been told had CHF         1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  215    4 4.0       YRCFHX           B.2.b.i      Year told CHF                  1930= 1930
+                                                                                  .
+                                                                                  .
+                                                                                  2029= 2029
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  219    2 2.0       EVSTHX           B.2.c        Ever been told had stroke      1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  221    4 4.0       YRSTHX           B.2.c.i      Year told stroke               1930= 1930
+                                                                                  .
+                                                                                  .
+                                                                                  2029= 2029
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  225    2 2.0       EVHCHX           B.2.d        Ever been told had high        1= YES
+                                                   cholesterol                    2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  227    4 4.0       YRHCHX           B.2.d.i      Year told high cholesterol     1930= 1930
+                                                                                  .
+                                                                                  .
+                                                                                  2029= 2029
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  231    2 2.0       EVANHX           B.2.e        Ever been told had angina/     1= YES
+                                                   chest pain related to heart    2= NO
+                                                   disease                        -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  233    4 4.0       YRANHX           B.2.e.i      Year told angina/chest pain    1930= 1930
+                                                                                  .
+                                                                                  .
+                                                                                  2029= 2029
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  237    2 2.0       EVTIHX           B.2.f        Ever been told had TIA         1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  239    4 4.0       YRTIHX           B.2.f.i      Year had TIA                   1930= 1930
+                                                                                  .
+                                                                                  .
+                                                                                  2029= 2029
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  243    2 2.0       EVBCHX           B.3          Ever had blood clot in your    1= YES
+                                                   legs requiring treatment       2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  245    2 2.0       EVLCHX           B.4          Ever had blood clot in your    1= YES
+                                                   lungs requiring treatment      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  247    2 2.0       EVLVHX           B.5          Ever told had liver problem    1= YES
+                                                   other than hepatitis           2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  249    2 2.0       CIRRHX           B.5.a        Told liver problem = cirrhosis 1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  251    2 2.0       LIVFHX           B.5.b        Told liver problem = liver     1= YES
+                                                   failure                        2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  253    2 2.0       ASCIHX           B.5.c        Told liver problem = ascites   1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  255    2 2.0       YJNDHX           B.5.d        Told liver problem = yellow    1= YES
+                                                   jaundice                       2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  257    2 2.0       ESBLHX           B.5.e        Told liver problem = bleeding  1= YES
+                                                   from enlarged veins in         2= NO
+                                                   esophagus                      -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  259    2 2.0       LIVCHX           OldB.5.a.vi  Old: Told liver problem =      1= YES
+                                                   liver cancer                   2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  261    2 2.0       FATLHX           B.5.f        Told liver problem = fatty     1= YES
+                                                   liver                          2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  263    2 2.0       ALCLHX           B.5.g        Told liver problem =           1= YES
+                                                   alcoholic liver damage         2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  265    2 2.0       HENCHX           B.5.h        Told liver problem = hepatic   1= YES
+                                                   encephalopathy                 2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  267    2 2.0       LVOTHX           B.5.i        Told liver problem = other     1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  269   25 $         LVOSHX           B.5.i        Specify other liver problem    Character
+
+  294    2 2.0       EVLBHX           OldB.6       Old: Ever had liver biopsy     1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  296    2 2.0       EHRTHX           C.1          Ever taken HRT                 1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  298    2 2.0       HRTSHX           C.1.a        Type of HRT taken              1= ESTROGEN
+                                                                                  2= PROGESTERONE
+                                                                                  3= COMBINATION
+                                                                                  4= OTHER HRT
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  300   25 $         SOHRHX           C.1.a        Specify other HRT              Character
+
+  325    2 2.0       MRHMHX           C.1.b.a      Main reason HRT = menopause    1= YES
+                                                   related symptoms               2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  327    2 2.0       MRHDHX           C.1.b.b      Main reason HRT = depression,  1= YES
+                                                   anxiety, emotional distress    2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  329    2 2.0       MRHRHX           C.1.b.c      Main reason HRT = replacement  1= YES
+                                                   after hysterectomy/            2= NO
+                                                   oophorectomy                   -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  331    2 2.0       MRHBHX           C.1.b.d      Main reason HRT =              1= YES
+                                                   osteoporosis or prevent/treat  2= NO
+                                                   bone loss                      -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  333    2 2.0       MRHHHX           C.1.b.e      Main reason HRT = prevention   1= YES
+                                                   of heart disease               2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  335    2 2.0       MRHIHX           C.1.b.f      Main reason HRT = irregular    1= YES
+                                                   menstrual periods              2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  337    2 2.0       MRHOHX           C.1.b.g      Main reason HRT = other reason 1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  339   25 $         SOMRHX           C.1.b        Specify other main reason HRT  Character
+
+  364    2 2.0       HRAGHX           C.1.c        Age first took HRT             20= 20
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  366    5 time5.    ETIMHX           C.2          Time ended                     1:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  371    2 2.0       EMERHX           C.2          AM/PM for time ended           1= AM
+                                                                                  2= PM
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  373    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  374    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

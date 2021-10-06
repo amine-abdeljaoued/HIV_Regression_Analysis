@@ -1,0 +1,76 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+F26 - Follow-up Psychosocial Measures (Repeating Segment) S1
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    2 2.0       SEQID            OldE.7       Old: Child #                   0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   13    2 2.0       CBIOPS           OldE.7       Old: Child (#) is biologic,    1= BIOLOGICAL
+                                                   adopted or step/foster         2= ADOPTED
+                                                                                  3= STEP/FOSTER
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   15    2 2.0       DAGEPS           OldE.7.b     Old: Age when child died       1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  40= 40
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   17    2 2.0       MNYRPS           OldE.7.b     Old: Year/month indicator for  1= MTHS
+                                                   age child died                 2= YRS
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   19    2 2.0       CWYDPS           OldE.7.c     Old: Child living with         1= YES
+                                                   participant at death           2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   21    2 2.0       CHIVPS           OldE.7.d     Old: Child was HIV positive    1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   23   20 $         CCODPS           OldE.7.e     Old: Cause of child's death    Character
+
+   43    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   44    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

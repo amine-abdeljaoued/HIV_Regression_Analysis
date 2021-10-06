@@ -1,0 +1,352 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+NP01 - Baseline Neuropathy Signs and Symptoms Form
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    8 $         VERSNP           A.3          Form version                   01/01/93= 01/01/93
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   19    8 $         IDTENP           A.4          Date of interview              10/01/07= 10/01/07
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   27    3 $         INITNP           A.5          Initials of person completing  Character
+                                                   form
+
+   30    5 time5.    STIMNP           A.6          Time began                     01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   35    2 2.0       SMERNP           A.6          AM/PM for time began           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   37    2 2.0       EACGNP           B.1          Ever had pain/burning in both  1= YES
+                                                   feet/legs at same time         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   39    2 2.0       EACRNP           B.1.a        Ever - Level of pain in right  1= 1
+                                                   foot/leg                       .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   41    2 2.0       EACLNP           B.1.b        Ever - Level of pain in left   1= 1
+                                                   foot/leg                       .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   43    2 2.0       SACGNP           B.2          In last 6 months, had pain/    1= YES
+                                                   burning in both feet/legs at   2= NO
+                                                   same time                      -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   45    2 2.0       SACRNP           B.2.a        Last 6 months - Level of pain  1= 1
+                                                   in right foot/leg              .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   47    2 2.0       SACLNP           B.2.b        Last 6 months - Level of pain  1= 1
+                                                   in left foot/leg               .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   49    2 2.0       EPINNP           B.3          Ever had pins and needles in   1= YES
+                                                   both feet/legs at same time    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   51    2 2.0       EPNRNP           B.3.a        Ever - Level of pinseedles in  1= 1
+                                                   right foot/leg                 .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   53    2 2.0       EPNLNP           B.3.b        Ever - Level of pinseedles in  1= 1
+                                                   left foot/leg                  .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   55    2 2.0       SPINNP           B.4          Last 6 months had pins and     1= YES
+                                                   needles in both feet/legs at   2= NO
+                                                   same time                      -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   57    2 2.0       SPNRNP           B.4.a        Last 6 months - Level of       1= 1
+                                                   pinseedles in right foot/leg   .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   59    2 2.0       SPNLNP           B.4.b        Last 6 months - Level of       1= 1
+                                                   pinseedles in left foot/leg    .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   61    2 2.0       ENMBNP           B.5          Ever had numbness in both      1= YES
+                                                   feet/legs at same time         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63    2 2.0       ENMRNP           B.5.a        Ever - Level of numbness in    1= 1
+                                                   right foot/leg                 .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   65    2 2.0       ENMLNP           B.5.b        Ever - Level of numbness in    1= 1
+                                                   left foot/leg                  .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   67    2 2.0       SNMBNP           B.6          Last 6 months had numbness in  1= YES
+                                                   both feet/legs at same time    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   69    2 2.0       SNMRNP           B.6.a        Last 6 months - Level of       1= 1
+                                                   numbness in right foot/leg     .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   71    2 2.0       SNMLNP           B.6.b        Last 6 months - Level of       1= 1
+                                                   numbness in left foot/leg      .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   73    4 4.1       RVRSNP           C.1.a        R-S tuning fork great toe DIP  0= 0
+                                                   joint vibration - Right        .
+                                                                                  .
+                                                                                  8.0= 8.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   77    4 4.1       LVRSNP           C.1.b        R-S tuning fork great toe DIP  0= 0
+                                                   joint vibration - Left         .
+                                                                                  .
+                                                                                  8.0= 8.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   81    2 2.0       RVIBNP           OldC.1.a     Old: Great toe DIP joint       0= >10 SECONDS (NORMAL)
+                                                   vibration - Right              1= 6-10 SECONDS (MILD LOSS)
+                                                                                  2= <=5 SECONDS (MODERATE LOSS)
+                                                                                  3= NO FEELING OF VIBRATION
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   83    2 2.0       LVIBNP           OldC.1.b     Old: Great toe DIP joint       0= >10 SECONDS (NORMAL)
+                                                   vibration - Left               1= 6-10 SECONDS (MILD LOSS)
+                                                                                  2= <=5 SECONDS (MODERATE LOSS)
+                                                                                  3= NO FEELING OF VIBRATION
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   85    2 2.0       RKNENP           C.2.a        Knee reflex - Right            0= ABSENT
+                                                                                  1= HYPOACTIVE
+                                                                                  2= NORMAL, INCREASED, OR
+                                                                                     CLONUS
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   87    2 2.0       LKNENP           C.2.b        Knee reflex - Left             0= ABSENT
+                                                                                  1= HYPOACTIVE
+                                                                                  2= NORMAL, INCREASED, OR
+                                                                                     CLONUS
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   89    2 2.0       KNENNP           C.3          Both knees normal, increased   1= YES
+                                                   or clonus                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   91    2 2.0       RKNJNP           C.4.a        Knee reflex with Jendrassik    0= ABSENT
+                                                   Maneuver - Right               1= HYPOACTIVE
+                                                                                  2= NORMAL, INCREASED, OR
+                                                                                     CLONUS
+                                                                                  3= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   93    2 2.0       LKNJNP           C.4.b        Knee reflex with Jendrassik    0= ABSENT
+                                                   Maneuver - Left                1= HYPOACTIVE
+                                                                                  2= NORMAL, INCREASED, OR
+                                                                                     CLONUS
+                                                                                  3= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   95    2 2.0       RANKNP           C.5.a        Ankle reflex - Right           0= ABSENT
+                                                                                  1= HYPOACTIVE
+                                                                                  2= NORMAL, INCREASED, OR
+                                                                                     CLONUS
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   97    2 2.0       LANKNP           C.5.b        Ankle reflex - Left            0= ABSENT
+                                                                                  1= HYPOACTIVE
+                                                                                  2= NORMAL, INCREASED, OR
+                                                                                     CLONUS
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   99    2 2.0       ANKNNP           C.6          Both ankles normal, increased  1= YES
+                                                   or clonus                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  101    2 2.0       RJENNP           C.7.a        Ankle reflex with Jendrassik   0= ABSENT
+                                                   Maneuver - Right               1= HYPOACTIVE
+                                                                                  2= NORMAL, INCREASED, OR
+                                                                                     CLONUS
+                                                                                  3= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  103    2 2.0       LJENNP           C.7.b        Ankle reflex with Jendrassik   0= ABSENT
+                                                   Maneuver - Left                1= HYPOACTIVE
+                                                                                  2= NORMAL, INCREASED, OR
+                                                                                     CLONUS
+                                                                                  3= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  105    5 time5.    ETIMNP           C.8          Time ended                     01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  110    2 2.0       EMERNP           C.8          AM/PM for time ended           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  112    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  113    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

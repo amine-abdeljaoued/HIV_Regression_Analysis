@@ -1,0 +1,661 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+L15 - Pelvic Exam Studies (Histopathology Report)
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    6 $         FKEY             OldA.0       OLD: Form identifier number    Character
+
+   17    3 $         INITLP           A.0          Initials of person completing  Character
+                                                   form
+
+   20    8 $         VERSLP           A.0          Form version                   01/01/94= 01/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   28    2 2.0       BNUMLP           A.1          Biopsy #                       1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   30    2 2.0       BTOTLP           A.1.a        Total # of biopsies            1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   32    8 $         SPDTLP           A.2          Date sample taken              10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   40    2 2.0       OLDTLP           OldA.3       OLD: Biopsy type               1= Endocervical Curettage
+                                                                                  2= Loop Excision of
+                                                                                     Transformation Zone
+                                                                                  3= Cervical Excisional Biopsy
+                                                                                  4= Cervical Cone Biopsy
+                                                                                  5= Colposcopically Directed
+                                                                                     Punch Biopsy
+                                                                                  6= Vaginal
+                                                                                  7= Vulvar
+                                                                                  8= Perianal
+                                                                                  9= Endometrial
+                                                                                  10= Anal
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   42    2 2.0       OLDPLP           OldA.3.a     OLD: Punch biopsy location     1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   44    2 2.0       BTYPLP           A.3          Biopsy type                    1= Endocervical curettage
+                                                                                  2= Colposcopically directed
+                                                                                     punch biopsy of cervix
+                                                                                  3= Cervical excisional biopsy
+                                                                                  4= Loop Excision of
+                                                                                     Transformation Zone (LLETZ,
+                                                                                     LETZ, LEEP)
+                                                                                  5= Cervical cone biopsy
+                                                                                  6= Vaginal
+                                                                                  7= Vulvar
+                                                                                  8= Perianal
+                                                                                  9= Anal
+                                                                                  10= Endometrial
+                                                                                  11= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   46   25 $         BSPCLP           A.3.a.i      Specify other biopsy type      Character
+
+   71    2 2.0       PLOCLP           A.3.a        Punch biopsy location          1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   73    2 2.0       CLC1LP           OldA.3.b     OLD: Cervical excisional       1= 1
+                                                   biopsy location begin          .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   75    2 2.0       CLC2LP           OldA.3.b     OLD: Cervical excisional       1= 1
+                                                   biopsy location end            .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   77    2 2.0       LPASLP           OldA.3.c     OLD: Loop excision - ectocv    1= Yes
+                                                   passes done                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   79    2 2.0       OLDLLP           OldA.3.c     OLD: Loop Ex - number of       1= 1
+                                                   ectocv passes done             .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   81    2 2.0       LNUMLP           OldA.3.c     OLD: Loop Excision: ectocv     1= 1
+                                                   pass number                    .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   83    2 2.0       LTOTLP           OldA.3.c     OLD: Loop Excision: Total      1= 1
+                                                   number of ectocv passes        .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   85    2 2.0       LDESLP           OldA.3.c     OLD: Loop Excision: ectocv     1= anterior
+                                                   pass description               2= posterior
+                                                                                  3= central
+                                                                                  4= other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   87   25 $         LSPCLP           OldA.3.c     OLD: Loop Excision: Specify    Character
+                                                   ectocv pass description
+
+  112    2 2.0       CTYPLP           OldA.3.d     OLD: Type of cervical cone     1= Laser
+                                                   biopsy                         2= Cold Knife
+                                                                                  3= Loop
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  114    2 2.0       CPASLP           OldA.3.d     OLD: Cervical cone biopsy:     1= Yes
+                                                   ecto passes done               2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  116    2 2.0       OLDCLP           OldA.3.d     OLD: Cervical cone biopsy - #  1= 1
+                                                   of ectocervical passes done    .
+                                                                                  .
+                                                                                  5= 5
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  118    2 2.0       CNUMLP           OldA.3.d     OLD: Cerv cone biop: ectocv    1= 1
+                                                   pass number                    .
+                                                                                  .
+                                                                                  5= 5
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  120    2 2.0       CTOTLP           OldA.3.d     OLD: Cerv cone biop: Total     1= 1
+                                                   number of ectocv passes        .
+                                                                                  .
+                                                                                  5= 5
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  122    2 2.0       CDESLP           OldA.3.d     OLD: Cerv cone biop: ectocv    1= anterior
+                                                   pass description               2= posterior
+                                                                                  3= central
+                                                                                  4= other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  124   25 $         CSPDLP           OldA.3.d     OLD: Cerv cone biop: other     Character
+                                                   ectocv pass description
+
+  149    2 2.0       CORELP           OldA.3.d     OLD: Cerv cone biop:           1= Yes
+                                                   endocervical core done         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  151    2 2.0       ADEQLP           A.4          Specimen adequacy              1= Satisfactory
+                                                                                  2= Limited, specimen evaluated
+                                                                                  3= Unsatisfactory, specimen
+                                                                                     not evaluated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  153   25 $         SLIMLP           OldA.4       OLD: Specify limits of         Character
+                                                   specimen
+
+  178   25 $         INADLP           OldA.4       OLD: Specify inadequacy of     Character
+                                                   specimen
+
+  203    2 2.0       BRESLP           A.5          Biopsy result is normal        1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  205    2 2.0       INFALP           A.6.a        Abnormality: Acute cervicitis/ 1= Yes
+                                                   inflammation                   2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  207    2 2.0       INFCLP           A.6.b        Abnormality: Chronic           1= Yes
+                                                   cervicitis/inflammation        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  209    2 2.0       FOLLLP           A.6.c        Abnormality: Follicular        1= Yes
+                                                   cervicitis                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  211    2 2.0       HYPKLP           A.6.d        Abnormality: Hyperkaratosis    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  213    2 2.0       PARKLP           A.6.e        Abnormality: Parakeratosis     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  215    2 2.0       ATRPLP           A.6.f        Abnormality: Atrophy           1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  217    2 2.0       TMETLP           A.6.g        Abnormality: Tubal metaplasia  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  219    2 2.0       HERPLP           A.6.h        Abnormality: Herpes            1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  221    2 2.0       TB__LP           A.6.i        Abnormality: TB                1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  223    2 2.0       ACTNLP           A.6.j        Abnormality: Actinomycosis     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  225    2 2.0       SQPLLP           A.6.k        Abnormality: Squamous          1= Yes
+                                                   papilloma                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  227    2 2.0       SQMTLP           A.6.l        Abnormality: Squamous          1= Yes
+                                                   metaplasia                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  229    2 2.0       TRMTLP           A.6.m        Abnormality: Transistional     1= Yes
+                                                   metaplasia                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  231    2 2.0       REACLP           A.6.n        Abnormality: Reactive changes  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  233    2 2.0       SQATLP           A.6.o        Abnormality: Squamous atypia   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  235    2 2.0       ATYSLP           A.6.p        Abnormality: Atypical          1= Yes
+                                                   squamous metaplasia            2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  237    2 2.0       LOW_LP           A.6.q        Abnormality: Low grade SIL/    1= Yes
+                                                   low grade (C)IN                2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  239    2 2.0       INFULP           OldA.6.c     OLD: Cervical abnormality:     1= Yes
+                                                   inflammation (unspecified)     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  241    2 2.0       IABNLP           OldA.6.d     OLD: Other cervical            1= Yes
+                                                   abnormality                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  243   25 $         IABSLP           OldA.6.d     OLD: Specify other cervical    Character
+                                                   abnormality
+
+  268    2 2.0       EXCNLP           A.6.q.i      Abnormality: Condyloma         1= Yes
+                                                   acuminatum                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  270    2 2.0       FLATLP           A.6.q.ii     Abnormality: Flat condyloma    1= Yes
+                                                   (HPV effect only,              2= No
+                                                   koilocytosis)                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  272    2 2.0       FLCNLP           OldA.7.b     OLD: Epithelial abnorm: Flat   1= Yes
+                                                   condyloma/wart                 2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  274    2 2.0       KOILLP           OldA.7.c     OLD: Epithelial abnorm:        1= Yes
+                                                   Koilocytes/HPV effect          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  276    2 2.0       DYS1LP           A.6.q.iii    Abnormality: (C)IN 1, Mild     1= Yes
+                                                   dysplasia                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  278    2 2.0       HIGHLP           A.6.r        Abnormality: High grade SIL/   1= Yes
+                                                   high grade (C)IN               2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  280    2 2.0       DYS2LP           A.6.r.i      Abnormality: (C)IN 2,          1= Yes
+                                                   Moderate dysplasia             2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  282    2 2.0       DYS3LP           A.6.r.ii     Abnormality: (C)IN 3, Severe   1= Yes
+                                                   dysplasia/carcinoma in situ    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  284    2 2.0       DYSOLP           A.6.s        Abnormality: SIL/(C)IN/        1= Yes
+                                                   dysplasia, not otherwise       2= No
+                                                   specified                      -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  286    2 2.0       SCELLP           A.6.t        Abnormality: Squamous cell     1= Yes
+                                                   carcinoma                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  288    2 2.0       ENDOLP           A.6.u        Abnormality: Endocervical      1= Yes
+                                                   polyp                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  290    2 2.0       GLNDLP           A.6.v        Abnormality: Glandular atypia  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  292    2 2.0       ATYGLP           A.6.w        Abnormality: Atypical          1= Yes
+                                                   glandular hyperplasia          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  294    2 2.0       SC1_LP           OldA.7.h     OLD: Epithelial abnorm:        1= Yes
+                                                   Squamous carcinoma             2= No
+                                                   microinvasive                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  296    2 2.0       SC2_LP           OldA.7.h     OLD: Epithelial abnorm:        1= Yes
+                                                   Squamous carcinoma invasive    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  298    2 2.0       SC3_LP           OldA.7.j     OLD: Epithelial abnorm:        1= Yes
+                                                   Squamous carcinoma - non       2= No
+                                                   specified                      -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  300    2 2.0       ACISLP           A.6.x        Abnormality: Adenocarcinoma    1= Yes
+                                                   in situ                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  302    2 2.0       ADENLP           A.6.y        Abnormality: Adenocarcinoma    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  304    2 2.0       ENHYLP           A.6.z        Abnormality: Endometrial       1= Yes
+                                                   hyperplasia                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  306    2 2.0       EABNLP           A.6.aa       Abnormality: Other             1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  308   25 $         EABSLP           A.6.z        Specify other epithelial       Character
+                                                   abnormality
+
+  333    2 2.0       MARGLP           OldA.8       OLD: Excisional biopsy         1= Yes
+                                                   margins evaluated              2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  335    2 2.0       PREDLP           OldA.7       OLD: Predominant grade         1= Does not apply
+                                                                                  2= Condyloma acuminatum
+                                                                                  3= Flat condyloma(HPV effect
+                                                                                     only)
+                                                                                  4= (C)IN 1, mild dysplasia
+                                                                                  5= (C)IN 2, moderate dysplasia
+                                                                                  6= (C)IN 3, severe dysplasia/
+                                                                                     carcinoma in situ
+                                                                                  7= (C)IN of unspecified grade
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  337    2 2.0       MRGNLP           A.7          Evaluation of excisional       1= Margins not evaluated,
+                                                   biopsy margins                    excisional biopsy not
+                                                                                     performed
+                                                                                  2= Margins negative
+                                                                                  3= Margins positive
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  339    2 2.0       MECTLP           A.7.a        Ectocervical positive          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  341    2 2.0       MENDLP           A.7.b        Endocervical positive          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  343    2 2.0       MOTHLP           OldA.8.c     OLD: Excis biopsy margins:     1= Positive
+                                                   other                          2= Negative
+                                                                                  3= Not done
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  345   25 $         MOSPLP           OldA.8.c     OLD: Specify other excis       Character
+                                                   biopsy margins
+
+  370    2 2.0       INPRLP           OldA.9.a     OLD: Biopsy info: study        1= Yes
+                                                   personnel                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  372    2 2.0       INPTLP           A.8.a        Biopsy info obtained from      1= Yes
+                                                   site pathologist               2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  374    2 2.0       INABLP           A.8.b        Biopsy info obtained from      1= Yes
+                                                   chart abstraction of path      2= No
+                                                   report                         -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  376    2 2.0       INPCLP           A.8.c        Biopsy info obtained from      1= Yes
+                                                   direct contact with provider   2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  378    2 2.0       INHXLP           A.8.d        Biopsy info obtained from      1= Yes
+                                                   patient history                2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  380    2 2.0       INOTLP           A.8.e        Biopsy info obtained from      1= Yes
+                                                   other                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  382   25 $         INSPLP           OldA.9.e     OLD: Specify other method      Character
+                                                   biopsy info obtained
+
+  407   25 $         ANUMLP           A.9.a        Accession number               Character
+
+  432   25 $         SNUMLP           A.9.b        Slide number                   Character
+
+  457   25 $         PATHLP           A.9.c        Pathologist's name             Character
+
+  482   25 $         AD11LP           A.9.d        Institution (name or number)   Character
+
+  507   25 $         AD12LP           A.9.e        Address line 1                 Character
+
+  532   25 $         AD13LP           A.9.e.i      Address line 2                 Character
+
+  557   25 $         AD14LP           A.9.e.ii     Address line 3                 Character
+
+  582    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  583    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.
