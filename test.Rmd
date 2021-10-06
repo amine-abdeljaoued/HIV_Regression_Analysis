@@ -13,17 +13,16 @@ hiv <- read.csv(file ="data/hivstat.csv", header = TRUE, sep = ",")
 baseline <- read.csv(file ="data/f00.csv", header = TRUE, sep = ",")
 sociodemographic <-read.csv(file ="data/f01.csv", header = TRUE, sep =",")
 physical <- read.csv(file = "data/f07.csv", header = TRUE, sep = ",")
-cancer <-read.csv(file = "data/f20s1.csv", header = TRUE, sep = ",")
-medhistory <- read.csv(file = "data/hx.csv", header = TRUE, sep = ",")
-outcome <- read.csv(file = "data/outcome.csv", header = TRUE, sep = ",")
+medhistory <- read.csv(file = "data/hx_cleaned.csv", header = TRUE, sep = ",")
+outcome <- read.csv(file = "data/outcome_cleaned.csv", header = TRUE, sep = ",")
 
 library(tidyverse)
 join1 <- inner_join(hiv, baseline, by = "CASEID" )
 join2 <- inner_join(join1, sociodemographic, by ="CASEID")
-#join3 <- inner_join(join2, physical, by = "CASEID")
-#join4 <- inner_join(join3, cancer, by = "CASEID")
-join5 <- inner_join(join2, medhistory, by = "CASEID")
-all <- inner_join(join5, outcome, by = "CASEID")
+join3 <- inner_join(join2, medhistory, by = "CASEID")
+join4 <- inner_join(join3, outcome, by = "CASEID")
+all_wp <- inner_join(join4 , physical, by = "CASEID")
+all <- join4
 head(all)
 
 caseID <- all$CASEID
@@ -56,10 +55,20 @@ death <- all$OUTCDTH
 ```{r}
 library(ggplot2)
 all %>% ggplot()+
-  geom_boxplot(aes(factor(hivstat), age))
+  geom_boxplot(aes(factor(hivstat), age))+
+  labs(x = "HIV Status", y = "Age")
 
 all %>% ggplot(aes(x = factor(hivstat), y = household_income)) +
-  geom_boxplot()
+  geom_boxplot()+
+  labs(x = "HIV Status", y = "Household income")
+
 ```
 
+```{r}
+aids_hiv <- all %>%
+  filter((hivstat == 2 | hivstat == 4) & aids == 1) %>%
+  select(CASEID, STATUS, OUTCAIDS)
 
+aids_hiv
+
+```
