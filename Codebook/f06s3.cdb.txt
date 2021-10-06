@@ -1,0 +1,42 @@
+                               CODEBOOK
+Women's Interagency HIV Study                              9-6-2017
+Form 06: B/L Psychosocial Measures
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit number                   1= visit 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= visit 99
+
+   11    6 $         FKEY             A.0          Form's unique id               Character
+
+   17    8 $         QNO_PS           H.IA2A       Question/section problem       Character
+
+   25   25 $         QPRBPS           H.IA2B       Problem                        Character
+
+   50    2 2.0       SEQID            H.IA2C       Question order                 1= Question 1
+                                                                                  .
+                                                                                  .
+                                                                                  15= Question 15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   52    1 $         ESTAT            A.0          Edit Status                    CharacterD= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   53    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

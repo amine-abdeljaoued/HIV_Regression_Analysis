@@ -1,0 +1,1250 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+OP12 - Root Caries
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    6 $         FKEY             OldA.0       OLD: Form identifier number    Character
+
+   17    8 $         VERSOM           A.0          Form version                   01/01/93= 01/01/93
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   25    3 $         INITOM           A.0          Initials of person completing  Character
+                                                   form
+
+   28    8 $         PDTEOM           A.0          Date of procedure              01/01/93= 01/01/93
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   36    2 $         BCE_OM           A.CE.a       Upper left CE                  R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   38    2 $         BCELOM           A.CE.b       Upper left CE lingual          0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   40    2 $         BCEBOM           A.CE.c       Upper left CE buccal           1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   42    2 $         BCEMOM           A.CE.d       Upper left CE mesial           2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   44    2 $         BCEDOM           A.CE.e       Upper left CE distal           3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   46    2 $         BLA_OM           A.LA.a       Upper left LA                  R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   48    2 $         BLALOM           A.LA.b       Upper left LA lingual          0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   50    2 $         BLABOM           A.LA.c       Upper left LA buccal           1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   52    2 $         BLAMOM           A.LA.d       Upper left LA mesial           2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   54    2 $         BLADOM           A.LA.e       Upper left LA distal           3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   56    2 $         BCA_OM           A.CA.a       Upper left CA                  R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   58    2 $         BCALOM           A.CA.b       Upper left CA lingual          0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   60    2 $         BCABOM           A.CA.c       Upper left CA buccal           1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   62    2 $         BCAMOM           A.CA.d       Upper left CA mesial           2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   64    2 $         BCADOM           A.CA.e       Upper left CA distal           3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   66    2 $         BP1_OM           A.P1.a       Upper left P1                  R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   68    2 $         BP1LOM           A.P1.b       Upper left P1 lingual          0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   70    2 $         BP1BOM           A.P1.c       Upper left P1 buccal           1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   72    2 $         BP1MOM           A.P1.d       Upper left P1 mesial           2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   74    2 $         BP1DOM           A.P1.e       Upper left P1 distal           3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   76    2 $         BP2_OM           A.P2.a       Upper left P2                  R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   78    2 $         BP2LOM           A.P2.b       Upper left P2 lingual          0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   80    2 $         BP2BOM           A.P2.c       Upper left P2 buccal           1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   82    2 $         BP2MOM           A.P2.d       Upper left P2 mesial           2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   84    2 $         BP2DOM           A.P2.e       Upper left P2 distal           3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   86    2 $         BM1_OM           A.M1.a       Upper left M1                  R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   88    2 $         BM1LOM           A.M1.b       Upper left M1 lingual          0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   90    2 $         BM1BOM           A.M1.c       Upper left M1 buccal           1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   92    2 $         BM1MOM           A.M1.d       Upper left M1 mesial           2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   94    2 $         BM1DOM           A.M1.e       Upper left M1 distal           3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   96    2 $         BM2_OM           A.M2.a       Upper left M2                  R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   98    2 $         BM2LOM           A.M2.b       Upper left M2 lingual          0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  100    2 $         BM2BOM           A.M2.c       Upper left M2 buccal           1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  102    2 $         BM2MOM           A.M2.d       Upper left M2 mesial           2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  104    2 $         BM2DOM           A.M2.e       Upper left M2 distal           3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  106    2 $         CCE_OM           B.CE.a       Upper right CE                 R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  108    2 $         CCELOM           B.CE.b       Upper right CE lingual         0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  110    2 $         CCEBOM           B.CE.c       Upper right CE buccal          1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  112    2 $         CCEMOM           B.CE.d       Upper right CE mesial          2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  114    2 $         CCEDOM           B.CE.e       Upper right CE distal          3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  116    2 $         CLA_OM           B.LA.a       Upper right LA                 R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  118    2 $         CLALOM           B.LA.b       Upper right LA lingual         0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  120    2 $         CLABOM           B.LA.c       Upper right LA buccal          1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  122    2 $         CLAMOM           B.LA.d       Upper right LA mesial          2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  124    2 $         CLADOM           B.LA.e       Upper right LA distal          3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  126    2 $         CCA_OM           B.CA.a       Upper right CA                 R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  128    2 $         CCALOM           B.CA.b       Upper right CA lingual         0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  130    2 $         CCABOM           B.CA.c       Upper right CA buccal          1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  132    2 $         CCAMOM           B.CA.d       Upper right CA mesial          2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  134    2 $         CCADOM           B.CA.e       Upper right CA distal          3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  136    2 $         CP1_OM           B.P1.a       Upper right P1                 R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  138    2 $         CP1LOM           B.P1.b       Upper right P1 lingual         0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  140    2 $         CP1BOM           B.P1.c       Upper right P1 buccal          1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  142    2 $         CP1MOM           B.P1.d       Upper right P1 mesial          2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  144    2 $         CP1DOM           B.P1.e       Upper right P1 distal          3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  146    2 $         CP2_OM           B.P2.a       Upper right P2                 R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  148    2 $         CP2LOM           B.P2.b       Upper right P2 lingual         0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  150    2 $         CP2BOM           B.P2.c       Upper right P2 buccal          1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  152    2 $         CP2MOM           B.P2.d       Upper right P2 mesial          2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  154    2 $         CP2DOM           B.P2.e       Upper right P2 distal          3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  156    2 $         CM1_OM           B.M1.a       Upper right M1                 R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  158    2 $         CM1LOM           B.M1.b       Upper right M1 lingual         0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  160    2 $         CM1BOM           B.M1.c       Upper right M1 buccal          1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  162    2 $         CM1MOM           B.M1.d       Upper right M1 mesial          2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  164    2 $         CM1DOM           B.M1.e       Upper right M1 distal          3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  166    2 $         CM2_OM           B.M2.a       Upper right M2                 R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  168    2 $         CM2LOM           B.M2.b       Upper right M2 lingual         0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  170    2 $         CM2BOM           B.M2.c       Upper right M2 buccal          1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  172    2 $         CM2MOM           B.M2.d       Upper right M2 mesial          2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  174    2 $         CM2DOM           B.M2.e       Upper right M2 distal          3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  176    2 $         DCE_OM           C.CE.a       Lower left CE                  R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  178    2 $         DCELOM           C.CE.b       Lower left CE lingual          0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  180    2 $         DCEBOM           C.CE.c       Lower left CE buccal           1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  182    2 $         DCEMOM           C.CE.d       Lower left CE mesial           2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  184    2 $         DCEDOM           C.CE.e       Lower left CE distal           3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  186    2 $         DLA_OM           C.LA.a       Lower left LA                  R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  188    2 $         DLALOM           C.LA.b       Lower left LA lingual          0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  190    2 $         DLABOM           C.LA.c       Lower left LA buccal           1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  192    2 $         DLAMOM           C.LA.d       Lower left LA mesial           2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  194    2 $         DLADOM           C.LA.e       Lower left LA distal           3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  196    2 $         DCA_OM           C.CA.a       Lower left CA                  R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  198    2 $         DCALOM           C.CA.b       Lower left CA lingual          0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  200    2 $         DCABOM           C.CA.c       Lower left CA buccal           1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  202    2 $         DCAMOM           C.CA.d       Lower left CA mesial           2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  204    2 $         DCADOM           C.CA.e       Lower left CA distal           3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  206    2 $         DP1_OM           C.P1.a       Lower left P1                  R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  208    2 $         DP1LOM           C.P1.b       Lower left P1 lingual          0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  210    2 $         DP1BOM           C.P1.c       Lower left P1 buccal           1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  212    2 $         DP1MOM           C.P1.d       Lower left P1 mesial           2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  214    2 $         DP1DOM           C.P1.e       Lower left P1 distal           3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  216    2 $         DP2_OM           C.P2.a       Lower left P2                  R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  218    2 $         DP2LOM           C.P2.b       Lower left P2 lingual          0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  220    2 $         DP2BOM           C.P2.c       Lower left P2 buccal           1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  222    2 $         DP2MOM           C.P2.d       Lower left P2 mesial           2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  224    2 $         DP2DOM           C.P2.e       Lower left P2 distal           3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  226    2 $         DM1_OM           C.M1.a       Lower left M1                  R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  228    2 $         DM1LOM           C.M1.b       Lower left M1 lingual          0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  230    2 $         DM1BOM           C.M1.c       Lower left M1 buccal           1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  232    2 $         DM1MOM           C.M1.d       Lower left M1 mesial           2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  234    2 $         DM1DOM           C.M1.e       Lower left M1 distal           3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  236    2 $         DM2_OM           C.M2.a       Lower left M2                  R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  238    2 $         DM2LOM           C.M2.b       Lower left M2 lingual          0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  240    2 $         DM2BOM           C.M2.c       Lower left M2 buccal           1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  242    2 $         DM2MOM           C.M2.d       Lower left M2 mesial           2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  244    2 $         DM2DOM           C.M2.e       Lower left M2 distal           3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  246    2 $         ECE_OM           D.CE.a       Lower right CE                 R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  248    2 $         ECELOM           D.CE.b       Lower right CE lingual         0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  250    2 $         ECEBOM           D.CE.c       Lower right CE buccal          1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  252    2 $         ECEMOM           D.CE.d       Lower right CE mesial          2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  254    2 $         ECEDOM           D.CE.e       Lower right CE distal          3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  256    2 $         ELA_OM           D.LA.a       Lower right LA                 R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  258    2 $         ELALOM           D.LA.b       Lower right LA lingual         0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  260    2 $         ELABOM           D.LA.c       Lower right LA buccal          1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  262    2 $         ELAMOM           D.LA.d       Lower right LA mesial          2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  264    2 $         ELADOM           D.LA.e       Lower right LA distal          3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  266    2 $         ECA_OM           D.CA.a       Lower right CA                 R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  268    2 $         ECALOM           D.CA.b       Lower right CA lingual         0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  270    2 $         ECABOM           D.CA.c       Lower right CA buccal          1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  272    2 $         ECAMOM           D.CA.d       Lower right CA mesial          2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  274    2 $         ECADOM           D.CA.e       Lower right CA distal          3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  276    2 $         EP1_OM           D.P1.a       Lower right P1                 R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  278    2 $         EP1LOM           D.P1.b       Lower right P1 lingual         0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  280    2 $         EP1BOM           D.P1.c       Lower right P1 buccal          1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  282    2 $         EP1MOM           D.P1.d       Lower right P1 mesial          2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  284    2 $         EP1DOM           D.P1.e       Lower right P1 distal          3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  286    2 $         EP2_OM           D.P2.a       Lower right P2                 R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  288    2 $         EP2LOM           D.P2.b       Lower right P2 lingual         0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  290    2 $         EP2BOM           D.P2.c       Lower right P2 buccal          1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  292    2 $         EP2MOM           D.P2.d       Lower right P2 mesial          2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  294    2 $         EP2DOM           D.P2.e       Lower right P2 distal          3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  296    2 $         EM1_OM           D.M1.a       Lower right M1                 R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  298    2 $         EM1LOM           D.M1.b       Lower right M1 lingual         0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  300    2 $         EM1BOM           D.M1.c       Lower right M1 buccal          1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  302    2 $         EM1MOM           D.M1.d       Lower right M1 mesial          2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  304    2 $         EM1DOM           D.M1.e       Lower right M1 distal          3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  306    2 $         EM2_OM           D.M2.a       Lower right M2                 R= Sound
+                                                                                  U= Unerupted
+                                                                                  M= Missing (any reason)
+                                                                                  Y= Exclusion (tooth or roots
+                                                                                     can't be scored)
+                                                                                  SI= Surface codes indicated
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  308    2 $         EM2LOM           D.M2.b       Lower right M2 lingual         0= Caries
+                                                                                  6= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  310    2 $         EM2BOM           D.M2.c       Lower right M2 buccal          1= Caries
+                                                                                  7= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  312    2 $         EM2MOM           D.M2.d       Lower right M2 mesial          2= Caries
+                                                                                  8= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  314    2 $         EM2DOM           D.M2.e       Lower right M2 distal          3= Caries
+                                                                                  9= Restoration
+                                                                                  B= Blank
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  316    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  317    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

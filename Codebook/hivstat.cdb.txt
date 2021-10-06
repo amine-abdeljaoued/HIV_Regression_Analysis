@@ -1,0 +1,46 @@
+                               CODEBOOK
+Visit 42:       Women's Interagency HIV Study                              9-6-2017
+Codebook - WIHS HIVSTAT
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID                        WIHS ID number                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    1 1.0       STATUS                        Summarized HIV sero-status     1= Negative
+                                                                                  2= Prevalent
+                                                                                  4= Converter
+                                                                                  5= Converter identified at
+                                                                                     death
+
+   10    4 4.0       LNEGDATE                      Last negative date             10/01/1994= October 1, 1994
+                                                                                  .
+                                                                                  .
+                                                                                  09/30/2015= Sept 30, 2015
+
+   14    2 2.0       NEGVIS                        Reported converter last        1= Visit 1
+                                                   negative visit                 .
+                                                                                  .
+                                                                                  42= Visit 42
+
+   16    4 4.0       FPOSDATE                      First positive date            10/01/1994= October 1, 1994
+                                                                                  .
+                                                                                  .
+                                                                                  09/30/2015= Sept 30, 2015
+
+   20    2 2.0       POSVIS                        Reported converter first       1= Visit 1
+                                                   positive visit                 .
+                                                                                  .
+                                                                                  42= Visit 42
+                                                                                  88= No positive
+                                                                                  visit(STATUS=5)
+
+   22    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

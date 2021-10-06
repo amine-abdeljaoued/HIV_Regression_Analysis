@@ -1,0 +1,80 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+F22MED - Medication History (Repeating Segment) S9
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        17= 17
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    2 2.0       VTYP             OldA.2.a     Old: Core or 3-month VRS visit 1= CORE VISIT
+                                                                                  2= 3 MONTH VRS VISIT
+
+   13    3 3.0       DRGHMH           D.1          Hepatitis drug code            058= Ribavirin (Rebetrol,
+                                                                                       Copegus)
+                                                                                  090= Interferon alfa-2b
+                                                                                       (Intron A) or Interferon
+                                                                                       alfa-2a (Roferon-A)
+                                                                                  204= Epivir (lamivudine, 3-TC)
+                                                                                  213= Famciclovir
+                                                                                  224= Adefovir (Preveon, bis-
+                                                                                       POC-PMPA, GS 840)
+                                                                                  234= Tenofovir (Viread, bis-
+                                                                                       POC-PMPA)
+                                                                                  235= Rebetron (Ribavirin and
+                                                                                       interferon alfa 2b)
+                                                                                  239= FTC (Entricitabine,
+                                                                                       Corviracil)
+                                                                                  242= Pegylated interferon
+                                                                                       (PEGASYS, Peg int alfa
+                                                                                       2a, PEG-Intron, Peg int
+                                                                                       alfa 2b)
+                                                                                  253= Truvada (Viread +
+                                                                                       Emtriva)
+                                                                                  708= Infergen (interferon
+                                                                                       alfacon-1)
+                                                                                  709= Baraclude (entecavir,
+                                                                                       BMS-200475)
+                                                                                  710= Tyzeka (telbivudine)
+                                                                                  711= Alinia (nitazoxanide)
+                                                                                  713= Victrelis (boceprevir)
+                                                                                  714= Incivek (telaprevir)
+                                                                                  715= Olysio (simeprevir)
+                                                                                  716= Sovaldi (sofosbuvir)
+                                                                                  717= Harvoni (ledipasvir +
+                                                                                       sofosbuvir)
+                                                                                  718= Viekira Pak (ombitasvir/
+                                                                                       paritaprevir/ritonavir
+                                                                                       tablets + dasabuvir
+                                                                                       tablets)
+                                                                                  719= Daclatasvir
+                                                                                  720= Asunaprevir (BMS-650032)
+                                                                                  721= BMS-791325
+                                                                                  722= Technivie (ombitasvir+
+                                                                                       paritaprevir + ritonavir)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   16   50 $         SPDGMH           D.1          Specify name of "other"        Character
+                                                   hepatitis medication:
+
+   66    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   67    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

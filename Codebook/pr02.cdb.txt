@@ -1,0 +1,994 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+PR02 - Postpartum Form
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    8 $         VERSP2           A.0          Form version                   01/01/94= 01/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   19    3 $         INITP2           A.0          Initials of person completing  Character
+                                                   form
+
+   22    2 2.0       PERSP2           OldA.1       Old: Person completing form:   1= CLINICIAN
+                                                   clinician or OB designee       2= OB DESIGNEE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   24    2 2.0       MRECP2           A.2          Able to obtain medical record  1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   26   50 $         RMRCP2           A.2.a        Reason unable to obtain        Character
+                                                   medical record
+
+   76    8 $         CDATP2           A.3          Date of chart review           04/01/99= 04/01/99
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   84    8 $         IDATP2           OldA.4       Old: Date of interview by      04/01/99= 04/01/99
+                                                   clinician                      .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   92    8 $         TRMDP2           A.5          Date of delivery               04/01/98= 04/01/98
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  100    2 2.0       APGSP2           A.6          Approximate gestation in weeks 1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  45= 45
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  102    2 2.0       FNUMP2           A.7          Total # of births              0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  5= 5
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  104    2 2.0       RUPTP2           B.1          Intrapartum complications:     1= YES
+                                                   preterm, premature rupture of  2= NO
+                                                   membranes                      -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  106    2 2.0       FVR_P2           B.2          Intrapartum complications:     1= YES
+                                                   maternal fever more than 38 C  2= NO
+                                                   or 100.4 F                     -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  108    2 2.0       CRAMP2           B.3          Intrapartum complications:     1= YES
+                                                   clinical chorioamnionitis      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  110    2 2.0       PECLP2           B.4          Intrapartum complications:     1= YES
+                                                   pre-eclampsia                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  112    2 2.0       ECL_P2           B.5          Intrapartum complications:     1= YES
+                                                   eclampsia                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  114    2 2.0       HEM1P2           B.6          Intrapartum complications:     1= YES
+                                                   hemorrhage/hemodynamic instab, 2= NO
+                                                   BP less 90/60, HR more than    -1= NA (Skipped)
+                                                   120                            -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  116    2 2.0       HEM2P2           B.7          Intrapartum complications:     1= YES
+                                                   hemorrhage requiring surgical  2= NO
+                                                   procedure                      -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  118    2 2.0       HEM3P2           B.8          Intrapartum complications:     1= YES
+                                                   hemorrhage requiring           2= NO
+                                                   transfusion                    -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  120    2 2.0       GHRPP2           B.9          Intrapartum complications:     1= YES
+                                                   genital herpes                 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  122    2 2.0       GCNDP2           B.10         Intrapartum complications:     1= YES
+                                                   genital condyloma              2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  124    2 2.0       PLPRP2           B.11         Intrapartum complications:     1= YES
+                                                   placenta previa                2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  126    2 2.0       ABPLP2           B.12         Intrapartum complications:     1= YES
+                                                   abruptio placenta              2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  128    2 2.0       CPRLP2           B.13         Intrapartum complications:     1= YES
+                                                   cord prolapse                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  130    2 2.0       PRB_P2           B.14         Intrapartum complications:     1= YES
+                                                   other                          2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  132   25 $         PRBSP2           B.14.a       Specify other intrapartum      Character
+                                                   complications
+
+  157    2 2.0       RMEMP2           OldC.1       Old: Type of rupture of        1= Artificial
+                                                   membranes                      2= Spontaneous
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know /Not recorded
+                                                                                  -9 or Blank= Missing
+
+  159    8 $         MEMDP2           OldC.1.a     Old: Date of rupture of        04/01/98= 04/01/98
+                                                   membranes                      .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  167    5 time5.    MEMTP2           OldC.1.b     Old: Time of rupture of        01:00= 01:00
+                                                   membranes                      .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  172    2 2.0       METMP2           OldC.1.b     Old: AM/PM for time of         1= AM
+                                                   rupture of membranes           2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  174    2 2.0       AMFLP2           OldC.2       Old: Character of amniotic     1= Clear
+                                                   fluid                          2= Meconium
+                                                                                  3= Port-wine
+                                                                                  4= Purulent
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know /Not recorded
+                                                                                  -9 or Blank= Missing
+
+  176    2 2.0       ILABP2           OldC.3       Old: Onset of spontaneous/     1= YES
+                                                   induced labor resulting in     2= NO
+                                                   delivery                       -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  178    8 $         LABDP2           OldC.3.a     Old: Date of onset of          04/01/98= 04/01/98
+                                                   spontaneous/induced labor      .
+                                                   resulting in delivery          .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  186    5 time5.    LABTP2           OldC.3.b     Old: Time of onset of          01:00= 01:00
+                                                   spontaneous/induced labor      .
+                                                   resulting in delivery          .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  191    2 2.0       LATMP2           OldC.3.b     Old: AM/PM for time of onset   1= AM
+                                                   of spontaneous/induced labor   2= PM
+                                                   resulting in delivery          -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  193    2 2.0       LINDP2           C.4          Labor induced                  1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  195    2 2.0       PRUPP2           C.5.a        Reason labor induced:          1= YES
+                                                   premature rupture of membranes 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  197    2 2.0       CHORP2           C.5.b        Reason labor induced:          1= YES
+                                                   chorioamnionitis               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  199    2 2.0       HCOMP2           C.5.c        Reason labor induced:          1= YES
+                                                   hypertension problems          2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  201    2 2.0       MDIAP2           C.5.d        Reason labor induced:          1= YES
+                                                   maternal diabetes              2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  203    2 2.0       MOTHP2           C.5.e        Reason labor induced: other    1= YES
+                                                   maternal indication            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  205   25 $         MOTSP2           C.5.e.i      Specify other maternal         Character
+                                                   indication for induced labor
+
+  230    2 2.0       IUGRP2           C.5.f        Reason labor induced: fetal    1= YES
+                                                   indication, IUGR               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  232    2 2.0       FIPDP2           C.5.g        Reason labor induced: fetal    1= YES
+                                                   indication, postdate           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  234    2 2.0       FOTHP2           C.5.h        Reason labor induced: other    1= YES
+                                                   fetal indication               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  236   25 $         FOTSP2           C.5.h.i      Specify other fetal            Character
+                                                   indication for induced labor
+
+  261    2 2.0       FDISP2           C.6          Fetal distress                 1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  263    2 2.0       FSEUP2           OldC.7       Old: Fetal scalp electrode     1= YES
+                                                   used                           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  265    8 $         DFA_P2           OldC.7.a     Old: Date of first             04/01/98= 04/01/98
+                                                   application of fetal electrode .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  273    5 time5.    TFA_P2           OldC.7.b     Old: Time of first             01:00= 01:00
+                                                   application of fetal electrode .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  278    2 2.0       TFTMP2           OldC.7.b     Old: AM/PM for time of first   1= AM
+                                                   application of fetal electrode 2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  280    2 2.0       IUPCP2           OldC.8       Old: Intrauterine pressure     1= YES
+                                                   catheter (IUPC) internal       2= NO
+                                                   monitoring                     -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  282    8 $         DFAPP2           OldC.8.a     Old: Date of first             04/01/98= 04/01/98
+                                                   application IUPC internal      .
+                                                   monitoring                     .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  290    5 time5.    TFAPP2           OldC.8.b     Old: Time of first             01:00= 01:00
+                                                   application IUPC internal      .
+                                                   monitoring                     .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  295    2 2.0       FATMP2           OldC.8.b     Old: AM/PM for time of first   1= AM
+                                                   application IUPC internal      2= PM
+                                                   monitoring                     -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  297    2 2.0       FSBSP2           OldC.9       Old: Fetal scalp blood         1= YES
+                                                   sampling done                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  299    2 2.0       SBSNP2           OldC.9.a     Old: # of times fetal scalp    1= 1
+                                                   blood sampling done            .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  301    2 2.0       DINFP2           C.10         Delivery information available 1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  303    8 $         INDTP2           C.10.a       Date of delivery               04/01/98= 04/01/98
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  311    5 time5.    INTMP2           C.10.b       Time of delivery               01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  316    2 2.0       TMINP2           C.10.b       AM/PM for time of delivery     1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  318    2 2.0       TDELP2           C.11         Type of delivery               1= Vaginal
+                                                                                  2= Cesarean
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  320    2 2.0       VDELP2           C.12         Type of vaginal delivery       1= Cephalic, spontaneous
+                                                                                  2= Cephalic, assisted with
+                                                                                     forceps
+                                                                                  3= Cephalic, assisted with
+                                                                                     vacuum
+                                                                                  4= Cephalic, assisted with
+                                                                                     forceps and vacuum
+                                                                                  5= Breech, with or without
+                                                                                     use of forceps
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know / Not recorded
+                                                                                  -9 or Blank= Missing
+
+  322    2 2.0       ELACP2           C.13         Episiotomy or laceration       1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  324    2 2.0       EPSTP2           OldC.13      Old: Episiotomy                1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  326    2 2.0       PERIP2           OldC.14      Old: Extension of episiotomy   1= YES
+                                                   or laceration of perineum      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  328    2 2.0       EDEGP2           OldC.14.a    Old: Degree of extension or    1= 1st degree
+                                                   laceration                     2= 2nd degree
+                                                                                  3= 3rd degree
+                                                                                  4= 4th degree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know / Not recorded
+                                                                                  -9 or Blank= Missing
+
+  330    2 2.0       LOTHP2           OldC.15      Old: Other lacerations         1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  332    2 2.0       VLACP2           OldC.15.a    Old: Vaginal lacerations       1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  334    2 2.0       VULVP2           OldC.15.b    Old: Other vulvar lacerations  1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  336    2 2.0       HEMAP2           C.16         Vaginal or vulvar hematoma     1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  338    2 2.0       PINFP2           OldC.17      Old: Information on placenta   1= YES
+                                                   delivery available             2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  340    2 2.0       MEXTP2           OldC.17.a    Old: Spontaneous/manual        1= YES
+                                                   extraction of placenta         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  342    2 2.0       CRTGP2           OldC.17.b    Old: Curettage                 1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  344    2 2.0       CDELP2           C.18         Type of cesarean delivery      1= Primary, planned
+                                                                                  2= Primary, unplanned
+                                                                                  3= Repeat, planned
+                                                                                  4= Repeat, unplanned
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know / Not recorded
+                                                                                  -9 or Blank= Missing
+
+  346    2 2.0       CDSPP2           C.19.a       Indication for Cesarean:       1= YES
+                                                   Cephalopelvic disproportion    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  348    2 2.0       FAILP2           C.19.b       Indication for Cesarean:       1= YES
+                                                   Failure to progress            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  350    2 2.0       FDSTP2           C.19.c       Indication for Cesarean:       1= YES
+                                                   Fetal distress                 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  352    2 2.0       ABLIP2           C.19.d       Indication for Cesarean:       1= YES
+                                                   Breech/other abnormal lie      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  354    2 2.0       AMH_P2           C.19.e       Indication for Cesarean:       1= YES
+                                                   Active maternal herpes         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  356    2 2.0       PPRVP2           C.19.f       Indication for Cesarean:       1= YES
+                                                   Placenta previa                2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  358    2 2.0       MUGTP2           C.19.g       Indication for Cesarean:       1= YES
+                                                   Multiple gestation             2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  360    2 2.0       PHIVP2           C.19.h       Indication for Cesarean:       1= YES
+                                                   Prevention of HIV transmission 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  362    2 2.0       MND_P2           C.19.i       Indication for Cesarean:       1= YES
+                                                   Maternal indication            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  364   25 $         SMNDP2           C.19.i.i     Specify maternal indication    Character
+                                                   for cesarean
+
+  389    2 2.0       FND_P2           C.19.j       Indication for Cesarean:       1= YES
+                                                   Fetal indication               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  391   25 $         SFNDP2           C.19.j.i     Specify fetal indication for   Character
+                                                   cesarean
+
+  416    2 2.0       CINOP2           C.19.k       Indication for Cesarean: other 1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  418   25 $         SCINP2           C.19.k.i     Specify other indication for   Character
+                                                   cesarean
+
+  443    2 2.0       CSECP2           C.20         Type of Cesarean section       1= Low vertical
+                                                   (incision)                     2= Low transverse
+                                                                                  3= Classical
+                                                                                  4= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know / Not recorded
+                                                                                  -9 or Blank= Missing
+
+  445   25 $         SSECP2           C.20.a       Specify other cesarean         Character
+                                                   section incision
+
+  470    8 $         CDSGP2           OldC.21.a    Old: Date cesarean section     04/01/98= 04/01/98
+                                                   began                          .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  478    5 time5.    CTIMP2           OldC.21.b    Old: Time cesarean section     01:00= 01:00
+                                                   began                          .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  483    2 2.0       CTM_P2           OldC.21.b    Old: AM/PM for time cesarean   1= AM
+                                                   section began                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  485    8 $         ENDDP2           OldC.22.a    Old: Date cesarean section     04/01/98= 04/01/98
+                                                   ended                          .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  493    5 time5.    ENDTP2           OldC.22.b    Old: Time cesarean section     01:00= 01:00
+                                                   ended                          .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  498    2 2.0       EDTMP2           OldC.22.b    Old: AM/PM for time cesarean   1= AM
+                                                   section ended                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  500    2 2.0       ANSTP2           C.23         Delivery anesthesia            1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  502    2 2.0       GNRLP2           C.23.a       Delivery anesthesia: general   1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  504    2 2.0       EPDRP2           C.23.b       Delivery anesthesia: epidural  1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  506    2 2.0       PDNDP2           C.23.c       Delivery anesthesia: pudendal  1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  508    2 2.0       SPNLP2           C.23.d       Delivery anesthesia: spinal    1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  510    2 2.0       LOCLP2           C.23.e       Delivery anesthesia: local     1= YES
+                                                   (perineum)                     2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  512    2 2.0       ANSOP2           C.23.f       Delivery anesthesia: other     1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  514   25 $         SANSP2           C.23.f.i     Specify other delivery         Character
+                                                   anesthesia
+
+  539    2 2.0       LCMPP2           C.24         Other complications of labor   1= YES
+                                                   and delivery                   2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  541   50 $         CMPSP2           C.24.a       Specify other complications    Character
+                                                   of labor and delivery
+
+  591    2 2.0       AFMHP2           D.1          Admission (first) maternal     1= Done
+                                                   hematocrit                     2= Not done
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  593    4 4.1       AMHPP2           D.1.a        Specify admission (first)      30.0= 30.0
+                                                   maternal hematocrit            .
+                                                                                  .
+                                                                                  50.0= 50.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  597    2 2.0       INABP2           E.1          Intrapartum antibiotics given  1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  599    2 2.0       INGGP2           E.2          Intrapartum glucocorticoids    1= YES
+                                                   given                          2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  601    2 2.0       INAGP2           E.3          Intrapartum antivirals given   1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  603    2 2.0       INZGP2           E.3.a        Intravenous zidovudine given   1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  605    2 2.0       TOTHP2           OldE.3.b     Old: # of hours intravenous    1= 1
+                                                   zidovudine was given prior to  .
+                                                   delivery                       .
+                                                                                  48= 48
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  607    4 4.0       TOTDP2           OldE.3.c     Old: Total dosage of           1= 1
+                                                   zidovudine given prior to      .
+                                                   delivery (in milligrams)       .
+                                                                                  7500= 7500
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  611    2 2.0       DIALP2           OldE.3.d     Old: Cervical dilation at      0= 0
+                                                   initiation of zidovudine (in   .
+                                                   centimeters)                   .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  613    2 2.0       OANTP2           E.3.e        Other antivirals, including    1= YES
+                                                   oral zidovudine, given         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  615   50 $         ANTSP2           E.3.e.i      Specify other antivirals given Character
+
+  665    2 2.0       HRSPP2           F.1          Postpartum: maternal           1= YES
+                                                   hemorrhage requiring surgical  2= NO
+                                                   procedure                      -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  667    2 2.0       HRTRP2           F.2          Postpartum: maternal           1= YES
+                                                   hemorrhage requiring           2= NO
+                                                   transfusion                    -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  669    2 2.0       HHDIP2           F.3          Postpartum: hemorrhage/        1= YES
+                                                   hemodynamic instab, BP less    2= NO
+                                                   90/60, HR more than 120        -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  671    2 2.0       ENDMP2           F.4          Postpartum: endometriosis      1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  673    2 2.0       MTRAP2           F.5          Postpartum: mastitis           1= YES
+                                                   requiring antibiotics          2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  675    2 2.0       CSRTP2           F.6          Postpartum: cystitis           1= YES
+                                                   requiring treatment            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  677    2 2.0       PLPSP2           F.7          Postpartum: pyelonephritis     1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  679    2 2.0       FBMBP2           F.8          Postpartum: febrile morbidity  1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  681    2 2.0       IOCIP2           F.9          Postpartum: infection of       1= YES
+                                                   cesarean incision              2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  683    2 2.0       EPIIP2           F.10         Postpartum: episiotomy         1= YES
+                                                   infection                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  685    2 2.0       OFECP2           F.11         Postpartum: other infection    1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  687   25 $         FECSP2           F.11.a       Specify other postpartum       Character
+                                                   infection
+
+  712    2 2.0       PTLGP2           F.12         Postpartum tubal ligation      1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  714    2 2.0       PHYSP2           F.13         Postpartum hysterectomy        1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  716    2 2.0       PPDCP2           F.14         Postpartum D and C             1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  718    2 2.0       OPSPP2           F.15         Other postpartum surgical      1= YES
+                                                   procedure                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  720   25 $         OPSSP2           F.15.a       Specify other postpartum       Character
+                                                   surgical procedure
+
+  745    2 2.0       OPMCP2           F.16         Other postpartum maternal      1= YES
+                                                   complications                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  747   25 $         OPMSP2           F.16.a       Specify other postpartum       Character
+                                                   maternal complications
+
+  772    2 2.0       MEDSP2           G.1          Meds prescribed (other than    1= YES
+                                                   HIV-related) upon discharge    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  774   25 $         MED1P2           G.1.a        Specify medication 1           Character
+
+  799   25 $         MED2P2           G.1.b        Specify medication 2           Character
+
+  824   25 $         MED3P2           G.1.c        Specify medication 3           Character
+
+  849   25 $         MED4P2           G.1.d        Specify medication 4           Character
+
+  874    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  875    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

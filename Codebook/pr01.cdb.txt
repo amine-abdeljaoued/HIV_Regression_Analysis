@@ -1,0 +1,326 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+PR01 - Pregnancy Form
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    8 $         VERSP1           A.0          Form version                   01/01/93= 01/01/93
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   19    3 $         INITP1           A.0          Initials of person completing  Character
+                                                   form
+
+   22    2 2.0       PERSP1           OldA.1       Old: Person completing form:   1= CLINICIAN
+                                                   clinician or OB designee       2= OB DESIGNEE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   24    2 2.0       INUMP1           OldA.2       Old: Interview number          1= FIRST INTERVIEW
+                                                                                  2= SECOND INTERVIEW
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   26    8 $         IDATP1           OldA.3       Old: Date of interview by      04/01/99= 04/01/99
+                                                   clinician                      .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   34    2 2.0       MRECP1           A.4          Able to obtain medical record  1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   36   50 $         RSNMP1           A.4.a        Reason unable to obtain        Character
+                                                   medical record
+
+   86    8 $         CDATP1           A.5          Date of chart review           04/01/99= 04/01/99
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   94    2 2.0       LMP_P1           A.6.a        Gestation of pregnancy         1= YES
+                                                   determined by LMP              2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   96    8 $         LMPDP1           A.6.a.i      Date of LMP                    04/01/98= 04/01/98
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  104    8 $         LEDCP1           A.6.a.ii     EDC (based on LMP)             04/01/98= 04/01/98
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  112    2 2.0       EXAMP1           A.6.b        Gestation of pregnancy         1= YES
+                                                   determined by exam within      2= NO
+                                                   first 20 weeks                 -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  114    8 $         EXDTP1           A.6.b.i      Date of exam                   04/01/98= 04/01/98
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  122    2 2.0       NWKGP1           A.6.b.ii     Number of weeks gestation at   1= 1
+                                                   exam                           .
+                                                                                  .
+                                                                                  20= 20
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  124    2 2.0       USNDP1           A.6.c        Gestation of pregnancy         1= YES
+                                                   determined by ultrasound       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  126    8 $         USDDP1           A.6.c.i      Date of ultrasound             04/01/98= 04/01/98
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  134    2 2.0       NWKUP1           A.6.c.ii     Number of weeks gestation at   1= 1
+                                                   ultrasound                     .
+                                                                                  .
+                                                                                  43= 43
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  136    2 2.0       ICRVP1           B.1          Incompetent cervix requiring   1= YES
+                                                   placement of cerclage          2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  138    2 2.0       CERRP1           B.1.a        Cerclage removal (ante-,       1= YES
+                                                   intra-, or postpartum)         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  140    2 2.0       BL28P1           B.2          Bleeding at less than 28 weeks 1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  142    2 2.0       BG28P1           B.3          Bleeding at greater than 28    1= YES
+                                                   weeks                          2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  144    2 2.0       PHYPP1           B.4          Pregnancy induced hypertension 1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  146    2 2.0       CHYPP1           B.5          Chronic hypertension           1= YES
+                                                   requiring treatment            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  148    2 2.0       DIABP1           B.6          Diabetes                       1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  150    2 2.0       PDIAP1           B.6.a        Pre-gestational diabetes       1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  152    2 2.0       GDIAP1           B.6.b        Gestational diabetes           1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  154    2 2.0       ITDPP1           B.6.c        Insulin therapy during         1= YES
+                                                   pregnancy                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  156    2 2.0       URETP1           B.7          Intrauterine growth            1= YES
+                                                   retardation (suspected)        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  158    2 2.0       CYSTP1           B.8          Cystitis (requiring treatment) 1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  160    2 2.0       PYELP1           B.9          Pyelonephritis                 1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  162    2 2.0       OTHIP1           B.10         Other clinically significant   1= YES
+                                                   infections during pregnancy    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  164   25 $         OTHSP1           B.10.a       Specify other clinically       Character
+                                                   significant infections during
+                                                   pregnancy
+
+  189    2 2.0       OB__P1           B.11         Other clinically significant   1= YES
+                                                   obstetrical problems           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  191   25 $         OB_SP1           B.11.a       Specify other clinically       Character
+                                                   significant obstetrical
+                                                   problems
+
+  216    2 2.0       PLABP1           B.12         Premature labor requiring      1= YES
+                                                   tocolysis                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  218    2 2.0       AAB_P1           C.1          Antepartum antibiotics taken   1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  220   50 $         AABSP1           C.1.a        Specify antepartum             Character
+                                                   antibiotics taken
+
+  270    2 2.0       AGC_P1           C.2          Antepartum glucocorticoids     1= YES
+                                                   taken                          2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  272   50 $         AGCSP1           C.2.a        Specify antepartum             Character
+                                                   glucocorticoids taken
+
+  322    2 2.0       AZV_P1           C.3          Antepartum zidovudine (AZT)    1= YES
+                                                   or Combivir taken              2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= DON'T KNOW / NOT RECORDED
+                                                                                  -9 or Blank= Missing
+
+  324    2 2.0       ADOSP1           C.3.a        Average number of doses AZT    1= 1
+                                                   or Combivir per week in last   .
+                                                   month                          .
+                                                                                  35= 35
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  326    8 $         DZIDP1           C.3.b        Date during pregnancy when     04/01/98= 04/01/98
+                                                   AZT/Combivir was first taken   .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  334    2 2.0       COM_P1           C.4          Comments                       1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  336  100 $         COMSP1           C.4.a        Specify comments               Character
+
+  436    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  437    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

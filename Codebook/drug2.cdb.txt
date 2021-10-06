@@ -1,0 +1,249 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+DRUG2 - NON-ANTIVIRAL MEDICATIONS
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    2 2.0       VTYP             OldA.0       Old: Core or VRS visit         1= CORE VISIT
+                                                                                  2= 3 MONTH VRS VISIT
+
+   13    8 $         VERSD2           A.0          Form version                   01/01/93= 01/01/93
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   21    3 $         INITD2           A.0          Initials of person completing  Character
+                                                   form
+
+   24    8 $         DCMPD2           A.0          Date form completed            01/01/93= 01/01/93
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   32    3 3.0       DRUGD2           A.0          Non-antiviral drug code        090= Interferon alpha-2b
+                                                                                       (Intron-A) / Interferon
+                                                                                       alfa-2a (Roferon-A)
+                                                                                  091= Foscarnet (Foscavir)
+                                                                                  093= Rifabutin (Mycobutin)
+                                                                                  112= Bactrim (Septra,
+                                                                                       cotrimoxazole,
+                                                                                       trimethoprim-
+                                                                                       sulfamethoxazole, TMP/
+                                                                                       SMZ)
+                                                                                  113= Dapsone
+                                                                                  114= Pentamidine (aerosolized)
+                                                                                  116= Diflucan (Fluconazole)
+                                                                                  117= Medication to increase
+                                                                                       red blood cell count
+                                                                                       (Erythropoietin, Epogen,
+                                                                                       Procrit, EPO)
+                                                                                  124= Amphotericin B (Ampho B)
+                                                                                  125= Ganciclovir (DHPG,
+                                                                                       cytovene)
+                                                                                  127= Nizoral (Ketoconazole)
+                                                                                  137= Myambutol (Ethambutol)
+                                                                                  138= INH (Isoniazid)
+                                                                                  139= Rifadin (Rifampin)
+                                                                                  144= Nystatin (Mycostatin)
+                                                                                  145= Mycelex or Lotrimin
+                                                                                       (Clotrimazole)
+                                                                                  146= Zovirax (Acyclovir)
+                                                                                  152= Zithromax (Azithromycin)
+                                                                                  153= Cipro (Ciprofloxacin)
+                                                                                  154= Lamprene (Clofazimine)
+                                                                                  157= Medication to increase
+                                                                                       white blood cell count
+                                                                                       (G-CSF, GM-CSF, Neupogen)
+                                                                                  169= Sporanox (Itraconazole)
+                                                                                  182= PZA (Pyrazinamide)
+                                                                                  184= Biaxin (Clarithromycin)
+                                                                                  190= Meprone (Atovaquone)
+                                                                                  198= Valtrex (Valcyclovir)
+                                                                                  213= Famvir (Famcyclovir)
+                                                                                  228= Oxandrin (Oxandralone)
+                                                                                  229= Monistat (Miconazole)
+                                                                                  230= Terazol (Terconazole)
+                                                                                  231= Cidofovir (Vistide)
+                                                                                  232= Nandralone (Deca-
+                                                                                       Durabolin)
+                                                                                  235= Rebetron (Ribavirin and
+                                                                                       Alpha Interferon)
+                                                                                  242= Pegylated interferon
+                                                                                       (PEGASYS, PEG-Intron A,
+                                                                                       Peg Interferon alpha-2a)
+                                                                                  247= Vfend (Voriconazole)
+                                                                                  507= Hormones
+                                                                                  514= Bronchodilators/
+                                                                                       antiasthmatics
+                                                                                  532= Antidepressants
+                                                                                  540= Methadone
+                                                                                  702= Prednisone (old) and
+                                                                                       other steroids
+                                                                                  704= Prednisone (Deltasone)
+                                                                                  705= Methyl-prednisolone
+                                                                                       (Medrol)
+                                                                                  706= Orapred
+                                                                                  707= Prednisolone (Prelone)
+                                                                                  998= Other medication (from
+                                                                                       Drug List 2)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   35   50 $         SDRGD2           OldA.0       OLD: Name of other medication  Character
+
+   85    2 2.0       MREPD2           A.0          Method by which use of         1= Self report
+                                                   medication was reported        2= Participant brought
+                                                                                     written list to visit
+                                                                                  3= Participant brought
+                                                                                     medication bottles to visit
+                                                                                  4= Participant brought
+                                                                                     pharmacy record to visit
+                                                                                  5= Record obtained directly
+                                                                                     from pharmacy
+                                                                                  6= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   87   40 $         SOMRD2           A.0          Specify other method of        Character
+                                                   reporting medication use
+
+  127    2 2.0       ACSSD2           .1.A         Access to medication through   1= Regular prescription
+                                                   what method                    2= Compassionate use program
+                                                                                  3= Research study
+                                                                                  4= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  129    2 2.0       BLNDD2           .1.B         Blinded to treatment in study  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  131    2 2.0       TXTOD2           Old.1        OLD: Medication to treat TB,   1= Tuberculosis
+                                                   PCP or pneumonia               2= Positive skin test for TB
+                                                                                     (positive PPD)
+                                                                                  3= Pneumocystis Carinii
+                                                                                     Pneumonia (PCP)
+                                                                                  4= Pneumonia, non-PCP
+                                                                                  5= Mycobacterium Avium (MAC)
+                                                                                  6= None of the Above
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  133    2 2.0       TB__D2           .2.a         Taking drug to tx or prevent   1= YES
+                                                   TB                             2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  135    2 2.0       PPPDD2           .2.b         Taking drug to tx or prevent   1= YES
+                                                   positive skin test for TB      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  137    2 2.0       PCP_D2           .2.c         Taking drug to tx or prevent   1= YES
+                                                   PJ or PCP                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  139    2 2.0       PNEUD2           .2.d         Taking drug to tx or prevent   1= YES
+                                                   pneumonia, non-PCP             2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  141    2 2.0       MAC_D2           .2.e         Taking drug to tx or prevent   1= YES
+                                                   MAC                            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  143    2 2.0       OTHCD2           .2.f         Taking drug to tx or prevent   1= YES
+                                                   other condition                2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  145   25 $         SOCND2           .2.f         Specify other condition        Character
+
+  170    3 3.0       NUMTD2           Old3         Old: # of times take this non  1= 1
+                                                   a-v drug                       .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  173    2 2.0       DWMYD2           Old3         Old: Non a-v drug, # of times  1= Day
+                                                   unit                           2= Week
+                                                                                  3= Month
+                                                                                  4= Year
+                                                                                  5= Last 6 months
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  175    2 2.0       LNGTD2           4            Length of time used drug       1= 1 week or less
+                                                   since last visit               2= More then 1 Week but less
+                                                                                     than 1 month
+                                                                                  3= 1-2 months
+                                                                                  4= 3-4 months
+                                                                                  5= 5-6 months
+                                                                                  6= More than 6 Months
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  177    2 2.0       CURRD2           5            Currently taking drug          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  179    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  180    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

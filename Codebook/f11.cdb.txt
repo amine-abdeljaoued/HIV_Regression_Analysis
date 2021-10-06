@@ -1,0 +1,303 @@
+                               CODEBOOK
+Women's Interagency HIV Study                              9-6-2017
+Form 11: Specimens Collected During the Physical Exam
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0A         Participant's id               1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0B         Visit number                   1= Visit 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= Visit 99
+
+   11    6 $         FKEY             A.0          Form's unique key              Character
+
+   17    3 $         INITSP           A.0C         Initials                       Character
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   20    8 $         VERSSP           A.0D         Form version                   01/01/93= January 1, 1993
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   28    8 $         ORDTSP           A.1          Date specimens collected       10/01/94= October 1, 1994
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   36    2 2.0       OCANSP           A.2          Oral candida on culturette     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   38   25 $         OCRNSP           A.2A         Reason for no oral candida     Character
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63    2 2.0       HSVCSP           A.3          Culture for HSV                1= Yes
+                                                                                  2= No
+                                                                                  3= N/A
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   65   25 $         HCRNSP           A.3A         Reason for no hsv culture      Character
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   90    8 $         URDTSP           B.1          Date urine specimens collected 10/01/94= October 1, 1994
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   98    2 2.0       PRGTSP           B.2          Pregnancy test                 1= Yes
+                                                                                  2= No
+                                                                                  3= N/A
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  100   25 $         PTRNSP           B.2A         Reason for no pregnancy test   Character
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  125    2 2.0       URDPSP           B.3          Urinalysis (dipstick)          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  127   25 $         UDRNSP           B.3A         Reason for no                  Character
+                                                   urinalysis(dipstick)           -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  152    2 2.0       URCXSP           B.4          Urine culture                  1= Yes
+                                                                                  2= No
+                                                                                  3= N/A
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  154   25 $         CRNCSP           B.4A         Reason for no urine culture    Character
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  179    2 2.0       URLCSP           B.5          Urine for LCR                  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  181   25 $         ULRNSP           B.5A         Reason for no urine for LCR    Character
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  206    2 2.0       URRPSP           B.6          Urine for repository           1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  208   25 $         URRNSP           B.6A         Reason for no urine for        Character
+                                                   repository                     -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  233    8 $         GYDTSP           C.1          Date GYN specimens collected   10/01/94= October 1, 1994
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  241    2 2.0       VCCXSP           C.2          Vaginal candida culture        1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  243   25 $         VCRNSP           C.2A         Reason for no vagina candida   Character
+                                                   culture                        -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  268    2 2.0       BVSLSP           C.3          Slide for bacterial vaginosis  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  270   25 $         BVRNSP           C.3A         Reason for no slide for BV     Character
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  295    2 2.0       HSVSSP           C.4          Swab(s) of ulcer/fissures for  1= Yes
+                                                   hsv                            2= No
+                                                                                  3= N/A
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  297   25 $         HSRNSP           C.4B         Reason for no hsv swab(s)      Character
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  322    2 2.0       HSVNSP           C.4A         Number of swabs for hsv        1= 1 Swab
+                                                                                  .
+                                                                                  .
+                                                                                  4= 4 Swabs
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  324    2 2.0       PAPSSP           C.5          Glass slide for pap smear      1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  326   25 $         PSRNSP           C.5A         Reason for no slide for pap    Character
+                                                   smear                          -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  351    2 2.0       CGSWSP           C.6          Swab for gen-probe for gc/     1= Yes
+                                                   chlamydia                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  353   25 $         CGRNSP           C.6A         Reason for no swab for gc/     Character
+                                                   chlamydia                      -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  378    2 2.0       SIFSSP           C.7          Swab for syphilis dfa          1= Yes
+                                                                                  2= No
+                                                                                  3= N/A
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  380   25 $         SFRNSP           C.7B         Reason for no swab for         Character
+                                                   syphilis dfa                   -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  405    2 2.0       SIFNSP           C.7A         Number of swabs for syphilis   1= 1 Swab
+                                                   dfa                            .
+                                                                                  .
+                                                                                  4= 4 Swabs
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  407    2 2.0       CLMSSP           C.8          Swab for lcr for chlamydia     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  409   25 $         CLRNSP           C.8A         Reason for no lcr swab for     Character
+                                                   chlamydia                      -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  434    2 2.0       TRCSSP           C.9          Swab for trichomonas culture   1= Yes
+                                                                                  2= No
+                                                                                  3= N/A
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  436   25 $         TRRNSP           C.9A         Reason for no trichomonas      Character
+                                                   culture                        -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  461    2 2.0       CVLFSP           C.10         CVL fluid                      1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  463   25 $         CVRNSP           C.10A        Reason for no CVL fluid        Character
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  488    1 $         ESTAT            A.0          Edit Status                    CharacterD= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  489    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

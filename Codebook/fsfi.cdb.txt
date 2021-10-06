@@ -1,0 +1,326 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+FSFI - Female Sexual Functioning Inventory
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        25= 25
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    8 $         VERSFS           A.3          Form version                   10/01/06= 10/01/06
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   19    8 $         IDTEFS           A.4          Date of interview              10/01/02= 10/01/02
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   27    3 $         INITFS           A.5          Initials of person completing  Character
+                                                   form
+
+   30    8 $         LVISFS           A.6          Date of last study visit       10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   38    5 time5.    STIMFS           A.7          Time began                     1:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   43    2 2.0       SMERFS           A.7          AM/PM for time began           1= AM
+                                                                                  2= PM
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   45    5 time5.    ETIMFS           A.8          Time ended                     1:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   50    2 2.0       EMERFS           A.8          AM/PM for time ended           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   52    2 2.0       ODESFS           B.1          Past 4 weeks - how often felt  1= Almost always or always
+                                                   sexual desire                  2= Most times, or more than
+                                                                                     half the time
+                                                                                  3= Sometimes, or about half
+                                                                                     the time
+                                                                                  4= A few times, or less than
+                                                                                     half the time
+                                                                                  5= Almost never or never
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   54    2 2.0       LDESFS           B.2          Past 4 weeks - level sexual    1= Very high
+                                                   desire                         2= High
+                                                                                  3= Moderate
+                                                                                  4= Low
+                                                                                  5= Very low or none at all
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   56    2 2.0       PROBFS           B.3          Past 4 weeks - problems/       1= YES
+                                                   concerns stopped sexual        2= NO
+                                                   activity                       -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   58    2 2.0       SEX4FS           B.4          Past 4 weeks - engaged in      1= YES
+                                                   sexual activity                2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   60    2 2.0       OARSFS           C.1          Past 4 weeks - how often felt  1= Almost always or always
+                                                   aroused                        2= Most times, or more than
+                                                                                     half the time
+                                                                                  3= Sometimes, or about half
+                                                                                     the time
+                                                                                  4= A few times, or less than
+                                                                                     half the time
+                                                                                  5= Almost never or never
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   62    2 2.0       LARSFS           C.2          Past 4 weeks - level of        1= Very high
+                                                   sexual arousal                 2= High
+                                                                                  3= Moderate
+                                                                                  4= Low
+                                                                                  5= Very low or none at all
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   64    2 2.0       CONFFS           C.3          Past 4 weeks - confidence in   1= Very high confidence
+                                                   sexual arousal                 2= High confidence
+                                                                                  3= Moderate confidence
+                                                                                  4= Low confidence
+                                                                                  5= Very low or no confidence
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   66    2 2.0       OSATFS           C.4          Past 4 weeks - satisfaction    1= Almost always or always
+                                                   with sexual arousal            2= Most times, or more than
+                                                                                     half the time
+                                                                                  3= Sometimes, or about half
+                                                                                     the time
+                                                                                  4= A few times, or less than
+                                                                                     half the time
+                                                                                  5= Almost never or never
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   68    2 2.0       OWETFS           C.5          Past 4 weeks - how often       1= Almost always or always
+                                                   lubricated during sexual       2= Most times, or more than
+                                                   activity                          half the time
+                                                                                  3= Sometimes, or about half
+                                                                                     the time
+                                                                                  4= A few times, or less than
+                                                                                     half the time
+                                                                                  5= Almost never or never
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   70    2 2.0       DWETFS           C.6          Past 4 weeks - difficulty      1= Extremely difficult or
+                                                   with lubrication during           impossible
+                                                   sexual activity                2= Very difficult
+                                                                                  3= Difficult
+                                                                                  4= Slightly difficult
+                                                                                  5= Not difficult
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   72    2 2.0       OMWTFS           C.7          Past 4 weeks - how often       1= Almost always or always
+                                                   maintained lubrication until   2= Most times, or more than
+                                                   completion of sexual activity     half the time
+                                                                                  3= Sometimes, or about half
+                                                                                     the time
+                                                                                  4= A few times, or less than
+                                                                                     half the time
+                                                                                  5= Almost never or never
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   74    2 2.0       DMWTFS           C.8          Past 4 weeks - difficulty      1= Extremely difficult or
+                                                   maintaining lubrication until     impossible
+                                                   completion of sexual activity  2= Very difficult
+                                                                                  3= Difficult
+                                                                                  4= Slightly difficult
+                                                                                  5= Not difficult
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   76    2 2.0       OORGFS           C.9          Past 4 weeks - how often       1= Almost always or always
+                                                   reached orgasm                 2= Most times, or more than
+                                                                                     half the time
+                                                                                  3= Sometimes, or about half
+                                                                                     the time
+                                                                                  4= A few times, or less than
+                                                                                     half the time
+                                                                                  5= Almost never or never
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   78    2 2.0       DORGFS           C.10         Past 4 weeks - difficulty      1= Extremely difficult or
+                                                   reaching orgasm                   impossible
+                                                                                  2= Very difficult
+                                                                                  3= Difficult
+                                                                                  4= Slightly difficult
+                                                                                  5= Not difficult
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   80    2 2.0       SORGFS           C.11         Past 4 weeks - satisfaction    1= Vey satisfied
+                                                   with ability to reach orgasm   2= Moderately satisfied
+                                                                                  3= About equally satisfied
+                                                                                     and dissatisfied
+                                                                                  4= Moderately dissatisfied
+                                                                                  5= Very dissatisfied
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   82    2 2.0       SEMOFS           C.12         Past 4 weeks - satisfaction    1= Vey satisfied
+                                                   with emotional closeness with  2= Moderately satisfied
+                                                   partner(s)                     3= About equally satisfied
+                                                                                     and dissatisfied
+                                                                                  4= Moderately dissatisfied
+                                                                                  5= Very dissatisfied
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   84    2 2.0       SSRLFS           C.13         Past 4 weeks - satisfaction    1= Vey satisfied
+                                                   with sexual relationship with  2= Moderately satisfied
+                                                   partner(s)                     3= About equally satisfied
+                                                                                     and dissatisfied
+                                                                                  4= Moderately dissatisfied
+                                                                                  5= Very dissatisfied
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   86    2 2.0       SOSLFS           C.14         Past 4 weeks - satisfaction    1= Vey satisfied
+                                                   with overall sexual life       2= Moderately satisfied
+                                                                                  3= About equally satisfied
+                                                                                     and dissatisfied
+                                                                                  4= Moderately dissatisfied
+                                                                                  5= Very dissatisfied
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   88    2 2.0       OPNDFS           C.15         Past 4 weeks - how often       1= Almost always or always
+                                                   discomfort during vaginal      2= Most times, or more than
+                                                   penetration                       half the time
+                                                                                  3= Sometimes, or about half
+                                                                                     the time
+                                                                                  4= A few times, or less than
+                                                                                     half the time
+                                                                                  5= Almost never or never
+                                                                                  6= Did not attempt vaginal
+                                                                                     penetration
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   90    2 2.0       OPNFFS           C.16         Past 4 weeks - how often       1= Almost always or always
+                                                   discomfort following vaginal   2= Most times, or more than
+                                                   penetration                       half the time
+                                                                                  3= Sometimes, or about half
+                                                                                     the time
+                                                                                  4= A few times, or less than
+                                                                                     half the time
+                                                                                  5= Almost never or never
+                                                                                  6= Did not attempt vaginal
+                                                                                     penetration
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   92    2 2.0       LPANFS           C.17         Past 4 weeks - level of        1= Very high
+                                                   discomfort during/following    2= High
+                                                   vaginal penetration            3= Moderate
+                                                                                  4= Low
+                                                                                  5= Very low or none at all
+                                                                                  6= Did not attempt vaginal
+                                                                                     penetration
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   94    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   95    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

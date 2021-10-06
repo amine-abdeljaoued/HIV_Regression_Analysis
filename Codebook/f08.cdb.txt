@@ -1,0 +1,1450 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+F08 - Gynecological Exam
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    6 $         FKEY             OldA.0       OLD: Form identifier number    Character
+
+   17    8 $         VERSGY           A.0          Form version                   01/01/94= 01/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   25    3 $         INITGY           A.0          Initials of examiner           Character
+
+   28    8 $         PDTEGY           A.0          Date of Gyn exam               01/01/94= 01/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   36    8 $         DOB_GY           OldA.0       OLD: Date of birth             01/01/30= 01/01/30
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/82= 12/31/82
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   44    5 time5.    STIMGY           A.0          Time began                     1:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   49    2 2.0       SMERGY           A.0          AM/PM for time began           1= AM
+                                                                                  2= PM
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   51    5 time5.    ETIMGY           A.0          Time ended                     1:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   56    2 2.0       EMERGY           A.0          AM/PM for time ended           1= AM
+                                                                                  2= PM
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   58    2 2.0       EGTHGY           OldA.1.a     Old: External genitalia:       1= normal
+                                                   thighs                         2= abnormal
+                                                                                  3= not done
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   60    2 2.0       EGPUGY           OldA.1.b     Old: External genitalia: pubis 1= normal
+                                                                                  2= abnormal
+                                                                                  3= not done
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   62    2 2.0       EGVVGY           OldA.1.c     Old: External genitalia: vulva 1= normal
+                                                                                  2= abnormal
+                                                                                  3= not done
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   64    2 2.0       EGPEGY           OldA.1.d     Old: External genitalia:       1= normal
+                                                   perineum                       2= abnormal
+                                                                                  3= not done
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   66    2 2.0       EGPAGY           OldA.1.e     Old: External genitalia:       1= normal
+                                                   perianal                       2= abnormal
+                                                                                  3= not done
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   68    2 2.0       V_ERGY           OldB.2.A     OLD: Erythema                  1= mild
+                                                                                  2= moderate
+                                                                                  3= severe
+                                                                                  4= none
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   70    2 2.0       V_ATGY           OldB.2.B     OLD: Atrophy                   1= mild
+                                                                                  2= moderate
+                                                                                  3= severe
+                                                                                  4= none
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   72    2 2.0       VAERGY           A.2.a        Vagina: Erythema               1= present
+                                                                                  2= absent
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   74    2 2.0       VAATGY           A.2.b        Vagina: Atrophy                1= present
+                                                                                  2= absent
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   76    4 4.1       V_PHGY           A.3          Vaginal PH                     2.0= 2.0
+                                                                                  .
+                                                                                  .
+                                                                                  9.0= 9.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   80    2 2.0       V_DVGY           OldB.4       OLD: Vaginal discharge volume  1= small
+                                                                                  2= moderate
+                                                                                  3= large
+                                                                                  4= none
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   82    2 2.0       VADVGY           A.4          Vaginal discharge volume       1= NORMAL
+                                                                                  2= INCREASED
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   84    2 2.0       V_DCGY           A.5          Vaginal discharge color        1= WHITE/CLEAR
+                                                                                  2= YELLOW/GREEN
+                                                                                  3= BROWN/BLOOD
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   86    2 2.0       V_CHGY           OldB.6       OLD: Vaginal discharge         1= mucous/normal
+                                                   character                      2= flocculent
+                                                                                  3= homogenous
+                                                                                  4= frothy
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   88    2 2.0       VACHGY           OldA.6       OLD: Vaginal discharge         1= Normal (mucoid/floccular)
+                                                   character (VACHGY)             2= Purulent
+                                                                                  3= Curdy
+                                                                                  4= Milky/creamy (non-
+                                                                                     floccular)
+                                                                                  5= Frothy
+                                                                                  6= Bloody
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   90    2 2.0       VDCNGY           A.6          Vaginal discharge character:   1= Circled
+                                                   normal (mucoid/floccular)      0= Not Circled
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   92    2 2.0       VDCPGY           A.6          Vaginal discharge character:   2= Circled
+                                                   purulent                       0= Not Circled
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   94    2 2.0       VDCCGY           A.6          Vaginal discharge character:   3= Circled
+                                                   curdy                          0= Not Circled
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   96    2 2.0       VDCMGY           A.6          Vaginal discharge character:   4= Circled
+                                                   milky/creamy (non-floccular)   0= Not Circled
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   98    2 2.0       VDCFGY           A.6          Vaginal discharge character:   5= Circled
+                                                   frothy                         0= Not Circled
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  100    2 2.0       VDCBGY           A.6          Vaginal discharge character:   6= Circled
+                                                   bloody                         0= Not Circled
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  102    2 2.0       V_APGY           OldB.7       OLD: Vaginal adherent plaques  1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  104    2 2.0       CX__GY           A.7          Cervix present                 1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  106    2 2.0       CXAMGY           A.8          Cervical exam done             1= DONE
+                                                                                  2= NOT DONE
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  108   25 $         CXSRGY           A.8.a        Specify reason cervical exam   Character
+                                                   not done
+
+  133    2 2.0       CXLEGY           OldB.9.A     OLD: Cervical lesions          1= mild
+                                                                                  2= moderate
+                                                                                  3= severe
+                                                                                  4= none
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  135    2 2.0       CXVEGY           OldB.9.B     OLD: Visible ectopy            1= mild
+                                                                                  2= moderate
+                                                                                  3= severe
+                                                                                  4= none
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  137    2 2.0       CXFRGY           OldB.9.C     OLD: Friability                1= mild
+                                                                                  2= moderate
+                                                                                  3= severe
+                                                                                  4= none
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  139    2 2.0       CELEGY           A.9.a        Cervical lesions               1= present
+                                                                                  2= absent
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  141    2 2.0       CEVEGY           A.9.b        Visible ectopy                 1= present
+                                                                                  2= absent
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  143    2 2.0       CEFRGY           A.9.c        Friability                     1= present
+                                                                                  2= absent
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  145    2 2.0       CXEXGY           OldB.10      OLD: Exudate amount            1= small
+                                                                                  2= moderate
+                                                                                  3= large
+                                                                                  4= none
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  147    2 2.0       CEEXGY           A.10         Exudate                        1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  149    2 2.0       CXDCGY           A.11         Cervical discharge color       1= WHITE/CLEAR
+                                                                                  2= YELLOW/GREEN
+                                                                                  3= BROWN/BLOOD
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  151    2 2.0       CXMTGY           OldB.12.A    OLD: Cervix motion tenderness  1= mild
+                                                                                  2= moderate
+                                                                                  3= severe
+                                                                                  4= none
+                                                                                  5= not done
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  153    2 2.0       CEMTGY           OldA.12      Old: Cervical motion           1= PRESENT
+                                                   tenderness                     2= ABSENT
+                                                                                  3= UNABLE TO PALPATE
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  155    2 2.0       CXUTGY           OldB.12.B    OLD: Uterine tenderness        1= mild
+                                                                                  2= moderate
+                                                                                  3= severe
+                                                                                  4= none
+                                                                                  5= not done
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  157    2 2.0       UTERGY           OldA.13      Old: Uterus present            1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  3= UNABLE TO PALPATE
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  159    2 2.0       UTTDGY           OldA.13.a    Old: Uterine tenderness        1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  161    2 2.0       UTELGY           OldA.13.b    Old: Uterine enlargement       1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  163    2 2.0       ADPRGY           A.14         Adnexae present                1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  3= UNABLE TO PALPATE
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  165    2 2.0       ADRTGY           OldA.14.a    Old: Right adnexal tenderness  1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  167    2 2.0       ADLTGY           OldA.14.b    Old: Left adnexal tenderness   1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  169    2 2.0       CXRTGY           OldB.12.C    OLD: Right adnexal tenderness  1= mild
+                                                                                  2= moderate
+                                                                                  3= severe
+                                                                                  4= none
+                                                                                  5= not done
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  171    2 2.0       CXLTGY           OldB.12.D    OLD: Left adnexal tenderness   1= mild
+                                                                                  2= moderate
+                                                                                  3= severe
+                                                                                  4= none
+                                                                                  5= not done
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  173    4 4.1       FS__GY           OldB.13      OLD: Fundal size               0= N.A. (Skipped)
+                                                                                  1.0= 1.0
+                                                                                  .
+                                                                                  .
+                                                                                  40.0= 40.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  177    2 2.0       RMAPGY           OldA.14.c    Old: Right adnexal mass        1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  179    2 2.0       RMADGY           OldB.14.A    OLD: Right adnexal mass        1= solid
+                                                   description                    2= cystic
+                                                                                  3= not sure
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  181    4 4.1       RMASGY           OldB.14.A    OLD: Right adnexal mass size   00.0= 00.0
+                                                                                  .
+                                                                                  .
+                                                                                  10.0= 10.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  185    2 2.0       LMAPGY           OldA.14.d    Old: Left adnexal mass         1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  187    2 2.0       LMADGY           OldB.14.B    OLD: Left adnexal mass         1= solid
+                                                   description                    2= cystic
+                                                                                  3= not sure
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  189    4 4.1       LMASGY           OldB.14.B    OLD: Left adnexal mass size    00.0= 00.0
+                                                                                  .
+                                                                                  .
+                                                                                  10.0= 10.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  193    2 2.0       CMAPGY           OldA.15      Old: Cul-de-sac mass           1= PRESENT
+                                                                                  2= ABSENT
+                                                                                  3= UNABLE TO PALPATE
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  195    2 2.0       CMADGY           OldB.14.C    OLD: Cul de sac mass           1= solid
+                                                   description                    2= cystic
+                                                                                  3= not sure
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  197    4 4.1       CMASGY           OldB.14.C    OLD: Cul de sac mass size      00.0= 00.0
+                                                                                  .
+                                                                                  .
+                                                                                  10.0= 10.0
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  201    2 2.0       ANEHGY           OldB.15.A    OLD: External hemorrhoid       1= mild
+                                                                                  2= moderate
+                                                                                  3= severe
+                                                                                  4= none
+                                                                                  5= not done
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  203    2 2.0       ANRDGY           OldB.15.B    OLD: Rectal discharge          1= mild
+                                                                                  2= moderate
+                                                                                  3= severe
+                                                                                  4= none
+                                                                                  5= not done
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  205    2 2.0       ANRTGY           OldB.15.C    OLD: Rectal tenderness         1= mild
+                                                                                  2= moderate
+                                                                                  3= severe
+                                                                                  4= none
+                                                                                  5= not done
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  207    2 2.0       A_EHGY           A.16.a       External hemorrhoid            1= present
+                                                                                  2= absent
+                                                                                  3= not done
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  209    2 2.0       A_DCGY           A.16.b       Discharge                      1= present
+                                                                                  2= absent
+                                                                                  3= not done
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  211    2 2.0       A_TDGY           A.16.c       Anal tenderness                1= present
+                                                                                  2= absent
+                                                                                  3= not done
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  213    2 2.0       EVNVGY           OldA.17.a    Old: Even-numbered visit       1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  215    2 2.0       RE__GY           OldA.17.b    Old: Rectal exam done          1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  217    2 2.0       RERSGY           OldA.17.c    Old: Results of rectal exam    1= NORMAL
+                                                                                  2= ABNORMAL
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  219    2 2.0       RF__GY           OldA.18      Old: Anal fissure present      1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  221    2 2.0       AB__GY           A.19         Abnormalities/lesions present  1= YES
+                                                   on the gyn exam                2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  223    2 2.0       ABN_GY           OldA.19.a    Old: Total # of locations      0= 0
+                                                   with lesions                   .
+                                                                                  .
+                                                                                  31= 31
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  225    2 2.0       LTOTGY           A.20         Total number of lesions        0= 0 lesions
+                                                                                  1= 1 lesion
+                                                                                  2= 2 lesions
+                                                                                  3= 3-4 lesions
+                                                                                  4= >4 lesions
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  227    2 2.0       LWRTGY           A.21         Type of lesion present - wart  1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  229    2 2.0       LULCGY           A.21         Type of lesion present - ulcer 1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  231    2 2.0       LRSHGY           A.21         Type of lesion present - rash  1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  233    2 2.0       LMSSGY           A.21         Type of lesion present - mass  1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  235    2 2.0       LVESGY           A.21         Type of lesion present -       1= YES
+                                                   vesicle                        2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  237    2 2.0       LOTHGY           A.21         Type of lesion present - other 1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  239   25 $         LOTSGY           A.21         Specify other type of lesion   Character
+
+  264    2 2.0       AB01GY           OldB.18      OLD: GYN abnormality           1= Yes
+                                                   location: Labia Majora (left)  0= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  266    2 2.0       AB02GY           OldB.18      OLD: GYN abnormality           2= Yes
+                                                   location: Labia Majora (right) 0= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  268    2 2.0       AB03GY           OldB.18      OLD: GYN abnormality           3= Yes
+                                                   location: Labia Minora (left)  0= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  270    2 2.0       AB04GY           OldB.18      OLD: GYN abnormality           4= Yes
+                                                   location: Labia Minora (right) 0= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  272    2 2.0       AB05GY           OldB.18      OLD: GYN abnormality           5= Yes
+                                                   location: Introitus (left)     0= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  274    2 2.0       AB06GY           OldB.18      OLD: GYN abnormality           6= Yes
+                                                   location: Introitus (right)    0= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  276    2 2.0       AB07GY           OldB.18      OLD: GYN abnormality           7= Yes
+                                                   location: Perineum (left)      0= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  278    2 2.0       AB08GY           OldB.18      OLD: GYN abnormality           8= Yes
+                                                   location: Perineum (right)     0= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  280    2 2.0       AB09GY           OldB.18      OLD: GYN abnormality           9= Yes
+                                                   location: Inguinal (left)      0= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  282    2 2.0       AB10GY           OldB.18      OLD: GYN abnormality           10= Yes
+                                                   location: Inguinal (right)     0= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  284    2 2.0       AB11GY           OldB.18      OLD: GYN abnormality           11= Yes
+                                                   location: Thigh (left)         0= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  286    2 2.0       AB12GY           OldB.18      OLD: GYN abnormality           12= Yes
+                                                   location: Thigh (right)        0= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  288    2 2.0       AB13GY           OldB.18      OLD: GYN abnormality           13= Yes
+                                                   location: Clitoris             0= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  290    2 2.0       AB14GY           OldB.18      OLD: GYN abnormality           14= Yes
+                                                   location: Urethra              0= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  292    2 2.0       AB15GY           OldB.18      OLD: GYN abnormality           15= Yes
+                                                   location: Pubis                0= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  294    2 2.0       AB16GY           OldB.18      OLD: GYN abnormality           16= Yes
+                                                   location: Vaginal (right       0= No
+                                                   internal)                      -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  296    2 2.0       AB17GY           OldB.18      OLD: GYN abnormality           17= Yes
+                                                   location: Vaginal (left        0= No
+                                                   internal)                      -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  298    2 2.0       AB18GY           OldB.18      OLD: GYN abnormality           18= Yes
+                                                   location: Cervical os          0= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  300    2 2.0       AB19GY           OldB.18      OLD: GYN abnormality           19= Yes
+                                                   location: Inner upper left     0= No
+                                                   quad                           -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  302    2 2.0       AB20GY           OldB.18      OLD: GYN abnormality           20= Yes
+                                                   location: Inner lower left     0= No
+                                                   quad                           -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  304    2 2.0       AB21GY           OldB.18      OLD: GYN abnormality           21= Yes
+                                                   location: Inner lower right    0= No
+                                                   quad                           -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  306    2 2.0       AB22GY           OldB.18      OLD: GYN abnormality           22= Yes
+                                                   location: Inner upper right    0= No
+                                                   quad                           -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  308    2 2.0       AB23GY           OldB.18      OLD: GYN abnormality           23= Yes
+                                                   location: Outer upper left     0= No
+                                                   quad                           -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  310    2 2.0       AB24GY           OldB.18      OLD: GYN abnormality           24= Yes
+                                                   location: Outer lower left     0= No
+                                                   quad                           -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  312    2 2.0       AB25GY           OldB.18      OLD: GYN abnormality           25= Yes
+                                                   location: Outer lower right    0= No
+                                                   quad                           -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  314    2 2.0       AB26GY           OldB.18      OLD: GYN abnormality           26= Yes
+                                                   location: Outer upper right    0= No
+                                                   quad                           -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  316    2 2.0       AB27GY           OldB.18      OLD: GYN abnormality           27= Yes
+                                                   location: Anus upper left      0= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  318    2 2.0       AB28GY           OldB.18      OLD: GYN abnormality           28= Yes
+                                                   location: Anus lower left      0= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  320    2 2.0       AB29GY           OldB.18      OLD: GYN abnormality           29= Yes
+                                                   location: Anus lower right     0= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  322    2 2.0       AB30GY           OldB.18      OLD: GYN abnormality           30= Yes
+                                                   location: Anus upper right     0= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  324    2 2.0       AB31GY           OldB.18      OLD: 3 or more GYN             31= Yes
+                                                   abnormality locations          0= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  326    2 2.0       WPTRGY           A.44.a.i     Trichomonas wet prep test      1= positive
+                                                                                  2= negative
+                                                                                  3= unclear
+                                                                                  4= not obtained
+                                                                                  5= not read
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  328    2 2.0       WPCCGY           A.44.a.ii    Clue cells wet prep test       1= positive
+                                                                                  2= negative
+                                                                                  3= unclear
+                                                                                  4= not obtained
+                                                                                  5= not read
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  330    3 3.0       WCCPGY           OldA.44.a.ii  Old: Clue cells observed       0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  333    2 2.0       WCCOGY           A.44.a.ii    Clue cells observed - more or  1= <20% of cells
+                                                   less than 20%                  2= >=20% of cells
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  335    2 2.0       WPIWGY           A.44.a.iii   increased wbcs                 1= positive
+                                                                                  2= negative
+                                                                                  3= unclear
+                                                                                  4= not obtained
+                                                                                  5= not read
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  337    2 2.0       KOHYGY           A.44.b.i     Yeast KOH mount test           1= positive
+                                                                                  2= negative
+                                                                                  3= unclear
+                                                                                  4= not obtained
+                                                                                  5= not read
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  339    2 2.0       KOHAGY           A.44.b.ii    Amine odor KOH mount test      1= positive
+                                                                                  2= negative
+                                                                                  3= unclear
+                                                                                  4= not obtained
+                                                                                  5= not read
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  341    2 2.0       CIP_GY           OldB.1       Old: Clinical impression:      1= Yes
+                                                   pregnant                       2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  343    2 2.0       CIMWGY           OldB.2       Old: Clinical impression:      1= Yes
+                                                   menopause                      2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  345    2 2.0       CINOGY           B.3          Normal overall clinical        1= Yes
+                                                   impression                     2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  347    2 2.0       CIHEGY           B.8          Clinical impression: Herpes    1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  349    2 2.0       CIHPGY           B.8.a        Clinical impression: primary/  1= Yes
+                                                   first herpes episode           2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  351    2 2.0       CIHRGY           B.8.b        Clinical impression:           1= Yes
+                                                   Recurrent herpes episode       2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  353    2 2.0       CIHCGY           B.8.c        Clinical impression: Chronic   1= Yes
+                                                   herpes ulceration              2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  355    2 2.0       CIWTGY           B.11         Clinical impression: Wart      1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  357    2 2.0       CIWVGY           B.11.a       Clinical impression: Vulvar    1= Yes
+                                                   wart                           2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  359    2 2.0       WVCLGY           B.11.a.i     Colposcopy indication for      1= Previously assessed in
+                                                   clinical impression: Vulvar       WIHS and unchanged
+                                                   wart                              <I>(colposcopy not
+                                                                                     indicated)</I>
+                                                                                  2= Previously assessed in
+                                                                                     WIHS and changed
+                                                                                     <I>(colposcopy indicated)</
+                                                                                     I>
+                                                                                  5= Previously assessed in
+                                                                                     WIHS and worsened
+                                                                                     <I>(colposcopy indicated)</
+                                                                                     I>
+                                                                                  6= Previously assessed in
+                                                                                     WIHS and improved
+                                                                                     <I>(colposcopy not
+                                                                                     indicated)</I>
+                                                                                  3= New <I>(colposcopy
+                                                                                     indicated)</I>
+                                                                                  4= Don't know <I>(colposcopy
+                                                                                     indicated)</I>
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  361    2 2.0       CIWUGY           B.11.b       Clinical impression: Vaginal   1= Yes
+                                                   wart                           2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  363    2 2.0       WUCLGY           B.11.b.i     Colposcopy indication for      1= Previously assessed in
+                                                   clinical impression: Vaginal      WIHS and unchanged
+                                                   wart                              <I>(colposcopy not
+                                                                                     indicated)</I>
+                                                                                  2= Previously assessed in
+                                                                                     WIHS and changed
+                                                                                     <I>(colposcopy indicated)</
+                                                                                     I>
+                                                                                  5= Previously assessed in
+                                                                                     WIHS and worsened
+                                                                                     <I>(colposcopy indicated)</
+                                                                                     I>
+                                                                                  6= Previously assessed in
+                                                                                     WIHS and improved
+                                                                                     <I>(colposcopy not
+                                                                                     indicated)</I>
+                                                                                  3= New <I>(colposcopy
+                                                                                     indicated)</I>
+                                                                                  4= Don't know <I>(colposcopy
+                                                                                     indicated)</I>
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  365    2 2.0       CIWCGY           B.11.c       Clinical impression: Cervical  1= Yes
+                                                   wart                           2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  367    2 2.0       WCCLGY           B.11.c.i     Colposcopy indication for      1= Previously assessed in
+                                                   clinical impression: Cervical     WIHS and unchanged
+                                                   wart                              <I>(colposcopy not
+                                                                                     indicated)</I>
+                                                                                  2= Previously assessed in
+                                                                                     WIHS and changed
+                                                                                     <I>(colposcopy indicated)</
+                                                                                     I>
+                                                                                  5= Previously assessed in
+                                                                                     WIHS and worsened
+                                                                                     <I>(colposcopy indicated)</
+                                                                                     I>
+                                                                                  6= Previously assessed in
+                                                                                     WIHS and improved
+                                                                                     <I>(colposcopy not
+                                                                                     indicated)</I>
+                                                                                  3= New <I>(colposcopy
+                                                                                     indicated)</I>
+                                                                                  4= Don't know <I>(colposcopy
+                                                                                     indicated)</I>
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  369    2 2.0       CIWAGY           B.11.d       Clinical impression: Anal wart 1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  371    2 2.0       WACLGY           B.11.d.i     Colposcopy indication for      1= Previously assessed in
+                                                   clinical impression: Anal wart    WIHS and unchanged
+                                                                                     <I>(colposcopy not
+                                                                                     indicated)</I>
+                                                                                  2= Previously assessed in
+                                                                                     WIHS and changed
+                                                                                     <I>(colposcopy indicated)</
+                                                                                     I>
+                                                                                  5= Previously assessed in
+                                                                                     WIHS and worsened
+                                                                                     <I>(colposcopy indicated)</
+                                                                                     I>
+                                                                                  6= Previously assessed in
+                                                                                     WIHS and improved
+                                                                                     <I>(colposcopy not
+                                                                                     indicated)</I>
+                                                                                  3= New <I>(colposcopy
+                                                                                     indicated)</I>
+                                                                                  4= Don't know <I>(colposcopy
+                                                                                     indicated)</I>
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  373    2 2.0       CIWOGY           B.11.e       Clinical impression: Other     1= Yes
+                                                   genital wart                   2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  375    2 2.0       WOCLGY           B.11.e.i     Colposcopy indication for      1= Previously assessed in
+                                                   clinical impression: Other        WIHS and unchanged
+                                                   genital wart                      <I>(colposcopy not
+                                                                                     indicated)</I>
+                                                                                  2= Previously assessed in
+                                                                                     WIHS and changed
+                                                                                     <I>(colposcopy indicated)</
+                                                                                     I>
+                                                                                  5= Previously assessed in
+                                                                                     WIHS and worsened
+                                                                                     <I>(colposcopy indicated)</
+                                                                                     I>
+                                                                                  6= Previously assessed in
+                                                                                     WIHS and improved
+                                                                                     <I>(colposcopy not
+                                                                                     indicated)</I>
+                                                                                  3= New <I>(colposcopy
+                                                                                     indicated)</I>
+                                                                                  4= Don't know <I>(colposcopy
+                                                                                     indicated)</I>
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  377    2 2.0       CIOAGY           B.12         Clinical impression: Other     1= Yes
+                                                   abnormality                    2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  379   25 $         CIOSGY           B.12.a       Specify other abnormality      Character
+
+  404    2 2.0       CICOGY           OldB.12      Old: Clinical impression:      1= Yes
+                                                   Other cervical abnormality     2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  406   25 $         CICSGY           OldB.12.a    Old: Specify other cervical    Character
+                                                   abnormality
+
+  431    2 2.0       CIVAGY           OldB.4       Old: Clinical impression:      1= Yes
+                                                   vaginitis                      2= No
+                                                                                  3= Yes, cause unknown
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  433    2 2.0       CIVCGY           OldB.4.a     Old: Clinical impression:      1= Yes
+                                                   type of vaginitis - candidal   2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  435    2 2.0       CIVTGY           OldB.4.b     Old: Clinical impression:      1= Yes
+                                                   type of vaginitis -            2= No
+                                                   trichomonal                    -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  437    2 2.0       CIVBGY           OldB.4.c     Old: Clinical impression:      1= Yes
+                                                   type of vaginitis - bacterial  2= No
+                                                   vaginosis                      -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  439    2 2.0       CICVGY           OldB.5       Old: Clinical impression:      1= Yes
+                                                   Cervicitis (gc/ non-gc)        2= No
+                                                                                  3= (Old value) Yes, cause
+                                                                                     unknown
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  441    2 2.0       CICGGY           OldC.5.A     OLD: Type of cervicitis: gc    1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  443    2 2.0       CICNGY           OldC.5.B     OLD: Type of cervicitis: non-  1= Yes
+                                                   gc                             2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  445    2 2.0       CIPIGY           OldB.6       Old: Clinical impression: PID  1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  447    2 2.0       CIPTGY           OldC.6.A     OLD: Type of PID: Tubo-        1= Yes
+                                                   Ovarian Abscess (TOA)          2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  449    2 2.0       CIPEGY           OldC.6.B     OLD: Type of PID: Endoetritis  1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  451    2 2.0       CIPRGY           OldB.7       Old: Clinical impression:      1= Yes
+                                                   Proctitis                      2= No
+                                                                                  3= Yes, cause unknown
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  453    2 2.0       CIGCGY           OldB.7.a     Old: Clinical impression: gc/  1= Yes
+                                                   non-gc proctitis               2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  455    2 2.0       CIPGGY           OldC.7.A     OLD: Type of proctitis: gc     1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  457    2 2.0       CIPNGY           OldC.7.B     OLD: Type of proctitis: non-gc 1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  459    2 2.0       CIPHGY           OldB.7.b     Old: Clinical impression:      1= Yes
+                                                   Herpetic proctitis             2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  461    2 2.0       CIMOGY           OldB.9       Old: Clinical impression:      1= Yes
+                                                   Molluscum                      2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  463    2 2.0       CISYGY           OldB.10      Old: Clinical impression:      1= Yes
+                                                   Syphilis                       2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  465    2 2.0       CISCGY           OldB.10.a    Old: Clinical impression:      1= Yes
+                                                   Syphilis Chancre               2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  467    2 2.0       CISRGY           OldB.10.b    Old: Clinical impression:      1= Yes
+                                                   Syphilis rash/secondary        2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  469    2 2.0       CISEGY           OldC.10.C    OLD: Type of syphilis: Early   1= Yes
+                                                   latent                         2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  471    2 2.0       CISLGY           OldC.10.D    OLD: Type of syphilis: Late    1= Yes
+                                                   latent                         2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  473    2 2.0       CISNGY           OldC.10.E    OLD: Type of syphilis: Neuro   1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  475    2 2.0       CISOGY           OldC.10.F    OLD: Type of syphilis: Other   1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  477    2 2.0       CIVOGY           OldB.13      Old: Clinical impression:      1= Yes
+                                                   Other vaginal abnormality      2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  479   25 $         CIVSGY           OldB.13.a    Old: Specify other vaginal     Character
+                                                   abnormality
+
+  504    2 2.0       CIUMGY           OldB.14      Old: Clinical impression:      1= Yes
+                                                   Uterine enlargement            2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  506    2 2.0       CIAAGY           OldB.15      Old: Clinical impression:      1= Yes
+                                                   Other anal abnormality         2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  508   25 $         CIASGY           OldB.15.a    Old: Specify other anal        Character
+                                                   abnormality
+
+  533    2 2.0       CIOVGY           OldB.16      Old: Clinical impression:      1= Yes
+                                                   Other vulvar abnormality       2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  535   25 $         CIOPGY           OldB.16.a    Old: Specify other vulvar      Character
+                                                   abnormality
+
+  560    2 2.0       CIAMGY           OldB.17      Old: Clinical impression:      1= Yes
+                                                   Adnexal mass (not PID)         2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  562    2 2.0       CIARGY           OldB.17.a    Old: Clinical impression:      1= Yes
+                                                   Right adnexal mass (not PID)   2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  564    2 2.0       CIALGY           OldB.17.b    Old: Clinical impression:      1= Yes
+                                                   Left adnexal mass (not PID)    2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  566    2 2.0       ATNPGY           OldB.18      Old: Clinical impression:      1= Yes
+                                                   Adnexal tenderness (not PID    2= No
+                                                   or mass)                       -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  568    2 2.0       ATPAGY           OldB.18.a    Old: Clinical impression:      1= Yes
+                                                   Right adnexal tenderness (not  2= No
+                                                   PID or mass)                   -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  570    2 2.0       ATPBGY           OldB.18.b    Old: Clinical impression:      1= Yes
+                                                   Left adnexal tenderness (not   2= No
+                                                   PID or mass)                   -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  572    2 2.0       CLINGY           B.19         Colposcopy indicated based on  1= YES
+                                                   lesion(s) found during exam    2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  574    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  575    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

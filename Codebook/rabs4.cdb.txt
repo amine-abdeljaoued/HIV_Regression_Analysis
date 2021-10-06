@@ -1,0 +1,63 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+RAB - Retrospective Medical Record Abstraction (Repeating Segment) S4
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1   10 $         SCIDMR           A.1          Screening ID                   Character
+
+   11    8 8.0       CASEID           A.2          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+   19    8 $         RPDTMR           C.4.A.i      Date of post-HAART HIV RNA     01/01/92= 01/01/92
+                                                   test                           .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   27    2 2.0       RPBLMR           C.4.A.ii     Post-HAART HIV RNA test        1= YES
+                                                   result below limit of assay    2= NO
+                                                   detection                      -1= N.A. (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   29    8 8.0       RPCMMR           C.4.A.iii    Copies/ml - post-HAART HIV     0= 0
+                                                   RNA test                       .
+                                                                                  .
+                                                                                  99999999= 99999999
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   37    2 2.0       RPAKMR           C.4.A.iv     Assay kit used in post-HAART   1= Roche Amplicor RNA
+                                                   HIV RNA test                   2= Roche Ultrasensitive RNA
+                                                                                  3= NASBA
+                                                                                  4= Nuclisens
+                                                                                  5= Chiron
+                                                                                  8= Quantiplex
+                                                                                  9= TaqMan
+                                                                                  10= Bayer Branched DNA
+                                                                                  11= Abbott Real Time PCR
+                                                                                  12= Siemens bDNA
+                                                                                  6= Unknown
+                                                                                  7= Other
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   39   25 $         RPSAMR           C.4.A.iv     Specify assay kit used in      Character
+                                                   post-HAART HIV RNA test
+
+   64    1 $         ESTAT                         Edit Status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   65    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

@@ -1,0 +1,376 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+F26A - Assessment of Physical Functioning
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    8 $         VERSPY           A.3          Form version                   01/01/93= 01/01/93
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   19    8 $         IDTEPY           A.4          Date of interview              10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   27    3 $         INITPY           A.5          Initials of person completing  Character
+                                                   form
+
+   30    5 time5.    STIMPY           A.6          Time began                     01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   35    2 2.0       SMERPY           A.6          AM/PM for time began           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   37    2 2.0       MILEPY           B.1.a        Difficulty - walking more      1= Yes
+                                                   than a mile                    2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   39    2 2.0       MILMPY           B.1.b        Amount of difficulty -         1= Some or a little
+                                                   walking more than a mile       2= A lot
+                                                                                  3= Unable to do
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   41    2 2.0       HALFPY           B.2.a        Difficulty - walking half a    1= Yes
+                                                   mile                           2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   43    2 2.0       HALMPY           B.2.b        Amount of difficulty -         1= Some or a little
+                                                   walking half a mile            2= A lot
+                                                                                  3= Unable to do
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   45    2 2.0       BLCKPY           B.3.a        Difficulty - walking one block 1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   47    2 2.0       BLCMPY           B.3.b        Amount of difficulty -         1= Some or a little
+                                                   walking one block              2= A lot
+                                                                                  3= Unable to do
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   49    2 2.0       HOMEPY           B.4.a        Difficulty - walking around    1= Yes
+                                                   your home                      2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   51    2 2.0       HOMMPY           B.4.b        Amount of difficulty -         1= Some or a little
+                                                   walking around your home       2= A lot
+                                                                                  3= Unable to do
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   53    2 2.0       OOBCPY           B.5.a        Difficulty - getting out of    1= Yes
+                                                   bed or a chair                 2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   55    2 2.0       OOBMPY           B.5.b        Amount of difficulty -         1= Some or a little
+                                                   getting out of bed or a chair  2= A lot
+                                                                                  3= Unable to do
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   57    2 2.0       STEPPY           B.6.a        Difficulty - walking up 10     1= Yes
+                                                   steps                          2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   59    2 2.0       STEMPY           B.6.b        Amount of difficulty -         1= Some or a little
+                                                   walking up 10 steps            2= A lot
+                                                                                  3= Unable to do
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   61    2 2.0       BENDPY           B.7.a        Difficulty - bending,          1= Yes
+                                                   kneeling or stooping           2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63    2 2.0       BENMPY           B.7.b        Amount of difficulty -         1= Some or a little
+                                                   bending, kneeling or stooping  2= A lot
+                                                                                  3= Unable to do
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   65    2 2.0       HHWKPY           B.8.a        Difficulty - heavy housework   1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   67    2 2.0       HHWMPY           B.8.b        Amount of difficulty - heavy   1= Some or a little
+                                                   housework                      2= A lot
+                                                                                  3= Unable to do
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   69    2 2.0       LHWKPY           B.9.a        Difficulty - light housework   1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   71    2 2.0       LHWMPY           B.9.b        Amount of difficulty - light   1= Some or a little
+                                                   housework                      2= A lot
+                                                                                  3= Unable to do
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   73    2 2.0       SHOPPY           B.10.a       Difficulty - shopping          1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   75    2 2.0       SHOMPY           B.10.b       Amount of difficulty -         1= Some or a little
+                                                   shopping                       2= A lot
+                                                                                  3= Unable to do
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   77    2 2.0       MEALPY           B.11.a       Difficulty - preparing meals   1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   79    2 2.0       MEAMPY           B.11.b       Amount of difficulty -         1= Some or a little
+                                                   preparing meals                2= A lot
+                                                                                  3= Unable to do
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   81    2 2.0       MONYPY           B.12.a       Difficulty - managing money    1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   83    2 2.0       MONMPY           B.12.b       Amount of difficulty -         1= Some or a little
+                                                   managing money                 2= A lot
+                                                                                  3= Unable to do
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   85    2 2.0       TELEPY           B.13.a       Difficulty - using the         1= Yes
+                                                   telephone                      2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   87    2 2.0       TELMPY           B.13.b       Amount of difficulty - using   1= Some or a little
+                                                   the telephone                  2= A lot
+                                                                                  3= Unable to do
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   89    2 2.0       FEEDPY           B.14.a       Difficulty - eating/feeding    1= Yes
+                                                   self                           2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   91    2 2.0       FEEMPY           B.14.b       Amount of difficulty - eating/ 1= Some or a little
+                                                   feeding self                   2= A lot
+                                                                                  3= Unable to do
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   93    2 2.0       DRESPY           B.15.a       Difficulty - dressing self     1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   95    2 2.0       DREMPY           B.15.b       Amount of difficulty -         1= Some or a little
+                                                   dressing self                  2= A lot
+                                                                                  3= Unable to do
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   97    2 2.0       BATHPY           B.16.a       Difficulty - bathing/showering 1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   99    2 2.0       BATMPY           B.16.b       Amount of difficulty -         1= Some or a little
+                                                   bathing/showering              2= A lot
+                                                                                  3= Unable to do
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  101    2 2.0       TOILPY           B.17.a       Difficulty - using/getting to  1= Yes
+                                                   toilet                         2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  103    2 2.0       TOIMPY           B.17.b       Amount of difficulty - using/  1= Some or a little
+                                                   getting to toilet              2= A lot
+                                                                                  3= Unable to do
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  105    2 2.0       LIFTPY           B.18.a       Difficulty - lifting/carrying  1= Yes
+                                                   something heavy                2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  107    2 2.0       LIFMPY           B.18.b       Amount of difficulty -         1= Some or a little
+                                                   lifting/carrying something     2= A lot
+                                                   heavy                          3= Unable to do
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  109    2 2.0       REACPY           B.19.a       Difficulty - reaching out      1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  111    2 2.0       REAMPY           B.19.b       Amount of difficulty -         1= Some or a little
+                                                   reaching out                   2= A lot
+                                                                                  3= Unable to do
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  113    2 2.0       GRIPPY           B.20.a       Difficulty - gripping          1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  115    2 2.0       GRIMPY           B.20.b       Amount of difficulty -         1= Some or a little
+                                                   gripping                       2= A lot
+                                                                                  3= Unable to do
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  117    5 time5.    ETIMPY           B.21         Time ended                     01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  122    2 2.0       EMERPY           B.21         AM/PM for time ended           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  124    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  125    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

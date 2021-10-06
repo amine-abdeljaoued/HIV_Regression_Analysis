@@ -1,0 +1,95 @@
+                               CODEBOOK
+Women's Interagency HIV Study                              9-6-2017
+Form 06: B/L Psychosocial Measures
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit number                   1= visit 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= visit 99
+
+   11    6 $         FKEY             A.0          Form's unique id               Character
+
+   17    2 2.0       DAGEPS           E.4          How old was (_) when s/he died 0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  60= 60
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   19    2 2.0       MOYRPS           E.4A         Years or months indicator      1= Months
+                                                                                  2= Years
+                                                                                  0=
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   21    2 2.0       biolPS           E.5          Child(_) biologic, adopted or  1= Biological
+                                                   step                           2= Adopted
+                                                                                  3= Step/Foster
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   23    2 2.0       LIVEPS           E.5A         Child (_) living with you at   1= Yes
+                                                   death                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   25    2 2.0       YRD_PS           E.5B         What year did child(_) die     40= 1940
+                                                                                  .
+                                                                                  .
+                                                                                  99= 1999
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   27    2 2.0       DHIVPS           E.5C         Was child(_) tested for hiv    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   29    2 2.0       HIVDPS           E.5D         Hiv test results for child(_)  1= HIV Positive
+                                                                                  2= HIV Negative
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   31   25 $         CAUSPS           E.6          Cause of death child(_)        Character
+
+   56    2 2.0       SEQID            E.6A         Child(_) order                 1= First child
+                                                                                  .
+                                                                                  .
+                                                                                  12= 12th child
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   58    1 $         ESTAT            A.0          Edit Status                    CharacterD= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   59    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

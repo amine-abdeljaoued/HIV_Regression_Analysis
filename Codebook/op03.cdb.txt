@@ -1,0 +1,243 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+OP03 - ORAL PROTOCOL SALIVA SAMPLE
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    6 $         FKEY             OldA.0       OLD: form identifier key       Character
+
+   17    8 $         VERSOC           A.0          Form version                   10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   25    3 $         INITOC           A.0          Initials of person completing  Character
+                                                   form
+
+   28    8 $         PDTEOC           A.0          Date of saliva sample          10/01/94= 10/01/94
+                                                   procedure                      .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   36    2 2.0       SALIOC           OldB.1       OLD: Saliva sample collected   1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   38   43 $         RNNAOC           OldB.1       Specify reason saliva sample   Character
+                                                   not collected
+
+   81    2 2.0       FOODOC           1            Food eaten within last 90      1= YES
+                                                   minutes                        2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   83    5 time5.    FTMEOC           OldB.2.A     OLD: time food eaten           01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   88    2 2.0       FTAMOC           OldB.2.B     AM/PM indicator for time food  1= AM
+                                                   eaten                          2= PM
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   90    2 2.0       BRSHOC           2            Brushed, flossed, used         1= YES
+                                                   mouthwash in last 90 minutes   2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   92    5 time5.    BTMEOC           OldB.3.A     OLD: time brushed              01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   97    2 2.0       BTAMOC           OldB.3.B     OLD: AM/PM for time brushed    1= AM
+                                                                                  2= PM
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   99    2 2.0       SALUOC           .3.a         Attempt made to collect        1= YES
+                                                   unstimulated saliva            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  101   50 $         REAUOC           .3.b         Reason unstimulated saliva     Character
+                                                   not collected
+
+  151    5 time5.    USCSOC           .3.c         Time started unstimulated      01:00= 01:00
+                                                   saliva collection              .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  156    2 2.0       USAMOC           .3.c         AM/PM for time started         1= AM
+                                                   unstimulated saliva collection 2= PM
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  158    5 time5.    USCEOC           .3.d         Time ended unstimulated        01:00= 01:00
+                                                   saliva collection              .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  163    2 2.0       UEAMOC           .3.d         AM/PM for time ended           1= AM
+                                                   unstimulated saliva collection 2= PM
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  165    5 5.2       UVOLOC           .3.e         Volume unstimulated saliva     0.00= 0.00
+                                                   collected                      .
+                                                                                  .
+                                                                                  20.00= 20.00
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  170    2 2.0       MICROC           .4.a         First 2ml/2 min stimulated     1= YES
+                                                   saliva selected for micro      2= NO
+                                                   evaluation                     -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  172    2 2.0       F2SSOC           .4.b         First 2 ml/2 min stimulated    1= YES
+                                                   saliva collected               2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  174    2 2.0       SRANOC           .5.a         Flow rate determination        1= YES
+                                                   stimulated saliva selected     2= NO
+                                                   for HIV testing                -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  176    2 2.0       SALSOC           .5.b         Attempted to collect           1= YES
+                                                   stimulated saliva for flow     2= NO
+                                                   rate determination             -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  178   50 $         REASOC           .5.c         Reason stimulated saliva for   Character
+                                                   flow rate not collected
+
+  228    5 time5.    SSCSOC           .5.d         Time started stimulated        01:00= 01:00
+                                                   saliva collection              .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  233    2 2.0       SSAMOC           .5.d         AM/PM for time started         1= AM
+                                                   stimulated saliva collection   2= PM
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  235    5 time5.    SSCEOC           .5.e         Time ended stimulated saliva   01:00= 01:00
+                                                   collection                     .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  240    2 2.0       SEAMOC           .5.e         AM/PM for time ended           1= AM
+                                                   stimulated saliva collection   2= PM
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  242    5 5.2       SVOLOC           .5.f         Volume stimulated saliva       0.00= 0.00
+                                                   collected                      .
+                                                                                  .
+                                                                                  20.00= 20.00
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  247    5 5.2       FRTEOC           OldB.6.D     OLD:  (calculated) flow rate   0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  30.83= 30.83
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  252    2 2.0       COMMOC           OldB.7       OLD: Comments                  1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  254   35 $         SPCMOC           OldB.7.A     OLD: Specify comments          Character
+
+  289    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  290    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

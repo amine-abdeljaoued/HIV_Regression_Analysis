@@ -1,0 +1,1116 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+F21 - Follow-Up Sociodemographics
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Particiapant ID                1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    6 $         FKEY             OldA.0       OLD: Form identifier number    Character
+
+   17    8 $         VERSSD           A.3          Form version                   01/01/93= 01/01/93
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   25    8 $         IDTESD           A.4          Date of interview              10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   33    3 $         INITSD           A.5          Initials of person completing  Character
+                                                   form
+
+   36    8 $         LVISSD           A.6          Date form last administered    10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   44    5 time5.    STIMSD           A.7          Time began                     01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+
+   49    2 2.0       SMERSD           A.7          AM/PM for time began           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   51    2 2.0       LANGSD           OldA.8       Old: Interview language        1= ENGLISH
+                                                   preference                     2= SPANISH
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   53    2 2.0       BSV1SD           B.0          Baseline visit question 1      1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   55    2 2.0       OLV1SD           B.0a         Odd visit or last visit was    1= YES
+                                                   MVIS/ABRV question 1           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   57    2 2.0       MAR_SD           B.1          Marital status                 1= Legally married/Common-law
+                                                                                     married
+                                                                                  2= Not married but living
+                                                                                     with a partner
+                                                                                  3= Widowed
+                                                                                  4= Divorced/Marriage annulled
+                                                                                  5= Separated
+                                                                                  6= Never married
+                                                                                  7= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   59   25 $         MRSPSD           OldB.1       OLD: Specify other marital     Character
+                                                   status
+
+   84    2 2.0       LWSPSD           OldB.2       OLD: Spouse lives with         1= Yes
+                                                   participant                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   86    2 2.0       EDUCSD           OldB.2       OLD: Highest grade of school   1= NO SCHOOLING
+                                                   completed                      2= GRADES 1 - 6
+                                                                                  3= GRADES 7 - 11
+                                                                                  4= COMPLETED HIGH SCHOOL /
+                                                                                     DIPLOMA OR GED
+                                                                                  5= SOME COLLEGE / ASSOCIATES
+                                                                                     DEGREE
+                                                                                  6= COMPLETED 4 YEARS OF
+                                                                                     COLLEGE (BA/BS)
+                                                                                  7= ATTENDED / COMPLETED
+                                                                                     GRADUATE SCHOOL
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   88    2 2.0       MOMESD           OldB.2.a     OLD: Highest grade of school   1= NO SCHOOLING
+                                                   mother completed               2= GRADES 1 - 6
+                                                                                  3= GRADES 7 - 11
+                                                                                  4= COMPLETED HIGH SCHOOL /
+                                                                                     DIPLOMA OR GED
+                                                                                  5= SOME COLLEGE / ASSOCIATES
+                                                                                     DEGREE
+                                                                                  6= COMPLETED 4 YEARS OF
+                                                                                     COLLEGE (BA/BS)
+                                                                                  7= ATTENDED / COMPLETED
+                                                                                     GRADUATE SCHOOL
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   90    2 2.0       RES_SD           B.3          Current place of residence     1= In your own house/apartment
+                                                                                  2= At your parent's house
+                                                                                  3= Someone else's house/
+                                                                                     apartment
+                                                                                  4= Rooming, boarding, or
+                                                                                     halfway house
+                                                                                  5= In a shelter/welfare hotel
+                                                                                  6= On the street(s) (beach)
+                                                                                  7= Jail/Other correctional
+                                                                                     facility
+                                                                                  8= Residential drug/alcohol
+                                                                                     treatment facility
+                                                                                  9= Other place
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   92    2 2.0       BSV3SD           B.3a         Baseline visit question 3      1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   94    2 2.0       ELV1SD           B.3b         Even visit or last visit was   1= YES
+                                                   MVIS/ABRV question 1           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   96   25 $         RESPSD           OldB.3       OLD: Specify other place of    Character
+                                                   residence
+
+  121    2 2.0       ADLTSD           B.4          Average number of adults       0= 0
+                                                   living with participant past   .
+                                                   year                           .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  123    2 2.0       MHSESD           B.5          Participant/other adults       1= Depend on me to manage
+                                                   management of household           everything in the
+                                                                                     household. I am considered
+                                                                                     head of the household
+                                                                                  2= Depend on me to manage
+                                                                                     most everything, but do
+                                                                                     provide some support and
+                                                                                     help in the household
+                                                                                  3= Provide an equal amount of
+                                                                                     support and help in the
+                                                                                     household as I do
+                                                                                  4= Provide more support and
+                                                                                     help in the household as I
+                                                                                     do
+                                                                                  5= Provide complete
+                                                                                     management of the
+                                                                                     household. I depend on
+                                                                                     them for most everything
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  125    2 2.0       CHCRSD           B.6          Average number of children     0= 0
+                                                   participant takes care of      .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  127    2 2.0       MOMSSD           B.7.a        Participant is child(ren)'s    1= YES
+                                                   mother/step-mother             2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  129    2 2.0       FOSTSD           B.7.b        Participant is child(ren)'s    1= YES
+                                                   foster parent                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  131    2 2.0       GRNDSD           B.7.c        Participant is child(ren)'s    1= YES
+                                                   Grandmother                    2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  133    2 2.0       RELASD           B.7.d        Participant is child(ren)'s    1= YES
+                                                   relative (aunt, cousin,        2= NO
+                                                   sister, etc.)                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  135    2 2.0       ORELSD           B.7.e        Participant relationship with  1= YES
+                                                   child(ren) is other            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  137   35 $         ORSPSD           B.7.e        Specify other relationship to  Character
+                                                   children
+
+  172    3 3.0       CCHRSD           B.8          Number of hours participant    0= 0
+                                                   provides childcare             .
+                                                                                  .
+                                                                                  168= 168
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  175    2 2.0       CCDWSD           B.8          Participant provides           1= PER DAY
+                                                   childcare per day/per week     2= PER WEEK
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  177    2 2.0       CCEDSD           B.9          Ease/difficulty taking care    1= Very difficult
+                                                   of children                    2= Somewhat difficult
+                                                                                  3= Neither difficult nor easy
+                                                                                  4= Fairly easy
+                                                                                  5= Very easy
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  179    2 2.0       PRNTSD           B.10         Participant opinion of own     1= Not very good at being a
+                                                   parenting skills                  parent
+                                                                                  2= A person who has some
+                                                                                     trouble being a parent
+                                                                                  3= An average parent
+                                                                                  4= A better than average
+                                                                                     parent
+                                                                                  5= A very good parent
+                                                                                  6= Not applicable / I am not
+                                                                                     a parent/foster-parent/
+                                                                                     step-parent
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  181    2 2.0       CHLPSD           B.11         Participant receives help      1= Not at all
+                                                   from children in her care      2= A little bit
+                                                                                  3= Some/moderately
+                                                                                  4= Quite a bit
+                                                                                  5= A lot/Extremely
+                                                                                  6= I do not have children old
+                                                                                     enough to help
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  183    2 2.0       CUSTSD           B.12         Participant has lost/gained    1= Neither lost nor gained
+                                                   custody in past year              custody
+                                                                                  2= Lost custody
+                                                                                  3= Gained custody
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  185    2 2.0       NRESSD           OldB.4       Old: # of people who live      0= 0 people
+                                                   with participant               1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  187    2 2.0       PU18SD           OldB.4.a     Old: # of people living with   0= 0
+                                                   participant age 18 or less     .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  189    2 2.0       LKIDSD           OldB.5.A     OLD: Children live with        1= Yes
+                                                   participant                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  191    2 2.0       NKIDSD           OldB.5.A     OLD: # of children living      1= 1
+                                                   with participant               .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  193    2 2.0       LFOSSD           OldB.5.B     OLD: Foster children live      1= Yes
+                                                   with participant               2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  195    2 2.0       NFOSSD           OldB.5.B     OLD: Number of foster          1= 1
+                                                   children living with           .
+                                                   participant                    .
+                                                                                  8= 8
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  197    2 2.0       LOTKSD           OldB.5.C     OLD: Other children live with  1= Yes
+                                                   participant                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  199   25 $         LOKSSD           OldB.5.C     OLD: Specify other children    Character
+                                                   living with participant
+
+  224    2 2.0       NOTKSD           OldB.5.C     OLD: Number of other children  1= 1
+                                                   living with participant        .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  226    2 2.0       LMALSD           OldB.5.a     Old: Husband/male sex prtner   1= Yes
+                                                   lives with participant         2= No
+                                                                                  3= N/A
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  228    2 2.0       LFEMSD           OldB.5.b     Old: Female sex partner lives  1= Yes
+                                                   with participant               2= No
+                                                                                  3= N/A
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  230    2 2.0       LRELSD           OldB.5.c     Old: Other adult relatives     1= Yes
+                                                   live with participant          2= No
+                                                                                  3= N/A
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  232    2 2.0       NRELSD           OldB.5.c.i   Old: # other adult relatives   1= 1
+                                                   living with participant        .
+                                                                                  .
+                                                                                  8= 8
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  234    2 2.0       LADLSD           OldB.5.d     Old: Other adult non-          1= Yes
+                                                   relatives live with            2= No
+                                                   participant                    3= N/A
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  236    2 2.0       NADLSD           OldB.5.d.i   Old: # other adult non-        0= 0
+                                                   relatives living with          .
+                                                   participant                    .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  238    2 2.0       LPARSD           OldB.5.F     OLD: Parents/step/foster live  1= Yes
+                                                   with participant               2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  240    2 2.0       NPARSD           OldB.5.F     OLD: Number of parents/step/   1= 1
+                                                   foster living with participant .
+                                                                                  .
+                                                                                  8= 8
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  242   25 $         LOTRSD           OldB.5.G     OLD: Specify other adult       Character
+                                                   relatives living with
+                                                   participant
+
+  267   25 $         LOTASD           OldB.5.H     OLD: Specify other adult non-  Character
+                                                   relatives living with
+                                                   participant
+
+  292    2 2.0       EMP_SD           B.13         Currently employed             1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  294    2 2.0       EMP1SD           OldB.6       OLD: Participant currently     1= Yes
+                                                   employed                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  296    3 3.0       WKHRSD           B.14         Number of hours participant    1= 1
+                                                   works                          .
+                                                                                  .
+                                                                                  320= 320
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  299    2 2.0       WKWMSD           B.14         Participant works per day/per  1= PER WEEK
+                                                   week                           2= PER MONTH
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  301    2 2.0       SHFTSD           B.15         Participant works which shifts 1= Day shift
+                                                                                  2= Evening ("pm")
+                                                                                  3= Night shift
+                                                                                  4= Mixed shifts
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  303    2 2.0       EMPLSD           OldB.16      Old: Participant opinion of    1= Not a very good employee
+                                                   own employee abilities         2= A person who has some
+                                                                                     trouble being an employee
+                                                                                  3= An average employee
+                                                                                  4= A better than average
+                                                                                     employee
+                                                                                  5= A very good employee
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  305    2 2.0       LJOBSD           B.17         Participant is looking for a   1= YES
+                                                   job                            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  307    2 2.0       JFNDSD           OldB.18.a    Old: Job difficulty: finding   1= YES
+                                                   a job                          2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  309    2 2.0       JSKLSD           OldB.18.b    Old: Job difficulty: lack      1= YES
+                                                   skills/ability                 2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  311    2 2.0       JCHLSD           OldB.18.c    Old: Job difficulty: children  1= YES
+                                                   at home                        2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  313    2 2.0       JCRESD           OldB.18.d    Old: Job difficulty: take      1= YES
+                                                   care of relative/friend        2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  315    2 2.0       JTRNSD           OldB.18.e    Old: Job difficulty:           1= YES
+                                                   transportation                 2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  317    2 2.0       JHUSSD           OldB.18.f    Old: Job difficulty: partner/  1= YES
+                                                   husband                        2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  319    2 2.0       JDINSD           OldB.18.g    Old: Job difficulty:           1= YES
+                                                   disability income              2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  321    2 2.0       JSCKSD           OldB.18.h    Old: Job difficulty: too sick/ 1= YES
+                                                   disabled                       2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  323    2 2.0       JDRGSD           OldB.18.i    Old: Job difficulty: using     1= YES
+                                                   drugs/alcohol                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  325    2 2.0       JUSCSD           OldB.18.j    Old: Job difficulty: not a     1= YES
+                                                   U.S. citizen                   2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  327    2 2.0       JDNDSD           OldB.18.k    Old: Job difficulty: don't     1= YES
+                                                   want / need work               2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  329    2 2.0       JRETSD           OldB.18.l    Old: Job difficulty: retired/  1= YES
+                                                   too old                        2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  331    2 2.0       JDATSD           OldB.18.m    Old: Job difficulty: in drug/  1= YES
+                                                   alcohol treatment              2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  333    2 2.0       JCRJSD           OldB.18.n    Old: Job difficulty: criminal  1= YES
+                                                   record/hx of jail              2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  335    2 2.0       JSTUSD           OldB.18.o    Old: Job difficulty: student/  1= YES
+                                                   in school                      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  337    2 2.0       JCNFSD           OldB.18.p    Old: Job difficulty: can't     1= YES
+                                                   find a job                     2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  339    2 2.0       JOTHSD           OldB.18.q    Old: Job difficulty: other     1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  341   50 $         JOSPSD           OldB.18.q    Old: Specify other difficulty  Character
+                                                   finding/keeping job
+
+  391    2 2.0       BRTRSD           OldB.19      Old: Participant regularly     1= YES
+                                                   barters for needs              2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  393    2 2.0       VLNTSD           OldB.20      Old: Participant volunteers    1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  395    3 3.0       VLHRSD           OldB.20.a    Old: Number of hours           1= 1
+                                                   participant volunteers         .
+                                                                                  .
+                                                                                  300= 300
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  398    2 2.0       VLWMSD           OldB.20.a    Old: Participant volunteers    1= PER WEEK
+                                                   per week/per month             2= PER MONTH
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  400    2 2.0       BSV2SD           B.20b        Baseline visit question 2      1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  402    2 2.0       OLV2SD           B.20c        Odd visit or last visit was    1= YES
+                                                   MVIS/ABRV question 2           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  404    2 2.0       INCMSD           B.21         Current average monthly        1= $500 OR LESS
+                                                   income of household            2= $501 TO $1000
+                                                                                  3= $1001 TO $1500
+                                                                                  4= $1501 TO $2000
+                                                                                  5= $2001 TO $2500
+                                                                                  6= $2501 TO $3000
+                                                                                  7= $3001 TO $6250
+                                                                                  8= MORE THAN $6250
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  406    2 2.0       INC_SD           OldB.7       OLD: Average income monthly    1= $500 or less
+                                                                                  2= $501 TO $1000
+                                                                                  3= $1001 TO $1500
+                                                                                  4= $1501 TO $2000
+                                                                                  5= $2001 TO $2500
+                                                                                  6= $2501 TO $3000
+                                                                                  7= $3001 TO $6250
+                                                                                  8= MORE THAN $6250
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  408    2 2.0       WAGESD           OldB.8       Old: Income source: Wages/     1= Yes
+                                                   Salary/Stipend                 2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  410    2 2.0       ALIMSD           OldB.9       Old: Income source: Alimony/   1= Yes
+                                                   Child Support                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  412    2 2.0       WELFSD           OldB.10      Old: Income source: Welfare/   1= Yes
+                                                   Public Aid, AFDC, FA, CAP,     2= No
+                                                   General Assistance             -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  414    2 2.0       SSI_SD           OldB.11      Old: Income source: SSI/SSDI   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  416    2 2.0       DISBSD           OldB.12      Old: Income source: State or   1= Yes
+                                                   private disability or          2= No
+                                                   workers' compensation          -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  418    2 2.0       SOCSSD           OldB.13      Old: Income source: Social     1= Yes
+                                                   Security (Excluding SSI, SSDI) 2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  420    2 2.0       PENSSD           OldB.14      Old: Income source: Pension    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  422    2 2.0       OTSCSD           OldB.15      Old: Income source: Other      1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  424    2 2.0       ISWGSD           OldB.8       OLD: Source of household       1= Yes
+                                                   income: wages/salary           2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  426    2 2.0       PDWGSD           OldB.8.A     OLD: Household wages/salary    1= Yes
+                                                   paid directly                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  428    2 2.0       ISALSD           OldB.9       OLD: Source of household's     1= Yes
+                                                   income: alimony/child support  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  430    2 2.0       PDALSD           OldB.9.A     OLD: Household alimony/child   1= Yes
+                                                   support paid directly          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  432    2 2.0       ISWFSD           OldB.10      OLD: Source of household's     1= Yes
+                                                   income: welfare/public aid     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  434    2 2.0       PDWFSD           OldB.10.A    OLD: Household welfare/public  1= Yes
+                                                   aid paid directly              2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  436    2 2.0       ISDISD           OldB.11      OLD: Source of household's     1= Yes
+                                                   income: SSI/SSDI               2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  438    2 2.0       PDDISD           OldB.11.A    OLD: Household SSI/SSDI paid   1= Yes
+                                                   directly                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  440    2 2.0       ISPDSD           OldB.12      OLD: Source of household's     1= Yes
+                                                   income: private disability/    2= No
+                                                   workers comp                   -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  442    2 2.0       PDPDSD           OldB.12.A    OLD: Household private         1= Yes
+                                                   disability/workers comp paid   2= No
+                                                   directly                       -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  444    2 2.0       ISSSSD           OldB.13      OLD: Source of household's     1= Yes
+                                                   income: social security        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  446    2 2.0       PDSSSD           OldB.13.A    OLD: Household social          1= Yes
+                                                   security paid directly         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  448    2 2.0       ISPNSD           OldB.14      OLD: Source of household's     1= Yes
+                                                   income: pension                2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  450    2 2.0       PDPNSD           OldB.14.A    OLD: Household pension paid    1= Yes
+                                                   directly                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  452    2 2.0       ISOTSD           OldB.15      OLD: Other household income    1= Yes
+                                                   source                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  454   25 $         ISPCSD           OldB.15      OLD: Specify other source of   Character
+                                                   household income
+
+  479    2 2.0       PDOTSD           OldB.15.A    OLD: Other source of           1= Yes
+                                                   household income paid directly 2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  481    2 2.0       EMP2SD           OldB.16      OLD: Participant currently     1= Yes
+                                                   employed (no stable residence) 2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  483    2 2.0       FINCSD           OldB.17      OLD: Average monthly income    1= $500 OR LESS
+                                                   of former household            2= $501 TO $1000
+                                                                                  3= $1001 TO $1500
+                                                                                  4= $1501 TO $2000
+                                                                                  5= $2001 TO $2500
+                                                                                  6= $2501 TO $3000
+                                                                                  7= $3001 TO $6250
+                                                                                  8= MORE THAN $6250
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  485    2 2.0       FIWGSD           OldB.18      OLD: Former household income   1= Yes
+                                                   source: wages/salary           2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  487    2 2.0       FPWGSD           OldB.18.A    OLD: Former household wages/   1= Yes
+                                                   salary paid directly           2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  489    2 2.0       FIALSD           OldB.19      OLD: Former household income   1= Yes
+                                                   source: alimony/child support  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  491    2 2.0       FPALSD           OldB.19.A    OLD: Former household alimony/ 1= Yes
+                                                   chld support paid directly     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  493    2 2.0       FIWFSD           OldB.20      OLD: Former household income   1= Yes
+                                                   source: welfare/public aid     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  495    2 2.0       FPWFSD           OldB.20.A    OLD: Former household welfare/ 1= Yes
+                                                   public aid paid directly       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  497    2 2.0       FIDISD           OldB.21      OLD: Former household income   1= Yes
+                                                   source: SSI/SSDI               2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  499    2 2.0       FPDISD           OldB.21.A    OLD: Former household SSI/     1= Yes
+                                                   SSDI paid directly             2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  501    2 2.0       FIPDSD           OldB.22      OLD: Former household income   1= Yes
+                                                   source: disability/workers     2= No
+                                                   comp                           -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  503    2 2.0       FPPDSD           OldB.22.A    OLD: Former household          1= Yes
+                                                   disability/workers comp paid   2= No
+                                                   directly                       -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  505    2 2.0       FISSSD           OldB.23      OLD: Former household income   1= Yes
+                                                   source: social security        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  507    2 2.0       FPSSSD           OldB.23.A    OLD: Former household social   1= Yes
+                                                   security paid directly         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  509    2 2.0       FIPNSD           OldB.24      OLD: Former household income   1= Yes
+                                                   source: pension                2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  511    2 2.0       FPPNSD           OldB.24.A    OLD: Former household pension  1= Yes
+                                                   paid directly                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  513    2 2.0       FIOTSD           OldB.25      OLD: Other former household    1= Yes
+                                                   income source                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  515   25 $         FISPSD           OldB.25      OLD: Specify other former      Character
+                                                   household income source
+
+  540    2 2.0       FPOTSD           OldB.25.A    OLD: Other former household    1= Yes
+                                                   income source paid directly    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  542    2 2.0       JAILSD           OldB.8       Old: Ever incarcerated         1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  544    3 3.0       JLTMSD           OldB.8.a     Old: Number of times ever      1= 1
+                                                   incarcerated                   .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  547    2 2.0       JL6MSD           B.22         Incarcerated since last visit  1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  549    2 2.0       J6TMSD           B.22.a       Number of times incarcerated   1= 1
+                                                   since last visit               .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  551    2 2.0       BLNGSD           OldB.23      Old: Participant is bilingual  1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  553    2 2.0       ENGFSD           OldB.24      Old: English was first         1= YES
+                                                   language                       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  555    2 2.0       LNGFSD           OldB.24.a    Old: First language spoken as  1= Spanish
+                                                   a child                        2= French
+                                                                                  3= German
+                                                                                  4= Italian
+                                                                                  5= Chinese
+                                                                                  6= Other language
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  557   35 $         SOLFSD           OldB.24.a    Old: Specify other language    Character
+                                                   first spoken
+
+  592    2 2.0       EPRMSD           OldB.25      Old: Today English considered  1= YES
+                                                   primary language               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  594    2 2.0       LPRMSD           OldB.25.a    Old: Language considered       1= Spanish
+                                                   primary                        2= French
+                                                                                  3= German
+                                                                                  4= Italian
+                                                                                  5= Chinese
+                                                                                  6= Other language
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  596   35 $         SOLPSD           OldB.25.a    Old: Specify other language    Character
+                                                   considered primary
+
+  631    5 time5.    ETIMSD           B.26         Time ended                     01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+
+  636    2 2.0       EMERSD           B.26.a       AM/PM for time ended           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  638    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  639    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

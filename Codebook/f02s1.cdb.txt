@@ -1,0 +1,64 @@
+                               CODEBOOK
+Women's Interagency HIV Study                              9-6-2017
+Form 02 - Baseline Medical & Health Hx (Part B)
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit number                   1= visit 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= visit 99
+
+   11    6 $         FKEY             A.0          Form identifier number         Character
+
+   17    2 2.0       CTNMMH           F.1C         Know name of meds taken in     1= Yes
+                                                   study                          2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   19   25 $         CTNSMH           F.1C         Specify name of meds or tx     Character
+
+   44    2 2.0       CTSNMH           F.1D         Know name of study             1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   46   25 $         CTSSMH           F.1D         Specify name of study          Character
+
+   71    1 $         DU52MH                        NERI Dummy Field               Character
+
+   72    1 $         DU53MH                        NERI: This is a unknown
+                                                   variable shown in data table   -1= N.A. (Skipped)
+                                                   mhisdatb                       -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   73    2 2.0       SEQID                         Number of medicine or study    1= 1st medication
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99th medication
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   75    1 $         ESTAT            A.0          Edit Status                    CharacterD= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   76    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

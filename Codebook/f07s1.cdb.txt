@@ -1,0 +1,375 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+F07 - Physical Exam (Repeating Segment) S1
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    2 2.0       SEQID            OldB.3       Old: Location #                0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  8= 8
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   13    2 2.0       SKLOPE           OldB.3.a     Old: Location code             1= face
+                                                                                  2= anterior chest
+                                                                                  3= arms
+                                                                                  4= axilla
+                                                                                  5= soles
+                                                                                  6= neck
+                                                                                  7= lower back
+                                                                                  8= legs
+                                                                                  9= inguinal
+                                                                                  10= palms
+                                                                                  11= nails
+                                                                                  12= generalized
+                                                                                  13= other
+                                                                                  14= 3 or more locations
+                                                                                  15= scalp
+                                                                                  16= posterior chest
+                                                                                  17= anterior abdomen
+                                                                                  18= hands
+                                                                                  66= buttocks
+                                                                                  77= feet
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   15    3 3.0       SKD1PE           OldB.3.b.i   OLD: Description code 1        15= excoriated
+                                                                                  16= ulcerated
+                                                                                  17= crusted
+                                                                                  18= erythematous
+                                                                                  19= flat
+                                                                                  20= vesicles
+                                                                                  21= raised
+                                                                                  22= tender/painful
+                                                                                  23= non-tender
+                                                                                  24= mobile
+                                                                                  25= non-mobile
+                                                                                  26= tracks
+                                                                                  27= icteric
+                                                                                  28= papule umbilicated
+                                                                                  29= papule nonumbilicated
+                                                                                  30= purpura
+                                                                                  31= nodule
+                                                                                  32= target
+                                                                                  33= petechiae
+                                                                                  34= flaking
+                                                                                  35= hyperpigmented
+                                                                                  36= hypopigmented
+                                                                                  37= dermatomal
+                                                                                  38= ecchymotic
+                                                                                  39= alopecia
+                                                                                  40= other
+                                                                                  67= scar
+                                                                                  68= macule
+                                                                                  69= pustule
+                                                                                  75= pruritic
+                                                                                  101= Diffuse maculopapular
+                                                                                  102= Patch (large flat spot)
+                                                                                  103= Macule (small flat spot)
+                                                                                  104= Plaque (raised area)
+                                                                                  105= Papule (small bump)
+                                                                                  106= Fissure (linear ulcer)
+                                                                                  107= Bulla (fluid-filled
+                                                                                      lesion>.05cm)
+                                                                                  109= Annular (round)
+                                                                                  110= Nevus (brown/black)
+                                                                                  111= Grouped
+                                                                                  112= Linear (line)
+                                                                                  113= Violaceous (purple)
+                                                                                  114= Yellow/white
+                                                                                  115= Excoriated (scratched)
+                                                                                  116= Ulcerated
+                                                                                  117= Crusted
+                                                                                  118= Erythematous (red)
+                                                                                  120= Vesicle (clear liquid-
+                                                                                      filled bump)
+                                                                                  122= Tender
+                                                                                  131= Nodule (big bump)
+                                                                                  132= Target (ring-shaped)
+                                                                                  133= Petechial
+                                                                                  134= Scaly (flaking)
+                                                                                  135= Hyperpigmented (darker
+                                                                                      color)
+                                                                                  136= Hypopigmented (lighter
+                                                                                      color)
+                                                                                  137= Dermatomal
+                                                                                  138= Ecchymotic
+                                                                                  140= Other
+                                                                                  141= Atophic (thinned out)
+                                                                                  142= Umbilicated
+                                                                                  143= Eroded
+                                                                                  144= Edematous (swollen)
+                                                                                  145= Ulcer (deep ulcer)
+                                                                                  146= Pruritic
+                                                                                  169= Pustule (small pus-
+                                                                                      filled bump)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   18    3 3.0       SKD2PE           OldB.3.b.ii  OLD: Description code 2        15= excoriated
+                                                                                  16= ulcerated
+                                                                                  17= crusted
+                                                                                  18= erythematous
+                                                                                  19= flat
+                                                                                  20= vesicles
+                                                                                  21= raised
+                                                                                  22= tender/painful
+                                                                                  23= non-tender
+                                                                                  24= mobile
+                                                                                  25= non-mobile
+                                                                                  26= tracks
+                                                                                  27= icteric
+                                                                                  28= papule umbilicated
+                                                                                  29= papule nonumbilicated
+                                                                                  30= purpura
+                                                                                  31= nodule
+                                                                                  32= target
+                                                                                  33= petechiae
+                                                                                  34= flaking
+                                                                                  35= hyperpigmented
+                                                                                  36= hypopigmented
+                                                                                  37= dermatomal
+                                                                                  38= ecchymotic
+                                                                                  39= alopecia
+                                                                                  40= other
+                                                                                  67= scar
+                                                                                  68= macule
+                                                                                  69= pustule
+                                                                                  75= pruritic
+                                                                                  101= Diffuse maculopapular
+                                                                                  102= Patch (large flat spot)
+                                                                                  103= Macule (small flat spot)
+                                                                                  104= Plaque (raised area)
+                                                                                  105= Papule (small bump)
+                                                                                  106= Fissure (linear ulcer)
+                                                                                  107= Bulla (fluid-filled
+                                                                                      lesion>.05cm)
+                                                                                  109= Annular (round)
+                                                                                  110= Nevus (brown/black)
+                                                                                  111= Grouped
+                                                                                  112= Linear (line)
+                                                                                  113= Violaceous (purple)
+                                                                                  114= Yellow/white
+                                                                                  115= Excoriated (scratched)
+                                                                                  116= Ulcerated
+                                                                                  117= Crusted
+                                                                                  118= Erythematous (red)
+                                                                                  120= Vesicle (clear liquid-
+                                                                                      filled bump)
+                                                                                  122= Tender
+                                                                                  131= Nodule (big bump)
+                                                                                  132= Target (ring-shaped)
+                                                                                  133= Petechial
+                                                                                  134= Scaly (flaking)
+                                                                                  135= Hyperpigmented (darker
+                                                                                      color)
+                                                                                  136= Hypopigmented (lighter
+                                                                                      color)
+                                                                                  137= Dermatomal
+                                                                                  138= Ecchymotic
+                                                                                  140= Other
+                                                                                  141= Atophic (thinned out)
+                                                                                  142= Umbilicated
+                                                                                  143= Eroded
+                                                                                  144= Edematous (swollen)
+                                                                                  145= Ulcer (deep ulcer)
+                                                                                  146= Pruritic
+                                                                                  169= Pustule (small pus-
+                                                                                      filled bump)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   21    3 3.0       SKD3PE           OldB.3.b.iii  OLD: Description code 3        15= excoriated
+                                                                                  16= ulcerated
+                                                                                  17= crusted
+                                                                                  18= erythematous
+                                                                                  19= flat
+                                                                                  20= vesicles
+                                                                                  21= raised
+                                                                                  22= tender/painful
+                                                                                  23= non-tender
+                                                                                  24= mobile
+                                                                                  25= non-mobile
+                                                                                  26= tracks
+                                                                                  27= icteric
+                                                                                  28= papule umbilicated
+                                                                                  29= papule nonumbilicated
+                                                                                  30= purpura
+                                                                                  31= nodule
+                                                                                  32= target
+                                                                                  33= petechiae
+                                                                                  34= flaking
+                                                                                  35= hyperpigmented
+                                                                                  36= hypopigmented
+                                                                                  37= dermatomal
+                                                                                  38= ecchymotic
+                                                                                  39= alopecia
+                                                                                  40= other
+                                                                                  67= scar
+                                                                                  68= macule
+                                                                                  69= pustule
+                                                                                  75= pruritic
+                                                                                  101= Diffuse maculopapular
+                                                                                  102= Patch (large flat spot)
+                                                                                  103= Macule (small flat spot)
+                                                                                  104= Plaque (raised area)
+                                                                                  105= Papule (small bump)
+                                                                                  106= Fissure (linear ulcer)
+                                                                                  107= Bulla (fluid-filled
+                                                                                      lesion>.05cm)
+                                                                                  109= Annular (round)
+                                                                                  110= Nevus (brown/black)
+                                                                                  111= Grouped
+                                                                                  112= Linear (line)
+                                                                                  113= Violaceous (purple)
+                                                                                  114= Yellow/white
+                                                                                  115= Excoriated (scratched)
+                                                                                  116= Ulcerated
+                                                                                  117= Crusted
+                                                                                  118= Erythematous (red)
+                                                                                  120= Vesicle (clear liquid-
+                                                                                      filled bump)
+                                                                                  122= Tender
+                                                                                  131= Nodule (big bump)
+                                                                                  132= Target (ring-shaped)
+                                                                                  133= Petechial
+                                                                                  134= Scaly (flaking)
+                                                                                  135= Hyperpigmented (darker
+                                                                                      color)
+                                                                                  136= Hypopigmented (lighter
+                                                                                      color)
+                                                                                  137= Dermatomal
+                                                                                  138= Ecchymotic
+                                                                                  140= Other
+                                                                                  141= Atophic (thinned out)
+                                                                                  142= Umbilicated
+                                                                                  143= Eroded
+                                                                                  144= Edematous (swollen)
+                                                                                  145= Ulcer (deep ulcer)
+                                                                                  146= Pruritic
+                                                                                  169= Pustule (small pus-
+                                                                                      filled bump)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   24    3 3.0       SKDGPE           OldB.3.b     Old: Diagnosis of skin lesion  41= acne
+                                                                                  42= cellulitis
+                                                                                  43= drug rash (simple)
+                                                                                  44= eczema
+                                                                                  45= folliculitis
+                                                                                  46= jaundice
+                                                                                  47= molluscumcontagiosum
+                                                                                  48= psoriasis
+                                                                                  49= secondary syphilis
+                                                                                  50= tinea cruris
+                                                                                  51= wound infection
+                                                                                  52= herpes zoster
+                                                                                  53= tinea versicolor
+                                                                                  54= wart
+                                                                                  55= ecchymosis
+                                                                                  56= erythema multiforme
+                                                                                  57= herpes simplex
+                                                                                  58= kaposi sarcoma
+                                                                                  59= onychomychosis
+                                                                                  60= pigmented nevus
+                                                                                  61= seborrheic dermatitis
+                                                                                  62= Stevens-Johnson
+                                                                                  63= tinea pedis
+                                                                                  64= xerosis (dry skin)
+                                                                                  65= other
+                                                                                  70= tracks
+                                                                                  71= surgical scar
+                                                                                  72= scabies
+                                                                                  73= impetigo
+                                                                                  74= nevus
+                                                                                  76= allergic dermatitis
+                                                                                  99= unknown
+                                                                                  201= Abscess
+                                                                                  202= Tinea capitis (scalp)
+                                                                                  203= Tinea corporis (body)
+                                                                                  204= Insect bites
+                                                                                  205= Lice
+                                                                                  206= Atopic dermatitis
+                                                                                  207= Contact dermatitis
+                                                                                  208= Post inflammatory
+                                                                                  209= Hyperpigmentation
+                                                                                  210= Basal cell carcinoma
+                                                                                  211= Squamous cell carcinoma
+                                                                                  212= Male pattern alopecisa
+                                                                                  213= Alopecia (other)
+                                                                                  214= Xanthelasma
+                                                                                  215= Scar
+                                                                                  216= Cyst
+                                                                                  217= Post inflammatory
+                                                                                      hyperpigmentation
+                                                                                  241= Acne
+                                                                                  242= Cellulitis
+                                                                                  243= Drug rash
+                                                                                  245= Folliculitis
+                                                                                  246= Jaundice
+                                                                                  247= Molluscum
+                                                                                  248= Psoriasis
+                                                                                  249= Secondary syphilis
+                                                                                  250= Tinea cruris (groin)
+                                                                                  251= Wound infection
+                                                                                  252= Herpes zoster-varicella
+                                                                                  253= Tinea versicolor
+                                                                                      (pitment changing)
+                                                                                  254= Wart
+                                                                                  256= Erythema mulitforme
+                                                                                  257= Herpes simplex
+                                                                                  258= Kaposi's sarcoma
+                                                                                  259= Onchomycosis (nails)
+                                                                                  261= Seborrheic dermatitis
+                                                                                  263= Tinea pedis (feet)
+                                                                                  264= Xerosis (dry skin)
+                                                                                  265= Other
+                                                                                  270= Tracks
+                                                                                  272= Scabies
+                                                                                  273= Impetigo
+                                                                                  274= Nevus
+                                                                                  275= Eosinophilic folliculitis
+                                                                                  276= Rosacea
+                                                                                  277= Hidradenitis
+                                                                                  278= Pruritis (not otherwise
+                                                                                      defined)
+                                                                                  279= Lipoma
+                                                                                  280= Vitiligo
+                                                                                  299= Unknown
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   27    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   28    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

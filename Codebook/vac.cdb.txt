@@ -1,0 +1,49 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+VAC - Vaccination History Form
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        25= 25
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    8 $         VERSVC           A.3          Form version                   04/01/03= 04/01/03
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   19    8 $         DCMPVC           A.4          Date form completed            04/01/03= 04/01/03
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   27    3 $         INITVC           A.5          Initials of person completing  Character
+                                                   form
+
+   30    2 2.0       TVACVC           B.12         Total # of vaccinations        0= 0
+                                                   reported                       .
+                                                                                  .
+                                                                                  30= 30
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   32    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   33    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

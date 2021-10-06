@@ -1,0 +1,54 @@
+                               CODEBOOK
+Women's Interagency HIV Study                              9-6-2017
+Form 02 - Baseline Medical & Health Hx (Sub 2)
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit number                   1= visit 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= visit 99
+
+   11    6 $         FKEY             A.0          Form identifier key            Character
+
+   17   25 $         OMNAMH           F.21A1       Name of other medication       Character
+
+   42    2 2.0       OMSCMH           F.21A2       Other medication source        1= Reported by respondent
+                                                                                  2= Bottle shown to interviewer
+                                                                                  3= Both
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   44    1 $         DUM1MH           F.21A3       NERI variable - description
+                                                   unknown                        -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   45    2 2.0       SEQID            F.21A4       Number of medicine or study    1= 1st medication
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99th medication
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   47    1 $         ESTAT            A.0          Edit Status                    CharacterD= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   48    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

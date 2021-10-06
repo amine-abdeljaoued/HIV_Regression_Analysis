@@ -1,0 +1,1006 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+FIS - Food Insecurity Study
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        17= 17
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    8 $         VERSFI           A.3          Form version                   04/01/13= 04/01/13
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   19    8 $         DCMPFI           A.4          Date of completion             04/01/13= 04/01/13
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   27    3 $         INITFI           A.5          Initials of person completing  Character
+                                                   form
+
+   30    5 time5.    STIMFI           A.6          Time began                     1:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   35    2 2.0       SMERFI           A.6          AM/PM for time began           1= AM
+                                                                                  2= PM
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   37    2 2.0       WFROFI           B.1          Last six months worried        1= Often true
+                                                   whether food would run out     2= Sometimes true
+                                                   before getting money for more  3= Never true
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   39    2 2.0       FBDLFI           B.2          Last six months food didn't    1= Often true
+                                                   last and no money to buy more  2= Sometimes true
+                                                                                  3= Never true
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   41    2 2.0       CABMFI           B.3          Last six months couldn't       1= Often true
+                                                   afford to eat balanced meals   2= Sometimes true
+                                                                                  3= Never true
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   43    2 2.0       CSOMFI           B.4          Last six months adults cut     1= YES
+                                                   size of meals/skipped meals    2= NO
+                                                   due to lack of money for food  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   45    2 2.0       HOH1FI           B.5          How often adults cut size/     1= Almost every month
+                                                   skipped meals                  2= Some months but not every
+                                                                                     month
+                                                                                  3= Only one or two months
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   47    2 2.0       ELESFI           B.6          Last six months ate less than  1= YES
+                                                   felt necessary due to lack of  2= NO
+                                                   money for food                 -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   49    2 2.0       HDEMFI           B.7          Last six months ever hungry    1= YES
+                                                   due to lack of money for food  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   51    2 2.0       LWNFFI           B.8          Last six months lose weight    1= YES
+                                                   due to lack of money for food  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   53    2 2.0       WDNEFI           B.9          Last six months adults not     1= YES
+                                                   eat for whole day due to lack  2= NO
+                                                   of money for food              -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   55    2 2.0       HOH2FI           B.10         How often adults didn't eat    1= Almost every month
+                                                   whole day                      2= Some months but not every
+                                                                                     month
+                                                                                  3= Only one or two months
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   57    2 2.0       CH18FI           B.11         Last 6 months - children       1= YES
+                                                   under 18 in household          2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   59    2 2.0       LCFCFI           B.12         Last six months relied on a    1= Often true
+                                                   few low-cost foods for         2= Sometimes true
+                                                   children due to lack of money  3= Never true
+                                                   for food                       -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   61    2 2.0       CFBMFI           B.13         Last six months couldn't       1= Often true
+                                                   afford to feed children        2= Sometimes true
+                                                   balanced meals due to lack of  3= Never true
+                                                   money for food                 -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63    2 2.0       CNEEFI           B.14         Last six months children       1= Often true
+                                                   weren't eating enough due to   2= Sometimes true
+                                                   lack of money for food         3= Never true
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   65    2 2.0       CCSMFI           B.15         Last six months cut size of    1= YES
+                                                   children's meals due to lack   2= NO
+                                                   of money for food              -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   67    2 2.0       CSKMFI           B.16         Last six months children       1= YES
+                                                   skipped meals due to lack of   2= NO
+                                                   money for food                 -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   69    2 2.0       HOH3FI           B.17         How often children skipped     1= Almost every month
+                                                   meals                          2= Some months but not every
+                                                                                     month
+                                                                                  3= Only one or two months
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   71    2 2.0       CHNGFI           B.18         Last six months children ever  1= YES
+                                                   hungry but couldn't afford     2= NO
+                                                   more food                      -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   73    2 2.0       CWDNFI           B.19         Last six months children ever  1= YES
+                                                   not eat for whole day due to   2= NO
+                                                   lack of money for food         -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   75    2 2.0       BVISFI           B.20         This is participant's          1= YES
+                                                   baseline visit                 2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   77    2 2.0       ODVSFI           B.21         This is odd-numbered visit     1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   79    2 2.0       FPMTFI           C.1          Number of times ate prepared   0= 0
+                                                   meats - hot dogs/bacon.        .
+                                                   sausage, ham. cold cuts        .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   81    2 2.0       PMTIFI           C.1          Number of times ate prepared   1= Day
+                                                   meats - indicator day/week/    2= Week
+                                                   month/year                     3= Month
+                                                                                  4= Year
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   83    2 2.0       FRMTFI           C.2          Number of times ate red meats  0= 0
+                                                   - pork, beef, hamburgers,      .
+                                                   cheeseburgers, meatloaf        .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   85    2 2.0       RMTIFI           C.2          Number of times ate red meats  1= Day
+                                                   - indicator day/week/month/    2= Week
+                                                   year                           3= Month
+                                                                                  4= Year
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   87    2 2.0       FCHKFI           C.3          Number of times ate poultry -  0= 0
+                                                   chicken, turkey, duck          .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   89    2 2.0       CHKIFI           C.3          Number of times ate poultry -  1= Day
+                                                   indicator day/week/month/year  2= Week
+                                                                                  3= Month
+                                                                                  4= Year
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   91    2 2.0       FBNSFI           C.4          Number of times ate beans,     0= 0
+                                                   touf, nuts, lentils            .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   93    2 2.0       BNSIFI           C.4          Number of times ate beans,     1= Day
+                                                   etc. - indicator day/week/     2= Week
+                                                   month/year                     3= Month
+                                                                                  4= Year
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   95    2 2.0       FFSHFI           C.5          Number of times ate fish,      0= 0
+                                                   seafood                        .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   97    2 2.0       FSHIFI           C.5          Number of times ate fish/      1= Day
+                                                   seafood - indicator day/week/  2= Week
+                                                   month/year                     3= Month
+                                                                                  4= Year
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   99    2 2.0       FCHSFI           C.6          Number of times ate yogurt,    0= 0
+                                                   cheese products                .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  101    2 2.0       CHSIFI           C.6          Number of times ate yogurt/    1= Day
+                                                   cheese products - indicator    2= Week
+                                                   day/week/month/year            3= Month
+                                                                                  4= Year
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  103    2 2.0       FBKDFI           C.7          Number of times ate baked      0= 0
+                                                   sweets - doughnuts, cookies,   .
+                                                   cake                           .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  105    2 2.0       BKDIFI           C.7          Number of times ate baked      1= Day
+                                                   sweets - indicator day/week/   2= Week
+                                                   month/year                     3= Month
+                                                                                  4= Year
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  107    3 3.0       FNDDFI           C.8          Number of times drank non-     0= 0
+                                                   diet sodas, fruit drinks       .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  110    2 2.0       NDDIFI           C.8          Number of times drank non-     1= Day
+                                                   diet sodas, fruit drinks -     2= Week
+                                                   indicator day/week/month/year  3= Month
+                                                                                  4= Year
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  112    3 3.0       FGRNFI           C.9          Number of times ate grains -   0= 0
+                                                   cereal, rice, pasta, breads,   .
+                                                   tortillas, other grains        .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  115    2 2.0       GRNIFI           C.9          Number of times ate grains -   1= Day
+                                                   indicator day/week/month/year  2= Week
+                                                                                  3= Month
+                                                                                  4= Year
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  117    3 3.0       FBUTFI           C.10         Number of times ate butter,    0= 0
+                                                   margarine, dressing, mayo      .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  120    2 2.0       BUTIFI           C.10         Number of times ate butter,    1= Day
+                                                   etc. - indicator day/week/     2= Week
+                                                   month/year                     3= Month
+                                                                                  4= Year
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  122    2 2.0       FEGGFI           C.11         Number of times ate eggs       0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  124    2 2.0       EGGIFI           C.11         Number of times ate eggs -     1= Day
+                                                   indicator day/week/month/year  2= Week
+                                                                                  3= Month
+                                                                                  4= Year
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  126    2 2.0       FWMKFI           C.12         Number of times drank whole    0= 0
+                                                   milk                           .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  128    2 2.0       WMKIFI           C.12         Number of times drank whole    1= Day
+                                                   milk - indicator day/week/     2= Week
+                                                   month/year                     3= Month
+                                                                                  4= Year
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  130    2 2.0       FLFMFI           C.13         Number of times drank drank    0= 0
+                                                   low-fat milk                   .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  132    2 2.0       LFMIFI           C.13         Number of times drank low-fat  1= Day
+                                                   milk - indicator day/week/     2= Week
+                                                   month/year                     3= Month
+                                                                                  4= Year
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  134    2 2.0       FFJCFI           C.14         Number of times drank 100%     0= 0
+                                                   fruit juices                   .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  136    2 2.0       FJCIFI           C.14         Number of times drank 100%     1= Day
+                                                   fruit juices - indicator day/  2= Week
+                                                   week/month/year                3= Month
+                                                                                  4= Year
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  138    3 3.0       FFRTFI           C.15         Number of times ate fruit      0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  141    2 2.0       FRTIFI           C.15         Number of times ate fruit -    1= Day
+                                                   indicator day/week/month/year  2= Week
+                                                                                  3= Month
+                                                                                  4= Year
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  143    3 3.0       FFFRFI           C.16         Number of times ate french     0= 0
+                                                   fries, fried potatoes          .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  146    2 2.0       FFRIFI           C.16         Number of times ate french     1= Day
+                                                   fries - indicator day/week/    2= Week
+                                                   month/year                     3= Month
+                                                                                  4= Year
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  148    3 3.0       FPOTFI           C.17         Number of times ate potatoes - 0= 0
+                                                   not fries/chips                .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  151    2 2.0       POTIFI           C.17         Number of times ate potatoes - 1= Day
+                                                   indicator day/week/month/year  2= Week
+                                                                                  3= Month
+                                                                                  4= Year
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  153    2 2.0       FVEGFI           C.18         Number of times ate            0= 0
+                                                   vegetables/green salads        .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  155    2 2.0       VEGIFI           C.18         Number of times ate            1= Day
+                                                   vegetables/green salads -      2= Week
+                                                   indicator day/week/month/year  3= Month
+                                                                                  4= Year
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  157    2 2.0       SV5KFI           D.1          Household has more than $5000  1= YES
+                                                   in savings                     2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  159    2 2.0       SAVEFI           D.2          Total current savings/cash     1= Less than $500
+                                                   assets for household           2= $501 to $1000
+                                                                                  3= $1001 to $2000
+                                                                                  4= $2001 to $3000
+                                                                                  5= $3001 to $4000
+                                                                                  6= $4001 to $5000
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  161    2 2.0       SSDIFI           D.3.a        Government benefit - SSI/SSDI  1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  163    2 2.0       SOCSFI           D.3.b        Government benefit - social    1= YES
+                                                   security                       2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  165    2 2.0       DISAFI           D.3.c        Government benefit -           1= YES
+                                                   disability/workers' comp       2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  167    2 2.0       UNEMFI           D.3.d        Government benefit -           1= YES
+                                                   unemployment                   2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  169    2 2.0       VETRFI           D.3.e        Government benefit -           1= YES
+                                                   veteran's benefits             2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  171    2 2.0       TANFFI           D.3.f        Government benefit - TANF      1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  173    2 2.0       GASSFI           D.3.g        Government benefit - general   1= YES
+                                                   assistance                     2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  175    2 2.0       OGB_FI           D.3.h        Government benefit - other     1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  177   40 $         SOGBFI           D.3.h        Specify other government       Character
+                                                   benefits
+
+  217    2 2.0       FANGFI           E.1          Anyone in household received   1= YES
+                                                   non-governmental food aid in   2= NO
+                                                   past year                      -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  219    2 2.0       FACHFI           E.2.a        Food aid - Church              1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  221    2 2.0       FAFBFI           E.2.b        Food aid - Food bank           1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  223    2 2.0       FASKFI           E.2.c        Food aid - Soup kitchen/lunch  1= YES
+                                                   line                           2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  225    2 2.0       FACLFI           E.2.d        Food aid - Clinic              1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  227    2 2.0       FAPOFI           E.2.e        Food aid - People outside      1= YES
+                                                   household                      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  229    2 2.0       FAOTFI           E.2.f        Food aid - Other               1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  231   40 $         FAOSFI           E.2.f        Specify other source of food   Character
+                                                   aid
+
+  271    2 2.0       FADYFI           E.3          Number of days received food   0= 0
+                                                   aid in past month              .
+                                                                                  .
+                                                                                  30= 30
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  273    2 2.0       VCEDFI           E.4          Food assistance through        1= YES
+                                                   vouchers past year             2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  275    2 2.0       VSNPFI           E.5.a        Food vouchers - SNAP for       1= YES
+                                                   participant's household        2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  277    2 2.0       VSNSFI           E.5.b        Food vouchers - SNAP from      1= YES
+                                                   someone else                   2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  279    2 2.0       VWICFI           E.5.c        Food vouchers - WIC            1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  281    2 2.0       VOTHFI           E.5.d        Food vouchers - Other          1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  283   40 $         VOTSFI           E.5.c        Specify other source of food   Character
+                                                   vouchers
+
+  323    2 2.0       VDYSFI           E.6          Number of days received food   0= 0
+                                                   vouchers in past month         .
+                                                                                  .
+                                                                                  30= 30
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  325    2 2.0       WHNFFI           F.1          How often without healthcare   1= Always
+                                                   because needed food past year  2= Often
+                                                                                  3= Sometimes
+                                                                                  4= Never
+                                                                                  5= Not applicable
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  327    2 2.0       WFNHFI           F.2          How often without food         1= Always
+                                                   because needed healthcare      2= Often
+                                                   past year                      3= Sometimes
+                                                                                  4= Never
+                                                                                  5= Not applicable
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  329    2 2.0       HIVSFI           F.3          Participant's HIV status       1= HIV-POSITIVE
+                                                                                  2= HIV-NEGATIVE
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  331    2 2.0       WARFFI           F.4          How often didn't fill ARV      1= Always
+                                                   prescriptions because needed   2= Often
+                                                   food past year                 3= Sometimes
+                                                                                  4= Never
+                                                                                  5= Not applicable
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  333    2 2.0       WFARFI           F.5          How often without food         1= Always
+                                                   because needed ARV             2= Often
+                                                   prescriptions past year        3= Sometimes
+                                                                                  4= Never
+                                                                                  5= Not applicable
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  335    2 2.0       HBDPFI           G.1.a        Having HIV - feel like bad     1= Strongly agree
+                                                   person                         2= Agree
+                                                                                  3= Disagree
+                                                                                  4= Strongly disagree
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  337    2 2.0       HNAGFI           G.1.b        Having HIV - feel not as good  1= Strongly agree
+                                                                                  2= Agree
+                                                                                  3= Disagree
+                                                                                  4= Strongly disagree
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  339    2 2.0       HUNCFI           G.1.c        Having HIV - feel unclean      1= Strongly agree
+                                                                                  2= Agree
+                                                                                  3= Disagree
+                                                                                  4= Strongly disagree
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  341    2 2.0       HDSGFI           G.1.d        Having HIV - feel disgusting   1= Strongly agree
+                                                                                  2= Agree
+                                                                                  3= Disagree
+                                                                                  4= Strongly disagree
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  343    2 2.0       HATTFI           G.1.e        Having HIV - people's          1= Strongly agree
+                                                   attitudes feel worse about     2= Agree
+                                                   self                           3= Disagree
+                                                                                  4= Strongly disagree
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  345    2 2.0       HGLTFI           G.1.f        Having HIV - feel guilty       1= Strongly agree
+                                                                                  2= Agree
+                                                                                  3= Disagree
+                                                                                  4= Strongly disagree
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  347    2 2.0       HNFAFI           G.1.g        Having HIV - never feel        1= Strongly agree
+                                                   ashamed                        2= Agree
+                                                                                  3= Disagree
+                                                                                  4= Strongly disagree
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  349    2 2.0       HDSCFI           G.1.h        Having HIV - feel              1= Strongly agree
+                                                   discriminated against          2= Agree
+                                                                                  3= Disagree
+                                                                                  4= Strongly disagree
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  351    2 2.0       TOLDFI           G.2          Ever told anyone HIV status    1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  353    2 2.0       TCSPFI           G.3.a        Told HIV status - current sex  1= YES
+                                                   partner                        2= NO
+                                                                                  3= NA
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  355    2 2.0       TPSPFI           G.3.b        Told HIV status - past sex     1= YES
+                                                   partner                        2= NO
+                                                                                  3= NA
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  357    2 2.0       TFMLFI           G.3.c        Told HIV status - family       1= YES
+                                                   member                         2= NO
+                                                                                  3= NA
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  359    2 2.0       TFNDFI           G.3.d        Told HIV status - friend       1= YES
+                                                                                  2= NO
+                                                                                  3= NA
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  361    2 2.0       TNBRFI           G.3.e        Told HIV status - neighbor     1= YES
+                                                                                  2= NO
+                                                                                  3= NA
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  363    2 2.0       TEMPFI           G.3.f        Told HIV status - employer(s)  1= YES
+                                                                                  2= NO
+                                                                                  3= NA
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  365    2 2.0       TRELFI           G.3.g        Told HIV status - religious    1= YES
+                                                   leader                         2= NO
+                                                                                  3= NA
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  367    2 2.0       TPUBFI           G.3.h        Told HIV status - public       1= YES
+                                                   disclosure                     2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  369    2 2.0       TOTHFI           G.3.i        Told HIV status - other        1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  371   40 $         TOTSFI           G.3.i        Specify other person to whom   Character
+                                                   told HIV status
+
+  411    2 2.0       PASHFI           G.1.a        People with HIV - should feel  1= Strongly agree
+                                                   ashamed                        2= Agree
+                                                                                  3= Disagree
+                                                                                  4= Strongly disagree
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  413    2 2.0       PCMPFI           G.1.b        People with HIV - deserve      1= Strongly agree
+                                                   compassion                     2= Agree
+                                                                                  3= Disagree
+                                                                                  4= Strongly disagree
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  415    2 2.0       PBLMFI           G.1.c        People with HIV - only         1= Strongly agree
+                                                   themselves to blame            2= Agree
+                                                                                  3= Disagree
+                                                                                  4= Strongly disagree
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  417    2 2.0       PIMBFI           G.1.d        People with HIV - from         1= Strongly agree
+                                                   immoral behavior               2= Agree
+                                                                                  3= Disagree
+                                                                                  4= Strongly disagree
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  419    2 2.0       PRSPFI           G.1.e        People with HIV - should get   1= Strongly agree
+                                                   respect like everyone else     2= Agree
+                                                                                  3= Disagree
+                                                                                  4= Strongly disagree
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  421    2 2.0       PTCHFI           G.1.f        People with HIV - wouldn't     1= Strongly agree
+                                                   want them to teach children    2= Agree
+                                                                                  3= Disagree
+                                                                                  4= Strongly disagree
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  423    2 2.0       PNFRFI           G.1.g        People with HIV - wouldn't     1= Strongly agree
+                                                   want to be friends with        2= Agree
+                                                                                  3= Disagree
+                                                                                  4= Strongly disagree
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  425    5 time5.    ETIMFI           G.5          Time ended                     1:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  430    2 2.0       EMERFI           G.5          AM/PM for time ended           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  432    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  433    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

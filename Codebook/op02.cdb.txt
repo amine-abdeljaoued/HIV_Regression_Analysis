@@ -1,0 +1,538 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+OP02 - ORAL INTERVIEW
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    6 $         FKEY             OldA.0       OLD: Form identifier key       Character
+
+   17    8 $         VERSOS           A.0          Form version                   10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   25    8 $         IDTEOS           A.0          Date of interview              10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   33    3 $         INITOS           A.0          Initials of person completing  Character
+                                                   form
+
+   36    2 2.0       HLTHOS           OldB.1       OLD: oral health condition     1= Excellent
+                                                                                  2= Very Good
+                                                                                  3= Good
+                                                                                  4= Fair
+                                                                                  5= Poor
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   38    2 2.0       HPRBOS           OldB.2       OLD: oral health kept you      1= All of the time
+                                                   from working                   2= Some of the time
+                                                                                  3= None of the time
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   40    2 2.0       PAINOS           OldB.3       OLD: level of oral pain        1= None
+                                                                                  2= Very Mild
+                                                                                  3= Mild
+                                                                                  4= Moderate
+                                                                                  5= Severe
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   42    2 2.0       ACTIOS           OldB.4       OLD: Oral health interfered    1= Not at all
+                                                   with activities                2= Slightly
+                                                                                  3= Moderately
+                                                                                  4= Quite a bit
+                                                                                  5= Extremely
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   44    2 2.0       DRY_OS           B.1          Mouth feels dry when eating    1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   46    2 2.0       LIQUOS           B.2          Need to sip liquids to         1= YES
+                                                   swallow food                   2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   48    2 2.0       SALIOS           B.3          Amount of saliva too much/     1= TOO LITTLE
+                                                   little                         2= TOO MUCH
+                                                                                  3= DON'T NOTICE
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   50    2 2.0       DREGOS           B.4          Regular dental check ups       1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   52    2 2.0       DCHKOS           B.5          Frequency of dental check ups  1= More than once a year
+                                                                                  2= Once a year
+                                                                                  3= Once every two years
+                                                                                  4= Less than once every two
+                                                                                     years
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   54    2 2.0       PROCOS           B.6          Difficulty with pronunciation  1= Never
+                                                   r/t teeth/mouth/dentures       2= Hardly ever
+                                                                                  3= Occasionally
+                                                                                  4= Fairly often
+                                                                                  5= Very often
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   56    2 2.0       WORSOS           B.7          Ever felt sense of taste       1= Never
+                                                   worse r/t teeth/mouth/dentures 2= Hardly ever
+                                                                                  3= Occasionally
+                                                                                  4= Fairly often
+                                                                                  5= Very often
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   58    2 2.0       ACHEOS           B.8          Painful aching in mouth        1= Never
+                                                                                  2= Hardly ever
+                                                                                  3= Occasionally
+                                                                                  4= Fairly often
+                                                                                  5= Very often
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   60    2 2.0       UNCOOS           B.9          Uncomfortable to eat foods r/  1= Never
+                                                   t teeth/mouth/dentures         2= Hardly ever
+                                                                                  3= Occasionally
+                                                                                  4= Fairly often
+                                                                                  5= Very often
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   62    2 2.0       SELFOS           B.10         Self-conscious r/t teeth/      1= Never
+                                                   mouth/dentures                 2= Hardly ever
+                                                                                  3= Occasionally
+                                                                                  4= Fairly often
+                                                                                  5= Very often
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   64    2 2.0       TENSOS           B.11         Felt tense r/t teeth/mouth/    1= Never
+                                                   dentures                       2= Hardly ever
+                                                                                  3= Occasionally
+                                                                                  4= Fairly often
+                                                                                  5= Very often
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   66    2 2.0       DIETOS           B.12         Diet unsatisfactory r/t teeth/ 1= Never
+                                                   mouth/dentures                 2= Hardly ever
+                                                                                  3= Occasionally
+                                                                                  4= Fairly often
+                                                                                  5= Very often
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   68    2 2.0       ITRUOS           B.13         Interrupt meals r/t teeth/     1= Never
+                                                   mouth/dentures                 2= Hardly ever
+                                                                                  3= Occasionally
+                                                                                  4= Fairly often
+                                                                                  5= Very often
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   70    2 2.0       DRLXOS           B.14         Difficult to relax r/t teeth/  1= Never
+                                                   mouth/dentures                 2= Hardly ever
+                                                                                  3= Occasionally
+                                                                                  4= Fairly often
+                                                                                  5= Very often
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   72    2 2.0       EMBAOS           B.15         Embarassed r/t teeth/mouth/    1= Never
+                                                   dentures                       2= Hardly ever
+                                                                                  3= Occasionally
+                                                                                  4= Fairly often
+                                                                                  5= Very often
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   74    2 2.0       IRRTOS           B.16         Irritable with others r/t      1= Never
+                                                   teeth/mouth/dentures           2= Hardly ever
+                                                                                  3= Occasionally
+                                                                                  4= Fairly often
+                                                                                  5= Very often
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   76    2 2.0       DJOBOS           B.17         Difficulty doing usual jobs r/ 1= Never
+                                                   t teeth/mouth/dentures         2= Hardly ever
+                                                                                  3= Occasionally
+                                                                                  4= Fairly often
+                                                                                  5= Very often
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   78    2 2.0       LSATOS           B.18         Life less satisfying r/t       1= Never
+                                                   teeth/mouth/dentures           2= Hardly ever
+                                                                                  3= Occasionally
+                                                                                  4= Fairly often
+                                                                                  5= Very often
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   80    2 2.0       UFUNOS           B.19         Totally unable to function r/  1= Never
+                                                   t teeth/mouth/dentures         2= Hardly ever
+                                                                                  3= Occasionally
+                                                                                  4= Fairly often
+                                                                                  5= Very often
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   82    2 2.0       BRSHOS           B.20         Frequency of tooth brushing    1= Don't brush
+                                                                                  2= Less than once a day
+                                                                                  3= Between 1 and 3 times a day
+                                                                                  4= Other
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   84   35 $         SPBROS           B.20         Specify other frequency of     Character
+                                                   tooth brushing
+
+  119    2 2.0       FLSSOS           B.21         Use floss                      1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  121    2 2.0       OFLSOS           B.21.a       Frequency of flossing          1= Daily
+                                                                                  2= Weekly
+                                                                                  3= Less than weekly
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  123    2 2.0       PMTHOS           B.22         Use antibacterial              1= YES
+                                                   prescription mouthwash         2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  125    2 2.0       OPMTOS           B.22.a       Frequency antibacterial        1= Daily
+                                                   prescription mouthwash         2= Weekly
+                                                                                  3= Less than weekly
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  127    2 2.0       NDNTOS           B.23         Number of times visited        0= 0
+                                                   dentist in past year           .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  129    2 2.0       TMEXOS           B.24         Had teeth/mouth examined in    1= YES
+                                                   past year                      2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  131    2 2.0       NTMEOS           B.24.a       Number of times teeth/mouth    1= 1
+                                                   examined in past year          .
+                                                                                  .
+                                                                                  5= 5
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  133    2 2.0       TCLNOS           B.25         Had teeth cleaned in past year 1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  135    2 2.0       NTCLOS           B.25.a       Number of times teeth cleaned  1= 1
+                                                   in past year                   .
+                                                                                  .
+                                                                                  5= 5
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  137    2 2.0       XRAYOS           B.26         Had x-ray of teeth in past     1= YES
+                                                   year                           2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  139    2 2.0       GUMTOS           B.27         Had gum treatment in past year 1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  141    2 2.0       NGUMOS           B.27.a       Number of times had gum        1= 1
+                                                   treatment in past year         .
+                                                                                  .
+                                                                                  5= 5
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  143    2 2.0       TPULOS           B.28         Had tooth pulled in past year  1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  145    2 2.0       RTPLOS           B.28.a       Reason tooth pulled in past    1= Gum disease
+                                                   year                           2= Cavities
+                                                                                  4= Gum disease and cavities
+                                                                                  3= Other
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  147   35 $         SRTPOS           B.28.a       Specify other reason tooth     Character
+                                                   pulled
+
+  182    2 2.0       INTEOS           OldB.12      OLD: Use interproximal         1= Yes
+                                                   toothbrush                     2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  184    2 2.0       OINTOS           OldB.12.A    OLD: frequency interproximal   1= Daily (at least once a day)
+                                                   toothbrush                     2= Weekly (at least once a
+                                                                                     week but not every day)
+                                                                                  3= Less than weekly (Less
+                                                                                     than once a week)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  186    2 2.0       ELECOS           OldB.13      OLD: Use automatic toothbrush  1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  188    2 2.0       OELEOS           OldB.13.A    OLD: frequency automatic       1= Daily (at least once a day)
+                                                   toothbrush                     2= Weekly (at least once a
+                                                                                     week but not every day)
+                                                                                  3= Less than weekly (Less
+                                                                                     than once a week)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  190    2 2.0       OTCMOS           OldB.15      OLD: Use non-prescription      1= Yes
+                                                   mouthwash                      2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  192    2 2.0       FLUOOS           OldB.15.A    OLD: Use fluoride rinse        1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  194    2 2.0       OFLUOS           OldB.15.B    OLD: frequency flouride rinse  1= Daily (at least once a day)
+                                                                                  2= Weekly (at least once a
+                                                                                     week but not every day)
+                                                                                  3= Less than weekly (Less
+                                                                                     than once a week)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  196    2 2.0       IRRIOS           OldB.16      OLD: Use oral irrigation       1= Yes
+                                                   device                         2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  198    2 2.0       OIRROS           OldB.16.A    OLD:frequency oral irrigation  1= Daily (at least once a day)
+                                                   device                         2= Weekly (at least once a
+                                                                                     week but not every day)
+                                                                                  3= Less than weekly (Less
+                                                                                     than once a week)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  200    2 2.0       MASSOS           OldB.17      OLD: Use instrument to         1= Yes
+                                                   massage gums                   2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  202    2 2.0       OMASOS           OldB.17.A    OLD: frequency instrument to   1= Daily (at least once a day)
+                                                   massage gums                   2= Weekly (at least once a
+                                                                                     week but not every day)
+                                                                                  3= Less than weekly (Less
+                                                                                     than once a week)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  204    2 2.0       OHY1OS           OldB.18      OLD: Use anything else 1       1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  206   35 $         WOH1OS           OldB.18.A    OLD: Specify other used 1      Character
+
+  241    2 2.0       OOH1OS           OldB.18.B    OLD: Frequency other 1 used    1= Daily (at least once a day)
+                                                                                  2= Weekly (at least once a
+                                                                                     week but not every day)
+                                                                                  3= Less than weekly (Less
+                                                                                     than once a week)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  243    2 2.0       OHY2OS           OldB.19      OLD: Use anything else 2       1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  245   35 $         WOH2OS           OldB.19.A    OLD: Specify other used 2      Character
+
+  280    2 2.0       OOH2OS           OldB.19.B    OLD: Frequency other 2 used    1= Daily (at least once a day)
+                                                                                  2= Weekly (at least once a
+                                                                                     week but not every day)
+                                                                                  3= Less than weekly (Less
+                                                                                     than once a week)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  282    2 2.0       OHY3OS           OldB.20      OLD: Use anything else 3       1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  284   35 $         WOH3OS           OldB.20.A    OLD: Specify other used 3      Character
+
+  319    2 2.0       OOH3OS           OldB.20.B    OLD: Frequency other 3 used    1= Daily (at least once a day)
+                                                                                  2= Weekly (at least once a
+                                                                                     week but not every day)
+                                                                                  3= Less than weekly (Less
+                                                                                     than once a week)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  321    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  322    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

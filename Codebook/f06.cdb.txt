@@ -1,0 +1,1722 @@
+                               CODEBOOK
+Women's Interagency HIV Study                              9-6-2017
+Form 06: B/L Psychosocial Measures
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant's id               1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit number                   1= Visit 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= Visit 99
+
+   11    6 $         FKEY             A.0          Form's unique id               Character
+
+   17    8 $         VERSPS           A.3          Form version                   01/01/93= January 1, 1993
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   25    8 $         IDTEPS           A.4          Date of interview              10/01/94= October 1, 1994
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   33    3 $         INITPS           A.5          Interviewer's initials         Character
+
+   36    5 time5.    BTIMPS           A.6          Time form 6 began              01:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   41    2 2.0       BMERPS           A.6A         Am/pm indicator                1= AM
+                                                                                  2= PM.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   43    2 2.0       HLTHPS           B.1          General health                 1= Excellent
+                                                                                  2= Very Good
+                                                                                  3= Good
+                                                                                  4= Fair
+                                                                                  5= Poor.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   45    2 2.0       HWRKPS           B.2          Pst 4 wks health kept you      1= All of the time
+                                                   from work                      2= Some of the time
+                                                                                  3= None of the time.
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   47    2 2.0       PAINPS           B.3          Bodily pain in the past 4      1= None
+                                                   weeks                          2= Very Mild
+                                                                                  3= Mild
+                                                                                  4= Moderate
+                                                                                  5= Severe
+                                                                                  6= Very Severe.
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   49    2 2.0       SOCAPS           B.4          Pst 4 wks health interfred w/  1= Not at all
+                                                   soc act                        2= Slightly
+                                                                                  3= Moderately
+                                                                                  4= Quite a
+                                                                                  bit
+                                                                                  5= Extremely.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   51    2 2.0       HCWKPS           B.5          Pst 4 wks unable to do         1= All of the time
+                                                   certain work                   2= Some of the time
+                                                                                  3= None of the
+                                                                                  time.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   53    2 2.0       PNINPS           B.6          Past 4 weeks bodily pain       1= Not at all
+                                                   interfere w/ normal work       2= Slightly
+                                                                                  3= Moderately
+                                                                                  4= Quite a
+                                                                                  bit
+                                                                                  5= Extremely.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   55    2 2.0       VACTPS           B.7A         Health limited vigorous        1= Limited a Lot
+                                                   activities                     2= Limited a Little
+                                                                                  3= Not at All
+                                                                                  Limited.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   57    2 2.0       MACTPS           B.7B         Health limited moderate        1= Limited a Lot
+                                                   activities                     2= Limited a Little
+                                                                                  3= Not at All
+                                                                                  Limited.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   59    2 2.0       STRSPS           B.7C         Health limited climbing stairs 1= Limited a Lot
+                                                                                  2= Limited a Little
+                                                                                  3= Not at All
+                                                                                  Limited.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   61    2 2.0       DRSSPS           B.7D         Health limited eating,         1= Limited a Lot
+                                                   dressing, etc                  2= Limited a Little
+                                                                                  3= Not at All
+                                                                                  Limited.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63    2 2.0       HLSLPS           B.8A         Past 4 wks health limit        1= All of the Time
+                                                   social life                    2= Most of the Time
+                                                                                  3= a Good Bit of the Time
+                                                                                  4= Some of the Time
+                                                                                  5= a Little of the Time
+                                                                                  6= None of the Time
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   65    2 2.0       ATTNPS           B.8B         Past 4 wks trouble keeping     1= All of the Time
+                                                   attention                      2= Most of the Time
+                                                                                  3= a Good Bit of the Time
+                                                                                  4= Some of the Time
+                                                                                  5= a Little of the Time
+                                                                                  6= None of the Time
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   67    2 2.0       RSNGPS           B.8C         Past 4 wks difficulty          1= All of the Time
+                                                   reasoning                      2= Most of the Time
+                                                                                  3= a Good Bit of the Time
+                                                                                  4= Some of the Time
+                                                                                  5= a Little of the Time
+                                                                                  6= None of the Time
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   69    2 2.0       CALMPS           B.8D         Past 4 wks felt calm and       1= All of the Time
+                                                   peaceful                       2= Most of the Time
+                                                                                  3= a Good Bit of the Time
+                                                                                  4= Some of the Time
+                                                                                  5= a Little of the Time
+                                                                                  6= None of the Time
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   71    2 2.0       BLUEPS           B.8E         Past 4 wks downhearted and     1= All of the Time
+                                                   blue                           2= Most of the Time
+                                                                                  3= a Good Bit of the Time
+                                                                                  4= Some of the Time
+                                                                                  5= a Little of the Time
+                                                                                  6= None of the Time
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   73    2 2.0       TIRDPS           B.8F         Past 4 wks did you feel tired  1= All of the Time
+                                                                                  2= Most of the Time
+                                                                                  3= a Good Bit of the Time
+                                                                                  4= Some of the Time
+                                                                                  5= a Little of the Time
+                                                                                  6= None of the Time
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   75    2 2.0       ENRGPS           B.8G         Past 4 wks did you have energy 1= All of the Time
+                                                                                  2= Most of the Time
+                                                                                  3= a Good Bit of the Time
+                                                                                  4= Some of the Time
+                                                                                  5= a Little of the Time
+                                                                                  6= None of the Time
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   77    2 2.0       HAPYPS           B.8H         Past 4 wks have you been happy 1= All of the Time
+                                                                                  2= Most of the Time
+                                                                                  3= a Good Bit of the Time
+                                                                                  4= Some of the Time
+                                                                                  5= a Little of the Time
+                                                                                  6= None of the Time
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   79    2 2.0       HEXCPS           B.9A         My health is excellent         1= Definitely True
+                                                                                  2= Mostly True
+                                                                                  3= Not Sure
+                                                                                  4= Mostly False
+                                                                                  5= Definitely False.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   81    2 2.0       FBADPS           B.9B         I have been feeling bad lately 1= Definitely True
+                                                                                  2= Mostly True
+                                                                                  3= Not Sure
+                                                                                  4= Mostly False
+                                                                                  5= Definitely False.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   83    2 2.0       QOL_PS           B.10         Rate your quality of life      0= Lowest quality of life
+                                                                                  .
+                                                                                  .
+                                                                                  10= Best quality of life
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   85    2 2.0       BTHRPS           C.1          Past week things bothered me   1= Rarely (Less than One Day)
+                                                   more than normal               2= Some (1 - 2 Days)
+                                                                                  3= Occasionally (3 - 4 Days)
+                                                                                  4= Most (5 - 7 Days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   87    2 2.0       NOAPPS           C.2          Past week i did not feel like  1= Rarely (Less than One Day)
+                                                   eating                         2= Some (1 - 2 Days)
+                                                                                  3= Occasionally (3 - 4 Days)
+                                                                                  4= Most (5 - 7 Days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   89    2 2.0       WBLUPS           C.3          Past week could not shake off  1= Rarely (Less than One Day)
+                                                   blues                          2= Some (1 - 2 Days)
+                                                                                  3= Occasionally (3 - 4 Days)
+                                                                                  4= Most (5 - 7 Days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   91    2 2.0       GOODPS           C.4          Past week i felt as good as    1= Rarely (Less than One Day)
+                                                   others                         2= Some (1 - 2 Days)
+                                                                                  3= Occasionally (3 - 4 Days)
+                                                                                  4= Most (5 - 7 Days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   93    2 2.0       CONCPS           C.5          Pst wk trble keep mind on      1= Rarely (Less than One Day)
+                                                   what doing                     2= Some (1 - 2 Days)
+                                                                                  3= Occasionally (3 - 4 Days)
+                                                                                  4= Most (5 - 7 Days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   95    2 2.0       DEPRPS           C.6          Past week i felt depressed     1= Rarely (Less than One Day)
+                                                                                  2= Some (1 - 2 Days)
+                                                                                  3= Occasionally (3 - 4 Days)
+                                                                                  4= Most (5 - 7 Days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   97    2 2.0       EFFTPS           C.7          Past week everything was an    1= Rarely (Less than One Day)
+                                                   effort                         2= Some (1 - 2 Days)
+                                                                                  3= Occasionally (3 - 4 Days)
+                                                                                  4= Most (5 - 7 Days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   99    2 2.0       FUTRPS           C.8          Past week i was hopeful about  1= Rarely (Less than One Day)
+                                                   future                         2= Some (1 - 2 Days)
+                                                                                  3= Occasionally (3 - 4 Days)
+                                                                                  4= Most (5 - 7 Days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  101    2 2.0       FAILPS           C.9          Pst wk thought my life was a   1= Rarely (Less than One Day)
+                                                   failure                        2= Some (1 - 2 Days)
+                                                                                  3= Occasionally (3 - 4 Days)
+                                                                                  4= Most (5 - 7 Days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  103    2 2.0       FEARPS           C.10         Past week i was fearful        1= Rarely (Less than One Day)
+                                                                                  2= Some (1 - 2 Days)
+                                                                                  3= Occasionally (3 - 4 Days)
+                                                                                  4= Most (5 - 7 Days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  105    2 2.0       SLEPPS           C.11         Past week my sleep was         1= Rarely (Less than One Day)
+                                                   restless                       2= Some (1 - 2 Days)
+                                                                                  3= Occasionally (3 - 4 Days)
+                                                                                  4= Most (5 - 7 Days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  107    2 2.0       WHPYPS           C.12         Past week i was happy          1= Rarely (Less than One Day)
+                                                                                  2= Some (1 - 2 Days)
+                                                                                  3= Occasionally (3 - 4 Days)
+                                                                                  4= Most (5 - 7 Days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  109    2 2.0       TALKPS           C.13         Past week i talked less than   1= Rarely (Less than One Day)
+                                                   usual                          2= Some (1 - 2 Days)
+                                                                                  3= Occasionally (3 - 4 Days)
+                                                                                  4= Most (5 - 7 Days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  111    2 2.0       LONEPS           C.14         Past week i felt lonely        1= Rarely (Less than One Day)
+                                                                                  2= Some (1 - 2 Days)
+                                                                                  3= Occasionally (3 - 4 Days)
+                                                                                  4= Most (5 - 7 Days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  113    2 2.0       UNFRPS           C.15         Past week people were          1= Rarely (Less than One Day)
+                                                   unfriendly                     2= Some (1 - 2 Days)
+                                                                                  3= Occasionally (3 - 4 Days)
+                                                                                  4= Most (5 - 7 Days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  115    2 2.0       ENJYPS           C.16         Past week i enjoyed life       1= Rarely (Less than One Day)
+                                                                                  2= Some (1 - 2 Days)
+                                                                                  3= Occasionally (3 - 4 Days)
+                                                                                  4= Most (5 - 7 Days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  117    2 2.0       CRY_PS           C.17         Past week i had crying spells  1= Rarely (Less than One Day)
+                                                                                  2= Some (1 - 2 Days)
+                                                                                  3= Occasionally (3 - 4 Days)
+                                                                                  4= Most (5 - 7 Days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  119    2 2.0       SAD_PS           C.18         Past week i felt sad           1= Rarely (Less than One Day)
+                                                                                  2= Some (1 - 2 Days)
+                                                                                  3= Occasionally (3 - 4 Days)
+                                                                                  4= Most (5 - 7 Days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  121    2 2.0       DISLPS           C.19         Past week i felt people        1= Rarely (Less than One Day)
+                                                   dislike me                     2= Some (1 - 2 Days)
+                                                                                  3= Occasionally (3 - 4 Days)
+                                                                                  4= Most (5 - 7 Days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  123    2 2.0       MOTVPS           C.20         Past week i could not get      1= Rarely (Less than One Day)
+                                                   going                          2= Some (1 - 2 Days)
+                                                                                  3= Occasionally (3 - 4 Days)
+                                                                                  4= Most (5 - 7 Days)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  125    2 2.0       HELPPS           D.1          Past month got help from       1= YES
+                                                   friends                        2= NO
+                                                                                  -7= DECLINED
+                                                                                  -8= DON'T KNOW.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  127    2 2.0       COMFPS           D.2          Past month given encouragement 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  129    2 2.0       WORRPS           D.3          Pst mon frnds undrstnd your    1= Yes
+                                                   worries                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  131    2 2.0       KIDSPS           E.1          Ever had any children          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  133    2 2.0       CDIEPS           E.2          Ever had any children that     1= Yes
+                                                   died                           2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  135    2 2.0       NDIEPS           E.3          How many of your children died 0= 0 Children
+                                                                                  .
+                                                                                  .
+                                                                                  12= 12 Children
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  137    2 2.0       CLIVPS           E.22         Do you have any living         1= Yes
+                                                   children                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  139    2 2.0       NLIVPS           E.22A        How many of your children are  1= 1 child
+                                                   living                         .
+                                                                                  .
+                                                                                  12= 12 children
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  141    2 2.0       NKIDPS           E.23         How many children do you have  1= 1 child
+                                                                                  .
+                                                                                  .
+                                                                                  12= 12 children
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  143    2 2.0       DUM1PS           E.23A        This is a dummy field          Character
+
+  145    2 2.0       CHLTPS           E.48A        Pst 6 mos worry ab kids health 1= Not at all
+                                                                                  2= A little bit
+                                                                                  3= Some/Moderately
+                                                                                  4= Quite a bit
+                                                                                  5= A lot/Extremely.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  147    2 2.0       CCARPS           E.48B        Pst 6 mos, worry ab care for   1= Not at all
+                                                   childrn                        2= A little bit
+                                                                                  3= Some/Moderately
+                                                                                  4= Quite a bit
+                                                                                  5= A lot/Extremely.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  149    2 2.0       CAWAPS           E.48C        Pst 6 mos worry children       1= Not at all
+                                                   taken away                     2= A little bit
+                                                                                  3= Some/Moderately
+                                                                                  4= Quite a bit
+                                                                                  5= A lot/Extremely.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  151    2 2.0       NOMAPS           E.48D        Pst 6 mos worry kids grow up   1= Not at all
+                                                   w/o you                        2= A little bit
+                                                                                  3= Some/Moderately
+                                                                                  4= Quite a bit
+                                                                                  5= A lot/Extremely.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  153    2 2.0       CHIVPS           E.48E        Pst 6 mos, worry children      1= Not at all
+                                                   have hiv                       2= A little bit
+                                                                                  3= Some/Moderately
+                                                                                  4= Quite a bit
+                                                                                  5= A lot/Extremely.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  155    2 2.0       GVHIPS           E.48F        Pst 6 mos worry ab give hiv    1= Not at all
+                                                   to kids                        2= A little bit
+                                                                                  3= Some/Moderately
+                                                                                  4= Quite a bit
+                                                                                  5= A lot/Extremely.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  157    2 2.0       HWILPS           E.49A        Past 6 months, children been   1= Not at all
+                                                   sick                           2= A little bit
+                                                                                  3= Some/Moderately
+                                                                                  4= Quite a bit
+                                                                                  5= A lot/Extremely.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  159    2 2.0       HWCRPS           E.49B        Pst 6 mos, diff to care for    1= Not at all
+                                                   children                       2= A little bit
+                                                                                  3= Some/Moderately
+                                                                                  4= Quite a bit
+                                                                                  5= A lot/Extremely.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  161    2 2.0       NHSPPS           E.50         Past 6 months, children        0= 0 Times
+                                                   hospitalized                   .
+                                                                                  .
+                                                                                  99= 99 Times
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  163    2 2.0       DUM3PS           E.51         This is a dummy field          Character
+
+  165    2 2.0       SXABPS           F.1          Ever forced to have sexual     1= Yes
+                                                   contact                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  167    2 2.0       SQPRPS           F.2          Will proceed w/ sex abuse      1= Yes, participant will
+                                                   questions                         proceed
+                                                                                  2= No, participant declined.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  169    2 2.0       SMA_PS           F.3A         Sex abuse by mother/stepmother 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  171    2 2.0       SMAAPS           F.3A1        How many years old when sex    0= 0 years old
+                                                   abused by mother               .
+                                                                                  .
+                                                                                  99= 99 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  173    2 2.0       SMASPS           F.3A2        Has sex abuse stopped (mother) 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  175    2 2.0       SMAOPS           F.3A3        How old when sex abuse stop    0= 0 years old
+                                                   (mother)                       .
+                                                                                  .
+                                                                                  99= 99 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  177    2 2.0       SDA_PS           F.3B         Sex abuse by father            1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  179    2 2.0       SDAAPS           F.3B1        How old when sex abused by     0= 0 years old
+                                                   father                         .
+                                                                                  .
+                                                                                  99= 99 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  181    2 2.0       SDASPS           F.3B2        Has sex abuse stopped (father) 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  183    2 2.0       SDAOPS           F.3B3        How old when sex abuse stop    0= 0 years old
+                                                   (father)                       .
+                                                                                  .
+                                                                                  99= 99 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  185    2 2.0       SSF_PS           F.3C         Sex abuse by step/foster       1= Yes
+                                                   father                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  187    2 2.0       SSFAPS           F.3C1        How old when sex abused by     0= 0 years old
+                                                   stepdad                        .
+                                                                                  .
+                                                                                  99= 99 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  189    2 2.0       SSFSPS           F.3C2        Has sex abuse stopped          1= Yes
+                                                   (stepfather)                   2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  191    2 2.0       SSFOPS           F.3C3        How old when sex ab stop       0= 0 years old
+                                                   (stepdad)                      .
+                                                                                  .
+                                                                                  99= 99 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  193    2 2.0       SSB_PS           F.3D         Sex abuse by sibling/step/     1= Yes
+                                                   foster                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  195    2 2.0       SSBAPS           F.3D1        How old when sex abused by     0= 0 years old
+                                                   sibling                        .
+                                                                                  .
+                                                                                  99= 99 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  197    2 2.0       SSSSPS           F.3D2        Has sex abuse stopped          1= Yes
+                                                   (sibling)                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  199    2 2.0       SSBOPS           F.3D3        How old when sex ab stop       0= 0 years old
+                                                   (sibling)                      .
+                                                                                  .
+                                                                                  99= 99 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  201    2 2.0       SMP_PS           F.3E         Sex abuse mother's boyfriend   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  203    2 2.0       SMPAPS           F.3E1        How old when sex ab by mom     0= 0 years old
+                                                   boyfriend                      .
+                                                                                  .
+                                                                                  99= 99 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  205    2 2.0       SMPSPS           F.3E2        Has sex abuse stop (mom's      1= Yes
+                                                   boyfriend)                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  207    2 2.0       SMPOPS           F.3E3        How old when sex ab stop       0= 0 years old
+                                                   (mom's boyfriend)              .
+                                                                                  .
+                                                                                  99= 99 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  209    2 2.0       SOR_PS           F.3F         Sex abuse by other relative    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  211   25 $         SOSPPS           F.3F4        Specify other relative (sex    Character
+                                                   abuse)
+
+  236    2 2.0       SORAPS           F.3F1        How old when sex abused by     0= 0 years old
+                                                   other rel                      .
+                                                                                  .
+                                                                                  99= 99 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  238    2 2.0       SORSPS           F.3F2        Has sex abuse stop (other      1= Yes
+                                                   relative)                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  240    2 2.0       SOROPS           F.3F3        How old when sex ab stop       0= 0 years old
+                                                   (other rel)                    .
+                                                                                  .
+                                                                                  99= 99 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  242    2 2.0       SSO_PS           F.3G         Sex abuse intimate partner     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  244    2 2.0       SSOAPS           F.3G1        How old when sex abused by     0= 0 years old
+                                                   partner                        .
+                                                                                  .
+                                                                                  99= 99 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  246    2 2.0       SSOSPS           F.3G2        Has sex abuse stop (partner)   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  248    2 2.0       SSOOPS           F.3G3        How old when sex abuse stop    0= 0 years old
+                                                   (partnr)                       .
+                                                                                  .
+                                                                                  99= 99 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  250    2 2.0       SFR_PS           F.3H         Sex abuse by friend            1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  252    2 2.0       SFRAPS           F.3H1        How old when sex abused by     0= 0 years old
+                                                   friend                         .
+                                                                                  .
+                                                                                  99= 99 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  254    2 2.0       SFRSPS           F.3H2        Has sex abuse by friend        1= Yes
+                                                   stopped                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  256    2 2.0       SFROPS           F.3H3        How old when sex abuse stop    0= 0 years old
+                                                   (friend)                       .
+                                                                                  .
+                                                                                  99= 99 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  258    2 2.0       SAC_PS           F.3I         Sex abuse by aquaintance       1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  260    2 2.0       SACAPS           F.3I1        How old when sex abused by     0= 0 years old
+                                                   aquaint                        .
+                                                                                  .
+                                                                                  99= 99 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  262    2 2.0       SACSPS           F.3I2        Has sex abuse by aquaintance   1= Yes
+                                                   stopped                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  264    2 2.0       SACOPS           F.3I3        How old when sex abuse stop    0= 0 years old
+                                                   (aquain)                       .
+                                                                                  .
+                                                                                  99= 99 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  266    2 2.0       SST_PS           F.3J         Sex abuse by stranger          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  268    2 2.0       SSTAPS           F.3J1        How old when sex abused by     0= 0 years old
+                                                   stranger                       .
+                                                                                  .
+                                                                                  99= 99 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  270    2 2.0       SSTSPS           F.3J2        Has sex abuse by stranger      1= Yes
+                                                   stopped                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  272    2 2.0       SSTOPS           F.3J3        How old when sex abuse stop    0= 0 years old
+                                                   (strngr)                       .
+                                                                                  .
+                                                                                  99= 99 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  274    2 2.0       SO1_PS           F.3K         Sex abuse by other (1)         1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  276   25 $         S1SPPS           F.3K4        Specify other(1) sex abuser    Character
+
+  301    2 2.0       SO1APS           F.3K1        How old when sex abused by     0= 0 years old
+                                                   other(1)                       .
+                                                                                  .
+                                                                                  99= 99 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  303    2 2.0       SO1SPS           F.3K2        Has sex abuse by other(1)      1= Yes
+                                                   stopped                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  305    2 2.0       SO1OPS           F.3K3        How old when sex abuse stop    0= 0 years old
+                                                   (other1)                       .
+                                                                                  .
+                                                                                  99= 99 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  307    2 2.0       SO2_PS           F.3L         Sex abuse by other(2)          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  309   25 $         S2SPPS           F.3L4        Specify other(2) sex abuser    Character
+
+  334    2 2.0       SO2APS           F.3L1        How old when sex abused by     0= 0 years old
+                                                   other(2)                       .
+                                                                                  .
+                                                                                  99= 99 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  336    2 2.0       SO2SPS           F.3L2        Has sex abuse by other(2)      1= Yes
+                                                   stopped                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  338    2 2.0       SO2OPS           F.3L3        How old when sex abuse stop    0= 0 years old
+                                                   (other2)                       .
+                                                                                  .
+                                                                                  99= 99 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  340    2 2.0       SO3_PS           F.3M         Sex abuse by other(3)          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  342   25 $         S3SPPS           F.3M4        Specify other(3) sex abuser    Character
+
+  367    2 2.0       SO3APS           F.3M1        How old when sex abused by     0= 0 years old
+                                                   other(3)                       .
+                                                                                  .
+                                                                                  99= 99 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  369    2 2.0       SO3SPS           F.3M2        Has sex abuse by other(3)      1= Yes
+                                                   stopped                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  371    2 2.0       SO3OPS           F.3M3        How old when sex abuse stop    0= 0 years old
+                                                   (other3)                       .
+                                                                                  .
+                                                                                  99= 99 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  373    2 2.0       SAPSPS           F.4          Forced sex with HIV+           1= Yes
+                                                   individual                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  375    2 2.0       PHYVPS           G.1          Ever experience physical       1= Yes
+                                                   violence                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  377    2 2.0       PWHOPS           G.2          Will proceed w/ phys abuse     1= Yes, participant will
+                                                   questions                         proceed
+                                                                                  2= No, participant declined.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  379    2 2.0       PMA_PS           G.3A         Physical violence by mother    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  381    2 2.0       PMAAPS           G.3A1        How old when phy violence by   0= 0 years old
+                                                   mother                         .
+                                                                                  .
+                                                                                  60= 60 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  383    2 2.0       PMASPS           G.3A2        Has phy violence by mother     1= Yes
+                                                   stopped                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  385    2 2.0       PMAOPS           G.3A3        How old when phys viol stop    0= 0 years old
+                                                   (mother)                       .
+                                                                                  .
+                                                                                  60= 60 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  387    2 2.0       PDA_PS           G.3B         Physical violence by father    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  389    2 2.0       PDAAPS           G.3B1        How old when phys viol by      0= 0 years old
+                                                   father                         .
+                                                                                  .
+                                                                                  60= 60 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  391    2 2.0       PDASPS           G.3B2        Has phys viol by father        1= Yes
+                                                   stopped                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  393    2 2.0       PDAOPS           G.3B3        How old when phys viol stop    0= 0 years old
+                                                   (father)                       .
+                                                                                  .
+                                                                                  60= 60 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  395    2 2.0       PSF_PS           G.3C         Physical violence by           1= Yes
+                                                   stepfather                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  397    2 2.0       PSFAPS           G.3C1        How old when phys viol by      0= 0 years old
+                                                   stepfathr                      .
+                                                                                  .
+                                                                                  60= 60 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  399    2 2.0       PSFSPS           G.3C2        Has phys violence by stepdad   1= Yes
+                                                   stopped                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  401    2 2.0       PSFOPS           G.3C3        How old when phy viol stop     0= 0 years old
+                                                   (stepdad)                      .
+                                                                                  .
+                                                                                  60= 60 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  403    2 2.0       PSB_PS           G.3D         Physical violence by sibling   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  405    2 2.0       PSBAPS           G.3D1        How old when phys viol by      0= 0 years old
+                                                   sibling                        .
+                                                                                  .
+                                                                                  60= 60 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  407    2 2.0       PSBSPS           G.3D2        Has phys violence by sibling   1= Yes
+                                                   stopped                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  409    2 2.0       PSBOPS           G.3D3        How old when phy viol stop     0= 0 years old
+                                                   (sibling)                      .
+                                                                                  .
+                                                                                  60= 60 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  411    2 2.0       PMP_PS           G.3E         Physical violence by mom's     1= Yes
+                                                   boyfriend                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  413    2 2.0       PMPAPS           G.3E1        How old when phy viol by mom   0= 0 years old
+                                                   boyfrnd                        .
+                                                                                  .
+                                                                                  60= 60 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  415    2 2.0       PMPSPS           G.3E2        Has phys viol by mom boyfrnd   1= Yes
+                                                   stopped                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  417    2 2.0       PMPOPS           G.3E3        How old when phy viol stop     0= 0 years old
+                                                   (mombyfr)                      .
+                                                                                  .
+                                                                                  60= 60 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  419    2 2.0       POR_PS           G.3F         Physical violence by other     1= Yes
+                                                   relative                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  421   25 $         POSPPS           G.3F4        Specify other relative (phys   Character
+                                                   violen)
+
+  446    2 2.0       PORAPS           G.3F1        How old when phy viol by othr  0= 0 years old
+                                                   reltv                          .
+                                                                                  .
+                                                                                  60= 60 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  448    2 2.0       PORSPS           G.3F2        Has phys viol by othr          1= Yes
+                                                   relative stop                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  450    2 2.0       POROPS           G.3F3        How old when phy vio stop      0= 0 years old
+                                                   (othr rel)                     .
+                                                                                  .
+                                                                                  60= 60 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  452    2 2.0       PSO_PS           G.3G         Physical violence by intimate  1= Yes
+                                                   partnr                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  454    2 2.0       PSOAPS           G.3G1        How old when phys viol by      0= 0 years old
+                                                   partner                        .
+                                                                                  .
+                                                                                  60= 60 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  456    2 2.0       PSOSPS           G.3G2        Has phys viol by partner       1= Yes
+                                                   stopped                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  458    2 2.0       PSOOPS           G.3G3        How old when phys viol stop    0= 0 years old
+                                                   (partnr)                       .
+                                                                                  .
+                                                                                  60= 60 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  460    2 2.0       PFR_PS           G.3H         Physical violence by friend    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  462    2 2.0       PFRAPS           G.3H1        How old when phys violence by  0= 0 years old
+                                                   friend                         .
+                                                                                  .
+                                                                                  60= 60 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  464    2 2.0       PFRSPS           G.3H2        Has phys violence by friend    1= Yes
+                                                   stopped                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  466    2 2.0       PFROPS           G.3H3        How old when phy viol by       0= 0 years old
+                                                   friend stop                    .
+                                                                                  .
+                                                                                  60= 60 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  468    2 2.0       PAC_PS           G.3I         Physical violence by           1= Yes
+                                                   aquaintance                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  470    2 2.0       PACAPS           G.3I1        How old when phys violence by  0= 0 years old
+                                                   aquain                         .
+                                                                                  .
+                                                                                  60= 60 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  472    2 2.0       PACSPS           G.3I2        Has phys violence by aquaint   1= Yes
+                                                   stopped                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  474    2 2.0       PACOPS           G.3I3        How old when phy viol stop     0= 0 years old
+                                                   (aquaint)                      .
+                                                                                  .
+                                                                                  60= 60 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  476    2 2.0       PST_PS           G.3J         Physical violence by stranger  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  478    2 2.0       PSTAPS           G.3J1        How old when phys viol by      0= 0 years old
+                                                   stranger                       .
+                                                                                  .
+                                                                                  60= 60 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  480    2 2.0       PSTSPS           G.3J2        Has phys viol by stranger      1= Yes
+                                                   stopped                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  482    2 2.0       PSTOPS           G.3J3        How old when phy viol stop     0= 0 years old
+                                                   (strangr)                      .
+                                                                                  .
+                                                                                  60= 60 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  484    2 2.0       PO1_PS           G.3K         Physical violence by other(1)  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  486   25 $         P1SPPS           G.3K4        Specify other(1)               Character
+
+  511    2 2.0       PO1APS           G.3K1        How old when phy viol by       0= 0 years old
+                                                   other(1)                       .
+                                                                                  .
+                                                                                  60= 60 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  513    2 2.0       PO1SPS           G.3K2        Has phys viol by other(1)      1= Yes
+                                                   stopped                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  515    2 2.0       PO1OPS           G.3K3        How old when phy viol stop     0= 0 years old
+                                                   (other1)                       .
+                                                                                  .
+                                                                                  60= 60 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  517    2 2.0       PO2_PS           G.3L         Physical violence by other(2)  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  519   25 $         P2SPPS           G.3L4        Specify other(2)               Character
+
+  544    2 2.0       PO2APS           G.3L1        How old when phy viol by       0= 0 years old
+                                                   other(2)                       .
+                                                                                  .
+                                                                                  60= 60 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  546    2 2.0       PO2SPS           G.3L2        Has phys viol by other(2)      1= Yes
+                                                   stopped                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  548    2 2.0       PO2OPS           G.3L3        How old when phy viol stop     0= 0 years old
+                                                   (other2)                       .
+                                                                                  .
+                                                                                  60= 60 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  550    2 2.0       PO3_PS           G.3M         Physical violence by other(3)  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  552   25 $         P3SPPS           G.3M4        Specify other(3)               Character
+
+  577    2 2.0       PO3APS           G.3M1        How old when phys viol by      0= 0 years old
+                                                   other(3)                       .
+                                                                                  .
+                                                                                  60= 60 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  579    2 2.0       PO3SPS           G.3M2        Has phys violence by othr(3)   1= Yes
+                                                   stopped                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  581    2 2.0       PO3OPS           G.3M3        How old when phy viol stop     0= 0 years old
+                                                   (other3)                       .
+                                                                                  .
+                                                                                  60= 60 years old
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  583    2 2.0       HURTPS           H.1          Has partner ever threat to     1= Yes
+                                                   kill you                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  585    2 2.0       WHRTPS           H.1A         When was most recent threat    1= Within the past week
+                                                                                  2= More than a week ago, but
+                                                                                     within the past month
+                                                                                  3= More than 1 month ago, but
+                                                                                     within the past 6 months
+                                                                                  4= More than 6 months ago,
+                                                                                     but within the past year
+                                                                                  5= More than a year ago.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  587    2 2.0       LEAVPS           H.2          Partner prvnt you from         1= Yes
+                                                   leaving house                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  589    2 2.0       WLEAPS           H.2A         Most recent prvnt you from     1= Within the past week
+                                                   leave                          2= More than a week ago, but
+                                                                                     within the past month
+                                                                                  3= More than 1 month ago, but
+                                                                                     within the past 6 months
+                                                                                  4= More than 6 months ago,
+                                                                                     but within the past year
+                                                                                  5= More than a year ago.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  591    2 2.0       FRNDPS           H.3          Partner kept you from seeing   1= Yes
+                                                   friends                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  593    2 2.0       WFRNPS           H.3A         Most recently kept you from    1= Within the past week
+                                                   friends                        2= More than a week ago, but
+                                                                                     within the past month
+                                                                                  3= More than 1 month ago, but
+                                                                                     within the past 6 months
+                                                                                  4= More than 6 months ago,
+                                                                                     but within the past year
+                                                                                  5= More than a year ago.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  595    2 2.0       PHONPS           H.4          Partner ever not let you make  1= Yes
+                                                   a call                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  597    2 2.0       WPHOPS           H.4A         Most recent time not let you   1= Within the past week
+                                                   call                           2= More than a week ago, but
+                                                                                     within the past month
+                                                                                  3= More than 1 month ago, but
+                                                                                     within the past 6 months
+                                                                                  4= More than 6 months ago,
+                                                                                     but within the past year
+                                                                                  5= More than a year ago.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  599    2 2.0       KJOBPS           H.5          Prtnr ever keep you from       1= Yes
+                                                   getting job                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  601    2 2.0       WKJOPS           H.5A         Most recently kept you from a  1= Within the past week
+                                                   job                            2= More than a week ago, but
+                                                                                     within the past month
+                                                                                  3= More than 1 month ago, but
+                                                                                     within the past 6 months
+                                                                                  4= More than 6 months ago,
+                                                                                     but within the past year
+                                                                                  5= More than a year ago.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  603    2 2.0       CEDUPS           H.6          Partner ever keep you from     1= Yes
+                                                   education                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  605    2 2.0       WCEDPS           H.6A         Most recently kept from        1= Within the past week
+                                                   education                      2= More than a week ago, but
+                                                                                     within the past month
+                                                                                  3= More than 1 month ago, but
+                                                                                     within the past 6 months
+                                                                                  4= More than 6 months ago,
+                                                                                     but within the past year
+                                                                                  5= More than a year ago.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  607    2 2.0       MEDAPS           H.7          Partner ever kept you from     1= Yes
+                                                   medicine                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  609    2 2.0       WMEDPS           H.7A         Most recently kept you from    1= Within the past week
+                                                   medicine                       2= More than a week ago, but
+                                                                                     within the past month
+                                                                                  3= More than 1 month ago, but
+                                                                                     within the past 6 months
+                                                                                  4= More than 6 months ago,
+                                                                                     but within the past year
+                                                                                  5= More than a year ago.
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  611    2 2.0       TCNDPS           H.8          Ever talk to partner re: use   1= Yes
+                                                   condoms                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  613    2 2.0       THCNPS           H.9          Partner ever threat re:using   1= Yes
+                                                   condoms                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  615    2 2.0       AFRCPS           H.10         Afraid partner hurt re: use a  1= Yes
+                                                   condom                         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  617    2 2.0       HVSOPS           H.11         Currently in a relationship    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  619    2 2.0       AFSOPS           H.12         Feel afraid of your partner    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  621    2 2.0       SOKLPS           H.13         Think partner may kill you     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  623    2 2.0       AFHMPS           H.114        Afraid to go home              1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  625    5 time5.    ETIMPS           H.15         Time module ended              01:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  630    2 2.0       EMERPS           H.15A        AM/PM indicator                1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  632    2 2.0       CONFPS           H.IA1        How confident                  1= Very Confident
+                                                                                  2= Some Doubts
+                                                                                  3= No Confidence
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  634    1 $         ESTAT            A.0          Edit Status                    CharacterD= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  635    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

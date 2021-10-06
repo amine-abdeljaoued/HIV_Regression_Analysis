@@ -1,0 +1,285 @@
+                               CODEBOOK
+Women's Interagency HIV Study                              9-6-2017
+Form 09 - B/L Blood Spec. Coll.
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0A         Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0B         Visit number                   1= Visit 1
+                                                                                  .
+                                                                                  .
+                                                                                  30= Visit 30
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   11    6 $         FKEY             A.0          Form identifier number         Character
+
+   17    3 $         INITBC           A.0C         Initials of person completing  Character
+                                                   form
+
+   20    8 $         VERSBC           A.0D         Form version                   01/01/93= January 1, 1993
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   28    8 $         B1DTBC           A.1          Date of blood draw #1          10/01/94= October 1, 1994
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/99= December 31,1999
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   36    5 time5.    B1TMBC           A.2          Time of blood draw #1          01:00= 1:00 o'clock
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59 o'clock
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   41    2 2.0       B1MRBC           A.2          AM/PM indicator for time       1= AM
+                                                   blood draw #1                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   43    3 $         P1INBC           A.3          Phlebotomist's inits for draw  Character
+                                                   #1
+
+   46    2 2.0       CNT1BC           A.4          CPT tubes draw #1 centrifuged  1= Yes
+                                                   in clinic                      2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   48    5 time5.    C1TMBC           A.5          Time CPT tubes draw #1         01:00= 1:00 o'clock
+                                                   centrifuged                    .
+                                                                                  .
+                                                                                  12:59= 12:59 o'clock
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   53    2 2.0       C1MRBC           A.5A         AM/PM indicator for time #1    1= AM
+                                                   tubes centrifuged              2= PM
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   55    2 2.0       BSCDBC           A.6          Blood drawn on second date     1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   57    8 $         B2DTBC           A.7          Date of blood draw #2          10/01/94= October 1, 1994
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   65    5 time5.    B2TMBC           A.8          Time of blood draw #2          01:00= 1:00 o'clock
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59 o'clock
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   70    2 2.0       B2MRBC           A.8A         AM/PM indicator for time       1= AM
+                                                   blood draw #2                  2= PM
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   72    3 $         P2INBC           A.9          Phlebotomist's inits for draw  Character
+                                                   #2
+
+   75    2 2.0       CNT2BC           A.10         CPT tubes #2 centrifuged in    1= Yes
+                                                   clinic                         2= No
+                                                                                  3= N/A
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   77    5 time5.    C2TMBC           A.11         Time CPT tubes #2 centrifuged  01:00= 1:00 o'clock
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59 o'clock
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   82    2 2.0       C2MRBC           A.11         AM/PM indicator for time       1= AM
+                                                   tubes #2 centrifuged           2= PM
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   84    2 2.0       HIVABC           B.1          Blood drawn for HIV Ab         1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   86   25 $         HVRNBC           B.1          Reason no blood drawn for HIV  Character
+                                                   Ab
+
+  111    2 2.0       CBCDBC           B.2          Blood drawn for CBC/Diff       1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  113   25 $         CBRNBC           B.2          Reason no blood drawn for CBC/ Character
+                                                   Diff
+
+  138    2 2.0       TCELBC           B.3          Blood drawn for T-Cell subsets 1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  140   25 $         TCRNBC           B.3          Reason no blood drawn for T-   Character
+                                                   Cell subsets
+
+  165    2 2.0       PLSMBC           B.4          Blood drawn for Plasma & Cells 1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  167   25 $         PLRNBC           B.4          Reason no blood drawn for      Character
+                                                   Plasma & Cells
+
+  192    2 2.0       RPS1BC           B.5          Blood drawn for Repository (1) 1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  194   25 $         R1RNBC           B.5          Reason no blood drawn for      Character
+                                                   Repository (1)
+
+  219    2 2.0       SEROBC           B.6          Blood drawn for Serology       1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  221   25 $         SRRNBC           B.6          Reason no blood drawn for      Character
+                                                   Serology
+
+  246    2 2.0       LIVRBC           B.7          Blood drawn for Liver/Renal    1= Yes
+                                                   function                       2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  248   25 $         LVRNBC           B.7          Reason no blood drawn for      Character
+                                                   Liver/Renal function
+
+  273    2 2.0       HEPABC           B.8          Blood drawn for Hepatitis B &  1= Yes
+                                                   C                              2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  275   25 $         HPRNBC           B.8          Reason no blood for Hepatitis  Character
+                                                   B & C
+
+  300    2 2.0       SYPHBC           B.9          Blood drawn for Syphilis       1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  302   25 $         SYRNBC           B.9          Reason no blood drawn for      Character
+                                                   Syphilis
+
+  327    2 2.0       SRUMBC           B.10         Blood drawn for Serum          1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  329   25 $         SMRNBC           B.10         Reason no blood drawn for      Character
+                                                   Serum
+
+  354    2 2.0       RPS2BC           B.11         Blood drawn for Repository (2) 1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  356   25 $         R2RNBC           B.11         Reason no blood drawn for      Character
+                                                   Repository (2)
+
+  381    2 2.0       RP12BC           B.12         Blood drawn for Repository (3) 1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  383   25 $         R3RNBC           B.12         Reason no blood drawn for      Character
+                                                   Repository (3)
+
+  408    2 2.0       RPS4BC           B.13         Blood drawn for Repository (4) 1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  410   25 $         R4RNBC           B.13         Reason no blood drawn for      Character
+                                                   Repository (4)
+
+  435    1 $         ESTAT            A.0          Edit Status                    CharacterD= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  436    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

@@ -1,0 +1,46 @@
+                               CODEBOOK
+Women's Interagency HIV Study                              9-6-2017
+Form 27B - Karnofsky Scale (repeating seg)
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit number                   1= Visit 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= Visit 99
+
+   11    6 $         FKEY             A.0          Form identifier number         Character
+
+   17    2 2.0       SEQID            A.0          Sequence ID: Problem number    1=
+                                                                                  .
+                                                                                  .
+                                                                                  50=
+
+   19    8 $         SECTKF           C.2          Problematic section/question   Character
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   27   25 $         PROBKF           C.3          Nature of problem              Character
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   52    1 $         ESTAT            A.0          Edit Status                    CharacterD= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   53    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

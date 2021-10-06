@@ -1,0 +1,257 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+L03a - Hand/Manual Differential
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    2 2.0       VTYP             OldA.0       Old: Core or VRS visit         1= CORE VISIT
+                                                                                  2= 3 MONTH VRS VISIT
+
+   13    6 $         FKEY             OldA.0       OLD: Form identifier number    Character
+
+   19    3 $         INITLD           A.0          Initials of person completing  Character
+                                                   form
+
+   22    8 $         VERSLD           A.0          Form version                   01/01/94= 01/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   30    2 2.0       DONELD           A.1          Hand/manual count done         1= DONE
+                                                                                  2= NOT DONE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   32   25 $         RNNALD           A.1.a        Specify reason hand/manual     Character
+                                                   count not done
+
+   57    8 $         SPDTLD           A.2          Date sample drawn              10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   65    2 2.0       POLYLD           A.3.a        Status of manual polymorphs/   1= Item not listed on lab
+                                                   granulocyteseuts/segs report      report
+                                                                                  2= Item listed with no value
+                                                                                  3= Item listed with value
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   67    2 2.0       POPCLD           A.3.a.i      Manual polymorphs/             6= 6
+                                                   granulocyteseuts/segs count    .
+                                                   (%)                            .
+                                                                                  97= 97
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   69    2 2.0       BANDLD           A.3.b        Status of manual bands/stabs   1= Item not listed on lab
+                                                   report                            report
+                                                                                  2= Item listed with no value
+                                                                                  3= Item listed with value
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   71    2 2.0       BSPCLD           A.3.b.i      Manual bands/stabs count (%)   0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  22= 22
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   73    2 2.0       LYMPLD           A.3.c        Status of manual lymphocytes   1= Item not listed on lab
+                                                   report                            report
+                                                                                  2= Item listed with no value
+                                                                                  3= Item listed with value
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   75    2 2.0       LYPCLD           A.3.c.i      Manual lymphocytes count (%)   1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  77= 77
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   77    2 2.0       MONOLD           A.3.d        Status of manual monocytes     1= Item not listed on lab
+                                                   report                            report
+                                                                                  2= Item listed with no value
+                                                                                  3= Item listed with value
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   79    2 2.0       MOPCLD           A.3.d.i      Manual monocytes count (%)     1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  21= 21
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   81    2 2.0       EOSNLD           A.3.e        Status of manual eosinophils   1= Item not listed on lab
+                                                   report                            report
+                                                                                  2= Item listed with no value
+                                                                                  3= Item listed with value
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   83    2 2.0       EOPCLD           A.3.e.i      Manual eosinophils count (%)   0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  16= 16
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   85    2 2.0       BASOLD           A.3.f        Status of manual basophils     1= Item not listed on lab
+                                                   report                            report
+                                                                                  2= Item listed with no value
+                                                                                  3= Item listed with value
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   87    2 2.0       BAPCLD           A.3.f.i      Manual basophils count (%)     0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  3= 3
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   89    2 2.0       ATLYLD           A.3.g        Status of manual atypical      1= Item not listed on lab
+                                                   lymphocytes report                report
+                                                                                  2= Item listed with no value
+                                                                                  3= Item listed with value
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   91    2 2.0       ATPCLD           A.3.g.i      Manual atypical lymphocytes    0= 0
+                                                   count (%)                      .
+                                                                                  .
+                                                                                  13= 13
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   93    2 2.0       METALD           A.3.h        Status of manual               1= Item not listed on lab
+                                                   metamyelocytes report             report
+                                                                                  2= Item listed with no value
+                                                                                  3= Item listed with value
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   95    2 2.0       MEPCLD           A.3.h.i      Manual metamyelocytes count    0= 0
+                                                   (%)                            .
+                                                                                  .
+                                                                                  5= 5
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   97    2 2.0       MYLOLD           A.3.i        Status of manual myelocytes    1= Item not listed on lab
+                                                   report                            report
+                                                                                  2= Item listed with no value
+                                                                                  3= Item listed with value
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   99    2 2.0       MYPCLD           A.3.i.i      Manual myelocytes count (%)    0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  3= 3
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  101    2 2.0       PROMLD           A.3.j        Status of manual               1= Item not listed on lab
+                                                   promyelocytes report              report
+                                                                                  2= Item listed with no value
+                                                                                  3= Item listed with value
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  103    2 2.0       PRPCLD           A.3.j.i      Manual promyelocytes count (%) 0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  2= 2
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  105    2 2.0       BLASLD           A.3.k        Status of manual blasts report 1= Item not listed on lab
+                                                                                     report
+                                                                                  2= Item listed with no value
+                                                                                  3= Item listed with value
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  107    2 2.0       BLPCLD           A.3.k.i      Manual blasts count (%)        0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  6= 6
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  109    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  110    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

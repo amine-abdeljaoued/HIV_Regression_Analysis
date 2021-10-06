@@ -1,0 +1,118 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+C45 - Bacterial Vaginosis Smear Gram Stain
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    6 $         FKEY             OldA.0       OLD: Form identifier number    Character
+
+   17    3 $         INITCC           A.0          Initials of person completing  Character
+                                                   form
+
+   20    8 $         VERSCC           A.0          Form version                   01/01/94= 01/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   28    2 2.0       AVAICC           A.1          BV gram stain results          1= Yes
+                                                   available                      2= No, Sample Inadequate
+                                                                                  3= No, Other Reason
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   30   25 $         RNNACC           A.1          Specify reason BV gram stain   Character
+                                                   results not available
+
+   55    8 $         SPDTCC           A.2          Date BV specimen taken         10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63    2 2.0       LACTCC           A.3.a        Lactobacillus morphotypes      0= 4+
+                                                   score                          1= 3+
+                                                                                  2= 2+
+                                                                                  3= 1+
+                                                                                  4= 0
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   65    2 2.0       GARDCC           A.3.b        Gardnerella and Bacteroides    0= 0
+                                                   score                          1= 1+
+                                                                                  2= 2+
+                                                                                  3= 3+
+                                                                                  4= 4+
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   67    2 2.0       CGVRCC           A.3.c        Curved gram-variable rods      0= 0
+                                                   score                          1= 1+ or 2+
+                                                                                  2= 3+ or 4+
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   69    2 2.0       SCRECC           A.4          Total BV gram stain score      0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   71    2 2.0       CELLCC           A.5          Clue cells present             1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   73    3 3.0       PER_CC           A.6          Percentage clue cells          0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  100= 100
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   76    2 2.0       FND1CC           A.7          Other BV findings              1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+   78   25 $         FSP1CC           A.7.a        Specify other BV findings      Character
+
+  103    2 2.0       FND2CC           A.8          Additional other BV findings   1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -9 or Blank= Missing
+
+  105   25 $         FSP2CC           A.8.a        Specify additional other BV    Character
+                                                   findings
+
+  130    8 $         RDTECC           A.9          Date BV results reported       10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  138    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  139    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

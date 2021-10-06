@@ -1,0 +1,418 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+C60 - Pap Smear
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    6 $         FKEY             OldA.0       OLD: Form identifier key       Character
+
+   17    3 $         INITCH           A.0          Initials of person completing  Character
+                                                   form
+
+   20    8 $         VERSCH           A.0          Form version                   01/01/94= 01/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   28    8 $         SPDTCH           A.1          Date Pap smear specimen        10/01/94= 10/01/94
+                                                   obtained                       .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   36    8 $         RDTECH           A.2          Date Pap smear central reading 10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   44    8 $         LMP_CH           OldA.3       OLD: Date of last menstrual    01/01/30= 01/01/30
+                                                   period                         .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   52    2 2.0       SITECH           A.3          Site from which Pap specimen   1= Cervical smear
+                                                   obtained                       2= Vaginal smear
+                                                                                  3= Not given
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   54    2 2.0       ADEQCH           A.4          Adequacy of Pap smear specimen 1= Satisfactory
+                                                                                  2= (Old value) Satisfactory
+                                                                                     but limited by lack of
+                                                                                     endocervical or
+                                                                                     metaplastic cells
+                                                                                  3= Unsatisfactory
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   56   35 $         ADUSCH           A.4.a        Specify reason specimen        Character
+                                                   unsatisfactory
+
+   91    2 2.0       CENDCH           OldA.5.a     Old: Cellular: Endocervical    1= YES
+                                                   (glandular) cells present      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   93    2 2.0       ECCMCH           A.5          Endocervical component         1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   95    2 2.0       CSQACH           OldA.5.b     Old: Cellular: Squamous        1= YES
+                                                   Metaplasia present             2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   97    2 2.0       HSV_CH           OldA.6.a     Old: HSV (inclusion bodies,    1= YES
+                                                   multinucleated) present        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   99    2 2.0       CANDCH           OldA.6.b     Old: Candida present           1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  101    2 2.0       TRICCH           OldA.6.c     Old: T. vaginalis present      1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  103    2 2.0       BV__CH           OldA.6.d     Old: Bacterial vaginosis       1= YES
+                                                   present                        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  105    2 2.0       ACTNCH           OldA.6.e     Old: Actinomycosis present     1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  107    2 2.0       OORGCH           OldA.6.f     Old: Other organisms present   1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  109   25 $         OGSPCH           OldA.6.f     Old: Specify other orgainism   Character
+                                                   finding
+
+  134    2 2.0       INFLCH           A.7          Inflammation present           1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  136    2 2.0       ISCRCH           A.7          Inflammation score             1= 1+
+                                                                                  2= 2+
+                                                                                  3= 3+
+                                                                                  4= 4+
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  138    2 2.0       CELLCH           OldA.8       Old: Inflammation-associated   1= YES
+                                                   cellular changes present       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  140    2 2.0       CSCRCH           OldA.8       Old: Inflammation-associated   1= 1+
+                                                   cellular change score          2= 2+
+                                                                                  3= 3+
+                                                                                  4= 4+
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  142    2 2.0       FOLLCH           OldA.9       Old: Inflammation: follicular  1= YES
+                                                   cervicitis present             2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  144    2 2.0       IOTHCH           OldA.10      Old: Other inflammation /      1= YES
+                                                   infection sign present         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  146   25 $         IOSPCH           OldA.10      Old: Specify other             Character
+                                                   inflammation / infection
+                                                   finding
+
+  171    2 2.0       SNORCH           A.11         Squamous cell - within normal  1= YES
+                                                   limits                         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  173    2 2.0       SAUSCH           A.11.b       Squamous cell - ASC-US         1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  175    2 2.0       SASCCH           OldA.11.b    OLD: Squamous cell - ASCUS     1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  177    2 2.0       SAHGCH           A.11.c       Squamous cell - ASC-HGSIL      1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  179    2 2.0       SMLDCH           A.11.d       Squamous cell - LGSIL: mild    1= YES
+                                                   dysplasia/CIN 1/HPV            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  181    2 2.0       SMODCH           A.11.e       Squamous cell - HGSIL:         1= YES
+                                                   moderate dysplasia/CIN2        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  183    2 2.0       SSEVCH           A.11.f       Squamous cell - HGSIL: severe  1= YES
+                                                   dysplasia/CIN3/carcinoma in    2= NO
+                                                   situ                           -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  185    2 2.0       SINVCH           A.11.g       Squamous cell - HGSIL:         1= YES
+                                                   features of invasion           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  187    2 2.0       SCARCH           A.11.h       Squamous cell carcinoma        1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  189    2 2.0       GPSTCH           OldA.12.a    Old: Glandular cell -          1= YES
+                                                   endometrial cells              2= NO
+                                                   postmenopausal                 -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  191    2 2.0       GEPMCH           A.12.a       Glandular cell - endometrial   1= YES
+                                                   cells postmenopausal           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  193    2 2.0       GATUCH           A.12.b       Glandular cell - atypical      1= YES
+                                                   (unqualified)                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  195    2 2.0       GATNCH           A.12.c       Glandular cell - atypical      1= YES
+                                                   (favor neoplastic)             2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  197    2 2.0       GSITCH           A.12.d       Glandular cell -               1= YES
+                                                   adenocarcinoma in situ         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  199    2 2.0       GADCCH           A.12.e       Glandular cell -               1= YES
+                                                   adenocarcinoma (other)         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  201   25 $         GCSPCH           A.12.e       Glandular cell specify         Character
+                                                   probable origin of
+                                                   adenocarcinoma
+
+  226    2 2.0       GMALCH           A.12.f       Glandular cell - other         1= YES
+                                                   malignant epithelial neoplasm  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  228   25 $         GMSPCH           A.12.f       Glandular cell - specify       Character
+                                                   other malignant epithelial
+                                                   neoplasm
+
+  253    2 2.0       NEPTCH           A.13         Non-epithelial malignant       1= YES
+                                                   neoplasm present               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  255    2 2.0       TPP_CH           A.14         Thin-prep Pap                  1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  257    2 2.0       GNORCH           OldA.13.a    OLD: Gland. cell -             1= YES
+                                                   endocervical cells w.n.l.      2= NO
+                                                                                  3= N/A
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  259    2 2.0       GBENCH           OldA.13.b    OLD: Gland. cell - benign      1= YES
+                                                   endometrial cells cons. w/     2= NO
+                                                   menses                         -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  261    2 2.0       GPRECH           OldA.13.c    OLD: Gland. cell -             1= YES
+                                                   endometrial cells out of       2= NO
+                                                   phase premen.                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  263    2 2.0       GAMTCH           OldA.13.e    OLD: Gland. cell - AGCUS       1= YES
+                                                   endometrial                    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  265    2 2.0       GACVCH           OldA.13.f    OLD: Gland. cell - AGCUS       1= YES
+                                                   endocervical                   2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  267    2 2.0       GANSCH           OldA.13.g    OLD: Gland. cell - AGCUS not   1= YES
+                                                   specified                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  269    2 2.0       GCARCH           OldA.13.h    OLD: Gland. cell -             1= YES
+                                                   adenocarcinoma                 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  271    2 2.0       TSIGCH           OldA.15      OLD: Signature of              1= yes
+                                                   cytotechnologist present       2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  273    8 $         TSDTCH           OldA.15.a    OLD: Signature date of         10/01/94= 10/01/94
+                                                   cytotechnologist               .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  281    2 2.0       PSIGCH           OldA.16      OLD: Signature of pathologist  1= yes
+                                                   present                        2= no
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  283    8 $         PSDTCH           OldA.16.a    OLD: Signature date of         10/01/94= 10/01/94
+                                                   pathologist                    .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  291    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  292    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

@@ -1,0 +1,493 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+PAQ - Physical Activity Questionnaire
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        17= 17
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    8 $         VERSPQ           A.3          Form version                   10/01/02= 10/01/02
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   19    8 $         IDTEPQ           A.4          Date of interview              10/01/02= 10/01/02
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   27    3 $         INITPQ           A.5          Initials of person completing  Character
+                                                   form
+
+   30    5 time5.    STIMPQ           A.6          Time began                     1:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   35    2 2.0       SMERPQ           A.6          AM/PM for time began           1= AM
+                                                                                  2= PM
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   37    2 2.0       PACTPQ           B.1          Physical activity rating       1= Physically Inactive
+                                                                                  2= Between 1 and 3
+                                                                                  3= Moderately Active
+                                                                                  4= Between 3 and 5
+                                                                                  5= Very Active
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   39    2 2.0       RUNJPQ           B.2          Past 12 months - jog or run    1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   41    2 2.0       RUNMPQ           B.2.a        Number of months - jog or run  1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   43    2 2.0       RUN2PQ           B.2.b        Number of months 2 hours/week  0= 0
+                                                   - jog or run                   .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   45    2 2.0       RCKTPQ           B.3          Past 12 months - vigorous      1= YES
+                                                   racket sports                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   47    2 2.0       RCKMPQ           B.3.a        Number of months - vigorous    1= 1
+                                                   racket sports                  .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   49    2 2.0       RCK3PQ           B.3.b        Number of months 3 hours/week  0= 0
+                                                   - vigorous racket sports       .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   51    2 2.0       BIKEPQ           B.4          Past 12 months - fast bicycle  1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   53    2 2.0       BIKMPQ           B.4.a        Number of months - fast        1= 1
+                                                   bicycle                        .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   55    2 2.0       BIK2PQ           B.4.b        Number of months 2 hours/week  0= 0
+                                                   - fast bicycle                 .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   57    2 2.0       SWMGPQ           B.5          Past 12 months - swim          1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   59    2 2.0       SWIMPQ           B.5.a        Number of months - swim        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   61    2 2.0       SWI2PQ           B.5.b        Number of months 2 hours/week  0= 0
+                                                   - swim                         .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63    2 2.0       DNCEPQ           B.6          Past 12 months - exercise      1= YES
+                                                   class/dance                    2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   65    2 2.0       DNCMPQ           B.6.a        Number of months - exercise    1= 1
+                                                   class/dance                    .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   67    2 2.0       DNC3PQ           B.6.b        Number of months 3 hours/week  0= 0
+                                                   - exercise class/dance         .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   69    2 2.0       JOBVPQ           B.7          Past 12 months - vigorous job  1= YES
+                                                   activities                     2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   71    2 2.0       JOBMPQ           B.7.a        Number of months - vigorous    1= 1
+                                                   job activities                 .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   73    2 2.0       JOB5PQ           B.7.b        Number of months 5 hours/week  0= 0
+                                                   - vigorous job activities      .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   75    2 2.0       HOMEPQ           B.8          Past 12 months - home or       1= YES
+                                                   leisure activities             2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   77    2 2.0       HOMMPQ           B.8.a        Number of months - home or     1= 1
+                                                   leisure activities             .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   79    2 2.0       HOM3PQ           B.8.b        Number of months 3 hours/week  0= 0
+                                                   - home or leisure activities   .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   81    2 2.0       SPRTPQ           B.9          Past 12 months - strenuous     1= YES
+                                                   sports                         2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   83    2 2.0       SPRMPQ           B.9.a        Number of months - strenuous   1= 1
+                                                   sports                         .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   85    2 2.0       SPR3PQ           B.9.b        Number of months 3 hours/week  0= 0
+                                                   - strenuous sports             .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   87    2 2.0       NSTRPQ           B.10         Past 12 months - non-          1= YES
+                                                   strenuous sports               2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   89    2 2.0       NSTMPQ           B.10.a       Number of months - non-        1= 1
+                                                   strenuous sports               .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   91    2 2.0       NST3PQ           B.10.b       Number of months 3 hours/week  0= 0
+                                                   - non-strenuous sports         .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   93    2 2.0       WALKPQ           B.11         Past 12 months - walk/hike     1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   95    2 2.0       WALMPQ           B.11.a       Number of months - walk/hike   1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   97    2 2.0       WAL4PQ           B.11.b       Number of months 4 hours/week  0= 0
+                                                   - walk/hike                    .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   99    2 2.0       BOWLPQ           B.12         Past 12 months - bowl/golf     1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  101    2 2.0       BOWMPQ           B.12.a       Number of months - bowl/golf   1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  103    2 2.0       BOW3PQ           B.12.b       Number of months 3 hours/week  0= 0
+                                                   - bowl/golf                    .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  105    2 2.0       CALIPQ           B.13         Past 12 months - home          1= YES
+                                                   exercise/calisthenics          2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  107    2 2.0       CALMPQ           B.13.a       Number of months - home        1= 1
+                                                   exercise/calisthenics          .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  109    2 2.0       CAL3PQ           B.13.b       Number of months 3 hours/week  0= 0
+                                                   - home exercise/calisthenics   .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  111    2 2.0       MAINPQ           B.14         Past 12 months - home          1= YES
+                                                   maintenance/gardening          2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  113    2 2.0       MAIMPQ           B.14.a       Number of months - home        1= 1
+                                                   maintenance/gardening          .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  115    2 2.0       MAI5PQ           B.14.b       Number of months 5 hours/week  0= 0
+                                                   - home maintenance/gardening   .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  117    2 2.0       TV__PQ           B.15         Watch TV during leisure time   1= Never
+                                                                                  2= Seldom
+                                                                                  3= Sometimes
+                                                                                  4= Often
+                                                                                  5= Very Often
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  119    2 2.0       TVHRPQ           B.15.a       Number of hours per day watch  1= 1
+                                                   TV                             .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  121    2 2.0       CLNMPQ           B.16         Number of months - major       0= 0
+                                                   household chores               .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  123    2 2.0       CLNTPQ           B.16.a       Number of times - major        1= 1
+                                                   household chores               .
+                                                                                  .
+                                                                                  15= 15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  125    2 2.0       LGTMPQ           B.17         Number of months - light       0= 0
+                                                   household chores               .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  127    2 2.0       LGTHPQ           B.17.a       Number of hours/week - light   1= 1
+                                                   household chores               .
+                                                                                  .
+                                                                                  40= 40
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  129    2 2.0       CHLMPQ           B.18         Number of months - childcare   0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  12= 12
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  131    2 2.0       CHLDPQ           B.18.a       Number of days/week -          1= 1
+                                                   childcare                      .
+                                                                                  .
+                                                                                  7= 7
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  133    2 2.0       CHLHPQ           B.18.b       Number of hours/day -          1= 1
+                                                   childcare                      .
+                                                                                  .
+                                                                                  24= 24
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  135    5 time5.    ETIMPQ           B.19         Time ended                     1:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  140    2 2.0       EMERPQ           B.19         AM/PM for time ended           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  142    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  143    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

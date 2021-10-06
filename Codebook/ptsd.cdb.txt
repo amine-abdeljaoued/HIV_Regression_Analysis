@@ -1,0 +1,355 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+PTSD - Stress Assessment Questionnaire
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    8 $         VERSPZ           A.3          Form version                   01/01/93= 01/01/93
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   19    8 $         IDTEPZ           A.4          Date of interview              10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   27    3 $         INITPZ           A.5          Initials of person completing  Character
+                                                   form
+
+   30    8 $         LVISPZ           OldA.6       Old: Date of last visit study  10/01/94= 10/01/94
+                                                   visit                          .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   38    5 time5.    STIMPZ           A.7          Time began                     01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   43    2 2.0       SMERPZ           A.7          AM/PM for time began           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   45    2 2.0       MEMSPZ           B.1.a        Repeated, disturbing memories/ 1= NOT AT ALL
+                                                   thoughts/images of a           2= A LITTLE BIT
+                                                   stressful experience           3= MODERATELY
+                                                                                  4= QUITE A BIT
+                                                                                  5= EXTREMELY
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   47    2 2.0       DRMSPZ           B.1.b        Repeated, disturbing dreams    1= NOT AT ALL
+                                                   of a stressful experience      2= A LITTLE BIT
+                                                                                  3= MODERATELY
+                                                                                  4= QUITE A BIT
+                                                                                  5= EXTREMELY
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   49    2 2.0       DJVUPZ           B.1.c        Suddenly feeling as if         1= NOT AT ALL
+                                                   stressful experience were      2= A LITTLE BIT
+                                                   happening again                3= MODERATELY
+                                                                                  4= QUITE A BIT
+                                                                                  5= EXTREMELY
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   51    2 2.0       RMNDPZ           B.1.d        Feeling upset when reminded    1= NOT AT ALL
+                                                   of stressful experience        2= A LITTLE BIT
+                                                                                  3= MODERATELY
+                                                                                  4= QUITE A BIT
+                                                                                  5= EXTREMELY
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   53    2 2.0       PHYSPZ           B.1.e        Physical reactions when        1= NOT AT ALL
+                                                   reminded of stressful          2= A LITTLE BIT
+                                                   experience                     3= MODERATELY
+                                                                                  4= QUITE A BIT
+                                                                                  5= EXTREMELY
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   55    2 2.0       AVTTPZ           B.1.f        Avoiding thinking/talking/     1= NOT AT ALL
+                                                   having feelings about          2= A LITTLE BIT
+                                                   stressful experience           3= MODERATELY
+                                                                                  4= QUITE A BIT
+                                                                                  5= EXTREMELY
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   57    2 2.0       AVACPZ           B.1.g        Avoiding activities/           1= NOT AT ALL
+                                                   situations which remind of     2= A LITTLE BIT
+                                                   stressful experience           3= MODERATELY
+                                                                                  4= QUITE A BIT
+                                                                                  5= EXTREMELY
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   59    2 2.0       RMBRPZ           B.1.h        Trouble remembering stressful  1= NOT AT ALL
+                                                   experience                     2= A LITTLE BIT
+                                                                                  3= MODERATELY
+                                                                                  4= QUITE A BIT
+                                                                                  5= EXTREMELY
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   61    2 2.0       LINTPZ           B.1.i        Loss of interest in activities 1= NOT AT ALL
+                                                                                  2= A LITTLE BIT
+                                                                                  3= MODERATELY
+                                                                                  4= QUITE A BIT
+                                                                                  5= EXTREMELY
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63    2 2.0       DISTPZ           B.1.j        Feeling distant/cut off from   1= NOT AT ALL
+                                                   others                         2= A LITTLE BIT
+                                                                                  3= MODERATELY
+                                                                                  4= QUITE A BIT
+                                                                                  5= EXTREMELY
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   65    2 2.0       NUMBPZ           B.1.k        Feeling emotionally numb/      1= NOT AT ALL
+                                                   unable to have loving feelings 2= A LITTLE BIT
+                                                                                  3= MODERATELY
+                                                                                  4= QUITE A BIT
+                                                                                  5= EXTREMELY
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   67    2 2.0       FUTRPZ           B.1.l        Feeling future will be cut     1= NOT AT ALL
+                                                   short                          2= A LITTLE BIT
+                                                                                  3= MODERATELY
+                                                                                  4= QUITE A BIT
+                                                                                  5= EXTREMELY
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   69    2 2.0       TSLPPZ           B.1.m        Trouble falling/staying asleep 1= NOT AT ALL
+                                                                                  2= A LITTLE BIT
+                                                                                  3= MODERATELY
+                                                                                  4= QUITE A BIT
+                                                                                  5= EXTREMELY
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   71    2 2.0       IRRIPZ           B.1.n        Feeling irritable/angry        1= NOT AT ALL
+                                                   outbursts                      2= A LITTLE BIT
+                                                                                  3= MODERATELY
+                                                                                  4= QUITE A BIT
+                                                                                  5= EXTREMELY
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   73    2 2.0       CONCPZ           B.1.o        Difficulty concentrating       1= NOT AT ALL
+                                                                                  2= A LITTLE BIT
+                                                                                  3= MODERATELY
+                                                                                  4= QUITE A BIT
+                                                                                  5= EXTREMELY
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   75    2 2.0       ALRTPZ           B.1.p        Being alert/watchful/on guard  1= NOT AT ALL
+                                                                                  2= A LITTLE BIT
+                                                                                  3= MODERATELY
+                                                                                  4= QUITE A BIT
+                                                                                  5= EXTREMELY
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   77    2 2.0       JMPYPZ           B.1.q        Feeling jumpy/easily startled  1= NOT AT ALL
+                                                                                  2= A LITTLE BIT
+                                                                                  3= MODERATELY
+                                                                                  4= QUITE A BIT
+                                                                                  5= EXTREMELY
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   79    2 2.0       UNEXPZ           B.2.a        Upset because of something     1= NEVER
+                                                   unexpected                     2= ALMOST NEVER
+                                                                                  3= SOMETIMES
+                                                                                  4= FAIRLY OFTEN
+                                                                                  5= VERY OFTEN
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   81    2 2.0       UCTLPZ           B.2.b        Felt unable to control         1= NEVER
+                                                   important things               2= ALMOST NEVER
+                                                                                  3= SOMETIMES
+                                                                                  4= FAIRLY OFTEN
+                                                                                  5= VERY OFTEN
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   83    2 2.0       NERVPZ           B.2.c        Felt nervous/stressed          1= NEVER
+                                                                                  2= ALMOST NEVER
+                                                                                  3= SOMETIMES
+                                                                                  4= FAIRLY OFTEN
+                                                                                  5= VERY OFTEN
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   85    2 2.0       CONFPZ           B.2.d        Felt confident about ability   1= NEVER
+                                                   to handle problems             2= ALMOST NEVER
+                                                                                  3= SOMETIMES
+                                                                                  4= FAIRLY OFTEN
+                                                                                  5= VERY OFTEN
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   87    2 2.0       YWAYPZ           B.2.e        Felt things going your way     1= NEVER
+                                                                                  2= ALMOST NEVER
+                                                                                  3= SOMETIMES
+                                                                                  4= FAIRLY OFTEN
+                                                                                  5= VERY OFTEN
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   89    2 2.0       COPEPZ           B.2.f        Could not cope with all that   1= NEVER
+                                                   needed doing                   2= ALMOST NEVER
+                                                                                  3= SOMETIMES
+                                                                                  4= FAIRLY OFTEN
+                                                                                  5= VERY OFTEN
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   91    2 2.0       CTRLPZ           B.2.g        Able to control irritations    1= NEVER
+                                                                                  2= ALMOST NEVER
+                                                                                  3= SOMETIMES
+                                                                                  4= FAIRLY OFTEN
+                                                                                  5= VERY OFTEN
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   93    2 2.0       OTOPPZ           B.2.h        Felt on top of things          1= NEVER
+                                                                                  2= ALMOST NEVER
+                                                                                  3= SOMETIMES
+                                                                                  4= FAIRLY OFTEN
+                                                                                  5= VERY OFTEN
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   95    2 2.0       ANGRPZ           B.2.i        Angered by things outside of   1= NEVER
+                                                   control                        2= ALMOST NEVER
+                                                                                  3= SOMETIMES
+                                                                                  4= FAIRLY OFTEN
+                                                                                  5= VERY OFTEN
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   97    2 2.0       DIFFPZ           B.2.j        Felt difficulties could not    1= NEVER
+                                                   be overcome                    2= ALMOST NEVER
+                                                                                  3= SOMETIMES
+                                                                                  4= FAIRLY OFTEN
+                                                                                  5= VERY OFTEN
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   99    5 time5.    ETIMPZ           B.3          Time ended                     01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  104    2 2.0       EMERPZ           B.3          AM/PM for time ended           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  106    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  107    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

@@ -1,0 +1,113 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+F22HX - Health History (Repeating Segment) S10
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        17= 17
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    2 2.0       VTYP             OldA.2.a     Old: Core or VRS visit         1= CORE VISIT
+                                                                                  2= 3 MONTH VRS VISIT
+
+   13    2 2.0       SEQID2           C.48         Sequence # of head injury      1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  999= 999
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   15    2 2.0       HIHHMH           C.48.a       Head injury - how happened     1= Had a fall and hit head
+                                                                                  2= Car accident
+                                                                                  3= Sports injury
+                                                                                  4= Physical violence
+                                                                                  5= Other
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   17   35 $         HISPMH           C.48.a       Specify other method of head   Character
+                                                   injury
+
+   52    2 2.0       HIHOMH           C.48.b       Age at time of head injury     0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   54    2 2.0       HISDMH           C.48.c       Saw doctor for head injury     1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   56    2 2.0       HISHMH           C.48.d       Stayed in hospital for head    1= YES
+                                                   injury                         2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   58    2 2.0       HIKOMH           C.48.e       Lost consciousness because of  1= YES
+                                                   head injury                    2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   60    3 3.0       HILUMH           C.48.e.i     Length of time unconscious     0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  999= 999
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63    2 2.0       HMHDMH           C.48.e.i     Length of time unconscious -   1= MINUTES
+                                                   minutes/hours/days             2= HOURS
+                                                                                  3= DAYS
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   65    2 2.0       HISFMH           C.48.f       Had skull fracture from head   1= YES
+                                                   injury                         2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   67    2 2.0       HISZMH           C.48.g       Had seizure within 7 days of   1= YES
+                                                   head injury                    2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   69    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   70    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

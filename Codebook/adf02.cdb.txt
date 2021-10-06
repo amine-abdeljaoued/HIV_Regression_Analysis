@@ -1,0 +1,207 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+ADF02 - Autoimmune Disease Form
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        17= 17
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    8 $         VERSAD           A.3          Form version                   10/01/12= 10/01/12
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   19    8 $         IDTEAD           A.4          Date of interview              10/01/12= 10/01/12
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   27    3 $         INITAD           A.5          Initials of person completing  Character
+                                                   form
+
+   30    8 $         LVISAD           A.6          Date form last administered    10/01/12= 10/01/12
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   38    5 time5.    STIMAD           A.7          Time began                     1:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   43    2 2.0       SMERAD           A.7          AM/PM for time began           1= AM
+                                                                                  2= PM
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   45    2 2.0       SADXAD           B.1          Since last visit diagnosed     1= YES
+                                                   with autoimmune disease -      2= NO
+                                                   lupus, Sjogren's, MS, Graves,  -1= N.A. (Skipped)
+                                                   Hashimoto's                    -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   47    2 2.0       SLUPAD           B.2          Diagnosed with Lupus since     1= YES
+                                                   last visit                     2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   49    8 $         FLUPAD           B.2.b        Date first told had lupus      01/01/60= 01/01/60
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   57    2 2.0       SMLUAD           B.2.c        Since last visit, taken        1= YES
+                                                   medications or treatments for  2= NO
+                                                   Lupus                          -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   59    2 2.0       SSJOAD           B.3          Diagnosed with Sjogren's       1= YES
+                                                   since last visit               2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   61    8 $         FSJOAD           B.3.b        Date first told had Sjogren's  01/01/60= 01/01/60
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   69    2 2.0       SMSJAD           B.3.c        Since last visit, taken        1= YES
+                                                   medications or treatments for  2= NO
+                                                   Sjogren's                      -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   71    2 2.0       SMSLAD           B.4          Diagnosed with Multiple        1= YES
+                                                   Sclerosis since last visit     2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   73    8 $         FMSLAD           B.4.b        Date first told had Multiple   01/01/60= 01/01/60
+                                                   Sclerosis                      .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   81    2 2.0       SMMSAD           B.4.c        Since last visit, taken        1= YES
+                                                   medications or treatments for  2= NO
+                                                   Multiple Sclerosis             -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   83    2 2.0       SGRVAD           B.5          Diagnosed with Graves/high     1= YES
+                                                   thyroid since last visit       2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   85    8 $         FGRVAD           B.5.b        Date first told had Graves/    01/01/60= 01/01/60
+                                                   high thyroid                   .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   93    2 2.0       SMGRAD           B.5.c        Since last visit, taken        1= YES
+                                                   medications or treatments for  2= NO
+                                                   Graves/high thyroid            -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   95    2 2.0       SHSHAD           B.6          Diagnosed with Hashimoto's/    1= YES
+                                                   low thyroid since last visit   2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   97    8 $         FHSHAD           B.6.b        Date first told had            01/01/60= 01/01/60
+                                                   Hashimoto's/low thyroid        .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  105    2 2.0       SMHSAD           B.6.c        Since last visit, taken        1= YES
+                                                   medications or treatments for  2= NO
+                                                   Hashimoto's/low thyroid        -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  107    5 time5.    ETIMAD           B.7          Time ended                     1:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  112    2 2.0       EMERAD           B.7          AM/PM for time ended           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  114    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  115    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

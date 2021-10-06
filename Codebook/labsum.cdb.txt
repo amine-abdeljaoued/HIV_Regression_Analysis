@@ -1,0 +1,105 @@
+                               CODEBOOK
+Women's Interagency HIV Study                              9-6-2017
+Visit 42: LABSUM - Summary Lab Variable Data
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8           CASEID                        WIHS ID number                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT                         Visit number                   0= Pre-HAART for participants
+                                                                                     recruited after 11/15/1995
+                                                                                  1= visit 1
+                                                                                  .
+                                                                                  .
+                                                                                  42= visit 42
+
+   11    8 8.0       VLOAD                         HIV RNA (copies per ml)        20= 20 cp/ml
+                                                                                  .
+                                                                                  .
+                                                                                  27000000= 27,000,000 cp/ml
+                                                                                  .= Missing
+
+   19    2           UD_VL                         HIV RNA detection status       1= Below lower limit of
+                                                                                     quantification (VLOAD set
+                                                                                     to lower limit)
+                                                                                  2= Detected
+                                                                                  3= Above upper limit of
+                                                                                     quantification (VLOAD set
+                                                                                     to upper limit)
+
+   21    4 4.0       LLQ_VL                        Lower limit of quantification  20 or 48= TaqMan
+                                                   of HIV RNA assay               40= Abbott Real Time PCR
+                                                                                  50= Roche Ultrasensitive,
+                                                                                      Chiron, & Siemens bDNA
+                                                                                  80= NucliSens, 1 ml input
+                                                                                  150= Unknown
+                                                                                  400= Roche Amplicor &
+                                                                                      NucliSens, .2 ml input
+                                                                                  500= Quantiplex
+                                                                                  4000= NASBA, .1 ml input
+                                                                                  5000= Bayer Branched DNA
+                                                                                  .= Missing (some pre-HAART
+                                                                                     for new recruits)
+
+   25    4           CD4N                          # of CD4 positive cells        0000= 0 cells
+                                                   (helpers, cells per mm^3)      .
+                                                                                  .
+                                                                                  9999= 9999 cells
+                                                                                  .= Missing
+
+   29    4 4.1       CD4P                          % CD4 positive cells (helpers) 00.0= 0.0 %
+                                                                                  .
+                                                                                  .
+                                                                                  99.9= 99.9 %
+                                                                                  .= Missing
+
+   33    5           CD8N                          # of CD8 positive cells        00000= 0 cells
+                                                   (suppressors, cells per mm^3)  .
+                                                                                  .
+                                                                                  99999= 99999 cells
+                                                                                  .= Missing
+
+   38    4 4.1       CD8P                          % CD8 positive cells           000= 0.0 %
+                                                   (supressors)                   .
+                                                                                  .
+                                                                                  999= 99.9 %
+                                                                                  .= Missing
+
+   42    5           CD3N                          # of CD3 positive cells        00000= 0 cells
+                                                   (cells per mm^3)               .
+                                                                                  .
+                                                                                  99999= 99999 cells
+                                                                                  .= Missing
+
+   47    4 4.1       CD3P                          % CD3 positive cells           000= 0.0 %
+                                                                                  .
+                                                                                  .
+                                                                                  999= 99.9 %
+                                                                                  .= Missing
+
+   51    4 4.1       HSRAT                         Helper/Suppressor Ratio (CD4N/ 0.0= 0.0
+                                                   CD8N)                          .
+                                                                                  .
+                                                                                  59.8= 59.8
+                                                                                  .= Missing
+
+   55    4 4.0       CD4DT                         CD4 date                       10/01/94= October 1, 1994
+                                                                                  .
+                                                                                  .
+                                                                                  09/30/15= September 30, 2015
+
+   59    4 4.0       VLDT                          Viral Load date                10/01/94= October 1, 1994
+                                                                                  .
+                                                                                  .
+                                                                                  09/30/15= September, 2015
+
+   63    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

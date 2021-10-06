@@ -1,0 +1,1582 @@
+                               CODEBOOK
+Women's Interagency HIV Study                              9-6-2017
+Form 02: B/L Medical & Health Hx
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit number                   1= Visit 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= Visit 99
+
+   11    6 $         FKEY             A.0          Form identifier key            Character
+
+   17    8 $         VERSMH           A.3          Form version                   01/01/93= January 1, 1993
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   25    8 $         IDTEMH           A.4          Date of interview              10/01/94= October 1, 1994
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   33    3 $         INITMH           A.5          Initials of person completing  Character
+                                                   form
+
+   36    5 time5.    STIMMH           A.6          Time module began              1:00= 1:00 o'clock
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59 o'clock
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   41    2 2.0       SMERMH           A.6          AM/PM indicator for time began 1= AM
+                                                                                  2= PM
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+   43    2 2.0       SYFVMH           B.1          Fever > 2 wks with temp over   1= Yes
+                                                   100 degrees in past 6 mths     2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   45    2 2.0       SYDIMH           B.2          Diarrhea > 2 wks in past 6     1= Yes
+                                                   mths                           2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   47    2 2.0       SYMLMH           B.3          Memory problems > 2 wks in     1= Yes
+                                                   past 6 mths                    2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   49    2 2.0       SYNUMH           B.4          Numbness/tingling > 2wks in    1= Yes
+                                                   extremeties in past 6 mths     2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   51    2 2.0       SYWLMH           B.5          Unexpected weightt loss > 10   1= Yes
+                                                   lbs in past 6 mths             2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   53    2 2.0       SYMTMH           B.6          Mental confusion in past 6     1= Yes
+                                                   months                         2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   55    2 2.0       SYNSMH           B.7          Drenching night sweats in      1= Yes
+                                                   past 6 months                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   57    2 2.0       CANCMH           C.1          Ever told have cancer          1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   59    2 2.0       CCX_MH           C.2          Ever told have cervical cancer 1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   61    2 2.0       CCXYMH           C.2A         Year of cervical cancer dx     00= 1900
+                                                                                  .
+                                                                                  .
+                                                                                  99= 1999
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63    2 2.0       CKS_MH           C.3          Ever told have kaposi's        1= Yes
+                                                   sarcoma                        2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   65    2 2.0       CKSYMH           C.3A         Year of kaposi's sarcoma dx    00= 1900
+                                                                                  .
+                                                                                  .
+                                                                                  99= 1999
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   67    2 2.0       CLY_MH           C.4          Ever told have lymphoma        1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   69    2 2.0       CLYYMH           C.4A         Year of lymphoma dx            00= 1900
+                                                                                  .
+                                                                                  .
+                                                                                  99= 1999
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   71    2 2.0       CLB_MH           C.5          Ever told have lymphoma in     1= Yes
+                                                   the brain                      2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   73    2 2.0       CLBYMH           C.5A         Year lymphoma in the brain dx  00= 1900
+                                                                                  .
+                                                                                  .
+                                                                                  99= 1999
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   75    2 2.0       CHO_MH           C.6          Ever told have hodgkin's       1= Yes
+                                                   disease                        2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   77    2 2.0       CHOYMH           C.6A         Year hodgkin's disease dx      00= 1900
+                                                                                  .
+                                                                                  .
+                                                                                  99= 1999
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   79    2 2.0       CBC_MH           C.7          Ever told have breast cancer   1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   81    2 2.0       CBCYMH           C.7A         Year breast cancer dx          00= 1900
+                                                                                  .
+                                                                                  .
+                                                                                  99= 1999
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   83    2 2.0       COV_MH           C.8          Ever told have ovarian cancer  1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   85    2 2.0       COVYMH           C.8A         Year ovarian cancer dx         00= 1900
+                                                                                  .
+                                                                                  .
+                                                                                  99= 1999
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   87    2 2.0       CEN_MH           C.9          Ever told have cancer of       1= Yes
+                                                   uterus                         2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   89    2 2.0       CENYMH           C.9A         Year endometrial cancer dx     00= 1900
+                                                                                  .
+                                                                                  .
+                                                                                  99= 1999
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   91    2 2.0       CSK_MH           C.10         Ever told have skin cancer     1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   93    2 2.0       CSKYMH           C.10A        Year skin cancer dx            00= 1900
+                                                                                  .
+                                                                                  .
+                                                                                  99= 1999
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   95    2 2.0       COC_MH           C.11         Ever told have other type of   1= Yes
+                                                   cancer                         2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   97   25 $         COCSMH           C.11B        Specify other type of cancer   Character
+
+  122    2 2.0       COCYMH           C.11A        Year other cancer dx           00= 1900
+                                                                                  .
+                                                                                  .
+                                                                                  99= 1999
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  124    2 2.0       CCT_MH           C.12         Ever received cancer           1= Yes
+                                                   chemotherapies                 2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  126    2 2.0       CCTMMH           C.12A        Receivedd cancer chemotherapy  1= Yes
+                                                   in past month                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  128    2 2.0       CRADMH           C.13         Ever received radiation        1= Yes
+                                                   treatment                      2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  130    2 2.0       CRAMMH           C.13A        Received radiation treatment   1= Yes
+                                                   in past month                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  132    2 2.0       ASTHMH           C.14         Ever had asthma                1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  134    2 2.0       ASTYMH           C.14A        Number of years since asthma   0= 0 years
+                                                   started                        .
+                                                                                  .
+                                                                                  99= 99 years
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  136    2 2.0       TBFAMH           C.15         Any family members ever had TB 1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  138    2 2.0       TB__MH           C.16         Ever had tuberculosis          1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  140    2 2.0       TBLUMH           C.16A        Was tuberculosis in lungs      1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  142    2 2.0       TBOTMH           C.16B        Was tuberculosis in body       1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  144    2 2.0       TBT_MH           C.16C        Ever received treatment for TB 1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  146   25 $         TBT1MH           C.16D1       1st medication for             Character
+                                                   tuberculosis
+
+  171   25 $         TBT2MH           C.16D2       2nd medication for             Character
+                                                   tuberculosis
+
+  196   25 $         TBT3MH           C.16D3       3rd medication for             Character
+                                                   tuberculosis
+
+  221   25 $         TBT4MH           C.16D4       4th medication for             Character
+                                                   tuberculosis
+
+  246   25 $         TBT5MH           C.16D5       5th medication for             Character
+                                                   tuberculosis
+
+  271   25 $         TBT6MH           C.16D6       6th medication for             Character
+                                                   tuberculosis
+
+  296   25 $         TBT7MH           C.16D7       7th medication for             Character
+                                                   tuberculosis
+
+  321   25 $         TBT8MH           C.16D8       8th medication for             Character
+                                                   tuberculosis
+
+  346    2 2.0       TT__MH           C.17         Ever had skin test for TB      1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  348    5 $         TTDTMH           C.17A        Date of most recent skin test  01/40= January 1940
+                                                   for TB                         .
+                                                                                  .
+                                                                                  12/20= December 2020
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  353    2 2.0       TTPOMH           C.17B        Ever told had positive TB test 1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  355    2 2.0       TTT_MH           C.17C        Ever treated for positve TB    1= Yes
+                                                   skin test                      2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  357   25 $         TTT1MH           C.17D1       1st medication for pos skin    Character
+                                                   test
+
+  382   25 $         TTT2MH           C.17D2       2nd medication for pos skin    Character
+                                                   test
+
+  407   25 $         TTT3MH           C.17D3       3rd medication for pos skin    Character
+                                                   test
+
+  432   25 $         TTT4MH           C.17D4       4th medication for pos skin    Character
+                                                   test
+
+  457   25 $         TTT5MH           C.17D5       5th medication for pos skin    Character
+                                                   test
+
+  482   25 $         TTT6MH           C.17D6       6th medication for pos skin    Character
+                                                   test
+
+  507   25 $         TTT7MH           C.17D7       7th medication for pos skin    Character
+                                                   test
+
+  532   25 $         TTT8MH           C.17D8       8th medication for pos skin    Character
+                                                   test
+
+  557    2 2.0       MCBPMH           C.18A        Ever had high blood pressure   1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  559    2 2.0       MCBSMH           C.18B        Ever had diabetes              1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  561    2 2.0       MCRAMH           C.18C        Ever had lupus/rheumatoid      1= Yes
+                                                   arthritis                      2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  563    2 2.0       MCSPMH           C.18D        Ever had operation to remove   1= Yes
+                                                   spleen                         2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  565    2 2.0       MCSSMH           C.18E        Ever had sinusitis             1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  567    2 2.0       MCUTMH           C.18F        Ever had a UTI that required   1= Yes
+                                                   antibiotics                    2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  569    2 2.0       MCOTMH           C.18G        Ever had other major chronic   1= Yes
+                                                   illness                        2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  571   25 $         MCO1MH           C.18G1       1st other chronic illness      Character
+
+  596   25 $         MCO2MH           C.18G2       2nd other chronic illness      Character
+
+  621   25 $         MCO3MH           C.18G3       3rd other chronic illness      Character
+
+  646   25 $         MCO4MH           C.18G4       4th other chronic illness      Character
+
+  671   25 $         MCO5MH           C.18G5       5th other chronic illness      Character
+
+  696   25 $         MCO6MH           C.18G6       6th other chronic illness      Character
+
+  721   25 $         MCO7MH           C.18G7       7th other chronic illness      Character
+
+  746   25 $         MCO8MH           C.18G8       8th other chronic illness      Character
+
+  771    2 2.0       SKS_MH           D.1          Ever had shingles (herpes      1= Yes
+                                                   zoster)                        2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  773    2 2.0       SKSTMH           D.1A         How many times shingles in     0= 0 times with shingles
+                                                   past 6 mths                    .
+                                                                                  .
+                                                                                  99= 99 times
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  775    2 2.0       SKR_MH           D.2          Ever been told had skin rashes 1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  777    2 2.0       SKRTMH           D.2A         How many times told skin       0= 0 times with skin rashes
+                                                   rashes in past 6 mths          .
+                                                                                  .
+                                                                                  99= 99 times
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  779    2 2.0       ORC_MH           D.3          Ever told had candida in mouth 1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  781    2 2.0       ORCTMH           D.3A         How many times candida in      0= 0 times with candida in
+                                                   mouth in past 6 mths              mouth
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99 times
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  783    2 2.0       ORH_MH           D.4          Ever told have (oral) herpes   1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  785    2 2.0       ORHTMH           D.4A         How many times told had        0= 0 times
+                                                   herpes in past 6 mths          .
+                                                                                  .
+                                                                                  99= 99 times
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  787    2 2.0       ACD4MH           E.1          Ever told had CD4 < 200 or 14% 1= Yes
+                                                                                  2= No/Never heard of it
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  789    2 2.0       APCPMH           E.2          Ever told had PCP              1= Yes
+                                                                                  2= No/Never heard of it
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  791    2 2.0       APNMMH           E.3          Ever told had pneumonia/lung   1= Yes
+                                                   infct                          2= No/Never heard of it
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  793    2 2.0       APN2MH           E.3A         Ever told had >=2 episodes     1= Yes
+                                                   pneumonia in 1 year            2= No/Never heard of it
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  795    2 2.0       APNNMH           E.3B         Number of pneumonia episodes   0= 0 episodes
+                                                   in past 6 mths                 .
+                                                                                  .
+                                                                                  99= 99 episodes
+
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  797    5 $         APNLMH           E.3C         Date (MM/YY) of last pneumonia 01/30= January, 1930
+                                                                                  .
+                                                                                  .
+                                                                                  12/99= December, 1999
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  802    2 2.0       ACANMH           E.4          Ever told had candida in       1= Yes
+                                                   esophagus                      2= No/Never heard of it
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  804    2 2.0       ACALMH           E.5          Ever told had candida in       1= Yes
+                                                   trachea/bronch                 2= No/Never heard of it
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  806    2 2.0       AMACMH           E.6          Ever told had MAI/MAC          1= Yes
+                                                   infection                      2= No/Never heard of it
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  808    2 2.0       AMALMH           E.6A         MAI/MAC infection in lungs     1= Yes
+                                                                                  2= No/Never heard of it
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  810    2 2.0       ATOXMH           E.7          Ever told had toxo infection   1= Yes
+                                                                                  2= No/Never heard of it
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  812    2 2.0       ACMEMH           E.8          Ever told had CMV retinitis    1= Yes
+                                                                                  2= No/Never heard of it
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  814    2 2.0       ACMOMH           E.9          Ever told had other (non-      1= Yes
+                                                   retinitis) CMV                 2= No/Never heard of it
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  816    2 2.0       ACMBMH           E.9A         Location of other CMV          1= Yes
+                                                   infection: blood               2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  818    2 2.0       ACMUMH           E.9A         Location of other CMV          1= Yes
+                                                   infection: urine               2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  820    2 2.0       ACMIMH           E.9A         Location of other CMV          1= Yes
+                                                   infection: intestine           2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  822    2 2.0       ACMLMH           E.9A         Location of other CMV          1= Yes
+                                                   infection: liver               2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  824    2 2.0       ACM_MH           E.9A         Location of other CMV          1= Yes
+                                                   infection: other               2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  826   25 $         ACMSMH           E.9A         Specific location of other     Character
+                                                   CMV infection
+
+  851    2 2.0       AD__MH           E.10         Ever had severe, persistent    1= Yes
+                                                   diarrhea                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  853    2 2.0       ADCRMH           E.10A1       Diarrhea caused by             1= Yes
+                                                   cryptosporidia                 2= No/Never heard of it
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  855    2 2.0       ADMSMH           E.10A2       Diarrhea caused by             1= Yes
+                                                   microsporidia                  2= No/Never heard of it
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  857    2 2.0       ADIAMH           E.10A3       Diarrhea caused by isospora    1= Yes
+                                                                                  2= No/Never heard of it
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  859    2 2.0       ADCMMH           E.10A4       Diarrhea caused by CMV         1= Yes
+                                                                                  2= No/Never heard of it
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  861    2 2.0       ADMAMH           E.10A5       Diarrhea caused by MAI/MAC     1= Yes
+                                                                                  2= No/Never heard of it
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  863    2 2.0       AMECMH           E.11         Ever told had cryptococcal     1= Yes
+                                                   meningitis                     2= No/Never heard of it
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  865    2 2.0       ACI_MH           E.12         Ever told had cryptococcal     1= Yes
+                                                   infection in blood/elsewhere   2= No/Never heard of it
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  867   25 $         ACISMH           E.12A        Specify location of            Character
+                                                   cryptococcal infection
+
+  892    2 2.0       AHI_MH           E.13         Ever told had histoplasmosis   1= Yes
+                                                   infection                      2= No/Never heard of it
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  894   25 $         AHISMH           E.13A        Specify location of            Character
+                                                   histoplasmosis infection
+
+  919    2 2.0       ACOCMH           E.14         Ever told had Cocci infection  1= Yes
+                                                                                  2= No/Never heard of it
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  921    2 2.0       AWL_MH           E.15         Ever told had wasting syndrome 1= Yes
+                                                                                  2= No/Never heard of it
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  923    2 2.0       AWLAMH           E.15A        Told wasting syndrome due to   1= Yes
+                                                   HIV/AIDS                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  925    2 2.0       ADEMMH           E.16         Ever told had dementia         1= Yes
+                                                                                  2= No/Never heard of it
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  927    2 2.0       ADEAMH           E.16A        Told dementia caused by HIV    1= Yes
+                                                                                  2= No/Never heard of it
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  929    2 2.0       AHSUMH           E.17         Ever told had herpes simplex   1= Yes
+                                                   w/ulcers > 1 month             2= No/Never heard of it
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  931    2 2.0       AHSIMH           E.18         Ever told had herpes simplex   1= Yes
+                                                   of lungs                       2= No/Never heard of it
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  933    2 2.0       ASA_MH           E.19         Ever told had salmonella       1= Yes
+                                                                                  2= No/Never heard of it
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  935    2 2.0       ASANMH           E.19A        Had salmonella infection more  1= Yes
+                                                   than once                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  937    2 2.0       APMLMH           E.20         Ever told had PML              1= Yes
+                                                                                  2= No/Never heard of it
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  939    2 2.0       AAIDMH           E.21         Ever told had AIDS             1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  941    2 2.0       HSP_MH           E.22         Been hospitalized in past 6    1= Yes
+                                                   mths                           2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  943    2 2.0       HSPTMH           E.22A        Number of times hospitalized   1= 1 times
+                                                   in past 6 mths                 .
+                                                                                  .
+                                                                                  18= 18 times
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  945    2 2.0       CT__MH           F.1          Ever been in another AIDS      1= Yes
+                                                   research study                 2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  947    2 2.0       CTN_MH           F.1A         Number of other AIDS studies   0= 0 studies
+                                                   involved in                    .
+                                                                                  .
+                                                                                  10= 10 studies
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  949    2 2.0       CTT_MH           F.1B         Number of AIDS studies in      0= 0 studies
+                                                   that involve medication        .
+                                                                                  .
+                                                                                  5= 5 studies
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  951    1 $         DU1SMH           F.21_1       Additional medicine listed     Character
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+  952    2 2.0       AZT_MH           F.2          Ever taken AZT                 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  954    2 2.0       AZTCMH           F.2A         Taking AZT at visit            1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  956    2 2.0       AZTPMH           F.2B         Taking AZT as prescribed       1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  958    2 2.0       AZTBMH           F.2C         AZT record source              1= Bottle
+                                                                                  2= Med Card
+                                                                                  3= Self Report
+                                                                                  4= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  960   25 $         AZTSMH           F.2C1        AZT record source              Character
+                                                   (specification)
+
+  985    2 2.0       DDI_MH           F.3          Ever taken ddI                 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  987    2 2.0       DDICMH           F.3A         Taking ddI at visit            1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  989    2 2.0       DDIPMH           F.3B         Taking ddI as prescribed       1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  991    2 2.0       DDIBMH           F.3C         ddI record source              1= Bottle
+                                                                                  2= Med Card
+                                                                                  3= Self Report
+                                                                                  4= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  993   25 $         DDISMH           F.3C1        ddI record source              Character
+                                                   (specification)
+
+ 1018    2 2.0       ADI_MH           F.3          Ever taken AZT/ddI in          1= Yes
+                                                   combination                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1020    2 2.0       ADICMH           F.3A         Taking AZT/ddI in combination  1= Yes
+                                                   at visit                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1022    2 2.0       ADIPMH           F.3B         Taking AZT/ddI as prescribed   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1024    2 2.0       ADIBMH           F.3C         AZT/ddI (combination) record   1= Bottle
+                                                   source                         2= Med Card
+                                                                                  3= Self Report
+                                                                                  4= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1026   25 $         ADISMH           F.3C1        AZT/ddI combo record source    Character
+                                                   (specification)
+
+ 1051    2 2.0       DDC_MH           F.5          Ever taken ddC                 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1053    2 2.0       DDCCMH           F.5A         Taking ddC at visit            1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1055    2 2.0       DDCPMH           F.5B         Taking ddC as prescribed       1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1057    2 2.0       DDCBMH           F.5C         ddC record source              1= Bottle
+                                                                                  2= Med Card
+                                                                                  3= Self Report
+                                                                                  4= Other
+
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1059   25 $         DDCSMH           F.5C1        ddC record                     Character
+                                                   source(specification)
+
+ 1084    2 2.0       ADC_MH           F.6          Ever taken AZT/ddC in          1= Yes
+                                                   combination                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1086    2 2.0       ADCCMH           F.6A         Taking AZT/ddC in combination  1= Yes
+                                                   at visit                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1088    2 2.0       ADCPMH           F.6B         Taking AZT/ddC combo as        1= Yes
+                                                   prescribed                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1090    2 2.0       ADCBMH           F.6C         AZT/ddC combination record     1= Bottle
+                                                   source                         2= Med Card
+                                                                                  3= Self Report
+                                                                                  4= Other
+
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1092   25 $         ADCSMH           F.6C1        AZT/ddC combo record source    Character
+                                                   (specify)
+
+ 1117    2 2.0       D4T_MH           F.7          Ever taken d4T                 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1119    2 2.0       D4TCMH           F.7A         Taking d4T at visit            1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1121    2 2.0       D4TPMH           F.7B         Taking d4T as prescribed       1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1123    2 2.0       D4TBMH           F.7C         d4T record source              1= Bottle
+                                                                                  2= Med Card
+                                                                                  3= Self Report
+                                                                                  4= Other
+
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1125   25 $         D4TSMH           F.7C1        d4T record source              Character
+                                                   (specification)
+
+ 1150    2 2.0       NVP_MH           F.8          Ever taken nevirapine          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1152    2 2.0       NVPCMH           F.8A         Taking nevirapine at visit     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1154    2 2.0       NVPPMH           F.8B         Taking nevirapine as           1= Yes
+                                                   prescribed                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1156    2 2.0       NVPBMH           F.8C         Nevirapine record source       1= Bottle
+                                                                                  2= Med Card
+                                                                                  3= Self Report
+                                                                                  4= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1158   25 $         NVPSMH           F.8C1        Nevirapine record source       Character
+                                                   (specify)
+
+ 1183    2 2.0       VIG_MH           F.9          Ever taken HIVIG               1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1185    2 2.0       VIGCMH           F.9A         Taking HIVIG at visit          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1187    2 2.0       VIGPMH           F.9B         Taking HIVIG as prescribed     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1189    2 2.0       VIGBMH           F.9C         HIVIG record source            1= Bottle
+                                                                                  2= Med Card
+                                                                                  3= Self Report
+                                                                                  4= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1191   25 $         VIGSMH           F.9C1        HIVIG record source            Character
+                                                   (specification)
+
+ 1216    2 2.0       VAC_MH           F.10         Ever taken an HIV vaccine      1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1218    2 2.0       VACCMH           F.10A        Taking an HIV vaccine at visit 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1220    2 2.0       VACPMH           F.10B        Taking the HIV vaccine as      1= Yes
+                                                   prescribed                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1222    2 2.0       VACBMH           F.10C        HIV vaccine record source      1= Bottle
+                                                                                  2= Med Card
+                                                                                  3= Self Report
+                                                                                  4= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1224   25 $         VACSMH           F.10C1       HIV vaccine record source      Character
+                                                   (specify)
+
+ 1249    2 2.0       TMP_MH           F.11         Ever taken Bactrim (TMP/SMX)   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1251    2 2.0       TMPTMH           F.11A        Bactrim (TMP/SMX) taken to     1= To prevent PCP
+                                                   prevent/treat PCP              2= To treat PCP
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1253    2 2.0       TMPCMH           F.11B        Taking Bactrim (TMT/SMX) at    1= Yes
+                                                   visit                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1255    2 2.0       TMPPMH           F.11C        Taking Bactrim (TMP/SMX) as    1= Yes
+                                                   prescribed                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1257    2 2.0       TMPBMH           F.11D        Bactrim (TMP/SMX) record       1= Bottle
+                                                   source                         2= Med Card
+                                                                                  3= Self Report
+                                                                                  4= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1259   25 $         TMPSMH           F.11D1       Bactrim (TMP/SMX) record       Character
+                                                   source (specify)
+
+ 1284    2 2.0       DPS_MH           F.12         Ever taken dapsone             1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1286    2 2.0       DPSTMH           F.12A        Dapsone taken to treat/        1= To prevent PCP
+                                                   prevent PCP                    2= To treat PCP
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1288    2 2.0       DPSCMH           F.12B        Taking dapsone at visit        1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1290    2 2.0       DPSPMH           F.12C        Taking dapsone as prescribed   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1292    2 2.0       DPSBMH           F.12D        Dapsone record source          1= Bottle
+                                                                                  2= Med Card
+                                                                                  3= Self Report
+                                                                                  4= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1294   25 $         DPSSMH           F.12D1       Dapsone record source          Character
+                                                   (specify)
+
+ 1319    2 2.0       APN_MH           F.13         Ever taken Aerosolized         1= Yes
+                                                   Pentamidine                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1321    2 2.0       APNTMH           F.13A        Aerosolized Pentamidine taken  1= To prevent PCP
+                                                   to prevent/treat PCP           2= To treat PCP
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1323    2 2.0       APNCMH           F.13B        Taking Aerosolized             1= Yes
+                                                   Pentamidine at visit           2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1325    2 2.0       APNPMH           F.13C        Taking Aerosolized             1= Yes
+                                                   Pentamidine as prescribed      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1327    2 2.0       APNBMH           F.13D        Aerosolized Pentamidine        1= Bottle
+                                                   record source                  2= Med Card
+                                                                                  3= Self Report
+                                                                                  4= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1329   25 $         APNSMH           F.13D1       Aerosolized pentamidine        Character
+                                                   source (spcfy)
+
+ 1354    2 2.0       IVP_MH           F.14         Taken IV Pentamidine           1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1356    2 2.0       IVPTMH           F.14A        IV Pentamidine taken to        1= To prevent PCP
+                                                   prevent/treat PCP              2= To treat PCP
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1358    2 2.0       IVPCMH           F.14B        Taking IV Pentamadine at visit 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1360    2 2.0       IVPPMH           F.14C        Taking IV Pentamidine as       1= Yes
+                                                   prescribed                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1362    2 2.0       IVPBMH           F.14D        IV Pentamine record source     1= Bottle
+                                                                                  2= Med Card
+                                                                                  3= Self Report
+                                                                                  4= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1364   25 $         IVPSMH           F.14D1       IV Pentamidine record source   Character
+                                                   (specify)
+
+ 1389    2 2.0       MEP_MH           F.15         Ever taken Atovaquone (Mepron) 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1391    2 2.0       MEPTMH           F.15A        Atovaquone taken to prevent/   1= To prevent PCP
+                                                   treat PCP                      2= To treat PCP
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1393    2 2.0       MEPCMH           F.15B        Taking Atovaquone at visit     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1395    2 2.0       MEPPMH           F.15C        Taking Atovaquone as           1= Yes
+                                                   prescribed                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1397    2 2.0       MEPBMH           F.15D        Atovaquone record source       1= Bottle
+                                                                                  2= Med Card
+                                                                                  3= Self Report
+                                                                                  4= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1399   25 $         MEPSMH           F.15D1       Atovaquone record source       Character
+                                                   (specify)
+
+ 1424    2 2.0       DAM_MH           F.16         Ever taken Dapson/             1= Yes
+                                                   Pyrimethamine in combination   2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1426    2 2.0       DAMTMH           F.16A        Taking Dap/Pyr combo to        1= To prevent PCP
+                                                   prevent/treat PCP              2= To treat PCP
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1428    2 2.0       DAMCMH           F.16B        Taking Dap/Pyr combo at visit  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1430    2 2.0       DAMPMH           F.16C        Taking Dap/Pyr combo as        1= Yes
+                                                   prescribed                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1432    2 2.0       DAMBMH           F.16D        Dap/Pyr combo record source    1= Bottle
+                                                                                  2= Med Card
+                                                                                  3= Self Report
+                                                                                  4= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1434   25 $         DAMSMH           F.16D1       Dap/Pyr combo record source    Character
+                                                   (specify)                      -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1459    2 2.0       KTZ_MH           F.17         Ever taken Ketoconazole        1= Yes
+                                                   (Nizoral)                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1461    2 2.0       KTZCMH           F.17A        Taking Ketoconazole at visit   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1463    2 2.0       KTZPMH           F.17B        Taking Ketoconazole as         1= Yes
+                                                   prescribed                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1465    2 2.0       KTZBMH           F.17C        Ketoconazole record source     1= Bottle
+                                                                                  2= Med Card
+                                                                                  3= Self Report
+                                                                                  4= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1467   25 $         KTZSMH           F.17C1       Ketoconazole record source     Character
+                                                   (specify)
+
+ 1492    2 2.0       ITZ_MH           F.18         Ever taken Itraconazole        1= Yes
+                                                   (Sporonax)                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1494    2 2.0       ITZCMH           F.18A        Taking Itraconazole at visit   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1496    2 2.0       ITZPMH           F.18B        Taking Itraconazole as         1= Yes
+                                                   prescribed                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1498    2 2.0       ITZBMH           F.18C        Itraconazole record source     1= Bottle
+                                                                                  2= Med Card
+                                                                                  3= Self Report
+                                                                                  4= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1500   25 $         ITZSMH           F.18C1       Itraconazole record source     Character
+                                                   (specify)
+
+ 1525    2 2.0       FLZ_MH           F.19         Ever taken Fluconazole         1= Yes
+                                                   (Diflucan)                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1527    2 2.0       FLZCMH           F.19A        Taking Fluconazole at visit    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1529    2 2.0       FLZPMH           F.19B        Taking Fluconazole as          1= Yes
+                                                   prescribed                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1531    2 2.0       FLZBMH           F.19C        Fluconazole record source      1= Bottle
+                                                                                  2= Med Card
+                                                                                  3= Self Report
+                                                                                  4= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1533   25 $         FLZSMH           F.19C1       Fluconazole record source      Character
+                                                   (specify)
+
+ 1558    2 2.0       FLZTMH           F.20         Taking Fluconazole to prevent/ 1= To prevent
+                                                   treat illness                  2= To treat
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1560    1 $         DUM3MH           F.21_1       Dummy for Additional medicine  Character
+                                                   listed                         -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+ 1561    2 2.0       OM__MH           F.21         Additional medicine listed     1= Yes
+                                                                                  2= No
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+ 1563    1 $         DU2SMH           F.21_1       Additional medicine listed     Character
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+ 1564    5 time5.    ETIMMH           F.22         Time module ended              1:00= 1:00 o'clock
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59 o'clock
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+ 1569    2 2.0       EMERMH           F.22A        AM/PM indicator for time ended 1= AM
+                                                                                  2= PM
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't known
+                                                                                  -9 or Blank= Missing
+
+ 1571    1 $         ESTAT            A.0          Edit Status                    CharacterD= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+ 1572    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

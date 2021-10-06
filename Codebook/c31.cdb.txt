@@ -1,0 +1,417 @@
+                               CODEBOOK
+Women's Interagency HIV Study                              9-6-2017
+Form C31 - HTLV 1 & 2
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.O          Visit number                   1= Visit 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= Visit 99
+
+   11    6 $         FKEY             A.0          Form identifier number         Character
+
+   17    3 $         INITCB           A.0          Initials of person completing  Character
+                                                   form                           -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   20    8 $         VERSCB           A.0          Form version                   01/01/94= January 1, 1994
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   28    2 2.0       AVAICB           A.1          HTLV 1 & 2 results available   1= Yes
+                                                                                  2= No, sample inadequate
+                                                                                  3= No, other reason
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   30    8 $         SPDTCB           A.2          Specimen date                  10/01/94= October 1, 1994
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   38    2 2.0       HTF1CB           A.5          HTLV-I IFA
+                                                                                  1= Positive
+                                                                                  2= Negative
+                                                                                  3= Indeterminate
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   40    5 5.0       HTT1CB           A.5A         HTLV-I Titer                   0=
+                                                                                  .
+                                                                                  .
+                                                                                  9999=
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   45    2 2.0       HTW1CB           A.5B         HTLV-I Western blot
+                                                                                  1= Positive
+                                                                                  2= Negative
+                                                                                  3= Indeterminate
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   47    2 2.0       BND1CB           A.6          HTLV-I banding pattern
+                                                   reported                       1= Yes
+                                                                                  2= No
+                                                                                  3= Cannot Differentiate
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   49    2 2.0       P151CB           A.6A         HTLV-I banding pattern: p15
+                                                                                  0=  Negative
+                                                                                  1= Weak
+                                                                                  2= Fair
+                                                                                  3= Strong
+                                                                                  4= Very strong
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   51    2 2.0       P191CB           A.6B         HTLV-I banding pattern: p19
+                                                                                  0=  Negative
+                                                                                  1= Weak
+                                                                                  2= Fair
+                                                                                  3= Strong
+                                                                                  4= Very strong
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   53    2 2.0       P231CB           A.6C         HTLV-I banding pattern: p23
+                                                                                  0=  Negative
+                                                                                  1= Weak
+                                                                                  2= Fair
+                                                                                  3= Strong
+                                                                                  4= Very strong
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   55    2 2.0       P241CB           A.6D         HTLV-I banding pattern: p24
+                                                                                  0=  Negative
+                                                                                  1= Weak
+                                                                                  2= Fair
+                                                                                  3= Strong
+                                                                                  4= Very strong
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   57    2 2.0       P261CB           A.6E         HTLV-I banding pattern: p26
+                                                                                  0=  Negative
+                                                                                  1= Weak
+                                                                                  2= Fair
+                                                                                  3= Strong
+                                                                                  4= Very strong
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   59    2 2.0       P281CB           A.6F         HTLV-I banding pattern: p28
+                                                                                  0=  Negative
+                                                                                  1= Weak
+                                                                                  2= Fair
+                                                                                  3= Strong
+                                                                                  4= Very strong
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   61    2 2.0       P321CB           A.6G         HTLV-I banding pattern: p32
+                                                                                  0=  Negative
+                                                                                  1= Weak
+                                                                                  2= Fair
+                                                                                  3= Strong
+                                                                                  4= Very strong
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63    2 2.0       P401CB           A.6H         HTLV-I banding pattern: p40
+                                                                                  0=  Negative
+                                                                                  1= Weak
+                                                                                  2= Fair
+                                                                                  3= Strong
+                                                                                  4= Very strong
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   65    2 2.0       P421CB           A.6I         HTLV-I banding pattern: p42
+                                                                                  0=  Negative
+                                                                                  1= Weak
+                                                                                  2= Fair
+                                                                                  3= Strong
+                                                                                  4= Very strong
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   67    2 2.0       G461CB           A.6J         HTLV-I banding pattern: p46
+                                                                                  0=  Negative
+                                                                                  1= Weak
+                                                                                  2= Fair
+                                                                                  3= Strong
+                                                                                  4= Very strong
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   69    2 2.0       P531CB           A.6K         HTLV-I banding pattern: p53
+                                                                                  0=  Negative
+                                                                                  1= Weak
+                                                                                  2= Fair
+                                                                                  3= Strong
+                                                                                  4= Very strong
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   71    2 2.0       G631CB           A.6L         HTLV-I banding pattern: gp63
+                                                                                  0=  Negative
+                                                                                  1= Weak
+                                                                                  2= Fair
+                                                                                  3= Strong
+                                                                                  4= Very strong
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   73    2 2.0       HTI2CB           A.7          HTLV-II IFA
+                                                                                  1= Positive
+                                                                                  2= Negative
+                                                                                  3= Indeterminate
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   75    5 5.0       HTT2CB           A.7A         HTLV-II Titer                  0=
+                                                                                  .
+                                                                                  .
+                                                                                  9999=
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   80    2 2.0       HTW2CB           A.7B         HTLV-II Western blot
+                                                                                  1= Positive
+                                                                                  2= Negative
+                                                                                  3= Indeterminate
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   82    2 2.0       BND2CB           A.8          HTLV-II banding pattern
+                                                   reported                       1= Yes
+                                                                                  2= No
+                                                                                  3= Cannot Differentiate
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   84    2 2.0       P152CB           A.8A         HTLV-II Banding intensities:
+                                                   p15                            0= Negative
+                                                                                  1= Weak
+                                                                                  2= Fair
+                                                                                  3= Strong
+                                                                                  4= Very Strong
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   86    2 2.0       P192CB           A.8B         HTLV-II Banding intensities:
+                                                   p19                            0= Negative
+                                                                                  1= Weak
+                                                                                  2= Fair
+                                                                                  3= Strong
+                                                                                  4= Very Strong
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   88    2 2.0       P232CB           A.8C         HTLV-II Banding intensities:
+                                                   p23                            0= Negative
+                                                                                  1= Weak
+                                                                                  2= Fair
+                                                                                  3= Strong
+                                                                                  4= Very Strong
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   90    2 2.0       P242CB           A.8D         HTLV-II Banding intensities:
+                                                   p24                            0= Negative
+                                                                                  1= Weak
+                                                                                  2= Fair
+                                                                                  3= Strong
+                                                                                  4= Very Strong
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   92    2 2.0       P262CB           A.8E         HTLV-II Banding intensities:
+                                                   p26                            0= Negative
+                                                                                  1= Weak
+                                                                                  2= Fair
+                                                                                  3= Strong
+                                                                                  4= Very Strong
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   94    2 2.0       P282CB           A.8F         HTLV-II Banding intensities:
+                                                   p28                            0= Negative
+                                                                                  1= Weak
+                                                                                  2= Fair
+                                                                                  3= Strong
+                                                                                  4= Very Strong
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   96    2 2.0       P322CB           A.8G         HTLV-II Banding intensities:
+                                                   p32                            0= Negative
+                                                                                  1= Weak
+                                                                                  2= Fair
+                                                                                  3= Strong
+                                                                                  4= Very Strong
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   98    2 2.0       P402CB           A.8H         HTLV-II Banding intensities:
+                                                   p40                            0= Negative
+                                                                                  1= Weak
+                                                                                  2= Fair
+                                                                                  3= Strong
+                                                                                  4= Very Strong
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  100    2 2.0       P422CB           A.8I         HTLV-II Banding intensities:
+                                                   p42                            0= Negative
+                                                                                  1= Weak
+                                                                                  2= Fair
+                                                                                  3= Strong
+                                                                                  4= Very Strong
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  102    4 $         SNUMCB           A.10         Specimen number                Character
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  106    2 2.0       G462CB           A.8J         HTLV-II Banding intensities:
+                                                   gp46                           0= Negative
+                                                                                  1= Weak
+                                                                                  2= Fair
+                                                                                  3= Strong
+                                                                                  4= Very Strong
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  108    2 2.0       P532CB           A.8K         HTLV-II Banding intensities:
+                                                   p53                            0= Negative
+                                                                                  1= Weak
+                                                                                  2= Fair
+                                                                                  3= Strong
+                                                                                  4= Very Strong
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  110    2 2.0       HTLVCB           A.9A         Final report
+                                                                                  1= No HTLV infection
+                                                                                  2= HTLV-I Infection
+                                                                                  3= HTLV-II Infection
+                                                                                  4= HTLV-I and HTLV-II
+                                                                                  coinfection
+                                                                                  5= HTLV-I and/or HTLV-II
+                                                                                  Infection
+                                                                                  6= Indeterminate
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  112    2 2.0       G632CB           A.8L         HTLV-II Banding intensities:
+                                                   gp63                           0= Negative
+                                                                                  1= Weak
+                                                                                  2= Fair
+                                                                                  3= Strong
+                                                                                  4= Very Strong
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  114    1 $         ESTAT            A.0          Edit Status                    CharacterD= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  115    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

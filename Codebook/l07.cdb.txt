@@ -1,0 +1,102 @@
+                               CODEBOOK
+Women's Interagency HIV Study                              9-6-2017
+Form L07 - Anergy Panel
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit number                   1= Visit 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= Visit 99
+
+   11    6 $         FKEY             A.0          Form identifier number         Character
+
+   17    3 $         INITLH           A.0          Initials of person completing  Character
+                                                   form                           -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   20    8 $         VERSLH           A.0          Form version                   01/01/94= January 1, 1994
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   28    2 2.0       DONELH           A.1          Anergy panel done              1= Done
+                                                                                  2= Not done
+                                                                                  3= Participant Refused
+                                                                                  -1= NA (Skipped)
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   30   25 $         RNNALH                        Reason panel not done A.1
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   55    8 $         PDTELH           A.2          Date anergy panel placed       10/01/94= October 1, 1994
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63    8 $         RDTELH           A.3          Date of anergy panel reading   10/01/94= October 1, 1994
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/20= December 31, 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   71    3 3.0       CANDLH           A.4A         Measured induration of panel - 0= 0 mm
+                                                   candida                        .
+                                                                                  .
+                                                                                  999= 999 mm
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   74    3 3.0       MUMPLH           A.4B         Measured induration of panel - 0= 0 mm
+                                                   mumps                          .
+                                                                                  .
+                                                                                  999= 999 mm
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   77    3 3.0       TET_LH           A.4C         Measured induration of panel - 0= 0 mm
+                                                   tetanus                        .
+                                                                                  .
+                                                                                  999= 999 mm
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   80    1 $         ESTAT            A.0          Edit Status                    CharacterD= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   81    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

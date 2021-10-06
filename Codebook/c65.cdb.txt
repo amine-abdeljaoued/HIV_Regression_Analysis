@@ -1,0 +1,74 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+C65 - Syphilis DFA - Genital Ulcers & Fissures
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    4 4.1       VISIT            A.0          Visit #                        1.0= 1.0
+                                                                                  .
+                                                                                  .
+                                                                                  99.3= 99.3
+
+   13    6 $         FKEY             OldA.0       OLD: Form identifier number    Character
+
+   19    3 $         INITCI           A.0          Initials of person completing  Character
+                                                   form
+
+   22    8 $         VERSCI           A.0          Form version                   01/01/94= 01/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   30    2 2.0       AVAICI           A.1          Syphilis DFA test result       1= Yes
+                                                   available                      2= No, Sample Inadequate
+                                                                                  3= No, Other Reason
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   32   35 $         RNNACI           A.1.a        Specify reason syphilis DFA    Character
+                                                   test result not available
+
+   67    8 $         SPDTCI           A.2          Date of syphilis DFA specimen  10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   75    2 2.0       SYPHCI           A.3          Result of syphilis DFA test    1= POSITIVE
+                                                                                  2= TOO FEW TREPONEMES TO READ
+                                                                                  3= NEGATIVE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   77    8 $         RDTECI           A.4          Date syphilis DFA reported     10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   85    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   86    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

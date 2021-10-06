@@ -1,0 +1,486 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+L04 - Flow Cytometry
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    2 2.0       VTYP             OldA.0       Old: Core or VRS visit         1= CORE VISIT
+                                                                                  2= 3 MONTH VRS VISIT
+
+   13    6 $         FKEY             OldA.0       OLD: Form identifier number    Character
+
+   19    3 $         INITLE           A.0          Initials of person completing  Character
+                                                   form
+
+   22    8 $         VERSLE           A.0          Form version                   01/01/94= 01/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   30    2 2.0       AVAILE           A.1          Flow cytometry test results    1= Yes
+                                                   available                      2= No, Sample Inadequate
+                                                                                  3= No, Other Reason
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   32   25 $         RNNALE           A.1.a        Specify reason flow cytometry  Character
+                                                   test results not available
+
+   57    8 $         SPDTLE           A.2          Date sample drawn              10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   65    8 $         PDTELE           A.2.a        Date sample prepared           10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   73    2 2.0       FTYPLE           OldA.2.b     Old: Type of flow cytometry    1= Two-color
+                                                   test                           2= CD45 gating
+                                                                                  3= Three-color
+                                                                                  4= Four-color
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   75    2 2.0       CD3PLE           A.3.a        %CD3+ cells                    0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   77    4 4.0       CD3ALE           A.3.b        Absolute CD3+ cells            0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  9999= 9999
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   81    2 2.0       CD4PLE           A.4.a        %CD4+ cells                    0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   83    4 4.0       CD4ALE           A.4.b        Absolute CD4+ cells            0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  9999= 9999
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   87    2 2.0       CD8PLE           A.5.a        %CD8+ cells                    0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   89    4 4.0       CD8ALE           A.5.b        Absolute CD8+ cells            0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  9999= 9999
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   93    5 5.2       CDRTLE           A.5.c        Helper/Suppressor Ratio        0.00= 0.00
+                                                                                  .
+                                                                                  .
+                                                                                  9.99= 9.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   98    2 2.0       C452LE           OldA.3.a     Old: CD45 (Bright +) CD 14+    0= 0
+                                                   (MONOS) result (Q2)            .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  100    3 3.0       C454LE           OldA.3.b     Old: CD45 (Bright +) CD 14-    0= 0
+                                                   (LYMPHS) result (Q4)           .
+                                                                                  .
+                                                                                  100= 100
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  103    2 2.0       C341LE           OldA.4.a     Old: CD3- CD4+ result (Q1)     0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  105    2 2.0       C342LE           OldA.4.b     Old: CD3+ CD4+ result (Q2)     0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  107    2 2.0       C343LE           OldA.4.c     Old: CD3- CD4- result (Q3)     0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  109    2 2.0       C344LE           OldA.4.d     Old: CD3+ CD4- result (Q4)     0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  111    2 2.0       C381LE           OldA.5.a     Old: CD3- CD8+ result (Q1)     0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  113    2 2.0       C382LE           OldA.5.b     Old: CD3+ CD8+ result (Q2)     0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  115    2 2.0       C383LE           OldA.5.c     Old: CD3- CD8- result (Q3)     0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  117    2 2.0       C384LE           OldA.5.d     Old: CD3+ CD8- result (Q4)     0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  119    2 2.0       C191LE           OldA.6.a     OLD: cd3- cd19+ result (Q1)    0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  121    2 2.0       C192LE           OldA.6.b     OLD: cd3+ cd19+ result (Q2)    0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  123    2 2.0       C193LE           OldA.6.c     OLD: cd3- cd19- result (Q3)    0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  125    2 2.0       C194LE           OldA.6.d     OLD: cd3+ cd19- result (Q4)    0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  127    2 2.0       C561LE           OldA.7.a     OLD: cd3- (cd56+ and cd16+)    0= 0
+                                                   result (Q1)                    .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  129    2 2.0       C562LE           OldA.7.b     OLD: cd3+ (cd56+ and cd16+)    0= 0
+                                                   result (Q2)                    .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  131    2 2.0       C563LE           OldA.7.c     OLD: cd3- (cd56- and cd16-)    0= 0
+                                                   result (Q3)                    .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  133    2 2.0       C564LE           OldA.7.d     OLD: cd3+ (cd56- and cd16-)    0= 0
+                                                   result (Q4)                    .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  135    2 2.0       LFALLE           OldA.8       OLD: Sample failed lymphosum   1= Yes
+                                                   validation                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  137    2 2.0       TFALLE           OldA.9       OLD: Sample failed t-sum       1= Yes
+                                                   validation                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  139    2 2.0       CFALLE           OldA.10      OLD: Sample failed cd3         1= Yes
+                                                   variance validation            2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  141    2 2.0       CMNTLE           A.6          Comments                       1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  143    2 2.0       C01_LE           A.7          Comment code #1                1= Specimen clotted
+                                                                                  2= Specimen held at 4 degrees
+                                                                                     C
+                                                                                  3= Specimen rec'd at >25
+                                                                                     degrees
+                                                                                  4= Specimen qns
+                                                                                  5= Lab accident/error
+                                                                                  10= LESS THAN 2000 cells
+                                                                                     analyzed
+                                                                                  11= Insufficient cells
+                                                                                  12= High fl subtraction reqrd
+                                                                                  20= Scatter poor, cannot set
+                                                                                     gate
+                                                                                  24= Distinct lymph, cluster
+                                                                                     not seen
+                                                                                  31= High background in all
+                                                                                     tubes
+                                                                                  40= Antibody pattern unusual
+                                                                                  41= Incomplete hemolysis
+                                                                                  50= Flow cytometer malfunction
+                                                                                  51= NRBCs present
+                                                                                  52= Delay in sample shipment
+                                                                                  99= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  145   25 $         C01SLE           A.7.a        Specify reason comment code    Character
+                                                   #1 is 99
+
+  170    2 2.0       C02_LE           A.8          Comment code #2                1= Specimen clotted
+                                                                                  2= Specimen held at 4 degrees
+                                                                                     C
+                                                                                  3= Specimen rec'd at >25
+                                                                                     degrees
+                                                                                  4= Specimen qns
+                                                                                  5= Lab accident/error
+                                                                                  10= LESS THAN 2000 cells
+                                                                                     analyzed
+                                                                                  11= Insufficient cells
+                                                                                  12= High fl subtraction reqrd
+                                                                                  20= Scatter poor, cannot set
+                                                                                     gate
+                                                                                  24= Distinct lymph, cluster
+                                                                                     not seen
+                                                                                  31= High background in all
+                                                                                     tubes
+                                                                                  40= Antibody pattern unusual
+                                                                                  41= Incomplete hemolysis
+                                                                                  50= Flow cytometer malfunction
+                                                                                  51= NRBCs present
+                                                                                  52= Delay in sample shipment
+                                                                                  99= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  172   25 $         C02SLE           A.8.a        Specify reason comment code    Character
+                                                   #2 is 99
+
+  197    2 2.0       C03_LE           A.9          Comment code #3                1= Specimen clotted
+                                                                                  2= Specimen held at 4 degrees
+                                                                                     C
+                                                                                  3= Specimen rec'd at >25
+                                                                                     degrees
+                                                                                  4= Specimen qns
+                                                                                  5= Lab accident/error
+                                                                                  10= LESS THAN 2000 cells
+                                                                                     analyzed
+                                                                                  11= Insufficient cells
+                                                                                  12= High fl subtraction reqrd
+                                                                                  20= Scatter poor, cannot set
+                                                                                     gate
+                                                                                  24= Distinct lymph, cluster
+                                                                                     not seen
+                                                                                  31= High background in all
+                                                                                     tubes
+                                                                                  40= Antibody pattern unusual
+                                                                                  41= Incomplete hemolysis
+                                                                                  50= Flow cytometer malfunction
+                                                                                  51= NRBCs present
+                                                                                  52= Delay in sample shipment
+                                                                                  99= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  199   25 $         C03SLE           A.9.a        Specify reason comment code    Character
+                                                   #3 is 99
+
+  224    2 2.0       C04_LE           OldA.15      OLD: Comment code #4           1= Specimen clotted
+                                                                                  2= Specimen held at 4 degrees
+                                                                                     C
+                                                                                  3= Specimen rec'd at >25
+                                                                                     degrees
+                                                                                  4= Specimen qns
+                                                                                  5= Lab accident/error
+                                                                                  10= LESS THAN 2000 cells
+                                                                                     analyzed
+                                                                                  11= Insufficient cells
+                                                                                  12= High fl subtraction reqrd
+                                                                                  20= Scatter poor, cannot set
+                                                                                     gate
+                                                                                  24= Distinct lymph, cluster
+                                                                                     not seen
+                                                                                  31= High background in all
+                                                                                     tubes
+                                                                                  40= Antibody pattern unusual
+                                                                                  41= Incomplete hemolysis
+                                                                                  50= Flow cytometer malfunction
+                                                                                  51= NRBCs present
+                                                                                  52= Delay in sample shipment
+                                                                                  99= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  226   25 $         C04SLE           OldA.15      OLD: Specify reason comment    Character
+                                                   code #4 is 99
+
+  251    2 2.0       C05_LE           OldA.16      OLD: Comment code #5           1= Specimen clotted
+                                                                                  2= Specimen held at 4 degrees
+                                                                                     C
+                                                                                  3= Specimen rec'd at >25
+                                                                                     degrees
+                                                                                  4= Specimen qns
+                                                                                  5= Lab accident/error
+                                                                                  10= LESS THAN 2000 cells
+                                                                                     analyzed
+                                                                                  11= Insufficient cells
+                                                                                  12= High fl subtraction reqrd
+                                                                                  20= Scatter poor, cannot set
+                                                                                     gate
+                                                                                  24= Distinct lymph, cluster
+                                                                                     not seen
+                                                                                  31= High background in all
+                                                                                     tubes
+                                                                                  40= Antibody pattern unusual
+                                                                                  41= Incomplete hemolysis
+                                                                                  50= Flow cytometer malfunction
+                                                                                  51= NRBCs present
+                                                                                  52= Delay in sample shipment
+                                                                                  99= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  253   25 $         C05SLE           OldA.16      OLD: Specify reason comment    Character
+                                                   code #5 is 99
+
+  278    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  279    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

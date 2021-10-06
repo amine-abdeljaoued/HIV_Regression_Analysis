@@ -1,0 +1,284 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+DSG - Antiretroviral Dosage Form (Repeating Segment) S1
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        23= 23
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    3 3.0       DRUGDS           B.1          Antiretroviral drug code       055= Imunovir (isoprinosine,
+                                                                                       inosine pranobex)
+                                                                                  056= HPA-23 (Ammonium-21-
+                                                                                       tungsto-9-anti-moniate)
+                                                                                  057= Suramin
+                                                                                  058= Virazole (Ribavirin)
+                                                                                  090= Intron-A (Interferon
+                                                                                       alpha 2b)
+                                                                                  092= Retrovir (AZT,
+                                                                                       zidovudine, ZDV)
+                                                                                  094= Hivid (dideoxycytidine,
+                                                                                       zalcitabine, ddC)
+                                                                                  098= AL-721 (by Praxis) (egg
+                                                                                       lecithin)
+                                                                                  101= Ampligen
+                                                                                  108= Peptide T
+                                                                                  110= Dextran-Sulfate
+                                                                                  122= Avonex (Interferon beta-
+                                                                                       1a,1b, betaseron,
+                                                                                       betaferon)
+                                                                                  128= CD4
+                                                                                  146= Zovirax (Acyclovir)
+                                                                                  147= Videx/Videx EC
+                                                                                       (dideoxyinosine,
+                                                                                       didanosine, ddI)
+                                                                                  159= Zerit (stavudine, d4T)
+                                                                                  163= Dideoxyadenosine (ddA)
+                                                                                  179= Vira-A (vidarabine,
+                                                                                       adenosine arabinoside)
+                                                                                  191= Viramune (nevirapine)
+                                                                                  192= TAT inhibitors
+                                                                                  193= Other protease inhibitors
+                                                                                  194= Rescriptor (delavirdine,
+                                                                                       U-90)
+                                                                                  204= Epivir (lamivudine, 3-TC)
+                                                                                  207= Droxia or Hydrea
+                                                                                       (hydroxyurea)
+                                                                                  210= Invirase or Fortovase
+                                                                                       (saquinavir)
+                                                                                  211= Norvir (ritonavir)
+                                                                                  212= Crixivan (indinavir)
+                                                                                  216= Viracept (nelfinavir)
+                                                                                  217= Kaletra (lopinavir/
+                                                                                       ritonavir, ABT-378/r)
+                                                                                  218= Ziagen (abacavir,
+                                                                                       1592U89)
+                                                                                  219= Agenerase (amprenavir,
+                                                                                       141W94)
+                                                                                  220= Sustiva (efavirenz,
+                                                                                       DMP266)
+                                                                                  221= Coactinon (emivirine,
+                                                                                       MKC442)
+                                                                                  222= Lobucavir (cygalovir,
+                                                                                       BMS-180194
+                                                                                  223= Loviride
+                                                                                  224= Hespera (adefovir,
+                                                                                       Preveon, bis-POM PMPA,
+                                                                                       GS 840)
+                                                                                  227= Combivir (AZT+3TC,
+                                                                                       zidovudine+lamivudine)
+                                                                                  231= Vistide (cidofovir)
+                                                                                  233= Fuzeon (T-20,
+                                                                                       enfuviratide, ENF)
+                                                                                  234= Viread (tenofovir
+                                                                                       disoproxil, bis-POC PMPA,
+                                                                                       adenine fumarate, GS 902)
+                                                                                  238= Aptivus (tipranavir, PNU-
+                                                                                       140690)
+                                                                                  239= Emtriva (Corviracil,
+                                                                                       emtricitabine, FTC)
+                                                                                  240= Trizivir (abacavir+
+                                                                                       zidovudine+lamivudine,
+                                                                                       ABC+AZT+3TC)
+                                                                                  243= Reyataz (atazanavir, BMS-
+                                                                                       232632)
+                                                                                  244= DPC 083 (BMS-561390)
+                                                                                  248= SC 351125 (SCH C)
+                                                                                  249= Lexiva (fosamprenavir)
+                                                                                  253= Truvada (Viread +
+                                                                                       Emtriva)
+                                                                                  254= Epzicom (Ziagen + Epivir)
+                                                                                  255= Intelence (etravirine,
+                                                                                       TMC-125)
+                                                                                  256= Prezista (darunavir, TMC
+                                                                                       114)
+                                                                                  257= L-00870810 (Merck
+                                                                                       integrase inhibitor)
+                                                                                  258= SP01A (Samaritan Pharma
+                                                                                       oral entry inhibitor)
+                                                                                  262= Atripla (Sustiva +
+                                                                                       Viread + Emtriva)
+                                                                                  263= brecanavir (GW640385)
+                                                                                  264= Isentress (raltegravir,
+                                                                                       MK 0518)
+                                                                                  265= Selzentry (maraviroc)
+                                                                                  266= vicriviroc (SCH-417690)
+                                                                                  267= TMC278 blinded trial
+                                                                                  268= elvitegravir (GS-9137)
+                                                                                       blinded trial
+                                                                                  269= vicriviroc blinded trial
+                                                                                  276= Edurant (rilpivirine,
+                                                                                       TMC278)
+                                                                                  280= Complera (FTC + RPV +
+                                                                                       TDF)
+                                                                                  283= cobicistat (GS-9350)
+                                                                                  284= Vitekta (elvitegravir,
+                                                                                       GS-9137)
+                                                                                  285= Prezista, Norvir,
+                                                                                       Emtriva+Viread and
+                                                                                       Selzentry blinded trial
+                                                                                       (ACTG A5303)
+                                                                                  286= Tivicay (dolutegravir, S/
+                                                                                       GSK1349572)
+                                                                                  287= Stribild (FTC+Viread+EVG+
+                                                                                       cobicistat)
+                                                                                  289= GS-US-292-0102 (EVG +
+                                                                                       cobicistat + FTC + TAF)
+                                                                                       blinded trial
+                                                                                  293= Triumeq (DTG + ABC + 3TC)
+                                                                                  294= GS-US-311-1089 (blinded
+                                                                                       FTC + TDF or FTC + TAF)
+                                                                                  295= Prezcobix (DRV +
+                                                                                       cobicistat)
+                                                                                  296= Evotaz (ATZ + cobicistat)
+                                                                                  297= cabotegravir (GSK1265744)
+                                                                                  298= cenicriviroc/EFV
+                                                                                  299= TMC114IFD3013
+                                                                                  300= Cabotegravir + Abacavir/
+                                                                                       Lamivudine followed by
+                                                                                       intramuscular regimen of
+                                                                                       Cabotegravir +
+                                                                                       Rilpirivine
+                                                                                  301= Genvoya
+                                                                                  998= Other antiviral (from
+                                                                                       Drug List 1)
+                                                                                  999= Unknown antiviral
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   14   30 $         SDRGDS           B.1          Specify other antiviral drug   Character
+
+   44    2 2.0       CUSEDS           B.1.a        Currently taking medication    1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   46    2 2.0       DSDYDS           B.1.b        Number of doses/day            1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  20= 20
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   48    2 2.0       AMNTDS           B.1.c        Number of pills (or mL)/day    1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  20= 20
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   50    2 2.0       FORMDS           B.1.d        Formulation of drug            1= 0.375 mg tablet
+                                                                                  2= 0.75 mg tablet
+                                                                                  3= 1 mg/ml liquid
+                                                                                  4= 10 mg/ml liquid
+                                                                                  5= 15 mg capsule
+                                                                                  6= 20 mg capsule
+                                                                                  7= 20 mg/ml liquid
+                                                                                  8= 25 mg tablet
+                                                                                  9= 30 mg capsule
+                                                                                  10= 40 mg capsule
+                                                                                  11= 50 mg capsule
+                                                                                  12= 50 mg tablet
+                                                                                  13= 50 mg/5ml liquid
+                                                                                  14= 80 mg/ml liquid
+                                                                                  15= 90 mg/ml liquid
+                                                                                  16= 100 mg capsule
+                                                                                  17= 100 mg tablet
+                                                                                  18= 125 mg capsule
+                                                                                  19= 150 mg capsule
+                                                                                  20= 150 mg tablet
+                                                                                  21= 200 mg capsule
+                                                                                  22= 200 mg FTV capsule
+                                                                                  23= 200 mg INV capsule
+                                                                                  24= 200 mg tablet
+                                                                                  25= 250 mg capsule
+                                                                                  26= 250 mg tablet
+                                                                                  27= 300 mg tablet
+                                                                                  28= 333 mg capsule
+                                                                                  29= 400 mg capsule
+                                                                                  30= 500 mg INV tablet
+                                                                                  31= 600 mg tablet
+                                                                                  32= 625 mg tablet
+                                                                                  33= 700 mg capsule
+                                                                                  34= 133.3 LPV + 33.3 RTV mg
+                                                                                     capsule
+                                                                                  35= 300 3TC + 600 ABC mg
+                                                                                     tablet
+                                                                                  36= 300 ABC + 300 AZT + 150
+                                                                                     3TC mg	tablet
+                                                                                  37= 300 AZT + 150 3TC mg
+                                                                                     tablet
+                                                                                  38= 300 TNF + 200 FTC mg
+                                                                                     tablet
+                                                                                  39= 80 LPV + 20 RTV mg/ml
+                                                                                     liquid
+                                                                                  40= 200 LPV + 50 RTV mg tablet
+                                                                                  41= 600 mg efavirenz/200 mg
+                                                                                     emtricitabine/300 mg
+                                                                                     tenofovir tablet
+                                                                                  42= 300 mg capsule
+                                                                                  43= 400 mg tablet
+                                                                                  44= 75 mg tablet
+                                                                                  45= 100 mg/mL liquid
+                                                                                  46= 100 LPV + 25 RTV mg tablet
+                                                                                  47= 50 mg/mL liquid
+                                                                                  48= 700 mg tablet
+                                                                                  49= 50 mg/g oral powder
+                                                                                  50= 200mg FTC/25mg RPV/300mg
+                                                                                     TDF tablet
+                                                                                  51= 40 mg/g oral powder
+                                                                                  52= 200mg FTC/300mg Viread/
+                                                                                     150mg EVG/150mg cobicistat
+                                                                                     tablet
+                                                                                  53= 800 mg tablet
+                                                                                  54= 50mg DTG/600mg ABC/300mg
+                                                                                     3TC tablet
+                                                                                  55= 85 mg tablet
+                                                                                  56= 800mg DRV/150mg
+                                                                                     cobicistat tablet
+                                                                                  57= 300mg ATZ/150mg
+                                                                                     cobicistat tablet
+                                                                                  99= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   52   25 $         SFRMDS           B.1.d        Specify other formulation of   Character
+                                                   drug
+
+   77    7 $         STOPDS           B.1.e        Stop date - month/year         01/1985= 01/1985
+                                                                                  .
+                                                                                  .
+                                                                                  12/2015= 12/2015
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   84    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   85    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

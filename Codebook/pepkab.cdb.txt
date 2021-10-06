@@ -1,0 +1,1099 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+PEPKAB - Understanding Women Knowledge, Beliefs and Uptake of Biomedical Prevention Methods Questionnaire
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    8 $         VERSPK           A.3          Form version                   04/01/14= 04/01/14
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   19    8 $         IDTEPK           A.4          Date of interview              10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   27    3 $         INITPK           A.5          Initials of person completing  Character
+                                                   form
+
+   30    5 time5.    STIMPK           A.6          Time began                     01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   35    2 2.0       SMERPK           A.6          AM/PM for time began           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   37    2 2.0       HIVSPK           A.7          Participant's current HIV      1= HIV-POSITIVE
+                                                   status                         2= HIV-NEGATIVE
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   39    2 2.0       RHCPPK           B.1          Pressured/forced to have sex   1= YES
+                                                   since last visit               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   41    2 2.0       DSEXPK           B.2          Frequency discuss sexual       1= All of the time
+                                                   behavior with HCP              2= Some of the time
+                                                                                  3= Rarely
+                                                                                  4= Never
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   43    2 2.0       WTHPPK           B.3          Willing to tell HCP if sex     1= Strongly agree
+                                                   partner HIV-positive           2= Somewhat agree
+                                                                                  3= Somewhat disagree
+                                                                                  4= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   45    3 3.0       TTSTPK           C.1          Number of times tested for     0= 0 times
+                                                   HIV past 2 years               001= 001
+                                                                                  .
+                                                                                  .
+                                                                                  100= 100
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   48    2 2.0       WTSTPK           C.2          Last time had HIV test done    1= 0 to 3 months ago
+                                                                                  2= 4 to 6 months ago
+                                                                                  3= 7 months to 1 year ago
+                                                                                  4= More than 1 year ago
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   50    2 2.0       RHIVPK           C.3          Risk of HIV based on past 6    1= No risk
+                                                   months                         2= Low risk
+                                                                                  3= Medium risk
+                                                                                  4= High risk
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   52    2 2.0       TPOWPK           D.1.a        Depend on source for HIV info  1= 1 no dependence at all
+                                                   - place of worship             2= dependence level 2
+                                                                                  3= dependence level 3
+                                                                                  4= dependence level 4
+                                                                                  5= 5 complete dependence
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   54    2 2.0       TFFRPK           D.1.b        Depend on source for HIV info  1= 1 no dependence at all
+                                                   - family or friends            2= dependence level 2
+                                                                                  3= dependence level 3
+                                                                                  4= dependence level 4
+                                                                                  5= 5 complete dependence
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   56    2 2.0       TSCLPK           D.1.c        Depend on source for HIV info  1= 1 no dependence at all
+                                                   - school                       2= dependence level 2
+                                                                                  3= dependence level 3
+                                                                                  4= dependence level 4
+                                                                                  5= 5 complete dependence
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   58    2 2.0       TNMGPK           D.1.d        Depend on source for HIV info  1= 1 no dependence at all
+                                                   - newspaper/magazine           2= dependence level 2
+                                                                                  3= dependence level 3
+                                                                                  4= dependence level 4
+                                                                                  5= 5 complete dependence
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   60    2 2.0       TINTPK           D.1.e        Depend on source for HIV info  1= 1 no dependence at all
+                                                   - internet                     2= dependence level 2
+                                                                                  3= dependence level 3
+                                                                                  4= dependence level 4
+                                                                                  5= 5 complete dependence
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   62    2 2.0       TTVRPK           D.1.f        Depend on source for HIV info  1= 1 no dependence at all
+                                                   - television/radio             2= dependence level 2
+                                                                                  3= dependence level 3
+                                                                                  4= dependence level 4
+                                                                                  5= 5 complete dependence
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   64    2 2.0       THCPPK           D.1.g        Depend on source for HIV info  1= 1 no dependence at all
+                                                   - healthcare provider          2= dependence level 2
+                                                                                  3= dependence level 3
+                                                                                  4= dependence level 4
+                                                                                  5= 5 complete dependence
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   66    2 2.0       TGHOPK           D.1.h        Depend on source for HIV info  1= 1 no dependence at all
+                                                   - government health            2= dependence level 2
+                                                   organizations                  3= dependence level 3
+                                                                                  4= dependence level 4
+                                                                                  5= 5 complete dependence
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   68    2 2.0       TPHMPK           D.1.i        Depend on source for HIV info  1= 1 no dependence at all
+                                                   - pharmacist                   2= dependence level 2
+                                                                                  3= dependence level 3
+                                                                                  4= dependence level 4
+                                                                                  5= 5 complete dependence
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   70    2 2.0       DSFMPK           D.2.a        Discuss HIV status with -      1= YES
+                                                   family                         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   72    2 2.0       DSFRPK           D.2.b        Discuss HIV status with -      1= YES
+                                                   friends                        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   74    2 2.0       DSMPPK           D.2.c        Discuss HIV status with -      1= YES
+                                                   main sex partners              2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   76    2 2.0       DSCPPK           D.2.d        Discuss HIV status with -      1= YES
+                                                   casual sex partners            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   78    2 2.0       DSHPPK           D.2.e        Discuss HIV status with -      1= YES
+                                                   healthcare provider            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   80    2 2.0       DSRFPK           D.2.f        Discuss HIV status with -      1= YES
+                                                   religious figure               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   82    2 2.0       DSOPPK           D.2.g        Discuss HIV status with -      1= YES
+                                                   other person                   2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   84   25 $         DSSOPK           D.2.g        Specify other person with      Character
+                                                   whom discuss HIV status
+
+  109    2 2.0       DTFMPK           D.3.a        Discuss risk of transmitting   1= YES
+                                                   HIV with - family              2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  111    2 2.0       DTFRPK           D.3.b        Discuss risk of transmitting   1= YES
+                                                   HIV with - friends             2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  113    2 2.0       DTMPPK           D.3.c        Discuss risk of transmitting   1= YES
+                                                   HIV with - main sex partners   2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  115    2 2.0       DTCPPK           D.3.d        Discuss risk of transmitting   1= YES
+                                                   HIV with - casual sex partners 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  117    2 2.0       DTHPPK           D.3.e        Discuss risk of transmitting   1= YES
+                                                   HIV with - healthcare provider 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  119    2 2.0       DTRFPK           D.3.f        Discuss risk of transmitting   1= YES
+                                                   HIV with - religious figure    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  121    2 2.0       DTOPPK           D.3.g        Discuss risk of transmitting   1= YES
+                                                   HIV with - other person        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  123   25 $         DTSOPK           D.3.g        Specify other person with      Character
+                                                   whom discuss risk of
+                                                   transmitting HIV
+
+  148    2 2.0       DGFMPK           D.4.a        Discuss risk of getting HIV    1= YES
+                                                   with - family                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  150    2 2.0       DGFRPK           D.4.b        Discuss risk of getting HIV    1= YES
+                                                   with - friends                 2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  152    2 2.0       DGMPPK           D.4.c        Discuss risk of getting HIV    1= YES
+                                                   with - main sex partners       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  154    2 2.0       DGCPPK           D.4.d        Discuss risk of getting HIV    1= YES
+                                                   with - casual sex partners     2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  156    2 2.0       DGHPPK           D.4.e        Discuss risk of getting HIV    1= YES
+                                                   with - healthcare provider     2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  158    2 2.0       DGRFPK           D.4.f        Discuss risk of getting HIV    1= YES
+                                                   with - religious figure        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  160    2 2.0       DGOPPK           D.4.g        Discuss risk of getting HIV    1= YES
+                                                   with - other person            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  162   25 $         DGSOPK           D.4.g        Specify other person with      Character
+                                                   whom discuss risk of getting
+                                                   HIV
+
+  187    3 3.0       MSX6PK           E.1          Number of main male partners   0= 0 main partners
+                                                   past 6 months                  001= 001
+                                                                                  .
+                                                                                  .
+                                                                                  100= 100
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  190    2 2.0       MSXCPK           E.2          Frequency used condoms with    1= Never
+                                                   main male past 6 months        2= Rarely
+                                                                                  3= About half the time
+                                                                                  4= Most of the time
+                                                                                  5= Always
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  192    3 3.0       CSX6PK           E.3          Number of casual male          0= 0 casual partners
+                                                   partners past 6 months         001= 001
+                                                                                  .
+                                                                                  .
+                                                                                  100= 100
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  195    2 2.0       CSXCPK           E.4          Frequency used condoms with    1= Never
+                                                   casual male past 6 months      2= Rarely
+                                                                                  3= About half the time
+                                                                                  4= Most of the time
+                                                                                  5= Always
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  197    2 2.0       CPHSPK           E.5          Chose partners based on HIV    1= YES
+                                                   status                         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  199    2 2.0       DLYMPK           F.1          Daily meds recommended by      1= YES
+                                                   healthcare provider            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  201    2 2.0       FGTMPK           F.2          Number of times forgot meds    00= 00
+                                                   past 2 weeks                   .
+                                                                                  .
+                                                                                  50= 50
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  203    2 2.0       STPMPK           F.3          Ever cut back/stopped daily    1= YES
+                                                   meds                           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  205    2 2.0       SMSEPK           F.4.a        Reason cut back/stopped daily  1= YES
+                                                   med - felt worse/side effects  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  207    2 2.0       SMCAPK           F.4.b        Reason cut back/stopped daily  1= YES
+                                                   med - couldn't afford it       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  209    2 2.0       SMORPK           F.4.c        Reason cut back/stopped daily  1= YES
+                                                   med - other reason             2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  211   50 $         SMSOPK           F.4.c        Specify other reason cut back/ Character
+                                                   stopped daily meds
+
+  261    2 2.0       SMTHPK           F.5          Told healthcare provider cut   1= YES
+                                                   back/stopped daily meds        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  263    2 2.0       HPEPPK           G.1          Heard of HIV-negative people   1= YES
+                                                   taking PEP                     2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  265    2 2.0       HPFAPK           G.2.a        Heard of PEP - from friend/    1= YES
+                                                   acquaintance                   2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  267    2 2.0       HPFMPK           G.2.b        Heard of PEP - parents/other   1= YES
+                                                   family                         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  269    2 2.0       HPASPK           G.2.c        Heard of PEP - school          1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  271    2 2.0       HPHPPK           G.2.d        Heard of PEP - healthcare      1= YES
+                                                   provider                       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  273    2 2.0       HPNMPK           G.2.e        Heard of PEP - newspaper/      1= YES
+                                                   magazine                       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  275    2 2.0       HPRTPK           G.2.f        Heard of PEP - radio/TV        1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  277    2 2.0       HPINPK           G.2.g        Heard of PEP - internet        1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  279    2 2.0       HPSVPK           G.2.h        Heard of PEP - from another    1= YES
+                                                   survey                         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  281    2 2.0       HPSEPK           G.2.i        Heard of PEP - somewhere else  1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  283   25 $         HPSOPK           G.2.i        Specify other place heard of   Character
+                                                   PEP
+
+  308    2 2.0       KPEPPK           G.3          Know any HIV-negative person   1= YES
+                                                   who has taken PEP              2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  310    2 2.0       EPEPPK           G.4          Participant has taken PEP      1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  312    2 2.0       GPEDPK           G.5.a        Obtained PEP - emergency       1= YES
+                                                   department                     2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  314    2 2.0       GPHPPK           G.5.b        Obtained PEP - healthcare      1= YES
+                                                   provider/medical clinic        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  316    2 2.0       GPFPPK           G.5.c        Obtained PEP - family,         1= YES
+                                                   friends, sex partner           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  318    2 2.0       GPINPK           G.5.d        Obtained PEP - internet        1= YES
+                                                   without prescription           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  320    2 2.0       GPSTPK           G.5.e        Obtained PEP - on the street   1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  322    2 2.0       GPOTPK           G.5.f        Obtained PEP - other place     1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  324   25 $         GPSOPK           G.5.f        Specify other place obtained   Character
+                                                   PEP
+
+  349    2 2.0       RPEPPK           G.6          Would recommend PEP to         1= YES
+                                                   friends, sexual partners       2= NO
+                                                                                  3= MAYBE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  351    2 2.0       CPEPPK           G.7          Would consider PEP after high- 1= YES
+                                                   risk exposure                  2= NO
+                                                                                  3= MAYBE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  353    2 2.0       HPRPPK           H.1          Heard of HIV-negative people   1= YES
+                                                   taking PrEP                    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  355    2 2.0       HRFAPK           H.2.a        Heard of PrEP - from friend/   1= YES
+                                                   acquaintance                   2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  357    2 2.0       HRFMPK           H.2.b        Heard of PrEP - parents/other  1= YES
+                                                   family                         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  359    2 2.0       HRASPK           H.2.c        Heard of PrEP - school         1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  361    2 2.0       HRHPPK           H.2.d        Heard of PrEP - healthcare     1= YES
+                                                   provider                       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  363    2 2.0       HRNMPK           H.2.e        Heard of PrEP - newspaper/     1= YES
+                                                   magazine                       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  365    2 2.0       HRRTPK           H.2.f        Heard of PrEP - radio/TV       1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  367    2 2.0       HRINPK           H.2.g        Heard of PrEP - internet       1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  369    2 2.0       HRSVPK           H.2.h        Heard of PrEP - from another   1= YES
+                                                   survey                         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  371    2 2.0       HRSEPK           H.2.i        Heard of PrEP - somewhere else 1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  373   25 $         HRSOPK           H.2.i        Specify other place heard of   Character
+                                                   PrEP
+
+  398    2 2.0       KPRPPK           H.3          Know any HIV-negative person   1= YES
+                                                   who has taken PrEP             2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  400    2 2.0       EPRPPK           H.4          Participant has taken PrEP     1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  402    2 2.0       GREDPK           H.5.a        Obtained PrEP - emergency      1= YES
+                                                   department                     2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  404    2 2.0       GRHPPK           H.5.b        Obtained PrEP - healthcare     1= YES
+                                                   provider/medical clinic        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  406    2 2.0       GRFPPK           H.5.c        Obtained PrEP - family,        1= YES
+                                                   friends, sex partner           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  408    2 2.0       GRINPK           H.5.d        Obtained PrEP - internet       1= YES
+                                                   without prescription           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  410    2 2.0       GRSTPK           H.5.e        Obtained PrEP - on the street  1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  412    2 2.0       GROTPK           H.5.f        Obtained PrEP - other place    1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  414   25 $         GRSOPK           H.5.f        Specify other place obtained   Character
+                                                   PrEP
+
+  439    2 2.0       RPRPPK           H.6          Would recommend PrEP to        1= YES
+                                                   friends, sexual partners       2= NO
+                                                                                  3= MAYBE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  441    2 2.0       CPRPPK           H.7          Would consider PrEP to lower   1= YES
+                                                   chances of HIV                 2= NO
+                                                                                  3= MAYBE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  443    2 2.0       APRPPK           I.1          Availability of PrEP will be   1= Strongly agree
+                                                   useful to HIV-negative people  2= Agree
+                                                                                  3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  445    2 2.0       WRSFPK           I.2          Participant willing to use     1= Strongly agree
+                                                   PrEP if safe and effective     2= Agree
+                                                                                  3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  447    2 2.0       WRNSPK           I.3          Participant willing to use     1= Strongly agree
+                                                   PrEP if fewo side effects      2= Agree
+                                                                                  3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  449    2 2.0       WRTRPK           I.4          Participant willing to get     1= Strongly agree
+                                                   tested regularly with PrEP     2= Agree
+                                                                                  3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  451    2 2.0       DCAPPK           I.5          Difficult for participant to   1= Strongly agree
+                                                   use condoms and take daily     2= Agree
+                                                   pills                          3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  453    2 2.0       PRMCPK           I.6.a        Reason would use PrEP - more   1= YES
+                                                   control/protection from HIV    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  455    2 2.0       PRPHPK           I.6.b        Reason would use PrEP -        1= YES
+                                                   partner is HIV-positive        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  457    2 2.0       PRCPPK           I.6.c        Reason would use PrEP - would  1= YES
+                                                   use with casual partners       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  459    2 2.0       PRFFPK           I.6.d        Reason would use PrEP -        1= YES
+                                                   friends/family think should    2= NO
+                                                   take it                        -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  461    2 2.0       PRKSPK           I.6.e        Reason would use PrEP - know   1= YES
+                                                   someone who takes PrEP         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  463    2 2.0       PRCTPK           I.6.f        Reason would use PrEP -        1= YES
+                                                   cannot always trust sexual     2= NO
+                                                   partners                       -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  465    2 2.0       PRHPPK           I.6.g        Reason would use PrEP -        1= YES
+                                                   healthcare provider told/      2= NO
+                                                   offered it                     -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  467    2 2.0       DRAEPK           J.1          Would feel ashamed/embarassed  1= Strongly agree
+                                                   taking daily PrEP              2= Agree
+                                                                                  3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  469    2 2.0       DROTPK           J.2          Worried others would think     1= Strongly agree
+                                                   HIV-positive if taking daily   2= Agree
+                                                   PrEP                           3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  471    2 2.0       MPAYPK           K.1          Most participant would pay     1= $0
+                                                   for PrEP                       2= $1 to $25
+                                                                                  3= $26 to $50
+                                                                                  4= $51 to $100
+                                                                                  5= Over $100
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  473    2 2.0       AFREPK           K.2          Likelihood of taking PrEP if   1= Very likely
+                                                   no out-of-pocket cost          2= Somewhat likely
+                                                                                  3= Not at all likely
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  475    2 2.0       AHMEPK           L.1          Belief of most effective HIV   1= Abstinence
+                                                   prevention method              2= Being in a monogamous
+                                                                                     relationship (both
+                                                                                     partners have no other
+                                                                                     partners)
+                                                                                  3= Using condoms only
+                                                                                  4= HIV-negative people using
+                                                                                     condoms in combination
+                                                                                     with PrEP
+                                                                                  5= HIV-positive people taking
+                                                                                     medicines to decrease
+                                                                                     their chances of
+                                                                                     transmitting HIV to others
+                                                                                  6= There is no effective way
+                                                                                     currently available
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  477    2 2.0       AHPRPK           L.2          Belief of preferred HIV        1= Abstinence
+                                                   prevention method              2= Being in a monogamous
+                                                                                     relationship (both
+                                                                                     partners have no other
+                                                                                     partners)
+                                                                                  3= Using condoms only
+                                                                                  4= HIV-negative people using
+                                                                                     condoms in combination
+                                                                                     with PrEP
+                                                                                  5= HIV-positive people taking
+                                                                                     medicines to decrease
+                                                                                     their chances of
+                                                                                     transmitting HIV to others
+                                                                                  6= HIV prevention gels that
+                                                                                     can be applied right
+                                                                                     before having sex
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  479    2 2.0       TASPPK           M.1          Interested in learning about   1= YES
+                                                   meds to lower risk of          2= NO
+                                                   transmitting HIV to others     -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  481    2 2.0       TPLKPK           M.2          Likelihood of beginning meds   1= Very likely
+                                                   to protect sexual partner      2= Somewhat likely
+                                                                                  3= Not at all likely
+                                                                                  4= I am already taking HIV
+                                                                                     medicines
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  483    2 2.0       TPSFPK           M.3.a        Willing to take meds to not    1= Strongly agree
+                                                   infect others if - safe and    2= Agree
+                                                   effective                      3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  485    2 2.0       TPNSPK           M.3.b        Willing to take meds to not    1= Strongly agree
+                                                   infect others if - fewo side   2= Agree
+                                                   effects                        3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  487    2 2.0       TPHPPK           M.3.c        Willing to take meds to not    1= Strongly agree
+                                                   infect others if - healthcare  2= Agree
+                                                   provider offered it            3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  489    2 2.0       TPFFPK           M.3.d        Willing to take meds to not    1= Strongly agree
+                                                   infect others if - family/     2= Agree
+                                                   friends recommended            3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  491    2 2.0       TPKSPK           M.3.e        Willing to take meds to not    1= Strongly agree
+                                                   infect others if - knew        2= Agree
+                                                   someone taking meds as TasP    3= Neither agree nor disagree
+                                                                                  4= Disagree
+                                                                                  5= Strongly disagree
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  493    2 2.0       TDHPPK           M.4.a        Willing to discuss TasP with - 1= YES
+                                                   healthcare provider            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  495    2 2.0       TDFMPK           M.4.b        Willing to discuss TasP with - 1= YES
+                                                   family                         2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  497    2 2.0       TDFRPK           M.4.c        Willing to discuss TasP with - 1= YES
+                                                   friends                        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  499    2 2.0       TDMPPK           M.4.d        Willing to discuss TasP with - 1= YES
+                                                   main sex partners              2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  501    2 2.0       TDCPPK           M.4.e        Willing to discuss TasP with - 1= YES
+                                                   casual sex partners            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  503    2 2.0       TDMNPK           M.4.f        Willing to discuss TasP with - 1= YES
+                                                   men                            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  505    2 2.0       TDWMPK           M.4.g        Willing to discuss TasP with - 1= YES
+                                                   women                          2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  507    2 2.0       TDOHPK           M.4.h        Willing to discuss TasP with - 1= YES
+                                                   other HIV-positive person      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  509    2 2.0       TDRFPK           M.4.i        Willing to discuss TasP with - 1= YES
+                                                   religious figure               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  511    2 2.0       TDOPPK           M.4.j        Willing to discuss TasP with - 1= YES
+                                                   other person                   2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  513   25 $         TDSOPK           M.4.j        Specify other person with      Character
+                                                   whom willing to discuss TasP
+
+  538    5 time5.    ETIMPK           M.5          Time ended                     01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  543    2 2.0       EMERPK           M.5          AM/PM for time ended           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  545    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  546    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

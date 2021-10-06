@@ -1,0 +1,913 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+BCS - Contraception Survey
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    8 $         VERSCS           A.3          Form version                   01/01/93= 01/01/93
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   19    8 $         IDTECS           A.4          Date of interview              01/01/13= 01/01/13
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   27    3 $         INITCS           A.5          Initials of person completing  Character
+                                                   form
+
+   30    5 time5.    STIMCS           A.6          Time began                     1:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   35    2 2.0       SMERCS           A.6          AM/PM for time began           1= AM
+                                                                                  2= PM
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   37    2 2.0       ESA_CS           OldB.1       Old: Ever sexually active      1= YES
+                                                   with male                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   39    2 2.0       ESM6CS           OldB.1.a     Old: Sexually active with      1= YES
+                                                   male in past 6 months          2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   41    2 2.0       PSMFCS           OldB.2       Old: Plan sexual activity      1= YES
+                                                   with male in future            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   43    3 3.0       LVSMCS           B.3          Lifetime number of males -     000= 0 men
+                                                   vaginal sex                    1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  999= 999
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   46    3 3.0       PSR1CS           B.4a         Menopause or prior             1= YES
+                                                   hysterectomy or bilateral      2= NO
+                                                   oophorectomy - question 1      -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   49    2 2.0       LPR6CS           B.4          Likelihood of pregnancy in     1= Not at all likely
+                                                   next 6 months                  2= A little likely
+                                                                                  3= Somewhat likely
+                                                                                  4= Very likely
+                                                                                  5= I am currently pregnant
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   51    2 2.0       FPR6CS           B.5          Feelings if became pregnant    1= Very upset
+                                                   in next 6 months               2= Somewhat upset
+                                                                                  3= Would or did not care
+                                                                                  4= Somewhat happy
+                                                                                  5= Very happy
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   53    2 2.0       PPR6CS           B.6          Partner feelings if            1= Very upset
+                                                   participant pregnant in next   2= Somewhat upset
+                                                   6 months                       3= Would or did not care
+                                                                                  4= Somewhat happy
+                                                                                  5= Very happy
+                                                                                  6= I do not have a current
+                                                                                     partner
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   55    2 2.0       TOTCCS           B.7          Total number of children       1= None
+                                                   participant wants              2= 1
+                                                                                  3= 2
+                                                                                  4= 3 or more
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   57    2 2.0       EVBCCS           B.8          Ever used any birth control    1= YES
+                                                   to prevent pregnancy?          2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   59    2 2.0       CON_CS           B.8.a        Ever in lifetime used condoms  1= YES
+                                                   to prevent pregnancy           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   61    2 2.0       CONDCS           OldB.8.a     Old: Ever used condoms to      1= Past
+                                                   prevent pregnancy              2= Current, every time I have
+                                                                                     sex
+                                                                                  3= Current, not every time I
+                                                                                     have sex
+                                                                                  4= Never
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63    2 2.0       CNDSCS           B.8.a.i      Participant satisfied with     1= Very satisfied
+                                                   condoms                        2= Somewhat satisfied
+                                                                                  3= Not satisfied
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   65    2 2.0       CNDPCS           B.8.a.ii     Partner satisfied with condoms 1= Very satisfied
+                                                                                  2= Somewhat satisfied
+                                                                                  3= Not satisfied
+                                                                                  4= I don't know
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   67    2 2.0       FCN_CS           B.8.b        Ever in lifetime used female   1= YES
+                                                   condoms to prevent pregnancy   2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   69    2 2.0       FCNDCS           OldB.8.b     Old: Ever used female condoms  1= Past
+                                                   to prevent pregnancy           2= Current
+                                                                                  3= Never
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   71    2 2.0       FCNSCS           B.8.b.i      Participant satisfied with     1= Very satisfied
+                                                   female condoms                 2= Somewhat satisfied
+                                                                                  3= Not satisfied
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   73    2 2.0       FCNPCS           B.8.b.ii     Partner satisfied with female  1= Very satisfied
+                                                   condoms                        2= Somewhat satisfied
+                                                                                  3= Not satisfied
+                                                                                  4= I don't know
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   75    2 2.0       BPL_CS           B.8.c        Ever in lifetime used bc       1= YES
+                                                   pills to prevent pregnancy     2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   77    2 2.0       BCP_CS           OldB.8.c     Old: Ever used birth control   1= Past
+                                                   pills to prevent pregnancy     2= Current
+                                                                                  3= Never
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   79    2 2.0       BCPSCS           B.8.c.i      Participant satisfied with     1= Very satisfied
+                                                   birth control pills            2= Somewhat satisfied
+                                                                                  3= Not satisfied
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   81    2 2.0       BCPPCS           B.8.c.ii     Partner satisfied with birth   1= Very satisfied
+                                                   control pills                  2= Somewhat satisfied
+                                                                                  3= Not satisfied
+                                                                                  4= I don't know
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   83    2 2.0       CPT_CS           B.8.d        Ever in lifetime used          1= YES
+                                                   contraceptive patch to         2= NO
+                                                   prevent pregnancy              -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   85    2 2.0       CPTCCS           OldB.8.d     Old: Ever used contraceptive   1= Past
+                                                   patch to prevent pregnancy     2= Current
+                                                                                  3= Never
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   87    2 2.0       CPTSCS           B.8.d.i      Participant satisfied with     1= Very satisfied
+                                                   contraceptive patch            2= Somewhat satisfied
+                                                                                  3= Not satisfied
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   89    2 2.0       CPTPCS           B.8.d.ii     Partner satisfied with         1= Very satisfied
+                                                   contraceptive patch            2= Somewhat satisfied
+                                                                                  3= Not satisfied
+                                                                                  4= I don't know
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   91    2 2.0       VGR_CS           B.8.e        Ever in lifetime used vaginal  1= YES
+                                                   ring to prevent pregnancy      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   93    2 2.0       VAGRCS           OldB.8.e     Old: Ever used vaginal ring    1= Past
+                                                   to prevent pregnancy           2= Current
+                                                                                  3= Never
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   95    2 2.0       VGRSCS           B.8.e.i      Participant satisfied with     1= Very satisfied
+                                                   vaginal ring                   2= Somewhat satisfied
+                                                                                  3= Not satisfied
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   97    2 2.0       VGRPCS           B.8.e.ii     Partner satisfied with         1= Very satisfied
+                                                   vaginal ring                   2= Somewhat satisfied
+                                                                                  3= Not satisfied
+                                                                                  4= I don't know
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   99    2 2.0       DPO_CS           B.8.f        Ever in lifetime used depo     1= YES
+                                                   shot to prevent pregnancy      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  101    2 2.0       DEPOCS           OldB.8.f     Old: Ever used Depo Provera    1= Past
+                                                   to prevent pregnancy           2= Current
+                                                                                  3= Never
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  103    2 2.0       DPOSCS           B.8.f.i      Participant satisfied with     1= Very satisfied
+                                                   Depo Provera                   2= Somewhat satisfied
+                                                                                  3= Not satisfied
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  105    2 2.0       DPOPCS           B.8.f.ii     Partner satisfied with Depo    1= Very satisfied
+                                                   Provera                        2= Somewhat satisfied
+                                                                                  3= Not satisfied
+                                                                                  4= I don't know
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  107    2 2.0       NIM_CS           B.8.g        Ever in lifetime used          1= YES
+                                                   norplant, etc. to prevent      2= NO
+                                                   pregnancy                      -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  109    2 2.0       NIN_CS           OldB.8.g     Old: Ever used Norplant/       1= Past
+                                                   Implanon/Nexplanon to prevent  2= Current
+                                                   pregnancy                      3= Never
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  111    2 2.0       NINSCS           B.8.g.i      Participant satisfied with     1= Very satisfied
+                                                   Norplant/Implanon/Nexplanon    2= Somewhat satisfied
+                                                                                  3= Not satisfied
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  113    2 2.0       NINPCS           B.8.g.ii     Partner satisfied with         1= Very satisfied
+                                                   Norplant/Implanon/Nexplanon    2= Somewhat satisfied
+                                                                                  3= Not satisfied
+                                                                                  4= I don't know
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  115    2 2.0       IU3_CS           B.8.h        Ever in lifetime used 3-year   1= YES
+                                                   IUD to prevent pregnancy       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  117    2 2.0       IUD3CS           OldB.8.h     Old: Ever used 3-yr hormonal   1= Past
+                                                   IUD (Skyla)to prevent          2= Current
+                                                   pregnancy                      3= Never
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  119    2 2.0       IU3SCS           B.8.h.i      Participant satisfied with 3-  1= Very satisfied
+                                                   yr hormonal IUD (Skyla)        2= Somewhat satisfied
+                                                                                  3= Not satisfied
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  121    2 2.0       IU3PCS           B.8.h.ii     Partner satisfied with 3-yr    1= Very satisfied
+                                                   hormonal IUD (Skyla)           2= Somewhat satisfied
+                                                                                  3= Not satisfied
+                                                                                  4= I don't know
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  123    2 2.0       IU5_CS           B.8.i        Ever in lifetime used 5-year   1= YES
+                                                   IUD to prevent pregnancy       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  125    2 2.0       IUD5CS           OldB.8.i     Old: Ever used 5-yr hormonal   1= Past
+                                                   IUD (Mirena)to prevent         2= Current
+                                                   pregnancy                      3= Never
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  127    2 2.0       IU5SCS           B.8.i.i      Participant satisfied with 5-  1= Very satisfied
+                                                   year hormonal IUD (Mirena)     2= Somewhat satisfied
+                                                                                  3= Not satisfied
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  129    2 2.0       IU5PCS           B.8.i.ii     Partner satisfied with 5-year  1= Very satisfied
+                                                   hormonal IUD (Mirena)          2= Somewhat satisfied
+                                                                                  3= Not satisfied
+                                                                                  4= I don't know
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  131    2 2.0       I10_CS           B.8.j        Ever in lifetime used 10-year  1= YES
+                                                   IUD to prevent pregnancy       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  133    2 2.0       IU10CS           OldB.8.j     Old: Ever used 10-yr copper    1= Past
+                                                   IUD (ParaGard)to prevent       2= Current
+                                                   pregnancy                      3= Never
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  135    2 2.0       I10SCS           B.8.j.i      Participant satisfied with 10- 1= Very satisfied
+                                                   yr copper IUD (ParaGard)       2= Somewhat satisfied
+                                                                                  3= Not satisfied
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  137    2 2.0       I10PCS           B.8.j.ii     Partner satisfied with 10-yr   1= Very satisfied
+                                                   copper IUD (ParaGard)          2= Somewhat satisfied
+                                                                                  3= Not satisfied
+                                                                                  4= I don't know
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  139    2 2.0       STR_CS           B.8.k        Ever in lifetime used          1= YES
+                                                   sterilization to prevent       2= NO
+                                                   pregnancy                      -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  141    2 2.0       STERCS           OldB.8.k     Old: Ever used permanent       1= Past
+                                                   sterilization to prevent       2= Current
+                                                   pregnancy                      3= Never
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  143    2 2.0       STESCS           B.8.k.i      Participant satisfied with     1= Very satisfied
+                                                   permanent sterilization        2= Somewhat satisfied
+                                                                                  3= Not satisfied
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  145    2 2.0       STEPCS           B.8.k.ii     Partner satisfied with         1= Very satisfied
+                                                   permanent sterilization        2= Somewhat satisfied
+                                                                                  3= Not satisfied
+                                                                                  4= I don't know
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  147    2 2.0       WTD_CS           B.8.l        Ever in lifetime used          1= YES
+                                                   withdrawal to prevent          2= NO
+                                                   pregnancy                      -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  149    2 2.0       WTDRCS           OldB.8.l     Old: Ever used withdrawal to   1= Past
+                                                   prevent pregnancy              2= Current
+                                                                                  3= Never
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  151    2 2.0       WTDSCS           B.8.l.i      Participant satisfied with     1= Very satisfied
+                                                   withdrawal                     2= Somewhat satisfied
+                                                                                  3= Not satisfied
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  153    2 2.0       WTDPCS           B.8.l.ii     Partner satisfied with         1= Very satisfied
+                                                   withdrawal                     2= Somewhat satisfied
+                                                                                  3= Not satisfied
+                                                                                  4= I don't know
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  155    2 2.0       OTR_CS           B.8.m        Ever in lifetime used other    1= YES
+                                                   method to prevent pregnancy    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  157    2 2.0       OTHRCS           OldB.8.m     Old: Ever used other method    1= Past
+                                                   to prevent pregnancy           2= Current
+                                                                                  3= Never
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  159    2 2.0       OTHSCS           B.8.m.i      Participant satisfied with     1= Very satisfied
+                                                   other method                   2= Somewhat satisfied
+                                                                                  3= Not satisfied
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  161    2 2.0       OTHPCS           B.8.m.ii     Partner satisfied with other   1= Very satisfied
+                                                   method                         2= Somewhat satisfied
+                                                                                  3= Not satisfied
+                                                                                  4= I don't know
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  163    2 2.0       MSAYCS           B.9          Person with most say about     1= You alone
+                                                   birth control                  9= Mostly you
+                                                                                  2= You and your partner or
+                                                                                     partners equally
+                                                                                  3= Mostly your partner or
+                                                                                     partners
+                                                                                  4= You and your medical
+                                                                                     provider
+                                                                                  5= Mostly your medical
+                                                                                     provider
+                                                                                  6= Your partner(s) and your
+                                                                                     medical provider
+                                                                                  7= You, your partner(s), and
+                                                                                     your provider equally
+                                                                                  8= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  165   35 $         MSYSCS           B.9          Specify other person with      Character
+                                                   most say about birth control
+
+  200    2 2.0       RXBCCS           B.10         Person who prescribed/placed   1= I'm not currently using
+                                                   participant's current birth       any birth control
+                                                   control                        2= I only use condoms and
+                                                                                     don't need a prescription
+                                                                                  3= A provider who sees me for
+                                                                                     WIHS
+                                                                                  4= My HIV care provider
+                                                                                  5= My gynecologist
+                                                                                  6= My primary care provider
+                                                                                  7= A community health center
+                                                                                     (like Planned Parenthood)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  202    2 2.0       CONWCS           B.11         Using birth control other      1= Using other birth control
+                                                   than condoms affects              methods has not affected
+                                                   willingness to use condoms        my use of condoms at all
+                                                                                  2= I have used condoms more
+                                                                                  3= I have used condoms less
+                                                                                  4= Not applicable because I
+                                                                                     have never used condoms in
+                                                                                     my life
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  204    2 2.0       CONLCS           B.11.a       Primary reason use condoms     1= I only used them for
+                                                   less                              pregnancy prevention and
+                                                                                     not STD prevention
+                                                                                  2= My partner preferred not
+                                                                                     to use them
+                                                                                  3= I forgot more frequently
+                                                                                     because I knew I had other
+                                                                                     birth control
+                                                                                  4= My partner was also HIV-
+                                                                                     positive, and we were not
+                                                                                     concerned about
+                                                                                     transmission
+                                                                                  5= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  206   50 $         CNLSCS           B.11.a       Specify other reason use       Character
+                                                   condoms less
+
+  256    2 2.0       CONMCS           B.11.b       Primary reason use condoms     1= I have had multiple sex
+                                                   more                              partners
+                                                                                  2= I was concerned the birth
+                                                                                     control could increase HIV
+                                                                                     transmission
+                                                                                  3= I was concerned my HIV
+                                                                                     medication made my birth
+                                                                                     control less effective
+                                                                                  4= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  258   50 $         CNLMCS           B.11.b       Specify other reason use       Character
+                                                   condoms more
+
+  308    2 2.0       MSYCCS           B.11.c       Person with most say about     1= You alone
+                                                   condoms                        6= Mostly you
+                                                                                  2= You and your partner
+                                                                                     equally
+                                                                                  3= Mostly your partner
+                                                                                  4= Your partner alone
+                                                                                  5= I don't use condoms
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  310    2 2.0       CRSNCS           B.11.d       Reason use condoms             1= Pregnancy prevention only
+                                                                                  2= STD prevention (HIV,
+                                                                                     syphilis, gonorrhea,
+                                                                                     Chlamydia)
+                                                                                  3= Both pregnancy and STD
+                                                                                     prevention
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  312    3 3.0       TPRGCS           B.12         # of times been pregnant       000= 0 times
+                                                                                  1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  100= 100
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  315    3 3.0       TPWTCS           B.13         # of times became pregnant     0= 0
+                                                   unintentionally                .
+                                                                                  .
+                                                                                  100= 100
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  318    2 2.0       ABRTCS           B.14         Ever had an abortion           1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  320    2 2.0       AUPPCS           B.15.a       Reason for abortion -          1= YES
+                                                   unplanned/poorly timed         2= NO
+                                                   pregnancy                      -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  322    2 2.0       AHIVCS           B.15.b       Reason for abortion - worried  1= YES
+                                                   would give baby HIV            2= NO
+                                                                                  3= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  324    2 2.0       AHPDCS           B.15.c       Reason for abortion - worried  1= YES
+                                                   HIV made pregnancy dangerous   2= NO
+                                                                                  3= NA
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  326    2 2.0       AMPDCS           B.15.d       Reason for abortion - other    1= YES
+                                                   medical problem made           2= NO
+                                                   pregnancy dangerous            -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  328    2 2.0       ABMPCS           B.15.e       Reason for abortion - baby     1= YES
+                                                   had medical problem            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  330    2 2.0       APRTCS           B.15.f       Reason for abortion - partner  1= YES
+                                                   didn't want baby/demanded      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  332    2 2.0       APCLCS           B.15.g       Reason for abortion - another  1= YES
+                                                   person suggested/demanded      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  334    2 2.0       AMCPCS           B.15.h       Reason for abortion - health   1= YES
+                                                   care provider recommendation   2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  336    2 2.0       ESTPCS           OldB.18      Old: Ever had sterilization    1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  338    2 2.0       EVSTCS           B.18         Participant has had            1= YES
+                                                   sterilization procedure        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  340    2 2.0       PSTPCS           B.19         Felt pressured to have         1= NO
+                                                   sterilization procedure        2= Yes, because I was afraid
+                                                                                     a baby would get HIV
+                                                                                  3= Yes, by my partner at the
+                                                                                     time
+                                                                                  4= Yes, by my family
+                                                                                  5= Yes, by my medical provider
+                                                                                  6= Yes, for some other reason
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  342    2 2.0       WSHPCS           B.20         After sterilization wished     1= YES
+                                                   able to get pregnant           2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  344    2 2.0       TREVCS           B.21         Tried to have sterilization    1= YES
+                                                   reversed                       2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  346    3 3.0       PSR2CS           B.22a        Menopause or prior             1= YES
+                                                   hysterectomy or bilateral      2= NO
+                                                   oophorectomy - question 2      -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  349    2 2.0       BCNWCS           B.22         Action would take if needed    1= I don't know how to get
+                                                   birth control now                 birth control
+                                                                                  2= Get/find a source of
+                                                                                     (free) condoms
+                                                                                  3= Ask my HIV doctor
+                                                                                  4= Ask my obstetrician/
+                                                                                     gynecologist
+                                                                                  5= Ask my primary (non-HIV)
+                                                                                     care provider
+                                                                                  6= Go to a community health
+                                                                                     center (like Planned
+                                                                                     Parenthood)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  351    2 2.0       HIVSCS           B.23         Participant's HIV status       1= HIV-POSITIVE
+                                                                                  2= HIV-NEGATIVE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  353    2 2.0       NSAFCS           B.24         Ever told particular birth     1= YES
+                                                   control unsafe because of HIV  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  355    2 2.0       NSPLCS           B.24.a       Told birth control unsafe r/t  1= YES
+                                                   HIV - pills                    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  357    2 2.0       NSPTCS           B.24.b       Told birth control unsafe r/t  1= YES
+                                                   HIV - patch                    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  359    2 2.0       NSVRCS           B.24.c       Told birth control unsafe r/t  1= YES
+                                                   HIV - vaginal ring             2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  361    2 2.0       NSDSCS           B.24.d       Told birth control unsafe r/t  1= YES
+                                                   HIV - Depo shot                2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  363    2 2.0       NSIMCS           B.24.e       Told birth control unsafe r/t  1= YES
+                                                   HIV - implant                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  365    2 2.0       NSI3CS           B.24.f       Told birth control unsafe r/t  1= YES
+                                                   HIV - 3-year hormonal IUD      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  367    2 2.0       NSI5CS           B.24.g       Told birth control unsafe r/t  1= YES
+                                                   HIV - 5-year hormonal IUD      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  369    2 2.0       NS10CS           B.24.h       Told birth control unsafe r/t  1= YES
+                                                   HIV - Copper IUD (10-years)    2= NO
+                                                   (ParaGard)                     -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  371    5 time5.    ETIMCS           B.25         Time ended                     1:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  376    2 2.0       EMERCS           B.25         AM/PM for time ended           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  378    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  379    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

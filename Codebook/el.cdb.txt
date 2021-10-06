@@ -1,0 +1,398 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+EL - Eligibility Form
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1   10 $         SCIDEL           A.1          Screening ID                   Character
+
+   11    8 $         VERSEL           A.2          Form version                   10/01/01= 10/01/01
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   19    8 $         SDTEEL           A.3          Date of screening              10/01/01= 10/01/01
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   27    3 $         INITEL           A.4          Initials of person completing  Character
+                                                   form
+
+   30    2 2.0       LANGEL           A.5          Preferred interview language   1= ENGLISH
+                                                                                  2= SPANISH
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   32    2 2.0       HIVTEL           A.6          HIV/therapy status             1= Seronegative
+                                                                                  4= Seropositive, ART naive
+                                                                                  2= Seropositive, HAART naive
+                                                                                  3= Seropositive, HAART (2005
+                                                                                     or later)
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   34    8 $         DOB_EL           A.7          Date of birth                  01/01/30= 01/01/30
+                                                                                  .
+                                                                                  .
+                                                                                  01/01/93= 01/01/93
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   42    2 2.0       RACEEL           OldA.7       Old: Race                      1= White, non-Hispanic
+                                                                                  2= White, Hispanic
+                                                                                  3= Black, non-Hispanic
+                                                                                  4= Black, Hispanic
+                                                                                  5= American Indian / Alaskan
+                                                                                     Native
+                                                                                  6= Asian
+                                                                                  7= Native Hawaiian / Other
+                                                                                     Pacific Islander
+                                                                                  8= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   44    2 2.0       HISPEL           A.8          Ethnicity                      1= HISPANIC
+                                                                                  2= NON-HISPANIC
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   46    2 2.0       RCE_EL           A.9          Race                           1= BLACK/AFRICAN AMERICAN
+                                                                                  2= WHITE/CAUCASION
+                                                                                  3= AMERICAN INDIAN/ALASKAN
+                                                                                     NATIVE
+                                                                                  4= ASIAN
+                                                                                  5= NATIVE HAWAIIAN/OTHER
+                                                                                     PACIFIC ISLANDER
+                                                                                  6= OTHER
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   48   25 $         SORCEL           A.9          Specify other race             Character
+
+   73    2 2.0       AGE_EL           B.1.a        Participant age 25-60          1= YES
+                                                                                  2= NO
+                                                                                  3= NA
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   75    2 2.0       AGEPEL           OldB.1.a.i   Old: HIV+ age 30-55            1= YES
+                                                                                  2= NO
+                                                                                  3= NA
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   77    2 2.0       AGENEL           OldB.1.a.ii  Old: HIV- age 35-60            1= YES
+                                                                                  2= NO
+                                                                                  3= NA
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   79    2 2.0       AG13EL           OldB.1.a     Old: Age less than 13 years    1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   81    2 2.0       SRADEL           OldB.1.b     Old: Self-reported clinical    1= YES
+                                                   AIDS diagnosis                 2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   83    2 2.0       SRRFEL           OldB.1.b.i   Old: Self-reported AIDS        1= YES
+                                                   diagnosis refuted through MRA  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   85    2 2.0       MRADEL           OldB.1.c     Old: Clinical AIDS (other      1= YES
+                                                   than CD4 below 200) found      2= NO
+                                                   through MRA                    -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   87    2 2.0       UARTEL           B.1.b        HIV+ - used ART, but not HAART 1= YES
+                                                                                  2= NO
+                                                                                  3= N/A
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   89    2 2.0       PERIEL           OldB.1.b     Old: HIV acquired through      1= YES
+                                                   perinatal transmission         2= NO
+                                                                                  3= N/A
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   91    2 2.0       HDTVEL           B.1.c.i      Date of first HAART verified   1= YES
+                                                   in MRA                         2= NO
+                                                                                  3= N/A
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   93    2 2.0       HBJ1EL           B.1.c.ii     Date of first HAART use        1= YES
+                                                   before January 1, 2005         2= NO
+                                                                                  3= N/A
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   95    2 2.0       CCW6EL           B.1.c.iii    HIV RNA and CD4 cell count     1= YES
+                                                   known within 6 months before   2= NO
+                                                   1st HAART                      3= N/A
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   97    2 2.0       EDDIEL           B.1.c.iv     Participant has ever used ddI, 1= YES
+                                                   ddC or d4T                     2= NO
+                                                                                  3= N/A
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   99    2 2.0       PPMVEL           B.1.d        Participant plans to move out  1= YES
+                                                   of area                        2= NO
+                                                                                  3= N/A
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  101    2 2.0       GCOBEL           B.1.e        General consent obtained       1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  103    2 2.0       COBSEL           B.1.f        Consent obtained to store      1= YES
+                                                   specimens in repository        2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  105    2 2.0       FOASEL           OldB.2       Old: How participant found     1= Word of mouth
+                                                   out about this study           2= Newspaper, posting, flier
+                                                                                  3= Study site contact: Health
+                                                                                     care provider, PI, WIHS
+                                                                                     staff, CAB
+                                                                                  4= Contact from non-WIHS
+                                                                                     service
+                                                                                  5= Don't know, don't remember
+                                                                                  6= Other source
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  107    2 2.0       FOUTEL           B.2          How participant found out      1= From an enrolled
+                                                   about study                       participant
+                                                                                  2= From a flier,
+                                                                                     advertisement, or posting
+                                                                                  3= From a WIHS staff member
+                                                                                  4= From a Community Advisory
+                                                                                     Board (CAB) member
+                                                                                  5= From a clinic provider
+                                                                                  6= Don't know, don't remember
+                                                                                  7= Other source
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  109   25 $         SFAPEL           B.2.a        Specify other flier, ad,       Character
+                                                   posting about study
+
+  134   25 $         SPVCEL           B.2.b        Specify provider/clinic        Character
+
+  159   25 $         SOFOEL           B.2.c        Specify other source of        Character
+                                                   information about study
+
+  184    2 2.0       IVD5EL           B.3.a        Reported injection drug use,   1= YES
+                                                   crack, cocaine, heroin in      2= NO
+                                                   past 5 years                   -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  186    2 2.0       STD5EL           B.3.b        Reported told by health care   1= YES
+                                                   provider had STD in past 5     2= NO
+                                                   years                          -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  188    2 2.0       SXH5EL           B.3.c        Reported sex with a known HIV+ 1= YES
+                                                   man in past 5 years            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  190    2 2.0       SX35EL           B.3.d        Reported unprotected sex with  1= YES
+                                                   3 or more men in past 5 years  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  192    2 2.0       SXD5EL           B.3.e        Reported sex for drugs, money  1= YES
+                                                   or shelter in past 5 years     2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  194    2 2.0       SX65EL           B.3.f        Reported sex with 6 or more    1= YES
+                                                   men in past 5 years            2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  196    2 2.0       PIV5EL           B.3.g        Reported partner injection     1= YES
+                                                   drug use, crack, cocaine,      2= NO
+                                                   heroin in past 5 years         -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  198    2 2.0       PST5EL           B.3.h        Reported partner told by       1= YES
+                                                   health care provider had STD   2= NO
+                                                   in past 5 years                -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  200    2 2.0       PSH5EL           B.3.i        Reported partner sex with a    1= YES
+                                                   known HIV+ man/woman in past   2= NO
+                                                   5 years                        -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  202    2 2.0       PS35EL           B.3.j        Reported partner unprotected   1= YES
+                                                   sex with 3 or more men/women   2= NO
+                                                   in past 5 years                -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  204    2 2.0       PSD5EL           B.3.k        Reported partner sex for       1= YES
+                                                   drugs, money or shelter in     2= NO
+                                                   past 5 years                   -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  206    2 2.0       PS65EL           B.3.l        Reported partner sex with 6    1= YES
+                                                   or more men/women in past 5    2= NO
+                                                   years                          -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  208    2 2.0       RIVDEL           OldB.3.a     Old: Reported injection drug   1= YES
+                                                   use, crack, cocaine, heroin    2= NO
+                                                   in past year                   -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  210    2 2.0       RSTDEL           OldB.3.b     Old: Reported told by health   1= YES
+                                                   care provider had STD in past  2= NO
+                                                   year                           -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  212    2 2.0       RSXHEL           OldB.3.c     Old: Reported sex with a       1= YES
+                                                   known HIV+ man in past year    2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  214    2 2.0       RSX3EL           OldB.3.d     Old: Reported unprotected sex  1= YES
+                                                   with 3 or more men in past     2= NO
+                                                   year                           -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  216    2 2.0       RSXDEL           OldB.3.e     Old: Reported sex for drugs,   1= YES
+                                                   money or shelter in past year  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  218    2 2.0       RSX6EL           OldB.3.f     Old: Reported sex with 6 or    1= YES
+                                                   more men in past year          2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  220    2 2.0       DISPEL           B.4          Eligibility disposition        1= Eligible and enrolled
+                                                                                  2= Eligible, not enrolled
+                                                                                  3= Declined to participate
+                                                                                  4= Ineligible
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  222    8 8.0       CASEID           B.5          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+  230    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  231    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

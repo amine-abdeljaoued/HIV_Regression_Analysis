@@ -1,0 +1,76 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+L12 - (Urine) Pregnancy Test
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    6 $         FKEY             OldA.0       OLD: form identifier number    Character
+
+   17    3 $         INITLM           A.0          Initials of person completing  Character
+                                                   form
+
+   20    8 $         VERSLM           A.0          Form version                   01/01/94= 01/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   28    2 2.0       AVAILM           A.1          Urine pregnancy test results   1= Yes
+                                                   available                      2= No, Sample Inadequate
+                                                                                  3= No, Other Reason
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   30   25 $         RNNALM           A.1.a        Reason urine pregnancy test    Character
+                                                   results not available
+
+   55    8 $         SPDTLM           A.2          Date urine sample taken        10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63    2 2.0       PREGLM           A.3          Urine pregnancy test result    1= POSITIVE
+                                                                                  2= NEGATIVE
+                                                                                  3= INDETERMINATE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   65    2 2.0       PKITLM           OldA.4       Old: Pregnancy test kit used   1= Abbott
+                                                                                  2= First Response
+                                                                                  3= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   67   25 $         OKITLM           OldA.4.a     Old: Specify other pregnancy   Character
+                                                   test kit used
+
+   92    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   93    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

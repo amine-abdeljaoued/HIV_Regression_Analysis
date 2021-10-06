@@ -1,0 +1,193 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+F25b - Mental Health Care Utilization
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        17= 17
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    8 $         VERSDP           A.3          Form version                   10/01/05= 10/01/05
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   19    8 $         IDTEDP           A.4          Date of interview              10/01/05= 10/01/05
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   27    3 $         INITDP           A.5          Initials of person completing  Character
+                                                   form
+
+   30    8 $         LVISDP           A.6          Date of last study visit       10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   38    5 time5.    STIMDP           A.7          Time began                     1:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   43    2 2.0       SMERDP           A.7          AM/PM for time began           1= AM
+                                                                                  2= PM
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   45    2 2.0       ANTIDP           B.1          Taken/rx'd antidepressant      1= YES
+                                                   since last visit               2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   47    2 2.0       RNADDP           B.1.a        Reason taking/rx'd             1= Depression
+                                                   antidepressant since last      2= Neuropathy, by which I
+                                                   visit                             mean tingling or numbness
+                                                                                     in your hands or feet
+                                                                                  3= Both depression and
+                                                                                     neuropathy
+                                                                                  4= Other reason
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   49   25 $         SORADP           B.1.a        Specify other reason taking    Character
+                                                   meds
+
+   74    2 2.0       TOTMDP           B.1.h        Total # of  meds reported in   1= 1
+                                                   B.1b                           .
+                                                                                  .
+                                                                                  10= 10
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   76    3 3.0       METDDP           OldB.1.i     Old: Number of times met with  1= 1
+                                                   doctor since beginning         .
+                                                   medications                    .
+                                                                                  999= 999
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   79    3 3.0       MEDDDP           B.1.i        Number of times met with       1= 1
+                                                   doctor since beginning         .
+                                                   medications                    .
+                                                                                  999= 999
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   82    3 3.0       MD12DP           B.1.j        Number of times met with       1= 1
+                                                   doctor about medication in     .
+                                                   past 12 months                 .
+                                                                                  999= 999
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   85    2 2.0       THRPDP           B.2          Therapy session since last     1= YES
+                                                   visit                          2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   87    8 $         STTYDP           B.2.a        Date started therapy sessions  01/01/94= 01/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   95    3 3.0       NUMSDP           OldB.2.b     Old: Number of therapy         1= 1
+                                                   sessions since beginning       .
+                                                   sessions                       .
+                                                                                  999= 999
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   98    3 3.0       NMSEDP           B.2.b        Number of therapy sessions     1= 1
+                                                   since beginning sessions       .
+                                                                                  .
+                                                                                  999= 999
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  101    3 3.0       NS12DP           B.2.c        Number of therapy sessions in  1= 1
+                                                   past 12 months                 .
+                                                                                  .
+                                                                                  999= 999
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  104    2 2.0       STLSDP           B.2.d        Still having therapy sessions  1= YES
+                                                                                  2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  106    5 time5.    ETIMDP           B.3          Time ended                     1:00= 1:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  111    2 2.0       EMERDP           B.3          AM/PM for time ended           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  113    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  114    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

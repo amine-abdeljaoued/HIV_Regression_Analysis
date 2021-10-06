@@ -1,0 +1,193 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+L05 - Liver/Renal Function Tests Partial Chemistries
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    6 $         FKEY             OldA.0       OLD: Form identifier number    Character
+
+   17    3 $         INITLF           A.0          Initials of person completing  Character
+                                                   form
+
+   20    8 $         VERSLF           A.0          Form version                   01/01/94= 01/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   28    2 2.0       AVAILF           A.1          Liver/renal function test      1= Yes
+                                                   results available              2= No, Sample Inadequate
+                                                                                  3= No, Other Reason
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   30   25 $         RNNALF           A.1.a        Specify reason liver/renal     Character
+                                                   function test results not
+                                                   available
+
+   55    8 $         SPDTLF           A.2          Date sample drawn for liver/   10/01/94= 10/01/94
+                                                   renal function tests           .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   63    4 4.0       SGOTLF           A.2.a        Result: AST(SGOT) (IU/L or U/  1= 1
+                                                   L or MU/ML)                    .
+                                                                                  .
+                                                                                  134= 134
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   67    3 3.0       SOLMLF           A.2.a.i      Upper limit: AST(SGOT) (IU/L   1= 1
+                                                   or U/L or MU/ML)               .
+                                                                                  .
+                                                                                  100= 100
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   70    4 4.0       SGPTLF           A.2.b        Result: ALT(SGPT) (IU/L or U/  1= 1
+                                                   L or MU/ML)                    .
+                                                                                  .
+                                                                                  126= 126
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   74    3 3.0       SPLMLF           A.2.b.i      Upper limit: ALT(SGPT) (IU/L   1= 1
+                                                   or U/L or MU/ML)               .
+                                                                                  .
+                                                                                  100= 100
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   77    4 4.0       PHOSLF           A.2.c        Result: Alk. Phos. (IU/L or U/ 20= 20
+                                                   L)                             .
+                                                                                  .
+                                                                                  234= 234
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   81    5 5.2       ALBULF           A.2.d        Result: Albumin (gm/dL)        1.00= 1.00
+                                                                                  .
+                                                                                  .
+                                                                                  9.00= 9.00
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   86    3 3.0       BUN_LF           A.2.e        Result: BUN (mg/dL)            1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  30= 30
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   89    6 6.2       CREALF           A.2.f        Result: Creatinine (mg/dL)     0.30= 0.30
+                                                                                  .
+                                                                                  .
+                                                                                  3.00= 3.00
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   95    5 5.2       BILILF           A.2.g        Result: Total bilirubin (mg/   0.10= 0.10
+                                                   dL)                            .
+                                                                                  .
+                                                                                  3.00= 3.00
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  100    4 4.0       GGT_LF           A.2.h        Result: GGT (U/L)              2= 2
+                                                                                  .
+                                                                                  .
+                                                                                  355= 355
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  104    5 5.1       CALCLF           A.2.i        Result: Calcium (mg/dL)        8.00= 8.00
+                                                                                  .
+                                                                                  .
+                                                                                  11.00= 11.00
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  109    4 4.1       PSPHLF           A.2.j        Result: Phosphate (mg/dL)      2.0= 2.0
+                                                                                  .
+                                                                                  .
+                                                                                  5.0= 5.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  113    4 4.1       PSECLF           OldA.2.i.i   OLD: Result: Participant PT    0= 0
+                                                   seconds (in seconds)           .
+                                                                                  .
+                                                                                  60.0= 60.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  117    4 4.1       PCSCLF           OldA.2.i.i   OLD: Result: Control PT        0= 0
+                                                   seconds (in seconds)           .
+                                                                                  .
+                                                                                  60.0= 60.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  121    5 5.2       PINRLF           OldA.2.i.ii  OLD: Result: PT International  0= 0
+                                                   Normalized Ratio               .
+                                                                                  .
+                                                                                  10.99= 10.99
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  126    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  127    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

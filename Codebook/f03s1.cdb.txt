@@ -1,0 +1,74 @@
+                               CODEBOOK
+Women's Interagency HIV Study                              9-6-2017
+Form BASE03A: B/L OB/Gyn & Contra History, Pregnancy Addendum
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit number                   1= visit 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= visit 99
+
+   11    6 $         FKEY             A.0          Form unique key                Character
+
+   17    2 2.0       POUTOB           B.4A         Outcome of pregnancy           1=  Live Birth
+                                                                                  2= Stillbirth
+                                                                                  3= Abortion(induced or
+                                                                                     Elective)
+                                                                                  4= Miscarriage
+                                                                                  5= Ectopic Preg
+                                                                                  6= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   19   15 $         POSPOB           B.4A.6       Other outcome of pregnancy     Character
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   34    2 2.0       NBABOB           B.4B         Number of babies born          1= 1 Baby
+                                                                                  .
+                                                                                  .
+                                                                                  4= 4 Babies
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   36    5 $         PODTOB           B.4C         Date of occurrence             01/30= January 1930
+                                                                                  .
+                                                                                  .
+                                                                                  12/20= December 2020
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   41    2 2.0       SEQID            B4.#th       Pregnancy order                1= First pregnancy
+                                                                                  .
+                                                                                  .
+                                                                                  28= 28th pregnancy
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   43    1 $         ESTAT            A.0          Edit Status                    CharacterD= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   44    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

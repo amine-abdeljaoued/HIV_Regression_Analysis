@@ -1,0 +1,597 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+OP04 - Oral Mucosal Tissue Exam
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    6 $         FKEY             OldA.0       OLD: Form identifier number    Character
+
+   17    8 $         VERSOD           A.0          Form version                   10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   25    3 $         INITOD           A.0          Initials of person completing  Character
+                                                   form
+
+   28    8 $         PDTEOD           A.0          Date of procedure              10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   36    2 2.0       LYMPOD           A.1          Lymph node exam:               1= YES
+                                                   lymphadenopathy                2= NO
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   38    2 2.0       RPPROD           A.2.R.a      Palpable lymph node: Right     0= NO
+                                                   Postauricular Present          1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   40    2 2.0       RPOSOD           A.2.R.a      Palpable lymph node: Right     0= NO
+                                                   Postauricular Size grtr than   1= YES
+                                                   1 cm                           -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   42    2 2.0       RPOHOD           A.2.R.a      Palpable lymph node: Right     0= NO
+                                                   Postauricular hard             1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   44    2 2.0       RPOTOD           A.2.R.a      Palpable lymph node: Right     0= NO
+                                                   Postauricular: tenderness      1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   46    2 2.0       LPPROD           A.2.L.a      Palpable lymph node: Left      0= NO
+                                                   Postauricular Present          1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   48    2 2.0       LPOSOD           A.2.L.a      Palpable lymph node: Left      0= NO
+                                                   Postauricular size grtr than   1= YES
+                                                   1 cm                           -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   50    2 2.0       LPOHOD           A.2.L.a      Palpable lymph node: Left      0= NO
+                                                   Postauricular hard             1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   52    2 2.0       LPOTOD           A.2.L.a      Palpable lymph node: Left      0= NO
+                                                   Postauricular tenderness       1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   54    2 2.0       RRPROD           A.2.R.b      Palpable lymph node: Right     0= NO
+                                                   Preauricular Present           1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   56    2 2.0       RPRSOD           A.2.R.b      Palpable lymph node: Right     0= NO
+                                                   Preauricular size grtr than 1  1= YES
+                                                   cm                             -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   58    2 2.0       RPRHOD           A.2.R.b      Palpable lymph node: Right     0= NO
+                                                   Preauricular hard              1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   60    2 2.0       RPRTOD           A.2.R.b      Palpable lymph node: Right     0= NO
+                                                   Preauricular tenderness        1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   62    2 2.0       LRPROD           A.2.L.b      Palpable lymph node: Left      0= NO
+                                                   Preauricular Present           1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   64    2 2.0       LPRSOD           A.2.L.b      Palpable lymph node: Left      0= NO
+                                                   Preauricular size grtr than 1  1= YES
+                                                   cm                             -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   66    2 2.0       LPRHOD           A.2.L.b      Palpable lymph node: Left      0= NO
+                                                   Preauricular hard              1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   68    2 2.0       LPRTOD           A.2.L.b      Palpable lymph node: Left      0= NO
+                                                   Preauricular tenderness        1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   70    2 2.0       RSPROD           A.2.R.c      Palpable lymph node: Right     0= NO
+                                                   Submandibular Present          1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   72    2 2.0       RSBSOD           A.2.R.c      Palpable lymph node: Right     0= NO
+                                                   Submandibular size grtr than   1= YES
+                                                   1 cm                           -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   74    2 2.0       RSBHOD           A.2.R.c      Palpable lymph node: Right     0= NO
+                                                   Submandibular hard             1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   76    2 2.0       RSBTOD           A.2.R.c      Palpable lymph node: Right     0= NO
+                                                   Submandibular tenderness       1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   78    2 2.0       LSPROD           A.2.L.c      Palpable lymph node: Left      0= NO
+                                                   Submandibular Present          1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   80    2 2.0       LSBSOD           A.2.L.c      Palpable lymph node: Left      0= NO
+                                                   Submandibular size grtr than   1= YES
+                                                   1 cm                           -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   82    2 2.0       LSBHOD           A.2.L.c      Palpable lymph node: Left      0= NO
+                                                   Submandibular hard             1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   84    2 2.0       LSBTOD           A.2.L.c      Palpable lymph node: Left      0= NO
+                                                   Submandibular tenderness       1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   86    2 2.0       RMPROD           A.2.R.d      Palpable lymph node: Right     0= NO
+                                                   Submental Present              1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   88    2 2.0       RSESOD           A.2.R.d      Palpable lymph node: Right     0= NO
+                                                   Submental size grtr than 1 cm  1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   90    2 2.0       RSEHOD           A.2.R.d      Palpable lymph node: Right     0= NO
+                                                   Submental hard                 1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   92    2 2.0       RSETOD           A.2.R.d      Palpable lymph node: Right     0= NO
+                                                   Submental tenderness           1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   94    2 2.0       LMPROD           A.2.L.d      Palpable lymph node: Left      0= NO
+                                                   Submental Present              1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   96    2 2.0       LSESOD           A.2.L.d      Palpable lymph node: Left      0= NO
+                                                   Submental size grtr than 1 cm  1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   98    2 2.0       LSEHOD           A.2.L.d      Palpable lymph node: Left      0= NO
+                                                   Submental hard                 1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  100    2 2.0       LSETOD           A.2.L.d      Palpable lymph node: Left      0= NO
+                                                   Submental tenderness           1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  102    2 2.0       ROPROD           A.2.R.e      Palpable lymph node: Right     0= NO
+                                                   Occipital Present              1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  104    2 2.0       ROCSOD           A.2.R.e      Palpable lymph node: Right     0= NO
+                                                   Occipital size grtr than 1 cm  1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  106    2 2.0       ROCHOD           A.2.R.e      Palpable lymph node: Right     0= NO
+                                                   Occipital hard                 1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  108    2 2.0       ROCTOD           A.2.R.e      Palpable lymph node: Right     0= NO
+                                                   Occipital tenderness           1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  110    2 2.0       LOPROD           A.2.L.e      Palpable lymph node: Left      0= NO
+                                                   Occipital Present              1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  112    2 2.0       LOCSOD           A.2.L.e      Palpable lymph node: Left      0= NO
+                                                   Occipital size grtr than 1 cm  1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  114    2 2.0       LOCHOD           A.2.L.e      Palpable lymph node: Left      0= NO
+                                                   Occipital hard                 1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  116    2 2.0       LOCTOD           A.2.L.e      Palpable lymph node: Left      0= NO
+                                                   Occipital tenderness           1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  118    2 2.0       RCPROD           A.2.R.f      Palpable lymph node: Right     0= NO
+                                                   Posterior Cervical Present     1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  120    2 2.0       RPCSOD           A.2.R.f      Palpable lymph node: Right     0= NO
+                                                   Posterior Cervical size grtr   1= YES
+                                                   than 1 cm                      -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  122    2 2.0       RPCHOD           A.2.R.f      Palpable lymph node: Right     0= NO
+                                                   Posterior Cervical hard        1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  124    2 2.0       RPCTOD           A.2.R.f      Palpable lymph node: Right     0= NO
+                                                   Posterior Cervical tenderness  1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  126    2 2.0       LCPROD           A.2.L.f      Palpable lymph node: Left      0= NO
+                                                   Posterior Cervical Present     1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  128    2 2.0       LPCSOD           A.2.L.f      Palpable lymph node: Left      0= NO
+                                                   Posterior Cervical size grtr   1= YES
+                                                   than 1 cm                      -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  130    2 2.0       LPCHOD           A.2.L.f      Palpable lymph node: Left      0= NO
+                                                   Posterior Cervical hard        1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  132    2 2.0       LPCTOD           A.2.L.f      Palpable lymph node: Left      0= NO
+                                                   Posterior Cervical tenderness  1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  134    2 2.0       RVPROD           A.2.R.g      Palpable lymph node: Right     0= NO
+                                                   Superclavicular Present        1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  136    2 2.0       RSCSOD           A.2.R.g      Palpable lymph node: Right     0= NO
+                                                   Superclavicular size grtr      1= YES
+                                                   than 1 cm                      -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  138    2 2.0       RSCHOD           A.2.R.g      Palpable lymph node: Right     0= NO
+                                                   Superclavicular hard           1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  140    2 2.0       RSCTOD           A.2.R.g      Palpable lymph node: Right     0= NO
+                                                   Superclavicular tenderness     1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  142    2 2.0       LVPROD           A.2.L.g      Palpable lymph node: Left      0= NO
+                                                   Superclavicular Present        1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  144    2 2.0       LSCSOD           A.2.L.g      Palpable lymph node: Left      0= NO
+                                                   Superclavicular size grtr      1= YES
+                                                   than 1 cm                      -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  146    2 2.0       LSCHOD           A.2.L.g      Palpable lymph node: Left      0= NO
+                                                   Superclavicular hard           1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  148    2 2.0       LSCTOD           A.2.L.g      Palpable lymph node: Left      0= NO
+                                                   Superclavicular tenderness     1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  150    2 2.0       RAPROD           A.2.R.h      Palpable lymph node: Right     0= NO
+                                                   Anterior Cervical Present      1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  152    2 2.0       RACSOD           A.2.R.h      Palpable lymph node: Right     0= NO
+                                                   Anterior Cervical size grtr    1= YES
+                                                   than 1 cm                      -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  154    2 2.0       RACHOD           A.2.R.h      Palpable lymph node: Right     0= NO
+                                                   Anterior Cervical hard         1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  156    2 2.0       RACTOD           A.2.R.h      Palpable lymph node: Right     0= NO
+                                                   Anterior Cervical tenderness   1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  158    2 2.0       LAPROD           A.2.L.h      Palpable lymph node: Left      0= NO
+                                                   Anterior Cervical Present      1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  160    2 2.0       LACSOD           A.2.L.h      Palpable lymph node: Left      0= NO
+                                                   Anterior Cervical size grtr    1= YES
+                                                   than 1 cm                      -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  162    2 2.0       LACHOD           A.2.L.h      Palpable lymph node: Left      0= NO
+                                                   Anterior Cervical hard         1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  164    2 2.0       LACTOD           A.2.L.h      Palpable lymph node: Left      0= NO
+                                                   Anterior Cervical tenderness   1= YES
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  166    2 2.0       LTOTOD           B.1          Total # of lesions             0= Zero lesions
+                                                                                  1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+                                                                                  -1= N.A. (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  168    2 $         DUM1OD           OldB.1       OLD: Dummy variable            Character
+
+  170    2 2.0       PLENOD           C.1.a.i      Salivary gland exam: Left      1= YES
+                                                   parotid enlargement            0= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  172    2 2.0       PLTNOD           C.1.a.ii     Salivary gland exam: Left      1= YES
+                                                   parotid tenderness             0= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  174    2 2.0       PLSVOD           C.1.a.iii    Salivary gland exam: Left      1= YES
+                                                   parotid saliva expression      0= NO
+                                                   absent                         -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  176    2 2.0       PRENOD           C.1.b.i      Salivary gland exam: Right     1= YES
+                                                   parotid enlargement            0= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  178    2 2.0       PRTNOD           C.1.b.ii     Salivary gland exam: Right     1= YES
+                                                   parotid tenderness             0= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  180    2 2.0       PRSVOD           C.1.b.iii    Salivary gland exam: Right     1= YES
+                                                   parotid saliva expression      0= NO
+                                                   absent                         -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  182    2 2.0       SLENOD           C.2.a.i      Salivary gland exam: Left      1= YES
+                                                   submandibular enlargement      0= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  184    2 2.0       SLTNOD           C.2.a.ii     Salivary gland exam: Left      1= YES
+                                                   submandibular tenderness       0= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  186    2 2.0       SLSVOD           C.2.a.iii    Salivary gland exam: Left      1= YES
+                                                   submandibular sublingual       0= NO
+                                                   saliva expression absent       -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  188    2 2.0       SRENOD           C.2.b.i      Salivary gland exam: Right     1= YES
+                                                   submandibular enlargement      0= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  190    2 2.0       SRTNOD           C.2.b.ii     Salivary gland exam: Right     1= YES
+                                                   submandibular tenderness       0= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  192    2 2.0       SRSVOD           C.2.b.iii    Salivary gland exam: Right     1= YES
+                                                   submandibular sublingual       0= NO
+                                                   saliva expression absent       -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  194    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  195    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

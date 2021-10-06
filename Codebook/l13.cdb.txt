@@ -1,0 +1,81 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+L13 - Gonorrhea Results
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    6 $         FKEY             OldA.0       OLD: form identifier number    Character
+
+   17    3 $         INITLN           A.0          Initials of person completing  Character
+                                                   form
+
+   20    8 $         VERSLN           A.0          Form version                   01/01/94= 01/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   28    2 2.0       AVAILN           A.1          Gonorrhea test results         1= Yes
+                                                   available                      2= No, Sample Inadequate
+                                                                                  3= No, Other Reason
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   30   30 $         RNNALN           A.1          Specify reason Gonorrhea test  Character
+                                                   results not available
+
+   60    8 $         SPDTLN           A.2          Date sample taken              10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   68    2 2.0       GLCRLN           A.3          Gonorrhea LCR test result      1= DETECTED
+                                                                                  2= NOT DETECTED
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   70    2 2.0       GONOLN           OldA.3       OLD: Gonorrhea results GEN-    1= PRESENT/POSITIVE
+                                                   PROBE                          2= ABSENT/NEGATIVE
+                                                                                  3= INDETERMINATE
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   72    8 $         PDTELN           A.4          Date sample tested for         10/01/94= 10/01/94
+                                                   Gonorrhea                      .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   80    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+   81    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

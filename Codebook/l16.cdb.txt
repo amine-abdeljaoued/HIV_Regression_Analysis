@@ -1,0 +1,1178 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+L16 - Pelvic Exam: Dysplasia Treatment Form
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    6 $         FKEY             OldA.0       OLD: Form identifier number    Character
+
+   17    3 $         INITLQ           A.0          Initials of person completing  Character
+                                                   form
+
+   20    8 $         VERSLQ           A.0          Form version                   01/01/94= 01/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   28    8 $         PDTELQ           A.1          Date of procedure              10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   36    2 2.0       ONTXLQ           OldA.2       OLD: New dysplasia treatment   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   38    2 2.0       OFUPLQ           OldA.3       OLD: Follow up of repeated     1= Yes
+                                                   dysplasia procedure            2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   40    2 2.0       FTMTLQ           A.2          First dysplasia treatment      1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   42    2 2.0       RTMTLQ           A.3          Repeat dysplasia treatment     1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   44    2 2.0       NTMTLQ           A.3.a        total # of treatments (not     1= 1
+                                                   including this one)            .
+                                                                                  .
+                                                                                  20= 20
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   46    8 $         PTD1LQ           A.4.a        Date of dysplasia treatment #1 01/01/30= 01/01/30
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   54   25 $         PTM1LQ           A.4.a.i      Method of dysplasia treatment  Character
+                                                   #1
+
+   79    8 $         PTD2LQ           A.4.b        Date of previous treatment #2  01/01/30= 01/01/30
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   87   25 $         PTM2LQ           A.4.b.i      Method of dysplasia treatment  Character
+                                                   #2
+
+  112    8 $         PTD3LQ           A.4.c        Date of dysplasia treatment #3 01/01/30= 01/01/30
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  120   25 $         PTM3LQ           A.4.c.i      Method of dysplasia treatment  Character
+                                                   #3
+
+  145    8 $         ODLTLQ           OldA.4       OLD: Date of last dysplasia    01/01/30= 01/01/30
+                                                   treatment                      .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  153    2 2.0       OICVLQ           OldA.5.a     OLD: Worst cervical lesion     1= None
+                                                                                  2= LG SIL: HPV
+                                                                                  3= LG SIL: CIN I
+                                                                                  4= LG SIL: Unspecified
+                                                                                  5= HG SIL: CIN II (Mod
+                                                                                     dysplasia)
+                                                                                  6= HG SIL: CIN III (Severe/
+                                                                                     CIS)
+                                                                                  7= Microinvasive CA
+                                                                                  8= Invasive CA
+                                                                                  9= Adenocarcinoma
+                                                                                  10= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  155   20 $         OICSLQ           OldA.5.a     OLD: Specify worst cervical    Character
+                                                   lesion
+
+  175    2 2.0       ICV_LQ           A.5.a        Worst cervical lesion          1= None
+                                                                                  2= Exophytic condyloma
+                                                                                  3= LG SIL: HPV
+                                                                                  4= LG SIL: CIN I (Mild
+                                                                                     dysplasia)
+                                                                                  5= LG SIL: Unspecified
+                                                                                  6= HG SIL: CIN II (Mod
+                                                                                     dysplasia)
+                                                                                  7= HG SIL: CIN III (Severe/
+                                                                                     CIS)
+                                                                                  8= Microinvasive CA
+                                                                                  9= Invasive CA
+                                                                                  10= Adenocarcinoma-in-situ
+                                                                                  11= Adenocarcinoma
+                                                                                  12= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  177   25 $         ICVSLQ           A.5.a.i      Specify other worst cervical   Character
+                                                   lesion
+
+  202    2 2.0       IVG_LQ           A.5.b        Worst vaginal lesion           1= None
+                                                                                  2= HPV Lesion
+                                                                                  3= VAIN I
+                                                                                  4= VAIN II
+                                                                                  5= VAIN III
+                                                                                  6= Invasive CA
+                                                                                  7= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  204   20 $         IVGSLQ           A.5.b.i      Specify other worst vaginal    Character
+                                                   lesion
+
+  224    2 2.0       IVL_LQ           A.5.c        Worst vulvar lesion            1= None
+                                                                                  2= HPV Lesion
+                                                                                  3= VIN I
+                                                                                  4= VIN II
+                                                                                  5= VIN III
+                                                                                  6= Invasive CA
+                                                                                  7= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  226   20 $         IVLSLQ           A.5.c.i      Specify other worst vulvar     Character
+                                                   lesion
+
+  246    2 2.0       IPA_LQ           A.5.d        Worst perianal lesion          1= None
+                                                                                  2= HPV Lesion
+                                                                                  3= PAIN I
+                                                                                  4= PAIN II
+                                                                                  5= PAIN III
+                                                                                  6= Invasive CA
+                                                                                  7= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  248   20 $         IPASLQ           A.5.d.i      Specify other worst perianal   Character
+                                                   lesion
+
+  268    2 2.0       IAN_LQ           A.5.e        Worst anal lesion              1= None
+                                                                                  2= HPV lesion
+                                                                                  3= AIN I
+                                                                                  4= AIN II
+                                                                                  5= AIN III
+                                                                                  6= Invasive CA
+                                                                                  7= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  270   20 $         IANSLQ           A.5.e.i      Specify other worst anal       Character
+                                                   lesion
+
+  290    2 2.0       IEN_LQ           A.5.f        Worst endometrium lesion       1= None
+                                                                                  2= Atypical hyperplasia
+                                                                                  3= Invasive CA
+                                                                                  4= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  292   20 $         IENSLQ           A.5.f.i      Specify other worst            Character
+                                                   endometrium lesion
+
+  312    2 2.0       IOT_LQ           A.5.g        Worst other location lesion    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  314   20 $         IOTLLQ           A.5.g.i      Specify location other worst   Character
+                                                   lesion
+
+  334   20 $         IOTSLQ           A.5.g.ii     Specify type of lesion         Character
+                                                   (description) other worst
+                                                   lesion
+
+  354    2 2.0       ITPSLQ           A.6.a        Indication for tx based on:    1= YES
+                                                   Suspicious Pap w/ inadequate   2= NO
+                                                   colpo.                         -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  356    2 2.0       ITHDLQ           A.6.b        Indication for tx based on:    1= YES
+                                                   Histologic dx                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  358    2 2.0       ITDILQ           A.6.c        Indication for tx based on:    1= YES
+                                                   Pap-histologic-colpo           2= NO
+                                                   discrepancy                    -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  360    2 2.0       ITACLQ           A.6.d        Indication for tx based on:    1= YES
+                                                   Abnormal colposcopy            2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  362    2 2.0       ITGLLQ           A.6.e        Indication for tx based on:    1= YES
+                                                   Grossly apparent lesion        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  364    2 2.0       ITOTLQ           A.6.f        Indication for tx based on:    1= YES
+                                                   Other                          2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  366   20 $         ITOSLQ           A.6.f.i      Specify other basis for        Character
+                                                   indication for tx
+
+  386    2 2.0       CVNOLQ           A.7.a.1      Tx modality: cervix - none/    1= YES
+                                                   observation                    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  388    2 2.0       CVINLQ           A.7.a.2      Tx modality: cervix -          1= YES
+                                                   interferon                     2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  390    2 2.0       CV5FLQ           A.7.a.3      Tx modality: cervix - 5-FU     1= YES
+                                                                                  2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  392    2 2.0       CVCRLQ           A.7.a.4      Tx modality: cervix -          1= YES
+                                                   cryotherapy                    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  394    2 2.0       CVLVLQ           A.7.a.5      Tx modality: cervix - laser    1= Yes
+                                                   vaporization                   2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  396    2 2.0       CVLCLQ           A.7.a.6      Tx modality: cervix - laser    1= Yes
+                                                   conization                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  398    2 2.0       CVLLLQ           A.7.a.7      Tx modality: cervix - LEEP/    1= Yes
+                                                   LLETZ (transformation zone)    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  400    2 2.0       CVLPLQ           A.7.a.8      Tx modality: cervix - LEEP     1= Yes
+                                                   conization                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  402    2 2.0       CVCKLQ           A.7.a.9      Tx modality: cervix - Cold     1= Yes
+                                                   knife conization               2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  404    2 2.0       CVSHLQ           A.7.a.10     Tx modality: cervix -          1= Yes
+                                                   hysterectomy (simple)          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  406    2 2.0       CVRHLQ           A.7.a.11     Tx modality: cervix -          1= Yes
+                                                   hysterectomy (radical)         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  408    2 2.0       CVRTLQ           A.7.a.12     Tx modality: cervix -          1= Yes
+                                                   radiation therapy              2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  410    2 2.0       CVOTLQ           A.7.a.13     Tx modality: cervix - other    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  412   25 $         CVOSLQ           A.7.a.13     Specify other tx modality:     Character
+                                                   cervix
+
+  437    2 2.0       OCVKLQ           OldA.7.a.4   OLD: Tx modality: cervix -     1= Yes
+                                                   cold knife                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  439    2 2.0       OCVRLQ           OldA.7.a.5   OLD: Tx modality: cervix -     1= Yes
+                                                   radiation                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  441    2 2.0       OCVCLQ           OldA.7.A.6   OLD: Tx modality: cervix -     1= Yes
+                                                   cryotherapy                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  443    2 2.0       OCVVLQ           OldA.7.A.7   OLD: Tx modality: cervix -     1= Yes
+                                                   laser vaporization             2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  445    2 2.0       OCVLLQ           OldA.7.A.8   OLD: Tx modality: cervix -     1= Yes
+                                                   laser conization               2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  447    2 2.0       OCVTLQ           OldA.7.A.9   OLD: Tx modality: cervix -     1= Yes
+                                                   LEEP/LLETZ (trans zone)        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  449    2 2.0       OCVHLQ           OldA.7.A.10  OLD: Tx modality: cervix -     1= Yes
+                                                   hysterectomy                   2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  451    2 2.0       OCVOLQ           OldA.7.A.11  OLD: Tx modality: cervix -     1= Yes
+                                                   other                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  453   20 $         OCVSLQ           OldA.7.A.11  OLD: Specify other tx          Character
+                                                   modality: cervix
+
+  473    2 2.0       OECCLQ           OldA.7.b     OLD: ECC done                  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  475    2 2.0       VGNOLQ           A.7.b.1      Tx modality: vagina - none/    1= YES
+                                                   observation                    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  477    2 2.0       VGTCLQ           A.7.b.2      Tx modality: vagina - TCA      1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  479    2 2.0       VGPOLQ           A.7.b.3      Tx modality: vagina -          1= Yes
+                                                   podophyllin                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  481    2 2.0       VGCOLQ           A.7.b.4      Tx modality: vagina - condylox 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  483    2 2.0       VGINLQ           A.7.b.5      Tx modality: vagina -          1= Yes
+                                                   interferon                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  485    2 2.0       VG5FLQ           A.7.b.6      Tx modality: vagina - 5-FU     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  487    2 2.0       VGCRLQ           A.7.b.7      Tx modality: vagina -          1= Yes
+                                                   cryotherapy                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  489    2 2.0       VGLVLQ           A.7.b.8      Tx modality: vagina - laser    1= Yes
+                                                   vaporization                   2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  491    2 2.0       VGLPLQ           A.7.b.9      Tx modality: vagina - LEEP     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  493    2 2.0       VGELLQ           A.7.b.10     Tx modality: vagina - vaginal  1= Yes
+                                                   excision (local)               2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  495    2 2.0       VGV_LQ           A.7.b.11     Tx modality: vagina -          1= Yes
+                                                   vaginectomy                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  497    2 2.0       VGRTLQ           A.7.b.12     Tx modality: vagina -          1= Yes
+                                                   radiation therapy              2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  499    2 2.0       VGOTLQ           A.7.b.13     Tx modality: vagina - other    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  501   20 $         VGOSLQ           A.7.b.13     Specify other tx modality:     Character
+                                                   vagina
+
+  521    2 2.0       OVGRLQ           OldA.7.C.7   OLD: Tx modality: vagina -     1= Yes
+                                                   radiation                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  523    2 2.0       OVGELQ           OldA.7.C.8   OLD: Tx modality: vagina -     1= Yes
+                                                   excision                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  525    2 2.0       OVGCLQ           OldA.7.C.9   OLD: Tx modality: vagina -     1= Yes
+                                                   cryotherapy                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  527    2 2.0       OVGVLQ           OldA.7.C.10  OLD: Tx modality: vagina -     1= Yes
+                                                   laser vaporization             2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  529    2 2.0       OVGTLQ           OldA.7.C.11  OLD: Tx modality: vagina -     1= Yes
+                                                   LEEP/LLETZ (trans zone)        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  531    2 2.0       OVGOLQ           OldA.7.C.12  OLD: Tx modality: vagina -     1= Yes
+                                                   other                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  533   20 $         OVGSLQ           OldA.7.C.12  OLD: Specify other tx          Character
+                                                   modality: vagina
+
+  553    2 2.0       VLNOLQ           A.7.c.1      Tx modality: vulva - none/     1= YES
+                                                   observation                    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  555    2 2.0       VLTCLQ           A.7.c.2      Tx modality: vulva - TCA       1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  557    2 2.0       VLPOLQ           A.7.c.3      Tx modality: vulva -           1= Yes
+                                                   podophyllin                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  559    2 2.0       VLCOLQ           A.7.c.4      Tx modality: vulva - condylox  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  561    2 2.0       VLINLQ           A.7.c.5      Tx modality: vulva -           1= Yes
+                                                   interferon                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  563    2 2.0       VL5FLQ           A.7.c.6      Tx modality: vulva - 5-FU      1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  565    2 2.0       VLCRLQ           A.7.c.7      Tx modality: vulva -           1= Yes
+                                                   cryotherapy                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  567    2 2.0       VLLVLQ           A.7.c.8      Tx modality: vulva - laser     1= Yes
+                                                   vaporization                   2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  569    2 2.0       VLLPLQ           A.7.c.9      Tx modality: vulva - LEEP      1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  571    2 2.0       VLLELQ           A.7.c.10     Tx modality: vulva - wide      1= Yes
+                                                   local excision                 2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  573    2 2.0       VLV_LQ           A.7.c.11     Tx modality: vulva -           1= Yes
+                                                   vulvectomy                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  575    2 2.0       VLRTLQ           A.7.c.12     Tx modality: vulva -           1= Yes
+                                                   radiation therapy              2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  577    2 2.0       VLOTLQ           A.7.c.13     Tx modality: vulva - other     1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  579   20 $         VLOSLQ           A.7.c.13     Specify other tx modality:     Character
+                                                   vulva
+
+  599    2 2.0       OVLRLQ           OldA.7.D.7   OLD: Tx modality: vulva -      1= Yes
+                                                   radiation                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  601    2 2.0       OVLCLQ           OldA.7.D.8   OLD: Tx modality: vulva -      1= Yes
+                                                   cryotherapy                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  603    2 2.0       OVLLLQ           OldA.7.D.9   OLD: Tx modality: vulva -      1= Yes
+                                                   laser vaporization             2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  605    2 2.0       OVLTLQ           OldA.7.D.10  OLD: Tx modality: vulva -      1= Yes
+                                                   LEEP/LLETZ (trans zone)        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  607    2 2.0       OVLELQ           OldA.7.D.11  OLD: Tx modality: vulva -      1= Yes
+                                                   excision                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  609    2 2.0       OVLOLQ           OldA.7.D.12  OLD: Tx modality: vulva -      1= Yes
+                                                   other                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  611   20 $         OVLSLQ           OldA.7.D.12  OLD: Specify other tx          Character
+                                                   modality: vulva
+
+  631    2 2.0       PANOLQ           A.7.d.1      Tx modality: perianal - none/  1= YES
+                                                   observation                    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  633    2 2.0       PATCLQ           A.7.d.2      Tx modality: perianal - TCA    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  635    2 2.0       PAPOLQ           A.7.d.3      Tx modality: perianal -        1= Yes
+                                                   podophyllin                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  637    2 2.0       PACOLQ           A.7.d.4      Tx modality: perianal -        1= Yes
+                                                   condylox                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  639    2 2.0       PAINLQ           A.7.d.5      Tx modality: perianal -        1= Yes
+                                                   interferon                     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  641    2 2.0       PA5FLQ           A.7.d.6      Tx modality: perianal - 5-FU   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  643    2 2.0       PACRLQ           A.7.d.7      Tx modality: perianal -        1= Yes
+                                                   cryotherapy                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  645    2 2.0       PALVLQ           A.7.d.8      Tx modality: perianal - laser  1= Yes
+                                                   vaporization                   2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  647    2 2.0       PALPLQ           A.7.d.9      Tx modality: perianal - LEEP   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  649    2 2.0       PAEXLQ           A.7.d.10     Tx modality: perianal -        1= Yes
+                                                   excision                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  651    2 2.0       PARTLQ           A.7.d.11     Tx modality: perianal -        1= Yes
+                                                   radiation                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  653    2 2.0       PAOTLQ           A.7.d.12     Tx modality: perianal - other  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  655   20 $         PAOSLQ           A.7.d.12     Specify other tx modality:     Character
+                                                   perianal
+
+  675    2 2.0       OPARLQ           OldA.7.E.7   OLD: Tx modality: perianal -   1= Yes
+                                                   radiation                      2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  677    2 2.0       OPACLQ           OldA.7.E.8   OLD: Tx modality: perianal -   1= Yes
+                                                   cryotherapy                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  679    2 2.0       OPAVLQ           OldA.7.E.9   OLD: Tx modality: perianal -   1= Yes
+                                                   laser vaporization             2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  681    2 2.0       OPATLQ           OldA.7.E.10  OLD: Tx modality: perianal -   1= Yes
+                                                   LEEP/LLETZ (trans zone)        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  683    2 2.0       OPAELQ           OldA.7.E.12  OLD: Tx modality: perianal -   1= Yes
+                                                   excision                       2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  685    2 2.0       OPAOLQ           OldA.7.E.13  OLD: Tx modality: perianal -   1= Yes
+                                                   other                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  687   20 $         OPASLQ           OldA.7.E.13  OLD: Specify other tx          Character
+                                                   modality: perianal
+
+  707    2 2.0       ANNOLQ           A.7.e.1      Tx modality: anal - none/      1= YES
+                                                   observation                    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  709    2 2.0       ANTCLQ           A.7.e.2      Tx modality: anal - TCA        1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  711    2 2.0       ANPOLQ           A.7.e.3      Tx modality: anal -            1= Yes
+                                                   podophyllin                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  713    2 2.0       ANCOLQ           A.7.e.4      Tx modality: anal - condylox   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  715    2 2.0       ANINLQ           A.7.e.5      Tx modality: anal - interferon 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  717    2 2.0       AN5FLQ           A.7.e.6      Tx modality: anal - 5-FU       1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  719    2 2.0       ANCRLQ           A.7.e.7      Tx modality: anal -            1= Yes
+                                                   cryotherapy                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  721    2 2.0       ANLVLQ           A.7.e.8      Tx modality: anal - laser      1= Yes
+                                                   vaporization                   2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  723    2 2.0       ANLPLQ           A.7.e.9      Tx modality: anal - LEEP       1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  725    2 2.0       ANEXLQ           A.7.e.10     Tx modality: anal - excision   1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  727    2 2.0       ANRTLQ           A.7.e.11     Tx modality: anal - radiation  1= Yes
+                                                   therapy                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  729    2 2.0       ANOTLQ           A.7.e.12     Tx modality: anal - other      1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  731   25 $         ANOSLQ           A.7.e.12     Specify other tx modality:     Character
+                                                   anal
+
+  756    2 2.0       ENNOLQ           A.7.f.1      Tx modality: endometrium -     1= YES
+                                                   none/observation               2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  758    2 2.0       ENHTLQ           A.7.f.2      Tx modality: endometrium -     1= Yes
+                                                   hormone therapy                2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  760    2 2.0       ENDCLQ           A.7.f.3      Tx modality: endometrium -     1= Yes
+                                                   dilation and curettage         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  762    2 2.0       ENSHLQ           A.7.f.4      Tx modality: endometrium -     1= Yes
+                                                   hysterectomy (simple)          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  764    2 2.0       ENRHLQ           A.7.f.5      Tx modality: endometrium -     1= Yes
+                                                   hysterectomy (radical)         2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  766    2 2.0       ENRTLQ           A.7.f.6      Tx modality: endometrium -     1= Yes
+                                                   radiation therapy              2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  768    2 2.0       ENOTLQ           A.7.f.7      Tx modality: endometrium -     1= Yes
+                                                   other                          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  770   25 $         ENOSLQ           A.7.f.7      Specify other tx modality:     Character
+                                                   endometrium
+
+  795    2 2.0       OTYNLQ           A.7.g        Other location                 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  797   25 $         OTLOLQ           A.7.g.i      Specify other location         Character
+
+  822   25 $         OTMOLQ           A.7.g.ii     Specify tx modality: other     Character
+                                                   location
+
+  847    2 2.0       DYSTLQ           A.8          Participant is part of         1= YES
+                                                   another dysplasia study        2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  849   25 $         DYSNLQ           A.8.a        Specify name of other study    Character
+
+  874   25 $         DYSSLQ           A.8.b        Specify name of study site     Character
+
+  899    2 2.0       HSBPLQ           A.9          Histologic evaluation          1= YES
+                                                   obtained/biopsy performed      2= NO
+                                                   during this tx                 -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  901    2 2.0       FUPSLQ           A.10         Dysplasia treatment follow-up  1= YES
+                                                   scheduled                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  903    2 2.0       FUTMLQ           A.10.a       Scheduled follow-up number of  1= 1
+                                                   weeks/months                   .
+                                                                                  .
+                                                                                  24= 24
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  905    2 2.0       FUWMLQ           A.10.a       Scheduled follow-up in weeks   1= WEEKS
+                                                   or months                      2= MONTHS
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  907    2 2.0       FUTYLQ           A.10.b       Indicate type of follow-up     1= Repeat pap only
+                                                   planned                        2= Repeat pap and colposcopy
+                                                                                  3= Repeat colposcopy only
+                                                                                  4= Repeat treatment
+                                                                                  5= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  909   20 $         FUTSLQ           A.10.b.i     Specify other type of follow-  Character
+                                                   up planned
+
+  929    2 2.0       TC__LQ           A.11         Treatment completed today      1= YES, Complete
+                                                                                  2= NO, Incomplete
+                                                                                  3= Ongoing
+                                                                                  4= Delayed
+                                                                                  5= Other
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  931   25 $         TCOSLQ           A.11.a       Specify other reason           Character
+                                                   treatment not completed today
+
+  956    2 2.0       IOSPLQ           A.12.a       Info. obtained: study          1= YES
+                                                   personnel                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  958    2 2.0       IOCALQ           A.12.b       Info. obtained: chart          1= YES
+                                                   abstraction                    2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  960    2 2.0       IODCLQ           A.12.c       Info. obtained: direct         1= Yes
+                                                   contact with provider          2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  962    2 2.0       IOHXLQ           A.12.d       Info. obtained: patient        1= Yes
+                                                   history                        2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  964    2 2.0       IOOTLQ           A.12.e       Info. obtained: other          1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  966   25 $         IOOSLQ           A.12.e.i     Specify other source of        Character
+                                                   information
+
+  991    2 2.0       ISSPLQ           A.13.a       Primary source of info: study  1= YES
+                                                   personnel                      2= NO
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  993    2 2.0       ISCALQ           A.13.b       Primary source of info: chart  1= Yes
+                                                   abstraction                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  995    2 2.0       ISDCLQ           A.13.c       Primary source of info:        1= Yes
+                                                   direct contact with provider   2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  997    2 2.0       ISHXLQ           A.13.d       Primary source of info:        1= Yes
+                                                   patient history                2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  999    2 2.0       ISOTLQ           A.13.e       Primary source of info: other  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+ 1001   25 $         ISOSLQ           A.13.e.i     Specify other primary source   Character
+                                                   of info
+
+ 1026   50 $         NAMELQ           A.14         Name of person providing tx    Character
+                                                   on this date
+
+ 1076   50 $         AD11LQ           A.15         Name/address of person         Character
+                                                   providing tx - line 1
+
+ 1126   50 $         AD12LQ           A.15         Address of person providing    Character
+                                                   tx - line 2
+
+ 1176   50 $         AD13LQ           A.15         Address of person providing    Character
+                                                   tx - line 3
+
+ 1226    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+ 1227    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

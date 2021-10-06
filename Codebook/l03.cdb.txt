@@ -1,0 +1,295 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+L03 - Automated CBC/Differential
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.0          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.0          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    2 2.0       VTYP             OldA.0       Old: Core or VRS visit         1= CORE VISIT
+                                                                                  2= 3 MONTH VRS VISIT
+
+   13    6 $         FKEY             OldA.0       OLD: Form identifier number    Character
+
+   19    3 $         INITLC           A.0          Initials of person completing  Character
+                                                   form
+
+   22    8 $         VERSLC           A.0          Form version                   01/01/94= 01/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   30    2 2.0       AVAILC           A.1          Automated CBC/Diff test        1= Yes
+                                                   results available              2= No, Sample Inadequate
+                                                                                  3= No, Other Reason
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   32   25 $         RNNALC           A.1.a        Reason automated CBC/diff      Character
+                                                   results not available
+
+   57    8 $         SPDTLC           A.2          Date sample drawn              10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   65    5 5.1       HGB_LC           A.2.a        HGB result (gm/dl)             8.0= 8.0
+                                                                                  .
+                                                                                  .
+                                                                                  17.0= 17.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   70    5 5.1       HCT_LC           A.2.b        HCT result (%)                 24.0= 24.0
+                                                                                  .
+                                                                                  .
+                                                                                  51.0= 51.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   75    5 5.1       MCV_LC           A.2.c        MCV result (F1, um3, cumm or   59.0= 59.0
+                                                   mm3)                           .
+                                                                                  .
+                                                                                  128.0= 128.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   80    4 4.0       PLATLC           A.2.d        Platelet CT (K, cumm, mm3 or   2= 2
+                                                   103/ul)                        .
+                                                                                  .
+                                                                                  478= 478
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   84    5 5.2       WBC_LC           A.2.e        WBC (total) (103, cumm)        2.00= 2.00
+                                                                                  .
+                                                                                  .
+                                                                                  12.00= 12.00
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   89    5 5.2       RBC_LC           A.2.f        RBC (total) (10E12/L, Million  2.00= 2.00
+                                                   cells/Microliter)              .
+                                                                                  .
+                                                                                  8.00= 8.00
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   94    2 2.0       DIFFLC           A.3          Type of automated count        1= 3-PART
+                                                                                  2= 5-PART
+                                                                                  3= Automated results not
+                                                                                     reported and/or flagged as
+                                                                                     unreliable
+                                                                                  4= Not done / not tested
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   96    2 2.0       LYMPLC           A.3.a        Status of automated            1= Item not listed on lab
+                                                   lymphocytes count                 report
+                                                                                  2= Item listed with no value
+                                                                                  3= Item listed with value
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   98    4 4.1       LPCTLC           A.3.a.i      Automated lymphocytes count(%) 2= 2
+                                                                                  .
+                                                                                  .
+                                                                                  70.0= 70.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  102    5 5.0       LPMMLC           A.3.a.ii     Automated lymphocytes count    50= 50
+                                                   (per mm3)                      .
+                                                                                  .
+                                                                                  4200= 4200
+                                                                                  -1= NA (Skipped)
+                                                                                  -5= NA
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  107    2 2.0       POLYLC           A.3.b        Status of automated            1= Item not listed on lab
+                                                   polymorphs/granseuts/segs         report
+                                                   count                          2= Item listed with no value
+                                                                                  3= Item listed with value
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  109    4 4.1       PPCTLC           A.3.b.i      Automated polymorphs/          15= 15
+                                                   granseuts/segs count(%)        .
+                                                                                  .
+                                                                                  91.0= 91.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  113    5 5.0       PPMMLC           A.3.b.ii     Automated polymorphs/          500= 500
+                                                   granseuts/segs count (per mm3) .
+                                                                                  .
+                                                                                  8083= 8083
+                                                                                  -1= NA (Skipped)
+                                                                                  -5= NA
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  118    2 2.0       MONOLC           A.3.c        Status of automated monocytes  1= Item not listed on lab
+                                                   count                             report
+                                                                                  2= Item listed with no value
+                                                                                  3= Item listed with value
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  120    4 4.1       MPCTLC           A.3.c.i      Automated monocytes count(%)   2= 2
+                                                                                  .
+                                                                                  .
+                                                                                  17.0= 17.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  124    5 5.0       MPMMLC           A.3.c.ii     Automated monocytes count      20= 20
+                                                   (per mm3)                      .
+                                                                                  .
+                                                                                  1005= 1005
+                                                                                  -1= NA (Skipped)
+                                                                                  -5= NA
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  129    2 2.0       EOSNLC           A.3.d        Status of automated            1= Item not listed on lab
+                                                   eosinophils count                 report
+                                                                                  2= Item listed with no value
+                                                                                  3= Item listed with value
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  131    4 4.1       EPCTLC           A.3.d.i      Automated eosinophils count(%) 0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  11.0= 11.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  135    5 5.0       EPMMLC           A.3.d.ii     Automated eosinophils count    5= 5
+                                                   (per mm3)                      .
+                                                                                  .
+                                                                                  554= 554
+                                                                                  -1= NA (Skipped)
+                                                                                  -5= NA
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  140    2 2.0       BASOLC           A.3.e        Status of automated basophils  1= Item not listed on lab
+                                                   count                             report
+                                                                                  2= Item listed with no value
+                                                                                  3= Item listed with value
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  142    4 4.1       BPCTLC           A.3.e.i      Automated basophils count(%)   0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  3.0= 3.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  146    5 5.0       BPMMLC           A.3.e.ii     Automated basophils count      2= 2
+                                                   (per mm3)                      .
+                                                                                  .
+                                                                                  175= 175
+                                                                                  -1= NA (Skipped)
+                                                                                  -5= NA
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  151    2 2.0       UNDCLC           A.3.f        Status of automated LUCs       1= Item not listed on lab
+                                                   (large undiff/unident cells)      report
+                                                   count                          2= Item listed with no value
+                                                                                  3= Item listed with value
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  153    2 $         DUM1LC           OldA.3.f     OLD: A 3f 13 dum               Character
+
+  155    4 4.1       UPCTLC           A.3.f.i      Automated LUCs count(%)        0= 0
+                                                                                  .
+                                                                                  .
+                                                                                  8.0= 8.0
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  159    5 5.0       UPMMLC           A.3.f.ii     Automated LUCs count (per mm3) 75= 75
+                                                                                  .
+                                                                                  .
+                                                                                  428= 428
+                                                                                  -1= NA (Skipped)
+                                                                                  -5= NA
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  164    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  165    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.

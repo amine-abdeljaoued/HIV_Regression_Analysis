@@ -1,0 +1,531 @@
+                               CODEBOOK
+Visit 42: Women's Interagency HIV Study                              9-6-2017
+HPVKAB - HPV Information
+
+Start  ____Field____                      Section/
+Column Len  Format       Variable         Question          Description		     Code
+------ --- --------- ---------------- ------------ ------------------------------ ------------------------------
+    1    8 8.0       CASEID           A.1          Participant ID                 1001= ID 1001
+                                                                                  .
+                                                                                  .
+                                                                                  9999= ID 9999
+
+    9    2 2.0       VISIT            A.2          Visit #                        1= 1
+                                                                                  .
+                                                                                  .
+                                                                                  99= 99
+
+   11    8 $         VERSHP           A.3          Form version                   01/01/07= 01/01/07
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+
+   19    8 $         IDTEHP           A.4          Date of interview              10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   27    3 $         INITHP           A.5          Initials of person completing  Character
+                                                   form
+
+   30    8 $         LVISHP           A.6          Date of last study visit       10/01/94= 10/01/94
+                                                                                  .
+                                                                                  .
+                                                                                  12/31/15= 12/31/15
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   38    5 time5.    STIMHP           A.7          Time began                     01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   43    2 2.0       SMERHP           A.7          AM/PM for time began           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   45    5 time5.    ETIMHP           A.8          Time ended                     01:00= 01:00
+                                                                                  .
+                                                                                  .
+                                                                                  12:59= 12:59
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   50    2 2.0       EMERHP           A.8          AM/PM for time ended           1= AM
+                                                                                  2= PM
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   52    2 2.0       QPVSHP           A.9          Method of questionnaire        1= Self-asministered: I read
+                                                   administration at prior visit     it myself and completed it
+                                                                                     on my own
+                                                                                  2= Interviewer-administered:
+                                                                                     the questionnaire was read
+                                                                                     to me by the WIHS
+                                                                                     interviewer
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   54    2 2.0       QTDYHP           A.10         Method of questionnaire        1= SELF-ASMINISTERED (WIHS
+                                                   administration today              participant will read and
+                                                                                     complete the form on her
+                                                                                     own
+                                                                                  2= INTERVIEWER-ADMINISTERED
+                                                                                     (Interviewer will read an
+                                                                                     complete the form with
+                                                                                     the WIHS participant)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   56    2 2.0       HPV_HP           B.1          Participant's knowledge of     1= A virus acquired from sex
+                                                   what human papillomavirus is      that causes warts and
+                                                                                     cancer
+                                                                                  2= A virus acquired from a
+                                                                                     mosquito bite that makes
+                                                                                     people sick
+                                                                                  3= A virus that makes people
+                                                                                     unable to have children
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   58    2 2.0       HHCCHP           B.2.a        People with HPV - higher risk  1= True
+                                                   for cervical cancer            2= False
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   60    2 2.0       HMEDHP           B.2.b        People with HPV - can be       1= True
+                                                   cured with medication          2= False
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   62    2 2.0       HWRTHP           B.2.c        People with HPV - are at       1= True
+                                                   higher risk for genital warts  2= False
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   64    2 2.0       HCTLHP           B.2.d        People with HPV - usually can  1= True
+                                                   tell they have it              2= False
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   66    2 2.0       HCNDHP           B.2.e        People with HPV - condoms      1= True
+                                                   will keep it from spreading    2= False
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   68    2 2.0       PAP_HP           B.3          Participant's knowledge of     1= Vagina
+                                                   body part checked by Pap       2= Cervix (mouth of the womb)
+                                                                                  3= Uterus (womb)
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   70    2 2.0       POFNHP           B.4          Participant's knowledge of     1= Every 6 months
+                                                   frequency of Pap for HIV-      2= Every 1-3 years
+                                                   negative                       3= Every 4-5 years
+                                                                                  4= When a woman has a
+                                                                                     discharge
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   72    2 2.0       POFHHP           B.5          Participant's knowledge of     1= Every year, once two tests
+                                                   frequency of Pap for HIV-         are normal
+                                                   positive                       2= Every 3 years
+                                                                                  3= Every 4-5 years
+                                                                                  4= When a woman has a
+                                                                                     discharge
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   74    2 2.0       PPRPHP           B.6          Purpose of Pap test            1= To check for a yeast
+                                                                                     infection
+                                                                                  2= To look inside the vagina
+                                                                                  3= To check for cervical
+                                                                                     cancer or precancerous
+                                                                                     cells
+                                                                                  4= To see why a woman has
+                                                                                     painful periods
+                                                                                  5= To treat cancer
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   76    2 2.0       PABNHP           B.7          Meaning of abnormal Pap        1= It means the female organs
+                                                                                     look bad
+                                                                                  2= It means you have cancer
+                                                                                  3= It means you have a
+                                                                                     sexually transmitted
+                                                                                     disease (STD) and need
+                                                                                     antibiotics
+                                                                                  4= It means you have a yeast
+                                                                                     infection
+                                                                                  5= It means you have abnormal
+                                                                                     cells that can turn into
+                                                                                     cancer
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   78    2 2.0       ABLDHP           B.8.a        Abnormal Pap follow-up -       1= True
+                                                   blood test                     2= False
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   80    2 2.0       ABIOHP           B.8.b        Abnormal Pap follow-up -       1= True
+                                                   biopsy                         2= False
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   82    2 2.0       AANPHP           B.8.c        Abnormal Pap follow-up -       1= True
+                                                   another Pap                    2= False
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   84    2 2.0       ACOLHP           B.8.d        Abnormal Pap follow-up -       1= True
+                                                   colposcopy                     2= False
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   86    2 2.0       AHPVHP           B.8.e        Abnormal Pap follow-up -       1= True
+                                                   testing for HPV                2= False
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   88    2 2.0       ANTGHP           B.8.f        Abnormal Pap follow-up -       1= True
+                                                   nothing                        2= False
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   90    2 2.0       COIFHP           B.9.a        More likely to get cervical    1= True
+                                                   cancer - others in family      2= False
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   92    2 2.0       CMSPHP           B.9.b        More likely to get cervical    1= True
+                                                   cancer - multiple sex partners 2= False
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   94    2 2.0       CNGPHP           B.9.c        More likely to get cervical    1= True
+                                                   cancer - not getting a Pap     2= False
+                                                   test done                      -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   96    2 2.0       CUIDHP           B.9.d        More likely to get cervical    1= True
+                                                   cancer - using illegal drugs   2= False
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+   98    2 2.0       CSMKHP           B.9.e        More likely to get cervical    1= True
+                                                   cancer - smoking               2= False
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  100    2 2.0       CSWCHP           B.9.f        More likely to get cervical    1= True
+                                                   cancer - sex without a condom  2= False
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  102    2 2.0       CWDTHP           B.9.g        More likely to get cervical    1= True
+                                                   cancer - wrong diet            2= False
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  104    2 2.0       CSELHP           B.9.h        More likely to get cervical    1= True
+                                                   cancer - Sex early in life     2= False
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  106    2 2.0       CWTMHP           B.9.i        More likely to get cervical    1= True
+                                                   cancer - weighing too much     2= False
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  108    2 2.0       CVINHP           B.9.j        More likely to get cervical    1= True
+                                                   cancer - viral infection       2= False
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  110    2 2.0       CSTDHP           B.9.k        More likely to get cervical    1= True
+                                                   cancer - sexually transmitted  2= False
+                                                   diseases (Gonorrhea,           -1= NA (Skipped)
+                                                   chlamydia)                     -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  112    2 2.0       CALCHP           B.9.l        More likely to get cervical    1= True
+                                                   cancer - drinking too much     2= False
+                                                   alcohol                        -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  114    2 2.0       CORLHP           B.9.m        More likely to get cervical    1= True
+                                                   cancer - oral sex              2= False
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  116    2 2.0       CABTHP           B.9.n        More likely to get cervical    1= True
+                                                   cancer - abortions             2= False
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  118    2 2.0       CHIVHP           B.9.o        More likely to get cervical    1= True
+                                                   cancer - HIV                   2= False
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  120    2 2.0       CCPVHP           B.10         Participant's knowledge of     1= Yes
+                                                   cervical cancer prevention     2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  122    2 2.0       GARDHP           B.11         Participant has heard of       1= Yes
+                                                   Gardasil vaccine               2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  124    2 2.0       GDOCHP           B.11.a.i     Heard about Gardasil - doctors 1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  126    2 2.0       GNSEHP           B.11.a.ii    Heard about Gardasil - nurses  1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  128    2 2.0       GNWSHP           B.11.a.iii   Heard about Gardasil - news    1= Yes
+                                                                                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  130    2 2.0       GADVHP           B.11.a.iv    Heard about Gardasil -         1= Yes
+                                                   advertisement                  2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  132    2 2.0       GWHSHP           B.11.a.v     Heard about Gardasil - WIHS    1= Yes
+                                                   study/staff                    2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  134    2 2.0       GDRMHP           B.11.a.vi    Heard about Gardasil - don't   1= Yes
+                                                   remember where                 2= No
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  136    2 2.0       VAPCHP           B.12.a       Vaccine to prevent - abnormal  1= True
+                                                   Pap tests, cervical cancer     2= False
+                                                   and precancer                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  138    2 2.0       VLINHP           B.12.b       Vaccine to prevent - lung      1= True
+                                                   infections                     2= False
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  140    2 2.0       VUINHP           B.12.c       Vaccine to prevent - urine     1= True
+                                                   infections                     2= False
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  142    2 2.0       VWRTHP           B.12.d       Vaccine to prevent - warts     1= True
+                                                   around the genitals and anus   2= False
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  144    2 2.0       VGENHP           B.12.e       Vaccine to prevent - genital   1= True
+                                                   herpes                         2= False
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  146    2 2.0       RVACHP           B.13         Recommendations for HPV        1= All should be vaccinated
+                                                   vaccine for women with HIV     2= None should be vaccinated
+                                                                                  3= Unclear.  Women should
+                                                                                     talk to their doctors
+                                                                                     about risks and benefits,
+                                                                                     then decide
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  148    2 2.0       WGR9HP           B.14.a       Who should get HPV vaccine if  1= True
+                                                   HIV-negative - girls as young  2= False
+                                                   as 9 years of age              -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  150    2 2.0       WTYAHP           B.14.b       Who should get HPV vaccine if  1= True
+                                                   HIV-negative - teenage and     2= False
+                                                   young adult women              -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  152    2 2.0       WW25HP           B.14.c       Who should get HPV vaccine if  1= True
+                                                   HIV-negative - women 25 years  2= False
+                                                   of age and older who are at    -1= NA (Skipped)
+                                                   high risk                      -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  154    2 2.0       WW50HP           B.14.d       Who should get HPV vaccine if  1= True
+                                                   HIV-negative - women 50 years  2= False
+                                                   of age and older               -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  156    2 2.0       RPHVHP           B.15         Recommendations for HPV        1= Extremely important
+                                                   vaccine for women with HIV     2= Very important
+                                                                                  3= Somewhat important
+                                                                                  4= Not at all important
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  158    2 2.0       RPWHHP           B.16         Recommendations for HPV        1= Extremely important
+                                                   vaccine for women without HIV  2= Very important
+                                                                                  3= Somewhat important
+                                                                                  4= Not at all important
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  160    2 2.0       VPCCHP           B.17         Importance of HPV vaccine for  1= Extremely important
+                                                   preventing cervical cancer     2= Very important
+                                                                                  3= Somewhat important
+                                                                                  4= Not at all important
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  162    2 2.0       RVFRHP           B.18         Likelihood of participant      1= Extremely likely
+                                                   recommending HPV vaccine       2= Very likely
+                                                                                  3= Somewhat likely
+                                                                                  4= Not at all likely
+                                                                                  -1= NA (Skipped)
+                                                                                  -7= Refusal
+                                                                                  -8= Don't know
+                                                                                  -9 or Blank= Missing
+
+  164    1 $         ESTAT                         Edit status A.0                D= Dirty
+                                                                                  C= Clean
+                                                                                  P= Pending
+
+  165    6 $         VERSION                       Version number of data         V01.01= Version 01,
+                                                                                     in Visit 01.
+                                                                                  .
+                                                                                  .
+                                                                                  V99.03= Version 03,
+                                                                                     in Visit 99.
