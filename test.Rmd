@@ -10,10 +10,16 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r}
 hiv <- read.csv(file ="data/hivstat.csv", header = TRUE, sep = ",")
+
 baseline <- read.csv(file ="data/f00.csv", header = TRUE, sep = ",")
+
 sociodemographic <-read.csv(file ="data/f01.csv", header = TRUE, sep =",")
-physical <- read.csv(file = "data/f07.csv", header = TRUE, sep = ",")
+
+physical <- read.csv(file = "data/height_and_weight.csv", header = TRUE, sep = ",")
+colnames(physical)[2] <- "CASEID"
+
 medhistory <- read.csv(file = "data/hx_cleaned.csv", header = TRUE, sep = ",")
+
 outcome <- read.csv(file = "data/outcome_cleaned.csv", header = TRUE, sep = ",")
 
 library(tidyverse)
@@ -21,11 +27,11 @@ join1 <- inner_join(hiv, baseline, by = "CASEID" )
 join2 <- inner_join(join1, sociodemographic, by ="CASEID")
 join3 <- inner_join(join2, medhistory, by = "CASEID")
 join4 <- inner_join(join3, outcome, by = "CASEID")
-all_wp <- inner_join(join4 , physical, by = "CASEID")
-all <- join4
-head(all)
+all <- inner_join(join4 , physical, by = "CASEID")
 
-caseID <- all$CASEID
+all <- all[, c("CASEID", "STATUS", "SPANSC", "AGE_SC", "RACESC", "EDUCSC", "MOMESC", "IDU_SC", "PARTSC", "COB_SD", "MAR_SD","INC_SD","FMCNHX", "FMHBHX", "FMCLHX", "MAGEHX", "EHRTHX", "OUTCAIDS", "OUTCCANC", "OUTCTB", "OUTCDTH", "height_cm", "weight_kg")]
+
+CASEID <- all$CASEID
 hivstat <- all$STATUS
 speak_spanish <- all$SPANSC
 age <- all$AGE_SC
@@ -37,9 +43,6 @@ sex_partners <- all$PARTSC
 birth_country <- all$COB_SD
 marital_status <- all$MAR_SD
 household_income <- all$INC_SD
-pregnant <- all$PREGPE
-#weight
-#height
 family_cancer <- all$FMCNHX
 family_hbp <- all$FMHBHX
 family_cholesterol <- all$FMCLHX
@@ -49,9 +52,15 @@ aids <- all$OUTCAIDS
 cancer <- all$OUTCCANC
 tb <- all$OUTCTB
 death <- all$OUTCDTH
+height <- all$height_cm
+weight <- all$weight_kg
+
+colnames(all) <- c("CASEID", "hivstat", "speak_spanish", "age", "ethnicity", "educ_level", "mother_educ", "drug", "sex_partners", "birth_country", "marital_status", "household_income", "family_cancer", "family_hbp", "family_cholesterol", "first_menstruation", "ever_hrt", "aids", "cancer", "tb", "death", "height", "weight")
+
 
 
 ```
+
 ```{r}
 library(ggplot2)
 all %>% ggplot()+
@@ -67,8 +76,14 @@ all %>% ggplot(aes(x = factor(hivstat), y = household_income)) +
 ```{r}
 aids_hiv <- all %>%
   filter((hivstat == 2 | hivstat == 4) & aids == 1) %>%
-  select(CASEID, STATUS, OUTCAIDS)
+  select(CASEID, hivstat, aids)
 
-aids_hiv
+nrow(aids_hiv)
+
+noaids_hiv <- all %>%
+  filter((hivstat == 2 | hivstat == 4) & aids == 0) %>%
+  select(CASEID, hivstat, aids)
+
+nrow(noaids_hiv)
 
 ```
