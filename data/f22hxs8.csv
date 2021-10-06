@@ -1,0 +1,412 @@
+CASEID,VISIT,VTYP,SEQID,CLOCMH,FDIGMH,METSMH,MLOCMH,SORGMH,OLOCMH,ESTAT,VERSION
+1028,24,1,1,VAGINAL/ANUS AERA,1,2,-1,-1,-1,C,v45.2
+1066,40,1,1,Mouth,1,2,-1,-1,-1,C,v45.2
+1066,40,1,2,Skin,2,1,"arm, leg, buttuks",-1,-1,C,v45.2
+1066,41,1,1,Mouth,1,2,-1,-1,-1,C,v45.2
+1066,42,1,1,oral,1,2,-1,-1,-1,C,v45.2
+1078,34,1,1,Left breast,2,2,-1,-1,-1,C,v45.2
+1097,30,1,1,lung,1,2,-1,-1,-1,C,v45.2
+1097,31,1,1,lung,1,1,lymphnodes,-1,-1,C,v45.2
+1097,31,1,2,Lymphnodes,2,-1,-1,1,Lung,C,v45.2
+1154,32,1,1,Lungs,1,2,-1,-1,-1,C,v45.2
+1206,19,1,1,COLON,1,2,-1,-1,-1,C,v45.2
+1206,20,1,1,BOWEL,1,2,-1,-1,-1,C,v45.2
+1206,22,1,1,COLON,2,-1,-1,2,COLON,C,v45.2
+1206,23,1,1,LUNG,2,-1,-1,1,COLOB,C,v45.2
+1206,24,1,1,LUNG,2,-1,-1,1,BOWEL,C,v45.2
+1249,41,1,1,VAGINAL,2,2,-1,-1,-1,C,v45.2
+1264,18,1,1,BOTH LEGS,2,-1,-1,2,"UTERUS,OVARIES,STOMACH",C,v45.2
+1265,20,1,1,COLON/BOWEL,1,2,-1,-1,-1,C,v45.2
+1351,33,1,1,right breast,1,2,-1,-1,-1,C,v45.2
+1351,36,1,1,LEFT BREAST,2,-1,-1,2,LEFT BREAST,C,v45.2
+1351,37,1,1,BREAST LEFT,2,-1,-1,2,LEFT BREAST,C,v45.2
+1351,38,1,1,left breast,2,-1,-1,2,left breast,C,v45.2
+1396,41,1,1,Skin,2,-1,-1,2,cervical,C,v45.2
+1433,31,1,1,LIVER,2,-1,-1,2,CERVIVAL,C,v45.2
+1538,35,1,1,SKIN,1,2,-1,-1,-1,C,v45.2
+1558,24,1,1,lymphnodes cancer,1,2,-1,-1,-1,C,v45.2
+1574,32,1,1,NOSE,1,2,-1,-1,-1,C,v45.2
+1602,33,1,1,Right Breast,1,2,-1,-1,-1,C,v45.2
+1634,35,1,1,Skin Cancer (back),1,2,-1,-1,-1,C,v45.2
+1660,32,1,1,CHEEK BONE,1,2,-1,-1,-1,C,v45.2
+1762,37,1,1,LEFT BREAST,1,2,-1,-1,-1,C,v45.2
+1813,23,1,1,UPPER SKIN,1,2,-1,-1,-1,C,v45.2
+1847,36,1,1,LEFT LABIA,1,2,-1,-1,-1,C,v45.2
+1847,40,1,1,BREAST,2,-1,-1,1,VULVAR CANCER,C,v45.2
+1863,22,1,1,LUNG,1,1,STOMACH,-1,-1,C,v45.2
+1903,33,1,1,BREAST,1,2,-1,-1,-1,C,v45.2
+1923,32,1,1,ANAL CANCER,1,2,-1,-1,-1,C,v45.2
+1936,26,1,1,LEFT MIDDLE UPPER BACK,1,2,-1,-1,-1,C,v45.2
+1936,27,1,1,BACK,1,2,-1,-1,-1,C,v45.2
+1936,29,1,1,LEFT LEG,2,-1,-1,2,BACK (FIRST TIME),C,v45.2
+1936,30,1,1,DIFFERENT PARTS OF BODY,1,2,-1,-1,-1,C,v45.2
+1936,34,1,1,BACK,2,-1,-1,2,LEG,C,v45.2
+1952,38,1,1,liver,1,2,-1,-1,-1,C,v45.2
+1971,17,1,1,Gall Bladder,1,1,Bile Duct,-1,-1,C,v45.2
+1983,19,1,1,RECTUM,1,2,-1,-1,-1,C,v45.2
+2072,25,1,1,lung,1,2,-1,-1,-1,C,v45.2
+2072,26,1,1,lung,1,2,-1,-1,-1,C,v45.2
+2170,30,1,1,COLON,1,2,-1,-1,-1,C,v45.2
+2206,40,1,1,nose,1,2,-1,-1,-1,C,v45.2
+2240,34,1,1,LUNG,1,2,-1,-1,-1,C,v45.2
+2240,35,1,1,LUNG RIGH SIDE,2,-1,-1,1,LEFT SIDE OF LUNGS,C,v45.2
+2240,40,1,1,Lung,2,-1,-1,2,Lung,C,v45.2
+2266,39,1,1,lung,1,2,-1,-1,-1,C,v45.2
+2270,17,1,1,THROAT,1,2,-1,-1,-1,C,v45.2
+2287,34,1,1,Blood: mutliple myeloma,1,2,-1,-1,-1,C,v45.2
+2303,32,1,1,LIVER,1,2,-1,-1,-1,C,v45.2
+2331,42,1,1,ovary,1,2,-1,-1,-1,C,v45.2
+2358,18,1,1,CERVIX,1,2,-1,-1,-1,C,v45.2
+2358,42,1,1,jawbone,1,2,-1,-1,-1,C,v45.2
+2403,17,1,1,CERVIX,1,2,-1,-1,-1,C,v45.2
+2478,40,1,1,Cervical Cancer,2,-1,-1,2,Cervical Cancer,C,v45.2
+2479,28,1,1,leg,2,-1,-1,2,LEG (skin),C,v45.2
+2508,22,1,1,BREAST,1,2,-1,-1,-1,C,v45.2
+2545,32,1,1,BREAST(LEFT),1,2,-1,-1,-1,C,v45.2
+2597,42,1,1,pancreas,1,2,-1,-1,-1,C,v45.2
+2597,42,1,2,lung,2,-1,-1,1,pancreas,C,v45.2
+2632,21,1,1,BREAST,2,-1,-1,1,LYMPHNODES,C,v45.2
+2632,23,1,1,Breast,2,-1,-1,1,Right breast,C,v45.2
+2654,42,1,1,skin cancer,1,2,-1,-1,-1,C,v45.2
+2664,19,1,1,cervical,1,2,-1,-1,-1,C,v45.2
+2685,41,1,1,vagina,1,2,-1,-1,-1,C,v45.2
+2751,21,1,1,liver,1,2,-1,-1,-1,C,v45.2
+2796,26,1,1,COLON CANCER,1,2,-1,-1,-1,C,v45.2
+2872,19,1,1,SKIN,2,-1,-1,2,SKIN,C,v45.2
+2872,20,1,1,FACE,2,-1,-1,1,FACE,C,v45.2
+2872,23,1,1,UPPER LEFT ARM,2,-1,-1,2,FACE,C,v45.2
+2872,23,1,2,UPPER LEFT ARM: LESION 2,2,-1,-1,2,FACE,C,v45.2
+2872,23,1,3,LOWER RIGHT ARM,2,-1,-1,2,FACE,C,v45.2
+2872,24,1,1,FACE,2,-1,-1,2,FACE,C,v45.2
+2872,26,1,1,FACE-SKIN CANCER,2,-1,-1,2,FACE,C,v45.2
+2872,29,1,1,SKIN,2,-1,-1,2,SKIN ON BACK,C,v45.2
+2872,34,1,1,UPPER BACK - BASAL CELL,2,-1,-1,2,UPPER BACK,C,v45.2
+2872,35,1,1,Back skin cancer,2,-1,-1,2,back skin cancer,C,v45.2
+2872,36,1,1,R UPPER ARM ANTERIOR,2,-1,-1,2,-1,C,v45.2
+2872,36,1,2,R UPPER ARM INTERIOR,2,-1,-1,2,-1,C,v45.2
+2872,36,1,3,R FOREARM,2,2,-1,-1,-1,C,v45.2
+2879,38,1,1,"RIGHT SHOULDER, SKIN",1,2,-1,-1,-1,C,v45.2
+2880,22,1,1,skin ca on forehead,1,2,-1,-1,-1,C,v45.2
+2906,20,1,1,cervix,1,2,-1,-1,-1,C,v45.2
+2974,17,1,1,neck,1,2,-1,-1,-1,C,v45.2
+2974,25,1,1,lymphnodes,1,2,-1,-1,-1,C,v45.2
+2974,27,1,1,neck,1,2,-1,-1,-1,C,v45.2
+2974,28,1,1,neck,2,-1,-1,2,neck,C,v45.2
+2974,31,1,1,LEFT SIDE OF NECK,2,-1,-1,2,RIGHT SIDE OF NECK,C,v45.2
+2974,32,1,1,R NECK,2,-1,-1,2,L NECK,C,v45.2
+2985,41,1,1,Cervix,1,2,-1,-1,-1,C,v45.2
+3001,22,1,1,cervix,1,2,-1,-1,-1,C,v45.2
+3061,28,1,1,CERVICAL/UTERINE CANCER,1,2,-1,-1,-1,C,v45.2
+3061,41,1,1,Pelvis/Uterus,2,-1,-1,2,Uterus,C,v45.2
+3071,41,1,1,VAGINAL & RECTAL,1,2,-1,-1,-1,C,v45.2
+3074,25,1,2,LT NECK LYMPH NODES,1,2,-1,-1,-1,C,v45.2
+3234,25,1,1,RIGHT BREAST,1,2,-1,-1,-1,C,v45.2
+3237,22,1,1,Cervix,1,2,-1,-1,-1,C,v45.2
+3237,23,1,1,UTERUS,2,-1,-1,1,UTERUS.,C,v45.2
+3253,22,1,1,LUNGS,1,2,-1,-1,-1,C,v45.2
+3285,29,1,1,rectal,1,2,-1,-1,-1,C,v45.2
+3285,30,1,1,rectal,1,2,-1,-1,-1,C,v45.2
+3417,29,1,1,L. BREAST,1,2,-1,-1,-1,C,v45.2
+3417,35,1,1,RIGHT MANDIBLE TUMOR,2,-1,-1,1,BREAST,C,v45.2
+3464,42,1,1,cervix,1,2,-1,-1,-1,C,v45.2
+3606,42,1,1,liver,1,2,-1,-1,-1,C,v45.2
+3626,23,1,1,BLADDER,1,2,-1,-1,-1,C,v45.2
+3626,34,1,1,BLADDER,2,-1,-1,2,BLADDER - REOCCURANCE,C,v45.2
+3648,30,1,1,LUNG,1,2,-1,-1,-1,C,v45.2
+3648,40,1,1,right lung,2,-1,-1,2,right lung,C,v45.2
+3720,26,1,1,REPORTS LESION IN LUNG,1,2,-1,-1,-1,C,v45.2
+3875,24,1,1,skin cancer (nose),2,-1,-1,2,cheek,C,v45.2
+3875,36,1,1,R UPPER CHEEK,2,-1,-1,2,FACE,C,v45.2
+3879,27,1,1,stomach,1,2,-1,-1,-1,C,v45.2
+3905,30,1,1,Cervix,1,2,-1,-1,-1,C,v45.2
+3932,26,1,1,Left breast,1,1,L & R lymph nodes,1,Left breast,C,v45.2
+3963,19,1,1,top of kidney,2,-1,-1,2,lung,C,v45.2
+3988,40,1,1,cervix,1,2,-1,-1,-1,C,v45.2
+3992,29,1,1,THROAT,2,-1,-1,1,THROAT,C,v45.2
+4017,30,1,1,LUNG,1,1,BONES,-1,-1,C,v45.2
+4086,33,1,1,breast,1,2,-1,-1,-1,C,v45.2
+4148,22,1,1,uterus,2,-1,-1,2,in uterus,C,v45.2
+4326,17,1,1,BREAST,1,1,LYMPH NODES,-1,-1,C,v45.2
+4392,29,1,1,Liver,1,1,everywhere per RN,-1,-1,C,v45.2
+4392,29,1,2,Throat,1,1,Everywhr/target organ UK,-1,-1,C,v45.2
+4401,26,1,1,BREAST,1,2,-1,-1,-1,C,v45.2
+4427,40,1,2,liver,2,-1,-1,2,lungs,C,v45.2
+4427,40,1,1,Lung,1,2,-1,-1,-1,C,v45.2
+4481,20,1,1,eye lids,2,-1,-1,2,eye lids,C,v45.2
+4481,24,1,1,eyelid (upper & lower),2,-1,-1,2,eyelids (both),C,v45.2
+4481,25,1,1,eye lids,2,-1,-1,2,eye lids,C,v45.2
+4524,21,1,1,SKIN CANCER,1,2,-1,-1,-1,C,v45.2
+4524,32,1,1,LEFT BREAST,2,-1,-1,2,BREAST,C,v45.2
+4524,39,1,1,LEFT SIDE OF FACE,2,-1,-1,2,FOREHEAD,C,v45.2
+4549,25,1,1,throat,1,2,-1,-1,-1,C,v45.2
+4564,26,1,1,breast,1,2,-1,-1,-1,C,v45.2
+4682,18,1,1,breast,1,1,chest,-1,-1,C,v45.2
+4699,23,1,1,VAGINA,1,1,UTERUS/CERVIX,1,VAGINA,C,v45.2
+4699,24,1,1,Cervical,2,-1,-1,2,Cervix,C,v45.2
+4699,26,1,1,Cervix,2,-1,-1,2,Cervix,C,v45.2
+4699,35,1,1,Cervix,2,-1,-1,1,Cervix,C,v45.2
+4699,40,1,1,cervix,1,2,-1,-1,-1,C,v45.2
+4745,37,1,1,Lung,1,1,Lymph nodes,-1,-1,C,v45.2
+4745,37,1,2,Lymph nodes,2,-1,-1,1,Lung,C,v45.2
+4844,34,1,1,BASIL CELL ON L TEMPLE,2,-1,-1,2,HAD SPOTS IN STOMACH,C,v45.2
+4844,35,1,1,L TEMPLE SQUAMISH CELL,2,-1,-1,2,L TEMPLE,C,v45.2
+4940,28,1,1,RECTUM,1,2,-1,-1,-1,C,v45.2
+4940,29,1,1,Rectal,1,2,-1,-1,-1,C,v45.2
+4940,34,1,1,L GROIN,2,-1,-1,2,RECTUM,C,v45.2
+4957,29,1,1,NECK,1,2,-1,-1,-1,C,v45.2
+4973,19,1,1,LUNG,1,2,-1,-1,-1,C,v45.2
+5012,28,1,1,breast,1,1,lymph nodes,-1,-1,C,v45.2
+5012,28,1,2,lymph nodes,1,2,-1,-1,-1,C,v45.2
+5012,34,1,1,BREAST,2,-1,-1,2,BREAST,C,v45.2
+5012,34,1,2,SPINE,2,-1,-1,2,BREAST,C,v45.2
+5012,35,1,1,BONES,2,-1,-1,1,BREAST,C,v45.2
+5049,34,1,1,VAGINAL,1,2,-1,-1,-1,C,v45.2
+5049,36,1,1,ANAL,1,2,-1,-1,-1,C,v45.2
+5085,22,1,1,lymph node,1,2,-1,-1,-1,C,v45.2
+5085,23,1,1,UNDERARM  LEFT,1,2,-1,-1,-1,C,v45.2
+5140,26,1,1,CERVIX,1,1,VAGINA,-1,-1,C,v45.2
+5203,30,1,1,LIVER,1,2,-1,-1,-1,C,v45.2
+5277,22,1,1,LUNG (R),1,2,-1,-1,-1,C,v45.2
+5304,36,1,1,LYMPHOMA,1,2,-1,-1,-1,C,v45.2
+5421,34,1,1,RIGHT LYMPHNODE,1,2,-1,-1,-1,C,v45.2
+5424,27,1,1,HEAD,1,2,-1,-1,-1,C,v45.2
+5434,23,1,1,kaiser,1,2,-1,-1,-1,C,v45.2
+5452,30,1,1,BONE,1,2,-1,-1,-1,C,v45.2
+5461,42,1,1,THYROID,1,2,-1,-1,-1,C,v45.2
+5516,30,1,1,LEFT THIGH,1,2,-1,-1,-1,C,v45.2
+5517,24,1,1,Right Breast,1,2,-1,-1,-1,C,v45.2
+5550,17,1,1,LIVER,2,-1,-1,1,GALL BLADDER,C,v45.2
+5604,37,1,1,Upper right thigh,2,-1,-1,2,Cervix,C,v45.2
+5615,37,1,1,Left breast,1,2,-1,-1,-1,C,v45.2
+5615,38,1,1,Breast,1,2,-1,-1,-1,C,v45.2
+5621,42,1,1,Lung,1,2,-1,-1,-1,C,v45.2
+5637,19,1,1,ovarian,1,2,-1,-1,-1,C,v45.2
+5640,31,1,1,Lung,1,1,Lymph Nodes,-1,-1,C,v45.2
+5829,32,1,1,Left Kidney,1,2,-1,-1,-1,C,v45.2
+5885,31,1,1,L side face below eye,1,2,-1,-1,-1,C,v45.2
+5891,39,1,1,EYE,1,2,-1,-1,-1,C,v45.2
+5910,30,1,1,AXILLA,1,2,-1,-1,-1,C,v45.2
+5910,31,1,1,LYMPH NODE RIGHT ARM PIT,2,-1,-1,2,UTERUS,C,v45.2
+5917,36,1,1,RIGHT BREAST & UNDERARM,1,2,-1,-1,-1,C,v45.2
+5957,20,1,1,stomach,2,-1,-1,1,cervical,C,v45.2
+5957,21,1,1,ovarian cancer,1,2,-1,-1,-1,C,v45.2
+5957,21,1,2,cervical cancer,1,2,-1,-1,-1,C,v45.2
+5969,38,1,1,tongue,1,1,lymph nodes,-1,-1,C,v45.2
+5969,38,1,2,lymph nodes,2,-1,-1,1,tongue,C,v45.2
+5984,40,1,1,COLON CANCER,1,2,-1,-1,-1,C,v45.2
+5984,41,1,1,COLON CANCER,1,2,-1,-1,-1,C,v45.2
+6011,20,1,1,Skin,1,2,-1,-1,-1,C,v45.2
+6011,34,1,1,Vulva,1,2,-1,-1,-1,C,v45.2
+6032,40,1,1,colon,2,-1,-1,2,cervix,C,v45.2
+6032,41,1,1,colon,2,-1,-1,2,"cervix (benign, 2013)",C,v45.2
+6059,29,1,1,throat,1,2,-1,-1,-1,C,v45.2
+6092,29,1,1,LUNG,1,2,-1,-1,-1,C,v45.2
+6114,40,1,1,pancreas,1,2,-1,-1,-1,C,v45.2
+6114,41,1,1,navel,2,-1,-1,1,pancreas,C,v45.2
+6140,27,1,1,cervical cancer,1,2,-1,-1,-1,C,v45.2
+6180,35,1,1,CERVICAL CANCER,1,2,-1,-1,-1,C,v45.2
+6213,26,1,1,CERVICAL CANCER,1,2,-1,-1,-1,C,v45.2
+6213,34,1,1,CANCER OF THE UTERUS,2,-1,-1,2,UTERUS (RECURRENT),C,v45.2
+6213,41,1,1,VULVAR CANCER,2,-1,-1,2,CERVICAL CANCER,C,v45.2
+6224,20,1,1,RECTUM,2,-1,-1,2,-1,C,v45.2
+6224,22,1,1,Anus,2,-1,-1,2,Breast,C,v45.2
+6265,30,1,1,CANCER OF LIVER,1,1,ADRENAL GLAND,-1,-1,C,v45.2
+6265,30,1,2,ADRENAL GLAND,1,2,-1,-1,-1,C,v45.2
+6265,31,1,1,lung,1,2,-1,-1,-1,C,v45.2
+6348,26,1,1,Rectum,1,2,-1,-1,-1,C,v45.2
+6367,31,1,1,LUNG,1,2,-1,-1,-1,C,v45.2
+6397,18,1,1,stomach,1,1,-1,-1,-1,C,v45.2
+6397,19,1,1,stomach,1,2,-1,-1,-1,C,v45.2
+6397,22,1,1,stomach,1,1,lymphoma,-1,-1,C,v45.2
+6477,23,1,1,Rectum Area,1,2,-1,-1,-1,C,v45.2
+6489,40,1,1,Left breast cancer,1,2,-1,-1,-1,C,v45.2
+6604,31,1,1,SKIN,1,2,-1,-1,-1,C,v45.2
+6611,18,1,1,lung,2,-1,-1,1,ribs,C,v45.2
+6611,19,1,1,lung,2,-1,-1,1,ribs,C,v45.2
+6636,32,1,1,STOMACH,1,2,-1,-1,-1,C,v45.2
+6636,33,1,1,R breast,1,2,-1,-1,-1,C,v45.2
+6636,38,1,1,Right temple,2,-1,-1,2,-1,C,v45.2
+6676,39,1,1,CERVIX,1,2,-1,-1,-1,C,v45.2
+6757,33,1,1,CERVICAL,1,2,-1,-1,-1,C,v45.2
+6775,30,1,1,PELVIC AREA,1,1,STOMACH & COLON,-1,-1,C,v45.2
+6807,32,1,1,Thyroid,1,2,-1,-1,-1,C,v45.2
+6850,28,1,1,NECK,2,-1,-1,2,IN GROIN AREA,C,v45.2
+6850,29,1,1,NECK,2,-1,-1,2,RIGHT GROIN AREA,C,v45.2
+6850,34,1,1,LEFT SIDE OF NECK,2,-1,-1,2,RIGHT GROIN AREA,C,v45.2
+6850,34,1,2,RIGHT GROIN AREA,1,2,-1,-1,-1,C,v45.2
+6889,18,1,1,cervix,1,1,was not told where,-1,-1,C,v45.2
+6889,23,1,1,cervical cancer,1,2,-1,-1,-1,C,v45.2
+6912,29,1,1,MULTIPLE MYELOMA (BACK),1,2,-1,-1,-1,C,v45.2
+6918,30,1,1,NOSE,1,2,-1,-1,-1,C,v45.2
+6938,39,1,1,RECTAL,1,2,-1,-1,-1,C,v45.2
+6942,28,1,1,LUNG,1,2,-1,-1,-1,C,v45.2
+6951,20,1,1,RT KIDNEY,1,2,-1,-1,-1,C,v45.2
+6956,17,1,1,ovary,2,-1,-1,1,cervix,C,v45.2
+6981,20,1,1,THROAT,1,2,-1,-1,-1,C,v45.2
+6981,23,1,1,VULVAR CANCER,1,2,-1,-1,-1,C,v45.2
+6981,33,1,1,LEG,1,2,-1,-1,-1,C,v45.2
+7003,29,1,1,NOSE & CHIN (SKIN),2,-1,-1,2,BREAST CANCER,C,v45.2
+7003,31,1,1,TOP OF THE NOSE,2,-1,-1,2,BREAST,C,v45.2
+7003,31,1,2,LEFT INNER CANTHUS (EYE),2,-1,-1,2,BREAST,C,v45.2
+7022,32,1,1,LEFT BREAST,1,2,-1,-1,-1,C,v45.2
+7022,33,1,1,BREAST,1,2,-1,-1,-1,C,v45.2
+7022,35,1,1,ESOPHAGEL,2,-1,-1,2,-1,C,v45.2
+7069,31,1,1,LUNG CANCER,1,2,-1,-1,-1,C,v45.2
+7079,29,1,1,SKIN ON FINGER,1,2,-1,-1,-1,C,v45.2
+7079,30,1,1,LEFT THUMB (AMPUTATED),1,2,-1,-1,-1,C,v45.2
+7136,17,1,1,CERVICAL,1,2,-1,-1,-1,C,v45.2
+7138,29,1,1,Cervix,1,2,-1,-1,-1,C,v45.2
+7138,41,1,1,chest,1,1,back,-1,-1,C,v45.2
+7138,42,1,1,stomach,1,2,-1,-1,-1,C,v45.2
+7181,39,1,1,left breast,1,2,-1,-1,-1,C,v45.2
+7199,36,1,1,cervix,1,2,-1,-1,-1,C,v45.2
+7199,38,1,1,cervix,2,-1,-1,2,cervix,C,v45.2
+7217,21,1,1,SKIN CANCER/INNER THIGH,1,2,-1,-1,-1,C,v45.2
+7223,27,1,1,Mid Spine,1,2,-1,-1,-1,C,v45.2
+7271,26,1,1,cervical,1,2,-1,-1,-1,C,v45.2
+7279,39,1,1,Brain,1,2,-1,-1,-1,C,v45.2
+7286,39,1,1,NOSE SKIN,1,2,-1,-1,-1,C,v45.2
+7310,26,1,1,UPPER LIP (MOUTH) CENTER,1,2,-1,-1,-1,C,v45.2
+7310,28,1,1,CUPID'S BOW OF UPPER LIP,2,-1,-1,2,CUPID'S BOW OF UPPER LIP,C,v45.2
+7310,31,1,1,UPPER LIP,2,-1,-1,2,UPPER LIP,C,v45.2
+7310,34,1,1,"SKIN-LIP ""BASAL CELL""",2,-1,-1,2,-9,C,v45.2
+7310,37,1,1,LIP,2,-1,-1,2,LIP,C,v45.2
+7330,34,1,1,BREAST,1,2,-1,-1,-1,C,v45.2
+7460,28,1,1,CERVIX,1,2,-1,-1,-1,C,v45.2
+7469,32,1,1,BREAST,1,2,-1,-1,-1,C,v45.2
+7548,30,1,1,r hnd btwn thmb&inex fngr,1,2,-1,-1,-1,C,v45.2
+7621,18,1,1,SKIN,1,2,-1,-1,-1,C,v45.2
+7624,18,1,1,cervix,1,2,-1,-1,-1,C,v45.2
+7641,33,1,1,breast,1,2,-1,-1,-1,C,v45.2
+7716,42,1,1,colon,1,2,-1,-1,-1,C,v45.2
+7800,17,1,1,bone,1,2,-1,-1,-1,C,v45.2
+7867,23,1,1,liver,1,2,-1,-1,-1,C,v45.2
+7867,24,1,1,brain,2,-1,-1,1,liver,C,v45.2
+7867,24,1,2,Spinal,2,-1,-1,1,Liver,C,v45.2
+7894,35,1,1,UTERUS,1,2,-1,-1,-1,C,v45.2
+8029,38,1,1,KIDNEY,1,2,-1,-1,-1,C,v45.2
+8029,41,1,1,left kidney,2,-1,-1,2,-1,C,v45.2
+8045,21,1,1,THROAT,1,2,-1,-1,-1,C,v45.2
+8065,33,1,1,SKIN CANCER,1,2,-1,-1,-1,C,v45.2
+8071,25,1,1,LEG - L. SKIN,2,-1,-1,2,FACE,C,v45.2
+8071,26,1,1,EYE LID (SKIN),2,-1,-1,2,LEG - SKIN,C,v45.2
+8071,27,1,1,SKIN - EYE LID,2,-1,-1,2,LEGS,C,v45.2
+8071,29,1,1,LEFT LEG,2,-1,-1,2,RIGHT LEG,C,v45.2
+8113,18,1,1,BREAST,1,2,-1,-1,-1,C,v45.2
+8113,28,1,1,CHEST,2,-1,-1,1,BREAST,C,v45.2
+8135,21,1,1,MOUTH,1,2,-1,-1,-1,C,v45.2
+8222,34,1,1,Lung,1,2,-1,-1,-1,C,v45.2
+8232,19,1,1,CERVIX,1,2,-1,-1,-1,C,v45.2
+8232,21,1,1,BREAST,1,2,-1,-1,-1,C,v45.2
+8245,19,1,1,RIGHT HAND SKIN CANCER,1,2,-1,-1,-1,C,v45.2
+8245,24,1,1,SCALP,2,-1,-1,2,-1,C,v45.2
+8245,25,1,1,LEFT SIDE OF NECK,2,-1,-1,2,skin cancer,C,v45.2
+8265,26,1,1,neck (skin cancer),1,2,-1,-1,-1,C,v45.2
+8265,26,1,2,left arm skin cancer,1,2,-1,-1,-1,C,v45.2
+8271,18,1,1,Breast,1,2,-1,-1,-1,C,v45.2
+8279,21,1,1,LYMPH NODS,1,2,-1,-1,-1,C,v45.2
+8293,39,1,1,tongue,1,2,-1,-1,-1,C,v45.2
+8306,26,1,1,uterus,1,2,-1,-1,-1,C,v45.2
+8351,31,1,1,LIVER,1,2,-1,-1,-1,C,v45.2
+8368,29,1,1,CERVICAL,1,1,LYMPH NODES,-1,-1,C,v45.2
+8368,29,1,2,OVARIAN,1,1,LYMPH NODES,-1,-1,C,v45.2
+8462,19,1,1,RIGHT LEG,2,-1,-1,2,DOESN'T REMEMBER,C,v45.2
+8462,20,1,1,r. hand & l. hand,2,-1,-1,2,unknown,C,v45.2
+8462,22,1,1,chest,2,-1,-1,2,chest,C,v45.2
+8462,23,1,1,SANTA MONICA HOSP.,2,-1,-1,2,HAND,C,v45.2
+8462,25,1,1,left clavical (neck),2,-1,-1,2,left clavical (neck),C,v45.2
+8462,28,1,1,hands and arms,2,-1,-1,2,everywhere in body,C,v45.2
+8479,41,1,1,skin,1,2,-1,-1,-1,C,v45.2
+8490,19,1,1,uterus,1,1,blood vessel,-1,-1,C,v45.2
+8504,21,1,1,skin cancer,1,2,-1,-1,-1,C,v45.2
+8504,22,1,1,in the finger,1,2,-1,-1,-1,C,v45.2
+8537,29,1,1,Cervical Cancer,1,-8,Pt does not know,-8,Pt does not know,C,v45.2
+8622,35,1,1,COLON CANCER,1,2,-1,-1,-1,C,v45.2
+8623,34,1,1,LUNG,1,2,-1,-1,-1,C,v45.2
+8623,35,1,1,LUNG,1,2,-1,-1,-1,C,v45.2
+8628,34,1,1,LEG ( SKIN),2,-1,-1,2,SKIN,C,v45.2
+8665,24,1,1,RECTUM (ANUS),1,2,-1,-1,-1,C,v45.2
+8695,41,1,1,Breast,1,2,-1,-1,-1,C,v45.2
+8729,37,1,1,liver,1,2,-1,-1,-1,C,v45.2
+8729,38,1,1,liver,1,2,-1,-1,-1,C,v45.2
+8775,42,1,1,right breast,1,2,-1,-1,-1,C,v45.2
+8798,34,1,1,BOTTOM LIP,1,2,-1,-1,-1,C,v45.2
+8799,22,1,1,CERVICAL,1,2,-1,-1,-1,C,v45.2
+8809,39,1,1,RETAL,1,2,-1,-1,-1,C,v45.2
+8824,20,1,1,TIP OF NOSE,1,2,-1,-1,-1,C,v45.2
+8824,36,1,1,Nose,2,-1,-1,2,-1,C,v45.2
+8830,34,1,1,UTERUS,1,2,-1,-1,-1,C,v45.2
+8832,34,1,1,LUNG,1,2,-1,-1,-1,C,v45.2
+8832,35,1,1,LUNG,1,2,-1,-1,-1,C,v45.2
+8913,38,1,1,LUNGS,1,2,-1,-1,-1,C,v45.2
+8959,37,1,1,Ovarian cancer,2,-1,-1,2,ovary,C,v45.2
+8959,39,1,1,ovary,2,-1,-1,2,cervix,C,v45.2
+8959,40,1,1,ovarian,2,-1,-1,1,cervix,C,v45.2
+9085,31,1,1,LEFT BREAST,2,-1,-1,2,WALL OF MY STOMACH,C,v45.2
+9110,23,1,1,LEFT BREAST,1,2,-1,-1,-1,C,v45.2
+9126,38,1,1,LUNG CANCER,1,2,-1,-1,-1,C,v45.2
+9205,21,1,1,LYMPH NODES,1,2,-1,-1,-1,C,v45.2
+9212,18,1,1,throat,1,2,-1,-1,-1,C,v45.2
+9212,19,1,1,throat,1,2,-1,-1,-1,C,v45.2
+9228,34,1,1,LUNG,1,1,BRAIN,-1,-1,C,v45.2
+9228,34,1,2,BRAIN,2,-1,-1,1,LUNG,C,v45.2
+9237,27,1,1,neck,1,2,-1,-1,-1,C,v45.2
+9252,24,1,1,between vagina and anus,1,2,-1,-1,-1,C,v45.2
+9272,23,1,1,THROAT,1,2,-1,-1,-1,C,v45.2
+9315,33,1,1,LEFT LUNG,1,2,-1,-1,-1,C,v45.2
+9347,18,1,1,Cervical Cancer,-9,-9,-9,-1,-1,C,v45.2
+9389,35,1,1,LYMP NODES,1,2,-1,-1,-1,C,v45.2
+9389,42,1,1,NECK,2,-1,-1,2,NECK,C,v45.2
+9431,34,1,1,CERVIC,1,2,-1,-1,-1,C,v45.2
+9445,33,1,1,LUNG,1,2,-1,-1,-1,C,v45.2
+9477,28,1,1,rectum,1,2,-1,-1,-1,C,v45.2
+9477,42,1,1,colon,2,2,-1,-1,-1,C,v45.2
+9478,37,1,1,Uterus,1,2,-1,-1,-1,C,v45.2
+9478,38,1,1,uterine,1,2,-1,-1,-1,C,v45.2
+9478,39,1,1,LUNG,2,-1,-1,1,WOMB,C,v45.2
+9486,38,1,1,BREAST,1,2,-1,-1,-1,C,v45.2
+9493,33,1,1,None-pt only has vulv HPV,1,2,-1,-1,-1,C,v45.2
+9495,30,1,1,LYMPH NODES,1,2,-1,-1,-1,C,v45.2
+9503,22,1,1,betwen. esoph. & stomach,1,2,-1,-1,-1,C,v45.2
+9526,29,1,1,CERVICAL CANCER,1,2,-1,-1,-1,C,v45.2
+9540,26,1,1,LEFT KIDNEY,2,-1,-1,2,UTERUS & BREAD,C,v45.2
+9552,34,1,1,Left breast,1,2,-1,-1,-1,C,v45.2
+9576,27,1,1,lymphoma,1,2,-1,-1,-1,C,v45.2
+9633,19,1,1,GROIN,1,2,-1,-1,-1,C,v45.2
+9633,20,1,1,GROIN,1,2,-1,-1,-1,C,v45.2
+9651,31,1,1,BREAST,1,2,-1,-1,-1,C,v45.2
+9651,33,1,1,LIVER,2,-1,-1,1,BREAST,C,v45.2
+9665,31,1,1,breast,1,1,lymph nodes in arm,-1,-1,C,v45.2
+9665,31,1,2,lymph nodes in arm,2,-1,-1,1,breast,C,v45.2
+9667,22,1,1,UTERUS,1,2,-1,-1,-1,C,v45.2
+9721,35,1,1,Liver cancer,1,2,-1,-1,-1,C,v45.2
+9721,35,1,2,Hiip cancer,1,2,-1,-1,-1,C,v45.2
+9721,36,1,1,LIVER,1,2,-1,-1,-1,C,v45.2
+9746,28,1,1,lung,1,2,-1,-1,-1,C,v45.2
+9796,24,1,1,cervix,1,2,-1,-1,-1,C,v45.2
+9796,28,1,1,r  breast,1,2,-1,-1,-1,C,v45.2
+9823,33,1,1,lung,1,2,-1,-1,-1,C,v45.2
+9823,36,1,1,R lung/bronchus intermed,2,-1,-1,1,Left lung,C,v45.2
+9823,38,1,1,Lung cancer (both lungs),2,-1,-1,1,Left lung to r and lymph,C,v45.2
+9823,38,1,2,Lymph nodes (from lung),2,-1,-1,1,Left lung orig,C,v45.2
+9834,38,1,1,LUNG,1,2,-1,-1,-1,C,v45.2
+9849,38,1,1,bladder,2,-1,-1,2,-1,C,v45.2
+9849,41,1,1,colon,1,2,-1,-1,-1,C,v45.2
+9849,42,1,1,rectal,1,2,-1,-1,-1,C,v45.2
+9853,36,1,1,THROAT,1,2,-1,-1,-1,C,v45.2
+9893,18,1,1,left side of neck,2,-1,-1,2,-1,C,v45.2
+9893,25,1,1,R) BREAST MASS,2,-1,-1,2,R) BREAST MASS,C,v45.2
+9893,36,1,1,ON FACE/ ARM,2,-1,-1,2,R ANKLE,C,v45.2
+9916,27,1,1,left kidney,1,2,-1,-1,-1,C,v45.2
+9916,31,1,1,KIDNEY,1,2,-1,-1,-1,C,v45.2
+9932,19,1,1,r. breast only,1,2,-1,-1,-1,C,v45.2
+9932,21,1,1,VAGINAL CANCER,2,-1,-1,2,BREAST CANCER,C,v45.2
+9932,22,1,1,vaginal,2,-1,-1,2,breast,C,v45.2
+9932,23,1,1,-9,2,-1,-1,2,-1,C,v45.2
+9944,18,1,1,LYMPH NODE (NECK),1,2,-1,-1,-1,C,v45.2
+9954,31,1,1,CERVICAL STAGEIIIB,1,1,KIDNEYS,-1,-1,C,v45.2
+9988,17,1,1,Breast,1,2,-1,-1,-1,C,v45.2
+9988,21,1,1,BONE CANCER R HIP,2,-1,-1,1,BREAST CANCER,C,v45.2
+9988,21,1,2,BONE CANCER L RIB,2,-1,-1,1,BREAST CANCER,C,v45.2
+9988,21,1,3,BONE CANCER- SKULL,2,-1,-1,1,BREAST CANCER,C,v45.2
+9996,23,1,1,RIGHT BREAST,1,2,-1,-1,-1,C,v45.2
