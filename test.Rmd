@@ -10,8 +10,26 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r, warning = FALSE, message = FALSE}
 
+#install.packages("splitstackshape")
+#install.packages("gtools")
+#install.packages("ResourceSelection")
+#install.packages("LogisticDx")
+#install.packages("ROCR")
+#install.packages("ggplot2")
+#install.packages("knitr")
+#install.packages("ISLR")
+
 library(tidyverse)
 library(dplyr)
+library(splines)
+library(splines2)
+library(ISLR)
+library(gtools)
+library(splitstackshape)
+library(ResourceSelection)
+library(LogisticDx)
+library(ROCR)
+library(ggplot2)
 
 hiv <- read.csv(file ="data/hivstat.csv", header = TRUE, sep = ",")
 
@@ -32,7 +50,10 @@ join3 <- inner_join(join2, medhistory, by = "CASEID")
 join4 <- inner_join(join3, outcome, by = "CASEID")
 all <- inner_join(join4 , physical, by = "CASEID")
 
-all <- all[, c("CASEID", "STATUS", "SPANSC", "AGE_SC", "RACESC", "EDUCSC", "MOMESC", "IDU_SC", "PARTSC", "COB_SD", "MAR_SD","INC_SD","FMCNHX", "FMHBHX", "FMCLHX", "MAGEHX", "EHRTHX", "OUTCAIDS", "OUTCCANC", "OUTCTB", "OUTCDTH", "height_cm", "weight_kg")]
+all <- all[, c("CASEID", "STATUS", "SPANSC", "AGE_SC", "RACESC", "EDUCSC", "MOMESC", "IDU_SC", "PARTSC", "FPOSSC", "COB_SD", "MAR_SD","NRESSD", "INC_SD","FMCNHX", "FMHBHX", "FMCLHX", "FMDBHX", "KDHXHX", "MAGEHX", "EVMIHX", "EVCFHX", "EVSTHX", "EVHCHX","EVLCHX", "EVLVHX", "EHRTHX", "OUTCAIDS", "OUTCCANC", "OUTCTB", "OUTCDTH", "height_cm", "weight_kg")]
+
+colnames(all) <- c("CASEID", "hivstat", "speak_spanish", "age", "ethnicity", "educ_level", "mother_educ", "drug", "sex_partners","first_pos_test", "birth_country", "marital_status", "living_with", "household_income", "family_cancer", "family_hbp", "family_cholesterol", "family_diabetes", "family_kidney" ," first_menstruation", "ever_mi", "ever_chf", "ever_stroke", "ever_highcholesterol", "ever_lung_clot", "ever_liverprob", "ever_hrt", "aids", "cancer", "tb", "death", "height", "weight")
+
 
 CASEID <- all$CASEID
 hivstat <- all$STATUS
@@ -49,6 +70,7 @@ household_income <- all$INC_SD
 family_cancer <- all$FMCNHX
 family_hbp <- all$FMHBHX
 family_cholesterol <- all$FMCLHX
+family_diabetes <- all$family_diabetes
 first_menstruation <- all$MAGEHX
 ever_hrt <- all$EHRTHX
 aids <- all$OUTCAIDS
@@ -57,20 +79,35 @@ tb <- all$OUTCTB
 death <- all$OUTCDTH
 height <- all$height_cm
 weight <- all$weight_kg
+first_pos_test <- all$first_pos_test
+living_with <- all$living_with
+family_kidney <- all$family_kidney
+ever_mi <- all$ever_mi
+ever_chf <-all$ever_chf
+ever_stroke <- all$ever_stroke
+ever_highcholesterol <- all$highcholesterol
+ever_lung_clot <- all$ever_lung_clot
+ever_liverprob <- all$ever_liverprob
 
-colnames(all) <- c("CASEID", "hivstat", "speak_spanish", "age", "ethnicity", "educ_level", "mother_educ", "drug", "sex_partners", "birth_country", "marital_status", "household_income", "family_cancer", "family_hbp", "family_cholesterol", "first_menstruation", "ever_hrt", "aids", "cancer", "tb", "death", "height", "weight")
 
 all$bmi <- all$weight/(all$height/100)^2 
 bmi <- all$bmi
+
+all$hivstat[all$hivstat == 4] <- 2
+
+
+
 ```
+HIV STATUS: 
+1: Negative
+2: Prevalent 
 
 ```{r}
-library(ggplot2)
 all %>% ggplot()+
   geom_boxplot(aes(factor(hivstat), age))+
   labs(x = "HIV Status", y = "Age")
 ```
-
+We notice that there is no significant different in the ages of those with HIV infection compared to those without HIV
 
 ```{r}
 
@@ -79,6 +116,7 @@ all %>% ggplot(aes(x = factor(hivstat), y = household_income)) +
   labs(x = "HIV Status", y = "Household income")
 
 ```
+
 
 ```{r}
 
@@ -117,20 +155,16 @@ maritalstatus_prop
 ```
 ```{r}
 
-library(splines)
-library(splines2)
-
-binary_data <- all
-binary_data$hivstat[binary_data$hivstat == 4] <- 2
-binary_data$hivstat
-
-install.packages("ISLR")
-library(ISLR)
 
 my_glm <- glm((hivstat - 1) ~ I(household_income), data = binary_data, family = binomial)
 summary(my_glm)
 
 aids_glm <- glm(aids ~ I(hivstat), data = binary_data, family = binomial)
 summary(aids_glm)
+
+
+test <- glm((binary_data$hivstat - 1) ~ I(binary_data$household_income), family = binomial)
+
+summary(test)
 
 ```
