@@ -115,3 +115,22 @@ maritalstatus_prop <- with(all, table(marital_status, hivstat)) %>% prop.table(m
 maritalstatus_prop
 
 ```
+```{r}
+
+library(splines)
+library(splines2)
+
+binary_data <- all
+binary_data$hivstat[binary_data$hivstat == 4] <- 2
+binary_data$hivstat
+
+install.packages("ISLR")
+library(ISLR)
+
+my_glm <- glm((hivstat - 1) ~ I(household_income), data = binary_data, family = binomial)
+summary(my_glm)
+
+aids_glm <- glm(aids ~ I(hivstat), data = binary_data, family = binomial)
+summary(aids_glm)
+
+```
