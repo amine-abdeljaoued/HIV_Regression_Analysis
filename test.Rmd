@@ -8,7 +8,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-```{r}
+```{r, warning = FALSE, message = FALSE}
+
+library(tidyverse)
+library(dplyr)
+
 hiv <- read.csv(file ="data/hivstat.csv", header = TRUE, sep = ",")
 
 baseline <- read.csv(file ="data/f00.csv", header = TRUE, sep = ",")
@@ -22,7 +26,6 @@ medhistory <- read.csv(file = "data/hx_cleaned.csv", header = TRUE, sep = ",")
 
 outcome <- read.csv(file = "data/outcome_cleaned.csv", header = TRUE, sep = ",")
 
-library(tidyverse)
 join1 <- inner_join(hiv, baseline, by = "CASEID" )
 join2 <- inner_join(join1, sociodemographic, by ="CASEID")
 join3 <- inner_join(join2, medhistory, by = "CASEID")
@@ -57,8 +60,8 @@ weight <- all$weight_kg
 
 colnames(all) <- c("CASEID", "hivstat", "speak_spanish", "age", "ethnicity", "educ_level", "mother_educ", "drug", "sex_partners", "birth_country", "marital_status", "household_income", "family_cancer", "family_hbp", "family_cholesterol", "first_menstruation", "ever_hrt", "aids", "cancer", "tb", "death", "height", "weight")
 
-
-
+all$bmi <- all$weight/(all$height/100)^2 
+bmi <- all$bmi
 ```
 
 ```{r}
@@ -66,6 +69,10 @@ library(ggplot2)
 all %>% ggplot()+
   geom_boxplot(aes(factor(hivstat), age))+
   labs(x = "HIV Status", y = "Age")
+```
+
+
+```{r}
 
 all %>% ggplot(aes(x = factor(hivstat), y = household_income)) +
   geom_boxplot()+
@@ -74,16 +81,37 @@ all %>% ggplot(aes(x = factor(hivstat), y = household_income)) +
 ```
 
 ```{r}
-aids_hiv <- all %>%
-  filter((hivstat == 2 | hivstat == 4) & aids == 1) %>%
-  select(CASEID, hivstat, aids)
 
-nrow(aids_hiv)
+aids_proportion <- with(all, table(aids, hivstat)) %>% prop.table(margin = 2)
+aids_proportion
+```
 
-noaids_hiv <- all %>%
-  filter((hivstat == 2 | hivstat == 4) & aids == 0) %>%
-  select(CASEID, hivstat, aids)
+```{r}
 
-nrow(noaids_hiv)
+educ_proportion <- with(all, table(educ_level, hivstat)) %>% prop.table(margin  = 2)
+educ_proportion
+```
+
+```{r}
+partners_prop <- with(all, table(sex_partners, hivstat)) %>% prop.table(margin = 1)
+partners_prop
+```
+```{r}
+library(ggplot2)
+all %>% ggplot()+
+  geom_boxplot(aes(factor(hivstat), bmi))+
+  labs(x = "HIV Status", y = "BMI")
+
+```
+
+```{r}
+
+ethnicity_prop <- with(all, table(ethnicity, hivstat)) %>% prop.table(margin = 2)
+ethnicity_prop
+
+```
+```{r}
+maritalstatus_prop <- with(all, table(marital_status, hivstat)) %>% prop.table(margin = 2)
+maritalstatus_prop
 
 ```
