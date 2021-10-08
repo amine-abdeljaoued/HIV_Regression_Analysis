@@ -37,23 +37,26 @@ baseline <- read.csv(file ="data/f00.csv", header = TRUE, sep = ",")
 
 sociodemographic <-read.csv(file ="data/f01.csv", header = TRUE, sep =",")
 
-physical <- read.csv(file = "data/height_and_weight.csv", header = TRUE, sep = ",")
-colnames(physical)[2] <- "CASEID"
-
 medhistory <- read.csv(file = "data/hx_cleaned.csv", header = TRUE, sep = ",")
 
 outcome <- read.csv(file = "data/outcome_cleaned.csv", header = TRUE, sep = ",")
+
+alc_drugs <- read.csv(file = "data/f04.csv", header = TRUE, sep = ",")
 
 join1 <- inner_join(hiv, baseline, by = "CASEID" )
 join2 <- inner_join(join1, sociodemographic, by ="CASEID")
 join3 <- inner_join(join2, medhistory, by = "CASEID")
 join4 <- inner_join(join3, outcome, by = "CASEID")
-all <- inner_join(join4 , physical, by = "CASEID")
+join5 <- inner_join(join4, alc_drugs, by = "CASEID")
+all <- join5
 
-all <- all[, c("CASEID", "STATUS", "SPANSC", "AGE_SC", "RACESC", "EDUCSC", "MOMESC", "IDU_SC", "PARTSC", "FPOSSC", "COB_SD", "MAR_SD","NRESSD", "INC_SD","FMCNHX", "FMHBHX", "FMCLHX", "FMDBHX", "KDHXHX", "MAGEHX", "EVMIHX", "EVCFHX", "EVSTHX", "EVHCHX","EVLCHX", "EVLVHX", "EHRTHX", "OUTCAIDS", "OUTCCANC", "OUTCTB", "OUTCDTH", "height_cm", "weight_kg")]
+all <- all[, c("CASEID", "STATUS", "SPANSC", "AGE_SC", "RACESC", "EDUCSC", "MOMESC", "IDU_SC", "PARTSC", "FPOSSC", "COB_SD", "MAR_SD","NRESSD", "INC_SD","FMCNHX", "FMHBHX", "FMCLHX", "FMDBHX", "KDHXHX", "MAGEHX", "EVMIHX", "EVCFHX", "EVSTHX", "EVHCHX","EVLCHX", "EVLVHX", "EHRTHX", "OUTCAIDS", "OUTCCANC", "OUTCTB", "OUTCDTH", "EPOTBH", "EDTXBH", "SHARBH", "EVIDBH", "EVODBH", "EVHDBH", "EVJLBH", "MHIVBH", "MMANBH", "MVCDBH", "MEANBH", "FTOYBH", "ORNTBH")]
 
-colnames(all) <- c("CASEID", "hivstat", "speak_spanish", "age", "ethnicity", "educ_level", "mother_educ", "drug", "sex_partners","first_pos_test", "birth_country", "marital_status", "living_with", "household_income", "family_cancer", "family_hbp", "family_cholesterol", "family_diabetes", "family_kidney" ," first_menstruation", "ever_mi", "ever_chf", "ever_stroke", "ever_highcholesterol", "ever_lung_clot", "ever_liverprob", "ever_hrt", "aids", "cancer", "tb", "death", "height", "weight")
+colnames(all) <- c("CASEID", "hivstat", "speak_spanish", "age", "ethnicity", "educ_level", "mother_educ", "drug", "sex_partners","first_pos_test", "birth_country", "marital_status", "living_with", "household_income", "family_cancer", "family_hbp", "family_cholesterol", "family_diabetes", "family_kidney" ," first_menstruation", "ever_mi", "ever_chf", "ever_stroke", "ever_highcholesterol", "ever_lung_clot", "ever_liverprob", "ever_hrt", "aids", "cancer", "tb", "death", "ever_marijuana", "ever_drug_treatment", "shared_needles", "ever_in_drug_detox", "ever_out_drug_detox", "ever_halfway_house", "ever_jail", "ever_sex_with_hiv_male", "ever_sex_with_gay_male", "condom_use", "ever_anal_sex", "ever_sex_toys", "sexual_orientation")
 
+all$hivstat[all$hivstat == 4] <- 2
+all$hivstat[all$hivstat == 1] <- 0
+all$hivstat[all$hivstat == 2] <- 1
 
 CASEID <- all$CASEID
 hivstat <- all$hivstat
@@ -77,9 +80,6 @@ aids <- all$aids
 cancer <- all$cancer
 tb <- all$tb
 death <- all$death
-death
-height <- all$height_cm
-weight <- all$weight_kg
 first_pos_test <- all$first_pos_test
 living_with <- all$living_with
 family_kidney <- all$family_kidney
@@ -89,17 +89,26 @@ ever_stroke <- all$ever_stroke
 ever_highcholesterol <- all$ever_highcholesterol
 ever_lung_clot <- all$ever_lung_clot
 ever_liverprob <- all$ever_liverprob
+ever_marijuana <- all$ever_marijuana
+ever_drug_treatment <- all$ever_drug_treatment
+shared_needles <- all$shared_needles
+ever_in_drug_detox <- all$ever_in_drug_detox
+ever_out_drug_detox <- all$ever_out_drug_detox
+ever_halfway_house <- all$ever_halfway_house
+ever_jail <- all$ever_jail
+ever_sex_with_hiv_male <- all$ever_sex_with_hiv_male
+ever_sex_with_gay_male <- all$ever_sex_with_gay_male
+condom_use <- all$condom_use
+ever_anal_sex <- all$ever_anal_sex
+ever_sex_toys <- all$ever_sex_toys
+sexual_orientation <-all$sexual_orientation
 
 
-all$bmi <- all$weight/(all$height/100)^2 
-bmi <- all$bmi
-
-all$hivstat[all$hivstat == 4] <- 2
 
 ```
 HIV STATUS: 
-1: Negative
-2: Prevalent 
+0: Negative
+1: Prevalent 
 
 ```{r}
 all %>% ggplot()+
@@ -123,7 +132,7 @@ There seems to be a little bit of a higher household income among those with HIV
 aids_proportion <- with(all, table(aids, hivstat)) %>% prop.table(margin = 2)
 aids_proportion
 ```
-Among those with HIV (hivstat = 2), only 27% have developed AIDS. This shows that HIV does not always lead to AIDS.
+Among those with HIV (hivstat = 1), only 29% have developed AIDS. This shows that HIV does not always lead to AIDS (contrarily to popular belief)
 
 ```{r}
 partners_prop <- with(all, table(sex_partners, hivstat)) %>% prop.table(margin = 1)
@@ -137,15 +146,7 @@ The sex partner categories are as follows :
 5: more than 100 partners
 -8 : don't know
 
-We notice that as the number of sex partners increases, the proportion of those with HIV increases as well. 
-```{r}
-library(ggplot2)
-all %>% ggplot()+
-  geom_boxplot(aes(factor(hivstat), bmi))+
-  labs(x = "HIV Status", y = "BMI")
-
-```
-There seems to be no relationship between HIV status and BMI.
+We notice that among those with more than 1 sex partner, there is always significantly more women in the study with HIV than without HIV.
 
 
 ```{r}
@@ -165,29 +166,32 @@ The marital status categories are as follows:
 We notice that among those with HIV, the biggest proportion has never been married. 
 Also, there seems to be a significant bigger percentage of people who are widowed or divorced among the women with HIV than those without (will also see this in the summary of the logistic model below)
 ```{r}
-
-glm_income <- glm((hivstat - 1) ~ I(household_income), data = all, family = binomial)
-summary(my_glm)
+glm_income <- glm(hivstat ~ I(household_income), data = all, family = binomial)
+summary(glm_income)
 ```
 At an alpha = 0.05 significance level, there seems to be a significant relationship between hiv status and household income. 
 
 ```{r}
-
-glm_partners <- glm((hivstat - 1) ~ I(sex_partners), data = all, family = binomial)
-summary(glm_partners)
-```
-At an alpha = 0.06 significance level, there seems to be a significant relationship between hiv status and number of sex partners. 
-
-```{r}
-glm_marital <- glm ((hivstat - 1) ~ as.factor(marital_status) , data = all, family = binomial)
+glm_marital <- glm (hivstat ~ as.factor(marital_status) , data = all, family = binomial)
 summary(glm_marital)
 ```
-If we compare the women who are widowed or divorced, there is a bigger amount of women who are widowed or divorced among those with HIV than those without HIV. 
-
+The odds of having HIV is significantly greater for women who are widowed or divorced than for women who are legally married.
 
 ```{r}
 death_glm <- glm(death ~ ever_highcholesterol , family = binomial)
 summary(death_glm)
 
 ```
-Women who were ever told they had high cholesterol were more likely to die at the end of the study. 
+Women who were ever told they had high cholesterol were more likely to die at the end of the study, compared with women who did not have high cholesterol. 
+
+
+```{r}
+glm_drug <- glm(hivstat ~ ever_drug_treatment, family = binomial)
+summary(glm_drug)
+```
+At an alpha = 0.05 significance level, there seems to be a significant relationship between hiv status and receiving drug treatment. 
+ 
+
+
+
+
