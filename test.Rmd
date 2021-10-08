@@ -135,7 +135,7 @@ aids_proportion
 Among those with HIV (hivstat = 1), only 29% have developed AIDS. This shows that HIV does not always lead to AIDS (contrarily to popular belief)
 
 ```{r}
-partners_prop <- with(all, table(sex_partners, hivstat)) %>% prop.table(margin = 1)
+partners_prop <- with(all, table(sex_partners, hivstat)) %>% prop.table(margin = 2)
 partners_prop
 ```
 The sex partner categories are as follows : 
@@ -146,7 +146,7 @@ The sex partner categories are as follows :
 5: more than 100 partners
 -8 : don't know
 
-We notice that among those with more than 1 sex partner, there is always significantly more women in the study with HIV than without HIV.
+We notice that for women with or without HIV status in this cohort, the number of sexual partners does not seem to change considerably.
 
 
 ```{r}
