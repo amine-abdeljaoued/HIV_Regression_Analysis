@@ -190,8 +190,27 @@ glm_drug <- glm(hivstat ~ ever_drug_treatment, family = binomial)
 summary(glm_drug)
 ```
 At an alpha = 0.05 significance level, there seems to be a significant relationship between hiv status and receiving drug treatment. 
- 
+
+```
+```{r}
+plot(all$age, all$death)
+death_logit_reduced = glm(death~ age, data = all , family = "binomial")
+death_logit_full = glm(death~ age + hivstat + educ_level, data = all , family = "binomial")
+lines((1:100),exp(death_logit_reduced$coefficients[1]+(1:100)*death_logit_reduced$coefficients[2])/(exp(death_logit_reduced$coefficients[1]+(1:100)*death_logit$coefficients[2])+1))
+summary(death_logit_reduced)
+#summary(death_logit_full)
+```
 
 
 
-
+```{r}
+plot(all$age, all$death)
+death_logit_reduced = glm(death~ age, data = all , family = "binomial")
+death_logit_full = glm(death~ age + hivstat  + household_income, data = all , family = "binomial")
+lines((1:100),exp(death_logit_reduced$coefficients[1]+(1:100)*death_logit_reduced$coefficients[2])/(exp(death_logit_reduced$coefficients[1]+(1:100)*death_logit_reduced$coefficients[2])+1))
+summary(death_logit_reduced)
+summary(death_logit_full)
+```
+```{r}
+anova(death_logit_reduced, death_logit_full, test = "Chisq")
+```
