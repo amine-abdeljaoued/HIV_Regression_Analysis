@@ -1,6 +1,8 @@
 ---
 title: "BST 210 PROJECT"
-output: html_document
+output:
+  word_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -207,4 +209,5 @@ plot( hist2, col=rgb(0,0,1,1/4), xlim=c(15,70), add=T)  # second
 lines(10:80,dnorm((10:80),mean = mean(all$age[all$death==1]), sd = sd(all$age[all$death==1]))*length(all$age[all$death==1])*5, col = rgb(1,0,0,2/3))
 lines(10:80,dnorm((10:80),mean = mean(all$age[all$death==0]), sd = sd(all$age[all$death==0]))*length(all$age[all$death==0])*5, col = rgb(0,0,1,2/3))
 ```
-As we can see in the plot of the histogram of women who died (red) and the histogram of the women who did not die (blue), the women who died were on average older than the women who did not die
+As we can see in the plot of the histogram of women who died (red) and the histogram of the women who did not die (blue), the women who died were on average older than the women who did not die.
+
