@@ -211,3 +211,72 @@ lines(10:80,dnorm((10:80),mean = mean(all$age[all$death==0]), sd = sd(all$age[al
 ```
 As we can see in the plot of the histogram of women who died (red) and the histogram of the women who did not die (blue), the women who died were on average older than the women who did not die.
 
+
+#############################################################################################
+
+MODEL BUILDING: predicting HIV
+
+We want to build a model predicting the incidence of HIV and using the following potential predictors:\
+
+
+* 
+
+"CASEID", "hivstat", "speak_spanish", "age", "ethnicity", "educ_level", "mother_educ", "drug", "sex_partners","first_pos_test", "birth_country", "marital_status", "living_with", "household_income", "family_cancer", "family_hbp", "family_cholesterol", "family_diabetes", "family_kidney" ," first_menstruation", "ever_mi", "ever_chf", "ever_stroke", "ever_highcholesterol", "ever_lung_clot", "ever_liverprob", "ever_hrt", "aids", "cancer", "tb", "death", "ever_marijuana", "ever_drug_treatment", "shared_needles", "ever_in_drug_detox", "ever_out_drug_detox", "ever_halfway_house", "ever_jail", "ever_sex_with_hiv_male", "ever_sex_with_gay_male", "condom_use", "ever_anal_sex", "ever_sex_toys", "sexual_orientation"
+
+```{r}
+my_data <- matrix(c(hivstat, age, ethnicity, educ_level, marital_status, living_with, household_income, ever_marijuana, ever_drug_treatment, shared_needles, ever_in_drug_detox, ever_out_drug_detox, ever_halfway_house, ever_jail, ever_sex_with_hiv_male, ever_sex_with_gay_male, condom_use, ever_anal_sex, ever_sex_toys, sexual_orientation), ncol = 20)
+cor(my_data, method = "pearson")
+
+```
+Based on the correlation matrix, there is a very high correlation between the following variables: ever_drug_treatment, ever_in_drug_detox, ever_out_drug_detox, ever_halfway_house, ever_jail. \
+So, we will only include one of these variables in our analysis instead of including them all. 
+
+Based on our research, we are interested in assessing the effects of ever being in jail with the incidence HIV. So, we are going to keep ever_jail in our analysis. 
+
+Going to attempt a forward selection process involving the following covariates : 
+
+age, ethnicity, educ_level, marital_status, living_with, household_income, ever_marijuana, shared_needles, ever_jail, ever_sex_with_hiv_male, ever_sex_with_gay_male, condom_use, ever_anal_sex, ever_sex_toys, sexual_orientation, family_cancer, ever_mi, ever_chf, ever_highcholesterol, ever_liverprob
+
+```{r}
+glm1 <- glm(hivstat ~ 1, family = binomial)
+forwardModel <- step(glm1, direction = "forward", 
+                     scope = (~ age + as.factor(ethnicity) + as.factor(educ_level) + as.factor(marital_status) + living_with + household_income + as.factor(ever_marijuana) + as.factor(shared_needles) + as.factor(ever_jail) + as.factor(ever_sex_with_hiv_male) + as.factor(ever_sex_with_gay_male) + as.factor(condom_use) + as.factor(ever_anal_sex) + as.factor(ever_sex_toys) + as.factor(sexual_orientation) + as.factor(family_cancer) + as.factor(ever_mi) + as.factor(ever_chf) + as.factor(ever_highcholesterol) + as.factor(ever_liverprob)))
+
+```
+So our first model option is : 
+```{r}
+
+mod.hiv1 <- glm(hivstat ~ as.factor(ever_marijuana) + as.factor(ever_liverprob) + living_with + as.factor(family_cancer) + age + as.factor(ever_chf) + as.factor(ever_anal_sex) + as.factor(ever_jail) + as.factor(shared_needles) + as.factor(educ_level) + as.factor(ever_sex_with_gay_male) + as.factor(marital_status) + as.factor(sexual_orientation) + as.factor(ethnicity), family = binomial)
+
+#checking goodness of fit with the Hosmer-Lemeshow Goodness of fit test
+
+hoslem.test(hivstat, fitted(mod.hiv1))
+
+library(pROC)
+predprob <- predict(mod.hiv1,type=c("response"))
+roccurve <- roc(hivstat ~ predprob)
+plot(roccurve,col="red")
+auc(roccurve)
+
+```
+
+Backward model : 
+
+```{r}
+glm2 <- glm(hivstat ~ as.factor(ethnicity) + as.factor(educ_level) + as.factor(marital_status) + living_with + household_income + as.factor(ever_marijuana) + as.factor(shared_needles) + as.factor(ever_jail) + as.factor(ever_sex_with_hiv_male) + as.factor(ever_sex_with_gay_male) + as.factor(condom_use) + as.factor(ever_anal_sex) + as.factor(ever_sex_toys) + as.factor(sexual_orientation) + as.factor(family_cancer) + as.factor(ever_mi) + as.factor(ever_chf) + as.factor(ever_highcholesterol) + as.factor(ever_liverprob), family = binomial)
+
+backwardModel <- step(glm2, direction = "backward")
+```
+Our second model option is :
+
+```{r}
+mod.hiv2 <- glm(hivstat ~ as.factor(ever_highcholesterol) + as.factor(ever_sex_toys) + as.factor(ever_mi) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use), family = binomial)
+
+hoslem.test(hivstat, fitted(mod.hiv2))
+
+predprob <- predict(mod.hiv2,type=c("response"))
+roccurve <- roc(hivstat ~ predprob)
+plot(roccurve,col="red")
+auc(roccurve)
+```
+Based on the discrimination and goodness of fit tests, the second model seems to be a better fit than the first model. 
