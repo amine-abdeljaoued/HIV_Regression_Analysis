@@ -1,8 +1,9 @@
 ---
 title: "BST 210 PROJECT"
 output:
-  word_document: default
+  pdf_document: default
   html_document: default
+  word_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -45,20 +46,10 @@ outcome <- read.csv(file = "data/outcome_cleaned.csv", header = TRUE, sep = ",")
 
 alc_drugs <- read.csv(file = "data/f04.csv", header = TRUE, sep = ",")
 
-join1 <- inner_join(hiv, baseline, by = "CASEID" )
-join2 <- inner_join(join1, sociodemographic, by ="CASEID")
-join3 <- inner_join(join2, medhistory, by = "CASEID")
-join4 <- inner_join(join3, outcome, by = "CASEID")
-join5 <- inner_join(join4, alc_drugs, by = "CASEID")
-all <- join5
+all <- read.csv(file = "data/finaldataset.csv", header = TRUE, sep = ",")
 
-all <- all[, c("CASEID", "STATUS", "SPANSC", "AGE_SC", "RACESC", "EDUCSC", "MOMESC", "IDU_SC", "PARTSC", "FPOSSC", "COB_SD", "MAR_SD","NRESSD", "INC_SD","FMCNHX", "FMHBHX", "FMCLHX", "FMDBHX", "KDHXHX", "MAGEHX", "EVMIHX", "EVCFHX", "EVSTHX", "EVHCHX","EVLCHX", "EVLVHX", "EHRTHX", "OUTCAIDS", "OUTCCANC", "OUTCTB", "OUTCDTH", "EPOTBH", "EDTXBH", "SHARBH", "EVIDBH", "EVODBH", "EVHDBH", "EVJLBH", "MHIVBH", "MMANBH", "MVCDBH", "MEANBH", "FTOYBH", "ORNTBH")]
+View(all)
 
-colnames(all) <- c("CASEID", "hivstat", "speak_spanish", "age", "ethnicity", "educ_level", "mother_educ", "drug", "sex_partners","first_pos_test", "birth_country", "marital_status", "living_with", "household_income", "family_cancer", "family_hbp", "family_cholesterol", "family_diabetes", "family_kidney" ," first_menstruation", "ever_mi", "ever_chf", "ever_stroke", "ever_highcholesterol", "ever_lung_clot", "ever_liverprob", "ever_hrt", "aids", "cancer", "tb", "death", "ever_marijuana", "ever_drug_treatment", "shared_needles", "ever_in_drug_detox", "ever_out_drug_detox", "ever_halfway_house", "ever_jail", "ever_sex_with_hiv_male", "ever_sex_with_gay_male", "condom_use", "ever_anal_sex", "ever_sex_toys", "sexual_orientation")
-
-all$hivstat[all$hivstat == 4] <- 2
-all$hivstat[all$hivstat == 1] <- 0
-all$hivstat[all$hivstat == 2] <- 1
 
 CASEID <- all$CASEID
 hivstat <- all$hivstat
@@ -104,6 +95,7 @@ condom_use <- all$condom_use
 ever_anal_sex <- all$ever_anal_sex
 ever_sex_toys <- all$ever_sex_toys
 sexual_orientation <-all$sexual_orientation
+outcome_year <- all$outcomeyear
 
 
 
@@ -280,3 +272,4 @@ plot(roccurve,col="red")
 auc(roccurve)
 ```
 Based on the discrimination and goodness of fit tests, the second model seems to be a better fit than the first model. 
+
