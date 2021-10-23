@@ -240,16 +240,6 @@ So our first model option is :
 
 mod.hiv1 <- glm(hivstat ~ as.factor(ever_marijuana) + as.factor(ever_liverprob) + living_with + as.factor(family_cancer) + age + as.factor(ever_chf) + as.factor(ever_anal_sex) + as.factor(ever_jail) + as.factor(shared_needles) + as.factor(educ_level) + as.factor(ever_sex_with_gay_male) + as.factor(marital_status) + as.factor(sexual_orientation) + as.factor(ethnicity), family = binomial)
 
-#checking goodness of fit with the Hosmer-Lemeshow Goodness of fit test
-
-hoslem.test(hivstat, fitted(mod.hiv1))
-
-library(pROC)
-predprob <- predict(mod.hiv1,type=c("response"))
-roccurve <- roc(hivstat ~ predprob)
-plot(roccurve,col="red")
-auc(roccurve)
-
 ```
 
 Backward model : 
@@ -263,13 +253,33 @@ Our second model option is :
 
 ```{r}
 mod.hiv2 <- glm(hivstat ~ as.factor(ever_highcholesterol) + as.factor(ever_sex_toys) + as.factor(ever_mi) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use), family = binomial)
+```
 
+We are going to check the goodness of fit with the Hosmer-Lemeshow Goodness of fit test. We are going to use this test because we have a large number of covariate patterns (given our large number of covariates)
+```{r}
+ 
+hoslem.test(hivstat, fitted(mod.hiv1))
 hoslem.test(hivstat, fitted(mod.hiv2))
+
+```
+The tests tell us that our models are not very good fits of the data. 
+
+Checking the ROC curves:
+
+```{r}
+
+library(pROC)
+predprob <- predict(mod.hiv1,type=c("response"))
+roccurve <- roc(hivstat ~ predprob)
+plot(roccurve,col="red")
+auc(roccurve)
 
 predprob <- predict(mod.hiv2,type=c("response"))
 roccurve <- roc(hivstat ~ predprob)
 plot(roccurve,col="red")
 auc(roccurve)
 ```
-Based on the discrimination and goodness of fit tests, the second model seems to be a better fit than the first model. 
+Based on the discrimination test, the area under the first ROC curve (0.6933) is smaller than the area under the second ROC curve (0.7404). This means that the probability that the first model will be able to classify a case correctly is 0.6933, while the probability that the second model will be able to classify a case correctly is 0.7404. This tells us that the second model is better in discriminating between a case (hivstat = 1) and a non-case(hivstat = 0).
+
+
 
