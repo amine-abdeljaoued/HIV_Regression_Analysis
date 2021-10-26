@@ -282,4 +282,15 @@ auc(roccurve)
 Based on the discrimination test, the area under the first ROC curve (0.6933) is smaller than the area under the second ROC curve (0.7404). This means that the probability that the first model will be able to classify a case correctly is 0.6933, while the probability that the second model will be able to classify a case correctly is 0.7404. This tells us that the second model is better in discriminating between a case (hivstat = 1) and a non-case(hivstat = 0).
 
 
+Checking for outliers with Cook's Distance:
+
+```{r}
+cooksd <- cooks.distance(mod.hiv2)
+high_infl <- cooksd[cooksd > 4/(nrow(all) - 2)]
+high_infl <- data.frame(hsigh_infl)
+
+no_outliers <- subset(all, cooksd <= 4/(nrow(all) - 2))
+mod_no_outliers <- 
+
+```
 
