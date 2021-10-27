@@ -286,11 +286,62 @@ Checking for outliers with Cook's Distance:
 
 ```{r}
 cooksd <- cooks.distance(mod.hiv2)
-high_infl <- cooksd[cooksd > 4/(nrow(all) - 2)]
-high_infl <- data.frame(hsigh_infl)
 
 no_outliers <- subset(all, cooksd <= 4/(nrow(all) - 2))
-mod_no_outliers <- 
+mod_no_outliers <- glm(hivstat ~ as.factor(ever_highcholesterol) + as.factor(ever_sex_toys) + as.factor(ever_mi) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use), data = no_outliers, family = binomial)
+
+extractAIC(mod_no_outliers)
+```
+The AIC of the model without the outliers is 718.36 which is so much lower than the AIC of the model including the outliers. 
+
+
+
+Checking for points with high influence with DFFITS:
+
+```{r}
+dffits <- dffits(mod.hiv2)
+no_highinfl <- subset(all, dffits <= 2*sqrt((6 + 1)/nrow(all)))
+mod_no_highinfl <- glm(hivstat ~ as.factor(ever_highcholesterol) + as.factor(ever_sex_toys) + as.factor(ever_mi) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use), data = no_highinfl, family = binomial)
+
+summary(mod_no_highinfl)
+```
+The p-values of the coefficients become smaller when we remove the points with high influence.
+
+Removing the points with large Cook's Distance AND large DFFITS values : 
+
+```{r}
+
+without_all_outliers <- subset(all, cooksd <= 4/(nrow(all) - 2) &  dffits <= 2*sqrt((6 + 1)/nrow(all)))
+
+mod_wo_all_outliers <- glm(hivstat ~ as.factor(ever_highcholesterol) + as.factor(ever_sex_toys) + as.factor(ever_mi) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use), data = without_all_outliers, family = binomial) 
+
+summary(mod_wo_all_outliers)
+```
+This model gives the smallest AIC so far (672.35), which makes sense because we are removing the outliers and high influence points, without which the model is a better fit. 
+
+
+Checking for potential effect modifiers:
+```{r}
+
+#checking if age is an effect modifier:
+
+temp_model <- mod_wo_all_outliers
+#summary(temp_model)
+
+temp_ageinteract <- glm(hivstat ~ as.factor(ever_highcholesterol) + as.factor(ever_sex_toys) + as.factor(ever_mi) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use) + age + household_income*age +  as.factor(ever_highcholesterol)*age + as.factor(ever_sex_toys)*age + as.factor(ever_mi)*age +  as.factor(ever_sex_with_hiv_male)*age + as.factor(condom_use)*age, data = without_all_outliers, family = binomial)
+
+summary(temp_ageinteract)
 
 ```
+age is not an effect modifier of the effect of any of the covariates in the model on HIV status, since the p-values of all the interaction terms are insignificant (> 0.05). 
+
+```{r}
+#checking if number of sex partners is an effect modifier
+
+temp_sexpinteract <- glm(hivstat ~ as.factor(ever_highcholesterol) + as.factor(ever_sex_toys) + as.factor(ever_mi) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use) + sex_partners+ household_income*sex_partners +  as.factor(ever_highcholesterol)*sex_partners + as.factor(ever_sex_toys)*sex_partners + as.factor(ever_mi)*sex_partners +  as.factor(ever_sex_with_hiv_male)*sex_partners + as.factor(condom_use)*sex_partners, data = without_all_outliers, family = binomial)
+
+summary(temp_sexpinteract)
+
+```
+sex_partners is not an effect modifier of the effect of any of the covariates in the model on HIV status, since the p-values of all the interaction terms are insignificant (> 0.05). 
 
