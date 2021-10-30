@@ -211,7 +211,6 @@ MODEL BUILDING: predicting HIV
 We want to build a model predicting the incidence of HIV and using the following potential predictors:\
 
 
-* 
 
 "CASEID", "hivstat", "speak_spanish", "age", "ethnicity", "educ_level", "mother_educ", "drug", "sex_partners","first_pos_test", "birth_country", "marital_status", "living_with", "household_income", "family_cancer", "family_hbp", "family_cholesterol", "family_diabetes", "family_kidney" ," first_menstruation", "ever_mi", "ever_chf", "ever_stroke", "ever_highcholesterol", "ever_lung_clot", "ever_liverprob", "ever_hrt", "aids", "cancer", "tb", "death", "ever_marijuana", "ever_drug_treatment", "shared_needles", "ever_in_drug_detox", "ever_out_drug_detox", "ever_halfway_house", "ever_jail", "ever_sex_with_hiv_male", "ever_sex_with_gay_male", "condom_use", "ever_anal_sex", "ever_sex_toys", "sexual_orientation"
 
@@ -348,21 +347,68 @@ sex_partners is not an effect modifier of the effect of any of the covariates in
 
 After talking to Dr. Caitlin Dugdale, infectious disease physician with expertise in HIV research, we are going to construct a model predicting HIV status with the following predictors: ethnicity, drug injection, sex with hiv positive male, household income, number of sex partners, and history of incarceration. She believes that this variables are very important in predicting HIV status.
 
+We will look at the association between hivstatus and each of this covariates alone.
 ```{r}
-new_model <- glm(hivstat ~ as.factor(ethnicity) + as.factor(drug) + as.factor(ever_sex_with_hiv_male) + as.factor(household_income) + as.factor(sex_partners) + as.factor(ever_jail), data = all, family = binomial())
+mod.ethnicity <- glm(hivstat ~ as.factor(ethnicity), data = all, family = binomial())
+summary(mod.ethnicity)
+```
+ 
+
+
+
+```{r}
+mod.druginjection <- glm(hivstat ~ as.factor(drug), data = all, family = binomial())
+summary(mod.druginjection)
+
+```
+In our data there does not seem to be an association between HIV status and drug injection. However, we will still include it in our model because the domain experts told us that drug injection is a potential confounder. 
+
+```{r}
+
+mod.hivmale <- glm(hivstat ~ as.factor(ever_sex_with_hiv_male), data = all, family = binomial())
+summary(mod.hivmale)
+```
+There seems to be a significant association between HIV status and ever having sex with an HIV positive male. 
+
+```{r}
+mod.household_income <- glm(hivstat ~ household_income, data = all, family = binomial())
+summary(mod.household_income)
+
+```
+There seems to be a significant association between a woman's household income and HIV status in the US. 
+
+```{r}
+mod.sexpartners <- glm(hivstat ~ sex_partners, data = all, family = binomial())
+summary(mod.sexpartners)
+
+partners_prop <- with(all, table(sex_partners, hivstat)) %>% prop.table(margin = 2)
+partners_prop
+
+```
+In our data, the number of sexual partners does not seem to affect one's HIV status, because the proportions of people with HIV and without HIV are the same for the different number of sexual partners. However, we might still include sexual partners in our model because it is a confounder and might provide a better fit for the model. 
+
+```{r}
+mod.jail <- glm(hivstat ~ as.factor(ever_jail), data = all, family = binomial())
+summary(mod.jail)
+
+```
+There is an association between ever being in jail and HIV status.
+
+
+```{r}
+new_model <- glm(hivstat ~ as.factor(ethnicity) + as.factor(drug) + as.factor(ever_sex_with_hiv_male) + household_income + sex_partners + as.factor(ever_jail), data = all, family = binomial())
 
 summary(new_model)
 ```
-We notice that the coefficients of the number of sex partners, ever being in jail, and ever having sex with an hiv positive male are very statistically insignificant as the p-values are almost equal to 1. 
 
 
 ```{r}
-hoslem.test(hivstat, fitted(new_model))
 
+hoslem.test(hivstat, fitted(new_model))
 
 ```
 We used the Hosmer and Lemeshow goodness of fit test because we have a very large number of covariate patterns. \
-We fail to reject the null hypothesis that the model provides a good fit (p-value = 0.5509 > 0.05) and conclude that our model provides a good fit of the data. 
+We fail to reject the null hypothesis that the model provides a good fit (p-value > 0.05) and conclude that our model provides a good fit of the data. 
 
 Looking at the ROC and AUC:
 
@@ -377,11 +423,25 @@ auc(roccurve)
 The AUC is greater than 0.7 which is an indication that the model does a good job in discriminating between cases and noncases.
 
 
-Checking if adding age provides a better fit than the model without age.
+
 
 ```{r}
+start <- glm(hivstat ~ as.factor(ethnicity) + as.factor(educ_level) + as.factor(marital_status) + living_with + household_income + as.factor(drug) + sex_partners + as.factor(ever_marijuana) + as.factor(shared_needles) + as.factor(ever_jail) + as.factor(ever_sex_with_hiv_male) + as.factor(ever_sex_with_gay_male) + as.factor(condom_use) + as.factor(ever_anal_sex) + as.factor(ever_sex_toys) + as.factor(sexual_orientation) + age , family = binomial)
 
-new_modelage <- new_model <- glm(hivstat ~ as.factor(ethnicity) + as.factor(drug) + as.factor(ever_sex_with_hiv_male) + as.factor(household_income) + as.factor(sex_partners) + as.factor(ever_jail), data = all, family = binomial())
+backwardModel <- step(start, direction = "backward")
+```
 
+The model that we get using backwards selection is:
+```{r}
+
+backward <- glm(hivstat ~ sex_partners + as.factor(ever_marijuana) + as.factor(ever_sex_toys) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use), data = all, family = binomial())
+summary(backward)
+
+hoslem.test(hivstat, fitted(backward))
+predprob <- predict(backward,type=c("response"))
+roccurve <- roc(hivstat ~ predprob)
+plot(roccurve,col="red")
+auc(roccurve)
 
 ```
+This backward model does a better job at discriminating between cases and noncases than the previous model I created.
