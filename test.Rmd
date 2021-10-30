@@ -262,7 +262,7 @@ hoslem.test(hivstat, fitted(mod.hiv1))
 hoslem.test(hivstat, fitted(mod.hiv2))
 
 ```
-The tests tell us that our models are not very good fits of the data. 
+The p-values of the tests are very large, which is evidence towards goodness of fit of our models. 
 
 Checking the ROC curves:
 
@@ -345,3 +345,43 @@ summary(temp_sexpinteract)
 ```
 sex_partners is not an effect modifier of the effect of any of the covariates in the model on HIV status, since the p-values of all the interaction terms are insignificant (> 0.05). 
 
+
+After talking to Dr. Caitlin Dugdale, infectious disease physician with expertise in HIV research, we are going to construct a model predicting HIV status with the following predictors: ethnicity, drug injection, sex with hiv positive male, household income, number of sex partners, and history of incarceration. She believes that this variables are very important in predicting HIV status.
+
+```{r}
+new_model <- glm(hivstat ~ as.factor(ethnicity) + as.factor(drug) + as.factor(ever_sex_with_hiv_male) + as.factor(household_income) + as.factor(sex_partners) + as.factor(ever_jail), data = all, family = binomial())
+
+summary(new_model)
+```
+We notice that the coefficients of the number of sex partners, ever being in jail, and ever having sex with an hiv positive male are very statistically insignificant as the p-values are almost equal to 1. 
+
+
+```{r}
+hoslem.test(hivstat, fitted(new_model))
+
+
+```
+We used the Hosmer and Lemeshow goodness of fit test because we have a very large number of covariate patterns. \
+We fail to reject the null hypothesis that the model provides a good fit (p-value = 0.5509 > 0.05) and conclude that our model provides a good fit of the data. 
+
+Looking at the ROC and AUC:
+
+
+```{r}
+predprob <- predict(new_model,type=c("response"))
+roccurve <- roc(hivstat ~ predprob)
+plot(roccurve,col="red")
+auc(roccurve)
+
+```
+The AUC is greater than 0.7 which is an indication that the model does a good job in discriminating between cases and noncases.
+
+
+Checking if adding age provides a better fit than the model without age.
+
+```{r}
+
+new_modelage <- new_model <- glm(hivstat ~ as.factor(ethnicity) + as.factor(drug) + as.factor(ever_sex_with_hiv_male) + as.factor(household_income) + as.factor(sex_partners) + as.factor(ever_jail), data = all, family = binomial())
+
+
+```
