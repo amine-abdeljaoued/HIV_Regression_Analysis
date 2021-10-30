@@ -208,12 +208,6 @@ As we can see in the plot of the histogram of women who died (red) and the histo
 
 MODEL BUILDING: predicting HIV
 
-We want to build a model predicting the incidence of HIV and using the following potential predictors:\
-
-
-
-"CASEID", "hivstat", "speak_spanish", "age", "ethnicity", "educ_level", "mother_educ", "drug", "sex_partners","first_pos_test", "birth_country", "marital_status", "living_with", "household_income", "family_cancer", "family_hbp", "family_cholesterol", "family_diabetes", "family_kidney" ," first_menstruation", "ever_mi", "ever_chf", "ever_stroke", "ever_highcholesterol", "ever_lung_clot", "ever_liverprob", "ever_hrt", "aids", "cancer", "tb", "death", "ever_marijuana", "ever_drug_treatment", "shared_needles", "ever_in_drug_detox", "ever_out_drug_detox", "ever_halfway_house", "ever_jail", "ever_sex_with_hiv_male", "ever_sex_with_gay_male", "condom_use", "ever_anal_sex", "ever_sex_toys", "sexual_orientation"
-
 ```{r}
 my_data <- matrix(c(hivstat, age, ethnicity, educ_level, marital_status, living_with, household_income, ever_marijuana, ever_drug_treatment, shared_needles, ever_in_drug_detox, ever_out_drug_detox, ever_halfway_house, ever_jail, ever_sex_with_hiv_male, ever_sex_with_gay_male, condom_use, ever_anal_sex, ever_sex_toys, sexual_orientation), ncol = 20)
 cor(my_data, method = "pearson")
@@ -224,130 +218,10 @@ So, we will only include one of these variables in our analysis instead of inclu
 
 Based on our research, we are interested in assessing the effects of ever being in jail with the incidence HIV. So, we are going to keep ever_jail in our analysis. 
 
-Going to attempt a forward selection process involving the following covariates : 
 
-age, ethnicity, educ_level, marital_status, living_with, household_income, ever_marijuana, shared_needles, ever_jail, ever_sex_with_hiv_male, ever_sex_with_gay_male, condom_use, ever_anal_sex, ever_sex_toys, sexual_orientation, family_cancer, ever_mi, ever_chf, ever_highcholesterol, ever_liverprob
+After talking to Dr. Caitlin Dugdale, infectious disease physician with expertise in HIV research, we are going to construct a model predicting HIV status that includes the following predictors: ethnicity, drug injection, sex with hiv positive male, household income, number of sex partners, and history of incarceration. She believes that these variables are very important in predicting HIV status.
 
-```{r}
-glm1 <- glm(hivstat ~ 1, family = binomial)
-forwardModel <- step(glm1, direction = "forward", 
-                     scope = (~ age + as.factor(ethnicity) + as.factor(educ_level) + as.factor(marital_status) + living_with + household_income + as.factor(ever_marijuana) + as.factor(shared_needles) + as.factor(ever_jail) + as.factor(ever_sex_with_hiv_male) + as.factor(ever_sex_with_gay_male) + as.factor(condom_use) + as.factor(ever_anal_sex) + as.factor(ever_sex_toys) + as.factor(sexual_orientation) + as.factor(family_cancer) + as.factor(ever_mi) + as.factor(ever_chf) + as.factor(ever_highcholesterol) + as.factor(ever_liverprob)))
-
-```
-So our first model option is : 
-```{r}
-
-mod.hiv1 <- glm(hivstat ~ as.factor(ever_marijuana) + as.factor(ever_liverprob) + living_with + as.factor(family_cancer) + age + as.factor(ever_chf) + as.factor(ever_anal_sex) + as.factor(ever_jail) + as.factor(shared_needles) + as.factor(educ_level) + as.factor(ever_sex_with_gay_male) + as.factor(marital_status) + as.factor(sexual_orientation) + as.factor(ethnicity), family = binomial)
-
-```
-
-Backward model : 
-
-```{r}
-glm2 <- glm(hivstat ~ as.factor(ethnicity) + as.factor(educ_level) + as.factor(marital_status) + living_with + household_income + as.factor(ever_marijuana) + as.factor(shared_needles) + as.factor(ever_jail) + as.factor(ever_sex_with_hiv_male) + as.factor(ever_sex_with_gay_male) + as.factor(condom_use) + as.factor(ever_anal_sex) + as.factor(ever_sex_toys) + as.factor(sexual_orientation) + as.factor(family_cancer) + as.factor(ever_mi) + as.factor(ever_chf) + as.factor(ever_highcholesterol) + as.factor(ever_liverprob), family = binomial)
-
-backwardModel <- step(glm2, direction = "backward")
-```
-Our second model option is :
-
-```{r}
-mod.hiv2 <- glm(hivstat ~ as.factor(ever_highcholesterol) + as.factor(ever_sex_toys) + as.factor(ever_mi) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use), family = binomial)
-```
-
-We are going to check the goodness of fit with the Hosmer-Lemeshow Goodness of fit test. We are going to use this test because we have a large number of covariate patterns (given our large number of covariates)
-```{r}
- 
-hoslem.test(hivstat, fitted(mod.hiv1))
-hoslem.test(hivstat, fitted(mod.hiv2))
-
-```
-The p-values of the tests are very large, which is evidence towards goodness of fit of our models. 
-
-Checking the ROC curves:
-
-```{r}
-
-library(pROC)
-predprob <- predict(mod.hiv1,type=c("response"))
-roccurve <- roc(hivstat ~ predprob)
-plot(roccurve,col="red")
-auc(roccurve)
-
-predprob <- predict(mod.hiv2,type=c("response"))
-roccurve <- roc(hivstat ~ predprob)
-plot(roccurve,col="red")
-auc(roccurve)
-```
-Based on the discrimination test, the area under the first ROC curve (0.6933) is smaller than the area under the second ROC curve (0.7404). This means that the probability that the first model will be able to classify a case correctly is 0.6933, while the probability that the second model will be able to classify a case correctly is 0.7404. This tells us that the second model is better in discriminating between a case (hivstat = 1) and a non-case(hivstat = 0).
-
-
-Checking for outliers with Cook's Distance:
-
-```{r}
-cooksd <- cooks.distance(mod.hiv2)
-
-no_outliers <- subset(all, cooksd <= 4/(nrow(all) - 2))
-mod_no_outliers <- glm(hivstat ~ as.factor(ever_highcholesterol) + as.factor(ever_sex_toys) + as.factor(ever_mi) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use), data = no_outliers, family = binomial)
-
-extractAIC(mod_no_outliers)
-```
-The AIC of the model without the outliers is 718.36 which is so much lower than the AIC of the model including the outliers. 
-
-
-
-Checking for points with high influence with DFFITS:
-
-```{r}
-dffits <- dffits(mod.hiv2)
-no_highinfl <- subset(all, dffits <= 2*sqrt((6 + 1)/nrow(all)))
-mod_no_highinfl <- glm(hivstat ~ as.factor(ever_highcholesterol) + as.factor(ever_sex_toys) + as.factor(ever_mi) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use), data = no_highinfl, family = binomial)
-
-summary(mod_no_highinfl)
-```
-The p-values of the coefficients become smaller when we remove the points with high influence.
-
-Removing the points with large Cook's Distance AND large DFFITS values : 
-
-```{r}
-
-without_all_outliers <- subset(all, cooksd <= 4/(nrow(all) - 2) &  dffits <= 2*sqrt((6 + 1)/nrow(all)))
-
-mod_wo_all_outliers <- glm(hivstat ~ as.factor(ever_highcholesterol) + as.factor(ever_sex_toys) + as.factor(ever_mi) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use), data = without_all_outliers, family = binomial) 
-
-summary(mod_wo_all_outliers)
-```
-This model gives the smallest AIC so far (672.35), which makes sense because we are removing the outliers and high influence points, without which the model is a better fit. 
-
-
-Checking for potential effect modifiers:
-```{r}
-
-#checking if age is an effect modifier:
-
-temp_model <- mod_wo_all_outliers
-#summary(temp_model)
-
-temp_ageinteract <- glm(hivstat ~ as.factor(ever_highcholesterol) + as.factor(ever_sex_toys) + as.factor(ever_mi) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use) + age + household_income*age +  as.factor(ever_highcholesterol)*age + as.factor(ever_sex_toys)*age + as.factor(ever_mi)*age +  as.factor(ever_sex_with_hiv_male)*age + as.factor(condom_use)*age, data = without_all_outliers, family = binomial)
-
-summary(temp_ageinteract)
-
-```
-age is not an effect modifier of the effect of any of the covariates in the model on HIV status, since the p-values of all the interaction terms are insignificant (> 0.05). 
-
-```{r}
-#checking if number of sex partners is an effect modifier
-
-temp_sexpinteract <- glm(hivstat ~ as.factor(ever_highcholesterol) + as.factor(ever_sex_toys) + as.factor(ever_mi) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use) + sex_partners+ household_income*sex_partners +  as.factor(ever_highcholesterol)*sex_partners + as.factor(ever_sex_toys)*sex_partners + as.factor(ever_mi)*sex_partners +  as.factor(ever_sex_with_hiv_male)*sex_partners + as.factor(condom_use)*sex_partners, data = without_all_outliers, family = binomial)
-
-summary(temp_sexpinteract)
-
-```
-sex_partners is not an effect modifier of the effect of any of the covariates in the model on HIV status, since the p-values of all the interaction terms are insignificant (> 0.05). 
-
-
-After talking to Dr. Caitlin Dugdale, infectious disease physician with expertise in HIV research, we are going to construct a model predicting HIV status with the following predictors: ethnicity, drug injection, sex with hiv positive male, household income, number of sex partners, and history of incarceration. She believes that this variables are very important in predicting HIV status.
-
-We will look at the association between hivstatus and each of this covariates alone.
+We will look at the association between hivstatus and each of these covariates alone.
 ```{r}
 mod.ethnicity <- glm(hivstat ~ as.factor(ethnicity), data = all, family = binomial())
 summary(mod.ethnicity)
@@ -361,7 +235,7 @@ mod.druginjection <- glm(hivstat ~ as.factor(drug), data = all, family = binomia
 summary(mod.druginjection)
 
 ```
-In our data there does not seem to be an association between HIV status and drug injection. However, we will still include it in our model because the domain experts told us that drug injection is a potential confounder. 
+In our data there does not seem to be an association between HIV status and drug injection. However, we will still include it in our model because the domain experts told us that drug injection is an important confounder. 
 
 ```{r}
 
@@ -420,10 +294,10 @@ plot(roccurve,col="red")
 auc(roccurve)
 
 ```
-The AUC is greater than 0.7 which is an indication that the model does a good job in discriminating between cases and noncases.
+The AUC is smaller than 0.7 which is an indication that the model does not do good job in discriminating between cases and noncases.
 
 
-
+BACKWARD SELECTION:
 
 ```{r}
 start <- glm(hivstat ~ as.factor(ethnicity) + as.factor(educ_level) + as.factor(marital_status) + living_with + household_income + as.factor(drug) + sex_partners + as.factor(ever_marijuana) + as.factor(shared_needles) + as.factor(ever_jail) + as.factor(ever_sex_with_hiv_male) + as.factor(ever_sex_with_gay_male) + as.factor(condom_use) + as.factor(ever_anal_sex) + as.factor(ever_sex_toys) + as.factor(sexual_orientation) + age , family = binomial)
@@ -445,3 +319,63 @@ auc(roccurve)
 
 ```
 This backward model does a better job at discriminating between cases and noncases than the previous model I created.
+
+```{r}
+start <- glm(hivstat ~ 1, family = binomial)
+forwardModel <- step(glm1, direction = "forward", 
+                     scope = (~ as.factor(ethnicity) + as.factor(educ_level) + as.factor(marital_status) + living_with + household_income + as.factor(drug) + sex_partners + as.factor(ever_marijuana) + as.factor(shared_needles) + as.factor(ever_jail) + as.factor(ever_sex_with_hiv_male) + as.factor(ever_sex_with_gay_male) + as.factor(condom_use) + as.factor(ever_anal_sex) + as.factor(ever_sex_toys) + as.factor(sexual_orientation) + age))
+
+
+```
+The model that we get using forward selection includes too many covariates. In our research we prefer simpler models, so we are going to stick to the backward model instead of the forward one. However, we are going to add drug injection since it is a confounder.
+
+```{r}
+backward_updated <- glm(hivstat ~ sex_partners + as.factor(drug) + as.factor(ever_marijuana) + as.factor(ever_sex_toys) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use), data = all, family = binomial())
+
+hoslem.test(hivstat, fitted(backward_updated))
+predprob <- predict(backward_updated,type=c("response"))
+roccurve <- roc(hivstat ~ predprob)
+plot(roccurve,col="red")
+auc(roccurve)
+extractAIC(backward_updated)
+
+```
+
+Checking for outliers with Cook's Distance:
+
+```{r}
+cooksd <- cooks.distance(backward_updated)
+
+no_outliers <- subset(all, cooksd <= 4/(nrow(all) - 2))
+
+back_no_outliers <- glm(hivstat ~ sex_partners + as.factor(drug) + as.factor(ever_marijuana) + as.factor(ever_sex_toys) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use), data = no_outliers, family = binomial())
+
+extractAIC(back_no_outliers)
+```
+The AIC of the model without the outliers is so much lower than the AIC of the model including the outliers. 
+
+
+
+Checking for points with high influence with DFFITS:
+
+```{r}
+dffits <- dffits(backward_updated)
+no_highinfl <- subset(all, dffits <= 2*sqrt((6 + 1)/nrow(all)))
+
+mod_no_highinfl <- glm(hivstat ~ sex_partners + as.factor(drug) + as.factor(ever_marijuana) + as.factor(ever_sex_toys) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use), data = no_highinfl, family = binomial())
+
+extractAIC(mod_no_highinfl)
+```
+
+
+Removing the points with large Cook's Distance AND large DFFITS values : 
+
+```{r}
+
+without_all_outliers <- subset(all, cooksd <= 4/(nrow(all) - 2) &  dffits <= 2*sqrt((6 + 1)/nrow(all)))
+
+mod_wo_all_outliers <- glm(hivstat ~ sex_partners + as.factor(drug) + as.factor(ever_marijuana) + as.factor(ever_sex_toys) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use), data = without_all_outliers, family = binomial())
+
+```
+This model gives the smallest AIC so far, which makes sense because we are removing the outliers and high influence points, without which the model is a better fit. 
+
