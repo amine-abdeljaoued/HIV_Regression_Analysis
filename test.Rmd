@@ -33,6 +33,7 @@ library(ResourceSelection)
 library(LogisticDx)
 library(ROCR)
 library(ggplot2)
+library(pROC)
 
 hiv <- read.csv(file ="data/hivstat.csv", header = TRUE, sep = ",")
 
@@ -224,9 +225,14 @@ After talking to Dr. Caitlin Dugdale, infectious disease physician with expertis
 We will look at the association between hivstatus and each of these covariates alone.
 ```{r}
 mod.ethnicity <- glm(hivstat ~ as.factor(ethnicity), data = all, family = binomial())
-summary(mod.ethnicity)
+
+OR.ethnicity <- exp(coef(mod.ethnicity)[3]-coef(mod.ethnicity)[2])
+OR.ethnicity
+CI.ethnicity <- exp(log(OR.ethnicity) + c(-1,1)*1.96*sqrt(vcov(mod.ethnicity)[2,2] + vcov(mod.ethnicity)[3,3] - 2*vcov(mod.ethnicity)[2,3]))
+CI.ethnicity
 ```
- 
+
+ The p-values might be insignificant because the reference group is the group whose responses were NA. But an important comparison that we can make here is between the people who are White and the people who are African American. The odds of having HIV among those who are African American is 1.67 times the odds of having HIV among those who are White on average. With 95% confidence, this odds ratio falls between 1.035 and 2.68. The confidence interval does not include 1, which shows that there is a significant difference between the odds of having HIV among the two groups.
 
 
 
@@ -240,16 +246,27 @@ In our data there does not seem to be an association between HIV status and drug
 ```{r}
 
 mod.hivmale <- glm(hivstat ~ as.factor(ever_sex_with_hiv_male), data = all, family = binomial())
-summary(mod.hivmale)
+
+OR.hivmale <- exp(coef(mod.hivmale)[2]-coef(mod.hivmale)[3])
+OR.hivmale
+CI.hivmale <- exp(log(OR.hivmale) + c(-1,1)*1.96*sqrt(vcov(mod.hivmale)[2,2] + vcov(mod.hivmale)[3,3] - 2*vcov(mod.hivmale)[2,3]))
+CI.hivmale
+
 ```
-There seems to be a significant association between HIV status and ever having sex with an HIV positive male. 
+The odds of having HIV among those who have had sex with an HIV positive male is 3.06 times the odds of having HIV among those who never had sex with an HIV positive male. With 95% confidence, this odds ratio falls between 2.08 and 4.51. The confidence interval does not include 1 which tells us that this odds ratio is statistically significant. 
 
 ```{r}
-mod.household_income <- glm(hivstat ~ household_income, data = all, family = binomial())
-summary(mod.household_income)
+mod.income <- glm(hivstat ~ household_income, data = all, family = binomial())
+summary(mod.income)
+
+OR.income <- exp(coef(mod.household_income)[2])
+OR.income
+CI.income <- exp(log(OR.income) + c(-1,1)*1.96*sqrt(vcov(mod.income)[2,2]))
+CI.income
 
 ```
-There seems to be a significant association between a woman's household income and HIV status in the US. 
+There seems to be a significant association between a woman's household income and HIV status in the US. The odds of having HIV among women of a certain household income category is 1.14 times the odds of having HIV among women in 1 level lower household income category on average. With 95% confidence, this odds ratio falls between 1.06 and 1.24. This odds ratio is significant as it excludes 1. \
+In our dataset, the results are counterintuitive because one would think that HIV status would negatively affect a woman's household income. But here, it seems that the women with higher household_incomes are more affected by HIV. 
 
 ```{r}
 mod.sexpartners <- glm(hivstat ~ sex_partners, data = all, family = binomial())
@@ -258,31 +275,40 @@ summary(mod.sexpartners)
 partners_prop <- with(all, table(sex_partners, hivstat)) %>% prop.table(margin = 2)
 partners_prop
 
+IRR.sexp <- exp(coef(mod.sexpartners)[2])
+IRR.sexp
+CI.sexp <- exp(log(IRR.sexp) + c(-1,1)*1.96*sqrt(vcov(mod.sexpartners)[2,2]))
+CI.sexp
+
+
 ```
-In our data, the number of sexual partners does not seem to affect one's HIV status, because the proportions of people with HIV and without HIV are the same for the different number of sexual partners. However, we might still include sexual partners in our model because it is a confounder and might provide a better fit for the model. 
+In our data, the number of sexual partners does not seem to affect one's HIV status, because the proportions of people with HIV and without HIV are the same for the different number of sexual partners. However, we might still include sexual partners in our model because it is a confounder and might provide a better fit for the model. \
+The 95% confidence interval of the odds ratio comparing HIV incidence between people with a certain amount of sex partners versus a one level lower amount of sex partners contains 1. So this odds ratio isn't significant in our dataset. 
 
 ```{r}
 mod.jail <- glm(hivstat ~ as.factor(ever_jail), data = all, family = binomial())
 summary(mod.jail)
 
+OR.jail <- exp(coef(mod.jail)[2]-coef(mod.hivmale)[3])
+OR.jail
+CI.jail<- exp(log(OR.jail) + c(-1,1)*1.96*sqrt(vcov(mod.jail)[2,2] + vcov(mod.jail)[3,3] - 2*vcov(mod.jail)[2,3]))
+CI.jail
+
 ```
-There is an association between ever being in jail and HIV status.
+The odds of having HIV among the women who have ever been in jail is 2.12 times the odds of having HIV among those who have never been in jail on average. With 95% confidence, this odds ratio falls between 1.005 and 4.48. 
+
 
 
 ```{r}
 new_model <- glm(hivstat ~ as.factor(ethnicity) + as.factor(drug) + as.factor(ever_sex_with_hiv_male) + household_income + sex_partners + as.factor(ever_jail), data = all, family = binomial())
 
-summary(new_model)
-```
-
-
-```{r}
-
 hoslem.test(hivstat, fitted(new_model))
 
 ```
+
+
 We used the Hosmer and Lemeshow goodness of fit test because we have a very large number of covariate patterns. \
-We fail to reject the null hypothesis that the model provides a good fit (p-value > 0.05) and conclude that our model provides a good fit of the data. 
+We fail to reject the null hypothesis that the model provides a good fit (p-value = 0.85 > 0.05) and conclude that our model provides a good fit of the data. 
 
 Looking at the ROC and AUC:
 
@@ -312,13 +338,18 @@ backward <- glm(hivstat ~ sex_partners + as.factor(ever_marijuana) + as.factor(e
 summary(backward)
 
 hoslem.test(hivstat, fitted(backward))
+```
+We fail to reject the null hypothesis that the model provides a good fit (p-value = 0.36 > 0.05) and conclude that our model provides a good fit of the data. 
+```{r}
+
 predprob <- predict(backward,type=c("response"))
 roccurve <- roc(hivstat ~ predprob)
 plot(roccurve,col="red")
 auc(roccurve)
 
 ```
-This backward model does a better job at discriminating between cases and noncases than the previous model I created.
+
+The AUC for the backward model is 0.73 > 0.7 .This backward model does a better job at discriminating between cases and noncases than the previous model I created.
 
 ```{r}
 start <- glm(hivstat ~ 1, family = binomial)
@@ -327,19 +358,30 @@ forwardModel <- step(glm1, direction = "forward",
 
 
 ```
-The model that we get using forward selection includes too many covariates. In our research we prefer simpler models, so we are going to stick to the backward model instead of the forward one. However, we are going to add drug injection since it is a confounder.
+The model that we get using forward selection includes too many covariates. In our research we prefer simpler models, so we are going to stick to the backward model instead of the forward one. However, we are going to add drug injection to the backward model since it is an important confounder.
 
 ```{r}
 backward_updated <- glm(hivstat ~ sex_partners + as.factor(drug) + as.factor(ever_marijuana) + as.factor(ever_sex_toys) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use), data = all, family = binomial())
 
 hoslem.test(hivstat, fitted(backward_updated))
+
 predprob <- predict(backward_updated,type=c("response"))
 roccurve <- roc(hivstat ~ predprob)
 plot(roccurve,col="red")
 auc(roccurve)
+```
+Again we performed a Hosmer and Lemeshow goodness of fit test because we have a large number of covariates. The results point towards evidence of goodness of fit of our model (p-value = 0.41 > 0.05).
+
+Also, the AUC is 0.73 > 0.7 which says that the model does a good job in discriminating between cases and noncases. 
+
+```{r}
 extractAIC(backward_updated)
+extractAIC(backward)
+extractAIC(new_model)
 
 ```
+The model with the best AIC is the model that we got using backwards selection. However, there is a very small difference between the AIC of the backward model and the updated backward model where we included drug injection as a confounder. Clearly both of these models are better than the initial model we created in terms of AIC. \
+For the following analyses, we are going to use the updated backward model.
 
 Checking for outliers with Cook's Distance:
 
@@ -352,8 +394,7 @@ back_no_outliers <- glm(hivstat ~ sex_partners + as.factor(drug) + as.factor(eve
 
 extractAIC(back_no_outliers)
 ```
-The AIC of the model without the outliers is so much lower than the AIC of the model including the outliers. 
-
+The AIC of the model without the outliers is significantly lower than the AIC of the model including the outliers. This shows that in terms of goodness of fit, the model without the outliers performs significantly better than the model with the outliers.
 
 
 Checking for points with high influence with DFFITS:
@@ -366,6 +407,7 @@ mod_no_highinfl <- glm(hivstat ~ sex_partners + as.factor(drug) + as.factor(ever
 
 extractAIC(mod_no_highinfl)
 ```
+The AIC of the model without the highinfluence points is lower than the AIC of the model including these points. 
 
 
 Removing the points with large Cook's Distance AND large DFFITS values : 
@@ -375,6 +417,8 @@ Removing the points with large Cook's Distance AND large DFFITS values :
 without_all_outliers <- subset(all, cooksd <= 4/(nrow(all) - 2) &  dffits <= 2*sqrt((6 + 1)/nrow(all)))
 
 mod_wo_all_outliers <- glm(hivstat ~ sex_partners + as.factor(drug) + as.factor(ever_marijuana) + as.factor(ever_sex_toys) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use), data = without_all_outliers, family = binomial())
+
+extractAIC(mod_wo_all_outliers)
 
 ```
 This model gives the smallest AIC so far, which makes sense because we are removing the outliers and high influence points, without which the model is a better fit. 
