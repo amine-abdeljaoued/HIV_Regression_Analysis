@@ -1,9 +1,9 @@
 ---
 title: "BST 210 PROJECT"
 output:
-  pdf_document: default
-  html_document: default
   word_document: default
+  html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -259,7 +259,7 @@ The odds of having HIV among those who have had sex with an HIV positive male is
 mod.income <- glm(hivstat ~ household_income, data = all, family = binomial())
 summary(mod.income)
 
-OR.income <- exp(coef(mod.household_income)[2])
+OR.income <- exp(coef(mod.income)[2])
 OR.income
 CI.income <- exp(log(OR.income) + c(-1,1)*1.96*sqrt(vcov(mod.income)[2,2]))
 CI.income
