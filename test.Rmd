@@ -353,7 +353,7 @@ The AUC for the backward model is 0.73 > 0.7 .This backward model does a better 
 
 ```{r}
 start <- glm(hivstat ~ 1, family = binomial)
-forwardModel <- step(glm1, direction = "forward", 
+forwardModel <- step(start, direction = "forward", 
                      scope = (~ as.factor(ethnicity) + as.factor(educ_level) + as.factor(marital_status) + living_with + household_income + as.factor(drug) + sex_partners + as.factor(ever_marijuana) + as.factor(shared_needles) + as.factor(ever_jail) + as.factor(ever_sex_with_hiv_male) + as.factor(ever_sex_with_gay_male) + as.factor(condom_use) + as.factor(ever_anal_sex) + as.factor(ever_sex_toys) + as.factor(sexual_orientation) + age))
 
 
