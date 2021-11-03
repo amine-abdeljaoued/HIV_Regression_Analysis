@@ -383,6 +383,27 @@ extractAIC(new_model)
 The model with the best AIC is the model that we got using backwards selection. However, there is a very small difference between the AIC of the backward model and the updated backward model where we included drug injection as a confounder. Clearly both of these models are better than the initial model we created in terms of AIC. \
 For the following analyses, we are going to use the updated backward model.
 
+```{r}
+predprob1 <- predict(new_model,type=c("response"))
+roccurve1 <- roc(hivstat ~ predprob1)
+
+predprob3 <- predict(backward_updated,type=c("response"))
+roccurve3 <- roc(hivstat ~ predprob3)
+
+predprob2 <- predict(backward,type=c("response"))
+roccurve2 <- roc(hivstat ~ predprob2)
+
+
+library(ggplot2)
+ggroc(list("Backward Updated" = roccurve3, "Backward" = roccurve2, "First attempt" = roccurve1))+ 
+  theme(legend.title = element_blank()) +
+  geom_segment(aes(x = 1, xend = 0, y = 0, yend = 1), color = "black", linetype = "dashed") +
+  xlab("Sensitivity") +
+  ylab("Specificity") +
+  ggtitle("ROC curves")
+```
+
+
 Checking for outliers with Cook's Distance:
 
 ```{r}
