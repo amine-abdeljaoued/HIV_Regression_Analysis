@@ -1,1 +1,4 @@
 .idea
+.idea/*
+.idea/csv-plugin.xml
+.idea/workspace.xml
