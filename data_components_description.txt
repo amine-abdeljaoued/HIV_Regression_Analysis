@@ -1,0 +1,455 @@
+              WIHS Public Data Set Distribution Document
+                       for Release P15
+
+Date: Sept 11, 2017     WIHS Web Site: www.wihshealth.org
+
+A. General Information
+
+   Cut-off date:  Cut-off date for this release of WIHS Public Data Set
+        is September 30, 2015.  Data covered up to visit 42 of WIHS.
+
+   Data Media: Data is available for download as ASCII or CSV files
+
+B. Associated Questionnaire Forms and Documentation
+
+   Forms:
+
+   Forms are in Microsoft Word documents or PDF files.
+
+   Other documentation:
+
+   WIHS directory of investigators and archives of publication
+   can be found in WIHS web site (www.wihshealth.org).
+
+
+Your ideas on research of the WIHS data and presentation of
+of your research findings are welcomed to be shared with the WIHS
+investigators.  Please contact:
+
+             Dr. Stephen Gange, Ph.D.
+             Principal Investigator
+             Department of Epidemiology
+             Bloomberg School of Public Health
+             Johns Hopkins University
+             615 North Wolfe Street
+             Baltimore, MD 21205
+
+             Phone: (410) 516-5610
+
+
+
+C.  Data Components Included in This Release
+
+    Name           Description
+    ------   ------------------------------------------
+    ABI      Arterial Brachial Index Measurement Form
+    ABRV     Abbreviated Visit
+    ABRVS1   Abbreviated Visit (Repeating segment, medication/drug/treatment)
+    ABRVS2   Abbreviated Visit (Repeating segment, interview comments)
+    ABRVS3   Abbreviated Visit (Repeating segment, pregnancy outcome)
+    ADF      Autoimmune Disease Form
+    ADFS1    Autoimmune Disease Form (Repeating Segment, drug treatment)
+    ADF02    Autoimmune Disease Form, Followup
+    ADF02S1  Autoimmune Disease Form F-up, (Repeating Segment, drug treatment)
+    BCS      Contraception Survey
+    BLSA     Baltimore Longitudinal Study of Aging Questionnaire
+    BPI      Brief Pain Inventory Short Form
+    BPIS1    Brief Pain Inventory Short Form (Repeating Segment, B.2 Pain Area)
+    BPIS2    Brief Pain Inventory Short Form (Repeating Segment, [2~B.7 Medication treatment)
+    C30      Toxoplasmosis
+    C31      HTLV 1&2
+    C45      Bacterial Vaginosis Smear Gram Stain
+    C50      Urine for chlamydia
+    C51      Swab Confirmatory
+    C60      Pap Smear
+    C65      Syphilis DFA - Genital Ulcers & Fissure
+    C66      Laboratory-Serum Herpes Serologies
+    C70      Laboratory-Stimulated Saliva Evaluation
+    C71      Laboratory Subgingival Plaque
+    C72      Laboratory Erythematous Candidiasis Results
+    CIQ      Communication Inequalities Questionnaire
+    COLPO    Colposcopy Tracking
+    DRUG1    Antiviral Medications
+    DRUG2    Non-Antiviral Medications
+    DRUG3    Hepatitis Medications
+    DSG      Antiretroviral Dosage Form
+    DSGS1    Antiretroviral Dosage Form (Repeating Segment, B1: Antiretrovirals)
+    EL       New Recruit Eligibility Form
+    F00      Screening Form
+    F01      B/L Sociodemographics
+    F02      B/L Medical & Health Hx
+    F02S1    B/L Medical & Health Hx (Repeating Segment, F1.C: Med Hx)
+    F02S2    Medication Addendum (Repeating Segment, Other Med)
+    F03      B/L OB/GYN & Contra Hx
+    F03S1    B/L OB/GYN & Contra Hx (Repeating Segment, Pregnancy)
+    F04      B/L Alc. Drugs & Sex Behav.
+    F05      B/L Health Care Utilization
+    F06      B/L Psychosocial Measures
+    F06S1    B/L Psychosocial Measures (Repeating Segment, E4:Deceased child)
+    F06S2    B/L Psychosocial Measures (Repeating Segment, Children Addendum)
+    F06S3    B/L Psychosocial Measures (Repeating Segment, Intv accessment)
+    F07      Physical Exam
+    F07S1    Physical Exam (Repeating Segment, C3: Skin lesion)
+    F07S2    Physical Exam (Repeating Segment,D3: Oral lesion)
+    F7R      Physical Exam addendeum
+    F7RS1    Physical Exam addendeum (Repeating Segment, B.3 Location)
+    F7RS2    Physical Exam addendeum (Repeating Segment, C.3 Oral Lesions)
+    F08      Gynecological Exam
+    F08S1    Gynecological Exam (Repeating Segment, B20-39: Abnr Lesion)
+    F08A     Potential CVL Contaminants
+    F09      B/L Blood Spec. Coll.
+    F10      Plasma & Cell Separ. & Freezing
+    F11      B/L Spec. coll. During PE
+    F20      New recruit baseline history
+    F20S1    New recruit baseline history (Repeating Segment, C.13: Cancer)
+    F20S2    New recruit baseline history (Repeating Segment, D.3: Pregnancies)
+    F20S3    New recruit baseline history (Repeating Segment, Hepatitis drugs)
+    F20S4    New recruit baseline history (Repeating Segment, C.31: Head injury)
+    F21      F/up Sociodemographics
+    F21S1    F/up Sociodemographics (Repeating Segment, B.22: Incarcerations)
+    F22      F/up Medical & Health Hx
+    F22S1    F/up Medical & Health Hx (Repeating Segment, F1.C: Med Hx)
+    F22S2    F/up Medical & Health Hx (Repeating Segment, G1A: Other Med)
+    F22S3    F/up Medical & Health Hx (Repeating Segment, F2A: ART meds)
+    F22S4    F/up Medical & Health Hx (Repeating Segment, F9: non-ART Meds)
+    F22S5    F/up Medical & Health Hx (Repeating Segment, F10: Alternate Meds)
+    F22S6    F/up Medical & Health Hx (Repeating Segment, F14: Other med)
+    F22S7    F/up Medical & Health Hx (Repeating Segment, F15: Symptoms)
+    F22S8    F/up Medical & Health Hx (Repeating Segment, C13a: Cancer)
+    F22HX    F/up Health Hx
+    F22HXS8  F/up Health Hx (Repeating Segment, C13a: Cancer)
+    F22HXS10 F/up Health Hx (Repeating Segment, C47: Head Injury)
+    F22MED   F/up Medication Hx
+    F22MEDS3 F/up Medication Hx (Repeating Segment, B2A: ART meds)
+    F22MEDS4 F/up Medication Hx (Repeating Segment, B9: non-ART Meds)
+    F22MEDS5 F/up Medication Hx (Repeating Segment, B19: Alternate Meds)
+    F22MEDS6 F/up Medication Hx (Repeating Segment, B23: Other med)
+    F22MEDS7 F/up Medication Hx (Repeating Segment, B24: Symptoms)
+    F22MEDS9 F/up Medication Hx (Repeating Segment, B11: Hepatitis Meds)
+    F22R     New Recruit Antiretroviral Medication History
+    F22RS1   New Recruit Antiretroviral Medication History (Repeating Segment, 3a: ART meds)
+    F23      F/up OB/GYN History
+    F23S1    F/up OB/GYN History (Repeating Segment, BC: Pregnancy Hx)
+    F24      F/up Alc. Drug & Sex Behav.
+    F24S1    F/up Alc. Drug & Sex Behav. (Repeating Segment, D3: Male Partners)
+    F24BEH   F/up Alc. Drug & Sex Behav.
+    F24BEHS1 F/up Alc. Drug & Sex Behav. (Repeating Segment, C18: Ohter illicit/recreation drugs)
+    F25      F/up Health Care Utilization
+    F25A     F/up Health Care Utilization Supplement
+    F25B     Mental Health Care Utilization
+    F25BS1   Mental Health Care Utilization (Repeating Segment, B1B: Antidepressants)
+    F25C     Engagement in Care
+    F26      F/up Psychosocial
+    F26S1    F/up Psychosocial (Repeating Segment, E7: Deceased child)
+    F26A     Assessment of Physical Functioning
+    F27      Karnofsky Scale
+    F27S1    Karnofsky Scale (Repeating Segment, SEC_Q, Problem)
+    F29      F/up Blood Spec. Collection Form
+    F29A     F/up Antiviral Usage Assessment for Blood Draw
+    F29AS1   F/up Antiviral Usage Assessment for Blood Draw (Repeating Segment, 1A: ART list)
+    F29AS2   F/up Antiviral Usage Assessment for Blood Draw (Repeating Segment, 2: ART last taken)
+    F29R     New Recruit Blood Spec. Collection Form
+    F31      F/up Spec. Collected During PE
+    F31A     F/up Hair Color, Texture and Treatment History
+    F31R     New Recruit Spec. Collected During PE
+    FIS      Food Insecurity Study
+    FSFI     Female Sexual Functioning Inventory
+    HIVSTAT  Sero-status
+    HPVKAB   HPV Information
+    HX       Family and Personal Medical HX
+    HXS1     Family and Personal Medical HX (Repeating Segment, A5: Family member cancer)
+    IADLLF   Baseline Lawton Instrumental Activities of Daily Living Scale (long form)
+    IADLSF   Baseline Lawton Instrumental Activities of Daily Living Scale (follow-up)
+    INT      Interim Events Form
+    INTS1    Interim Events Form (Repeating Segment, Cancer Location)
+    L01      HIV ELISA & Western Blot
+    L02      Serum-Hepatitis
+    L03      Automated CBC/Differential
+    L03A     Hand-Manual Differential
+    L04      Flow Cytometry
+    L05      Liver/Renal Function Tests
+    L06      Serum-Syphilis
+    L07      Anergy Panel
+    L08      PPD skin test
+    L09      Chlamydia Gen-Probe
+    L10      Urinalysis
+    L11      Urine Culture Result
+    L12      (Urine) Pregnancy Test
+    L13      Gonorrhea Gen-Probe
+    L14      Colposcopy Results
+    L15      Biopsy
+    L16      Dysplasia Treatment
+    L17      HSV Culture of Ulcers and Fissures
+    L18      Trichomonas Vaginalis Culture
+    L19      CVL Processing
+    LABSUM   Summary Lab Variable Data (HIV RNA, CD4N, CD8N)
+    LIPIDS   Metabolic / Lipid Panel Results
+    MEN01    Menopause Symptoms Questionnaire
+    MENT     Mental Alternations Test
+    NP01     Baseline Neuropathy Signs and Symptoms Form
+    NP02     Follow-Up Neuropathy Signs and Symptoms Form
+    OP01     Medical Evaluation
+    OP02     Research Interview
+    OP03     Saliva Sample Collection
+    OP04     Oral Mucosal Tissue Exam
+    OP04S1   Oral Mucosal Tissue Exam: Addendum (Repeating Segment, Lesion)
+    OP05     Smear Results
+    OP06     Tooth Count & Random Half Mouth
+    OP07     Plaque Index
+    OP08     Gingival Banding Score
+    OP09     Papillary Assessment
+    OP10     Subgingival Plaque
+    OP11     Coronal Caries
+    OP12     Root Caries
+    OP13     Gingival Bleeding
+    OP14     Loss of Attachment
+    OP14P1   Loss of Attachment (continuation of OP14 form)
+    OP15     Dental Prostheses
+    OUTCOME  Clinical outcome
+    PAQ      Physical Activity Questionnaire
+    PBM      Performance-Based Measurements
+    PEPKAB   Understanding Women Knowledge, Beliefs and Uptake of Biomedical Prevention Methods Questionnaire
+    PMU      Pain Medication Use Questionnaire
+    PREP     New Biomedical HIV Prevention Technologies
+    PR01     Pregnancy Form
+    PR02     Postpartum Form
+    PR02S1   Postpartum Form (Repeating Segment, Pregnancy Outcome)
+    PRNOTI   PREGNANCY PROTOCOL PARTICIPATION NOTIFICATION
+    PTSD     Civilian Post-Traumatic Stree Disorder Questionnaire
+    RAB      Retrospective Medical Record Abstraction
+    RABS1    Retrospective Medical Record Abstraction (B.5 1st HAART regimen)
+    RABS2    Retrospective Medical Record Abstraction (C.1.1 ART use prior to HAART)
+    RABS3    Retrospective Medical Record Abstraction (C.2.2 Additional HAART regimens)
+    RABS4    Retrospective Medical Record Abstraction (C.4A Post-HAART HIV RNA)
+    RABS5    Retrospective Medical Record Abstraction (C.4 Post-HAART lab results)
+    RABS6    Retrospective Medical Record Abstraction (B.3.1 ART/HAART drugs)
+    RABS7    Retrospective Medical Record Abstraction (B.4.1 PEP/PrEP drugs)
+    RACE     Ethnicity and Race Questionnaire
+    SCR      New Recruitment Screening Form
+    SCRS1    New Recruitment Screening Form, (Repeating Segment, ARV Hx)
+    SDCQ     San Diego Claudication Questionnaire
+    TBBL     Baseline TB History for HIV-Negatives
+    VAC      Vaccination History Form
+    VACS1    Vaccination History (Repeating Segment, B.1.a: Vaccination type)
+
+D.  File Content of the Released data
+
+\  root directory
+     readme.txt  (This readme file)
+
+\codebook directory (Codebook for each data set with name of <FileName>.cdb.txt)
+
+\data directory
+       No. of Records
+  ---------------------------
+    2232           abi.dat
+    3945           abrv.dat
+     153           abrvs1.dat
+      23           abrvs2.dat
+      27           abrvs3.dat
+    2770           adf.dat
+    7983           adf02.dat
+      18           adf02s1.dat
+     162           adfs1.dat
+    1669           bcs.dat
+    1573           blsa.dat
+    5311           bpi.dat
+   10879           bpis1.dat
+    2078           bpis2.dat
+    2522           c30.dat
+    2486           c31.dat
+   21809           c45.dat
+     202           c50.dat
+     202           c51.dat
+   76395           c60.dat
+     229           c65.dat
+    2489           c66.dat
+     880           c70.dat
+     335           c71.dat
+     200           c72.dat
+    2114           ciq.dat
+   10195           colpo.dat
+   94309           drug1.dat
+   37163           drug2.dat
+     830           drug3.dat
+   24246           dsg.dat
+   61322           dsgs1.dat
+    2359           el.dat
+    2623           f00.dat
+    2620           f01.dat
+    2620           f02.dat
+     738           f02s1.dat
+    6322           f02s2.dat
+    2621           f03.dat
+    9651           f03s1.dat
+    2613           f04.dat
+    2604           f05.dat
+    2599           f06.dat
+     325           f06s1.dat
+    5310           f06s2.dat
+     260           f06s3.dat
+   80116           f07.dat
+   34231           f07s1.dat
+    5195           f07s2.dat
+   79948           f08.dat
+   75228           f08a.dat
+   17078           f08s1.dat
+    2603           f09.dat
+   53073           f10.dat
+    2597           f11.dat
+    2359           f20.dat
+      94           f20s1.dat
+    7990           f20s2.dat
+      51           f20s3.dat
+     388           f20s4.dat
+   77669           f21.dat
+     680           f21s1.dat
+   26493           f22.dat
+   54997           f22hx.dat
+     861           f22hxs10.dat
+     411           f22hxs8.dat
+   55003           f22med.dat
+   80478           f22meds3.dat
+   28508           f22meds4.dat
+   51909           f22meds5.dat
+  139339           f22meds6.dat
+     461           f22meds7.dat
+     870           f22meds9.dat
+     852           f22r.dat
+    1577           f22rs1.dat
+    1451           f22s1.dat
+   28993           f22s2.dat
+   18793           f22s3.dat
+    9478           f22s4.dat
+   15268           f22s5.dat
+   19067           f22s6.dat
+    1185           f22s7.dat
+      40           f22s8.dat
+   77632           f23.dat
+    1829           f23s1.dat
+   43263           f24.dat
+   34307           f24beh.dat
+      22           f24behs1.dat
+   15629           f24s1.dat
+   77585           f25.dat
+   12750           f25a.dat
+    3474           f25b.dat
+    1495           f25bs1.dat
+    7236           f25c.dat
+   70725           f26.dat
+    2016           f26a.dat
+      62           f26s1.dat
+   13342           f27.dat
+    1773           f27s1.dat
+   75475           f29.dat
+   53429           f29a.dat
+   48169           f29as1.dat
+   79283           f29as2.dat
+    2374           f29r.dat
+   75248           f31.dat
+   14393           f31a.dat
+    2358           f31r.dat
+    1987           f7r.dat
+     529           f7rs1.dat
+      54           f7rs2.dat
+    9647           fis.dat
+    1906           fsfi.dat
+    4982           hivstat.dat
+    6041           hpvkab.dat
+    5646           hx.dat
+    2106           hxs1.dat
+    1439           iadllf.dat
+     258           iadlsf.dat
+     970           int.dat
+       2           ints1.dat
+   24647           l01.dat
+    5122           l02.dat
+   71752           l03.dat
+    2529           l03a.dat
+   69529           l04.dat
+   69630           l05.dat
+    8561           l06.dat
+    9977           l07.dat
+   13798           l08.dat
+    4710           l09.dat
+   15631           l10.dat
+    1122           l11.dat
+   51822           l12.dat
+    4690           l13.dat
+   17943           l14.dat
+   14812           l15.dat
+     862           l16.dat
+     350           l17.dat
+    8962           l18.dat
+   13710           l19.dat
+   70355           labsum.dat
+   35665           lipids.dat
+   28308           men01.dat
+   13072           ment.dat
+    2863           np01.dat
+   12366           np02.dat
+    7803           op01.dat
+    7800           op02.dat
+    7796           op03.dat
+    7782           op04.dat
+    4138           op04s1.dat
+     126           op05.dat
+    7788           op06.dat
+    6948           op07.dat
+    6954           op08.dat
+    6948           op09.dat
+    6942           op10.dat
+    6950           op11.dat
+    6944           op12.dat
+    6948           op13.dat
+    6954           op14.dat
+    2506           op14p1.dat
+    7784           op15.dat
+   13123           outcome.dat
+    4279           paq.dat
+    2450           pbm.dat
+    2406           pepkab.dat
+    2485           pmu.dat
+    3044           pmu02.dat
+     395           pr01.dat
+     446           pr02.dat
+     441           pr02s1.dat
+     548           prep.dat
+     471           prnoti.dat
+    6635           ptsd.dat
+    1602           rab.dat
+    2624           rabs1.dat
+     461           rabs2.dat
+    2476           rabs3.dat
+    7374           rabs4.dat
+    7359           rabs5.dat
+      61           rabs6.dat
+       9           rabs7.dat
+    2896           race.dat
+    2358           scr.dat
+    2449           scrs1.dat
+    1903           sdcq.dat
+     403           tbbl.dat
+     267           vac.dat
+     228           vacs1.dat
+
+\csv directory (beta version)
+ -- CSV data files are new as of WIHS P16. We recommend using SAS to read
+    the *.dat files with the SAS INPUT statements. The CSV files are provided as an 
+    alternative method but may not always read properly into a program. Please notify 
+    WDMAC of any issues (JHSPH.wdmac@jhu.edu)
+ -- Data files in CSV format. Variable names are included as the first line of each file 
+ -- Please do not use MS Excel to view the CSV data as it may cause truncated data.
+
+
+\form directory (Mostly in Word or PDF document)
+
+\sasinp directory
+ --SAS data input statement for each data file (<FileName>.dat) with name of <FileName>.inp)
+
+Sample SAS syntax for reading in a <FileName>.dat file:
+DATA f22hx;
+   INFILE "d:\WIHS_P16\data\f22hx.dat" TRUNCOVER LRECL = 5000;
+   %INCLUDE "d:\WIHS_P16\sasinp\f22hx.inp";
+RUN;
+Please refer to support.sas.com for SAS assistance.
