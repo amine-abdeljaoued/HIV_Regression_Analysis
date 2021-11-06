@@ -605,3 +605,140 @@ RRRf2
 ```
 The relative risk ratio of being in household income category 1 (lowest) vs category 3 for african americans is 3.23 times that same risk for people who preferred to not declare their ethnicity.
 The relative risk ratio of being in household income category 1 (lowest) vs category 3 for women who completed 4 years of college is 0.72 times that same risk for women with no schooling.
+
+
+
+
+
+Linear Model:
+Our analysis plan does not include a linear model. However, our dataset includes data on the CD4 count of the study participants. This variable might be well suited for a linear model.
+The CD4 count is given as number of CD4 cells per cubic mm.
+
+The CD4 count was measured multiple times for some participants. To achieve independence of the data points we restrict ourselves to the CD4 count value measured at the first visit where the CD4 count was measured.
+
+```{r}
+lab = read.csv("./data/labsum.csv")
+cleand_lab = list()
+for(i in unique(lab$CASEID)){
+  data_for_i = lab[lab$CASEID == i,]
+  cleand_lab = rbind(cleand_lab,data_for_i[data_for_i$VISIT == min(data_for_i$VISIT, na.rm=T),])
+}
+cleand_lab = cleand_lab[!is.na(cleand_lab$CD4N),]
+```
+
+When then look at a histogram of the CD4 data to see if it is normally distributed
+```{r}
+hist(cleand_lab$CD4N)
+```
+We can see that the data is left skewed.
+We therefore transform is by applying the square root function
+```{r}
+transformed_CD4 = sqrt(cleand_lab$CD4N)
+hist_CD4 = hist(transformed_CD4,plot = F, prob=T)
+m = mean(transformed_CD4)
+std = sd(transformed_CD4)
+plot(hist_CD4)
+x = round(min(transformed_CD4)):round(max(transformed_CD4))
+bin_width = hist_CD4$breaks[2]- hist_CD4$breaks[1]
+lines(dnorm(x, mean=m, sd=std)*bin_width*length(transformed_CD4),
+      col="darkblue", lwd=2, add=TRUE, yaxt="n")
+```
+This data is still not perfectly normal distributed, but it should be good enough.
+
+We then need to add the CD4 data to our "all" dataframe. However, we do not have CD4 data for all Case IDs.
+Because we do not need CD4 data for the rest of the project we creat a seperate data frame for this model that includes the data for all individual for which we have CD4 data
+```{r}
+all_with_CD4N = all
+CD4N = c()
+for(i in all_with_CD4N$CASEID){
+  if(sum(cleand_lab$CASEID == i) ==1){
+    CD4N = append(CD4N, cleand_lab$CD4N[cleand_lab$CASEID == i])
+  }
+  else{
+    all_with_CD4N = all_with_CD4N[!(all_with_CD4N$CASEID==i),]
+  }
+}
+length(all[,1])
+length(all_with_CD4N[,1])
+```
+
+Our new data frame has 1208 instead of 1229 rows.
+
+We then add the CD4 data and the transformed CD4 data to our data frame
+
+```{r}
+all_with_CD4N$CD4N = CD4N
+all_with_CD4N$CD4N_t = sqrt(CD4N)
+```
+
+Model building:
+
+We start with some exploratory analysis by looking at boxplots of the square root of the CD4 number for different values of our categorical predictor variables.
+```{r}
+boxplot(CD4N_t~ethnicity,data = all_with_CD4N)
+boxplot(CD4N_t~drug,data = all_with_CD4N)
+boxplot(CD4N_t~birth_country,data = all_with_CD4N)
+boxplot(CD4N_t~educ_level,data = all_with_CD4N)
+boxplot(CD4N_t~marital_status,data = all_with_CD4N)
+boxplot(CD4N_t~ever_marijuana,data = all_with_CD4N)
+boxplot(CD4N_t~shared_needles,data = all_with_CD4N)
+boxplot(CD4N_t~ever_jail,data = all_with_CD4N)
+boxplot(CD4N_t~ever_sex_with_hiv_male,data = all_with_CD4N)
+boxplot(CD4N_t~ever_sex_with_gay_male,data = all_with_CD4N)
+boxplot(CD4N_t~condom_use,data = all_with_CD4N)
+boxplot(CD4N_t~ever_anal_sex,data = all_with_CD4N)
+boxplot(CD4N_t~ever_sex_toys,data = all_with_CD4N)
+boxplot(CD4N_t~sexual_orientation,data = all_with_CD4N)
+
+```
+For most variables the boxplot does not show an association between the variable and the square root of the CD4 number.
+However, for "ever sex with hiv male" the square root of the CD4 number seems to be higher for women who never had sex with a HIV positive men.
+It also seems to be higher among women who never used condoms.
+
+We then look at scatterplots for the continuous variables
+```{r}
+plot(CD4N_t~age,data = all_with_CD4N)
+plot(CD4N_t~household_income,data = all_with_CD4N)
+plot(CD4N_t~living_with,data = all_with_CD4N)
+plot(CD4N_t~sex_partners,data = all_with_CD4N)
+```
+```
+We again see no clear association between the variable and the square root of the CD4 number for most variables. With the one exception being household income, where there seems to be a negative lower average square root of the CD4 number for women with higerh houshold income.
+
+Because there is no clear assosciation between most variables and the outcome and we have a large number of possible predictor variables, we start with a model that includes all possible predictor variables and elimnate some of them afterwasrd by backward selection.
+```
+```{r}
+start_cd4 = lm(CD4N_t ~ as.factor(ethnicity) + as.factor(educ_level) + as.factor(marital_status) + living_with + household_income + as.factor(drug) + sex_partners + as.factor(ever_marijuana) + as.factor(shared_needles) + as.factor(ever_jail) + as.factor(ever_sex_with_hiv_male) + as.factor(ever_sex_with_gay_male) + as.factor(condom_use) + as.factor(ever_anal_sex) + as.factor(ever_sex_toys) + as.factor(sexual_orientation) + age , data = all_with_CD4N)
+summary(start_cd4)
+```
+```{r}
+backwardModel_CD4 <- step(start_cd4, direction = "backward")
+```
+We perform backward selection by using the step() function that selects the best model by a stepwise backward alogrithm. It uses the AIC to find the "best" model.
+```{r}
+summary(backwardModel_CD4)
+```
+The model selected by backward selection includes the categorical variables marital status, ever marijuana use, ever shared needles, ever in jal, ever sex with a hiv positive male, ever used condoms and ever used sex toys. It also includes household income which is treated as a continious variable because it has 8 categories. 1 being the lowest household income of 500$ or less and 8 being the highest with a household income of over 6250$.
+
+Because the effect of household income is statistically highly significant with a p value < 0.001 we also looked if we could improve the model by includeing quadratic household income or treating household income as a categorical variable.
+
+```{r}
+all_with_CD4N$household_income2 = all_with_CD4N$household_income**2
+backwardModel_CD4_modified = lm(CD4N_t ~ as.factor(marital_status) + household_income + household_income2+ as.factor(ever_marijuana) + as.factor(shared_needles) + as.factor(ever_jail) + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use) + as.factor(ever_sex_toys), data = all_with_CD4N)
+backwardModel_CD4_modified_2 = lm(CD4N_t ~ as.factor(marital_status) + as.factor(household_income) + as.factor(ever_marijuana) + as.factor(shared_needles) + as.factor(ever_jail) + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use) + as.factor(ever_sex_toys), data = all_with_CD4N)
+anova(backwardModel_CD4,backwardModel_CD4_modified)
+anova(backwardModel_CD4, backwardModel_CD4_modified_2)
+```
+We compared the adjusted model to the original backward selected model using an Anova.
+None of the two models are statistically significantly better at the alpha = 0.05 level.
+We therefore continue with the original backward selected model and only consider linear household income.
+
+
+```{r}
+plot(all_with_CD4N$household_income,backwardModel$residuals)
+```
+```{r}
+hist(backwardModel_CD4$fitted.values)
+hist(all_with_CD4N$CD4N_t)
+plot(all_with_CD4N$CD4N_t,backwardModel_CD4$fitted.values)
+```
