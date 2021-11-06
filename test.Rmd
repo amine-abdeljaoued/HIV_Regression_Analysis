@@ -194,7 +194,8 @@ death_logit = glm(death~ age, data = all , family = "binomial")
 summary(death_logit)
 exp(0.05201*10)
 ```
-For every 10 year increase in age, the model predicts the odds of death to increase by a factor of 1.68
+For every 10 year increase in age, the mod
+el predicts the odds of death to increase by a factor of 1.68
 ```{r}
 hist1 = hist(all$age[all$death==1], plot = F, freq = F)
 hist2 = hist(all$age[all$death==0], plot = F, freq = F)
@@ -720,7 +721,7 @@ summary(backwardModel_CD4)
 ```
 The model selected by backward selection includes the categorical variables marital status, ever marijuana use, ever shared needles, ever in jal, ever sex with a hiv positive male, ever used condoms and ever used sex toys. It also includes household income which is treated as a continious variable because it has 8 categories. 1 being the lowest household income of 500$ or less and 8 being the highest with a household income of over 6250$.
 
-Because the effect of household income is statistically highly significant with a p value < 0.001 we also looked if we could improve the model by includeing quadratic household income or treating household income as a categorical variable.
+Because the effect of household income is statistically highly significant with a p value < 0.001 we also looked if we could improve the model by including quadratic household income or treating household income as a categorical variable.
 
 ```{r}
 all_with_CD4N$household_income2 = all_with_CD4N$household_income**2
@@ -733,12 +734,41 @@ We compared the adjusted model to the original backward selected model using an 
 None of the two models are statistically significantly better at the alpha = 0.05 level.
 We therefore continue with the original backward selected model and only consider linear household income.
 
+From our conversation with Dr. Caitlin Dugdale, infectious disease physician with expertise in HIV research, we know that she does not think that use of sex toys would be a strong predictor.
+Furthermore, the two terms for the categorical variable ever_sex_toys are both not statistically significant at the alpha = 0.05 level.
+We therefore decided to exclude this variable from our model
+```{r}
+#all_with_CD4N$condom_use = relevel(condom_use, ref = 1)
+backwardModel_CD4_modified_3 = lm(CD4N_t ~ as.factor(marital_status) + household_income + as.factor(ever_marijuana) + as.factor(shared_needles) + as.factor(ever_jail) + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use) , data = all_with_CD4N)
+anova(backwardModel_CD4_modified_3, backwardModel_CD4)
+```
+The Anova also does not show that the model including the predictor variable ever_sex_toys statistically significantly improves the model at the alpha = 0.05 level.
+We therefore select this model as our final model
+```{r}
+backwardModel_CD4_final = backwardModel_CD4_modified_3
+```
 
+We then perform a residual analysis of the final model.
+We plot the residuals against household income and created a histogram of the residuals.
 ```{r}
-plot(all_with_CD4N$household_income,backwardModel$residuals)
+plot(all_with_CD4N$household_income,backwardModel_CD4_final$residuals)
+hist(backwardModel_CD4_final$residuals)
 ```
+From the histogram we see that the residuals seem to be normally distributed. Looking at the plot of household income we see that there seems to be equal variance for different values of household income.
+
+We then plotted the fitted values of the square roots of CD4 number against the actual square roots of the CD4 number to look for potential outliers
 ```{r}
-hist(backwardModel_CD4$fitted.values)
-hist(all_with_CD4N$CD4N_t)
-plot(all_with_CD4N$CD4N_t,backwardModel_CD4$fitted.values)
+plot(all_with_CD4N$CD4N_t,backwardModel_CD4_final$fitted.values)
 ```
+This scatterplot does not show any major outliers. We therefore keep all data points in the dataset.
+
+This leaves us with our final model
+```{r}
+summary(backwardModel_CD4_final)
+```
+
+We see that a one unit increase in household income is associated with an estimated 0.425(95% CI [0.205, 0.645]) decrease in the square root of the number of CD4 cells per cubic millimeter, holding all other variables in the model constant.
+For marital status we see that being widowed is associated with an estimated 2.71(95% CI [0.88, 4.54]) decrease in the square root of the number of CD4 cells per cubic millimeter compared to being married, holding all other variables constant.
+We also see that being divorced is associated with an estimated 2.19(95% CI [0.52, 3.86]) decrease in the square root of the number of CD4 cells per cubic millimeter compared to being married, holding all other variables constant.
+
+For condom use, we see that never using condoms is associated with an estimated 3.50(95% CI [2.01, 4.99]) increase in the square root of the number of CD4 cells per cubic millimeter compared to always using condoms, holding all other variables constant.
