@@ -747,6 +747,7 @@ We plot the residuals against household income and created a histogram of the re
 ```{r}
 plot(all_with_CD4N$household_income,backwardModel_CD4_final$residuals)
 hist(backwardModel_CD4_final$residuals)
+plot(backwardModel_CD4_final$fitted.values,backwardModel_CD4_final$residuals)
 ```
 From the histogram we see that the residuals seem to be normally distributed. Looking at the plot of household income we see that there seems to be equal variance for different values of household income.
 
@@ -782,13 +783,13 @@ The biggest effect we see is hiv status. Being hiv positive is associated with a
 ##############################
 Poisson Regression:
 
-We want to predict the number of people a women with HIV lives with
+We want to predict the number of people a women with HIV lives with.
 
 We begin with some exploratory analysis looking at a histogram of the number of people a study participant is living with
 ```{r}
 hist(all$living_with)
 ```
-The data looks suitable for a Poisson regression model. However, we have a lot of missing data. Missing data fr this variable is encoded by a value of -1. From the Histogram we can see that this is the case for roughly 320 women in the study.
+The data looks suitable for a Poisson regression model. However, we have a lot of missing data. Missing data for this variable is encoded by a value of -1. From the Histogram we can see that this is the case for roughly 320 women in the study.
 So for this model, we have to restrict ourselves to the women for whom we have data.
 
 ```{r}
