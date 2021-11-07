@@ -470,7 +470,6 @@ vcov(backward_updated)
 exp(model_coefs[2])
 exp(model_coefs[2] + c(-1,1)*1.96*sqrt(vcov(mod.hivmale)[2,2]))
 
-CI.hivmale <- exp(log(OR.hivmale) + c(-1,1)*1.96*sqrt(vcov(mod.hivmale)[2,2] + vcov(mod.hivmale)[3,3] - 2*vcov(mod.hivmale)[2,3]))
 
 #Odds ratio of having hiv vs not for those who have never injected drugs vs those who have.
 exp(model_coefs[3])
