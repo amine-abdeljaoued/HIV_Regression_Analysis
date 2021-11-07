@@ -609,7 +609,7 @@ The relative risk ratio of being in household income category 1 (lowest) vs cate
 
 
 
-
+#############
 
 Linear Model:
 Our analysis plan does not include a linear model. However, our dataset includes data on the CD4 count of the study participants. This variable might be well suited for a linear model.
@@ -690,10 +690,12 @@ boxplot(CD4N_t~condom_use,data = all_with_CD4N)
 boxplot(CD4N_t~ever_anal_sex,data = all_with_CD4N)
 boxplot(CD4N_t~ever_sex_toys,data = all_with_CD4N)
 boxplot(CD4N_t~sexual_orientation,data = all_with_CD4N)
+boxplot(CD4N_t~hivstat,data = all_with_CD4N)
 
 ```
 For most variables the boxplot does not show an association between the variable and the square root of the CD4 number.
 However, for "ever sex with hiv male" the square root of the CD4 number seems to be higher for women who never had sex with a HIV positive men.
+We also see a strong association with HIV status.
 It also seems to be higher among women who never used condoms.
 
 We then look at scatterplots for the continuous variables
@@ -709,7 +711,7 @@ We again see no clear association between the variable and the square root of th
 Because there is no clear assosciation between most variables and the outcome and we have a large number of possible predictor variables, we start with a model that includes all possible predictor variables and elimnate some of them afterwasrd by backward selection.
 ```
 ```{r}
-start_cd4 = lm(CD4N_t ~ as.factor(ethnicity) + as.factor(educ_level) + as.factor(marital_status) + living_with + household_income + as.factor(drug) + sex_partners + as.factor(ever_marijuana) + as.factor(shared_needles) + as.factor(ever_jail) + as.factor(ever_sex_with_hiv_male) + as.factor(ever_sex_with_gay_male) + as.factor(condom_use) + as.factor(ever_anal_sex) + as.factor(ever_sex_toys) + as.factor(sexual_orientation) + age , data = all_with_CD4N)
+start_cd4 = lm(CD4N_t ~ as.factor(ethnicity) + as.factor(educ_level) + as.factor(marital_status) + living_with + household_income + as.factor(drug) + sex_partners + as.factor(ever_marijuana) + as.factor(shared_needles) + as.factor(ever_jail) + as.factor(ever_sex_with_hiv_male) + as.factor(ever_sex_with_gay_male) + as.factor(condom_use) + as.factor(ever_anal_sex) + as.factor(ever_sex_toys) + as.factor(sexual_orientation) +hivstat + age , data = all_with_CD4N)
 summary(start_cd4)
 ```
 ```{r}
@@ -719,14 +721,14 @@ We perform backward selection by using the step() function that selects the best
 ```{r}
 summary(backwardModel_CD4)
 ```
-The model selected by backward selection includes the categorical variables marital status, ever marijuana use, ever shared needles, ever in jal, ever sex with a hiv positive male, ever used condoms and ever used sex toys. It also includes household income which is treated as a continious variable because it has 8 categories. 1 being the lowest household income of 500$ or less and 8 being the highest with a household income of over 6250$.
+The model selected by backward selection includes the categorical variables marital status, ever shared needles, ever in jal and ever sex with a hiv positive male. It also includes household income and number of sex partners which are treated as a continious variable because they have 8/5 ordinal categories respectively. For income 1 being the lowest household income of 500$ or less and 8 being the highest with a household income of over 6250$.
 
-Because the effect of household income is statistically highly significant with a p value < 0.001 we also looked if we could improve the model by including quadratic household income or treating household income as a categorical variable.
+Because the effect of household income is statistically highly significant with a p value < 0.005 we also looked if we could improve the model by including quadratic household income or treating household income as a categorical variable.
 
 ```{r}
 all_with_CD4N$household_income2 = all_with_CD4N$household_income**2
-backwardModel_CD4_modified = lm(CD4N_t ~ as.factor(marital_status) + household_income + household_income2+ as.factor(ever_marijuana) + as.factor(shared_needles) + as.factor(ever_jail) + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use) + as.factor(ever_sex_toys), data = all_with_CD4N)
-backwardModel_CD4_modified_2 = lm(CD4N_t ~ as.factor(marital_status) + as.factor(household_income) + as.factor(ever_marijuana) + as.factor(shared_needles) + as.factor(ever_jail) + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use) + as.factor(ever_sex_toys), data = all_with_CD4N)
+backwardModel_CD4_modified = lm(CD4N_t ~ as.factor(marital_status) + household_income + household_income2 + sex_partners+ as.factor(shared_needles) + as.factor(ever_jail) + as.factor(ever_sex_with_hiv_male) + hivstat, data = all_with_CD4N)
+backwardModel_CD4_modified_2 = lm(CD4N_t ~ as.factor(marital_status) + as.factor(household_income) + sex_partners+ as.factor(shared_needles) + as.factor(ever_jail) + as.factor(ever_sex_with_hiv_male) + hivstat, data = all_with_CD4N)
 anova(backwardModel_CD4,backwardModel_CD4_modified)
 anova(backwardModel_CD4, backwardModel_CD4_modified_2)
 ```
@@ -734,18 +736,10 @@ We compared the adjusted model to the original backward selected model using an 
 None of the two models are statistically significantly better at the alpha = 0.05 level.
 We therefore continue with the original backward selected model and only consider linear household income.
 
-From our conversation with Dr. Caitlin Dugdale, infectious disease physician with expertise in HIV research, we know that she does not think that use of sex toys would be a strong predictor.
-Furthermore, the two terms for the categorical variable ever_sex_toys are both not statistically significant at the alpha = 0.05 level.
-We therefore decided to exclude this variable from our model
-```{r}
-#all_with_CD4N$condom_use = relevel(condom_use, ref = 1)
-backwardModel_CD4_modified_3 = lm(CD4N_t ~ as.factor(marital_status) + household_income + as.factor(ever_marijuana) + as.factor(shared_needles) + as.factor(ever_jail) + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use) , data = all_with_CD4N)
-anova(backwardModel_CD4_modified_3, backwardModel_CD4)
-```
-The Anova also does not show that the model including the predictor variable ever_sex_toys statistically significantly improves the model at the alpha = 0.05 level.
+
 We therefore select this model as our final model
 ```{r}
-backwardModel_CD4_final = backwardModel_CD4_modified_3
+backwardModel_CD4_final = backwardModel_CD4
 ```
 
 We then perform a residual analysis of the final model.
@@ -761,14 +755,151 @@ We then plotted the fitted values of the square roots of CD4 number against the 
 plot(all_with_CD4N$CD4N_t,backwardModel_CD4_final$fitted.values)
 ```
 This scatterplot does not show any major outliers. We therefore keep all data points in the dataset.
+We also see that there seem to be two groups, with the group in the upper left presumably being the individuals who do not have hiv.
+```{r}
+all_with_CD4N[all_with_CD4N$CD4N_t>20 & backwardModel_CD4_final$fitted.values>25,]$hivstat
+```
+A quick look at the data shows that this is indeed the case.
+
+```{r}
+all_with_CD4N[all_with_CD4N$CD4N_t>20 & backwardModel_CD4_final$fitted.values>25,]
+```
 
 This leaves us with our final model
 ```{r}
 summary(backwardModel_CD4_final)
 ```
 
-We see that a one unit increase in household income is associated with an estimated 0.425(95% CI [0.205, 0.645]) decrease in the square root of the number of CD4 cells per cubic millimeter, holding all other variables in the model constant.
-For marital status we see that being widowed is associated with an estimated 2.71(95% CI [0.88, 4.54]) decrease in the square root of the number of CD4 cells per cubic millimeter compared to being married, holding all other variables constant.
-We also see that being divorced is associated with an estimated 2.19(95% CI [0.52, 3.86]) decrease in the square root of the number of CD4 cells per cubic millimeter compared to being married, holding all other variables constant.
+We see that a one unit increase in household income is associated with an estimated 0.282(95% CI [0.097, 0.467]) decrease in the square root of the number of CD4 cells per cubic millimeter, holding all other variables in the model constant.
+We see further that a one unit increase in sex partners is associated with an estimated 0.449(95% CI [0.060, 0.838]) decrease in the square root of the number of CD4 cells per cubic millimeter, holding all other variables in the model constant.
+For marital status we see that being widowed is associated with an estimated 1.92(95% CI [0.41, 3.43]) decrease in the square root of the number of CD4 cells per cubic millimeter compared to being married, holding all other variables constant.
+We also see that being divorced is associated with an estimated 1.45(95% CI [0.05, 2.85]) decrease in the square root of the number of CD4 cells per cubic millimeter compared to being married, holding all other variables constant.
 
-For condom use, we see that never using condoms is associated with an estimated 3.50(95% CI [2.01, 4.99]) increase in the square root of the number of CD4 cells per cubic millimeter compared to always using condoms, holding all other variables constant.
+The biggest effect we see is hiv status. Being hiv positive is associated with a 12.20(95% CI [11.15, 13.26]) decrease in the square root of the number of CD4 cells per cubic millimeter compared to being hiv negative, holding all other variables constant.
+
+
+
+##############################
+Poisson Regression:
+
+We want to predict the number of people a women with HIV lives with
+
+We begin with some exploratory analysis looking at a histogram of the number of people a study participant is living with
+```{r}
+hist(all$living_with)
+```
+The data looks suitable for a Poisson regression model. However, we have a lot of missing data. Missing data fr this variable is encoded by a value of -1. From the Histogram we can see that this is the case for roughly 320 women in the study.
+So for this model, we have to restrict ourselves to the women for whom we have data.
+
+```{r}
+all_with_living_with = all[all$living_with>-1,]
+```
+We create another histogram for the subset of the participants for whom we have data.
+```{r}
+hist(all_with_living_with$living_with)
+```
+
+We then look at boxplots of the number of people the women is living with for different values of our categorical predictor variables.
+
+
+
+```{r}
+boxplot(living_with~ethnicity,data = all_with_living_with)
+boxplot(living_with~drug,data = all_with_living_with)
+boxplot(living_with~birth_country,data = all_with_living_with)
+boxplot(living_with~educ_level,data = all_with_living_with)
+boxplot(living_with~marital_status,data = all_with_living_with)
+boxplot(living_with~ever_marijuana,data = all_with_living_with)
+boxplot(living_with~shared_needles,data = all_with_living_with)
+boxplot(living_with~ever_jail,data = all_with_living_with)
+boxplot(living_with~ever_sex_with_hiv_male,data = all_with_living_with)
+boxplot(living_with~ever_sex_with_gay_male,data = all_with_living_with)
+boxplot(living_with~condom_use,data = all_with_living_with)
+boxplot(living_with~ever_anal_sex,data = all_with_living_with)
+boxplot(living_with~ever_sex_toys,data = all_with_living_with)
+boxplot(living_with~sexual_orientation,data = all_with_living_with)
+boxplot(living_with~hivstat,data = all_with_living_with)
+boxplot(living_with~speak_spanish,data = all_with_living_with)
+boxplot(living_with~birth_country,data = all_with_living_with)
+
+```
+```
+For most variables the boxplot does not show a clear association between the variable and the number of people a person is living with. The exception being education level where we can clrealy see that higher education level is associated with a lower number of people the women is living with.
+
+We then look at scatterplots for the continuous variables.
+
+
+
+
+```
+```{r}
+plot(living_with~age,data = all_with_living_with)
+plot(living_with~household_income,data = all_with_living_with)
+plot(living_with~sex_partners,data = all_with_living_with)
+
+```
+We see no clear association for sex partners and number of people living with. But tehre seems to be a negative correlation of number of people living with with both age and income.
+
+We again start by looking at a model that includes all possible predictor variables and eliminate them by backward selection, optimizing the model to have low AIC.
+
+```{r}
+start_poisson = glm(living_with ~ as.factor(ethnicity) + as.factor(educ_level) + as.factor(marital_status)  + as.factor(drug) + as.factor(ever_marijuana) + as.factor(shared_needles) + as.factor(ever_jail) + as.factor(ever_sex_with_hiv_male) + as.factor(ever_sex_with_gay_male) + as.factor(condom_use) + as.factor(ever_anal_sex) + as.factor(ever_sex_toys) + as.factor(sexual_orientation) + as.factor(birth_country) + as.factor(speak_spanish)+hivstat + age + household_income + sex_partners , data = all_with_living_with, family = "poisson")
+summary(start_poisson)
+```
+
+```{r}
+backward_poisson <- step(start_poisson, direction = "backward")
+```
+
+```{r}
+summary(backward_poisson)
+```
+
+We then compare our fitted values to the "raw" values
+```{r}
+hist(backward_poisson$fitted.values)
+hist(all_with_living_with$living_with)
+```
+We then calculated the dispersion parameter
+```{r}
+deviance(backward_poisson)/ backward_poisson$df.residual
+```
+
+```{r}
+library(AER)
+dispersiontest(backward_poisson)
+```
+
+This tells us that we have overdispersion. We therfore should maybe consider an alternative model, e.g. a negative binomial model.
+
+However, for now we continue with the Poisson model as the overdispersion is not to extreme.
+
+```{r}
+final_poisson = backward_poisson
+summary(final_poisson)
+```
+```{r}
+exp(10*coef(final_poisson)[length(coef(final_poisson))-2]+ 10* c ( -1 ,0, 1) * 1.96 * sqrt(vcov(final_poisson)[length(coef(final_poisson)-2) ,length(coef(final_poisson))-2]))
+# exp(coef(final_poisson)[length(coef(final_poisson))-1]+ c ( -1 ,0, 1) * 1.96 * sqrt(vcov(final_poisson)[length(coef(final_poisson))-1 ,length(coef(final_poisson))-1]))
+exp(coef(final_poisson)[length(coef(final_poisson))]+ c ( -1 ,0, 1) * 1.96 * sqrt(vcov(final_poisson)[length(coef(final_poisson)) ,length(coef(final_poisson))]))
+```
+
+We see that a 10 year increase in age is associated with an average decrease in the number of people a women is living with by a factor of 0.86 (95% CI: [0.79,0.93]), holding all other covariates constant and according to this data.
+
+We see that a 1 unit increase in number of sex partners is associated with an average decrease in the number of people a women is living with by a factor of 0.92 (95% CI: [0.88,0.96]), holding all other covariates constant and according to this data.
+```{r}
+#education level
+exp(coef(final_poisson)[12]+ c ( -1 ,0, 1) * 1.96 * sqrt(vcov(final_poisson)[12 ,12]))
+exp(coef(final_poisson)[11]+ c ( -1 ,0, 1) * 1.96 * sqrt(vcov(final_poisson)[11 ,11]))
+exp(coef(final_poisson)[9]+ c ( -1 ,0, 1) * 1.96 * sqrt(vcov(final_poisson)[9 ,9]))
+```
+
+
+We also see that attendence or completion of  graduate school vs no schooling is associated with an average decrease in the number of people a women is living with by a factor of 0.27 (95% CI: [0.14,0.53]), holding all other covariates constant and according to this data.
+Completing 4 years of college vs no schooling is associated with an average decrease in the number of people a women is living with by a factor of 0.51 (95% CI: [0.31,0.85]), holding all other covariates constant and according to this data.
+Completing grades 7-11 vs no schooling is associated with an average decrease in the number of people a women is living with by a factor of 0.72 (95% CI: [0.46,0.1.12]), holding all other covariates constant and according to this data.
+```{r}
+# widowed vs married
+exp(coef(final_poisson)[17]+ c ( -1 ,0, 1) * 1.96 * sqrt(vcov(final_poisson)[17 ,17]))
+```
+Being widowed vs married is associated with an average decrease in the number of people a women is living with by a factor of 0.75 (95% CI: [0.67,0.84]), holding all other covariates constant and according to this data.
