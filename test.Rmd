@@ -491,6 +491,7 @@ exp(model_coefs[12]-model_coefs[10])
 
 ```
 
+STUDY CONFOUNDING AND EMM. 
 
 #############################################################################################
 
@@ -626,6 +627,7 @@ The model selection approaches seem to reveal that the following factors are the
 ```{r}
 
 mod4_multi <- multinom(household_income ~ as.factor(hivstat) + as.factor(ethnicity) + as.factor(educ_level) + as.factor(ever_jail) , data=all)
+
 #mod4_multi
 ```
 The AIC is indeed better than when dealing with only hivstat and marital_status. We notice here than the latter was not considered as a good predictor. This is not contradictory because even though it gives more information on the association between hivstat and household_income, other factors might give better results when combined with hivstat. Here the chosen ones are:
