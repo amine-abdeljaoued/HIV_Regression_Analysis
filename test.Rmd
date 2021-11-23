@@ -404,6 +404,57 @@ ggroc(list("Backward Updated" = roccurve3, "Backward" = roccurve2, "First attemp
   ylab("Specificity") +
   ggtitle("ROC curves")
 ```
+Checking for EMMs: 
+
+```{r}
+#backward_updated <- glm(hivstat ~ sex_partners + as.factor(drug) + as.factor(ever_marijuana) + as.factor(ever_sex_toys) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use), data = all, family = binomial())
+
+back1 <- glm(hivstat ~ sex_partners + as.factor(drug) + as.factor(ever_marijuana) + as.factor(ever_sex_toys) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use) + as.factor(condom_use)*sex_partners, data = all, family = binomial())
+
+anova(backward_updated, back1, test = "Chisq")
+
+```
+We fail to reject the null hypothesis that the model without the interaction term is preferred. Hence, the number of sex partners is not an effect modifier of the effects of condom use on HIV status.
+
+```{r}
+back2 <- glm(hivstat ~ sex_partners + as.factor(drug) + as.factor(ever_marijuana) + as.factor(ever_sex_toys) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use) + as.factor(ever_sex_with_hiv_male)*sex_partners, data = all, family = binomial())
+
+anova(backward_updated, back2, test = "Chisq")
+```
+We fail to reject the null hypothesis that the model without the interaction term is preferred. Hence, the number of sex partners is not an effect modifier of the effects of having sex with an HIV positive male on HIV status.
+
+```{r}
+back3 <- glm(hivstat ~ sex_partners + as.factor(drug) + as.factor(ever_marijuana) + as.factor(ever_sex_toys) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use) + as.factor(ever_marijuana)*sex_partners, data = all, family = binomial())
+
+anova(backward_updated, back3, test = "Chisq")
+```
+We fail to reject the null hypothesis that the model without the interaction term is preferred. Hence, the number of sex partners is not an effect modifier of the effects of marijuana use on HIV status.
+
+```{r}
+back4 <- glm(hivstat ~ sex_partners + as.factor(drug) + as.factor(ever_marijuana) + as.factor(ever_sex_toys) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use) + sex_partners*household_income, data = all, family = binomial())
+
+anova(backward_updated, back4, test = "Chisq")
+```
+We fail to reject the null hypothesis that the model without the interaction term is preferred. Hence, household income is not an effect modifier of the effects of the number of sex partners on HIV status.
+
+```{r}
+back5 <- glm(hivstat ~ sex_partners + as.factor(drug) + as.factor(ever_marijuana) + as.factor(ever_sex_toys) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use) + as.factor(ever_sex_toys)*household_income, data = all, family = binomial())
+
+anova(backward_updated, back5, test = "Chisq")
+```
+```{r}
+back5 <- glm(hivstat ~ sex_partners + as.factor(drug) + as.factor(ever_marijuana) + as.factor(ever_sex_toys) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use) + as.factor(ever_sex_toys)*household_income, data = all, family = binomial())
+
+anova(backward_updated, back5, test = "Chisq")
+```
+We fail to reject the null hypothesis that the model without the interaction term is preferred. Hence, household income is not an effect modifier of the effects of using sex toys on HIV status.
+
+```{r}
+back6 <- glm(hivstat ~ sex_partners + as.factor(drug) + as.factor(ever_marijuana) + as.factor(ever_sex_toys) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use) + as.factor(condom_use)*household_income, data = all, family = binomial())
+
+anova(backward_updated, back6, test = "Chisq")
+```
+We fail to reject the null hypothesis that the model without the interaction term is preferred. Hence, household income is not an effect modifier of the effects of condom use on HIV status.
 
 
 Checking for outliers with Cook's Distance:
