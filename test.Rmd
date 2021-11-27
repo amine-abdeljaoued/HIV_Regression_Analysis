@@ -228,6 +228,8 @@ We will look at the association between hivstatus and each of these covariates a
 ```{r}
 mod.ethnicity <- glm(hivstat ~ as.factor(ethnicity), data = all, family = binomial())
 
+summary(mod.ethnicity)
+
 OR.ethnicity <- exp(coef(mod.ethnicity)[3]-coef(mod.ethnicity)[2])
 OR.ethnicity
 CI.ethnicity <- exp(log(OR.ethnicity) + c(-1,1)*1.96*sqrt(vcov(mod.ethnicity)[2,2] + vcov(mod.ethnicity)[3,3] - 2*vcov(mod.ethnicity)[2,3]))
@@ -542,7 +544,6 @@ exp(model_coefs[12]-model_coefs[10])
 
 ```
 
-STUDY CONFOUNDING AND EMM. 
 
 #############################################################################################
 
@@ -650,7 +651,7 @@ We can see that the relative risk ratio of being in high income categories vs lo
 The risk ratio of being in household income category 8 (>6250) vs category 1 (< 500) for separated women (category 5) is 0.120 times that same risk for married women, with a 95% confidence interval of [0.015, 0,996]. This means that separated women are less likely to be in this high income category. When looking at income category 2, which is closer to 1, the relative risk is not as much different, for instance:
 The risk ratio of being in household income category 2 (501-1000) vs category 1 (< 500) for never married (category 6) women is 0.828 times that same risk for married women, with a 95% confidence interval of [0.524, 1.309].
 
-As for the logistic regression model with "high income" and "low income", most of our odds ratio's confidence intervals have their upper boundary lower than one. This confirms our previous sayings as this means that the odds of having a high income are higher for married women than women in other marital categories.
+As for the logistic regression model with "high income" and "low income", most of our odds ratio's confidence intervals have their upper boundary lower than one. This confirms our previous sayings as this means that the odds of having a high income are higher for married women than women in other marital status categories.
 
 Thus as we could have guessed, the probability of having a high household income depends a lot on her marital situation. The risk ratio of having a low household income vs higher household income is higher for widowed/divorced women.
 
@@ -840,11 +841,9 @@ plot(CD4N_t~household_income,data = all_with_CD4N)
 plot(CD4N_t~living_with,data = all_with_CD4N)
 plot(CD4N_t~sex_partners,data = all_with_CD4N)
 ```
-```
 We again see no clear association between the variable and the square root of the CD4 number for most variables. With the one exception being household income, where there seems to be a negative lower average square root of the CD4 number for women with higerh houshold income.
 
 Because there is no clear assosciation between most variables and the outcome and we have a large number of possible predictor variables, we start with a model that includes all possible predictor variables and elimnate some of them afterwasrd by backward selection.
-```
 ```{r}
 start_cd4 = lm(CD4N_t ~ as.factor(ethnicity) + as.factor(educ_level) + as.factor(marital_status) + living_with + household_income + as.factor(drug) + sex_partners + as.factor(ever_marijuana) + as.factor(shared_needles) + as.factor(ever_jail) + as.factor(ever_sex_with_hiv_male) + as.factor(ever_sex_with_gay_male) + as.factor(condom_use) + as.factor(ever_anal_sex) + as.factor(ever_sex_toys) + as.factor(sexual_orientation) +hivstat + age , data = all_with_CD4N)
 summary(start_cd4)
