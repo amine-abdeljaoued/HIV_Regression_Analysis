@@ -228,6 +228,8 @@ We will look at the association between hivstatus and each of these covariates a
 ```{r}
 mod.ethnicity <- glm(hivstat ~ as.factor(ethnicity), data = all, family = binomial())
 
+summary(mod.ethnicity)
+
 OR.ethnicity <- exp(coef(mod.ethnicity)[3]-coef(mod.ethnicity)[2])
 OR.ethnicity
 CI.ethnicity <- exp(log(OR.ethnicity) + c(-1,1)*1.96*sqrt(vcov(mod.ethnicity)[2,2] + vcov(mod.ethnicity)[3,3] - 2*vcov(mod.ethnicity)[2,3]))
@@ -404,6 +406,57 @@ ggroc(list("Backward Updated" = roccurve3, "Backward" = roccurve2, "First attemp
   ylab("Specificity") +
   ggtitle("ROC curves")
 ```
+Checking for EMMs: 
+
+```{r}
+#backward_updated <- glm(hivstat ~ sex_partners + as.factor(drug) + as.factor(ever_marijuana) + as.factor(ever_sex_toys) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use), data = all, family = binomial())
+
+back1 <- glm(hivstat ~ sex_partners + as.factor(drug) + as.factor(ever_marijuana) + as.factor(ever_sex_toys) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use) + as.factor(condom_use)*sex_partners, data = all, family = binomial())
+
+anova(backward_updated, back1, test = "Chisq")
+
+```
+We fail to reject the null hypothesis that the model without the interaction term is preferred. Hence, the number of sex partners is not an effect modifier of the effects of condom use on HIV status.
+
+```{r}
+back2 <- glm(hivstat ~ sex_partners + as.factor(drug) + as.factor(ever_marijuana) + as.factor(ever_sex_toys) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use) + as.factor(ever_sex_with_hiv_male)*sex_partners, data = all, family = binomial())
+
+anova(backward_updated, back2, test = "Chisq")
+```
+We fail to reject the null hypothesis that the model without the interaction term is preferred. Hence, the number of sex partners is not an effect modifier of the effects of having sex with an HIV positive male on HIV status.
+
+```{r}
+back3 <- glm(hivstat ~ sex_partners + as.factor(drug) + as.factor(ever_marijuana) + as.factor(ever_sex_toys) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use) + as.factor(ever_marijuana)*sex_partners, data = all, family = binomial())
+
+anova(backward_updated, back3, test = "Chisq")
+```
+We fail to reject the null hypothesis that the model without the interaction term is preferred. Hence, the number of sex partners is not an effect modifier of the effects of marijuana use on HIV status.
+
+```{r}
+back4 <- glm(hivstat ~ sex_partners + as.factor(drug) + as.factor(ever_marijuana) + as.factor(ever_sex_toys) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use) + sex_partners*household_income, data = all, family = binomial())
+
+anova(backward_updated, back4, test = "Chisq")
+```
+We fail to reject the null hypothesis that the model without the interaction term is preferred. Hence, household income is not an effect modifier of the effects of the number of sex partners on HIV status.
+
+```{r}
+back5 <- glm(hivstat ~ sex_partners + as.factor(drug) + as.factor(ever_marijuana) + as.factor(ever_sex_toys) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use) + as.factor(ever_sex_toys)*household_income, data = all, family = binomial())
+
+anova(backward_updated, back5, test = "Chisq")
+```
+```{r}
+back5 <- glm(hivstat ~ sex_partners + as.factor(drug) + as.factor(ever_marijuana) + as.factor(ever_sex_toys) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use) + as.factor(ever_sex_toys)*household_income, data = all, family = binomial())
+
+anova(backward_updated, back5, test = "Chisq")
+```
+We fail to reject the null hypothesis that the model without the interaction term is preferred. Hence, household income is not an effect modifier of the effects of using sex toys on HIV status.
+
+```{r}
+back6 <- glm(hivstat ~ sex_partners + as.factor(drug) + as.factor(ever_marijuana) + as.factor(ever_sex_toys) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use) + as.factor(condom_use)*household_income, data = all, family = binomial())
+
+anova(backward_updated, back6, test = "Chisq")
+```
+We fail to reject the null hypothesis that the model without the interaction term is preferred. Hence, household income is not an effect modifier of the effects of condom use on HIV status.
 
 
 Checking for outliers with Cook's Distance:
@@ -446,6 +499,52 @@ extractAIC(mod_wo_all_outliers)
 ```
 This model gives the smallest AIC so far, which makes sense because we are removing the outliers and high influence points, without which the model is a better fit. 
 
+```{r}
+library(caret)
+prediction <- ifelse(backward_updated$fitted.values > 0.5, 1, 0)
+confusionMatrix(data = as.factor(prediction), reference = as.factor(hivstat), positive = "1")
+```
+We can use our fitted values to actually predict whether a woman in our study in classified as being HIV positive or not. We used a cutoff of 0.5 when classifying the observations. When we do so, we get an accuracy of 84.78% and a sensitivity of 98.36%, which tells us that the model is able to classify an HIV positive person as HIV positive 98.36% of the time. However, the sensitivity is 12.37% which is very low. It tells us that the model is able to classify an HIV negative person as HIV negative only 12.37% of the time. 
+
+```{r}
+prediction <- ifelse(backward_updated$fitted.values > 0.74, 1, 0)
+confusionMatrix(data = as.factor(prediction), reference = as.factor(hivstat), positive = "1")
+```
+If we increase our cutoff to 0.74, then we are able to increase the model's specificity, while making sure the sensitivity remains above 90%. 
+
+
+Interpretations: 
+```{r}
+summary(backward_updated)
+model_coefs <- coef(backward_updated)
+vcov(backward_updated)
+
+#Odds ratio of having hiv vs not for those in a category of sex partners vs 1 category lower
+exp(model_coefs[2])
+exp(model_coefs[2] + c(-1,1)*1.96*sqrt(vcov(mod.hivmale)[2,2]))
+
+
+#Odds ratio of having hiv vs not for those who have never injected drugs vs those who have.
+exp(model_coefs[3])
+exp(model_coefs[3] + c(-1,1)*1.96*sqrt(vcov(backward_updated))[3,3])
+
+#odds ratio of having hiv vs not for those who have never used sex toys vs those who have.
+exp(model_coefs[6] - model_coefs[5])
+exp(model_coefs[6] - model_coefs[5] + c(-1,1)*1.96*sqrt(vcov(backward_updated)[6,6] + vcov(backward_updated)[5,5] - 2*vcov(backward_updated)[5,6]))
+
+#odds ratio of having hiv vs not for those in a household income category vs those in one category lower
+exp(model_coefs[7])
+
+#odds ratio of having hiv vs not for those who had sex with an hiv positive male vs those who didn't
+exp(model_coefs[8] - model_coefs[9])
+exp(model_coefs[8] - model_coefs[9] + c(-1,1)*1.96*sqrt(vcov(backward_updated)[8,8] + vcov(backward_updated)[9,9] - 2*vcov(backward_updated)[8,9]))
+
+#odds ratio of having hiv vs not for those who never used a condom vs those who always do
+exp(model_coefs[12]-model_coefs[10])
+
+```
+
+
 #############################################################################################
 
 MODEL BUILDING: Predicting salary 
@@ -486,59 +585,92 @@ hist(marital_status)
 ```
 There seems to be household_incomes concentrated around the low categories. Given that we know most of our patients are HIV positive, we can already start to think of a correlation. Looking at the marital_status distribution also gives important information. Most of the women of the cohort are either living with someone (1: legally/common-law married or 2: not married but living with partner ) or 6: never married. Category 6 is the most frequent one so we might also think that it plays a big role on the fact that household's incomes are relatively low in that cohort.
 
-
-Let's firstly analyze how the household's income depends on women's marital status.
+We know that we will be using HIV status as one of our predictors. Before starting to fit models, let's see if the proportional odds assumption holds.
+We create indicator functions for categories 2 and 5 of household income.
 
 ```{r}
-mod1_multi = multinom(household_income ~ as.factor(marital_status) , data=all)
+ind2 <- ifelse(all$household_income==2,1,0)
+ind5 <- ifelse(all$household_income==5,1,0)
+```
+
+We then fit models to compare the coefficient of HIV within these 2 categories.
+```{r}
+md1 <- glm(formula = ind2~hivstat, family=binomial, data=all)
+md2 <- glm(formula = ind5~hivstat, family=binomial, data=all)
+summary(md1)
+summary(md2)
+#Checking 95% CI for our two coefficients
+coef(md1)[2] + c(-1,1)*1.96*sqrt(vcov(md1)[2,2])
+coef(md2)[2] + c(-1,1)*1.96*sqrt(vcov(md2)[2,2])
+```
+We can see that our coefficients for HIV status are very different across two different categories of household income - this means that the proportional odds assumption does not hold. As HIV status is our main predictor that we will be carrying throughout this analysis, we won't be fitting ordinal models.
+
+We will start with multinomial and logistic models.
+
+Here for hincome, we simply change the NA category to 8 so that it is not taken as the reference category. As for hincome2, we split our categories in 2 with 0 being an income <=2000 or not reported (which is likely to be low) and 1 being >2000.
+
+```{r}
+hincome <- household_income
+hincome[hincome==-1]=9
+hincome2 <- household_income
+hincome2[hincome2<=4]=0
+hincome2[hincome2>4]=1
+hincome
+```
+We try both a multinomial model with all household income categories and then a simpler logistic regression for "low income" and "high income".
+```{r}
+mod1_sal = multinom(hincome ~ as.factor(hivstat) , data=all)
+summ.MNfit(mod1_sal)
+
+mod2_sal = glm(hincome2 ~ hivstat , data=all,family="binomial")
+summary(mod2_sal)
+exp(coef(mod2_sal)[2])
+exp(confint(mod2_sal))
+```
+Conclusions from our models:
+
+We can see that most of the relative risk ratios comparing levels of household income vs the lowest one are higher than 1, meaning that the risk ratio of being in high income categories vs the lowest one is higher for HIV positive women than for negative women. This is particularly true when looking at income category 7 ($3001-6250) where the relative risk ratio is of 5.293, with a confidence interval of [1.247, 22.469]. This multinomial model's relative risk ratios comparing levels of household income vs the lowest one are quite confusing, vary a lot across categories and have very wide confidence intervals. We try to fix that using a logistic regression model with only 2 categories: "low income" and "high income"
+
+The results are coherent with the previous model and with our EDA where we noticed that there seemed to be a little bit of a higher household income among those with HIV than those without HIV in our dataset (that as a reminder is only about women in the US). We have that the odds of being in a high income category are 1.618619 higher for women that are positive to HIV vs negative women, with a confidence interval of [0.99127867, 2.795565]
+
+
+Let us now analyze how the household's income depends on women's marital status.
+
+```{r}
+mod1_multi = multinom(hincome ~ as.factor(marital_status) , data=all)
 coef(mod1_multi)
+summ.MNfit(mod1_multi)
+
+mod2_inh = glm(hincome2 ~ as.factor(marital_status) , data=all,family="binomial")
+summary(mod2_inh)
+# exp(confint(mod2_inh))
+
 ```
-```{r}
-RRR1vs3_3 <- exp( coef(mod1_multi)[1,3]- coef(mod1_multi)[3,3] )
+We can see that the relative risk ratio of being in high income categories vs low income ones are almost always less than 1 when comparing women that are not married, widowed, divorced etc... against legally married women. This makes sense as the household income naturally increase when it takes into account two people. We can look at some details here and notice for example that:
 
-RRR1vs5_3 <- exp( coef(mod1_multi)[1,3]- coef(mod1_multi)[5,3] )
+The risk ratio of being in household income category 8 (>6250) vs category 1 (< 500) for separated women (category 5) is 0.120 times that same risk for married women, with a 95% confidence interval of [0.015, 0,996]. This means that separated women are less likely to be in this high income category. When looking at income category 2, which is closer to 1, the relative risk is not as much different, for instance:
+The risk ratio of being in household income category 2 (501-1000) vs category 1 (< 500) for never married (category 6) women is 0.828 times that same risk for married women, with a 95% confidence interval of [0.524, 1.309].
 
-RRR1vs4_6 <- exp( coef(mod1_multi)[1,6]- coef(mod1_multi)[4,6] )
+As for the logistic regression model with "high income" and "low income", most of our odds ratio's confidence intervals have their upper boundary lower than one. This confirms our previous sayings as this means that the odds of having a high income are higher for married women than women in other marital status categories.
+
+Thus as we could have guessed, the probability of having a high household income depends a lot on her marital situation. The risk ratio of having a low household income vs higher household income is higher for widowed/divorced women.
 
 
-RRR1vs3_3
-RRR1vs5_3
-RRR1vs4_6
-```
-The relative risk ratio of being in household income category 1 (lowest) vs category 3 for widowed women is 1.39 that same risk for legally/common-law married women.
 
-The relative risk ratio of being in household income category 1 (lowest) vs category 5 for widowed women is 1.76 that same risk for legally/common-law married women.
+We know that Marital status cannot confound the effect of HIV status on household income because marital status can be a downstream consequence of HIV status or household income. For instance, if a person is HIV positive, then this might affect their chances of getting married. So, marital status does not meet the classical definition of a confounder. 
 
-The relative risk ratio of being in household income category 1 (lowest) vs category 4 for never married women is 2.9 that same risk for legally/common-law married women.
+It would however possibly be an effect modifier of this association. Indeed, it would be coherent to see the effect of hiv on household income vary according to the marital status (with a bigger association for women living alone for instance). Let us study that.
 
-Thus, as we could have guessed, the probability of having a high household's income depends a lot on her marital situation. The risk ratio of having a low household income is higher for widowed/divorced women.
-
-Let us see now how household income correlates with HIV status. We know that marital status can confound this association as it might be associated with the HIV status in the study base, is associated with household income independently on hiv status and is not a downstream consequence of neither of them. It would also very possibly be an effect modifier of this association. Indeed, it would be coherent to see the effect of hiv on household income vary according to the marital status (with a bigger association for women living alone for instance). Let us study that.
-
-We firstly fit a model with hivstat alone.
-```{r}
-mod2_multi = multinom(household_income ~ as.factor(hivstat) , data=all)
-coef(mod2_multi)
-```
-```{r}
-RRR1vs8 <- exp(coef(mod2_multi)[1,2]-coef(mod2_multi)[8,2])
-RRR1vs8
-```
-The relative risk ratio of being in household income category 1 (lowest) vs category 8 for HIV positive women is 2.74 that same risk as for non infected women.
-
-Let us now try a model with both the marital_status and hiv_status.
-```{r}
-mod3_multi = multinom(household_income ~ as.factor(marital_status)+ as.factor(hivstat) , data=all)
-summary(mod1_multi)
-summary(mod2_multi)
-summary(mod3_multi)
-```
-We can see that the lowest AICs are obtained when hivstat is used. We will now see if adding marital_status makes the model less significant.
 
 ```{r}
-anova(mod2_multi,mod3_multi)
+multi_interact <- multinom(household_income ~ as.factor(marital_status) + as.factor(hivstat) + as.factor(marital_status)*as.factor(hivstat), data = all )
+summary(multi_interact)
+anova(mod2_multi, multi_interact, test = "Chisq")
 ```
-This test yields a significant p-value for the addition of marital_status. Therefore, we have a statistical evidence that marital_status does not confound the association of hiv_stat with household_income but is rather en effect modifier. This is coherent because as explained above: "it would be coherent to see the effect of hiv on household income vary according to the marital status (with a bigger association for women living alone for instance)."
+
+The Chi square test gives a significant p-value (0.0088 < 0.05). We reject the null hypothesis that the model without the interaction term is preferred and conclude that marital status is an effect modifier of the effects of HIV status on Household income. 
+
+Marital status is an effect modifier of the effect of HIV status on household income. This is coherent because as explained above: "it would be coherent to see the effect of hiv on household income vary according to the marital status (with a bigger association for women living alone for instance)."
 
 
 Finally, we use other factors to see if we can get a better model: ethnicity, age, educ_level, birth_country, mother_educ, sexual_orientation,ever_jail. Let us start by doing some model selection to see which factors are the most significant here, before analyzing more in details their association with household_income.
@@ -568,9 +700,19 @@ mod4_multi
 ```
 The AIC is indeed better than when dealing with only hivstat and marital_status. We notice here than the latter was not considered as a good predictor. This is not contradictory because even though it gives more information on the association between hivstat and household_income, other factors might give better results when combined with hivstat. Here the chosen ones are:
 
-Ethnicity: we know that in the US there is a statistical significance between ethnicity and socioeconomic status and thus salaries.
+Ethnicity: we know that in the US there is a significant association between ethnicity and socioeconomic status and thus salaries.
 Education level: this is obvious that salaries are statistically associated with education levels.
 Ever been to jail: reinsertion into the professional world after going to jail is very complicated in the US.
+
+We previously saw that marital status was an effect modifier of the effects of HIV status on household income, so we are going to add marital status and the interaction term between marital status and HIV status to our model.
+```{r}
+fullmod_interact <- multinom(household_income ~ as.factor(hivstat) + as.factor(ethnicity) + as.factor(educ_level) + as.factor(ever_jail) + as.factor(marital_status) +as.factor(hivstat)*as.factor(marital_status) , data=all)
+anova(mod4_multi, fullmod_interact)
+
+```
+We reject the null hypothesis that the model without the interaction term is preferred (p-value = 0.04 < 0.05) and conclude that adding the interaction term between HIV status and marital status provides a better fit for the model since marital status is indeed an effect modifier of the effect of HIV status on household income.
+
+
 
 ```{r}
 all %>% 
@@ -591,22 +733,17 @@ Ignoring -1 (missing data), we can see the household income tends to be much low
 
 Finally, let us give some relative risk ratio measures with our new factors:
 
-```{r}
-coef(mod4_multi)
-```
-```{r}
-coef(mod4_multi)
-```
 
 ```{r}
+coef(mod4_multi)
 RRRf1 <- exp( coef(mod4_multi)[1,2]- coef(mod4_multi)[8,2] )
 RRRf2 <- exp( coef(mod4_multi)[1,11]- coef(mod4_multi)[3,11] )
 RRRf1
 RRRf2
 ```
-The relative risk ratio of being in household income category 1 (lowest) vs category 3 for african americans is 3.23 times that same risk for people who preferred to not declare their ethnicity.
-The relative risk ratio of being in household income category 1 (lowest) vs category 3 for women who completed 4 years of college is 0.72 times that same risk for women with no schooling.
+The risk ratio of being in household income category 1 (< 500) vs category 3 (1001 - 1500) for African Americans is 3.23 times that same risk ratio for people who preferred to not declare their ethnicity. 
 
+The risk ratio of being in household income category 1 (< 500) vs category 3 (1001 – 1500) for women who completed 4 years of college is 0.72 times that same risk for women with no schooling. 
 
 
 #############
@@ -705,11 +842,9 @@ plot(CD4N_t~household_income,data = all_with_CD4N)
 plot(CD4N_t~living_with,data = all_with_CD4N)
 plot(CD4N_t~sex_partners,data = all_with_CD4N)
 ```
-```
 We again see no clear association between the variable and the square root of the CD4 number for most variables. With the one exception being household income, where there seems to be a negative lower average square root of the CD4 number for women with higerh houshold income.
 
 Because there is no clear assosciation between most variables and the outcome and we have a large number of possible predictor variables, we start with a model that includes all possible predictor variables and elimnate some of them afterwasrd by backward selection.
-```
 ```{r}
 start_cd4 = lm(CD4N_t ~ as.factor(ethnicity) + as.factor(educ_level) + as.factor(marital_status) + living_with + household_income + as.factor(drug) + sex_partners + as.factor(ever_marijuana) + as.factor(shared_needles) + as.factor(ever_jail) + as.factor(ever_sex_with_hiv_male) + as.factor(ever_sex_with_gay_male) + as.factor(condom_use) + as.factor(ever_anal_sex) + as.factor(ever_sex_toys) + as.factor(sexual_orientation) +hivstat + age , data = all_with_CD4N)
 summary(start_cd4)
