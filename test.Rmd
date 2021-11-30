@@ -511,7 +511,7 @@ The relative risk ratio of being in household income category 1 (lowest) vs cate
 
 The relative risk ratio of being in household income category 1 (lowest) vs category 4 for never married women is 2.9 that same risk for legally/common-law married women.
 
-Thus as we could have guessed, the probability of having a high household's income depends a lot on her marital situation. The risk ratio of having a low household income is higher for widowed/divorced women.
+Thus, as we could have guessed, the probability of having a high household's income depends a lot on her marital situation. The risk ratio of having a low household income is higher for widowed/divorced women.
 
 Let us see now how household income correlates with HIV status. We know that marital status can confound this association as it might be associated with the HIV status in the study base, is associated with household income independently on hiv status and is not a downstream consequence of neither of them. It would also very possibly be an effect modifier of this association. Indeed, it would be coherent to see the effect of hiv on household income vary according to the marital status (with a bigger association for women living alone for instance). Let us study that.
 
