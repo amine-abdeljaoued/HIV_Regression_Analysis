@@ -367,6 +367,8 @@ The model that we get using forward selection includes too many covariates. In o
 ```{r}
 backward_updated <- glm(hivstat ~ sex_partners + as.factor(drug) + as.factor(ever_marijuana) + as.factor(ever_sex_toys) + household_income + as.factor(ever_sex_with_hiv_male) + as.factor(condom_use), data = all, family = binomial())
 
+summary(backward_updated)
+
 hoslem.test(hivstat, fitted(backward_updated))
 
 predprob <- predict(backward_updated,type=c("response"))
@@ -541,7 +543,7 @@ exp(model_coefs[8] - model_coefs[9] + c(-1,1)*1.96*sqrt(vcov(backward_updated)[8
 
 #odds ratio of having hiv vs not for those who never used a condom vs those who always do
 exp(model_coefs[12]-model_coefs[10])
-
+exp(model_coefs[12] - model_coefs[10] + c(-1,1)*1.96*sqrt(vcov(backward_updated)[12,12] + vcov(backward_updated)[10,10] - 2*vcov(backward_updated)[12,10]))
 ```
 
 
