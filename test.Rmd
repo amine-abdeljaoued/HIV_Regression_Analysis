@@ -1105,7 +1105,6 @@ all_with_CD4N %>%
   labs(x = "HIV status", y = "Predicted Square Root of CD4 count")+
   scale_color_discrete(name = "HIV status", labels = c("HIV Negative", "HIV Positive"))
 ```
-plot(all_with_CD4N$CD4N_t,backwardModel_CD4_final$fitted.values)
 
 ```{r}
 all_with_CD4N %>%
