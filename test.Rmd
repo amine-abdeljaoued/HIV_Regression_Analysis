@@ -893,9 +893,25 @@ plot(all_with_CD4N$CD4N_t,backwardModel_CD4_final$fitted.values)
 This scatterplot does not show any major outliers. We therefore keep all data points in the dataset.
 We also see that there seem to be two groups, with the group in the upper left presumably being the individuals who do not have hiv.
 ```{r}
+c_distance = cooks.distance(backwardModel_CD4_final)
+n = length(c_distance)
+c_distance[c_distance>12/n]
+
+```
+
+```{r}
 all_with_CD4N[all_with_CD4N$CD4N_t>20 & backwardModel_CD4_final$fitted.values>25,]$hivstat
 ```
 A quick look at the data shows that this is indeed the case.
+
+Same graph as above but hiv stat color coded:
+```{r}
+pdf("linear_model_scatter_plot.pdf",12,9)
+plot(all_with_CD4N$CD4N_t,backwardModel_CD4_final$fitted.values, type = "n", ylab = "measured square root of the CD4 count ", xlab = "predicted square root of the CD4 count", main = "Predicted vs Measured CD4 counts")
+points(all_with_CD4N$CD4N_t[all_with_CD4N$hivstat == 0],backwardModel_CD4_final$fitted.values[all_with_CD4N$hivstat == 0], col = 4)
+points(all_with_CD4N$CD4N_t[all_with_CD4N$hivstat == 1],backwardModel_CD4_final$fitted.values[all_with_CD4N$hivstat == 1], col = 2)
+dev.off()
+```
 
 ```{r}
 all_with_CD4N[all_with_CD4N$CD4N_t>20 & backwardModel_CD4_final$fitted.values>25,]
@@ -916,9 +932,9 @@ The biggest effect we see is hiv status. Being hiv positive is associated with a
 
 
 ##############################
-Poisson Regression:
+Poisson  Regression:
 
-We want to predict the number of people a women with HIV lives with.
+We want to predict the number of people a woman with HIV lives with.
 
 We begin with some exploratory analysis looking at a histogram of the number of people a study participant is living with
 ```{r}
@@ -1014,6 +1030,28 @@ However, for now we continue with the Poisson model as the overdispersion is not
 final_poisson = backward_poisson
 summary(final_poisson)
 ```
+
+Negative binomial:
+
+```{r}
+library(MASS)
+install.packages(spdep)
+library(spdep)
+negative_bino = glm.nb(living_with ~ as.factor(ethnicity) + as.factor(educ_level) +
+    as.factor(marital_status) + as.factor(drug) + as.factor(shared_needles) +
+    as.factor(sexual_orientation) + age + household_income +
+    sex_partners, data = all_with_living_with)
+#summary(negative_bino)
+#pchisq( 2 * (logLik(negative_bino) - logLik(final_poisson) ), df = 1 ,lower.tail =  ALSE)
+print(test.nb.pois(negative_bino,final_poisson))
+print(DeanB(final_poisson))
+print(DeanB2(final_poisson))
+```
+```{r}
+summary(negative_bino)
+```
+
+
 ```{r}
 exp(10*coef(final_poisson)[length(coef(final_poisson))-2]+ 10* c ( -1 ,0, 1) * 1.96 * sqrt(vcov(final_poisson)[length(coef(final_poisson)-2) ,length(coef(final_poisson))-2]))
 # exp(coef(final_poisson)[length(coef(final_poisson))-1]+ c ( -1 ,0, 1) * 1.96 * sqrt(vcov(final_poisson)[length(coef(final_poisson))-1 ,length(coef(final_poisson))-1]))
