@@ -663,6 +663,7 @@ We know that Marital status cannot confound the effect of HIV status on househol
 
 It would however possibly be an effect modifier of this association. Indeed, it would be coherent to see the effect of hiv on household income vary according to the marital status (with a bigger association for women living alone for instance). Let us study that.
 
+
 ```{r}
 multi_interact <- multinom(household_income ~ as.factor(marital_status) + as.factor(hivstat) + as.factor(marital_status)*as.factor(hivstat), data = all )
 summary(multi_interact)
