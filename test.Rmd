@@ -770,7 +770,7 @@ When then look at a histogram of the CD4 data to see if it is normally distribut
 ```{r}
 hist(cleand_lab$CD4N)
 ```
-We can see that the data is left skewed.
+We can see that the data is right skewed.
 We therefore transform is by applying the square root function
 ```{r}
 transformed_CD4 = sqrt(cleand_lab$CD4N)
@@ -784,6 +784,7 @@ lines(dnorm(x, mean=m, sd=std)*bin_width*length(transformed_CD4),
       col="darkblue", lwd=2, add=TRUE, yaxt="n")
 ```
 This data is still not perfectly normal distributed, but it should be good enough.
+
 
 We then need to add the CD4 data to our "all" dataframe. However, we do not have CD4 data for all Case IDs.
 Because we do not need CD4 data for the rest of the project we creat a seperate data frame for this model that includes the data for all individual for which we have CD4 data
@@ -894,6 +895,8 @@ plot(all_with_CD4N$CD4N_t,backwardModel_CD4_final$fitted.values)
 ```
 This scatterplot does not show any major outliers. We therefore keep all data points in the dataset.
 We also see that there seem to be two groups, with the group in the upper left presumably being the individuals who do not have hiv.
+
+
 ```{r}
 all_with_CD4N[all_with_CD4N$CD4N_t>20 & backwardModel_CD4_final$fitted.values>25,]$hivstat
 ```
@@ -1041,3 +1044,39 @@ Completing grades 7-11 vs no schooling is associated with an average decrease in
 exp(coef(final_poisson)[17]+ c ( -1 ,0, 1) * 1.96 * sqrt(vcov(final_poisson)[17 ,17]))
 ```
 Being widowed vs married is associated with an average decrease in the number of people a women is living with by a factor of 0.75 (95% CI: [0.67,0.84]), holding all other covariates constant and according to this data.
+
+
+USING GGPLOT
+
+```{r}
+cleand_lab %>%
+  ggplot()+
+  geom_histogram(aes(x = CD4N, y = ..density..), color = "white")+
+  labs(x = "Raw CD4 Count", y = "Proportion")
+
+ggplot()+
+  geom_histogram(aes(x = transformed_CD4, y = ..density..), color = "white")+
+  labs(x = "Square Root of CD4 Count", y = "Proportion") + 
+  stat_function(fun = dnorm, args = list(m, std), color = "red")
+  
+
+```
+
+```{r}
+all_with_CD4N %>% 
+  ggplot() +
+  geom_point(aes(x = as.factor(hivstat), y = backwardModel_CD4_final$fitted.values , color = as.factor(hivstat))) + 
+  labs(x = "HIV status", y = "Predicted Square Root of CD4 count")+
+  scale_color_discrete(name = "HIV status", labels = c("HIV Negative", "HIV Positive"))
+```
+plot(all_with_CD4N$CD4N_t,backwardModel_CD4_final$fitted.values)
+
+```{r}
+all_with_CD4N %>%
+  ggplot() +
+  geom_point(aes(x = CD4N_t, y = backwardModel_CD4_final$fitted.values, color = as.factor(hivstat)))+
+  scale_color_discrete(name = "HIV status", labels = c("HIV Negative", "HIV Positive"))+
+  labs(x = "Predicted Square Root of CD4 Count", y = "Measured Square Root of CD4 Count")
+
+```
+
